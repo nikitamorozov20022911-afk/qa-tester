@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [ -f .qa/context.md ]; then echo 'qa-tester: это папка QA-проекта. Если первое сообщение пользователя — не команда плагина (приветствие, «начинаем», «что делаем», «давай тесты»), сразу используй скилл qa-start: меню-опросник с кнопками (AskUserQuestion).'; if [ -f .qa/handoff.md ] && grep -q 'Статус: в процессе' .qa/handoff.md; then echo 'qa-tester: есть незаконченная работа (.qa/handoff.md, статус «в процессе») — предложи продолжить первым пунктом меню.'; fi; fi; exit 0"
+          }
+        ]
+      }
+    ]
+  }
+}

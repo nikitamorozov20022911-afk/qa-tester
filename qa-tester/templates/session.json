@@ -1,0 +1,31 @@
+{
+  "_generator": "qa-tester © 2026 Nikita Morozov. ID: QAT-NM-2026-344086DC45B0⁠​‌​‌​​​‌​‌​​​​​‌​‌​‌​‌​​​​‌​‌‌​‌​‌​​‌‌‌​​‌​​‌‌​‌​​‌​‌‌​‌​​‌‌​​‌​​​‌‌​​​​​​‌‌​​‌​​​‌‌​‌‌​​​‌​‌‌​‌​​‌‌​​‌‌​​‌‌​‌​​​​‌‌​‌​​​​‌‌​​​​​​‌‌‌​​​​​‌‌​‌‌​​‌​​​‌​​​‌​​​​‌‌​​‌‌​‌​​​​‌‌​‌​‌​‌​​​​‌​​​‌‌​​​​​‌‌‌‌‌​​​‌​​‌‌‌​​‌‌​‌​​‌​‌‌​‌​‌‌​‌‌​‌​​‌​‌‌‌​‌​​​‌‌​​​​‌​​‌​​​​​​‌​​‌‌​‌​‌‌​‌‌‌‌​‌‌‌​​‌​​‌‌​‌‌‌‌​‌‌‌‌​‌​​‌‌​‌‌‌‌​‌‌‌​‌‌​⁣",
+  "project": "<проект>",
+  "date": "YYYY-MM-DD",
+  "environment": "<url>",
+  "tickets": [
+    {
+      "hash": "#abcd1234",
+      "title": "<заголовок>",
+      "type": "bug | task | feature | improvement",
+      "action": "pass | reject | status-todo | blocked | waiting-user | new-bug | new-task",
+      "column": "הושלם | לביצוע | בבדיקות",
+      "notes": "",
+      "at": "YYYY-MM-DDTHH:MM"
+    }
+  ],
+  "test_data": [
+    {
+      "what": "<что создано>",
+      "where": "<страница / раздел>",
+      "created_at": "YYYY-MM-DDTHH:MM"
+    }
+  ],
+  "findings": [
+    {
+      "text": "<находка вне тикета>",
+      "screenshot": ".qa/screenshots/<file>.png",
+      "status": "reported | ticket-created | skipped"
+    }
+  ]
+}

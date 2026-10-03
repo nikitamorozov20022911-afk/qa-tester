@@ -1,0 +1,16 @@
+{
+  "name": "moe-qa",
+  "owner": {
+    "name": "Nikita Morozov"
+  },
+  "metadata": {
+    "description": "Плагины Nikita Morozov для QA-тестирования проектов в mifrat."
+  },
+  "plugins": [
+    {
+      "name": "qa-tester",
+      "source": "./qa-tester",
+      "description": "QA-тестировщик для проектов в mifrat: тикеты из «בבדיקות», реджекты, баги, сводка, автотесты и регресс."
+    }
+  ]
+}
