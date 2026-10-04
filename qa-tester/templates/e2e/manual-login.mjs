@@ -8,6 +8,11 @@ import path from 'node:path';
 import readline from 'node:readline/promises';
 import { fileURLToPath } from 'node:url';
 
+if (process.versions.node.split('.')[0] !== '22') {
+  console.error(`qa-tester: нужен Node 22, сейчас ${process.version}. Запусти так: ../bin/with-node22 npm run qa-login:manual -- <id> (или nvm use 22).`);
+  process.exit(1);
+}
+
 const here = path.dirname(fileURLToPath(import.meta.url));
 const cfg = JSON.parse(fs.readFileSync(path.join(here, 'qa.config.json'), 'utf8'));
 const accounts = JSON.parse(fs.readFileSync(path.join(here, 'accounts.json'), 'utf8'));

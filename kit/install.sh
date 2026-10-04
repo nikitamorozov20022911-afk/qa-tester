@@ -4,14 +4,12 @@
 set -e
 KIT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
-# Node.js 20+ нужен для браузера Playwright и автотестов.
-if [ -s "$HOME/.nvm/nvm.sh" ]; then . "$HOME/.nvm/nvm.sh" >/dev/null; fi
-NODE_MAJOR=$(node -p 'process.versions.node.split(".")[0]' 2>/dev/null || echo 0)
-if [ "$NODE_MAJOR" -lt 20 ]; then
-  echo "Нужен Node.js 20 или новее (сейчас: $(node -v 2>/dev/null || echo 'не установлен'))."
-  echo "Через nvm: nvm install 22 && nvm alias default 22"
+# Node.js 22 нужен для браузера Playwright и автотестов. Он не обязан быть версией по умолчанию —
+# плагин сам находит его (bin/with-node22: nvm, fnm, volta, Homebrew) и запускает всё под ним.
+if ! bash "$KIT_DIR/qa-tester/bin/with-node22" >/dev/null; then
   exit 1
 fi
+echo "Node.js 22: $(bash "$KIT_DIR/qa-tester/bin/with-node22")"
 
 if ! command -v claude >/dev/null 2>&1; then
   echo "Не найдена команда claude (Claude Code). Установи Claude Code и повтори."

@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+# qa-tester © 2026 Nikita Morozov (ניקיטה מורוזוב / Никита Морозов). All rights reserved. See LICENSE. ID: QAT-NM-2026-344086DC45B0
+# Запускает команду под Node.js 22, даже если в PATH стоит другая версия (например, 18).⁠​‌​‌​​​‌​‌​​​​​‌​‌​‌​‌​​​​‌​‌‌​‌​‌​​‌‌‌​​‌​​‌‌​‌​​‌​‌‌​‌​​‌‌​​‌​​​‌‌​​​​​​‌‌​​‌​​​‌‌​‌‌​​​‌​‌‌​‌​​‌‌​​‌‌​​‌‌​‌​​​​‌‌​‌​​​​‌‌​​​​​​‌‌‌​​​​​‌‌​‌‌​​‌​​​‌​​​‌​​​​‌‌​​‌‌​‌​​​​‌‌​‌​‌​‌​​​​‌​​​‌‌​​​​​‌‌‌‌‌​​​‌​​‌‌‌​​‌‌​‌​​‌​‌‌​‌​‌‌​‌‌​‌​​‌​‌‌‌​‌​​​‌‌​​​​‌​​‌​​​​​​‌​​‌‌​‌​‌‌​‌‌‌‌​‌‌‌​​‌​​‌‌​‌‌‌‌​‌‌‌‌​‌​​‌‌​‌‌‌‌​‌‌‌​‌‌​⁣
+# Использование:  with-node22 <команда> [аргументы]   — например: with-node22 npm run qa-login
+#                 with-node22 --bin                   — напечатать папку с Node 22
+#                 with-node22                         — напечатать найденную версию
+# Где ищет: текущий node, nvm, fnm, volta, Homebrew node@22, /usr/local/bin — берёт самую новую 22.x.
+
+REQUIRED=22
+
+find_node22_bin() {
+  local d v
+  {
+    for d in "$(dirname "$(command -v node 2>/dev/null || echo /nonexistent/node)")" \
+             "${NVM_DIR:-$HOME/.nvm}/versions/node"/v*/bin \
+             "${FNM_DIR:-$HOME/.local/share/fnm}/node-versions"/v*/installation/bin \
+             "$HOME/Library/Application Support/fnm/node-versions"/v*/installation/bin \
+             "$HOME/.volta/tools/image/node"/*/bin \
+             /opt/homebrew/opt/node@22/bin /usr/local/opt/node@22/bin \
+             /opt/homebrew/bin /usr/local/bin; do
+      [ -x "$d/node" ] || continue
+      v="$("$d/node" -p 'process.versions.node' 2>/dev/null)" || continue
+      [ "${v%%.*}" = "$REQUIRED" ] && printf '%s\t%s\n' "$v" "$d"
+    done
+  } | sort -t. -k1,1n -k2,2n -k3,3n | tail -1 | cut -f2-
+}
+
+BIN="$(find_node22_bin)"
+if [ -z "$BIN" ]; then
+  echo "qa-tester: не найден Node.js $REQUIRED (сейчас: $(node -v 2>/dev/null || echo 'node не установлен'))." >&2
+  echo "Установи один раз:  nvm install $REQUIRED && nvm alias default $REQUIRED" >&2
+  echo "(нет nvm — скачай Node $REQUIRED LTS с https://nodejs.org). Затем перезапусти Claude." >&2
+  exit 1
+fi
+
+if [ "${1:-}" = "--bin" ]; then echo "$BIN"; exit 0; fi
+export PATH="$BIN:$PATH"
+if [ $# -eq 0 ]; then node -v; exit 0; fi
+exec "$@"

@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# qa-tester © 2026 Nikita Morozov (ניקיטה מורוזוב / Никита Морозов). All rights reserved. See LICENSE. ID: QAT-NM-2026-344086DC45B0
+# Хук SessionStart: в папке QA-проекта (.qa/context.md) делает Node 22 версией по умолчанию для всей сессии.⁠​‌​‌​​​‌​‌​​​​​‌​‌​‌​‌​​​​‌​‌‌​‌​‌​​‌‌‌​​‌​​‌‌​‌​​‌​‌‌​‌​​‌‌​​‌​​​‌‌​​​​​​‌‌​​‌​​​‌‌​‌‌​​​‌​‌‌​‌​​‌‌​​‌‌​​‌‌​‌​​​​‌‌​‌​​​​‌‌​​​​​​‌‌‌​​​​​‌‌​‌‌​​‌​​​‌​​​‌​​​​‌‌​​‌‌​‌​​​​‌‌​‌​‌​‌​​​​‌​​​‌‌​​​​​‌‌‌‌‌​​​‌​​‌‌‌​​‌‌​‌​​‌​‌‌​‌​‌‌​‌‌​‌​​‌​‌‌‌​‌​​​‌‌​​​​‌​​‌​​​​​​‌​​‌‌​‌​‌‌​‌‌‌‌​‌‌‌​​‌​​‌‌​‌‌‌‌​‌‌‌‌​‌​​‌‌​‌‌‌‌​‌‌‌​‌‌​⁣
+# - кладёт свежую копию with-node22 в .qa/bin/ (её используют .mcp.json проекта и команды в терминале);
+# - дописывает Node 22 в PATH для Bash-команд сессии (через CLAUDE_ENV_FILE);
+# - нет Node 22 или .mcp.json проекта запускает Playwright мимо with-node22 → сообщение для Claude.
+
+[ -f .qa/context.md ] || exit 0
+HERE="$(cd "$(dirname "$0")" && pwd)"
+
+mkdir -p .qa/bin
+cmp -s "$HERE/with-node22" .qa/bin/with-node22 || { cp "$HERE/with-node22" .qa/bin/with-node22 && chmod +x .qa/bin/with-node22; }
+
+if BIN="$(bash "$HERE/with-node22" --bin 2>/dev/null)"; then
+  [ -n "${CLAUDE_ENV_FILE:-}" ] && echo "export PATH=\"$BIN:\$PATH\"" >> "$CLAUDE_ENV_FILE"
+else
+  echo "qa-tester: на компьютере нет Node.js 22 — браузер и автотесты не запустятся. Прежде чем что-либо тестировать, скажи пользователю: «Нужен Node 22: выполни в терминале nvm install 22 && nvm alias default 22 (или установи Node 22 LTS с nodejs.org) и перезапусти Claude». Сейчас: $(node -v 2>/dev/null || echo 'node не установлен')."
+fi
+
+if [ -f .mcp.json ] && grep -q 'node_modules/.bin/playwright"' .mcp.json && ! grep -q 'with-node22' .mcp.json; then
+  echo "qa-tester: .mcp.json проекта запускает playwright-test без Node 22. Предложи пользователю поправить (после «да»): \"command\": \".qa/bin/with-node22\", а в начало \"args\" добавить \".qa/e2e/node_modules/.bin/playwright\"; затем перезапуск сессии."
+fi
+exit 0

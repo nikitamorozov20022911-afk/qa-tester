@@ -8,6 +8,11 @@ description: Подготовка нового проекта к QA — сбор
 
 Работаешь в папке проекта (текущая директория). Всё складывается в `.qa/`.
 
+## 0. Node.js 22 — обязательно
+Плагин (браузер Playwright, автотесты, playwright-cli) работает только на **Node 22**. Первым делом: `"${CLAUDE_PLUGIN_ROOT}/bin/with-node22"` — печатает найденную версию.
+- Ошибка «не найден Node.js 22» → остановись и скажи пользователю: `nvm install 22 && nvm alias default 22` (или Node 22 LTS с nodejs.org), затем перезапуск Claude. Без Node 22 онбординг не продолжать.
+- `node -v` в PATH другой (например, 18) — не страшно: все команды ниже идут через `with-node22`, он сам подставляет Node 22.
+
 ## 1. Данные от пользователя
 Спроси одним сообщением (что уже известно — не спрашивай):
 1. Ссылка на сайт для тестов и что это (staging / prod).
@@ -35,7 +40,9 @@ description: Подготовка нового проекта к QA — сбор
 - `e2e/` → `.qa/e2e/`;
 - `gitignore` → `.qa/.gitignore`;
 - `lessons.md` → `.qa/lessons.md` (уроки проекта, пишутся скиллом `qa-learn`);
-- `client-requests.md` → `.qa/client-requests.md` (реестр просьб клиента, скилл `qa-client`).
+- `client-requests.md` → `.qa/client-requests.md` (реестр просьб клиента, скилл `qa-client`);
+- `${CLAUDE_PLUGIN_ROOT}/bin/with-node22` → `.qa/bin/with-node22` (исполняемый; запуск под Node 22 для .mcp.json проекта и команд в терминале).
+В `.qa/e2e/` должен попасть и `.nvmrc` (22) — скрытый файл, не пропусти при копировании.
 Если нет `~/.qa-tester/lessons.md` — создай его по тому же шаблону (общие уроки для всех проектов).
 Если есть `~/.qa-tester/config.json` — добавь абсолютный путь этой папки проекта в его список `"projects"` (если ещё нет): туда `/qa-improve` раздаёт обновления плагина.
 Создай папки: `knowledge/`, `research/`, `screenshots/`, `tests/`, `auth/`, `audits/`, `e2e/tests/`.
@@ -49,17 +56,17 @@ description: Подготовка нового проекта к QA — сбор
 ## 4. Автотесты: установка и официальные агенты Playwright
 1. Зависимости (без паролей, можно делать самому):
 ```bash
-cd .qa/e2e && npm install && npx playwright install chromium webkit && npx playwright-cli install-browser webkit
+cd .qa/e2e && ../bin/with-node22 npm install && ../bin/with-node22 npx playwright install chromium webkit && ../bin/with-node22 npx playwright-cli install-browser webkit
 ```
    (chromium — десктоп и Android, webkit — iPhone/Safari; последняя команда — WebKit для экономного браузера агентов, скилл `qa-browser-cli`).
 2. Официальные агенты Playwright (planner / generator / healer) — из **корня папки проекта**:
 ```bash
-.qa/e2e/node_modules/.bin/playwright init-agents --loop=claude --config .qa/e2e/playwright.config.ts --project tests
+.qa/bin/with-node22 .qa/e2e/node_modules/.bin/playwright init-agents --loop=claude --config .qa/e2e/playwright.config.ts --project tests
 ```
    Создаст `.claude/agents/playwright-test-{planner,generator,healer}.md`, `.qa/e2e/tests/seed.spec.ts` (если нет), `specs/README.md` и `.mcp.json`.
 3. Поправь после установки:
-   - `.mcp.json` проекта: сервер `playwright-test` должен запускать **локальный** Playwright с нашим конфигом:
-     `"command": ".qa/e2e/node_modules/.bin/playwright", "args": ["run-test-mcp-server", "--config", ".qa/e2e/playwright.config.ts"]` (остальные серверы в файле не трогать);
+   - `.mcp.json` проекта: сервер `playwright-test` должен запускать **локальный** Playwright с нашим конфигом и **под Node 22**:
+     `"command": ".qa/bin/with-node22", "args": [".qa/e2e/node_modules/.bin/playwright", "run-test-mcp-server", "--config", ".qa/e2e/playwright.config.ts"]` (остальные серверы в файле не трогать);
    - перенеси `specs/` из корня в `.qa/e2e/specs/` (там уже есть README с форматом планов) и удали пустую `specs/` в корне;
    - для каждой роли с сессией создай `.qa/e2e/tests/seed.<role>.spec.ts` — как `seed.spec.ts`, плюс `test.use({ storageState: '../auth/<role>.json' })`.
 4. Скажи пользователю: «.mcp.json проекта изменён — перезапусти сессию Claude и одобри сервер playwright-test».
@@ -70,10 +77,10 @@ cd .qa/e2e && npm install && npx playwright install chromium webkit && npx playw
 **Вход по паролю — `qa-login`:**
 1. Открой страницу входа, найди селекторы полей email/пароль, кнопки и признак успешного входа. Пароли не вводи.
 2. Заполни функцию `login` в `.qa/e2e/auth.setup.ts` (путь входа берётся из `qa.config.json`).
-3. Пользователь заполняет `.qa/accounts.env` по примеру и запускает: `cd .qa/e2e && npm run qa-login`.
+3. Пользователь заполняет `.qa/accounts.env` по примеру и запускает: `cd .qa/e2e && ../bin/with-node22 npm run qa-login`.
 
 **Вход по SMS-коду, Google, 2FA — ручной вход:**
-Пользователь запускает `cd .qa/e2e && npm run qa-login:manual -- <id>`: откроется окно браузера, он входит сам, жмёт Enter в терминале — сессия сохранится в `.qa/auth/<id>.json`.
+Пользователь запускает `cd .qa/e2e && ../bin/with-node22 npm run qa-login:manual -- <id>`: откроется окно браузера, он входит сам, жмёт Enter в терминале — сессия сохранится в `.qa/auth/<id>.json`.
 
 Сессии истекли (агент видит редирект на вход) → попроси пользователя повторить нужную команду.
 
@@ -81,8 +88,8 @@ cd .qa/e2e && npm install && npx playwright install chromium webkit && npx playw
 Основной браузер плагина (`playwright`) — с постоянным профилем `.qa/browser-profile`: туда пользователь один раз логинится в mifrat.
 Для работы под несколькими ролями без перелогина — добавь в `.mcp.json` проекта сервер на роль:
 ```json
-{ "mcpServers": { "pw-<role>": { "command": "npx",
-  "args": ["-y", "@playwright/mcp@latest", "--isolated", "--storage-state", ".qa/auth/<role>.json", "--output-dir", ".qa/screenshots"] } } }
+{ "mcpServers": { "pw-<role>": { "command": ".qa/bin/with-node22",
+  "args": ["npx", "-y", "@playwright/mcp@latest", "--isolated", "--storage-state", ".qa/auth/<role>.json", "--output-dir", ".qa/screenshots"] } } }
 ```
 После изменения `.mcp.json` нужен перезапуск сессии Claude.
 

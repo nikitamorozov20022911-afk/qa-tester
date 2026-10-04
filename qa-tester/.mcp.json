@@ -1,8 +1,10 @@
 {
   "mcpServers": {
     "playwright": {
-      "command": "npx",
+      "command": "bash",
       "args": [
+        "${CLAUDE_PLUGIN_ROOT}/bin/with-node22",
+        "npx",
         "-y",
         "@playwright/mcp@latest",
         "--user-data-dir",

@@ -68,9 +68,11 @@
 
 | Команда | Зачем |
 |---|---|
-| `cd .qa/e2e && npm run qa-login` | Вход под тестовыми аккаунтами по паролю (пароли — в `.qa/accounts.env`). |
-| `cd .qa/e2e && npm run qa-login:manual -- <аккаунт>` | Ручной вход (SMS, Google, 2FA): откроется окно — войдёшь сам, Enter. |
-| `cd .qa/e2e && npm test` | Все автотесты вручную (обычно не нужно — есть `/qa-regress`). |
+| `cd .qa/e2e && ../bin/with-node22 npm run qa-login` | Вход под тестовыми аккаунтами по паролю (пароли — в `.qa/accounts.env`). |
+| `cd .qa/e2e && ../bin/with-node22 npm run qa-login:manual -- <аккаунт>` | Ручной вход (SMS, Google, 2FA): откроется окно — войдёшь сам, Enter. |
+| `cd .qa/e2e && ../bin/with-node22 npm test` | Все автотесты вручную (обычно не нужно — есть `/qa-regress`). |
+
+`../bin/with-node22` запускает команду под Node 22, даже если в терминале стоит другая версия (18, 20…). Нет Node 22 — `nvm install 22 && nvm alias default 22`.
 
 ## Устройства в автотестах
 

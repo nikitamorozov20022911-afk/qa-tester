@@ -3,6 +3,12 @@ import { defineConfig, devices } from '@playwright/test';
 import * as fs from 'fs';
 import * as path from 'path';
 
+// Автотесты рассчитаны на Node 22 — на другой версии остановиться сразу с понятной подсказкой.
+if (process.versions.node.split('.')[0] !== '22') {
+  console.error(`qa-tester: нужен Node 22, сейчас ${process.version}. Запусти через ../bin/with-node22, например: ../bin/with-node22 npm test (или nvm use 22).`);
+  process.exit(1);
+}
+
 // Адрес тестируемого сайта — заполняется при /qa-onboard.
 const QA = JSON.parse(fs.readFileSync(path.join(__dirname, 'qa.config.json'), 'utf8'));
 const BASE_URL = process.env.QA_BASE_URL || QA.baseUrl;
