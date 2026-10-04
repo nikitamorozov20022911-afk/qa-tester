@@ -1,6 +1,6 @@
 ---
 description: Регресс — прогнать автотесты Playwright и разобрать падения
-argument-hint: "[все | фича <name> | @prod-safe]"
+argument-hint: "[все | фича <name> | #hash тикета | @prod-safe | без окон]"
 ---
 <!-- qa-tester © 2026 Nikita Morozov (ניקיטה מורוזוב / Никита Морозов). All rights reserved. See LICENSE. ID: QAT-NM-2026-344086DC45B0 -->
 
