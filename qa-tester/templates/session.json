@@ -9,7 +9,7 @@
       "title": "<заголовок>",
       "type": "bug | task | feature | improvement",
       "action": "pass | reject | status-todo | blocked | waiting-user | new-bug | new-task",
-      "column": "הושלם | לביצוע | בבדיקות",
+      "column": "הושלם | לביצוע | בבדיקות | ждёт-подтверждения",
       "notes": "",
       "at": "YYYY-MM-DDTHH:MM"
     }

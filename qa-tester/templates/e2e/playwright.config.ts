@@ -26,8 +26,8 @@ export default defineConfig({
   use: {
     baseURL: BASE_URL,
     locale: 'he-IL',
-    // Окна видны; без окон — npm run test:headless (или QA_HEADLESS=1).
-    headless: process.env.QA_HEADLESS === '1',
+    // Без окон, в фоне; посмотреть глазами — npm run test:headed (или QA_HEADED=1).
+    headless: process.env.QA_HEADED !== '1',
     screenshot: 'only-on-failure',
     // Трейс пишется только на повторе упавшего теста, а не для каждого прошедшего.
     trace: 'on-first-retry',

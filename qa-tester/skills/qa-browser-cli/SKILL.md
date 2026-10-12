@@ -23,7 +23,7 @@ cd .qa && e2e/node_modules/.bin/playwright-cli -s=<сессия> <команда
 | десктоп | `open <url>` и `resize 1440 900` |
 | iPhone (Safari) | `open <url> --browser webkit --device "iPhone 13 Mini"` |
 | Android (Chrome) | `open <url> --device "Pixel 7"` |
-Видимое окно (если пользователь хочет смотреть) — добавь `--headed`.
+По умолчанию — без окна (в фоне, не мешает пользователю работать). Видимое окно — только если пользователь сам просит посмотреть: добавь `--headed`.
 
 **Роль:** после `open` — `state-load auth/<role>.json` (путь от папки `.qa`), затем `goto <url>`. Гость — без state-load.
 

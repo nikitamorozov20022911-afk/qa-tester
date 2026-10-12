@@ -1,7 +1,7 @@
 <!-- qa-tester © 2026 Nikita Morozov (ניקיטה מורוזוב / Никита Морозов). All rights reserved. See LICENSE. ID: QAT-NM-2026-344086DC45B0 -->
 # qa-tester
 
-QA-тестировщик для Claude Code: проверяет тикеты из колонки «בבדיקות» в mifrat, выносит вердикт, пишет реджекты и баги, делает ежедневную сводку, хранит тест-кейсы и превращает их в автотесты Playwright.
+QA-тестировщик для Claude Code: проверяет тикеты из колонки «בבדיקות» в mifrat, выносит вердикт, пишет реджекты и баги, хранит тест-кейсы и превращает их в автотесты Playwright.
 
 © 2026 Nikita Morozov · ניקיטה מורוזוב · Никита Морозов. All rights reserved. См. [LICENSE](LICENSE).
 
@@ -46,7 +46,7 @@ bash ~/qa-tester-kit/install.sh
 
 ## Что внутри
 
-- **Скиллы:** `qa-session` (оркестратор), `qa-ticket-analysis`, `qa-test-design`, `qa-evidence`, `qa-verdict`, `mifrat-board`, `qa-testcases`, `qa-report`, `qa-context`, `qa-handoff`, `qa-onboard`.
+- **Скиллы:** `qa-session` (оркестратор), `qa-ticket-analysis`, `qa-test-design`, `qa-evidence`, `qa-verdict`, `mifrat-board-mcp` (основной, через API), `mifrat-board` (запасной, через браузер), `qa-testcases`, `qa-report`, `qa-context`, `qa-handoff`, `qa-onboard`.
 - **Агенты:** `ticket-researcher`, `qa-tester`, `bug-verifier`, `onboard-extractor`, `onboard-consolidator`, `onboard-verifier`, `autotest-writer`, `regression-triager`.
 - **Официальные агенты Playwright** (ставятся в проект при `/qa-onboard`): planner, generator — пишет автотесты, проверяя шаги в живом браузере; healer — чинит тесты только после диагностики «ошибка теста».
 - **MCP:** Playwright (отдельный браузер с профилем `.qa/browser-profile`, скриншоты в `.qa/screenshots`).
