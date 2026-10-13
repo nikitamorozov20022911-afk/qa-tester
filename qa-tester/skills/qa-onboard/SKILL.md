@@ -80,7 +80,7 @@ cd .qa/e2e && ../bin/with-node22 npm install && ../bin/with-node22 npx playwrigh
 3. Пользователь заполняет `.qa/accounts.env` по примеру и запускает: `cd .qa/e2e && ../bin/with-node22 npm run qa-login`.
 
 **Вход по SMS-коду, Google, 2FA — ручной вход:**
-Пользователь запускает `cd .qa/e2e && ../bin/with-node22 npm run qa-login:manual -- <id>`: откроется окно браузера, он входит сам, жмёт Enter в терминале — сессия сохранится в `.qa/auth/<id>.json`.
+Пользователь запускает `cd .qa/e2e && ../bin/with-node22 npm run qa-login:manual -- <id>`: откроется окно браузера, он входит сам — вход заметится автоматически (или Enter в терминале, что раньше), сессия сохранится в `.qa/auth/<id>.json`.
 
 Сессии истекли (агент видит редирект на вход) → попроси пользователя повторить нужную команду.
 
