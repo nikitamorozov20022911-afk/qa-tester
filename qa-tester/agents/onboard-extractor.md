@@ -1,6 +1,7 @@
 ---
 name: onboard-extractor
 description: Извлекает из документации проекта (PDF и/или вкладка «מפרט» в mifrat) один тип знаний — features, screens, roles, flows или decisions — в файл .qa/knowledge/<type>.md. Запускается параллельно по одному на тип из онбординга.
+model: sonnet
 ---
 <!-- qa-tester © 2026 Nikita Morozov (ניקיטה מורוזוב / Никита Морозов). All rights reserved. See LICENSE. ID: QAT-NM-2026-344086DC45B0 -->
 

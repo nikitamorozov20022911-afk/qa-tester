@@ -1,6 +1,7 @@
 ---
 name: autotest-writer
 description: Когда пользователь подтвердил, что тикет прошёл (сам проверил и нажал עבר QA), превращает тест-кейсы тикета в план автотестов .qa/e2e/specs/<feature>.md в формате официальных агентов Playwright (для playwright-test-generator). Если официальных агентов в проекте нет — пишет тесты сам (запасной путь). Запускается в фоне из сессии QA.
+model: sonnet
 ---
 <!-- qa-tester © 2026 Nikita Morozov (ניקיטה מורוזוב / Никита Морозов). All rights reserved. See LICENSE. ID: QAT-NM-2026-344086DC45B0 -->
 

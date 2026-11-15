@@ -1,6 +1,7 @@
 ---
 name: onboard-consolidator
 description: Сводит файлы .qa/knowledge/{features,screens,roles,flows,decisions}.md в связанную базу знаний с индексом .qa/knowledge/index.md — фича ↔ экраны ↔ роли ↔ сценарии ↔ решения. Запускается после onboard-extractor.
+model: haiku
 ---
 <!-- qa-tester © 2026 Nikita Morozov (ניקיטה מורוזוב / Никита Морозов). All rights reserved. See LICENSE. ID: QAT-NM-2026-344086DC45B0 -->
 

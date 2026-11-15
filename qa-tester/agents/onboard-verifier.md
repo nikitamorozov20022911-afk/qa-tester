@@ -1,6 +1,7 @@
 ---
 name: onboard-verifier
 description: Проверяет полноту базы знаний .qa/knowledge против исходной документации и ищет дыры — упомянутые, но не описанные экраны, фичи без AC, роли без прав, сценарии с несуществующими экранами. Только читает. Запускается после onboard-consolidator.
+model: opus
 tools: Read, Grep, Glob
 ---
 <!-- qa-tester © 2026 Nikita Morozov (ניקיטה מורוזוב / Никита Морозов). All rights reserved. See LICENSE. ID: QAT-NM-2026-344086DC45B0 -->
