@@ -1,6 +1,7 @@
 ---
 name: ticket-researcher
 description: Собирает всё по одному тикету mifrat до теста — поля тикета, комментарии, реджекты, вложения, связанные тикеты, нужные куски документации — и пишет сжатый бриф в .qa/research/<hash>.md. Запускается из сессии QA, можно в фоне для следующего тикета.
+model: sonnet
 ---
 <!-- qa-tester © 2026 Nikita Morozov (ניקיטה מורוזוב / Никита Морозов). All rights reserved. See LICENSE. ID: QAT-NM-2026-344086DC45B0 -->
 

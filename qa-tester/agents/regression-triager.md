@@ -1,6 +1,7 @@
 ---
 name: regression-triager
 description: Диагностика упавших автотестов регресса — по каждому падению класс (баг продукта / ошибка теста / окружение / неясно), уверенность и доказательства. Ничего не меняет и не чинит. Запускается из /qa-regress.
+model: sonnet
 ---
 <!-- qa-tester © 2026 Nikita Morozov (ניקיטה מורוזוב / Никита Морозов). All rights reserved. See LICENSE. ID: QAT-NM-2026-344086DC45B0 -->
 
