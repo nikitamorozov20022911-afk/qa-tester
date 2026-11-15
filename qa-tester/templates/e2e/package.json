@@ -10,6 +10,7 @@
   "scripts": {
     "qa-login": "playwright test --project=setup",
     "qa-login:manual": "node manual-login.mjs",
+    "qa-signup": "node signup.mjs",
     "test": "playwright test --project tests --project iphone --project android --project data",
     "test:safe": "playwright test --project tests --project iphone --project android",
     "test:data": "playwright test --project data",

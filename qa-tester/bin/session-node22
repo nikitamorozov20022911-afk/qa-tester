@@ -10,6 +10,12 @@ HERE="$(cd "$(dirname "$0")" && pwd)"
 
 mkdir -p .qa/bin
 cmp -s "$HERE/with-node22" .qa/bin/with-node22 || { cp "$HERE/with-node22" .qa/bin/with-node22 && chmod +x .qa/bin/with-node22; }
+# Скрипты временной почты и полуавтоматической регистрации — свежая копия в .qa/e2e (если проект уже настроен).
+if [ -d .qa/e2e ]; then
+  for f in tempmail.mjs signup.mjs; do
+    cmp -s "$HERE/../templates/e2e/$f" ".qa/e2e/$f" || cp "$HERE/../templates/e2e/$f" ".qa/e2e/$f" 2>/dev/null
+  done
+fi
 
 if BIN="$(bash "$HERE/with-node22" --bin 2>/dev/null)"; then
   [ -n "${CLAUDE_ENV_FILE:-}" ] && echo "export PATH=\"$BIN:\$PATH\"" >> "$CLAUDE_ENV_FILE"
