@@ -1,0 +1,3 @@
+{"recorded":"2026-10-03","customer":"test","url":"/customers/a30f4767-3f86-4a49-a441-ecfd2faad6d0",
+ "fields":{"name":"test","tax_id":"32134455","contact_email":"wocer17991@amupx.com","delivery_address":"","contact_name":"test","contact_phone":"0531231235","sales_rep_id":"","active":true},
+ "note":"Исходное состояние ДО временного адреса (вариант Б). Вернуть delivery_address = \"\" (пусто)."}

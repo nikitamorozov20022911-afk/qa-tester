@@ -1,0 +1,1167 @@
+{
+ "#4aa498": {
+  "class": "qa-passed",
+  "feature": "auth-phone-otp",
+  "tests": [
+   "tests/auth-phone-otp/prefix-972-left-login.spec.ts",
+   "tests/auth-phone-otp/prefix-972-left-signup.spec.ts",
+   "tests/auth-phone-otp/phone-typed-format.spec.ts",
+   "tests/auth-phone-otp/phone-pasted-format.spec.ts"
+  ],
+  "reason": "Баг «+972 справа» исправлен; подтверждён пользователем «прошли» 2026-10-28. План: .qa/e2e/specs/auth-phone-otp.md 1.1–1.4. 1.1, 1.2, 1.4 — генератор; 1.3 (phone-typed-format) написан вручную 2026-10-28, не проверен на живой странице — проверить при первом /qa-regress",
+  "date": "2026-10-28",
+  "source": "qa"
+ },
+ "#5fb42e": {
+  "class": "qa-passed",
+  "feature": "auth-phone-otp",
+  "tests": [
+   "tests/auth-phone-otp/otp-typed-ltr.spec.ts",
+   "tests/auth-phone-otp/otp-backspace.spec.ts",
+   "tests/auth-phone-otp/otp-paste-order.spec.ts",
+   "tests/auth-phone-otp/otp-autosubmit-error.spec.ts",
+   "tests/auth-phone-otp/otp-ltr-signup.spec.ts"
+  ],
+  "reason": "Баг «OTP справа налево» исправлен; подтверждён пользователем «прошли» 2026-10-28. План: .qa/e2e/specs/auth-phone-otp.md 1.5–1.9 — все 5 написаны вручную 2026-10-28 (генератор заблокирован на «שליחת קוד»), не проверены на живой странице — проверить при первом /qa-regress",
+  "date": "2026-10-28",
+  "source": "qa"
+ },
+ "#46db57": {
+  "class": "qa-passed",
+  "feature": "location-map",
+  "tests": [
+   "tests/location-map/location-sharing-toggle.spec.ts",
+   "tests/location-map/nearby-mutual-visibility.spec.ts",
+   "tests/location-map/nearby-preferences.spec.ts",
+   "tests/location-map/nearby-age-mismatch-user2.spec.ts",
+   "tests/location-map/nearby-guest-no-data.spec.ts"
+  ],
+  "reason": "Подтверждён пользователем «прошли» 2026-10-28. План: .qa/e2e/specs/location-map.md 1.2–1.6; кейсы .qa/tests/location-map/LOC-02…06. 1.2 — генератор (файл ещё не создан); 1.3–1.6 написаны вручную (несколько ролей), не проверены на живой странице — проверить при первом /qa-regress. Задержка у других — реджект #0f19c0, не автоматизировано.",
+  "date": "2026-10-28",
+  "source": "qa"
+ },
+ "#2a31ff": {
+  "class": "qa-passed",
+  "feature": "location-map",
+  "tests": [
+   "tests/location-map/location-off-explanation.spec.ts",
+   "tests/location-map/location-sharing-toggle.spec.ts",
+   "tests/location-map/nearby-mutual-visibility.spec.ts",
+   "tests/location-map/nearby-preferences.spec.ts",
+   "tests/location-map/nearby-age-mismatch-user2.spec.ts",
+   "tests/location-map/map-pin-opens-profile.spec.ts",
+   "tests/location-map/map-like.spec.ts"
+  ],
+  "reason": "Подтверждён пользователем «прошли» 2026-10-28. План: .qa/e2e/specs/location-map.md 1.1–1.5, 1.7, 1.8; кейсы LOC-01…05, 07, 08. 1.1–1.2 — генератор (файлы ещё не созданы); остальные написаны вручную (несколько ролей), не проверены на живой странице. Figma/задержка — #0f19c0, индикатор — #5f64d4.",
+  "date": "2026-10-28",
+  "source": "qa"
+ },
+ "tickets": [
+  {
+   "hash": "#5f64d4",
+   "title": "רכיב חיווי שיתוף מיקום פעיל",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-29",
+   "tests": [
+    "tests/location-map/indicator-hidden-when-off.spec.ts",
+    "tests/location-map/indicator-visible-when-on.spec.ts",
+    "tests/location-map/indicator-figma-look.spec.ts",
+    "tests/location-map/indicator-off-from-datenow-sheet.spec.ts",
+    "tests/location-map/indicator-off-observer.spec.ts"
+   ],
+   "feature": "location-map",
+   "reason": "Подтверждён пользователем «עבר QA» 2026-10-29. План: .qa/e2e/specs/location-map.md 2.1–2.5; кейсы .qa/tests/location-map/IND-01…05. 2.1–2.4 написаны вручную 2026-10-29 (запасной путь — MCP-генератор не нашёл seed), селекторы сверены на живой странице через playwright-cli (iPhone, free), прогоном не проверены; 2.5 написан вручную (2 роли), не проверен прогоном. Проверить при первом /qa-regress."
+  },
+  {
+   "hash": "#b76c3b",
+   "title": "מנגנון יצירת התאמה הדדית",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-29",
+   "tests": [
+    "tests/match-mutual/repeat-like-no-duplicate-match.spec.ts",
+    "tests/match-mutual/guest-api-401.spec.ts",
+    "tests/match-mutual/self-like-rejected.spec.ts",
+    "tests/match-mutual/message-without-match-403.spec.ts",
+    "tests/match-mutual/spoofed-sender-403.spec.ts",
+    "tests/match-mutual/chat-after-match.spec.ts",
+    "tests/match-mutual/block-403-unblock-restores.spec.ts",
+    "tests/match-mutual/deleted-account-match-403.spec.ts"
+   ],
+   "feature": "match-mutual",
+   "reason": "Подтверждён пользователем «עבר QA» 2026-10-29. План: .qa/e2e/specs/match-mutual.md 1.1–1.8; кейсы .qa/tests/match-mutual/MATCH-01…08. Все написаны вручную (API с токеном / 2 роли), не проверены прогоном. Новый мэтч, односторонний like, super_like — не автоматизированы (одноразовое/квота)."
+  },
+  {
+   "hash": "#1ff0f4",
+   "title": "מסך יצירת פוסט",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-04",
+   "tests": [
+    "tests/post-create/close-back-to-feed.spec.ts",
+    "tests/post-create/edit-own-post.spec.ts",
+    "tests/post-create/empty-post-blocked.spec.ts",
+    "tests/post-create/foreign-post-direct-edit-blocked.spec.ts",
+    "tests/post-create/foreign-post-user4-no-edit.spec.ts",
+    "tests/post-create/open-form.spec.ts",
+    "tests/post-create/photo-add-remove.spec.ts",
+    "tests/post-create/publish-text-spinner.spec.ts"
+   ]
+  },
+  {
+   "hash": "#f71f8d",
+   "title": "מסך צפייה בסיפור",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-04",
+   "tests": [
+    "tests/stories-viewer/viewer-data.spec.ts",
+    "tests/stories-viewer/viewer-readonly.spec.ts"
+   ]
+  },
+  {
+   "hash": "#ab0123",
+   "title": "משתמשים שהיו בקרבת מקום",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-04",
+   "tests": [
+    "tests/nearby/card-like.spec.ts",
+    "tests/nearby/card-opens-profile.spec.ts",
+    "tests/nearby/consent-enable.spec.ts",
+    "tests/nearby/empty-state.spec.ts",
+    "tests/nearby/list-card.spec.ts",
+    "tests/nearby/place-filter.spec.ts",
+    "tests/nearby/places-privacy.spec.ts",
+    "tests/nearby/turn-off-erases.spec.ts",
+    "tests/nearby/were-here-redirect.spec.ts"
+   ]
+  },
+  {
+   "hash": "#67c751",
+   "title": "מסך משתמשים שהיו בקרבת מקום",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-04",
+   "tests": [
+    "tests/nearby/card-like.spec.ts",
+    "tests/nearby/card-opens-profile.spec.ts",
+    "tests/nearby/consent-enable.spec.ts",
+    "tests/nearby/empty-state.spec.ts",
+    "tests/nearby/list-card.spec.ts",
+    "tests/nearby/place-filter.spec.ts",
+    "tests/nearby/places-privacy.spec.ts",
+    "tests/nearby/turn-off-erases.spec.ts",
+    "tests/nearby/were-here-redirect.spec.ts"
+   ]
+  },
+  {
+   "hash": "#ee51bb",
+   "title": "תשתית שמירת היסטוריית מיקום",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-04",
+   "tests": [
+    "tests/nearby/card-like.spec.ts",
+    "tests/nearby/card-opens-profile.spec.ts",
+    "tests/nearby/consent-enable.spec.ts",
+    "tests/nearby/empty-state.spec.ts",
+    "tests/nearby/list-card.spec.ts",
+    "tests/nearby/place-filter.spec.ts",
+    "tests/nearby/places-privacy.spec.ts",
+    "tests/nearby/turn-off-erases.spec.ts",
+    "tests/nearby/were-here-redirect.spec.ts"
+   ]
+  },
+  {
+   "hash": "#7693cb",
+   "title": "מסך התחברות / יצירת חשבון",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-08",
+   "feature": "auth-phone-otp",
+   "tests": [
+    "tests/auth-phone-otp/login-l1-methods-soon.spec.ts",
+    "tests/auth-phone-otp/signup-methods-soon.spec.ts",
+    "tests/auth-phone-otp/phone-invalid-123.spec.ts",
+    "tests/auth-phone-otp/login-unregistered-422-sheet.spec.ts",
+    "tests/auth-phone-otp/send-code-loading.spec.ts",
+    "tests/auth-phone-otp/glow-login-l2.spec.ts",
+    "tests/auth-phone-otp/glow-signup-phone.spec.ts",
+    "tests/auth-phone-otp/glow-otp.spec.ts",
+    "tests/auth-phone-otp/otp-resend-gap-12.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «прошли» (עבר QA) раунд 7, 2026-11-08. План: .qa/e2e/specs/auth-phone-otp.md 2.1–2.9; кейсы .qa/tests/auth-phone-otp/AUTH-SCR-01…07. iPhone, otp/verify перехвачены (номера не тратятся). Файлы ещё не созданы — план для playwright-test-generator (основная сессия); прогон только по /qa-regress. AC 8–9 (реальный вход/новый номер) не автоматизированы."
+  },
+  {
+   "hash": "#a78e63",
+   "title": "אחידות נתוני מגדר ודת לשימוש באדמין ובהגדרות משתמש",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-08",
+   "feature": "admin-users",
+   "tests": [
+    "tests/admin-users/user-card-religion-label.spec.ts",
+    "tests/admin-users/filter-gender-religion-values.spec.ts",
+    "tests/admin-users/invalid-filter-params.spec.ts",
+    "tests/admin-users/dashboard-gender-religion-tiles.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «прошли» (עבר QA) раунд 7, 2026-11-08. План: .qa/e2e/specs/admin-users.md 1.1–1.4; кейсы .qa/tests/admin-users/ADM-GR-01…04. Админка, @desktop, seed tests/seed.admin.spec.ts. Файлы ещё не созданы — план для playwright-test-generator (основная сессия); прогон только по /qa-regress. AC 3 (PDF маппинга) не автоматизируется."
+  },
+  {
+   "hash": "#33347a",
+   "title": "סינון משתמשים לפי מגדר ודת בפאנל ניהול",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-08",
+   "feature": "admin-users",
+   "tests": [
+    "tests/admin-users/filter-reset-x.spec.ts",
+    "tests/admin-users/filter-empty-state-clear.spec.ts",
+    "tests/admin-users/filter-chip-figma.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «прошли» (עבר QA) раунд 7, 2026-11-08. План: .qa/e2e/specs/admin-users.md 2.1–2.3; кейсы .qa/tests/admin-users/ADM-FLT-01…03. Админка, @desktop. Файлы ещё не созданы — план для playwright-test-generator (основная сессия); прогон только по /qa-regress. Пустое состояние зависит от общих данных облака."
+  },
+  {
+   "hash": "#06e5ab",
+   "title": "מסך ניהול דיווחים",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-10",
+   "feature": "admin-reports",
+   "tests": [
+    "tests/admin-reports/tab-switch-skeleton.spec.ts",
+    "tests/admin-reports/tab-back-forward.spec.ts",
+    "tests/admin-reports/qa-error-retry.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «прошли» (עבר QA) раунд 8, 2026-11-10. План: .qa/e2e/specs/admin-reports.md 1.1–1.3; кейсы .qa/tests/admin-reports/ADM-REP-01…03. Админка, @desktop, seed tests/seed.admin.spec.ts; каркас aria-busy ловится удержанием запроса. Файлы ещё не созданы — план для playwright-test-generator (основная сессия); прогон только по /qa-regress. AC 7–9 (необратимые действия) не автоматизированы."
+  },
+  {
+   "hash": "#4ef173",
+   "title": "מסך לוח בקרה אדמין",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-10",
+   "feature": "admin-dashboard",
+   "tests": [
+    "tests/admin-dashboard/range-switch-skeleton.spec.ts",
+    "tests/admin-dashboard/chart-period-skeleton.spec.ts",
+    "tests/admin-dashboard/qa-error-retry.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «прошли» (עבר QA) раунд 8, 2026-11-10. План: .qa/e2e/specs/admin-dashboard.md 1.1–1.3; кейсы .qa/tests/admin-dashboard/ADM-DASH-01…03. Админка, @desktop. Файлы ещё не созданы — план для playwright-test-generator; прогон только по /qa-regress."
+  },
+  {
+   "hash": "#8d91b8",
+   "title": "מסך רשימת התאמות",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-10",
+   "feature": "matches-list",
+   "tests": [
+    "tests/matches-list/rows-preview-time.spec.ts",
+    "tests/matches-list/story-reply-preview.spec.ts",
+    "tests/matches-list/latin-name-rtl.spec.ts",
+    "tests/matches-list/open-chat-back.spec.ts",
+    "tests/matches-list/new-label-cleared.spec.ts",
+    "tests/matches-list/empty-state-new10.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «прошли» (עבר QA) раунд 8, 2026-11-10. План: .qa/e2e/specs/matches-list.md 1.1–1.5, 2.1; кейсы .qa/tests/matches-list/ML-01…06. @iphone; reg1 (вход в вебе сгорел 10.11 — qa-login:manual reg1), new10 (пусто, seed tests/seed.new10.spec.ts). Файлы ещё не созданы — план для playwright-test-generator; 1.5 условный (@data, пропуск без нового мэтча); 1.2 зависит от данных пары. Прогон только по /qa-regress."
+  },
+  {
+   "hash": "#d20b68",
+   "title": "מנוע שאלונים מותאמי קהל",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-10",
+   "feature": "questionnaire",
+   "tests": [
+    "tests/questionnaire/tracks-by-audience.spec.ts",
+    "tests/questionnaire/skip-q03-audience-missing.spec.ts",
+    "tests/questionnaire/question-5-title.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «прошли» (עבר QA) раунд 8, 2026-11-10. План: .qa/e2e/specs/questionnaire.md 1.1–1.2, 2.1–2.2; кейсы .qa/tests/questionnaire/QN-01…04. @iphone. tracks-by-audience (new10/new05, API) и skip-q03-audience-missing (new09, @data, профиль восстанавливается) написаны вручную 2026-11-10, не проверены на живой странице — проверить при первом /qa-regress; question-5-title — план для генератора (seed tests/seed.new05.spec.ts). AC 4/8 — по доказательству программиста."
+  },
+  {
+   "hash": "#a85b92",
+   "title": "מנגנון חשיפת סיפורים לפי קהל",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-10",
+   "feature": "stories-audience",
+   "tests": [
+    "tests/stories-audience/deleted-story-image.spec.ts",
+    "tests/stories-audience/feed-audience-readonly.spec.ts",
+    "tests/questionnaire/skip-q03-audience-missing.spec.ts",
+    "tests/stories-viewer/viewer-readonly.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «прошли» (עבר QA) раунд 8, 2026-11-10. План: .qa/e2e/specs/stories-audience.md 1.1, 2.1–2.2 (+ questionnaire.md 2.1 audience_missing, stories-viewer.md 1.7); кейсы .qa/tests/stories-audience/SA-01…03. @iphone. Все написаны вручную 2026-11-10 (API/сеть), не проверены на живой странице — проверить при первом /qa-regress. deleted-story-image — @data (reg2 создаёт и удаляет сторис QA-AUTO sa …). Истечение сторис не автоматизировано."
+  },
+  {
+   "hash": "#4d154a",
+   "title": "חזרה אחורה",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "discover-undo",
+   "tests": [
+    "tests/discover-undo/skip-undo-returns-card.spec.ts",
+    "tests/discover-undo/undo-exhausted-premium-window.spec.ts",
+    "tests/discover-undo/empty-deck-undo-button.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «прошли» (עבר QA) раунд 10, 2026-11-12 (iOS build 8, reg5 0009). План: .qa/e2e/specs/discover-undo.md 1.1–1.3; кейсы .qa/tests/discover-undo/UNDO-01…03. Веб magnet.expo.app, мобильный вид, роль free, seed tests/seed.free.spec.ts. 1.1–1.2 @iphone @data (свайп — Chromium в проекте data; запись пропуска удаляется в finally), 1.3 @iphone (пустая лента — подмена ответа). Файлы ещё не созданы — план для playwright-test-generator; прогон только по /qa-regress. Квота Premium 30/мес., кредит от админа, докупка (AC 5), Tokens (AC 6) не автоматизированы."
+  },
+  {
+   "hash": "#56c55c",
+   "title": "העדפות חיפוש (iOS) — החלקה מהקצה",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "search-prefs",
+   "tests": [
+    "manual-ios"
+   ],
+   "manual_cases": [
+    ".qa/tests/search-prefs/PREF-04.md",
+    ".qa/tests/search-prefs/PREF-05.md"
+   ],
+   "reason": "Подтверждён пользователем «прошли» (עבר QA) раунд 10, 2026-11-12 (iPhone 14 Pro build 8, reg5). Поведение только нативного iOS-приложения (жест края, тост «ההעדפות נשמרו») — веб-автотестом Playwright не покрывается; кейсы PREF-04, PREF-05 с пометкой «ручной, iOS», список — .qa/tests/search-prefs/MANUAL.md. Автотест не пишется."
+  },
+  {
+   "hash": "#c9b739",
+   "title": "אהבתי מודגש",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "likes-superlike",
+   "tests": [
+    "tests/likes-superlike/first-superlike-sent.spec.ts",
+    "tests/likes-superlike/superlike-exhausted-premium-window.spec.ts",
+    "tests/likes-superlike/recipient-sees-superlike-badge.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «прошли» (עבר QA) раунд 10, 2026-11-12 (iOS build 8, reg5 0009, 3/3; получатель new03 в вебе). План: .qa/e2e/specs/likes-superlike.md 1.1–1.2 (free, seed tests/seed.free.spec.ts, @iphone @data — запись суперлайка удаляется в finally) и 2.1 (new03, новый seed tests/seed.new03.spec.ts, @iphone, только просмотр); кейсы .qa/tests/likes-superlike/SL-01…03. Файлы ещё не созданы — план для playwright-test-generator (MCP, проект iphone); прогон только по /qa-regress. 2.1 опирается на суперлайк reg5→new03 (r10) — при чистке не удалять. Квота Premium 50/мес., докупка (AC 6, #a71c6f), Tokens (AC 7) не автоматизированы."
+  },
+  {
+   "hash": "#ac28e6",
+   "title": "מסך ניהול חדרים",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "admin-rooms",
+   "tests": [
+    "tests/admin-rooms/room-report-remove-message.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «прошли» (עבר QA) раунд 10, 2026-11-12 (админка 1440). План: .qa/e2e/specs/admin-rooms.md 1.1; кейс .qa/tests/admin-rooms/ADM-ROOM-01. Три роли (user2 пишет QA-AUTO в «QA-AUTO room 29.10», reg2 жалуется, admin удаляет из «דיווחים מהחדר») — написан вручную autotest-writer 2026-11-12, @desktop @data, не проверен на живой странице (селекторы списка комнат, поле сообщения в комнате, target_type 'room_message') — проверить при первом /qa-regress. Удаление/закрытие комнаты, блок создания комнат не автоматизированы."
+  },
+  {
+   "hash": "#e67e12",
+   "title": "צ'אט קהילתי פתוח",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "community-chat",
+   "tests": [
+    "tests/community-chat/mini-profile-opens.spec.ts",
+    "tests/community-chat/mini-profile-actions-menu.spec.ts",
+    "tests/community-chat/mini-profile-full-profile.spec.ts"
+   ],
+   "manual_cases": [
+    ".qa/tests/community-chat/CC-01.md",
+    ".qa/tests/community-chat/CC-02.md",
+    ".qa/tests/community-chat/CC-03.md"
+   ],
+   "reason": "Подтверждён пользователем «прошли» (עבר QA) раунд 10, 2026-11-12 (reg1, веб iPhone 390 + iOS build 8): мини-профиль из общего чата по Figma 943:18206. План: .qa/e2e/specs/community-chat.md 1.1–1.3 (seed tests/seed.reg1.community.spec.ts, @iphone @prod-safe, только просмотр — без ❤/жалобы/блока). Тесты передаются playwright-test-generator; пока не записаны/не прогонялись."
+  },
+  {
+   "hash": "#b4decb",
+   "title": "פס הסטוריז — סדר מימין לשמאל",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "stories-row",
+   "tests": [
+    "tests/stories-row/discover-my-story-first-right.spec.ts",
+    "tests/stories-row/social-my-story-first-right.spec.ts",
+    "tests/stories-row/same-order-discover-social.spec.ts"
+   ],
+   "manual_cases": [
+    ".qa/tests/stories-row/SR-01.md",
+    ".qa/tests/stories-row/SR-02.md",
+    ".qa/tests/stories-row/SR-03.md"
+   ],
+   "reason": "Подтверждён пользователем «прошли» (עבר QA) раунд 10, 2026-11-12 (reg1, веб iPhone 390: /discover и /social — «הסטורי שלי» с «+» первым справа, сторис reg2 левее, ряд rtl, scrollLeft 0, порядок одинаков; iOS build 8 — «הסטורי שלי» справа). План: .qa/e2e/specs/stories-row.md 1.1–1.3 (seed tests/seed.reg1.spec.ts, @iphone @prod-safe, только просмотр; положение по координатам; без чужих сторис — только «הסטורי שלי» справа). Тесты передаются playwright-test-generator (MCP, --config .qa/e2e/playwright.config.ts, проект iphone); пока не записаны/не прогонялись. Figma 866-1073 не обновлена (LTR) — не эталон."
+  },
+  {
+   "hash": "#75332d",
+   "title": "מתנות וירטואליות",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "gifts",
+   "tests": [
+    "tests/gifts/send-free-gift-repeat-blocked.spec.ts"
+   ],
+   "manual_cases": [
+    ".qa/tests/gifts/GIFT-01.md",
+    ".qa/tests/gifts/GIFT-02.md",
+    ".qa/tests/gifts/GIFT-07.md"
+   ],
+   "reason": " Подтверждён пользователем «прошли» (עבר QA) раунд 10, 2026-11-12 (веб iPhone 390 + iOS build 8, new02↔new10/user4). План: .qa/e2e/specs/gifts.md 2.1 — бесплатный подарок new02→new10 + запрет повтора до ответа (UI «אפשר לשלוח עוד אחרי ש… תענה» + повторный POST /rpc/send_gift → 400 awaiting_reply) + ответ снимает запрет; 2 роли, написан вручную autotest-writer, @iphone @data, не проверен на живой странице. Подготовка: грант «הענקת מתנה» new02 в админке перед каждым прогоном; подарок/сообщения не удаляются (cleanup). Не автоматизировано: подарок без мэтча (одноразовое, GIFT-07), оплата AC3 (#e0de78), пуш AC6 (#8ad381)."
+  },
+  {
+   "hash": "#ecc349",
+   "title": "רכיב חיווי מתנה בשיחה",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "gifts",
+   "tests": [
+    "tests/gifts/chat-gift-cards.spec.ts",
+    "tests/gifts/send-free-gift-repeat-blocked.spec.ts"
+   ],
+   "manual_cases": [
+    ".qa/tests/gifts/GIFT-03.md"
+   ],
+   "reason": " Подтверждён пользователем «прошли» (עבר QA) раунд 10, 2026-11-12 (веб iPhone 390 + iOS build 8, new02↔new10/user4). План: .qa/e2e/specs/gifts.md 1.4 (генератор, seed tests/seed.new02.spec.ts, @iphone @prod-safe — входящая/исходящая карточка в чате с «בדיקה כללי») — ещё не записан; превью «… לך מתנה» у получателя — в 2.1 (вручную, @data)."
+  },
+  {
+   "hash": "#9a50b0",
+   "title": "מסך המתנות שקיבלתי",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "gifts",
+   "tests": [
+    "tests/gifts/received-list-rows.spec.ts",
+    "tests/gifts/received-row-opens-chat-profile.spec.ts",
+    "tests/gifts/received-more-menu.spec.ts",
+    "tests/gifts/received-block-sender-empty.spec.ts"
+   ],
+   "manual_cases": [
+    ".qa/tests/gifts/GIFT-04.md",
+    ".qa/tests/gifts/GIFT-05.md"
+   ],
+   "reason": " Подтверждён пользователем «прошли» (עבר QA) раунд 10, 2026-11-12 (веб iPhone 390 + iOS build 8, new02↔new10/user4). План: .qa/e2e/specs/gifts.md 1.1–1.3 (генератор, seed new02, @iphone @prod-safe: список 3 подарков от «בדיקה כללי», строка→чат, фото→профиль, меню «⋮») — ещё не записаны; 2.2 блок→«עוד לא קיבלת מתנות»→разблок (вручную, @iphone @data, не проверен на живой странице); «חדשה» — в 2.1. Жалоба «דיווח» не автоматизирована (закрывается только в админке)."
+  },
+  {
+   "hash": "#9d9088",
+   "title": "אפליקציית iOS: אין מתנות",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "gifts",
+   "tests": [
+    "tests/gifts/send-free-gift-repeat-blocked.spec.ts"
+   ],
+   "manual_cases": [
+    ".qa/tests/gifts/GIFT-06.md"
+   ],
+   "reason": " Подтверждён пользователем «прошли» (עבר QA) раунд 10, 2026-11-12 (веб iPhone 390 + iOS build 8, new02↔new10/user4). Баг про приложение iOS (🎁 мёртвая в build 5) — сам поток в приложении только вручную: GIFT-06 «ручной, iOS» (build 8). Веб-сторона сквозного потока покрыта 2.1 в .qa/e2e/specs/gifts.md. Анимация получения (#fc49b2) не покрывается — будет переделана по новому тикету."
+  },
+  {
+   "hash": "#1e665f",
+   "title": "דייט עכשיו — free עם מכסה גמורה",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "date-now",
+   "tests": [
+    "tests/date-now/free-quota-exhausted-no-sharing.spec.ts"
+   ],
+   "manual_cases": [
+    ".qa/tests/date-now/DN-11.md",
+    ".qa/tests/date-now/DN-12.md"
+   ],
+   "reason": " Подтверждён пользователем «עבר QA» раунд 10, 2026-11-12. Тесты записаны, не прогонялись; генераторные (plan) ещё не сгенерированы — очередь playwright-test-generator. План: .qa/e2e/specs/date-now.md 4.1 (вручную autotest-writer, @iphone @data, seed tests/seed.reg5.geo.spec.ts). Квота reg5 израсходована 12.11, обновится 19.11 14:32 — после этого тест падает «ОКРУЖЕНИЕ» и ничего не нажимает. iOS — DN-12 ручной."
+  },
+  {
+   "hash": "#5f06d9",
+   "title": "הצעת מתנה מפרופיל",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "gifts",
+   "tests": [
+    "tests/gifts/store-filter-up-to-5.spec.ts",
+    "tests/gifts/store-from-profile.spec.ts"
+   ],
+   "manual_cases": [
+    ".qa/tests/gifts/GIFT-08.md",
+    ".qa/tests/gifts/GIFT-10.md",
+    ".qa/tests/gifts/GIFT-15.md"
+   ],
+   "reason": " Подтверждён пользователем «עבר QA» раунд 10, 2026-11-12. Тесты записаны, не прогонялись; генераторные (plan) ещё не сгенерированы — очередь playwright-test-generator. План: .qa/e2e/specs/gifts.md 3.2, 3.4 (генератор, seed new02, @iphone @prod-safe). Из карточки גילוי и в приложении — GIFT-15 «ручной, iOS»."
+  },
+  {
+   "hash": "#649fa7",
+   "title": "חנות מתנות",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "gifts",
+   "tests": [
+    "tests/gifts/store-from-chat-grid.spec.ts",
+    "tests/gifts/store-filter-up-to-5.spec.ts",
+    "tests/gifts/store-from-profile.spec.ts"
+   ],
+   "manual_cases": [
+    ".qa/tests/gifts/GIFT-08.md",
+    ".qa/tests/gifts/GIFT-10.md",
+    ".qa/tests/gifts/GIFT-15.md"
+   ],
+   "reason": " Подтверждён пользователем «עבר QA» раунд 10, 2026-11-12. Тесты записаны, не прогонялись; генераторные (plan) ещё не сгенерированы — очередь playwright-test-generator. План: .qa/e2e/specs/gifts.md 3.1, 3.2, 3.4 (генератор). AC2 (пустой каталог) не автоматизирован — нужно отключить все подарки. «יש לך · מתנה חינם אחת», вход из меню чата в приложении — GIFT-15."
+  },
+  {
+   "hash": "#ef8f28",
+   "title": "כרטיס מתנה",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "gifts",
+   "tests": [
+    "tests/gifts/store-from-chat-grid.spec.ts",
+    "tests/gifts/send-screen-preview.spec.ts"
+   ],
+   "manual_cases": [
+    ".qa/tests/gifts/GIFT-08.md",
+    ".qa/tests/gifts/GIFT-09.md",
+    ".qa/tests/gifts/GIFT-15.md"
+   ],
+   "reason": " Подтверждён пользователем «עבר QA» раунд 10, 2026-11-12. Тесты записаны, не прогонялись; генераторные (plan) ещё не сгенерированы — очередь playwright-test-generator. План: .qa/e2e/specs/gifts.md 3.1 (сетка 3 в ряд, цены), 3.3 (экран отправки, без отправки). Золотая рамка выбранного — вручную iOS GIFT-15."
+  },
+  {
+   "hash": "#802740",
+   "title": "מתנה מתגמול ללא תשלום",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "gifts",
+   "tests": [
+    "tests/gifts/free-gift-priority-grant-spent.spec.ts",
+    "tests/gifts/sent-history.spec.ts",
+    "tests/streak/claim-gift-reward-recipient.spec.ts"
+   ],
+   "manual_cases": [
+    ".qa/tests/gifts/GIFT-11.md",
+    ".qa/tests/gifts/GIFT-12.md",
+    ".qa/tests/gifts/GIFT-15.md"
+   ],
+   "reason": " Подтверждён пользователем «עבר QA» раунд 10, 2026-11-12. Тесты записаны, не прогонялись; генераторные (plan) ещё не сгенерированы — очередь playwright-test-generator. План: gifts.md 4.1 (вручную, 3 роли, @data — грант new10 выдаётся в админке ДО прогона, тест не выдаёт → ОКРУЖЕНИЕ), 3.5 «המתנות ששלחתי» (генератор); streak.md 2.2 (подарок из награды серии). Баланс 0 в админке — вручную."
+  },
+  {
+   "hash": "#8cccc3",
+   "title": "קטלוג ותמחור",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "gifts",
+   "tests": [
+    "tests/gifts/store-from-chat-grid.spec.ts",
+    "tests/gifts/admin-gift-catalog-view.spec.ts"
+   ],
+   "manual_cases": [
+    ".qa/tests/gifts/GIFT-08.md",
+    ".qa/tests/gifts/GIFT-14.md",
+    ".qa/tests/gifts/GIFT-15.md"
+   ],
+   "reason": " Подтверждён пользователем «עבר QA» раунд 10, 2026-11-12. Тесты записаны, не прогонялись; генераторные (plan) ещё не сгенерированы — очередь playwright-test-generator. План: gifts.md 3.1 (каталог в приложении), 3.7 админка «קטלוג מתנות» просмотр (@desktop @prod-safe, seed admin). Добавление/правка/«השבתה» — запись в боевой каталог, не автоматизируется."
+  },
+  {
+   "hash": "#7e1c5a",
+   "title": "Tokens→מתנות",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "streak",
+   "tests": [
+    "tests/streak/no-tokens-settings.spec.ts",
+    "tests/streak/streak-screen.spec.ts"
+   ],
+   "manual_cases": [
+    ".qa/tests/streak/TOK-01.md",
+    ".qa/tests/streak/STREAK-01.md",
+    ".qa/tests/gifts/GIFT-15.md"
+   ],
+   "reason": " Подтверждён пользователем «עבר QA» раунд 10, 2026-11-12. Тесты записаны, не прогонялись; генераторные (plan) ещё не сгенерированы — очередь playwright-test-generator. План: .qa/e2e/specs/streak.md 3.1 (нет Tokens, «מתנות ורצף» → «רצף כניסות»), 1.1 («למתנות» → магазин). AC3/AC5 (конверсия баланса) неприменимы — у пользователей не было Tokens."
+  },
+  {
+   "hash": "#ee2548",
+   "title": "יתרת Tokens",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "streak",
+   "tests": [
+    "tests/streak/no-tokens-settings.spec.ts"
+   ],
+   "manual_cases": [
+    ".qa/tests/streak/TOK-01.md",
+    ".qa/tests/gifts/GIFT-15.md"
+   ],
+   "reason": " Подтверждён пользователем «עבר QA» раунд 10, 2026-11-12. Тесты записаны, не прогонялись; генераторные (plan) ещё не сгенерированы — очередь playwright-test-generator. Экран Tokens отменён (заменён #7e1c5a); регресс — отсутствие Tokens: streak.md 3.1."
+  },
+  {
+   "hash": "#47f4ec",
+   "title": "השלמת פרופיל הדרגתית",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "profile-completion",
+   "tests": [
+    "tests/profile-completion/hub-packs-list.spec.ts"
+   ],
+   "manual_cases": [
+    ".qa/tests/profile-completion/PC-01.md",
+    ".qa/tests/profile-completion/PC-03.md",
+    ".qa/tests/profile-completion/PC-04.md"
+   ],
+   "reason": " Подтверждён пользователем «עבר QA» раунд 10, 2026-11-12. Тесты записаны, не прогонялись; генераторные (plan) ещё не сгенерированы — очередь playwright-test-generator. План: .qa/e2e/specs/profile-completion.md 1.1 (генератор, seed free, @iphone @prod-safe): аватар в кольце, один список, «N שאלות • N דק׳», прогресс + «להמשיך». Пакетов 5 вместо 8 в Figma — принято по факту. iOS против Figma — PC-04."
+  },
+  {
+   "hash": "#01d706",
+   "title": "מסך השלמת שאלות פרופיל",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "profile-completion",
+   "tests": [
+    "tests/profile-completion/question-screen-layout.spec.ts"
+   ],
+   "manual_cases": [
+    ".qa/tests/profile-completion/PC-02.md",
+    ".qa/tests/profile-completion/PC-03.md",
+    ".qa/tests/profile-completion/PC-04.md"
+   ],
+   "reason": " Подтверждён пользователем «עבר QA» раунд 10, 2026-11-12. Тесты записаны, не прогонялись; генераторные (plan) ещё не сгенерированы — очередь playwright-test-generator. План: profile-completion.md 1.2 (генератор): «עד 5»/«n/5» под заголовком, чипы без рамки, назад без сохранения. Сохранение ответа (PC-03) не автоматизируется — необратимо меняет анкету free."
+  },
+  {
+   "hash": "#75e74c",
+   "title": "ליטושים — חסימה ומתנות בשיחה",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "chat-personal",
+   "tests": [
+    "tests/chat-personal/gift-menu-item-one-line.spec.ts",
+    "tests/chat-personal/block-no-reload-unblock-title.spec.ts"
+   ],
+   "manual_cases": [
+    ".qa/tests/chat-personal/CHAT-POL-01.md",
+    ".qa/tests/chat-personal/CHAT-POL-02.md",
+    ".qa/tests/chat-personal/CHAT-POL-03.md"
+   ],
+   "reason": " Подтверждён пользователем «עבר QA» раунд 10, 2026-11-12. Тесты записаны, не прогонялись; генераторные (plan) ещё не сгенерированы — очередь playwright-test-generator. План: .qa/e2e/specs/chat-personal.md 2.1 (генератор, seed new10, @prod-safe: «שליחת מתנה ל־QA П2 0011» и «מתנה מ־ QA П2 0011» в одну строку), 2.2 (вручную, new01, @data: блок без перезагрузки, «0011?» одной строкой, блок снимается в finally). iOS — CHAT-POL-03."
+  },
+  {
+   "hash": "#64bad0",
+   "title": "שליחת מתנה בהתחלת שיחה",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "gifts",
+   "tests": [
+    "tests/gifts/free-gift-priority-grant-spent.spec.ts",
+    "tests/gifts/send-screen-preview.spec.ts"
+   ],
+   "manual_cases": [
+    ".qa/tests/gifts/GIFT-07.md",
+    ".qa/tests/gifts/GIFT-09.md",
+    ".qa/tests/gifts/GIFT-12.md",
+    ".qa/tests/gifts/GIFT-15.md"
+   ],
+   "reason": " Подтверждён пользователем «עבר QA» раунд 10, 2026-11-12. Тесты записаны, не прогонялись; генераторные (plan) ещё не сгенерированы — очередь playwright-test-generator. План: gifts.md 4.1 (подарок выше сообщения у получателя), 3.3 (сообщение к подарку, «первым»). Отправка без мэтча — одноразовое (GIFT-07); без гранта → оплата — заблокировано."
+  },
+  {
+   "hash": "#ae03b1",
+   "title": "קדימות הודעה מלווה במתנה",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "gifts",
+   "tests": [
+    "tests/gifts/free-gift-priority-grant-spent.spec.ts"
+   ],
+   "manual_cases": [
+    ".qa/tests/gifts/GIFT-12.md",
+    ".qa/tests/gifts/GIFT-15.md"
+   ],
+   "reason": " Подтверждён пользователем «עבר QA» раунд 10, 2026-11-12. Тесты записаны, не прогонялись; генераторные (plan) ещё не сгенерированы — очередь playwright-test-generator. План: gifts.md 4.1 (вручную, new10/user4/new02, @data, грант new10 → ОКРУЖЕНИЕ): подарок выше более нового сообщения, метка «מתנה», после открытия — порядок по времени. AC6 (2 подарка) — 2 гранта, только вручную (r10 iOS)."
+  },
+  {
+   "hash": "#f676fe",
+   "title": "שירות דירוג הודעות לפי מתנה",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "gifts",
+   "tests": [
+    "tests/gifts/free-gift-priority-grant-spent.spec.ts"
+   ],
+   "manual_cases": [
+    ".qa/tests/gifts/GIFT-12.md"
+   ],
+   "reason": " Подтверждён пользователем «עבר QA» раунд 10, 2026-11-12. Тесты записаны, не прогонялись; генераторные (plan) ещё не сгенерированы — очередь playwright-test-generator. Бэкенд порядка чатов — проверяется через UI в gifts.md 4.1. AC6–7 (не участник/без входа) не автоматизированы: имя RPC неизвестно; r9 — пустой ответ вместо ошибки (не реджект)."
+  },
+  {
+   "hash": "#f023a0",
+   "title": "הגדרות קבלת מתנות",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "gifts",
+   "tests": [
+    "tests/gifts/gift-settings-view.spec.ts",
+    "tests/gifts/receive-off-rejects-gift.spec.ts",
+    "tests/gifts/gift-settings-save-error.spec.ts"
+   ],
+   "manual_cases": [
+    ".qa/tests/gifts/GIFT-13.md",
+    ".qa/tests/gifts/GIFT-15.md"
+   ],
+   "reason": " Подтверждён пользователем «עבר QA» раунд 10, 2026-11-12. Тесты записаны, не прогонялись; генераторные (plan) ещё не сгенерированы — очередь playwright-test-generator. План: gifts.md 3.6 (вид, генератор), 4.2 (выкл → «… בחר לא לקבל מתנות», gifts_disabled, грант free цел; грант free выдаётся в админке ДО прогона → ОКРУЖЕНИЕ; тумблер включается в finally), 4.3 (обрыв сети → «השינוי לא נשמר»). Пуш (#8ad381) — заблокирован."
+  },
+  {
+   "hash": "#a55519",
+   "title": "מסך רצף כניסות והתקדמות",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "streak",
+   "tests": [
+    "tests/streak/streak-screen.spec.ts",
+    "tests/streak/claim-boost-reward.spec.ts"
+   ],
+   "manual_cases": [
+    ".qa/tests/streak/STREAK-01.md",
+    ".qa/tests/streak/STREAK-04.md",
+    ".qa/tests/streak/STREAK-07.md",
+    ".qa/tests/streak/STREAK-08.md"
+   ],
+   "reason": " Подтверждён пользователем «עבר QA» раунд 10, 2026-11-12. Тесты записаны, не прогонялись; генераторные (plan) ещё не сгенерированы — очередь playwright-test-generator. План: .qa/e2e/specs/streak.md 1.1 (экран, генератор, seed tests/seed.user4.spec.ts — создан), 2.1. Прерванная серия («קטיעת הרצף») — STREAK-07 ручной (админская запись + «сегодня»). iOS не смотрели — STREAK-08."
+  },
+  {
+   "hash": "#980fd4",
+   "title": "רכיב מחוון רצף כניסות",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "streak",
+   "tests": [
+    "tests/streak/profile-streak-indicator.spec.ts"
+   ],
+   "manual_cases": [
+    ".qa/tests/streak/STREAK-02.md",
+    ".qa/tests/streak/STREAK-07.md",
+    ".qa/tests/streak/STREAK-08.md"
+   ],
+   "reason": " Подтверждён пользователем «עבר QA» раунд 10, 2026-11-12. Тесты записаны, не прогонялись; генераторные (plan) ещё не сгенерированы — очередь playwright-test-generator. План: streak.md 1.2 (индикатор в профиле → экран серии или лист выбора, генератор). Оранжевое состояние — STREAK-07 ручной."
+  },
+  {
+   "hash": "#fdc5b2",
+   "title": "מסך בחירת תגמול רצף",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "streak",
+   "tests": [
+    "tests/streak/reward-picker-view.spec.ts",
+    "tests/streak/claim-boost-reward.spec.ts",
+    "tests/streak/claim-gift-reward-recipient.spec.ts",
+    "tests/streak/claim-error-reward-kept.spec.ts"
+   ],
+   "manual_cases": [
+    ".qa/tests/streak/STREAK-03.md",
+    ".qa/tests/streak/STREAK-04.md",
+    ".qa/tests/streak/STREAK-05.md",
+    ".qa/tests/streak/STREAK-06.md"
+   ],
+   "reason": " Подтверждён пользователем «עבר QA» раунд 10, 2026-11-12. Тесты записаны, не прогонялись; генераторные (plan) ещё не сгенерированы — очередь playwright-test-generator. План: streak.md 1.3 (лист, генератор), 2.1–2.3 (вручную, @data). Награды выдаются в админке ДО прогона («כלי בדיקה» → «הענקת תגמול רצף», на прогон 2 выдачи; тест не выдаёт → ОКРУЖЕНИЕ)."
+  },
+  {
+   "hash": "#808adb",
+   "title": "בחירת תגמול רצף",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "streak",
+   "tests": [
+    "tests/streak/reward-picker-view.spec.ts",
+    "tests/streak/claim-boost-reward.spec.ts",
+    "tests/streak/claim-gift-reward-recipient.spec.ts"
+   ],
+   "manual_cases": [
+    ".qa/tests/streak/STREAK-03.md",
+    ".qa/tests/streak/STREAK-04.md",
+    ".qa/tests/streak/STREAK-05.md"
+   ],
+   "reason": " Подтверждён пользователем «עבר QA» раунд 10, 2026-11-12. Тесты записаны, не прогонялись; генераторные (plan) ещё не сгенерированы — очередь playwright-test-generator. План: streak.md 1.3, 2.1 (+1 буст, повтор отклонён), 2.2 (подарок). «סופר לייק»/«חזרה אחורה» и их использование — вручную (r10)."
+  },
+  {
+   "hash": "#c94032",
+   "title": "עיגולי הסטוריז 62×62",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-19",
+   "feature": "discover-layout",
+   "tests": [
+    "tests/discover-layout/story-circles-62-at-390-430.spec.ts",
+    "tests/discover-layout/story-circles-narrow-60-57-52.spec.ts",
+    "tests/discover-layout/story-circles-no-overlap.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «עבר QA» раунд 13, 2026-11-19. Тесты записаны генератором, не прогонялись."
+  },
+  {
+   "hash": "#2911c1",
+   "title": "העדפות חיפוש — שמירה אוטומטית",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-19",
+   "feature": "search-prefs",
+   "tests": [
+    "tests/search-prefs/no-save-button.spec.ts",
+    "tests/search-prefs/autosave-interest-and-sliders.spec.ts",
+    "tests/search-prefs/autosave-error-alert.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «עבר QA» раунд 13, 2026-11-19. Тесты записаны генератором, не прогонялись."
+  },
+  {
+   "hash": "#47a8b8",
+   "title": "מסך שליחת מתנה עם הודעה",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-19",
+   "feature": "gifts",
+   "tests": [
+    "tests/gifts/send-screen-message-counter-chips.spec.ts",
+    "tests/gifts/send-screen-back-to-picker.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «עבר QA» раунд 13, 2026-11-19. Тесты записаны генератором, не прогонялись."
+  },
+  {
+   "hash": "#dc2c6f",
+   "title": "מסך פרטי מתנה ורכישה",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-19",
+   "feature": "gifts",
+   "tests": [
+    "tests/gifts/send-screen-back-to-picker.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «עבר QA» раунд 13, 2026-11-19. Тесты записаны генератором, не прогонялись."
+  },
+  {
+   "hash": "#676952",
+   "title": "מסך היסטוריית מתנות ורכישות",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-19",
+   "feature": "gifts",
+   "tests": [
+    "tests/gifts/sent-history-paid-filter.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «עבר QA» раунд 13, 2026-11-19. Тесты записаны генератором, не прогонялись."
+  },
+  {
+   "hash": "#e0de78",
+   "title": "רכישת מתנה וירטואלית ותשלום",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-19",
+   "feature": "gifts",
+   "tests": [
+    "tests/gifts/sent-history-paid-filter.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «עבר QA» раунд 13, 2026-11-19. Тесты записаны генератором, не прогонялись."
+  },
+  {
+   "hash": "#4ef651",
+   "title": "⚡ בוסטים / ⭐ סופר לייק",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-19",
+   "feature": "premium-store",
+   "tests": [
+    "tests/premium-store/boosts-screen-content.spec.ts",
+    "tests/premium-store/superlikes-screen-content.spec.ts",
+    "tests/premium-store/bolt-and-star-open-own-screens.spec.ts",
+    "tests/premium-store/upgrade-to-store-button.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «עבר QA» раунд 13, 2026-11-19. Тесты записаны генератором, не прогонялись."
+  },
+  {
+   "hash": "#0fec32",
+   "title": "מסך רכישת מנוי ותקופות",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-19",
+   "feature": "premium-store",
+   "tests": [
+    "tests/premium-store/premium-plans-screen.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «עבר QA» раунд 13, 2026-11-19. Тесты записаны генератором, не прогонялись."
+  },
+  {
+   "hash": "#05baf0",
+   "title": "מסלול בתשלום",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-19",
+   "feature": "premium-store",
+   "tests": [
+    "tests/premium-store/premium-plans-screen.spec.ts",
+    "tests/premium-store/my-subscription-quotas.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «עבר QA» раунд 13, 2026-11-19. Тесты записаны генератором, не прогонялись."
+  },
+  {
+   "hash": "#2c21cd",
+   "title": "חינמי — פנים מטושטשות בלייקים",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-19",
+   "feature": "likes-superlike",
+   "tests": [
+    "tests/likes-superlike/free-sees-blurred-photo-name-age.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «עבר QA» раунд 13, 2026-11-19. Тесты записаны генератором, не прогонялись."
+  },
+  {
+   "hash": "#b2f39b",
+   "title": "record_location כששיתוף כבוי",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-19",
+   "feature": "location-map",
+   "tests": [
+    "tests/location-map/no-record-location-when-sharing-off.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «עבר QA» раунд 13, 2026-11-19. Тесты записаны генератором, не прогонялись."
+  },
+  {
+   "hash": "#01f23b",
+   "title": "אדמין — מנויים ורכישות",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-19",
+   "feature": "admin-subscriptions",
+   "tests": [
+    "tests/admin-subscriptions/list-kpi-tabs.spec.ts",
+    "tests/admin-subscriptions/failed-tab.spec.ts",
+    "tests/admin-subscriptions/user-card-purchases.spec.ts",
+    "tests/admin-subscriptions/empty-purchases.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «עבר QA» раунд 13, 2026-11-19. Тесты записаны генератором, не прогонялись."
+  },
+  {
+   "hash": "#3a3cb9",
+   "title": "מסך שירות שדכנית",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-19",
+   "feature": "matchmaker",
+   "tests": [
+    "tests/matchmaker/service-screen.spec.ts",
+    "tests/matchmaker/faq-toggle.spec.ts",
+    "tests/matchmaker/contact-form-validation.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «עבר QA» раунд 13, 2026-11-19. Тесты записаны генератором, не прогонялись."
+  },
+  {
+   "hash": "#58614c",
+   "title": "שירות שדכנית",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-19",
+   "feature": "matchmaker",
+   "tests": [
+    "tests/matchmaker/service-screen.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «עבר QA» раунд 13, 2026-11-19. Тесты записаны генератором, не прогонялись."
+  },
+  {
+   "hash": "#e5e14a",
+   "title": "ניהול והגדרות משתמש",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-19",
+   "feature": "settings",
+   "tests": [
+    "tests/settings/settings-rows-open-screens.spec.ts",
+    "tests/premium-store/my-subscription-quotas.spec.ts"
+   ],
+   "reason": "Подтверждён пользователем «עבר QA» раунд 13, 2026-11-19. Тесты записаны генератором, не прогонялись."
+  },
+  {
+   "hash": "#deea73",
+   "title": "שמות באנימציית התאמה",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-19",
+   "feature": "match-mutual",
+   "tests": [],
+   "reason": "Подтверждён пользователем «עבר QA» раунд 13, 2026-11-19. Тесты записаны генератором, не прогонялись. Только ручной кейс (iOS, мэтч одноразовый)."
+  }
+ ],
+ "#5f64d4": {
+  "class": "qa-passed",
+  "feature": "location-map",
+  "tests": [
+   "tests/location-map/indicator-figma-look.spec.ts",
+   "tests/location-map/indicator-hidden-when-off.spec.ts",
+   "tests/location-map/indicator-off-from-datenow-sheet.spec.ts",
+   "tests/location-map/indicator-off-observer.spec.ts",
+   "tests/location-map/indicator-visible-when-on.spec.ts"
+  ],
+  "reason": "עבר QA пользователем 29.10; автотесты записаны, не прогонялись",
+  "date": "2026-10-29",
+  "source": "qa"
+ },
+ "#b76c3b": {
+  "class": "qa-passed",
+  "feature": "match-mutual",
+  "tests": [
+   "tests/match-mutual/block-403-unblock-restores.spec.ts",
+   "tests/match-mutual/chat-after-match.spec.ts",
+   "tests/match-mutual/deleted-account-match-403.spec.ts",
+   "tests/match-mutual/guest-api-401.spec.ts",
+   "tests/match-mutual/message-without-match-403.spec.ts",
+   "tests/match-mutual/repeat-like-no-duplicate-match.spec.ts",
+   "tests/match-mutual/self-like-rejected.spec.ts",
+   "tests/match-mutual/spoofed-sender-403.spec.ts"
+  ],
+  "reason": "עבר QA пользователем 29.10; автотесты записаны, не прогонялись",
+  "date": "2026-10-29",
+  "source": "qa"
+ },
+ "#e51572": {
+  "class": "qa-passed",
+  "feature": "discover-layout",
+  "tests": [
+   "tests/discover-layout/icons-raised-gap-98-375.spec.ts",
+   "tests/discover-layout/icons-raised-gap-98-390.spec.ts"
+  ],
+  "reason": "Пользователь подтвердил «прошли» 18.11 (раунд 12). План: .qa/e2e/specs/discover-layout 1.1.md. Тесты-«planned» ещё не сгенерированы (ждут playwright-test-generator), не прогонялись. Кейс DL-01. Приложение iOS — вручную.",
+  "date": "2026-11-18",
+  "source": "qa"
+ },
+ "#efb1ad": {
+  "class": "qa-passed",
+  "feature": "discover-layout",
+  "tests": [
+   "tests/discover-layout/story-circle-52-375.spec.ts",
+   "tests/discover-layout/story-circle-52-390.spec.ts"
+  ],
+  "reason": "Пользователь подтвердил «прошли» 18.11 (раунд 12). План: .qa/e2e/specs/discover-layout 1.2.md. Тесты-«planned» ещё не сгенерированы (ждут playwright-test-generator), не прогонялись. Кейс DL-02. ВНИМАНИЕ: размер 52 перекрыт клиентским #c94032 (62×62 на больших экранах) — обновить константу STORY_CIRCLE.",
+  "date": "2026-11-18",
+  "source": "qa"
+ },
+ "#576c2d": {
+  "class": "qa-passed",
+  "feature": "discover-layout",
+  "tests": [
+   "tests/discover-layout/photo-below-stories-row-375.spec.ts",
+   "tests/discover-layout/photo-below-stories-row-390.spec.ts"
+  ],
+  "reason": "Пользователь подтвердил «прошли» 18.11 (раунд 12). План: .qa/e2e/specs/discover-layout 1.3.md. Тесты-«planned» ещё не сгенерированы (ждут playwright-test-generator), не прогонялись. Кейс DL-03.",
+  "date": "2026-11-18",
+  "source": "qa"
+ },
+ "#de1cb5": {
+  "class": "qa-passed",
+  "feature": "discover-swipe",
+  "tests": [
+   "tests/discover-swipe/right-half-returns.spec.ts",
+   "tests/discover-swipe/left-half-returns.spec.ts",
+   "tests/discover-swipe/vertical-drag-no-tilt.spec.ts",
+   "tests/discover-swipe/left-beyond-threshold-skip.spec.ts"
+  ],
+  "reason": "Пользователь подтвердил «прошли» 18.11 (раунд 12). План: .qa/e2e/specs/discover-swipe 1.1–2.1.md. Тесты-«planned» ещё не сгенерированы (ждут playwright-test-generator), не прогонялись. Кейсы SW-01…03 (веб); SW-04 (свайп вправо за порог = лайк) и нативный жест iOS — только вручную. Android не проверялся.",
+  "date": "2026-11-18",
+  "source": "qa"
+ },
+ "#431208": {
+  "class": "qa-passed",
+  "feature": "premium-store",
+  "tests": [
+   "tests/premium-store/bolt-star-entries.spec.ts",
+   "tests/premium-store/likes-undo-crown-entries.spec.ts",
+   "tests/premium-store/crown-premium-user2.spec.ts",
+   "tests/premium-store/store-content-what-included.spec.ts",
+   "tests/premium-store/tier-tap-payment-toast.spec.ts"
+  ],
+  "reason": "Пользователь подтвердил «прошли» 18.11 (раунд 12). План: .qa/e2e/specs/premium-store 1.1–1.4.md. Тесты-«planned» ещё не сгенерированы (ждут playwright-test-generator), не прогонялись. Кейсы PS-01, 02, 04, 05. ВНИМАНИЕ: ⚡/⭐ перекрыты клиентским #4ef651 (отдельные экраны) — обновить bolt-star-entries. Не проверено: вход из размытых «מי סימן אותי» в приложении (нет данных). Оплата не автоматизируется.",
+  "date": "2026-11-18",
+  "source": "qa"
+ },
+ "#512f82": {
+  "class": "qa-passed",
+  "feature": "premium-store",
+  "tests": [
+   "tests/premium-store/date-now-lock-opens-store.spec.ts"
+  ],
+  "reason": "Пользователь подтвердил «прошли» 18.11 (раунд 12). План: .qa/e2e/specs/premium-store 2.1.md. Тесты-«planned» ещё не сгенерированы (ждут playwright-test-generator), не прогонялись. Кейс PS-03 (в новой формулировке по #431208: «חנות» на Premium при каждом открытии). Старые date-now/upgrade-from-lock-closes-sheet и free-locked-durations-upsell устарели — обновить.",
+  "date": "2026-11-18",
+  "source": "qa"
+ },
+ "#99ff3d": {
+  "class": "qa-passed",
+  "feature": "gifts",
+  "tests": [
+   "tests/gifts/free-gift-refresh-and-receive-animation.spec.ts"
+  ],
+  "reason": "Пользователь подтвердил «прошли» 18.11 (раунд 12). План: .qa/e2e/specs/gifts.md 5.1; тест записан вручную (admin+user4+new02), не прогонялся, не проверен на живой странице. Кейс GIFT-16. @data: требует разрешения на грант «הענקת מתנה»; грант тратится в 5.2. iOS-часть (build 9 → 11) — вручную.",
+  "date": "2026-11-18",
+  "source": "qa"
+ },
+ "#fc49b2": {
+  "class": "qa-passed",
+  "feature": "gifts",
+  "tests": [
+   "tests/gifts/free-gift-refresh-and-receive-animation.spec.ts"
+  ],
+  "reason": "Пользователь подтвердил «прошли» 18.11 (раунд 12). План: .qa/e2e/specs/gifts.md 5.2; тест записан вручную (user4→new02), не прогонялся. Кейсы GIFT-17, GIFT-18. Не автоматизируется: размытие фона в iOS, вход при открытом чате, тап-пропуск, Reduce Motion, Android.",
+  "date": "2026-11-18",
+  "source": "qa"
+ },
+ "#4205a8": {
+  "class": "qa-passed",
+  "feature": "match-mutual",
+  "tests": [
+   "tests/match-mutual/seen-match-no-repeat-animation.spec.ts"
+  ],
+  "reason": "Пользователь подтвердил «прошли» 18.11 (раунд 12). План: .qa/e2e/specs/match-mutual 2.1.md. Тесты-«planned» ещё не сгенерированы (ждут playwright-test-generator), не прогонялись. Кейс MATCH-11 (повтор 0). Создание мэтча и очередь из 2–3 офлайн-мэтчей (MATCH-09, MATCH-10) — только вручную: пары «сгорают», нативное убийство приложения.",
+  "date": "2026-11-18",
+  "source": "qa"
+ },
+ "#6575d3": {
+  "class": "qa-passed",
+  "feature": "location-map",
+  "tests": [
+   "tests/location-map/immediate-me-on-entry.spec.ts"
+  ],
+  "reason": "Пользователь подтвердил «прошли» 18.11 (раунд 12). План: .qa/e2e/specs/location-map.md 4.1; тест записан вручную (3 контекста reg5), не прогонялся, имя запроса record_location — из брифа. Кейс LOC-09. @data: место reg5 возвращается на Тель-Авив. Приложение (LOC-10) — вручную.",
+  "date": "2026-11-18",
+  "source": "qa"
+ },
+ "#f54d1d": {
+  "class": "qa-passed",
+  "feature": "stories-create",
+  "tests": [
+   "tests/stories-create/publish-ok.spec.ts",
+   "tests/stories-create/offline-error-retry.spec.ts"
+  ],
+  "reason": "Пользователь подтвердил «прошли» 18.11 (раунд 12; клиент проверил). План: .qa/e2e/specs/stories-create 1.1–1.2.md. Тесты-«planned» ещё не сгенерированы (ждут playwright-test-generator), не прогонялись. Кейсы SC-01, SC-02. @data: сторис создаётся и удаляется (нейтральная картинка qa-auto-story.jpg). Приложение (SC-03: разрешение «Фото», авиарежим) — вручную.",
+  "date": "2026-11-18",
+  "source": "qa"
+ },
+ "#a3a6e0": {
+  "class": "qa-passed",
+  "feature": "signup-back",
+  "tests": [
+   "tests/signup-back/back-chain-8-no-blank.spec.ts"
+  ],
+  "reason": "Пользователь подтвердил «прошли» 18.11 (раунд 12). План: .qa/e2e/specs/signup-back 1.1.md. Тесты-«planned» ещё не сгенерированы (ждут playwright-test-generator), не прогонялись. Кейс SB-01 (веб-эквивалент). Сам дефект — плавающая нативная анимация iOS (SB-02) — только вручную.",
+  "date": "2026-11-18",
+  "source": "qa"
+ }
+}

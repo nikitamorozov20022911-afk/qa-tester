@@ -1,0 +1,11 @@
+import { chromium } from '@playwright/test';
+const SS='/Users/avielshnaider/banci-moe/.qa/screenshots/recheck/';
+const IMG='https://banci.expo.app/assets/assets/images/onboarding/pool.b37990e0818d50b43ff84bab18c133b3.webp';
+const ctx=await chromium.launchPersistentContext('/Users/avielshnaider/banci-moe/.qa/auth/profiles/devA',{headless:true,locale:'he-IL',viewport:{width:390,height:844}});
+const p=ctx.pages()[0]||await ctx.newPage();
+await p.route(/supabase\.co\/rest\/v1\/products/, async r=>{ const res=await r.fetch(); let j=await res.json(); const add=x=>({...x,image_url:IMG}); j=Array.isArray(j)?j.map(add):add(j); await r.fulfill({response:res, json:j}); });
+await p.goto('https://banci.expo.app/products'); await p.waitForTimeout(6000); await p.screenshot({path:SS+'products-list-with-mock-image.png'});
+console.log('list imgs:', await p.evaluate(()=>[...document.querySelectorAll('img')].filter(i=>i.src.includes('pool.')).length));
+await p.getByText('מצופי ידיים לילדים').first().click(); await p.waitForTimeout(5000); await p.screenshot({path:SS+'product-detail-with-mock-image.png'});
+console.log('detail imgs:', await p.evaluate(()=>[...document.querySelectorAll('img')].filter(i=>i.src.includes('pool.')).map(i=>{const r=i.getBoundingClientRect();return Math.round(r.width)+'×'+Math.round(r.height)})));
+await ctx.close();

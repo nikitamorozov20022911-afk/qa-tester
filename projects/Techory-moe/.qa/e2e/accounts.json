@@ -1,0 +1,47 @@
+[
+  {
+    "id": "admin",
+    "role": "Admin + Technician + User (iamdejar@gmail.com)",
+    "emailVar": "QA_USER_ADMIN_EMAIL",
+    "passwordVar": "QA_USER_ADMIN_PASSWORD"
+  },
+  {
+    "id": "user",
+    "role": "Обычный пользователь «בדיקה» (wojeg27104@blobapps.com) — получает тариф от админа",
+    "emailVar": "QA_USER_USER_EMAIL",
+    "passwordVar": "QA_USER_USER_PASSWORD"
+  },
+  {
+    "id": "admin-dark",
+    "role": "Same account on dark-mode preview (Vercel-protected, manual login only)",
+    "emailVar": "QA_USER_ADMIN_EMAIL",
+    "passwordVar": "QA_USER_ADMIN_PASSWORD",
+    "loginPath": "https://techory-git-feat-dark-mode-eli-s-projects-26be8857.vercel.app/login",
+    "manualOnly": true
+  },
+  {
+    "id": "dispatcher",
+    "role": "Admin-dispatcher в компании test (sixaka2671@betshubs.com, «QA Dispatcher», приглашён 18.10)",
+    "emailVar": "QA_USER_DISPATCHER_EMAIL",
+    "passwordVar": "QA_USER_DISPATCHER_PASSWORD"
+  },
+  {
+    "id": "gps",
+    "role": "Новый аккаунт/компания пользователя для #0c3606 GPS Workflow (создан 02.11, вход вручную)",
+    "emailVar": "QA_USER_GPS_EMAIL",
+    "passwordVar": "QA_USER_GPS_PASSWORD",
+    "manualOnly": true
+  },
+  {
+    "id": "preprod-a",
+    "role": "Pre-Prod: admin платформы + реферер (qa.techory.20260722+pp-a@gmail.com), Stripe test",
+    "loginPath": "https://techory-git-preprod-eli-s-projects-26be8857.vercel.app/login?_vercel_share=9iAzjiWFj605Wg43XCtZ74fh84V5ma01",
+    "manualOnly": true
+  },
+  {
+    "id": "preprod-ttp",
+    "role": "Pre-Prod: TTP Test Locks (qa.techory.20260722+pp-ttp@gmail.com)",
+    "loginPath": "https://techory-git-preprod-eli-s-projects-26be8857.vercel.app/login?_vercel_share=9iAzjiWFj605Wg43XCtZ74fh84V5ma01",
+    "manualOnly": true
+  }
+]

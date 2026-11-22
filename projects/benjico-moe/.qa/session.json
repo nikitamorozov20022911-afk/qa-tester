@@ -1,0 +1,152 @@
+{
+ "date": "2026-11-19",
+ "round": "r2",
+ "status": "done",
+ "device": "iPad Pro 13 (real) + web staging https://benjico.expo.app",
+ "queue": [
+  "#45d7ca",
+  "#567965",
+  "#77969d",
+  "#32cb03",
+  "#789f1a",
+  "#caa4e6",
+  "#6a0cbc",
+  "#5187cb",
+  "#c93048",
+  "#39900e",
+  "#c74dd3",
+  "#8bfc3c"
+ ],
+ "skipped": [
+  {
+   "ticket": "#28ef35",
+   "reason": "Android-планшет 22.11"
+  }
+ ],
+ "tickets": [
+  {
+   "ticket": "#789f1a",
+   "platform": "iPad build 9",
+   "result": "pass",
+   "notes": "иконка = состояние на בית и תרגול קריאה, 2 цикла",
+   "shots": "screenshots/2026-11-19-r2/ipad/789f1a-*",
+   "column": "הושלם",
+   "confirmed_by_user": "2026-11-19"
+  },
+  {
+   "ticket": "#6a0cbc",
+   "platform": "iPad build 9",
+   "result": "pass",
+   "notes": "placeholder и 3 строки над линией, ן/ף/ץ/«/» не пересекаются",
+   "shots": "ipad/6a0cbc-*",
+   "column": "הושלם",
+   "confirmed_by_user": "2026-11-19"
+  },
+  {
+   "ticket": "#5187cb",
+   "platform": "iPad build 9",
+   "result": "pass",
+   "notes": "QA-R2-2 чтение открывается (בַּבַּיִת), ошибки нет; экран «הסיפור לא נמצא» не проверен — нужна снятая с публикации история с открытой попыткой · решение пользователя: засчитать по серверной части",
+   "column": "הושלם",
+   "confirmed_by_user": "2026-11-19"
+  },
+  {
+   "ticket": "#32cb03",
+   "platform": "iPad build 9",
+   "result": "pass",
+   "notes": "черновик הקלדה + рукопись, отправка из כתיבה ביד → рукопись 3/3; из הקלדה → текст; рукопись сохраняется при смене режима. НО: כתיבה ביד пустая + черновик הקלדה → уходит невидимый черновик 3/3 (QADRAFT3/5/6) · программист: фикс 5ba5d63 (веб + iPad build 10 в сборке), вернул в testing; ретест веб начат · ретест 5ba5d63: веб 1194/390 п.1-3 3/3, п.4-5 1/1 ✅; iPad build 10: пустая тетрадь+черновик → finish Disabled 3/3, черновик сохраняется, обратный случай Disabled, основной (ink) ✅",
+   "action": "rejection rej_1148e7d0 sent 12:55Z",
+   "column": "הושלם",
+   "confirmed_by_user": "2026-11-19"
+  },
+  {
+   "ticket": "#45d7ca",
+   "platform": "iPad build 9",
+   "result": "reject",
+   "action": "rejection rej_ce777542 sent 13:03Z",
+   "notes": "«אימות זהות» уходит за верх экрана при открытой клавиатуре (y=-358), 3/3, обычный шрифт"
+  },
+  {
+   "ticket": "#8bfc3c",
+   "platform": "web 1280/390",
+   "result": "pass",
+   "notes": "(а)-(г) 3/3 каждый, speechSynthesis.speak=0, 1 повтор mp3, текст в пузыре, unmute переигрывает",
+   "shots": "screenshots/2026-11-19-r2/8bfc3c/",
+   "column": "הושלם",
+   "confirmed_by_user": "2026-11-19"
+  },
+  {
+   "ticket": "#caa4e6",
+   "platform": "iPad build 9",
+   "result": "pass",
+   "column": "הושלם",
+   "confirmed_by_user": "2026-11-19",
+   "notes": "на слух пользователь: холодный старт, возврат на בית, mute/unmute повторяет, беззвучный режим — звучит"
+  },
+  {
+   "ticket": "#77969d",
+   "platform": "iPad build 9",
+   "result": "reject",
+   "notes": "пользователь: подсветка не прыгает, но всё равно не успевает за голосом",
+   "action": "rejection rej_51ee7945 sent 13:17Z"
+  },
+  {
+   "ticket": "#c93048",
+   "platform": "web",
+   "result": "pass",
+   "notes": "390: השתק y=306–351, неподвижен 8 прогонов, клик работает; 1194/1280 ок",
+   "shots": "screenshots/2026-11-19-r2/c93048/",
+   "column": "הושלם",
+   "confirmed_by_user": "2026-11-19"
+  },
+  {
+   "ticket": "#39900e",
+   "platform": "web",
+   "result": "pass",
+   "notes": "320/360/844×390/375/414 — השתק в экране, стабилен",
+   "shots": "screenshots/2026-11-19-r2/39900e/",
+   "column": "הושלם",
+   "confirmed_by_user": "2026-11-19"
+  },
+  {
+   "ticket": "#c74dd3",
+   "platform": "web",
+   "result": "pass",
+   "notes": "390/414: микрофон и השתק на первом экране; текст скроллится; находка: нижняя «מתחילים לקרוא» срезана на 8px (390) / 40px (375×812)",
+   "shots": "screenshots/2026-11-19-r2/c74dd3/",
+   "column": "הושלם",
+   "confirmed_by_user": "2026-11-19"
+  },
+  {
+   "ticket": "#caca2a",
+   "result": "new-bug",
+   "notes": "390/375: нижняя «מתחילים לקרוא» срезана (8px/40px), находка из #c74dd3, создан 19.11 todo"
+  },
+  {
+   "ticket": "#567965",
+   "platform": "iPad build 9, Apple Pencil (пользователь)",
+   "result": "reject",
+   "notes": "аккуратное печатное «אבא אמא» 0/3 (подсказка «לכתוב שוב בהקלדה»); «בית» с ב без черты → «כל הכבוד על האומץ», совет «לשמור על אותיות בגודל דומה», подсказки про ב/כ нет; «אבא מאמא» — не прочитано, похвалы нет; наблюдение родителя не проверено",
+   "action": "rejection rej_c851f2e6 sent 13:26Z"
+  },
+  {
+   "ticket": "#87e4ab",
+   "result": "new-bug",
+   "notes": "save_writing_draft 400 not_draft после быстрой отправки (до «נשמר»), веб; подтверждено bug-verifier 7/7 быстрых, 0/6 с ожиданием"
+  }
+ ],
+ "test_data": [
+  "QA-R2-2: ~7 попыток письма 19.11 r2 (QA6A0…, QATYPED9 דג, QADRAFT2-6, рисунки כלב)",
+  "QA-a0d-Mzkp: 4 попытки письма QA32-TEXT-p4/p5/p4m/p5m (248a52fc…, c1f4f074…, 8d3780ae…, …07200e42d918), черновики QA32-draft-1..3; чужой черновик «אכלתי לחם וגבינה» стёрт агентом",
+  "QA-R2-2 (iPad build 10): попытки QA32B10-*, QA32MAIN, рисунки",
+  "QA-a0d-Mzkp: 13 попыток письма QA400-… (0f20071f, c95f4ef3, 86c9437a, 48614c67, 654c65f1, a169de61, c7e03258, 79712adf, 53b810d1, 02dbb6ef, f9c97994, 6e24ba12, b946c212) + b5404078"
+ ],
+ "autotests_after_queue": [
+  "#caa4e6",
+  "#c93048",
+  "#39900e",
+  "#c74dd3",
+  "#5187cb",
+  "#32cb03"
+ ]
+}

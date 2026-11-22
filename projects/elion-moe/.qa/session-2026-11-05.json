@@ -1,0 +1,104 @@
+{
+  "project": "elion-moe (ELion, mifrat 698f3116e51f5479082965f8)",
+  "date": "2026-11-05",
+  "environment": "prod https://www.elionvc.com · preprod https://elion-git-qa-stand-aviels-projects.vercel.app (qa-stand)",
+  "tickets": [
+    {
+      "hash": "#43cd29",
+      "title": "בקשת לקוח: תזכורות במייל על תשלומים עתידיים בתזרים – חודש, שבוע ובאותו יום",
+      "type": "task",
+      "action": "reject",
+      "column": "לביצוע",
+      "notes": "Rejection rej_e1a164e4869d58e68ba1a2da (change_id b8872bf5c23d3f1d4e87a192): asked dev for dry-run proof that a payment marked paid gets no reminder (+ optional month-ahead email sample). Toggle UI EN/HE/RTL/persistence OK on qa-stand; DNS SPF/DKIM/DMARC OK. Prod: reminders turned ON for jleprog54; awaiting 29.10 email.",
+      "at": "2026-10-28T20:11"
+    },
+    {
+      "hash": "#43cd29",
+      "title": "בקשת לקוח: תזכורות במייל על תשלומים עתידיים בתזרים – חודש, שבוע ובאותו יום",
+      "type": "task",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "Dry-run proof accepted (items 9-10); prod email 29.10 OK (item 6). Rejection rej_e1a164e4869d58e68ba1a2da resolved, change_id 3af1940cba1068d0ad0e10b1. Feature: payment reminders (profile switch + daily email), role: own account, desktop. Pending optional: no email 30-31.10, 'on the day' email 05.11. User confirmed עבר QA 2026-10-29. Test cases: .qa/tests/payment-reminders.md. Autotests not written: no .qa/e2e (project not onboarded).",
+      "at": "2026-10-29T11:09"
+    },
+    {
+      "hash": "#58be43",
+      "title": "בקשת לקוח: הגדרת כתובות מייל ותדירות לתזכורות תשלום מטאב ניהול מערכת",
+      "type": "task",
+      "action": "create",
+      "column": "לביצוע",
+      "notes": "qa-client; change_id 183409700921c023e4458628. Wrong-board #9532c7 in 69f30455 undone (change db5036293b3d5984f8d87023).",
+      "at": "2026-11-01T11:18"
+    },
+    {
+      "hash": "#58be43",
+      "title": "בקשת לקוח: הגדרת תדירות לתזכורות תשלום מטאב ניהול מערכת",
+      "type": "task",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "qa-stand, admin jleprog54 via user's Chrome, desktop EN+HE. Dev steps 1-7 all OK: default list, edit/add/off + save toast + reload sorted, profile text EN/HE (dates and 'none on'), Audit Trail before/after, refusals 400d/13m/dup/0/2.5 + Save disabled, 5th date disables Add, all-off warning. List restored to default, language back to English. Not checked: real emails (stand redirects; dev dry-run), non-admin refusal (no regular account). Feature: payment reminders settings; role admin; cases .qa/tests/payment-reminder-dates.md | 2026-11-05: user decided to wait for prod to check a real email before עבר QA. | 05.11 13:05 prod: deployed, default list OK; added '16 days' (user OK) → expect 06.11 morning (~07:00) email to jleprog54 with section 'Due in 16 days · בעוד 16 ימים' = Samana 22/11/2026 payments (unpaid), no other outflows 06–21.11. | 05.11 13:20 prod: '7 days' → '14 days' (client decision, user OK). List now: 1 month, 16 days, 14 days, on the day. | 05.11 14:53: dev test send (as 06.11 morning, only jleprog54) — email OK: subject 'ELion — 10 upcoming payments · תזכורת תשלום', from noreply@elionvc.com, one section 'Due in 16 days — 22/11/2026 · בעוד 16 ימים', 10 Samana payments (Blvd Heights 1412/1413/1425, Parkville 1101/1615/1816/1903/1904/2014/2015), total AED 69,023.58, no other sections. Next: remove temp '16 days' on prod. | 05.11 14:55:55 prod: temp '16 days' removed (user plan). List after reload: 1 month, 14 days, on the day — all ON. Audit Trail EDIT 'Payment reminder dates' 14:55:55 SUCCESS. /profile: 'one month before, 14 days before, and on the day'. Verdict: pass — waiting for user's עבר QA. | 05.11: user confirmed עבר QA. Autotests not written: prod only (shared settings + Turnstile/2FA login) — write later on qa-stand if needed.",
+      "at": "2026-11-05T14:57"
+    }
+  ],
+  "test_data": [
+    {
+      "what": "Payment reminders switch ON for jleprog54 (was OFF)",
+      "where": "prod /profile",
+      "created_at": "2026-10-28T20:06",
+      "restore": "turn OFF after the email check, if the user wants"
+    },
+    {
+      "what": "Cash Flow records filter set to 'Unpaid only' (view only)",
+      "where": "prod /cashflow",
+      "created_at": "2026-10-28T20:08",
+      "restore": "set back to 'All records' if it persisted"
+    },
+    {
+      "what": "Payment reminders switch toggled on/off, language HE->EN",
+      "where": "qa-stand /profile",
+      "created_at": "2026-10-28T19:55",
+      "restore": "done (switch OFF, English)"
+    },
+    {
+      "what": "Payment Reminder Dates list edited (10/14 days, all off) and HE language",
+      "where": "qa-stand /settings, /profile",
+      "created_at": "2026-11-05T12:17",
+      "restore": "done: 1 month, 7 days, on the day all ON; language English"
+    },
+    {
+      "what": "PROD Payment Reminder Dates: added '16 days' (list was 1 month, 7 days, on the day — all ON)",
+      "where": "prod /settings (affects ALL users with reminders ON)",
+      "created_at": "2026-11-05T13:05",
+      "restore": "done 05.11 14:55:55: '16 days' removed; final list 1 month, 14 days, on the day (client's choice)"
+    },
+    {
+      "what": "PROD Payment Reminder Dates: '7 days' changed to '14 days' (client decision; user OK). List now: 1 month, 16 days (temp), 14 days, on the day — all ON",
+      "where": "prod /settings",
+      "created_at": "2026-11-05T13:20",
+      "restore": "done 05.11 14:55:55: '16 days' removed; final list 1 month, 14 days, on the day (client's choice)"
+    }
+  ],
+  "findings": [
+    {
+      "text": "Profile: line 'Sent to <email> every morning' is shown even when the reminders switch is OFF",
+      "screenshot": "",
+      "status": "reported"
+    },
+    {
+      "text": "Profile: reminders switch (role=switch) has no aria-label",
+      "screenshot": "",
+      "status": "reported"
+    },
+    {
+      "text": "Profile: 'Sent to <email> every morning' still shown when no reminder date is active (text above says no emails go out)",
+      "screenshot": "",
+      "status": "new"
+    },
+    {
+      "text": "Audit Trail details (HE UI): 'after' value breaks words mid-word in narrow column; dates listed nearest-first unlike the settings list",
+      "screenshot": "",
+      "status": "new"
+    }
+  ],
+  "board": "mifrat 698f3116e51f5479082965f8 (основной борд ELion для тикетов; 69f30455… — НЕ тот)"
+}

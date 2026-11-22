@@ -1,0 +1,11 @@
+import { newBrowser, ctx, go, txt, shot, sleep } from './qasp6-lib.mjs';
+const W='/wallet/shared/3bf0fc53-2b78-46d2-9f53-f824c57ceb39';
+const b = await newBrowser();
+const { p } = await ctx(b, 'client', 375);
+const log=(...a)=>console.log(...a);
+await go(p, W);
+await p.getByRole('button',{name:'הסרת יונתן לוי'}).click(); await sleep(2000);
+log('self remove dialog:', (await txt(p)).replace(/\n/g,' | '));
+await shot(p,'6a86f7c7/r1-51-remove-self-dialog-375');
+log(await p.locator('body').ariaSnapshot());
+await b.close();

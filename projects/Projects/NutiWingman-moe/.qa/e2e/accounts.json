@@ -1,0 +1,38 @@
+[
+  {
+    "id": "noa",
+    "role": "13:10 אחרי שקשוקה (ירוק), זיכרון ואירועים",
+    "emailVar": "QA_USER_NOA_EMAIL",
+    "passwordVar": "QA_USER_NOA_PASSWORD"
+  },
+  {
+    "id": "morning",
+    "role": "רק ארוחת בוקר (צהוב לצהריים)",
+    "emailVar": "QA_USER_MORNING_EMAIL",
+    "passwordVar": "QA_USER_MORNING_PASSWORD"
+  },
+  {
+    "id": "pregnancy",
+    "role": "היריון, חסר חלבון (אדום)",
+    "emailVar": "QA_USER_PREGNANCY_EMAIL",
+    "passwordVar": "QA_USER_PREGNANCY_PASSWORD"
+  },
+  {
+    "id": "evening",
+    "role": "ערב, מעל היעד (סגול)",
+    "emailVar": "QA_USER_EVENING_EMAIL",
+    "passwordVar": "QA_USER_EVENING_PASSWORD"
+  },
+  {
+    "id": "nogoal",
+    "role": "בלי יעד (קו אפור)",
+    "emailVar": "QA_USER_NOGOAL_EMAIL",
+    "passwordVar": "QA_USER_NOGOAL_PASSWORD"
+  },
+  {
+    "id": "new",
+    "role": "משתמש חדש, אונבורדינג",
+    "emailVar": "QA_USER_NEW_EMAIL",
+    "passwordVar": "QA_USER_NEW_PASSWORD"
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "tickets": [
+    {
+      "hash": "#6ee502",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-15",
+      "tests": [
+        "e2e/specs/projects-search.md"
+      ],
+      "note": "план готов; spec-файлы не сгенерированы — нужна сессия admin-stand"
+    },
+    {
+      "hash": "#f54c1e",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-15",
+      "tests": [
+        "e2e/specs/hard-delete-audit.md"
+      ],
+      "note": "план готов; spec-файлы не сгенерированы — нужна сессия admin-stand"
+    },
+    {
+      "hash": "#0cd999",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-15",
+      "tests": [
+        "e2e/specs/hard-delete-audit.md"
+      ],
+      "note": "план готов; spec-файлы не сгенерированы — нужна сессия admin-stand"
+    },
+    {
+      "hash": "#38f51d",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-15",
+      "tests": [
+        "e2e/specs/hard-delete-audit.md"
+      ],
+      "note": "план готов; spec-файлы не сгенерированы — нужна сессия admin-stand"
+    },
+    {
+      "hash": "#fd4e1d",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-15",
+      "tests": [],
+      "note": "нет UI-сценария (интеграция почты)"
+    }
+  ]
+}

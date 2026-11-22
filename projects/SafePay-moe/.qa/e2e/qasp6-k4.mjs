@@ -1,0 +1,16 @@
+import { newBrowser, ctx, go, txt, shot, sleep } from './qasp6-lib.mjs';
+const D='6a86f7b4/';
+const b = await newBrowser();
+const { p } = await ctx(b, 'client', 375);
+const log=(...a)=>console.log(...a);
+const T=()=>txt(p).then(t=>t.replace(/\n/g,' | '));
+await go(p, '/wallet/kids/new');
+const name=p.getByRole('textbox').nth(0), phone=p.getByRole('textbox',{name:'054-1234567'}), day=p.getByRole('textbox',{name:'מגבלה יומית (ש"ח)'}), tx=p.getByRole('textbox',{name:'מגבלה לעסקה (ש"ח)'});
+await name.fill('QA-ילד 03.10'); await phone.fill('0500000003'); await day.fill('50'); await tx.fill('25');
+await shot(p, D+'r1-08-filled-375', true);
+await p.getByRole('button',{name:'אישור ופתיחת ארנק'}).click(); await sleep(4500);
+log('after create URL', p.url()); log(await T());
+await shot(p, D+'r1-09-after-create-375', true);
+log(await p.locator('body').ariaSnapshot());
+log('REQ', p._req, p._console);
+await b.close();

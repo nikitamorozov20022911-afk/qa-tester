@@ -1,0 +1,26 @@
+[
+  {
+    "id": "user",
+    "role": "משתמש רשום",
+    "emailVar": "QA_USER_EMAIL",
+    "passwordVar": "QA_USER_PASSWORD"
+  },
+  {
+    "id": "admin",
+    "role": "Admin",
+    "emailVar": "QA_ADMIN_EMAIL",
+    "passwordVar": "QA_ADMIN_PASSWORD"
+  },
+  {
+    "id": "superadmin",
+    "role": "Super Admin",
+    "emailVar": "QA_SUPERADMIN_EMAIL",
+    "passwordVar": "QA_SUPERADMIN_PASSWORD"
+  },
+  {
+    "id": "support",
+    "role": "Support",
+    "emailVar": "QA_SUPPORT_EMAIL",
+    "passwordVar": "QA_SUPPORT_PASSWORD"
+  }
+]

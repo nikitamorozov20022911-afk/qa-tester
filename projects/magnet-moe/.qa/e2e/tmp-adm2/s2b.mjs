@@ -1,0 +1,14 @@
+import {admin,SS,outline} from './h.mjs';
+const A=await admin(); const p=A.p;
+await p.goto('https://magnet-admin.vercel.app/reports',{waitUntil:'domcontentloaded'});
+await p.getByText('QA-AUTO סטורי לדיווח').waitFor({timeout:20000});
+console.log('open has J2:',await p.locator('article').filter({hasText:'QA-AUTO פוסט לדיווח'}).count());
+console.log('tabs:',(await p.getByRole('tablist').first().innerText()).replace(/\n/g,' '));
+await outline(p,p.getByRole('tablist').first(),'06e5ab-J2-after-open-desktop.png');
+await p.goto('https://magnet-admin.vercel.app/reports?status=resolved',{waitUntil:'domcontentloaded'});
+const rc=p.locator('article').filter({hasText:'QA-AUTO פוסט לדיווח'});
+await rc.waitFor({timeout:15000}).catch(()=>console.log('not in resolved'));
+console.log('RESOLVED:',(await p.locator('main').innerText()).slice(0,1500));
+await outline(p,rc,'06e5ab-J2-in-resolved-desktop.png',true);
+console.log(JSON.stringify(A.net));
+await A.close();

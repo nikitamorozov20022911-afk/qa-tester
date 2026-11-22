@@ -1,0 +1,232 @@
+== page 1
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=t y=  72 x= 263 116x36 | מעבר לפרטים שלי
+Button       vis=t y=  72 x=  72 107x36 | זמני התפילות של היום
+StaticText   vis=t y= 126 x=  24 354x52 | המסע שלי
+StaticText   vis=t y= 182 x=  24 354x20 | מתחיל
+StaticText   vis=t y= 221 x= 249 129x20 | 10 תפילות לדרגה הבאה
+StaticText   vis=t y= 221 x=  24 83x20 | דרגה 1 מתוך 10
+Other        vis=t y= 249 x=  24 354x8 | 10%
+Other        vis=t y= 325 x= 268 110x110 | ימים רצופים: 0
+StaticText   vis=t y= 366 x= 316 14x32 | 0
+StaticText   vis=t y= 402 x= 295 56x16 | ימים רצופים
+Other        vis=t y= 325 x= 146 110x110 | תפילות היום: 0
+StaticText   vis=t y= 366 x= 194 14x32 | 0
+StaticText   vis=t y= 402 x= 172 58x16 | תפילות היום
+Other        vis=t y= 325 x=  24 110x110 | סה״כ תפילות: 0
+StaticText   vis=t y= 366 x=  72 14x32 | 0
+StaticText   vis=t y= 402 x=  49 60x16 | סה״כ תפילות
+Button       vis=t y= 467 x=  40 322x56 | מקבל על עצמי
+StaticText   vis=t y= 579 x=  48 306x28 | פילוח תפילות
+Other        vis=t y= 619 x=  48 306x64 | שחרית: 0
+StaticText   vis=t y= 639 x= 253 45x24 | שחרית
+StaticText   vis=t y= 641 x=  60 8x20 | 0
+Other        vis=t y= 695 x=  48 306x64 | מנחה: 0
+StaticText   vis=t y= 715 x= 262 37x24 | מנחה
+StaticText   vis=t y= 717 x=  60 8x20 | 0
+Other        vis=f y= 771 x=  48 306x64 | ערבית: 0
+StaticText   vis=f y= 791 x= 257 42x24 | ערבית
+StaticText   vis=f y= 793 x=  60 8x20 | 0
+StaticText   vis=f y= 988 x= 117 168x28 | התחל את המסע שלך
+StaticText   vis=f y=1024 x=  49 304x40 | עדיין לא השלמת אף תפילה. התפילות שתשלים יופיעו כאן.
+Link         vis=f y=1072 x= 131 140x44 | מעבר לתפילה הקרובה
+StaticText   vis=f y=1124 x= 225 32x20 | מנחה
+StaticText   vis=f y=1124 x= 145 73x20 | 12:54 - 18:04
+StaticText   vis=f y=1217 x= 149 104x28 | מפת השפעה
+StaticText   vis=f y=1253 x= 150 102x16 | אין עדיין אנשים במפה
+StaticText   vis=f y=1335 x= 193 16x16 | אני
+StaticText   vis=f y=1359 x= 122 158x16 | עדיין לא נוסף אף אדם למפה שלך.
+Button       vis=f y=1391 x= 119 164x44 | הזמנת אדם להתחזק
+StaticText   vis=f y=1483 x=  24 354x28 | הישגים
+Other        vis=f y=1527 x= 268 110x70 | תפילה ראשונה: טרם הושג
+StaticText   vis=f y=1566 x= 288 70x16 | תפילה ראשונה
+Other        vis=f y=1527 x= 146 110x70 | 3 ימים רצופים: טרם הושג
+StaticText   vis=f y=1566 x= 169 64x16 | 3 ימים רצופים
+Other        vis=f y=1527 x=  24 110x70 | שבוע שלם: טרם הושג
+StaticText   vis=f y=1566 x=  54 50x16 | שבוע שלם
+Other        vis=f y=1609 x= 268 110x70 | 30 תפילות: טרם הושג
+StaticText   vis=f y=1648 x= 298 50x16 | 30 תפילות
+Other        vis=f y=1609 x= 146 110x70 | חודש רצוף: טרם הושג
+StaticText   vis=f y=1648 x= 175 51x16 | חודש רצוף
+Other        vis=f y=1609 x=  24 110x70 | 100 תפילות: טרם הושג
+StaticText   vis=f y=1648 x=  52 54x16 | 100 תפילות
+Other        vis=t y= 727 x=   0 402x30 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות
+== page 2
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=f y=-523 x= 263 116x36 | מעבר לפרטים שלי
+Button       vis=f y=-523 x=  72 107x36 | זמני התפילות של היום
+StaticText   vis=f y=-469 x=  24 354x52 | המסע שלי
+StaticText   vis=f y=-413 x=  24 354x20 | מתחיל
+StaticText   vis=f y=-374 x= 249 129x20 | 10 תפילות לדרגה הבאה
+StaticText   vis=f y=-374 x=  24 83x20 | דרגה 1 מתוך 10
+Other        vis=f y=-346 x=  24 354x8 | 10%
+Other        vis=f y=-270 x= 268 110x110 | ימים רצופים: 0
+StaticText   vis=f y=-229 x= 316 14x32 | 0
+StaticText   vis=f y=-193 x= 295 56x16 | ימים רצופים
+Other        vis=f y=-270 x= 146 110x110 | תפילות היום: 0
+StaticText   vis=f y=-229 x= 194 14x32 | 0
+StaticText   vis=f y=-193 x= 172 58x16 | תפילות היום
+Other        vis=f y=-270 x=  24 110x110 | סה״כ תפילות: 0
+StaticText   vis=f y=-229 x=  72 14x32 | 0
+StaticText   vis=f y=-193 x=  49 60x16 | סה״כ תפילות
+Button       vis=f y=-128 x=  40 322x56 | מקבל על עצמי
+StaticText   vis=f y= -16 x=  48 306x28 | פילוח תפילות
+Other        vis=t y=  24 x=  48 306x64 | שחרית: 0
+StaticText   vis=t y=  44 x= 253 45x24 | שחרית
+StaticText   vis=t y=  46 x=  60 8x20 | 0
+Other        vis=t y= 100 x=  48 306x64 | מנחה: 0
+StaticText   vis=t y= 120 x= 262 37x24 | מנחה
+StaticText   vis=t y= 122 x=  60 8x20 | 0
+Other        vis=t y= 176 x=  48 306x64 | ערבית: 0
+StaticText   vis=t y= 196 x= 257 42x24 | ערבית
+StaticText   vis=t y= 198 x=  60 8x20 | 0
+StaticText   vis=t y= 393 x= 117 168x28 | התחל את המסע שלך
+StaticText   vis=t y= 429 x=  49 304x40 | עדיין לא השלמת אף תפילה. התפילות שתשלים יופיעו כאן.
+Link         vis=t y= 477 x= 131 140x44 | מעבר לתפילה הקרובה
+StaticText   vis=t y= 529 x= 225 32x20 | מנחה
+StaticText   vis=t y= 529 x= 145 73x20 | 12:54 - 18:04
+StaticText   vis=t y= 622 x= 149 104x28 | מפת השפעה
+StaticText   vis=t y= 658 x= 150 102x16 | אין עדיין אנשים במפה
+StaticText   vis=t y= 740 x= 193 16x16 | אני
+StaticText   vis=f y= 764 x= 122 158x16 | עדיין לא נוסף אף אדם למפה שלך.
+Button       vis=f y= 796 x= 119 164x44 | הזמנת אדם להתחזק
+StaticText   vis=f y= 888 x=  24 354x28 | הישגים
+Other        vis=f y= 932 x= 268 110x70 | תפילה ראשונה: טרם הושג
+StaticText   vis=f y= 971 x= 288 70x16 | תפילה ראשונה
+Other        vis=f y= 932 x= 146 110x70 | 3 ימים רצופים: טרם הושג
+StaticText   vis=f y= 971 x= 169 64x16 | 3 ימים רצופים
+Other        vis=f y= 932 x=  24 110x70 | שבוע שלם: טרם הושג
+StaticText   vis=f y= 971 x=  54 50x16 | שבוע שלם
+Other        vis=f y=1014 x= 268 110x70 | 30 תפילות: טרם הושג
+StaticText   vis=f y=1053 x= 298 50x16 | 30 תפילות
+Other        vis=f y=1014 x= 146 110x70 | חודש רצוף: טרם הושג
+StaticText   vis=f y=1053 x= 175 51x16 | חודש רצוף
+Other        vis=f y=1014 x=  24 110x70 | 100 תפילות: טרם הושג
+StaticText   vis=f y=1053 x=  52 54x16 | 100 תפילות
+Other        vis=t y= 727 x=   0 402x30 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות
+== page 3
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=f y=-879 x= 263 116x36 | מעבר לפרטים שלי
+Button       vis=f y=-879 x=  72 107x36 | זמני התפילות של היום
+StaticText   vis=f y=-825 x=  24 354x52 | המסע שלי
+StaticText   vis=f y=-769 x=  24 354x20 | מתחיל
+StaticText   vis=f y=-730 x= 249 129x20 | 10 תפילות לדרגה הבאה
+StaticText   vis=f y=-730 x=  24 83x20 | דרגה 1 מתוך 10
+Other        vis=f y=-702 x=  24 354x8 | 10%
+Other        vis=f y=-626 x= 268 110x110 | ימים רצופים: 0
+StaticText   vis=f y=-585 x= 316 14x32 | 0
+StaticText   vis=f y=-549 x= 295 56x16 | ימים רצופים
+Other        vis=f y=-626 x= 146 110x110 | תפילות היום: 0
+StaticText   vis=f y=-585 x= 194 14x32 | 0
+StaticText   vis=f y=-549 x= 172 58x16 | תפילות היום
+Other        vis=f y=-626 x=  24 110x110 | סה״כ תפילות: 0
+StaticText   vis=f y=-585 x=  72 14x32 | 0
+StaticText   vis=f y=-549 x=  49 60x16 | סה״כ תפילות
+Button       vis=f y=-484 x=  40 322x56 | מקבל על עצמי
+StaticText   vis=f y=-372 x=  48 306x28 | פילוח תפילות
+Other        vis=f y=-332 x=  48 306x64 | שחרית: 0
+StaticText   vis=f y=-312 x= 253 45x24 | שחרית
+StaticText   vis=f y=-310 x=  60 8x20 | 0
+Other        vis=f y=-256 x=  48 306x64 | מנחה: 0
+StaticText   vis=f y=-236 x= 262 37x24 | מנחה
+StaticText   vis=f y=-234 x=  60 8x20 | 0
+Other        vis=f y=-180 x=  48 306x64 | ערבית: 0
+StaticText   vis=f y=-160 x= 257 42x24 | ערבית
+StaticText   vis=f y=-158 x=  60 8x20 | 0
+StaticText   vis=t y=  37 x= 117 168x28 | התחל את המסע שלך
+StaticText   vis=t y=  73 x=  49 304x40 | עדיין לא השלמת אף תפילה. התפילות שתשלים יופיעו כאן.
+Link         vis=t y= 121 x= 131 140x44 | מעבר לתפילה הקרובה
+StaticText   vis=t y= 173 x= 225 32x20 | מנחה
+StaticText   vis=t y= 173 x= 145 73x20 | 12:54 - 18:04
+StaticText   vis=t y= 266 x= 149 104x28 | מפת השפעה
+StaticText   vis=t y= 302 x= 150 102x16 | אין עדיין אנשים במפה
+StaticText   vis=t y= 384 x= 193 16x16 | אני
+StaticText   vis=t y= 408 x= 122 158x16 | עדיין לא נוסף אף אדם למפה שלך.
+Button       vis=t y= 440 x= 119 164x44 | הזמנת אדם להתחזק
+StaticText   vis=t y= 532 x=  24 354x28 | הישגים
+Other        vis=t y= 576 x= 268 110x70 | תפילה ראשונה: טרם הושג
+StaticText   vis=t y= 615 x= 288 70x16 | תפילה ראשונה
+Other        vis=t y= 576 x= 146 110x70 | 3 ימים רצופים: טרם הושג
+StaticText   vis=t y= 615 x= 169 64x16 | 3 ימים רצופים
+Other        vis=t y= 576 x=  24 110x70 | שבוע שלם: טרם הושג
+StaticText   vis=t y= 615 x=  54 50x16 | שבוע שלם
+Other        vis=t y= 658 x= 268 110x70 | 30 תפילות: טרם הושג
+StaticText   vis=t y= 697 x= 298 50x16 | 30 תפילות
+Other        vis=t y= 658 x= 146 110x70 | חודש רצוף: טרם הושג
+StaticText   vis=t y= 697 x= 175 51x16 | חודש רצוף
+Other        vis=t y= 658 x=  24 110x70 | 100 תפילות: טרם הושג
+StaticText   vis=t y= 697 x=  52 54x16 | 100 תפילות
+Other        vis=t y= 727 x=   0 402x30 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות
+== page 4
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=f y=-879 x= 263 116x36 | מעבר לפרטים שלי
+Button       vis=f y=-879 x=  72 107x36 | זמני התפילות של היום
+StaticText   vis=f y=-825 x=  24 354x52 | המסע שלי
+StaticText   vis=f y=-769 x=  24 354x20 | מתחיל
+StaticText   vis=f y=-730 x= 249 129x20 | 10 תפילות לדרגה הבאה
+StaticText   vis=f y=-730 x=  24 83x20 | דרגה 1 מתוך 10
+Other        vis=f y=-702 x=  24 354x8 | 10%
+Other        vis=f y=-626 x= 268 110x110 | ימים רצופים: 0
+StaticText   vis=f y=-585 x= 316 14x32 | 0
+StaticText   vis=f y=-549 x= 295 56x16 | ימים רצופים
+Other        vis=f y=-626 x= 146 110x110 | תפילות היום: 0
+StaticText   vis=f y=-585 x= 194 14x32 | 0
+StaticText   vis=f y=-549 x= 172 58x16 | תפילות היום
+Other        vis=f y=-626 x=  24 110x110 | סה״כ תפילות: 0
+StaticText   vis=f y=-585 x=  72 14x32 | 0
+StaticText   vis=f y=-549 x=  49 60x16 | סה״כ תפילות
+Button       vis=f y=-484 x=  40 322x56 | מקבל על עצמי
+StaticText   vis=f y=-372 x=  48 306x28 | פילוח תפילות
+Other        vis=f y=-332 x=  48 306x64 | שחרית: 0
+StaticText   vis=f y=-312 x= 253 45x24 | שחרית
+StaticText   vis=f y=-310 x=  60 8x20 | 0
+Other        vis=f y=-256 x=  48 306x64 | מנחה: 0
+StaticText   vis=f y=-236 x= 262 37x24 | מנחה
+StaticText   vis=f y=-234 x=  60 8x20 | 0
+Other        vis=f y=-180 x=  48 306x64 | ערבית: 0
+StaticText   vis=f y=-160 x= 257 42x24 | ערבית
+StaticText   vis=f y=-158 x=  60 8x20 | 0
+StaticText   vis=t y=  37 x= 117 168x28 | התחל את המסע שלך
+StaticText   vis=t y=  73 x=  49 304x40 | עדיין לא השלמת אף תפילה. התפילות שתשלים יופיעו כאן.
+Link         vis=t y= 121 x= 131 140x44 | מעבר לתפילה הקרובה
+StaticText   vis=t y= 173 x= 225 32x20 | מנחה
+StaticText   vis=t y= 173 x= 145 73x20 | 12:54 - 18:04
+StaticText   vis=t y= 266 x= 149 104x28 | מפת השפעה
+StaticText   vis=t y= 302 x= 150 102x16 | אין עדיין אנשים במפה
+StaticText   vis=t y= 384 x= 193 16x16 | אני
+StaticText   vis=t y= 408 x= 122 158x16 | עדיין לא נוסף אף אדם למפה שלך.
+Button       vis=t y= 440 x= 119 164x44 | הזמנת אדם להתחזק
+StaticText   vis=t y= 532 x=  24 354x28 | הישגים
+Other        vis=t y= 576 x= 268 110x70 | תפילה ראשונה: טרם הושג
+StaticText   vis=t y= 615 x= 288 70x16 | תפילה ראשונה
+Other        vis=t y= 576 x= 146 110x70 | 3 ימים רצופים: טרם הושג
+StaticText   vis=t y= 615 x= 169 64x16 | 3 ימים רצופים
+Other        vis=t y= 576 x=  24 110x70 | שבוע שלם: טרם הושג
+StaticText   vis=t y= 615 x=  54 50x16 | שבוע שלם
+Other        vis=t y= 658 x= 268 110x70 | 30 תפילות: טרם הושג
+StaticText   vis=t y= 697 x= 298 50x16 | 30 תפילות
+Other        vis=t y= 658 x= 146 110x70 | חודש רצוף: טרם הושג
+StaticText   vis=t y= 697 x= 175 51x16 | חודש רצוף
+Other        vis=t y= 658 x=  24 110x70 | 100 תפילות: טרם הושג
+StaticText   vis=t y= 697 x=  52 54x16 | 100 תפילות
+Other        vis=t y= 727 x=   0 402x30 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות

@@ -1,0 +1,41 @@
+async page => {
+  const out = [];
+  const pickCombo = async (name, optText) => {
+    await page.getByRole('combobox', { name }).click();
+    const opts = page.getByRole('option');
+    await opts.first().waitFor({ timeout: 10000 });
+    const all = await opts.allInnerTexts();
+    let target = optText ? opts.filter({ hasText: optText }).first() : opts.first();
+    const t = await target.innerText();
+    await target.click();
+    out.push(`${name}: [${all.slice(0,8).join(' | ')}] -> ${t}`);
+  };
+  await page.goto('https://hunters-sooty.vercel.app/publish/job');
+  await page.getByRole('textbox', { name: 'שם המשרה (שדה חובה)' }).fill('QA-AUTO 1020 E1 משרה לטאלנט');
+  await page.getByRole('textbox', { name: 'תיאור המשרה (שדה חובה)' }).fill('QA-AUTO 1020 E1 – משרת בדיקה לתרחיש מקצה לקצה חברה ↔ טאלנט. לא להגיש מועמדים אמיתיים.');
+  await pickCombo('תחום התמחות (שדה חובה)', 'טכנולוגיה');
+  await page.getByRole('button', { name: 'תפקידים (שדה חובה)' }).click();
+  const cb = page.getByRole('checkbox').or(page.getByRole('menuitemcheckbox')).or(page.getByRole('option'));
+  await cb.first().waitFor({ timeout: 10000 });
+  out.push('roles: ' + (await cb.allInnerTexts()).slice(0,6).join(' | '));
+  await cb.first().click();
+  await page.keyboard.press('Escape');
+  await page.getByRole('textbox', { name: 'מ-' }).fill('15000');
+  await page.getByRole('textbox', { name: 'עד' }).fill('20000');
+  const slider = page.getByRole('slider', { name: /עמלת/ });
+  await slider.focus();
+  for (let i=0;i<10;i++) await page.keyboard.press('ArrowRight');
+  out.push('commission: ' + await slider.getAttribute('aria-valuenow'));
+  await pickCombo('היקף משרה (שדה חובה)');
+  await pickCombo('סוג משרה (שדה חובה)');
+  await pickCombo('אזור (שדה חובה)');
+  await page.screenshot({ path: '/Users/avielshnaider/hunters-moe/.qa/screenshots/run-1020/E1/E1C-job-step1-desktop.png', fullPage: true });
+  await page.getByRole('button', { name: 'המשך' }).click();
+  await page.waitForURL(u => !u.toString().endsWith('/publish/job'), { timeout: 15000 }).catch(()=>{});
+  await page.getByRole('heading').first().waitFor({ timeout: 10000 });
+  await page.waitForLoadState('networkidle').catch(()=>{});
+  out.push('URL after: ' + page.url());
+  out.push((await page.locator('main').innerText()).slice(0, 2500));
+  await page.screenshot({ path: '/Users/avielshnaider/hunters-moe/.qa/screenshots/run-1020/E1/E1C-job-step2-desktop.png', fullPage: true });
+  return out.join('\n');
+}

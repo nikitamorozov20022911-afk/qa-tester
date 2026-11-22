@@ -1,0 +1,387 @@
+== page 1
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=t y=  75 x= 342 36x37 | חזרה
+StaticText   vis=t y=  77 x=  60 282x33 | זמני תפילות
+StaticText   vis=t y= 158 x=  54 294x20 | ח׳ חשון תשפ״ז
+Button       vis=t y= 202 x= 332 25x24 | היום הקודם
+StaticText   vis=t y= 204 x= 266 71x20 | 19 באוקטובר
+Button       vis=t y= 202 x= 246 25x24 | היום הבא
+Button       vis=t y= 202 x=  90 25x24 | השנה הקודמת
+StaticText   vis=t y= 204 x=  66 29x20 | 2026
+Button       vis=t y= 202 x=  46 24x24 | השנה הבאה
+StaticText   vis=t y= 250 x=  54 294x16 | הזמנים חושבו עבור Longyearbyen, לפי השעון המקומי שם.
+StaticText   vis=t y= 306 x= 262 70x24 | חצות הלילה
+StaticText   vis=t y= 306 x=  70 26x24 | 0:47
+StaticText   vis=t y= 338 x= 262 70x24 | עלות השחר
+StaticText   vis=t y= 338 x= 189 70x24 | (מג״א, ‎19.8°‎)
+StaticText   vis=t y= 338 x=  70 24x24 | 2:51
+StaticText   vis=t y= 370 x= 262 70x24 | עלות השחר
+StaticText   vis=t y= 370 x= 185 74x24 | (בעל התניא)
+StaticText   vis=t y= 370 x=  70 24x24 | 4:13
+StaticText   vis=t y= 402 x= 262 70x24 | עלות השחר
+StaticText   vis=t y= 402 x= 224 35x24 | (‎16.1°‎)
+StaticText   vis=t y= 402 x=  70 26x24 | 4:32
+StaticText   vis=t y= 434 x= 288 45x24 | משיכיר
+StaticText   vis=t y= 434 x= 249 36x24 | (‎11.5°‎)
+StaticText   vis=t y= 434 x=  70 27x24 | 6:08
+StaticText   vis=t y= 466 x= 288 45x24 | משיכיר
+StaticText   vis=t y= 466 x= 203 82x24 | (מחמיר, ‎10.2°‎)
+StaticText   vis=t y= 466 x=  70 26x24 | 6:34
+StaticText   vis=t y= 498 x= 215 118x24 | סוף זמן קריאת שמע
+StaticText   vis=t y= 498 x= 142 70x24 | (מג״א, ‎19.8°‎)
+StaticText   vis=t y= 498 x=  70 26x24 | 7:44
+StaticText   vis=t y= 530 x= 215 118x24 | סוף זמן קריאת שמע
+StaticText   vis=t y= 530 x= 144 68x24 | (מג״א, ‎16.1°‎)
+StaticText   vis=t y= 530 x=  70 26x24 | 8:36
+StaticText   vis=t y= 562 x= 262 70x24 | עלות השחר
+StaticText   vis=t y= 562 x= 168 91x24 | (מג״א, 72 דקות)
+StaticText   vis=t y= 562 x=  70 26x24 | 8:54
+StaticText   vis=t y= 594 x= 248 85x24 | סוף זמן תפילה
+StaticText   vis=t y= 594 x= 175 70x24 | (מג״א, ‎19.8°‎)
+StaticText   vis=t y= 594 x=  70 26x24 | 9:22
+StaticText   vis=t y= 626 x= 248 85x24 | סוף זמן תפילה
+StaticText   vis=t y= 626 x= 177 68x24 | (מג״א, ‎16.1°‎)
+StaticText   vis=t y= 626 x=  70 25x24 | 9:57
+StaticText   vis=t y= 658 x= 279 53x24 | נץ החמה
+StaticText   vis=t y= 658 x=  70 33x24 | 10:06
+StaticText   vis=t y= 690 x= 215 118x24 | סוף זמן קריאת שמע
+StaticText   vis=t y= 690 x= 121 91x24 | (מג״א, 72 דקות)
+StaticText   vis=t y= 690 x=  70 32x24 | 10:47
+StaticText   vis=t y= 722 x= 215 118x24 | סוף זמן קריאת שמע
+StaticText   vis=t y= 722 x= 138 74x24 | (בעל התניא)
+StaticText   vis=t y= 722 x=  70 28x24 | 11:12
+StaticText   vis=t y= 754 x= 215 118x24 | סוף זמן קריאת שמע
+StaticText   vis=t y= 754 x= 176 36x24 | (גר״א)
+StaticText   vis=t y= 754 x=  70 29x24 | 11:23
+StaticText   vis=f y= 786 x= 248 85x24 | סוף זמן תפילה
+StaticText   vis=f y= 786 x= 154 91x24 | (מג״א, 72 דקות)
+StaticText   vis=f y= 786 x=  70 30x24 | 11:25
+StaticText   vis=f y= 818 x= 248 85x24 | סוף זמן תפילה
+StaticText   vis=f y= 818 x= 171 74x24 | (בעל התניא)
+StaticText   vis=f y= 818 x=  70 30x24 | 11:42
+StaticText   vis=f y= 850 x= 248 85x24 | סוף זמן תפילה
+StaticText   vis=f y= 850 x= 209 36x24 | (גר״א)
+StaticText   vis=f y= 850 x=  70 29x24 | 11:49
+StaticText   vis=f y= 882 x= 273 60x24 | חצות היום
+StaticText   vis=f y= 882 x=  70 30x24 | 12:41
+StaticText   vis=f y= 914 x= 262 71x24 | מנחה גדולה
+StaticText   vis=f y= 914 x= 223 36x24 | (גר״א)
+StaticText   vis=f y= 914 x=  70 31x24 | 12:54
+StaticText   vis=f y= 946 x= 262 71x24 | מנחה גדולה
+StaticText   vis=f y= 946 x= 185 74x24 | (בעל התניא)
+StaticText   vis=f y= 946 x=  70 32x24 | 12:56
+StaticText   vis=f y= 978 x= 262 71x24 | מנחה גדולה
+StaticText   vis=f y= 978 x= 169 90x24 | (מג״א, 72 דקות)
+StaticText   vis=f y= 978 x=  70 33x24 | 13:00
+StaticText   vis=f y=1010 x= 264 68x24 | מנחה קטנה
+StaticText   vis=f y=1010 x= 225 36x24 | (גר״א)
+StaticText   vis=f y=1010 x=  70 30x24 | 14:12
+StaticText   vis=f y=1042 x= 264 68x24 | מנחה קטנה
+StaticText   vis=f y=1042 x= 187 74x24 | (בעל התניא)
+StaticText   vis=f y=1042 x=  70 32x24 | 14:25
+StaticText   vis=f y=1074 x= 265 67x24 | פלג המנחה
+StaticText   vis=f y=1074 x= 226 36x24 | (גר״א)
+StaticText   vis=f y=1074 x=  70 32x24 | 14:44
+StaticText   vis=f y=1106 x= 264 68x24 | מנחה קטנה
+StaticText   vis=f y=1106 x= 170 91x24 | (מג״א, 72 דקות)
+StaticText   vis=f y=1106 x=  70 31x24 | 14:54
+StaticText   vis=f y=1138 x= 265 67x24 | פלג המנחה
+StaticText   vis=f y=1138 x= 188 74x24 | (בעל התניא)
+StaticText   vis=f y=1138 x=  70 32x24 | 15:02
+StaticText   vis=f y=1170 x= 250 82x24 | שקיעת החמה
+StaticText   vis=f y=1170 x=  70 30x24 | 15:16
+StaticText   vis=f y=1202 x= 253 80x24 | צאת הכוכבים
+StaticText   vis=f y=1202 x= 192 58x24 | (42 דקות)
+StaticText   vis=f y=1202 x=  70 32x24 | 15:58
+StaticText   vis=f y=1234 x= 253 79x24 | צאת הכוכבים
+StaticText   vis=f y=1234 x= 191 58x24 | (50 דקות)
+StaticText   vis=f y=1234 x=  70 32x24 | 16:06
+StaticText   vis=f y=1266 x= 253 80x24 | צאת הכוכבים
+StaticText   vis=f y=1266 x= 140 110x24 | (רבנו תם, 72 דקות)
+StaticText   vis=f y=1266 x=  70 32x24 | 16:28
+StaticText   vis=f y=1298 x= 252 80x24 | צאת הכוכבים
+StaticText   vis=f y=1298 x= 176 74x24 | (בעל התניא)
+StaticText   vis=f y=1298 x=  70 31x24 | 17:23
+StaticText   vis=f y=1330 x= 259 74x24 | בין השמשות
+StaticText   vis=f y=1354 x= 147 185x24 | (רבנו תם, 13.5 דקות לפני ‎7.083°‎)
+StaticText   vis=f y=1330 x=  70 31x24 | 17:32
+StaticText   vis=f y=1386 x= 252 80x24 | צאת הכוכבים
+StaticText   vis=f y=1386 x= 203 47x24 | (‎7.083°‎)
+StaticText   vis=f y=1386 x=  70 31x24 | 17:46
+StaticText   vis=f y=1418 x= 253 80x24 | צאת הכוכבים
+StaticText   vis=f y=1418 x= 216 33x24 | (‎8.5°‎)
+StaticText   vis=f y=1418 x=  70 30x24 | 18:14
+StaticText   vis=f y=1450 x=  70 262x32 | עלות השחר לשיטת מג״א חושבה באפליקציה לפי הגדרות Hebcal.
+StaticText   vis=f y=1490 x= 160 172x24 | דף יומי בבלי
+StaticText   vis=f y=1490 x=  70 83x24 | בכורות דף ל״א
+StaticText   vis=f y=1522 x= 140 192x24 | דף יומי ירושלמי
+StaticText   vis=f y=1522 x=  70 62x24 | מכות דף ט
+StaticText   vis=f y=1554 x= 149 183x24 | עמוד יומי במשנה ברורה
+StaticText   vis=f y=1554 x=  70 71x24 | אין נתון כעת
+StaticText   vis=f y=1618 x=  54 294x16 | מקור הזמנים והלימוד היומי: Hebcal.com (CC BY 4.0)
+StaticText   vis=f y=1638 x=  54 294x16 | שמות הערים: GeoNames (CC BY 4.0)
+StaticText   vis=f y=1658 x=  54 294x32 | שיטות החישוב המוצגות הן של Hebcal, וטרם אושרו על ידי גורם הלכתי מוסמך.
+Other        vis=t y= 727 x=   0 402x30 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות
+== page 2
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=t y=  75 x= 342 36x37 | חזרה
+StaticText   vis=t y=  77 x=  60 282x33 | זמני תפילות
+StaticText   vis=f y=-437 x=  54 294x21 | ח׳ חשון תשפ״ז
+Button       vis=f y=-393 x= 332 25x25 | היום הקודם
+StaticText   vis=f y=-391 x= 266 71x21 | 19 באוקטובר
+Button       vis=f y=-393 x= 246 25x25 | היום הבא
+Button       vis=f y=-393 x=  90 25x25 | השנה הקודמת
+StaticText   vis=f y=-391 x=  66 29x21 | 2026
+Button       vis=f y=-393 x=  46 24x25 | השנה הבאה
+StaticText   vis=f y=-345 x=  54 294x17 | הזמנים חושבו עבור Longyearbyen, לפי השעון המקומי שם.
+StaticText   vis=f y=-289 x= 262 70x25 | חצות הלילה
+StaticText   vis=f y=-289 x=  70 26x25 | 0:47
+StaticText   vis=f y=-257 x= 262 70x25 | עלות השחר
+StaticText   vis=f y=-257 x= 189 70x25 | (מג״א, ‎19.8°‎)
+StaticText   vis=f y=-257 x=  70 24x25 | 2:51
+StaticText   vis=f y=-225 x= 262 70x25 | עלות השחר
+StaticText   vis=f y=-225 x= 185 74x25 | (בעל התניא)
+StaticText   vis=f y=-225 x=  70 24x25 | 4:13
+StaticText   vis=f y=-193 x= 262 70x25 | עלות השחר
+StaticText   vis=f y=-193 x= 224 35x25 | (‎16.1°‎)
+StaticText   vis=f y=-193 x=  70 26x25 | 4:32
+StaticText   vis=f y=-161 x= 288 45x25 | משיכיר
+StaticText   vis=f y=-161 x= 249 36x25 | (‎11.5°‎)
+StaticText   vis=f y=-161 x=  70 27x25 | 6:08
+StaticText   vis=f y=-129 x= 288 45x25 | משיכיר
+StaticText   vis=f y=-129 x= 203 82x25 | (מחמיר, ‎10.2°‎)
+StaticText   vis=f y=-129 x=  70 26x25 | 6:34
+StaticText   vis=f y= -97 x= 215 118x25 | סוף זמן קריאת שמע
+StaticText   vis=f y= -97 x= 142 70x25 | (מג״א, ‎19.8°‎)
+StaticText   vis=f y= -97 x=  70 26x25 | 7:44
+StaticText   vis=f y= -65 x= 215 118x25 | סוף זמן קריאת שמע
+StaticText   vis=f y= -65 x= 144 68x25 | (מג״א, ‎16.1°‎)
+StaticText   vis=f y= -65 x=  70 26x25 | 8:36
+StaticText   vis=f y= -33 x= 262 70x25 | עלות השחר
+StaticText   vis=f y= -33 x= 168 91x25 | (מג״א, 72 דקות)
+StaticText   vis=f y= -33 x=  70 26x25 | 8:54
+StaticText   vis=f y=  -1 x= 248 85x25 | סוף זמן תפילה
+StaticText   vis=f y=  -1 x= 175 70x25 | (מג״א, ‎19.8°‎)
+StaticText   vis=f y=  -1 x=  70 26x25 | 9:22
+StaticText   vis=f y=  31 x= 248 85x25 | סוף זמן תפילה
+StaticText   vis=f y=  31 x= 177 68x25 | (מג״א, ‎16.1°‎)
+StaticText   vis=f y=  31 x=  70 25x25 | 9:57
+StaticText   vis=f y=  63 x= 279 53x25 | נץ החמה
+StaticText   vis=f y=  63 x=  70 33x25 | 10:06
+StaticText   vis=f y=  95 x= 215 118x25 | סוף זמן קריאת שמע
+StaticText   vis=f y=  95 x= 121 91x25 | (מג״א, 72 דקות)
+StaticText   vis=f y=  95 x=  70 32x25 | 10:47
+StaticText   vis=t y= 127 x= 215 118x25 | סוף זמן קריאת שמע
+StaticText   vis=t y= 127 x= 138 74x25 | (בעל התניא)
+StaticText   vis=t y= 127 x=  70 28x25 | 11:12
+StaticText   vis=t y= 159 x= 215 118x25 | סוף זמן קריאת שמע
+StaticText   vis=t y= 159 x= 176 36x25 | (גר״א)
+StaticText   vis=t y= 159 x=  70 29x25 | 11:23
+StaticText   vis=t y= 191 x= 248 85x25 | סוף זמן תפילה
+StaticText   vis=t y= 191 x= 154 91x25 | (מג״א, 72 דקות)
+StaticText   vis=t y= 191 x=  70 30x25 | 11:25
+StaticText   vis=t y= 223 x= 248 85x25 | סוף זמן תפילה
+StaticText   vis=t y= 223 x= 171 74x25 | (בעל התניא)
+StaticText   vis=t y= 223 x=  70 30x25 | 11:42
+StaticText   vis=t y= 255 x= 248 85x25 | סוף זמן תפילה
+StaticText   vis=t y= 255 x= 209 36x25 | (גר״א)
+StaticText   vis=t y= 255 x=  70 29x25 | 11:49
+StaticText   vis=t y= 287 x= 273 60x25 | חצות היום
+StaticText   vis=t y= 287 x=  70 30x25 | 12:41
+StaticText   vis=t y= 319 x= 262 71x25 | מנחה גדולה
+StaticText   vis=t y= 319 x= 223 36x25 | (גר״א)
+StaticText   vis=t y= 319 x=  70 31x25 | 12:54
+StaticText   vis=t y= 351 x= 262 71x25 | מנחה גדולה
+StaticText   vis=t y= 351 x= 185 74x25 | (בעל התניא)
+StaticText   vis=t y= 351 x=  70 32x25 | 12:56
+StaticText   vis=t y= 383 x= 262 71x25 | מנחה גדולה
+StaticText   vis=t y= 383 x= 169 90x25 | (מג״א, 72 דקות)
+StaticText   vis=t y= 383 x=  70 33x25 | 13:00
+StaticText   vis=t y= 415 x= 264 68x25 | מנחה קטנה
+StaticText   vis=t y= 415 x= 225 36x25 | (גר״א)
+StaticText   vis=t y= 415 x=  70 30x25 | 14:12
+StaticText   vis=t y= 447 x= 264 68x25 | מנחה קטנה
+StaticText   vis=t y= 447 x= 187 74x25 | (בעל התניא)
+StaticText   vis=t y= 447 x=  70 32x25 | 14:25
+StaticText   vis=t y= 479 x= 265 67x25 | פלג המנחה
+StaticText   vis=t y= 479 x= 226 36x25 | (גר״א)
+StaticText   vis=t y= 479 x=  70 32x25 | 14:44
+StaticText   vis=t y= 511 x= 264 68x25 | מנחה קטנה
+StaticText   vis=t y= 511 x= 170 91x25 | (מג״א, 72 דקות)
+StaticText   vis=t y= 511 x=  70 31x25 | 14:54
+StaticText   vis=t y= 543 x= 265 67x25 | פלג המנחה
+StaticText   vis=t y= 543 x= 188 74x25 | (בעל התניא)
+StaticText   vis=t y= 543 x=  70 32x25 | 15:02
+StaticText   vis=t y= 575 x= 250 82x25 | שקיעת החמה
+StaticText   vis=t y= 575 x=  70 30x25 | 15:16
+StaticText   vis=t y= 607 x= 253 80x25 | צאת הכוכבים
+StaticText   vis=t y= 607 x= 192 58x25 | (42 דקות)
+StaticText   vis=t y= 607 x=  70 32x25 | 15:58
+StaticText   vis=t y= 639 x= 253 79x25 | צאת הכוכבים
+StaticText   vis=t y= 639 x= 191 58x25 | (50 דקות)
+StaticText   vis=t y= 639 x=  70 32x25 | 16:06
+StaticText   vis=t y= 671 x= 253 80x25 | צאת הכוכבים
+StaticText   vis=t y= 671 x= 140 110x25 | (רבנו תם, 72 דקות)
+StaticText   vis=t y= 671 x=  70 32x25 | 16:28
+StaticText   vis=t y= 703 x= 252 80x25 | צאת הכוכבים
+StaticText   vis=t y= 703 x= 176 74x25 | (בעל התניא)
+StaticText   vis=t y= 703 x=  70 31x25 | 17:23
+StaticText   vis=t y= 735 x= 259 74x25 | בין השמשות
+StaticText   vis=f y= 759 x= 147 185x25 | (רבנו תם, 13.5 דקות לפני ‎7.083°‎)
+StaticText   vis=t y= 735 x=  70 31x25 | 17:32
+StaticText   vis=f y= 791 x= 252 80x25 | צאת הכוכבים
+StaticText   vis=f y= 791 x= 203 47x25 | (‎7.083°‎)
+StaticText   vis=f y= 791 x=  70 31x25 | 17:46
+StaticText   vis=f y= 823 x= 253 80x25 | צאת הכוכבים
+StaticText   vis=f y= 823 x= 216 33x25 | (‎8.5°‎)
+StaticText   vis=f y= 823 x=  70 30x25 | 18:14
+StaticText   vis=f y= 855 x=  70 262x33 | עלות השחר לשיטת מג״א חושבה באפליקציה לפי הגדרות Hebcal.
+StaticText   vis=f y= 895 x= 160 172x25 | דף יומי בבלי
+StaticText   vis=f y= 895 x=  70 83x25 | בכורות דף ל״א
+StaticText   vis=f y= 927 x= 140 192x25 | דף יומי ירושלמי
+StaticText   vis=f y= 927 x=  70 62x25 | מכות דף ט
+StaticText   vis=f y= 959 x= 149 183x25 | עמוד יומי במשנה ברורה
+StaticText   vis=f y= 959 x=  70 71x25 | אין נתון כעת
+StaticText   vis=f y=1023 x=  54 294x17 | מקור הזמנים והלימוד היומי: Hebcal.com (CC BY 4.0)
+StaticText   vis=f y=1043 x=  54 294x17 | שמות הערים: GeoNames (CC BY 4.0)
+StaticText   vis=f y=1063 x=  54 294x33 | שיטות החישוב המוצגות הן של Hebcal, וטרם אושרו על ידי גורם הלכתי מוסמך.
+Other        vis=t y= 727 x=   0 402x30 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות
+== page 3
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=t y=  75 x= 342 36x37 | חזרה
+StaticText   vis=t y=  77 x=  60 282x33 | זמני תפילות
+StaticText   vis=f y=-804 x=  54 294x20 | ח׳ חשון תשפ״ז
+Button       vis=f y=-760 x= 332 25x24 | היום הקודם
+StaticText   vis=f y=-758 x= 266 71x20 | 19 באוקטובר
+Button       vis=f y=-760 x= 246 25x24 | היום הבא
+Button       vis=f y=-760 x=  90 25x24 | השנה הקודמת
+StaticText   vis=f y=-758 x=  66 29x20 | 2026
+Button       vis=f y=-760 x=  46 24x24 | השנה הבאה
+StaticText   vis=f y=-712 x=  54 294x16 | הזמנים חושבו עבור Longyearbyen, לפי השעון המקומי שם.
+StaticText   vis=f y=-656 x= 262 70x24 | חצות הלילה
+StaticText   vis=f y=-656 x=  70 26x24 | 0:47
+StaticText   vis=f y=-624 x= 262 70x24 | עלות השחר
+StaticText   vis=f y=-624 x= 189 70x24 | (מג״א, ‎19.8°‎)
+StaticText   vis=f y=-624 x=  70 24x24 | 2:51
+StaticText   vis=f y=-592 x= 262 70x24 | עלות השחר
+StaticText   vis=f y=-592 x= 185 74x24 | (בעל התניא)
+StaticText   vis=f y=-592 x=  70 24x24 | 4:13
+StaticText   vis=f y=-560 x= 262 70x24 | עלות השחר
+StaticText   vis=f y=-560 x= 224 35x24 | (‎16.1°‎)
+StaticText   vis=f y=-560 x=  70 26x24 | 4:32
+StaticText   vis=f y=-528 x= 288 45x24 | משיכיר
+StaticText   vis=f y=-528 x= 249 36x24 | (‎11.5°‎)
+StaticText   vis=f y=-528 x=  70 27x24 | 6:08
+StaticText   vis=f y=-496 x= 288 45x24 | משיכיר
+StaticText   vis=f y=-496 x= 203 82x24 | (מחמיר, ‎10.2°‎)
+StaticText   vis=f y=-496 x=  70 26x24 | 6:34
+StaticText   vis=f y=-464 x= 215 118x24 | סוף זמן קריאת שמע
+StaticText   vis=f y=-464 x= 142 70x24 | (מג״א, ‎19.8°‎)
+StaticText   vis=f y=-464 x=  70 26x24 | 7:44
+StaticText   vis=f y=-432 x= 215 118x24 | סוף זמן קריאת שמע
+StaticText   vis=f y=-432 x= 144 68x24 | (מג״א, ‎16.1°‎)
+StaticText   vis=f y=-432 x=  70 26x24 | 8:36
+StaticText   vis=f y=-400 x= 262 70x24 | עלות השחר
+StaticText   vis=f y=-400 x= 168 91x24 | (מג״א, 72 דקות)
+StaticText   vis=f y=-400 x=  70 26x24 | 8:54
+StaticText   vis=f y=-368 x= 248 85x24 | סוף זמן תפילה
+StaticText   vis=f y=-368 x= 175 70x24 | (מג״א, ‎19.8°‎)
+StaticText   vis=f y=-368 x=  70 26x24 | 9:22
+StaticText   vis=f y=-336 x= 248 85x24 | סוף זמן תפילה
+StaticText   vis=f y=-336 x= 177 68x24 | (מג״א, ‎16.1°‎)
+StaticText   vis=f y=-336 x=  70 25x24 | 9:57
+StaticText   vis=f y=-304 x= 279 53x24 | נץ החמה
+StaticText   vis=f y=-304 x=  70 33x24 | 10:06
+StaticText   vis=f y=-272 x= 215 118x24 | סוף זמן קריאת שמע
+StaticText   vis=f y=-272 x= 121 91x24 | (מג״א, 72 דקות)
+StaticText   vis=f y=-272 x=  70 32x24 | 10:47
+StaticText   vis=f y=-240 x= 215 118x24 | סוף זמן קריאת שמע
+StaticText   vis=f y=-240 x= 138 74x24 | (בעל התניא)
+StaticText   vis=f y=-240 x=  70 28x24 | 11:12
+StaticText   vis=f y=-208 x= 215 118x24 | סוף זמן קריאת שמע
+StaticText   vis=f y=-208 x= 176 36x24 | (גר״א)
+StaticText   vis=f y=-208 x=  70 29x24 | 11:23
+StaticText   vis=f y=-176 x= 248 85x24 | סוף זמן תפילה
+StaticText   vis=f y=-176 x= 154 91x24 | (מג״א, 72 דקות)
+StaticText   vis=f y=-176 x=  70 30x24 | 11:25
+StaticText   vis=f y=-144 x= 248 85x24 | סוף זמן תפילה
+StaticText   vis=f y=-144 x= 171 74x24 | (בעל התניא)
+StaticText   vis=f y=-144 x=  70 30x24 | 11:42
+StaticText   vis=f y=-112 x= 248 85x24 | סוף זמן תפילה
+StaticText   vis=f y=-112 x= 209 36x24 | (גר״א)
+StaticText   vis=f y=-112 x=  70 29x24 | 11:49
+StaticText   vis=f y= -80 x= 273 60x24 | חצות היום
+StaticText   vis=f y= -80 x=  70 30x24 | 12:41
+StaticText   vis=f y= -48 x= 262 71x24 | מנחה גדולה
+StaticText   vis=f y= -48 x= 223 36x24 | (גר״א)
+StaticText   vis=f y= -48 x=  70 31x24 | 12:54
+StaticText   vis=f y= -16 x= 262 71x24 | מנחה גדולה
+StaticText   vis=f y= -16 x= 185 74x24 | (בעל התניא)
+StaticText   vis=f y= -16 x=  70 32x24 | 12:56
+StaticText   vis=f y=  16 x= 262 71x24 | מנחה גדולה
+StaticText   vis=f y=  16 x= 169 90x24 | (מג״א, 72 דקות)
+StaticText   vis=f y=  16 x=  70 33x24 | 13:00
+StaticText   vis=f y=  48 x= 264 68x24 | מנחה קטנה
+StaticText   vis=f y=  48 x= 225 36x24 | (גר״א)
+StaticText   vis=f y=  48 x=  70 30x24 | 14:12
+StaticText   vis=f y=  80 x= 264 68x24 | מנחה קטנה
+StaticText   vis=f y=  80 x= 187 74x24 | (בעל התניא)
+StaticText   vis=f y=  80 x=  70 32x24 | 14:25
+StaticText   vis=t y= 112 x= 265 67x24 | פלג המנחה
+StaticText   vis=t y= 112 x= 226 36x24 | (גר״א)
+StaticText   vis=t y= 112 x=  70 32x24 | 14:44
+StaticText   vis=t y= 144 x= 264 68x24 | מנחה קטנה
+StaticText   vis=t y= 144 x= 170 91x24 | (מג״א, 72 דקות)
+StaticText   vis=t y= 144 x=  70 31x24 | 14:54
+StaticText   vis=t y= 176 x= 265 67x24 | פלג המנחה
+StaticText   vis=t y= 176 x= 188 74x24 | (בעל התניא)
+StaticText   vis=t y= 176 x=  70 32x24 | 15:02
+StaticText   vis=t y= 208 x= 250 82x24 | שקיעת החמה
+StaticText   vis=t y= 208 x=  70 30x24 | 15:16
+StaticText   vis=t y= 240 x= 253 80x24 | צאת הכוכבים
+StaticText   vis=t y= 240 x= 192 58x24 | (42 דקות)
+StaticText   vis=t y= 240 x=  70 32x24 | 15:58
+StaticText   vis=t y= 272 x= 253 79x24 | צאת הכוכבים
+StaticText   vis=t y= 272 x= 191 58x24 | (50 דקות)
+StaticText   vis=t y= 272 x=  70 32x24 | 16:06
+StaticText   vis=t y= 304 x= 253 80x24 | צאת הכוכבים
+StaticText   vis=t y= 304 x= 140 110x24 | (רבנו תם, 72 דקות)
+StaticText   vis=t y= 304 x=  70 32x24 | 16:28
+StaticText   vis=t y= 336 x= 252 80x24 | צאת הכוכבים
+StaticText   vis=t y= 336 x= 176 74x24 | (בעל התניא)
+StaticText   vis=t y= 336 x=  70 31x24 | 17:23
+StaticText   vis=t y= 368 x= 259 74x24 | בין השמשות
+StaticText   vis=t y= 392 x= 147 185x24 | (רבנו תם, 13.5 דקות לפני ‎7.083°‎)
+StaticText   vis=t y= 368 x=  70 31x24 | 17:32
+StaticText   vis=t y= 424 x= 252 80x24 | צאת הכוכבים
+StaticText   vis=t y= 424 x= 203 47x24 | (‎7.083°‎)
+StaticText   vis=t y= 424 x=  70 31x24 | 17:46
+StaticText   vis=t y= 456 x= 253 80x24 | צאת הכוכבים
+StaticText   vis=t y= 456 x= 216 33x24 | (‎8.5°‎)
+StaticText   vis=t y= 456 x=  70 30x24 | 18:14
+StaticText   vis=t y= 488 x=  70 262x32 | עלות השחר לשיטת מג״א חושבה באפליקציה לפי הגדרות Hebcal.
+StaticText   vis=t y= 528 x= 160 172x24 | דף יומי בבלי
+StaticText   vis=t y= 528 x=  70 83x24 | בכורות דף ל״א
+StaticText   vis=t y= 560 x= 140 192x24 | דף יומי ירושלמי
+StaticText   vis=t y= 560 x=  70 62x24 | מכות דף ט
+StaticText   vis=t y= 592 x= 149 183x24 | עמוד יומי במשנה ברורה
+StaticText   vis=t y= 592 x=  70 71x24 | אין נתון כעת
+StaticText   vis=t y= 656 x=  54 294x16 | מקור הזמנים והלימוד היומי: Hebcal.com (CC BY 4.0)
+StaticText   vis=t y= 676 x=  54 294x16 | שמות הערים: GeoNames (CC BY 4.0)
+StaticText   vis=t y= 696 x=  54 294x32 | שיטות החישוב המוצגות הן של Hebcal, וטרם אושרו על ידי גורם הלכתי מוסמך.
+Other        vis=t y= 727 x=   0 402x30 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות

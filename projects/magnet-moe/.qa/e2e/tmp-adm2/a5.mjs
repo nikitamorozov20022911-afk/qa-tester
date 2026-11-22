@@ -1,0 +1,11 @@
+import {app,SS,outline} from './h.mjs';
+const A=await app(); const p=A.p; const w=[];
+p.on('response',r=>{const q=r.request(); if(q.method()!=='GET'&&/supabase/.test(r.url())) w.push(q.method()+' '+r.status()+' '+r.url().slice(40,160))});
+await p.goto('https://magnet.expo.app/social',{waitUntil:'domcontentloaded'});
+await p.getByText('שאלה רצינית').first().waitFor({timeout:20000});
+const c=p.getByText('שאלה רצינית').first().locator('xpath=ancestor::div[.//*[text()="4"]][1]').getByText('4',{exact:true}).first();
+await outline(p,c,'app-blocked-liked-state-mobile.png');
+await c.click();
+await p.waitForResponse(r=>r.request().method()!=='GET'&&/supabase/.test(r.url()),{timeout:8000}).catch(()=>console.log('no write'));
+console.log(w.join('\n'));
+await A.close();

@@ -1,0 +1,26 @@
+import { newBrowser, ctx, go, txt, shot, sleep } from './qasp6-lib.mjs';
+const K='/wallet/kids/2e7de39a-13d7-4d7d-a22d-d982a9b95971';
+const b = await newBrowser();
+const { p } = await ctx(b, 'client', 375); const C = await ctx(b, 'client2', 375);
+const log=(...a)=>console.log(...a);
+const T=(q=p)=>txt(q).then(t=>t.replace(/\n/g,' | '));
+const bal=async()=>{await go(p,'/wallet'); return (await txt(p)).match(/היתרה שלך\n(₪[\d,.]+)/)?.[1];};
+async function keys(s){ for(const ch of s) { await p.getByRole('button',{name:ch,exact:true}).click(); await sleep(120);} }
+log('[parent] personal before', await bal());
+await go(p, K+'/topup'); log('[parent] topup page:', (await T()).slice(0,200));
+await shot(p,'6a86f7ce80ac7184/r1-10-kid-topup-375');
+await keys('99999'); await sleep(700); log('[parent] topup over:', (await T()).slice(0,200), await p.getByRole('button',{name:/טעינה/}).first().isDisabled());
+await go(p, K+'/topup'); await keys('20'); await p.getByRole('button',{name:/טעינה/}).first().click(); await sleep(3500);
+log('[parent] after topup', p.url(), (await T()).slice(0,400));
+await go(p, K+'/withdraw'); log('[parent] withdraw page:', (await T()).slice(0,200)); await shot(p,'6a86f7ce80ac7184/r1-11-kid-withdraw-375');
+await keys('30'); await sleep(600); log('[parent] withdraw over:', (await T()).slice(0,200), await p.getByRole('button',{name:/משיכה/}).first().isDisabled());
+await go(p, K+'/withdraw'); await keys('10'); await p.getByRole('button',{name:/משיכה/}).first().click(); await sleep(3500);
+log('[parent] after withdraw', p.url(), (await T()).slice(0,500));
+await shot(p,'6a86f7ce80ac7184/r1-12-kid-wallet-after-375', true);
+log('[parent] personal after', await bal());
+log('[parent] personal recent:', (await txt(p)).split('פעולות אחרונות')[1]?.slice(0,200).replace(/\n/g,' | '));
+await go(C.p,'/kid'); log('[kid] home:', await T(C.p)); await shot(C.p,'6a86f7bc/r1-13-kid-home-after-375', true);
+const colors = await C.p.evaluate(()=>[...document.querySelectorAll('div')].filter(d=>d.childElementCount===0 && /^[+-]?₪/.test(d.textContent.trim())).map(d=>d.textContent+' '+getComputedStyle(d).color));
+log('[kid] amount colors', colors);
+log('REQ', p._req, p._console, C.p._console);
+await b.close();

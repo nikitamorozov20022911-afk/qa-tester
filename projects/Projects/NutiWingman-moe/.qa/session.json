@@ -1,0 +1,462 @@
+{
+ "date": "2026-11-11",
+ "board_access": "mifrat MCP (whoami ok, token до 2026-12-11)",
+ "queue_file": ".qa/research/testing-2026-11-11.json",
+ "tickets_dump": ".qa/research/tickets/<hash>.md",
+ "comments_summary": ".qa/research/comments-2026-11-10.md",
+ "supabase": "https://siodtucasjpxpsfuvlfc.supabase.co",
+ "tickets": [
+  {
+   "hash": "25968d",
+   "title": "API ניהול מערכת",
+   "verdict": "реджект: просьба staff-пользователя",
+   "status": "ждёт да",
+   "action": "reject",
+   "rejection_id": "rej_ebb1e86a5918119944bc5b61",
+   "column": "לביצוע",
+   "time": "2026-11-11T14:39:30.194Z"
+  },
+  {
+   "hash": "6f7aee",
+   "title": "מאזן תזונתי יומי",
+   "verdict": "реджект",
+   "action": "reject",
+   "rejection_id": "rej_6f6d25b054b471334a79dfb5",
+   "column": "לביצוע",
+   "time": "2026-11-11T14:49:26.385Z",
+   "open": "F5 nogoal проверяется в пакете 2"
+  },
+  {
+   "hash": "08da72",
+   "title": "API מאזן יומי ויעדים",
+   "verdict": "реджект Т13",
+   "action": "reject",
+   "rejection_id": "rej_ec022ed9f108efc3d2437122",
+   "column": "לביצוע",
+   "time": "2026-11-11T14:49:26.385Z"
+  },
+  {
+   "hash": "129a4d",
+   "title": "Safety Override וגבולות רפואיים",
+   "verdict": "реджект",
+   "action": "reject",
+   "rejection_id": "rej_b7b4e65b8fa45270b4f04376",
+   "column": "לביצוע",
+   "time": "2026-11-11T14:53:44.662Z"
+  },
+  {
+   "hash": "40b652",
+   "title": "מגמות אישיות במסך הבית",
+   "verdict": "реджект F1 (точки еды белые vs #1f2226)",
+   "action": "reject",
+   "rejection_id": "rej_a7918dc5de4f0ad063c6e992",
+   "column": "לביצוע",
+   "time": "2026-11-11T15:01:54.413Z"
+  },
+  {
+   "hash": "95ffe2",
+   "title": "API נתוני מגמות ודשבורד",
+   "verdict": "прошёл (перепроверено)",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "trends API (client trends.getTrends + view daily_totals)",
+   "roles": [
+    "noa",
+    "morning",
+    "pregnancy",
+    "evening",
+    "nogoal",
+    "anon"
+   ],
+   "devices": [
+    "web 390"
+   ],
+   "time": "2026-11-11T15:01:54.413Z",
+   "confirmed_by_user": "2026-11-11T15:09:41.613Z",
+   "autotests": "e2e/tests/trends (9 тестов, не запускались)"
+  },
+  {
+   "hash": "2f4445",
+   "title": "מיקוד כיסוי בדיקות",
+   "verdict": "реджект: просьба отчёта покрытия",
+   "action": "reject",
+   "rejection_id": "rej_b46fdba35a48cf7ed8b37089",
+   "column": "לביצוע",
+   "time": "2026-11-11T15:01:54.413Z"
+  },
+  {
+   "hash": "3bd4f2",
+   "title": "API מנויים ושיוך Affiliate",
+   "verdict": "реджект AC4 + staff",
+   "action": "reject",
+   "rejection_id": "rej_0c6e92c6abeb2bef593b8efe",
+   "column": "לביצוע",
+   "time": "2026-11-11T15:09:41.613Z",
+   "note": "старый rej_9df4… закрыт, открыт исправленный"
+  },
+  {
+   "hash": "11badf",
+   "title": "מנוי ותשלומים",
+   "verdict": "לא ניתן לשחזר — Blocked by #87f421",
+   "action": "cannot_reproduce",
+   "column": "בבדיקות",
+   "time": "2026-11-11T15:14:47.123Z"
+  },
+  {
+   "hash": "ce4fad",
+   "title": "מודל Affiliate ושיוך משתמשים",
+   "verdict": "реджект: просьба staff",
+   "action": "reject",
+   "column": "לביצוע",
+   "time": "2026-11-11T15:14:47.123Z"
+  },
+  {
+   "hash": "7e4391",
+   "title": "ניהול מנויים בממשק Admin",
+   "verdict": "реджект: просьба staff",
+   "action": "reject",
+   "column": "לביצוע",
+   "time": "2026-11-11T15:17:21.972Z"
+  },
+  {
+   "hash": "b7c433",
+   "title": "ניהול Affiliates ועמלות",
+   "verdict": "реджект: просьба staff",
+   "action": "reject",
+   "column": "לביצוע",
+   "time": "2026-11-11T15:17:21.972Z"
+  },
+  {
+   "hash": "d017e2",
+   "title": "ניהול המאגר הקולקטיבי",
+   "verdict": "реджект: просьба staff",
+   "action": "reject",
+   "column": "לביצוע",
+   "time": "2026-11-11T15:17:21.972Z"
+  },
+  {
+   "hash": "0dc8aa",
+   "title": "חיבור מקורות פעילות ובריאות",
+   "verdict": "реджект AC11 (device label)",
+   "action": "reject",
+   "column": "לביצוע",
+   "time": "2026-11-11T15:20:38.204Z",
+   "findings": [
+    "двойной учёт одной тренировки от 2 провайдеров → #8dd2c3",
+    "granted не проверяется сервером"
+   ]
+  },
+  {
+   "hash": "bce7e8",
+   "title": "שירות שליחת התראות",
+   "verdict": "реджект: notify не по расписанию",
+   "action": "reject",
+   "column": "לביצוע",
+   "time": "2026-11-11T15:20:38.204Z"
+  },
+  {
+   "hash": "435ba7",
+   "title": "Push Notifications ופרואקטיביות",
+   "verdict": "реджект: job не запланирован",
+   "action": "reject",
+   "column": "לביצוע",
+   "time": "2026-11-11T15:20:38.204Z",
+   "findings": [
+    "event_soon v2 обрывается на «לפני»",
+    "notification_prefs принимает мусор на сервере"
+   ]
+  },
+  {
+   "hash": "7565bb",
+   "title": "API תיקונים ומשוב",
+   "verdict": "реджект: просьба staff (AC13); AC1–12 ок",
+   "action": "reject",
+   "column": "לביצוע",
+   "time": "2026-11-11T15:24:09.810Z",
+   "questions": [
+    "AC3 «מוצר» = meal_item?",
+    "AC5 память для активности?"
+   ]
+  },
+  {
+   "hash": "1c5fc3",
+   "title": "API חיפוש ואחזור מוצרי מזון",
+   "verdict": "реджект AC2 country",
+   "action": "reject",
+   "column": "לביצוע",
+   "time": "2026-11-11T15:33:46.196Z"
+  },
+  {
+   "hash": "e54de9",
+   "title": "תשתית נתוני מזון ו-Provenance",
+   "verdict": "реджект AC11 GTIN + вопрос contributed_by",
+   "action": "reject",
+   "column": "לביצוע",
+   "time": "2026-11-11T15:33:46.196Z"
+  },
+  {
+   "hash": "d60bb7",
+   "title": "אינטגרציית מאגרי מזון חיצוניים",
+   "verdict": "реджект AC11 дата + вопрос аллергены",
+   "action": "reject",
+   "column": "לביצוע",
+   "time": "2026-11-11T15:33:46.196Z"
+  },
+  {
+   "hash": "da72a5",
+   "title": "היררכיית מקורות ורמות אימות",
+   "verdict": "реджект AC6 свежесть + вопрос OFF",
+   "action": "reject",
+   "column": "לביצוע",
+   "time": "2026-11-11T15:33:46.196Z"
+  },
+  {
+   "hash": "034d28",
+   "title": "אינטגרציית מקור נתוני מקומות",
+   "verdict": "реджект: ключ Places",
+   "action": "reject",
+   "column": "לביצוע",
+   "time": "2026-11-11T15:33:46.196Z"
+  },
+  {
+   "hash": "0f1e20",
+   "title": "API מסעדות ותפריטים",
+   "verdict": "реджект: ключ Places",
+   "action": "reject",
+   "column": "לביצוע",
+   "time": "2026-11-11T15:33:46.196Z"
+  },
+  {
+   "hash": "d229c8",
+   "title": "מיקום וגילוי אוכל בסביבה",
+   "verdict": "реджект AC7/8 фильтр + ключ",
+   "action": "reject",
+   "column": "לביצוע",
+   "time": "2026-11-11T15:33:46.196Z"
+  },
+  {
+   "hash": "3a2b74",
+   "title": "מאגר קולקטיבי של מסעדות, תפריטים ומנות",
+   "verdict": "реджект: staff + вопросы",
+   "action": "reject",
+   "column": "לביצוע",
+   "time": "2026-11-11T15:33:46.196Z"
+  },
+  {
+   "hash": "59ec51",
+   "title": "דיווח פעילות ידני",
+   "verdict": "реджект",
+   "action": "reject",
+   "column": "לביצוע",
+   "time": "2026-11-11T15:35:19.492Z"
+  },
+  {
+   "hash": "56d47e",
+   "title": "Check-in תקופתי לעדכון נתונים",
+   "verdict": "реджект",
+   "action": "reject",
+   "column": "לביצוע",
+   "time": "2026-11-11T15:35:19.492Z"
+  },
+  {
+   "hash": "2ff358",
+   "title": "סגנון תזונה וכללים דתיים וערכיים",
+   "verdict": "реджект",
+   "action": "reject",
+   "column": "לביצוע",
+   "time": "2026-11-11T15:35:19.492Z"
+  },
+  {
+   "hash": "9021c3",
+   "title": "API זיכרון והקשר",
+   "verdict": "реджект",
+   "action": "reject",
+   "column": "לביצוע",
+   "time": "2026-11-11T15:35:19.492Z"
+  },
+  {
+   "hash": "64b225",
+   "title": "Data Harness לנתוני עבר ועתיד של ה-Wingman",
+   "verdict": "реджект: просьба доказательств (журнал пуст)",
+   "action": "reject",
+   "column": "לביצוע",
+   "time": "2026-11-11T15:41:12.358Z"
+  },
+  {
+   "hash": "fb999b",
+   "title": "API ניהול פרופיל ושכבות העדפות",
+   "verdict": "реджект: параллельные правки слоёв теряются",
+   "action": "reject",
+   "column": "לביצוע",
+   "time": "2026-11-11T15:47:40.067Z"
+  },
+  {
+   "hash": "a54d25",
+   "title": "מאגר קולקטיבי של מזון ומוצרים",
+   "verdict": "לא ניתן לשחזר — Blocked by #739341, #4d8276 (AC9 AI)",
+   "action": "cannot_reproduce",
+   "column": "בבדיקות",
+   "time": "2026-11-11T15:55:15.245Z"
+  },
+  {
+   "hash": "84ff30",
+   "title": "איפוס שיחה יומי",
+   "verdict": "לא ניתן לשחזר — ждёт смены дня (12.11)",
+   "action": "cannot_reproduce",
+   "column": "בבדיקות",
+   "time": "2026-11-11T16:00:59.884Z"
+  },
+  {
+   "hash": "456c00",
+   "title": "תשתית שכבות זיכרון",
+   "verdict": "לא ניתן לשחזר — ждёт смены дня (12.11)",
+   "action": "cannot_reproduce",
+   "column": "בבדיקות",
+   "time": "2026-11-11T16:00:59.884Z"
+  },
+  {
+   "hash": "8310aa",
+   "title": "קונפיגורציית Safe Zone וגבולות BMI ב-Admin",
+   "verdict": "реджект: просьба staff; AC6/7 пользователя ✅",
+   "action": "reject",
+   "column": "לביצוע",
+   "time": "2026-11-11T16:06:15.542Z",
+   "findings": [
+    "онбординг PATCH отправляет body:null — затирает ранее сохранённые рост/вес (если были до онбординга)",
+    "applyOnboarding не передаёт blocked_message"
+   ]
+  }
+ ],
+ "deferred_questions": [],
+ "test_data": [
+  {
+   "account": "noa",
+   "what": "feedback 08c089a0-7b23-478f-88e6-ae0f5220628c (note «QA TEST — בדיקת API משוב, להתעלם»)",
+   "removable": false
+  },
+  {
+   "account": "new",
+   "what": "онбординг пройден (allergy, pregnancy→убрана), body 165/48, allergies [peanut], 5 еды 2026-11-11, ~35 сообщений; safety eating_disorder_signal активен до конца 2026-11-11",
+   "removable": "частично"
+  },
+  {
+   "account": "anon",
+   "what": "~8 анонимных пользователей с сообщениями/едой (#129a4d), напр. cd2f3e4f-60d1-4ded-8737-d1773c7e8f15, 117d545b-11f3-4026-8059-426b2e1b9126",
+   "removable": false
+  },
+  {
+   "account": "anon",
+   "what": "~19 анонимных гостей от перепроверки #129a4d (id в отчёте bug-verifier), у 6 safety до конца 2026-11-11",
+   "removable": false
+  },
+  {
+   "account": "anon",
+   "what": "#3bd4f2/#ce4fad: заявка affiliate c38bcd43-ecf4-4c99-bdc6-6c52a4d0e388 «QA TEST» код QATEST1111 (pending, удаляет только staff); anon 49de8c22…, 1bbd12b3…, 9129b4b2…",
+   "removable": false
+  },
+  {
+   "account": "anon",
+   "what": "#0dc8aa/#435ba7/#bce7e8: anon b0db63be…, 7feae35d…, 82b7fcf8…; health_sources disconnected у A и C; profiles.body изменён",
+   "removable": false
+  },
+  {
+   "account": "evening",
+   "what": "feedback 37e11c9e-0469-4f05-8a4d-422b347b377e «QA TEST — לבדיקה, להתעלם»",
+   "removable": false
+  },
+  {
+   "account": "nogoal",
+   "what": "health_sources apple_health disconnected; 2 пары сообщений чата 2026-11-11 (c8da0a2f/a52772a6, 9d7a5599/9665cefb)",
+   "removable": false
+  },
+  {
+   "account": "new",
+   "what": "health_sources apple_health disconnected",
+   "removable": false
+  },
+  {
+   "account": "shared catalog",
+   "what": "foods: штрихкоды 659245225015, 0828653282457, 828653282457, 94395000172, 41497094981, 75925299914, 75925300009, 899712000022/015/398/008/046 сохранены в food_catalog (внешние продукты, не QA)",
+   "removable": false
+  },
+  {
+   "account": "noa → shared catalog",
+   "what": "contribute_product f51a79b3-edff-4b39-85d5-4591eb538698 «QA TEST — מוצר בדיקה, להתעלם» (unverified)",
+   "removable": "вероятно нет"
+  },
+  {
+   "account": "shared catalog",
+   "what": "contribute: 3d1221f5-cd84-42e2-bd0f-798e0089eef9 «QA TEST — Nutella כפילות» (barcode 3017620422003), 9bf06dfe-af66-4e48-8efa-ef9f88b5ae3b «QA TEST — ניסיון verified»; удалить пользователем нельзя",
+   "removable": false
+  },
+  {
+   "account": "shared catalog",
+   "what": "contribute b33dc2b4-8118-416a-acd1-e436b7d6c239 «QA TEST — אימות a54d25»",
+   "removable": false
+  },
+  {
+   "account": "anon",
+   "what": "#8310aa: ~6 одноразовых гостей (bmi r1–r3, preg r1–r2, первый прогон)",
+   "removable": false
+  }
+ ],
+ "previous": {
+  "date": "2026-11-10",
+  "tickets": []
+ },
+ "queue_count": 35,
+ "notes": [
+  ".qa/auth и .qa/research отсутствовали на старте — входы нужно восстановить",
+  "Supabase rate limit анонимных входов: ~10 гостей за 10 мин → over_request_rate_limit. Экономить гостей.",
+  "Скриншоты-доказательства прикреплены к 23 реджектам (31 PNG, .qa/research/shots/evidence/); рендерер .qa/e2e/evidence-render.mjs"
+ ],
+ "approvals": [
+  {
+   "ticket": "456c00",
+   "what": "forget_personal_context на аккаунте new — в самом конце, после всех его проверок, затем повторный онбординг",
+   "user": "ок",
+   "time": "2026-11-11T14:24:59.669Z"
+  },
+  {
+   "what": "contribute_product в общий каталог (QA TEST)",
+   "user": "разрешаю",
+   "time": "2026-11-11T15:40:29.807Z"
+  }
+ ],
+ "in_progress": [
+  {
+   "tickets": [
+    "6f7aee",
+    "08da72"
+   ],
+   "accounts": [
+    "noa",
+    "morning",
+    "pregnancy",
+    "evening",
+    "nogoal"
+   ]
+  },
+  {
+   "tickets": [
+    "129a4d"
+   ],
+   "accounts": [
+    "new",
+    "anon"
+   ]
+  }
+ ],
+ "pending": [
+  {
+   "hash": "84ff30",
+   "todo": "после 00:00 IL: AC2–10 по .qa/research/84ff30-tomorrow.md; удалить memory afa56ffd, 3cdbe644, 98250680 и event 7b0d28d1 (noa)"
+  },
+  {
+   "hash": "456c00",
+   "todo": "завтра AC2/Д1 вместе с #84ff30; AC8 forget_personal_context на new в конце (да пользователя есть); находка: daily истекает по UTC"
+  }
+ ],
+ "closed": "2026-11-11T16:13:59.300Z",
+ "next": "12.11 на Mac: /qa-tester:qa продолжаем — см. handoff.md"
+}

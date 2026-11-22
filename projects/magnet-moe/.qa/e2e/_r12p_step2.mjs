@@ -1,0 +1,12 @@
+import { open, gotoEdit, tiles, tileBtn, bodyText } from './_r12p_lib.mjs';
+const [acc, authFile, src] = process.argv.slice(2);
+const { p, close } = await open(acc, authFile);
+await gotoEdit(p);
+const loc = await tileBtn(p, src, 'הפיכה לראשית');
+console.log('found', !!loc);
+await loc.click(); await p.waitForTimeout(3000);
+console.log(await bodyText(p, 500));
+const btns = await p.locator('[role=button]').allInnerTexts(); console.log(JSON.stringify(btns.slice(-15)));
+await p.screenshot({path:'../r12p/s2-'+acc+'.png'});
+console.log(JSON.stringify(await tiles(p)));
+await close();

@@ -1,0 +1,4 @@
+[
+  { "id": "buyer", "role": "קונה", "emailVar": "QA_USER_BUYER_EMAIL", "passwordVar": "QA_USER_BUYER_PASSWORD" },
+  { "id": "seller", "role": "מוכר", "emailVar": "QA_USER_SELLER_EMAIL", "passwordVar": "QA_USER_SELLER_PASSWORD" }
+]

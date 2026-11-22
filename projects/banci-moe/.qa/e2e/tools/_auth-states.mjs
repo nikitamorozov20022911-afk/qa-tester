@@ -1,0 +1,11 @@
+import { webkit, devices } from '@playwright/test';
+const SS='/Users/avielshnaider/banci-moe/.qa/screenshots/recheck/';
+const b=await webkit.launch(); const c=await b.newContext({...devices['iPhone 13'],locale:'he-IL'}); const p=await c.newPage();
+const txt=async()=> (await p.innerText('body')).replace(/\n/g,' | ').slice(0,260);
+await p.goto('https://banci.expo.app/sign-in'); await p.waitForTimeout(3000); await p.getByText('שכחתי סיסמה?').last().click(); await p.waitForTimeout(2500);
+console.log('forgot:', p.url(), await txt());
+await p.locator('input[type=email]:visible').last().fill('dadayo1547@aminavin.com'); 
+await p.getByRole('button',{name:/שליחת קוד|שלחו קוד|המשך|שליחה/}).last().click(); await p.waitForTimeout(5000);
+console.log('code screen:', p.url(), await txt()); await p.screenshot({path:SS+'ec8ab82d-reset-code.png'});
+await p.waitForTimeout(20000); console.log('+20s:', (await txt()).match(/[^|]*(\d+|שליחה חוזרת|שלחו שוב)[^|]*/g)?.slice(0,4));
+await b.close();

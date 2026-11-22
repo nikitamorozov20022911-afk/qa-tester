@@ -1,0 +1,120 @@
+== page 1
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=t y=  72 x= 233 145x36 | מעבר לפרטים שלי
+Button       vis=t y=  72 x=  72 78x36 | זמני התפילות של היום
+StaticText   vis=t y= 138 x=  54 294x48 | ערב טוב Tatiana Dombek, מוכן לתפילה מרוממת?
+StaticText   vis=t y= 202 x= 109 184x65 | ערבית
+StaticText   vis=t y= 266 x= 169 64x25 | נוסח אשכנז
+Button       vis=t y= 314 x=  92 218x57 | התחל תפילה
+Button       vis=t y= 395 x=  72 36x36 | מפת ההשפעה
+Button       vis=t y= 395 x=  24 36x36 | שיתוף
+StaticText   vis=t y= 479 x=  40 322x20 | תוספות בתפילה
+StaticText   vis=t y= 503 x=  40 322x20 | משיב הרוח ומוריד הגשם — ימות הגשמים
+StaticText   vis=t y= 527 x=  40 322x20 | ותן טל ומטר לברכה — ימות הגשמים
+Other        vis=t y= 587 x= 268 110x110 | ימים רצופים: 0
+StaticText   vis=t y= 628 x= 316 14x32 | 0
+StaticText   vis=t y= 664 x= 295 56x16 | ימים רצופים
+Other        vis=t y= 587 x= 146 110x110 | תפילות היום: 0
+StaticText   vis=t y= 628 x= 194 14x32 | 0
+StaticText   vis=t y= 664 x= 172 58x16 | תפילות היום
+Other        vis=t y= 587 x=  24 110x110 | סה״כ תפילות: 0
+StaticText   vis=t y= 628 x=  72 14x32 | 0
+StaticText   vis=t y= 664 x=  49 60x16 | סה״כ תפילות
+StaticText   vis=f y= 826 x= 117 168x28 | התחל את המסע שלך
+StaticText   vis=f y= 862 x=  49 304x40 | עדיין לא השלמת אף תפילה. התפילות שתשלים יופיעו כאן.
+Button       vis=f y= 951 x=  24 82x44 | ניהול התזכורות במסך הפרופיל
+StaticText   vis=f y= 959 x= 252 126x28 | תזכורות מהירות
+StaticText   vis=f y=1007 x=  24 354x52 | התזכורות כבויות — אפשר להפעיל בפרופיל
+StaticText   vis=f y=1091 x= 245 133x28 | תאריכים חשובים
+StaticText   vis=f y=1163 x= 320 24x16 | חשון
+StaticText   vis=f y=1163 x= 100 186x24 | בדיקת QA
+Button       vis=f y=1163 x=  40 44x44 | בדיקת QA: פתיחה לעריכה
+StaticText   vis=f y=1179 x= 326 12x28 | ג׳
+StaticText   vis=f y=1191 x= 100 186x16 | 13.10.2026
+Button       vis=f y=1243 x= 177 48x48 | הוספת תאריך חשוב
+Other        vis=t y= 727 x=   0 402x30 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות
+== page 2
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=f y=-491 x= 233 145x36 | מעבר לפרטים שלי
+Button       vis=f y=-491 x=  72 78x36 | זמני התפילות של היום
+StaticText   vis=f y=-425 x=  54 294x48 | ערב טוב Tatiana Dombek, מוכן לתפילה מרוממת?
+StaticText   vis=f y=-361 x= 109 184x65 | ערבית
+StaticText   vis=f y=-297 x= 169 64x25 | נוסח אשכנז
+Button       vis=f y=-249 x=  92 218x57 | התחל תפילה
+Button       vis=f y=-168 x=  72 36x36 | מפת ההשפעה
+Button       vis=f y=-168 x=  24 36x36 | שיתוף
+StaticText   vis=f y= -84 x=  40 322x20 | תוספות בתפילה
+StaticText   vis=f y= -60 x=  40 322x20 | משיב הרוח ומוריד הגשם — ימות הגשמים
+StaticText   vis=f y= -36 x=  40 322x20 | ותן טל ומטר לברכה — ימות הגשמים
+Other        vis=t y=  24 x= 268 110x110 | ימים רצופים: 0
+StaticText   vis=t y=  65 x= 316 14x32 | 0
+StaticText   vis=t y= 101 x= 295 56x16 | ימים רצופים
+Other        vis=t y=  24 x= 146 110x110 | תפילות היום: 0
+StaticText   vis=t y=  65 x= 194 14x32 | 0
+StaticText   vis=t y= 101 x= 172 58x16 | תפילות היום
+Other        vis=t y=  24 x=  24 110x110 | סה״כ תפילות: 0
+StaticText   vis=t y=  65 x=  72 14x32 | 0
+StaticText   vis=t y= 101 x=  49 60x16 | סה״כ תפילות
+StaticText   vis=t y= 263 x= 117 168x28 | התחל את המסע שלך
+StaticText   vis=t y= 299 x=  49 304x40 | עדיין לא השלמת אף תפילה. התפילות שתשלים יופיעו כאן.
+Button       vis=t y= 388 x=  24 82x44 | ניהול התזכורות במסך הפרופיל
+StaticText   vis=t y= 396 x= 252 126x28 | תזכורות מהירות
+StaticText   vis=t y= 444 x=  24 354x52 | התזכורות כבויות — אפשר להפעיל בפרופיל
+StaticText   vis=t y= 528 x= 245 133x28 | תאריכים חשובים
+StaticText   vis=t y= 600 x= 320 24x16 | חשון
+StaticText   vis=t y= 600 x= 100 186x24 | בדיקת QA
+Button       vis=t y= 600 x=  40 44x44 | בדיקת QA: פתיחה לעריכה
+StaticText   vis=t y= 616 x= 326 12x28 | ג׳
+StaticText   vis=t y= 628 x= 100 186x16 | 13.10.2026
+Button       vis=t y= 680 x= 177 48x48 | הוספת תאריך חשוב
+Other        vis=t y= 727 x=   0 402x30 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות
+== page 3
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=f y=-491 x= 233 145x36 | מעבר לפרטים שלי
+Button       vis=f y=-491 x=  72 78x36 | זמני התפילות של היום
+StaticText   vis=f y=-425 x=  54 294x48 | ערב טוב Tatiana Dombek, מוכן לתפילה מרוממת?
+StaticText   vis=f y=-361 x= 109 184x65 | ערבית
+StaticText   vis=f y=-297 x= 169 64x25 | נוסח אשכנז
+Button       vis=f y=-249 x=  92 218x57 | התחל תפילה
+Button       vis=f y=-168 x=  72 36x36 | מפת ההשפעה
+Button       vis=f y=-168 x=  24 36x36 | שיתוף
+StaticText   vis=f y= -84 x=  40 322x20 | תוספות בתפילה
+StaticText   vis=f y= -60 x=  40 322x20 | משיב הרוח ומוריד הגשם — ימות הגשמים
+StaticText   vis=f y= -36 x=  40 322x20 | ותן טל ומטר לברכה — ימות הגשמים
+Other        vis=t y=  24 x= 268 110x110 | ימים רצופים: 0
+StaticText   vis=t y=  65 x= 316 14x32 | 0
+StaticText   vis=t y= 101 x= 295 56x16 | ימים רצופים
+Other        vis=t y=  24 x= 146 110x110 | תפילות היום: 0
+StaticText   vis=t y=  65 x= 194 14x32 | 0
+StaticText   vis=t y= 101 x= 172 58x16 | תפילות היום
+Other        vis=t y=  24 x=  24 110x110 | סה״כ תפילות: 0
+StaticText   vis=t y=  65 x=  72 14x32 | 0
+StaticText   vis=t y= 101 x=  49 60x16 | סה״כ תפילות
+StaticText   vis=t y= 263 x= 117 168x28 | התחל את המסע שלך
+StaticText   vis=t y= 299 x=  49 304x40 | עדיין לא השלמת אף תפילה. התפילות שתשלים יופיעו כאן.
+Button       vis=t y= 388 x=  24 82x44 | ניהול התזכורות במסך הפרופיל
+StaticText   vis=t y= 396 x= 252 126x28 | תזכורות מהירות
+StaticText   vis=t y= 444 x=  24 354x52 | התזכורות כבויות — אפשר להפעיל בפרופיל
+StaticText   vis=t y= 528 x= 245 133x28 | תאריכים חשובים
+StaticText   vis=t y= 600 x= 320 24x16 | חשון
+StaticText   vis=t y= 600 x= 100 186x24 | בדיקת QA
+Button       vis=t y= 600 x=  40 44x44 | בדיקת QA: פתיחה לעריכה
+StaticText   vis=t y= 616 x= 326 12x28 | ג׳
+StaticText   vis=t y= 628 x= 100 186x16 | 13.10.2026
+Button       vis=t y= 680 x= 177 48x48 | הוספת תאריך חשוב
+Other        vis=t y= 727 x=   0 402x30 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות

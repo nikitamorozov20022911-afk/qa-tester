@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-03",
+  "command": "/qa",
+  "board": "69f0642c020604699b30fd87 (FindMe)",
+  "devices": [
+    "iPhone 17 — Trivoln 1.1.0 (8) TestFlight, переустановлен 03.11, PA5401",
+    "Pixel 6 — TrivoLN 1.1.0 (21), PA5401, English"
+  ],
+  "tickets": [
+    {
+      "hash": "#327cc4",
+      "title": "בקשת לקוח: טקסט בעברית בשדות קלט ייכתב מימין לשמאל גם כשהאפליקציה באנגלית",
+      "action": "pass",
+      "column": "הושלם",
+      "by": "пользователь провёл сам после скринов Android",
+      "evidence": [
+        "screenshots/327cc4-android-post-*-2026-11-03.png",
+        "screenshots/327cc4-web-*.png"
+      ],
+      "feature": "multilanguage / RTL",
+      "role": "user",
+      "devices": [
+        "android",
+        "web"
+      ],
+      "notes": "web: вход user.json протух (refresh token) — поля в аккаунте на вебе не проверены; вход/регистрация как гость ✅. Автотесты не писать (правило проекта)."
+    },
+    {
+      "hash": "#3c0a06",
+      "title": "iOS: כפתור החזרה במסך \"הגדרות\" מוצג בתוך רקע בצורת \"גלולה\" והעיגול חתוך",
+      "action": "pass",
+      "column": "הושלם",
+      "by": "пользователь провёл сам",
+      "evidence": [
+        "screenshots/3c0a06-ios-settings-2026-11-03.png",
+        "screenshots/3c0a06-ios-settings-back-zoom-2026-11-03.png"
+      ],
+      "role": "user",
+      "devices": [
+        "iphone"
+      ]
+    },
+    {
+      "hash": "#d7fcd8",
+      "title": "iOS: הודעת בקשת הגישה לתמונות מדברת על תמונת פרופיל גם כשמוסיפים מדיה לפוסט",
+      "action": "pass",
+      "column": "ждёт-подтверждения",
+      "facts": "после переустановки 1.1.0 (8): текст 'TrivoLN uses your photo library so you can add photos and videos to your profile, posts and messages.' (EN, т.к. iPhone на русском); после разрешения фото прикрепляется к посту. Не проверен иврит. Иврит не проверялся — решение пользователя: достаточно верного EN-текста.",
+      "evidence": [
+        "screenshots/d7fcd8-ios-photos-permission-2026-11-03.png"
+      ]
+    }
+  ],
+  "new_tickets": [
+    {
+      "hash": "#ec1816",
+      "id": "afa47669a22ce2b5dbec1816",
+      "board": "FindMe v2",
+      "title": "Cross-Posting: Instagram דוחה תמונות מהגלריה שאינן JPEG — יש להמיר אוטומטית ל-JPEG (iOS ו-Android)",
+      "status": "todo"
+    },
+    {
+      "hash": "#0ade3d",
+      "id": "316767fbf7016e000e0ade3d",
+      "board": "FindMe v2",
+      "title": "Cross-Posting: תמונה ביחס שאינו 4:5–1.91:1 … חוסמת פרסום ל-Instagram — יש להתאים אוטומטית",
+      "status": "todo"
+    }
+  ],
+  "test_data": [
+    "iPhone: открыт черновик «יצירת פוסט» с фото (холодильник) + Instagram — не опубликован; закрыть (X агентом не закрылся)",
+    "Android: открыт Create Post с текстом «שלום Hello world» — не опубликован, закрыть Discard"
+  ]
+}

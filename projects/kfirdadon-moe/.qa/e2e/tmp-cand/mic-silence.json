@@ -1,0 +1,1 @@
+{"browser":{"browserName":"chromium","launchOptions":{"headless":false,"args":["--use-fake-ui-for-media-stream","--use-fake-device-for-media-stream","--use-file-for-fake-audio-capture=/Users/avielshnaider/kfirdadon-moe/.qa/e2e/tmp-cand/silence.wav"]},"contextOptions":{"permissions":["microphone"],"viewport":{"width":1440,"height":900}}}}

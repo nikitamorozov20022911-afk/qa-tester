@@ -1,0 +1,15 @@
+achievements/ac-01-grid-six-achievements.e2e.ts
+guided-prayer/gp-02-explanation-layer.e2e.ts
+guided-prayer/gp-05-explanation-and-source-additions.e2e.ts
+guided-prayer/gp-05-explanation-and-source-berachot.e2e.ts
+guided-prayer/gp-09-prayer-title-centered-b398d352.e2e.ts
+home/hm-01-daily-home.e2e.ts
+home/hm-02-recent-prayers.e2e.ts
+home/hm-04-prayer-name-not-clipped-b7a78c66.e2e.ts
+impact-map/im-01-invite-dialog-text.e2e.ts
+impact-map/im-02-map-me-two-branches-counter.e2e.ts
+impact-map/im-03-own-invite-link-message.e2e.ts
+important-dates/id-05-hebrew-date-sunset-1cbe2254.e2e.ts
+journey/jr-01-real-data.e2e.ts
+onboarding/ob-01-registered-user-redirect.e2e.ts
+prayer-catalog/pc-01-catalog-search.e2e.ts

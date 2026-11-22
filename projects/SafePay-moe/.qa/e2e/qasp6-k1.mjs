@@ -1,0 +1,10 @@
+import { newBrowser, ctx, go, txt, shot, sleep } from './qasp6-lib.mjs';
+const D='6a86f7b4/';
+const b = await newBrowser();
+const { p } = await ctx(b, 'client', 375);
+const log=(...a)=>console.log(...a);
+await go(p, '/wallet/kids');
+await p.getByText('פתיחת ארנק ילד/ה').click(); await sleep(3000);
+log('URL', p.url()); log(await txt(p)); log(await p.locator('body').ariaSnapshot());
+await shot(p, D+'r1-01-form-empty-375', true);
+await b.close();

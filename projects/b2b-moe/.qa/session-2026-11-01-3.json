@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-01",
+  "session": 3,
+  "queue": "בבדיקות",
+  "tickets": [
+    {
+      "hash": "#ab1b2e",
+      "title": "כרטיס לקוח: כשטעינת ההזמנות נכשלת, המדדים מציגים «0 / ₪0.00»…",
+      "role": "admin",
+      "batch": 1,
+      "state": "pass",
+      "devices": "1440",
+      "action": "pass",
+      "column": "הושלם",
+      "screenshots": "screenshots/ab1b2e-*",
+      "feature": "customers card KPI: orders error → «—»×4, abort skeleton→«—», retry real values, refetch-fail keeps values + banner",
+      "cases": "new cust-16; regression cust-14 (#08cb68 skeleton)"
+    },
+    {
+      "hash": "#7f32dc",
+      "role": "admin",
+      "state": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "cases": "tests/customers/cust-15-delete-waits-for-orders.md",
+      "note": "user confirmed «прошел» 01.11 (session 3); autotest-writer started"
+    }
+  ],
+  "log": [
+    {
+      "time": "2026-11-01",
+      "note": "session 3 start (quick): MCP ok (token до 10.11); queue 1 ticket #ab1b2e (our H1, fixes e702052+8745f32); #7f32dc now in הושלם, not in ledger; qa-tester started"
+    },
+    {
+      "time": "2026-11-01",
+      "note": "user: #7f32dc прошел → autotest-writer in background; ledger after tests"
+    },
+    {
+      "time": "2026-11-01",
+      "note": "#ab1b2e pass: T1-T5, R1 ok (1 run each), no ❌ → no verifier; 0 open rejections → no board actions; no test data. Finding: rejected orders rows in «הזמנות אחרונות» show ₪0.00 (not KPI)."
+    },
+    {
+      "time": "2026-11-01",
+      "note": "#7f32dc autotests written: customer-delete-waits-for-orders.spec.ts (5 tests, §12), not run; ledger updated"
+    },
+    {
+      "time": "2026-11-01",
+      "note": "user: #ab1b2e прошёл → autotests customer-kpi-orders-error.spec.ts (6 tests, §13), not run; ledger updated"
+    },
+    {
+      "time": "2026-11-01",
+      "note": "finding ₪0.00 rejected orders → bug-verifier NOT CONFIRMED: 45/98 rejected QA-AUTO orders have unit_price 0 (data), all screens consistent; bug not created. Session closed."
+    }
+  ]
+}

@@ -1,0 +1,1518 @@
+{
+ "tickets": [
+  {
+   "hash": "09773471",
+   "id": "0977347127ca7b53ef785064",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-08",
+   "feature": "admin-access",
+   "tests": [
+    "e2e/tests/admin-access/non-admin-supportinbox-redirects-to-dashboard-en.spec.ts",
+    "e2e/tests/admin-access/non-admin-supportinbox-redirects-to-dashboard-he.spec.ts",
+    "e2e/tests/admin-access/non-admin-supportinbox-url-variants-redirect.spec.ts",
+    "e2e/tests/admin-access/non-admin-supportinbox-back-no-return.spec.ts",
+    "e2e/tests/admin-access/admin-support-console-menu-and-direct.spec.ts"
+   ]
+  },
+  {
+   "hash": "12126fac",
+   "id": "12126fac460d60260738a5f1",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-08",
+   "feature": "admin-access",
+   "tests": [
+    "e2e/tests/admin-access/non-admin-adminpanel-redirects-to-dashboard-he.spec.ts",
+    "e2e/tests/admin-access/non-admin-adminpanel-url-variants-redirect.spec.ts",
+    "e2e/tests/admin-access/non-admin-adminpanel-back-forward.spec.ts",
+    "e2e/tests/admin-access/admin-adminpanel-header-menu-tabs.spec.ts",
+    "e2e/tests/admin-plans/non-admin-adminpanel-access-denied.spec.ts"
+   ]
+  },
+  {
+   "hash": "f109cde8",
+   "id": "f109cde86a9e009a32694acb",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-08",
+   "feature": "billing-trial",
+   "tests": [
+    "e2e/tests/billing-trial/active-trial-rows-end-within-7-days.spec.ts",
+    "e2e/tests/billing-trial/trial-ended-rows-lite-no-date.spec.ts"
+   ],
+   "manual": [
+    "tests/billing-trial/BT-01-signup-monthly-trial-from-registration.md",
+    "tests/billing-trial/BT-02-signup-yearly-keeps-annual-cycle.md",
+    "tests/billing-trial/BT-03-first-login-later-than-signup.md",
+    "tests/billing-trial/BT-04-first-login-after-trial-window.md",
+    "tests/billing-trial/BT-05-billing-after-trial-ends.md",
+    "tests/billing-trial/BT-06-start-free-trial-from-click.md",
+    "tests/billing-trial/BT-09-plans-until-equals-created-plus-7.md"
+   ]
+  },
+  {
+   "hash": "08737d6c",
+   "id": "08737d6c2b0dae50b9f62af1",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-14",
+   "feature": "modals",
+   "tests": [
+    "e2e/tests/modals/select-client-new-estimate-opaque.spec.ts",
+    "e2e/tests/modals/create-client-with-ai-opaque.spec.ts",
+    "e2e/tests/modals/create-job-with-ai-opaque.spec.ts",
+    "e2e/tests/modals/transfer-inventory-opaque.spec.ts"
+   ]
+  },
+  {
+   "hash": "b4c3bed5",
+   "id": "b4c3bed5dae1acda4bba6f09",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-14",
+   "feature": "modals",
+   "tests": [
+    "e2e/tests/modals/job-items-price-book-opaque.spec.ts",
+    "e2e/tests/modals/job-items-add-item-opaque.spec.ts"
+   ]
+  },
+  {
+   "hash": "f576f6d3",
+   "id": "f576f6d3e6620f16af0ff043",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-14",
+   "feature": "seo",
+   "tests": [
+    "e2e/tests/seo/sitemap-xml-valid.spec.ts",
+    "e2e/tests/seo/sitemap-pages-open.spec.ts"
+   ]
+  },
+  {
+   "hash": "8d3f16b1",
+   "id": "8d3f16b1388a6237ee6f7c8d",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-14",
+   "feature": "seo",
+   "tests": [
+    "e2e/tests/seo/robots-txt.spec.ts"
+   ]
+  },
+  {
+   "hash": "8ffd6e26",
+   "id": "8ffd6e2645f08c18a2e17576",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-14",
+   "feature": "addresses",
+   "tests": [
+    "e2e/tests/addresses/new-job-apt-moves-to-unit.spec.ts",
+    "e2e/tests/addresses/new-job-unit-suite-ste-hash-variants.spec.ts",
+    "e2e/tests/addresses/new-job-manual-unit-kept.spec.ts",
+    "e2e/tests/addresses/new-job-apt-moves-to-unit-android.spec.ts",
+    "e2e/tests/addresses/unit-placeholder-on-forms.spec.ts"
+   ]
+  },
+  {
+   "hash": "b2f74544",
+   "id": "b2f74544d40c5b51239e97e2",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-14",
+   "feature": "addresses",
+   "tests": [
+    "e2e/tests/addresses/clients-list-unit-after-street.spec.ts",
+    "e2e/tests/addresses/customer-detail-header-unit.spec.ts",
+    "e2e/tests/addresses/customer-jobs-tab-job-unit.spec.ts",
+    "e2e/tests/addresses/jobs-list-and-preview-unit.spec.ts",
+    "e2e/tests/addresses/clients-customer-detail-unit-android.spec.ts"
+   ]
+  },
+  {
+   "hash": "b6cecf04",
+   "id": "b6cecf04c4c52d3e624457e1",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-14",
+   "feature": "dashboard",
+   "tests": [
+    "e2e/tests/dashboard/mobile-dashboard-no-clear-view-block.spec.ts",
+    "e2e/tests/dashboard/tablet-dashboard-no-clear-view-block.spec.ts"
+   ]
+  },
+  {
+   "hash": "dc2f0de9",
+   "id": "dc2f0de9402a1e3735ab0cf3",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-14",
+   "feature": "leads-map",
+   "tests": [
+    "e2e/tests/leads-map/lead-card-no-stray-zero.spec.ts"
+   ],
+   "manual": [
+    "tests/leads-map/LM-03-estimated-value-shown.md"
+   ]
+  },
+  {
+   "hash": "6e6f101d",
+   "id": "6e6f101d39fbef16f4473066",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-14",
+   "feature": "google-maps-mobile",
+   "tests": [
+    "e2e/tests/google-maps-mobile/mobile-address-opens-google-maps.spec.ts",
+    "e2e/tests/google-maps-mobile/desktop-no-google-maps-links.spec.ts"
+   ],
+   "manual": [
+    "tests/google-maps-mobile/GM-06-real-phone-app.md"
+   ]
+  },
+  {
+   "hash": "94c08102",
+   "id": "94c0810270192f521803e6aa",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-14",
+   "feature": "job-closed-date",
+   "tests": [
+    "e2e/tests/job-closed-date/closed-date-set-cleared-reset.spec.ts",
+    "e2e/tests/job-closed-date/old-completed-jobs-closed-dash.spec.ts"
+   ]
+  },
+  {
+   "hash": "6d5cda04",
+   "id": "6d5cda04fc84142bdb8a42c1",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-14",
+   "feature": "job-date-label",
+   "tests": [
+    "e2e/tests/job-date-label/date-label-forms-and-job.spec.ts"
+   ]
+  },
+  {
+   "hash": "444b9ee7",
+   "id": "444b9ee75c6c2fb0b01110f3",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-14",
+   "feature": "dashboard",
+   "tests": [
+    "e2e/tests/dashboard/desktop-greeting-card-no-invoices-due.spec.ts",
+    "e2e/tests/dashboard/desktop-greeting-card-tip-dismiss.spec.ts",
+    "e2e/tests/dashboard/narrow-greeting-card-no-tip.spec.ts"
+   ]
+  },
+  {
+   "hash": "26087e6e",
+   "id": "26087e6eedad2ed25bb865ca",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-14",
+   "feature": "admin-access",
+   "tests": [
+    "e2e/tests/admin-access/non-admin-supportinbox-no-screen-name-flash.spec.ts",
+    "e2e/tests/admin-access/non-admin-adminpanel-no-screen-name-flash.spec.ts",
+    "e2e/tests/admin-access/non-admin-url-variants-no-screen-name-flash.spec.ts",
+    "e2e/tests/admin-access/admin-support-console-admin-panel-breadcrumbs.spec.ts"
+   ]
+  },
+  {
+   "hash": "3db49a08",
+   "id": "3db49a080afd0dfe7b505dd7",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-14",
+   "feature": "support",
+   "tests": [
+    "e2e/tests/support/ticket-detail-message-timestamps.spec.ts",
+    "e2e/tests/support/support-console-message-timestamps.spec.ts",
+    "e2e/tests/support/message-time-viewer-timezone.spec.ts",
+    "e2e/tests/support/message-timestamps-hebrew-ltr.spec.ts",
+    "e2e/tests/support/message-timestamps-android-in-viewport.spec.ts"
+   ]
+  },
+  {
+   "hash": "99cf43b7",
+   "id": "99cf43b7e21a699f01d8d1f3",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-14",
+   "feature": "landing",
+   "tests": [
+    "e2e/tests/landing/product-screenshots-new-set.spec.ts",
+    "e2e/tests/landing/no-old-screenshots.spec.ts",
+    "e2e/tests/landing/product-screenshots-fit-viewport.spec.ts"
+   ]
+  },
+  {
+   "hash": "5814749d",
+   "id": "5814749d4a8c75d847cb2a0a",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-14",
+   "feature": "dashboard",
+   "tests": [
+    "e2e/tests/dashboard/desktop-team-performance-rows.spec.ts",
+    "e2e/tests/dashboard/desktop-team-performance-matches-sales.spec.ts",
+    "e2e/tests/dashboard/desktop-team-performance-period.spec.ts",
+    "e2e/tests/dashboard/desktop-team-performance-breakdown.spec.ts",
+    "e2e/tests/dashboard/desktop-team-performance-lead-only.spec.ts",
+    "e2e/tests/dashboard/desktop-team-performance-he.spec.ts"
+   ]
+  },
+  {
+   "hash": "d0392fa9",
+   "id": "d0392fa9f2916aefc4dc7d92",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-14",
+   "feature": "signup-email-confirm",
+   "tests": [
+    "e2e/tests/signup-email-confirm/register-with-ref-shows-signup-form.spec.ts"
+   ],
+   "cases": [
+    "tests/signup/SU-01-confirm-link-opens-dashboard-without-refresh.md",
+    "tests/signup/SU-02-new-account-has-exactly-one-company.md",
+    "tests/signup/SU-03-relogin-still-one-company.md",
+    "tests/signup/SU-04-register-form-shown-with-ref.md"
+   ],
+   "manual": [
+    "tests/signup/SU-01-confirm-link-opens-dashboard-without-refresh.md",
+    "tests/signup/SU-02-new-account-has-exactly-one-company.md",
+    "tests/signup/SU-03-relogin-still-one-company.md"
+   ],
+   "note": "manual: основной сценарий требует регистрации и письма подтверждения на prod — не автоматизирован"
+  },
+  {
+   "hash": "5fbb66",
+   "id": "6a54dcf5c86d4bb9b85fbb66",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-18",
+   "feature": "dispatch-sms",
+   "tests": [
+    "e2e/tests/dispatch-sms/dispatch-sms-preview.spec.ts"
+   ],
+   "cases": [
+    "tests/dispatch-sms/DS-01-new-job-has-dispatch-tab.md",
+    "tests/dispatch-sms/DS-02-sms-preview-job-details.md",
+    "tests/dispatch-sms/DS-03-send-disabled-without-technician.md",
+    "tests/dispatch-sms/DS-04-recipient-shows-selected-technician.md"
+   ],
+   "manual": [],
+   "note": "автотесты только просмотр (@prod-safe, desktop, EN/HE): без сохранения работы и без Send SMS; реальная отправка, toast, STOP/START, номер вне US/CA — только вручную (14.10)"
+  },
+  {
+   "hash": "80550f",
+   "id": "a6270ed870ad31870a80550f",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-18",
+   "feature": "multi-tech-assignment",
+   "tests": [
+    "e2e/tests/multi-tech-assignment/multi-tech-assignment.spec.ts"
+   ],
+   "cases": [
+    "tests/multi-tech-assignment/MT-01-setting-off-single-technician.md",
+    "tests/multi-tech-assignment/MT-02-setting-on-job-info-multiple-lead.md",
+    "tests/multi-tech-assignment/MT-03-setting-on-dispatch-recipients-all.md",
+    "tests/multi-tech-assignment/MT-04-saved-job-shows-all-technicians.md"
+   ],
+   "manual": [
+    "реальная доставка SMS всем назначенным и авто-SMS при назначении",
+    "история назначений / Send again",
+    "Schedule день/неделя/месяц",
+    "вход доп. техником",
+    "фильтр списка по доп. технику",
+    "мобильный вид"
+   ],
+   "note": "@writes, desktop, EN/HE: переключает Allow Multiple Techs (возврат в afterAll), создаёт работу QA-AUTO multi-tech (→ Cancelled); send-sms заблокирован; только QA-Tech Alpha/Beta/Gamma. Не запускались; селекторы настройки не сверены с сайтом (сессия истекла)"
+  },
+  {
+   "hash": "04d339",
+   "id": "6a4fad600e673484ac04d339",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-18",
+   "feature": "multi-business",
+   "tests": [
+    "e2e/tests/multi-business/owner-switcher-isolation.spec.ts",
+    "e2e/tests/multi-business/dispatcher-switcher-only-own.spec.ts",
+    "e2e/tests/multi-business/direct-url-other-business-job.spec.ts"
+   ],
+   "cases": [
+    "tests/multi-business/MB-01-owner-switcher-two-businesses-clients-isolated.md",
+    "tests/multi-business/MB-02-owner-jobs-isolated-by-switcher.md",
+    "tests/multi-business/MB-03-dispatcher-switcher-only-own-business.md",
+    "tests/multi-business/MB-04-direct-url-other-business-job-redirects.md",
+    "tests/multi-business/MB-05-owner-moves-team-member-to-another-business.md",
+    "tests/multi-business/MB-06-invoice-issued-in-selected-business-name.md"
+   ],
+   "manual": [
+    "перенос сотрудника в другой бизнес (Saved + Change history) — MB-05",
+    "счёт от имени выбранного бизнеса — MB-06",
+    "создание второго бизнеса (платно)",
+    "перенос техника с открытыми работами",
+    "лимит мест техников на весь аккаунт"
+   ],
+   "note": "@prod-safe, desktop, EN, только просмотр; admin + dispatcher через asUser; каждый тест возвращает бизнес test (переключатель + selected-company-id). Не запускались; локаторы переключателя/поиска не сверены с сайтом (правило проекта)"
+  },
+  {
+   "hash": "04d347",
+   "id": "6a4fad600e673484ac04d347",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-18",
+   "feature": "usage-tracking",
+   "tests": [
+    "e2e/tests/usage-tracking/owner-activity-usage.spec.ts",
+    "e2e/tests/usage-tracking/dispatcher-activity-usage-access.spec.ts",
+    "e2e/tests/usage-tracking/job-created-increments-counter.spec.ts"
+   ],
+   "cases": [
+    "tests/usage-tracking/UT-01-owner-activity-usage-counters-this-month.md",
+    "tests/usage-tracking/UT-02-dispatcher-sees-activity-usage.md",
+    "tests/usage-tracking/UT-03-creating-job-increments-jobs-created.md",
+    "tests/usage-tracking/UT-04-assigning-tech-increments-jobs-assigned.md",
+    "tests/usage-tracking/UT-05-ops-manager-access-technician-blocked.md",
+    "tests/usage-tracking/UT-06-empty-state-and-other-counters.md"
+   ],
+   "manual": [
+    "назначение техника → Jobs assigned +1 (UT-04, риск SMS)",
+    "Operations manager видит экран; техник — «אין לך גישה» (UT-05, нет сессий)",
+    "пустое состояние для периода без активности",
+    "HE (פעילות ושימוש / לפי אדם)",
+    "лид/смета/счёт/SMS/звонок → соответствующие счётчики",
+    "квоты F-14: удаление работы не освобождает место",
+    "retention 13 мес (по времени)"
+   ],
+   "note": "2× @prod-safe (admin, dispatcher) + 1× @writes (работа QA-AUTO usage #04d347 … без техников → Cancelled), desktop, EN; каждый тест возвращает selected-company-id=test. Не запускались; auth/admin.json истёк — qa-login перед регрессом; разметка карточек счётчиков/By person не сверена с сайтом"
+  },
+  {
+   "hash": "8ae966",
+   "id": "a29db9b3d22c2a648d8ae966",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-18",
+   "feature": "job-create-sms",
+   "tests": [
+    "e2e/tests/job-create-sms/toasts-stacked-job-created-and-sms.spec.ts"
+   ],
+   "cases": [
+    "tests/job-create-sms/JS-01-toasts-job-created-and-sms-stacked.md"
+   ],
+   "manual": [
+    "toast «… was notified by SMS» при успешной отправке (нужен реальный номер)",
+    "HE"
+   ],
+   "note": "@writes, desktop, EN, admin, компания test (возврат в finally); работа QA-AUTO … → Cancelled; техник только QA-F5 tech; send-sms перехвачен page.route (тело проверяется до ответа, фейковый 422 recipient_invalid, наружу не уходит). Не запускались; auth/admin.json истёк — qa-login перед регрессом; разметка контейнера toast и формат тела send-sms не сверены с сайтом"
+  },
+  {
+   "hash": "8feef0",
+   "id": "2ad16bf9aca5e46cc28feef0",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-18",
+   "feature": "job-create-sms",
+   "tests": [
+    "e2e/tests/job-create-sms/assignment-sms-job-line-no-extra-word.spec.ts"
+   ],
+   "cases": [
+    "tests/job-create-sms/JS-02-assignment-sms-job-line.md"
+   ],
+   "manual": [
+    "SMS, реально дошедший на телефон техника",
+    "работа с реальным названием → название после номера"
+   ],
+   "note": "@writes, desktop, EN, admin, компания test (возврат в finally); работа QA-AUTO … → Cancelled; техник только QA-F5 tech; send-sms перехвачен page.route (тело проверяется до ответа, фейковый 422 recipient_invalid, наружу не уходит). Не запускались; auth/admin.json истёк — qa-login перед регрессом; разметка контейнера toast и формат тела send-sms не сверены с сайтом"
+  },
+  {
+   "hash": "351eb3",
+   "id": "3b8ba7388bdd0940ed351eb3",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-18",
+   "feature": "admin-coupons",
+   "tests": [
+    "e2e/tests/admin-coupons/coupon-redemption-limit-validation.spec.ts"
+   ],
+   "cases": [
+    "tests/admin-coupons/CP-01-new-coupon-limit-invalid.md",
+    "tests/admin-coupons/CP-02-edit-coupon-limit-invalid.md",
+    "tests/admin-coupons/CP-03-list-unlimited-shows-infinity.md",
+    "tests/admin-coupons/CP-04-save-coupon-empty-or-1-limit.md"
+   ],
+   "manual": [
+    "сохранение купона с пустым лимитом / 1 / 3 → Disable (CP-04, живой Stripe, купоны не удаляются)",
+    "HE-текст ошибки",
+    "серверный отказ для 0 в обход формы"
+   ],
+   "note": "3× @prod-safe, desktop, EN, admin; только чтение формы (Save не нажимается, blockCouponWrites обрывает запросы записи); Edit — активный купон (QA- предпочтительно), нет активных → skip. Не запускались; auth/admin.json истёк — qa-login перед регрессом; подписи полей и маршрут сохранения не сверены с сайтом"
+  },
+  {
+   "hash": "664ccb",
+   "id": "e0978aaa8a688df8aa664ccb",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-18",
+   "feature": "job-dates",
+   "tests": [
+    "e2e/tests/job-dates/reclick-selected-day-keeps-date.spec.ts",
+    "e2e/tests/job-dates/job-without-date-not-scheduled.spec.ts"
+   ],
+   "cases": [
+    "tests/job-dates/JDT-01-reclick-selected-day-keeps-date.md",
+    "tests/job-dates/JDT-02-saved-job-in-schedule-and-today.md",
+    "tests/job-dates/JDT-03-job-without-date-not-scheduled.md"
+   ],
+   "manual": [],
+   "note": "1× @writes (QA-AUTO reclick #664ccb, без техников → Cancelled) + 2× @prod-safe (JOB-0082 Not scheduled EN/HE); desktop, America/New_York; send-sms заблокирован. Не запускались; календарь не сверен с сайтом; auth/admin.json истёк — qa-login перед регрессом"
+  },
+  {
+   "hash": "6605fa",
+   "id": "686de3bc74f697ba606605fa",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-18",
+   "feature": "job-dates",
+   "tests": [
+    "e2e/tests/job-dates/jobs-list-relative-labels.spec.ts"
+   ],
+   "cases": [
+    "tests/job-dates/JDT-04-relative-labels-match-day-diff.md",
+    "tests/job-dates/JDT-05-new-jobs-tomorrow-in3-yesterday-ago5.md"
+   ],
+   "manual": [
+    "метки в годах (≥365 дней) — вручную не проверялись, в автотесте только форма"
+   ],
+   "note": "2× @prod-safe (все строки всех вкладок EN/HE против разницы дней в America/New_York) + 1× @writes (4 работы QA-AUTO rel #6605fa → Cancelled). Не запускались"
+  },
+  {
+   "hash": "6c02bf",
+   "id": "4431acb4fae557071f6c02bf",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-18",
+   "feature": "schedule-day",
+   "tests": [
+    "e2e/tests/schedule-day/schedule-day-hours-range.spec.ts"
+   ],
+   "cases": [
+    "tests/schedule-day/SD-01-day-grid-expands-early-late.md",
+    "tests/schedule-day/SD-02-normal-day-06-22.md"
+   ],
+   "manual": [
+    "Week/Month — вручную (не часть исправления)"
+   ],
+   "note": "3× @prod-safe, desktop; данные JOB-0052 03:55 и JOB-0076 23:30 на Oct 14 2026. Не запускались; подписи часов сетки не сверены с сайтом"
+  },
+  {
+   "hash": "b809a6",
+   "id": "4c255f56b189c1f4bbb809a6",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-18",
+   "feature": "rtl-jobs",
+   "tests": [
+    "e2e/tests/rtl-jobs/rtl-tabs-and-columns.spec.ts"
+   ],
+   "cases": [
+    "tests/rtl-jobs/RTL-01-new-job-rtl.md",
+    "tests/rtl-jobs/RTL-02-job-details-rtl.md",
+    "tests/rtl-jobs/RTL-03-jobs-list-rtl.md"
+   ],
+   "manual": [
+    "Send SMS в конце строки Dispatch (оба языка)"
+   ],
+   "note": "6× @prod-safe (HE+EN × New Job / Job Details JOB-0094 / Jobs list), desktop, по положению элементов. Не запускались"
+  },
+  {
+   "hash": "a10206",
+   "id": "79dc4c5a68c099227ea10206",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-19",
+   "feature": "admin-coupons",
+   "tests": [
+    "e2e/tests/admin-coupons/admin-list-coupons-stripe-sync-fields.spec.ts",
+    "e2e/tests/admin-coupons/coupon-redemptions-at-checkout.spec.ts",
+    "e2e/tests/admin-coupons/billing-coupon-check-errors.spec.ts",
+    "e2e/tests/admin-coupons/billing-coupon-check-valid-price.spec.ts",
+    "e2e/tests/admin-coupons/coupons-list-search-filter.spec.ts"
+   ],
+   "cases": [
+    "tests/admin-coupons/CP-05-list-columns-states-disabled-actions.md",
+    "tests/admin-coupons/CP-10-admin-list-coupons-stripe-fields.md",
+    "tests/admin-coupons/CP-11-billing-check-errors.md",
+    "tests/admin-coupons/CP-12-billing-check-valid-price.md",
+    "tests/admin-coupons/CP-13-redemptions-at-checkout.md",
+    "tests/admin-coupons/CP-14-create-coupon-to-stripe-checkout.md"
+   ],
+   "manual": [
+    "создание купона, дубль кода, запись в Stripe Dashboard, Audit log coupon.create/disable (CP-14)",
+    "Continue to payment → Stripe Checkout со скидкой, без оплаты (CP-14)",
+    "«belongs to another account» / «has expired» на активных купонах (CP-14)",
+    "Used up, Not in Stripe / Retry sync, сохранность старых погашений после Disable — не проверено (нужна реальная оплата / сбой)"
+   ],
+   "note": "@prod-safe, desktop, EN; admin (компания test, возврат в finally) + user wojeg27104; ни сохранений купонов, ни Checkout (blockCouponWrites обновлён: пропускает rpc admin_list_coupons/check, обрывает запись, погашение, checkout.stripe.com). Не запускались; сайт при записи не открывался — селекторы по скриншотам 19.10; auth/admin.json и user.json могли истечь — qa-login перед регрессом. Valid-Check — только с QA_COUPON_VALID (иначе skip)"
+  },
+  {
+   "hash": "b93722",
+   "id": "40258ec56e2eb5f76eb93722",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-19",
+   "feature": "admin-coupons",
+   "tests": [
+    "e2e/tests/admin-coupons/coupons-list-search-filter.spec.ts",
+    "e2e/tests/admin-coupons/new-coupon-expiry-date-min-today.spec.ts",
+    "e2e/tests/admin-coupons/coupon-redemptions-at-checkout.spec.ts",
+    "e2e/tests/admin-coupons/billing-coupon-check-errors.spec.ts",
+    "e2e/tests/admin-coupons/billing-coupon-check-valid-price.spec.ts"
+   ],
+   "cases": [
+    "tests/admin-coupons/CP-05-list-columns-states-disabled-actions.md",
+    "tests/admin-coupons/CP-06-search-code-email-case-insensitive.md",
+    "tests/admin-coupons/CP-07-state-filter.md",
+    "tests/admin-coupons/CP-08-new-coupon-expiry-not-in-past.md",
+    "tests/admin-coupons/CP-09-only-for-account-unknown-email.md",
+    "tests/admin-coupons/CP-11-billing-check-errors.md",
+    "tests/admin-coupons/CP-12-billing-check-valid-price.md",
+    "tests/admin-coupons/CP-13-redemptions-at-checkout.md",
+    "tests/admin-coupons/CP-14-create-coupon-to-stripe-checkout.md"
+   ],
+   "manual": [
+    "«Only for this account» с несуществующим e-mail → «No account uses the e-mail …» (CP-09, нужен Save)",
+    "создание / Edit / Disable с причиной, Expired через сутки (CP-14)",
+    "Empty State (список не пуст), Error State сбоя Stripe с Retry sync",
+    "HE-подписи формы и состояний"
+   ],
+   "note": "@prod-safe, desktop, EN; admin (компания test, возврат в finally) + user wojeg27104; ни сохранений купонов, ни Checkout (blockCouponWrites обновлён: пропускает rpc admin_list_coupons/check, обрывает запись, погашение, checkout.stripe.com). Не запускались; сайт при записи не открывался — селекторы по скриншотам 19.10; auth/admin.json и user.json могли истечь — qa-login перед регрессом. Valid-Check — только с QA_COUPON_VALID (иначе skip)"
+  },
+  {
+   "hash": "2b3784",
+   "id": "6eed7c73f86190f44e2b3784",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-20",
+   "feature": "admin-plans",
+   "tests": [
+    "e2e/tests/admin-plans/assign-dialog-rejects-past-date.spec.ts",
+    "e2e/tests/admin-plans/plans-row-matches-user-active-plan.spec.ts",
+    "e2e/tests/admin-plans/user-lite-no-ai-inventory-after-grant-expired.spec.ts",
+    "e2e/tests/admin-plans/grant-change-revoke-user-features-and-audit-log.spec.ts"
+   ],
+   "cases": [
+    "tests/admin-plans/AP-08-assign-past-date.md",
+    "tests/admin-plans/AP-11-grant-change-revoke-user-features-audit.md",
+    "tests/admin-plans/AP-12-plans-row-matches-user-active-plan.md",
+    "tests/admin-plans/AP-13-user-lite-after-grant-expired.md",
+    "tests/admin-plans/AP-14-grant-expiry-auto-return-manual.md"
+   ],
+   "manual": [
+    "автоматический возврат после даты окончания — по времени, ручной кейс AP-14 (проверено 20.10)",
+    "приоритет выдачи над платной подпиской Stripe — нет аккаунта с оплатой, оплату не автоматизируем"
+   ],
+   "note": "План specs/admin-plans.md 1.10 и группа 4. @prod-safe: 1.10, 4.1 (admin+user, только чтение), 4.2 (user, Lite); @writes @data: 4.3 — выдача Pro Tech → Starter Tech → Revoke только «בדיקה», Revoke в finally, Stripe-запросы обрываются, блок Payment method до/после одинаков. Не запускались; сайт при записи не открывался — селекторы по скриншотам r3-*/r3c-*. auth/admin.json и user.json истекли — qa-login перед регрессом. 4.2 и 4.3 не запускать одновременно."
+  },
+  {
+   "hash": "b42657",
+   "id": "226301e0b345e86872b42657",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-10-20",
+   "feature": "admin-plans",
+   "tests": [
+    "e2e/tests/admin-plans/assign-dialog-rejects-past-date.spec.ts",
+    "e2e/tests/admin-plans/plans-row-matches-user-active-plan.spec.ts",
+    "e2e/tests/admin-plans/user-lite-no-ai-inventory-after-grant-expired.spec.ts",
+    "e2e/tests/admin-plans/grant-change-revoke-user-features-and-audit-log.spec.ts"
+   ],
+   "cases": [
+    "tests/admin-plans/AP-08-assign-past-date.md",
+    "tests/admin-plans/AP-11-grant-change-revoke-user-features-audit.md",
+    "tests/admin-plans/AP-12-plans-row-matches-user-active-plan.md",
+    "tests/admin-plans/AP-13-user-lite-after-grant-expired.md",
+    "tests/admin-plans/AP-14-grant-expiry-auto-return-manual.md"
+   ],
+   "manual": [
+    "автоматический возврат после даты окончания — по времени, ручной кейс AP-14 (проверено 20.10)",
+    "приоритет выдачи над платной подпиской Stripe — нет аккаунта с оплатой, оплату не автоматизируем"
+   ],
+   "note": "Дубль #2b3784, проверен вместе; те же тесты. План specs/admin-plans.md 1.10 и группа 4. @prod-safe: 1.10, 4.1 (admin+user, только чтение), 4.2 (user, Lite); @writes @data: 4.3 — выдача Pro Tech → Starter Tech → Revoke только «בדיקה», Revoke в finally, Stripe-запросы обрываются, блок Payment method до/после одинаков. Не запускались; сайт при записи не открывался — селекторы по скриншотам r3-*/r3c-*. auth/admin.json и user.json истекли — qa-login перед регрессом. 4.2 и 4.3 не запускать одновременно."
+  },
+  {
+   "hash": "e9cbda",
+   "id": "a4ff379867125b8e9fe9cbda",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-02",
+   "feature": "mobile-nav",
+   "tests": [
+    "e2e/tests/mobile-nav/more-menu-one-column-order.spec.ts",
+    "e2e/tests/mobile-nav/more-menu-all-items-no-scroll.spec.ts"
+   ],
+   "cases": [
+    "tests/mobile-nav/MN-01-more-menu-one-column-order.md",
+    "tests/mobile-nav/MN-02-more-menu-all-items-no-scroll.md"
+   ],
+   "manual": [
+    "375×667 (маленький iPhone) — тикет не требует, программист не проверял",
+    "переходы по пунктам меню и закрытие меню (#3a0f28) — не автоматизируем: GPS Workflow при первом открытии покупает номер Twilio",
+    "обычный user (меньше пунктов, без Admin Panel/Support Console)"
+   ],
+   "note": "План specs/mobile-nav.md 1.1–1.4, 2.1–2.4. @prod-safe, admin (компания test, возврат в finally), только чтение — пункты не нажимаются. 375×812 — @iphone (WebKit), 390×844 — @android с viewport 390×844; EN и HE. Не запускались; сайт при записи не открывался — разметка панели, имя кнопки «More» в HE и HE-подпись GPS Workflow не сверены (HE-подписи по скрину 1748ba2b-v-more-390x844-he.png). auth/admin.json мог истечь — qa-login перед регрессом."
+  },
+  {
+   "hash": "05c270",
+   "id": "24019e0399b6623fee05c270",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "estimates-sms-link",
+   "tests": [
+    "e2e/tests/estimates-sms-link/new-estimate-send-sms-saved-number-and-link.spec.ts",
+    "e2e/tests/estimates-sms-link/public-estimate-page-opens-without-login.spec.ts",
+    "e2e/tests/estimates-sms-link/invalid-estimate-link-not-valid.spec.ts"
+   ],
+   "cases": [
+    "tests/estimates-sms-link/ES-01-new-estimate-send-sms-saves-and-link.md",
+    "tests/estimates-sms-link/ES-02-public-estimate-page-guest.md",
+    "tests/estimates-sms-link/ES-03-invalid-estimate-link.md"
+   ],
+   "manual": [
+    "реальная доставка SMS на телефон (12.11 вручную: EST-0013 получено на iPhone)",
+    "View Estimate в email (Р4 брифа) — вручную не проверялся",
+    "находка: черновик сохраняется при открытии окна Send, Cancel оставляет черновик — не требование тикета"
+   ],
+   "note": "План specs/estimates-sms-link.md 1.1–1.3. @prod-safe: 1.2, 1.3 (гость, EST-0013, desktop+android). @writes @sms @data: 1.1 — новая смета QA-AUTO, SMS перехватывается (фейковый 200, номер +15555550100), очистка Delete/Archive. Не запускались; сайт при записи не открывался — форма New Estimate (заголовок, Add Item), имя функции отправки SMS сметы, Actions → Delete не сверены; разметка окна Send и публичной страницы — по скриншотам 05c270-*. auth/admin.json мог истечь — qa-login перед регрессом."
+  },
+  {
+   "hash": "df9bec",
+   "id": "6a8b07dba7da536e97df9bec",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "pricebook",
+   "tests": [
+    "e2e/tests/pricebook/estimate-manual-item-not-added-to-price-book.spec.ts",
+    "e2e/tests/pricebook/job-manual-item-not-added-to-price-book.spec.ts",
+    "e2e/tests/pricebook/invoice-manual-item-not-added-to-price-book.spec.ts",
+    "e2e/tests/pricebook/estimate-pick-item-from-price-book.spec.ts",
+    "e2e/tests/pricebook/invoice-pick-item-from-price-book.spec.ts"
+   ],
+   "cases": [
+    "tests/pricebook/PB-01-estimate-manual-item-not-in-price-book.md",
+    "tests/pricebook/PB-02-job-manual-item-not-in-price-book.md",
+    "tests/pricebook/PB-03-invoice-manual-item-not-in-price-book.md",
+    "tests/pricebook/PB-04-estimate-pick-from-price-book.md",
+    "tests/pricebook/PB-05-invoice-pick-from-price-book.md"
+   ],
+   "manual": [
+    "prod (компания test, admin) — проверено вручную 12.11; автотесты только Pre-Prod, т.к. все создают данные",
+    "скидка как позиция Price Book (#8e6806) — в этой проверке не повторялась",
+    "добавление позиции через Inventory, приложение Techory Dev (Android)"
+   ],
+   "note": "План specs/pricebook.md 1.1–1.3, 2.1–2.2. Все @desktop @writes @data, Pre-Prod (QA_PREPROD_URL), сессия preprod-ttp через asUser (вход только вручную, _vercel_jwt истекает ~15.11 — qa-login:manual -- preprod-ttp перед регрессом). Проверка: нет POST/PATCH/PUT к PriceBook, Total Items не меняется, поиск «No items found». Данные QA-AUTO, очистка в finally (смета/счёт Delete, строка в Job Items). Не запускались; сайт при записи не открывался — селекторы по скриншотам df9bec-*. 2.x требуют ≥1 позицию в Price Book TTP (сейчас там «QA-Lockout service» — не удалять до замены)."
+  },
+  {
+   "hash": "1a4863",
+   "id": "e22b0c4becfa9419ae1a4863",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "invoices",
+   "tests": [
+    "e2e/tests/invoices/new-invoice-without-customer-shows-error.spec.ts",
+    "e2e/tests/invoices/new-invoice-customer-picked-invoice-created.spec.ts"
+   ],
+   "cases": [
+    "tests/invoices/IN-01-new-invoice-without-customer-blocked.md",
+    "tests/invoices/IN-02-new-invoice-with-customer-created.md"
+   ],
+   "manual": [
+    "приложение Techory Dev (Android, Pixel 6, 1.2) — только устройство, 12.11 ✅",
+    "HE-текст «יש לבחור לקוח לחיוב.»"
+   ],
+   "note": "План specs/invoices.md 1.1–1.3. 1.1/1.2 (@desktop/@android) — без записи: нет POST к invoice, тост + role=alert у Bill To, фокус в «Search customer...», Invoice number N/A. 1.3 @desktop @writes @data — счёт QA-AUTO (TTP Customer), очистка Actions → Delete. Pre-Prod (QA_PREPROD_URL), сессия preprod-ttp через asUser (вход только вручную: qa-login:manual -- preprod-ttp; _vercel_jwt истекает — перелогин перед регрессом). Не запускались (L-20261007-1), --list ок; сайт при записи не открывался — тексты/разметка сверены с бандлом app.techory.ai 12.11 и скриншотами 1a4863-*."
+  },
+  {
+   "hash": "dce958",
+   "id": "42013be3b70cda42cbdce958",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "invoices",
+   "tests": [
+    "e2e/tests/invoices/new-invoice-empty-name-add-name.spec.ts",
+    "e2e/tests/invoices/saved-invoice-without-name-shows-number.spec.ts"
+   ],
+   "cases": [
+    "tests/invoices/IN-03-new-invoice-add-name-no-skeleton.md",
+    "tests/invoices/IN-04-saved-invoice-without-name-shows-number.md"
+   ],
+   "manual": [
+    "приложение Techory Dev — только устройство, 12.11 ✅",
+    "счёт из работы (Generate Invoice) — вручную",
+    "HE «הוספת שם»"
+   ],
+   "note": "План specs/invoices.md 2.1–2.3. 2.1/2.2 (@desktop/@android) — без записи: «Add name» + карандаш, нет .animate-pulse, клик → поле ввода. 2.3 @desktop @writes @data — счёт без имени → имя = INV-номер, очистка Actions → Delete. Pre-Prod (QA_PREPROD_URL), сессия preprod-ttp через asUser (вход только вручную: qa-login:manual -- preprod-ttp; _vercel_jwt истекает — перелогин перед регрессом). Не запускались (L-20261007-1), --list ок; сайт при записи не открывался — тексты/разметка сверены с бандлом app.techory.ai 12.11 и скриншотами dce958-*."
+  },
+  {
+   "hash": "dad444",
+   "id": "e5aaa7b1be6415e2a9dad444",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "addresses",
+   "tests": [
+    "e2e/tests/addresses/new-lead-city-not-neighborhood.spec.ts",
+    "e2e/tests/addresses/edit-lead-city-not-neighborhood.spec.ts",
+    "e2e/tests/addresses/new-lead-new-york-city.spec.ts"
+   ],
+   "cases": [
+    "tests/addresses/AD-11-new-lead-city-not-neighborhood.md",
+    "tests/addresses/AD-12-edit-lead-city-not-neighborhood.md",
+    "tests/addresses/AD-13-new-lead-new-york-city.md"
+   ],
+   "manual": [
+    "приложение Techory Dev — только устройство, 12.11 ✅",
+    "Brooklyn (боро) — подсказка Google нестабильна",
+    "New Client / New Job с тем же адресом — сверх тикета, 12.11 вручную City = Seattle"
+   ],
+   "note": "План specs/addresses.md 4.1–4.4 (AD-01/AD-05 получили ссылку «Связанные»). Без записи (формы не сохраняются), @google-places. Edit Lead — предусловие: лид «QA-App Lead» в TTP Test Locks. Pre-Prod (QA_PREPROD_URL), сессия preprod-ttp через asUser (вход только вручную: qa-login:manual -- preprod-ttp; _vercel_jwt истекает — перелогин перед регрессом). Не запускались (L-20261007-1), --list ок; сайт при записи не открывался — тексты/разметка сверены с бандлом app.techory.ai 12.11 и скриншотами dad444-*."
+  },
+  {
+   "hash": "6f8ef9",
+   "id": "35eb0f8a82e6ad29966f8ef9",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "android-app",
+   "tests": [
+    "e2e/tests/android-app/offline-banner-on-lists.spec.ts",
+    "e2e/tests/android-app/create-client-offline-message-then-save.spec.ts",
+    "e2e/tests/android-app/create-lead-offline-message.spec.ts"
+   ],
+   "cases": [
+    "tests/android-app/offline/OF-01-offline-banner-on-lists.md",
+    "tests/android-app/offline/OF-02-create-client-offline-message-then-save.md",
+    "tests/android-app/offline/OF-03-create-lead-offline-message.md",
+    "tests/android-app/offline/OF-04-app-offline-device-only.md"
+   ],
+   "manual": [
+    "OF-04 приложение Techory Dev без Wi-Fi/данных — только устройство, 12.11 ✅",
+    "офлайн-сохранение работы/счёта/сметы — вручную",
+    "HE «אין חיבור לאינטרנט»"
+   ],
+   "note": "План specs/android-app.md 1.1–1.5. Офлайн — context.setOffline. 1.1/1.2 полоса role=status (@android/@desktop, только чтение); 1.3/1.4 @writes @data — клиент QA-AUTO: офлайн сообщение без системного окна, данные на месте, онлайн — один клиент, очистка Delete Customer; 1.5 @android — лид офлайн (не сохраняется; удаления лидов в UI нет). Поля Contact Name / Client Name лида не сверены. Pre-Prod (QA_PREPROD_URL), сессия preprod-ttp через asUser (вход только вручную: qa-login:manual -- preprod-ttp; _vercel_jwt истекает — перелогин перед регрессом). Не запускались (L-20261007-1), --list ок; сайт при записи не открывался — тексты/разметка сверены с бандлом app.techory.ai 12.11 и скриншотами 6f8ef9-*."
+  },
+  {
+   "hash": "18d185",
+   "id": "10f5de70a9b38cd01d18d185",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "android-app",
+   "tests": [],
+   "cases": [
+    "tests/android-app/back-button/BK-01-back-closes-dialog-stays-on-page.md",
+    "tests/android-app/back-button/BK-02-back-closes-menu-and-select.md"
+   ],
+   "manual": [
+    "вся проверка — только устройство (Techory Dev 1.2, Pixel 6): Back в вебе обрабатывается только нативным Capacitor backButton (isNativePlatform), popstate-обработчика для окон/меню нет — браузерный Back автотестом не проверить"
+   ],
+   "note": "Автотестов нет — проверено по бандлу app.techory.ai 12.11 (specs/android-app.md раздел 2). Ручные кейсы BK-01, BK-02."
+  },
+  {
+   "hash": "f220cc",
+   "id": "353e76f7d1122fadb7f220cc",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "android-app",
+   "tests": [],
+   "cases": [
+    "tests/android-app/back-button/BK-03-back-on-filled-form-asks-leave.md",
+    "tests/android-app/back-button/BK-04-back-on-empty-form-no-question.md",
+    "tests/android-app/back-button/BK-05-back-leave-question-other-forms.md"
+   ],
+   "manual": [
+    "вся проверка — только устройство: окно «Leave without saving?» вызывается только из нативного backButton (Capacitor); в браузере Back не спрашивает, beforeunload нет"
+   ],
+   "note": "Автотестов нет — проверено по бандлу app.techory.ai 12.11 (specs/android-app.md раздел 2). Ручные кейсы BK-03…BK-05."
+  },
+  {
+   "hash": "67b4b4",
+   "id": "0f1c532efa592ec2db67b4b4",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "job-payments",
+   "tests": [
+    "e2e/tests/job-payments/payments-tab-and-take-a-payment-window.spec.ts",
+    "e2e/tests/job-payments/payment-link-create-and-copy.spec.ts"
+   ],
+   "cases": [
+    "tests/job-payments/JP-01-payments-tab-remaining-card.md",
+    "tests/job-payments/JP-02-take-a-payment-methods-order.md",
+    "tests/job-payments/JP-03-cash-opens-add-payment-prefilled.md",
+    "tests/job-payments/JP-04-payment-link-create-copy.md",
+    "tests/job-payments/JP-05-payment-link-paid-stripe-manual.md",
+    "tests/job-payments/JP-06-app-tap-to-pay-first-manual.md",
+    "tests/job-payments/JP-07-app-tap-to-pay-declined-manual.md"
+   ],
+   "manual": [
+    "Tap to Pay в Techory Dev (Android): первый пункт, оплата эмулятором, отмена — JP-06",
+    "отказ карты «Simulate a declined card» — JP-07",
+    "оплата по ссылке картой Stripe test, зачисление на Stripe компании — JP-05 (после подключения реального Stripe — перепроверка по памяти)",
+    "Text / Email ссылки — реальная отправка не автоматизируется",
+    "prod — Stripe Connect не Active"
+   ],
+   "note": "План specs/job-payments.md 1.1–1.4. Все @desktop @writes @data, Pre-Prod (QA_PREPROD_URL), сессия preprod-ttp (вход только вручную — qa-login:manual -- preprod-ttp). Каждая группа создаёт работу «QA-AUTO pay … #67b4b4» (TTP Customer, без техника, позиция $5 → остаток $5.00); очистка: Cancel link, работа → Cancelled. 1.1–1.3 serial на общей работе (окна закрываются без платежа), 1.4 — Create link + Copy (буфер сверяется), Text/Email не нажимаются, send-sms/send-email обрываются. Не запускались (только --list и tsc); сайт при записи не открывался — форма New Job в Pre-Prod, шаг до Create link, форма Add Payment, поле после карандаша, статус открытой ссылки и подтверждение Cancel link не сверены; разметка — по скриншотам 67b4b4-v2-*."
+  },
+  {
+   "hash": "51cdcc",
+   "id": "ddcbc09a0289d6925e51cdcc",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "job-payments",
+   "tests": [
+    "e2e/tests/job-payments/payment-link-pay-page-opens.spec.ts",
+    "e2e/tests/job-payments/stripe-link-payment-and-read-only-details.spec.ts",
+    "e2e/tests/job-payments/payment-link-create-and-copy.spec.ts"
+   ],
+   "cases": [
+    "tests/job-payments/JP-08-payment-link-env-host-pay-page.md",
+    "tests/job-payments/JP-09-payment-link-paid-stripe-test.md",
+    "tests/job-payments/JP-12-app-payment-link-and-details-manual.md"
+   ],
+   "manual": [
+    "Techory Dev (Android): ссылка от адреса Pre-Prod, оплата 4242 — JP-12",
+    "prod: ссылка на app.techory.ai без оплаты (нет Active Connect)"
+   ],
+   "note": "Оплата Stripe 4242 — тест @stripe-test, только Pre-Prod (на prod пропуск)."
+  },
+  {
+   "hash": "5bfdd1",
+   "id": "c8dd45769668111ba05bfdd1",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "job-payments",
+   "tests": [
+    "e2e/tests/job-payments/stripe-link-payment-and-read-only-details.spec.ts",
+    "e2e/tests/job-payments/manual-cash-payment-stays-editable.spec.ts"
+   ],
+   "cases": [
+    "tests/job-payments/JP-10-stripe-payment-read-only-details.md",
+    "tests/job-payments/JP-11-manual-cash-payment-editable.md",
+    "tests/job-payments/JP-12-app-payment-link-and-details-manual.md"
+   ],
+   "manual": [
+    "Techory Dev (Android): Payment details / Edit Payment — JP-12",
+    "Refund из Payment Portal и из Stripe dashboard → Refunded — не проверялось (после подключения реального Stripe)"
+   ]
+  },
+  {
+   "hash": "06a307",
+   "id": "6a54d1f9e639f555b506a307",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "stripe-connect",
+   "tests": [
+    "e2e/tests/stripe-connect/payment-settings-active-and-dashboard.spec.ts",
+    "e2e/tests/stripe-connect/link-payment-seller-and-portal-refund.spec.ts"
+   ],
+   "cases": [
+    "tests/stripe-connect/SC-01-payment-settings-active.md",
+    "tests/stripe-connect/SC-02-express-dashboard-manual.md",
+    "tests/stripe-connect/SC-03-express-onboarding-manual.md",
+    "tests/stripe-connect/SC-04-link-payment-seller-name.md",
+    "tests/stripe-connect/SC-05-portal-refund.md"
+   ],
+   "manual": [
+    "регистрация Express на новой компании (Connect Stripe → email, телефон 000 000 0000/000000, банк 110000000/000123456789) → Active — SC-03",
+    "Express dashboard: баланс, Payment / Payment Refund — SC-02",
+    "prod: живой смоук с реальным мастером"
+   ],
+   "note": "План specs/stripe-connect.md 1.1–1.3, Pre-Prod (QA_PREPROD_URL), сессия preprod-ttp (TTP Test Locks). 1.1 — только просмотр (@stripe-test, без @writes). 1.2–1.3 serial @writes @data @stripe-test: работа «QA-AUTO pay connect … #06a307» с уникальной суммой $5.NN, оплата 4242, Refund из Payment Portal; очистка — работа Cancelled. Имя продавца на Checkout = профиль Stripe (QA_CONNECT_SELLER, по умолчанию «Contract Test Locksmith», решение 12.11). На prod — пропуск."
+  },
+  {
+   "hash": "f45391",
+   "id": "92f9fdf3ec54a74348f45391",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "gps-workflow",
+   "tests": [
+    "e2e/tests/gps-workflow/job-created-create-invoice-unsaved-keeps-status.spec.ts",
+    "e2e/tests/gps-workflow/invoice-created-message-open-invoice.spec.ts"
+   ],
+   "cases": [
+    "tests/gps-workflow/GW-01-job-created-create-invoice-unsaved.md",
+    "tests/gps-workflow/GW-02-invoice-created-open-invoice.md",
+    "tests/gps-workflow/GW-03-new-message-create-invoice-save-manual.md"
+   ],
+   "manual": [
+    "Новое сообщение → Create invoice → сохранить счёт → Invoice created, один счёт (нужен входящий SMS) — GW-03"
+   ]
+  },
+  {
+   "hash": "de10b1",
+   "id": "5f600704396c1b8db5de10b1",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "gps-workflow",
+   "tests": [
+    "e2e/tests/gps-workflow/estimates-from-gps-customer-column-filled.spec.ts"
+   ],
+   "cases": [
+    "tests/gps-workflow/GW-04-estimates-customer-column.md"
+   ],
+   "manual": [
+    "Новая смета из нового сообщения GPS Workflow (нужен входящий SMS) — GW-04"
+   ]
+  },
+  {
+   "hash": "324ddc",
+   "id": "e74f22d1cb5064fe29324ddc",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "gps-workflow",
+   "tests": [
+    "e2e/tests/gps-workflow/one-line-message-full-address-in-message-and-job.spec.ts"
+   ],
+   "cases": [
+    "tests/gps-workflow/GW-05-one-line-message-full-address.md",
+    "tests/gps-workflow/GW-06-new-one-line-sms-address-manual.md"
+   ],
+   "manual": [
+    "Новое однострочное SMS: адрес с улицей + маркер на карте на точном адресе; Ucallz-формат (нужен входящий SMS) — GW-06"
+   ]
+  },
+  {
+   "hash": "fc4fa4",
+   "id": "dc0451ee552ed1b25afc4fa4",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "audit-log",
+   "tests": [
+    "e2e/tests/audit-log/user-auditlog-api-returns-empty.spec.ts",
+    "e2e/tests/audit-log/dispatcher-auditlog-api-returns-empty.spec.ts",
+    "e2e/tests/audit-log/user-team-change-history-rpc-other-company-empty.spec.ts",
+    "e2e/tests/audit-log/dispatcher-adminpanel-redirects-to-dashboard.spec.ts",
+    "e2e/tests/audit-log/dispatcher-team-change-history-only-own-team.spec.ts",
+    "e2e/tests/audit-log/user-team-change-history-no-admin-events.spec.ts",
+    "e2e/tests/audit-log/admin-audit-log-coupons-filter-only-coupons.spec.ts",
+    "e2e/tests/audit-log/admin-audit-log-coupon-row-before-after.spec.ts"
+   ],
+   "cases": [
+    "tests/audit-log/AL-01-user-auditlog-api-empty.md",
+    "tests/audit-log/AL-02-dispatcher-auditlog-api-empty.md",
+    "tests/audit-log/AL-03-user-team-change-history-rpc-other-company.md",
+    "tests/audit-log/AL-04-dispatcher-adminpanel-redirect.md",
+    "tests/audit-log/AL-05-dispatcher-team-change-history-only-team.md",
+    "tests/audit-log/AL-06-user-team-change-history-no-coupons.md",
+    "tests/audit-log/AL-07-admin-audit-log-coupons-filter-before-after.md",
+    "tests/admin-access/AA-06-user-adminpanel-redirect-he.md",
+    "tests/admin-plans/AP-07-non-admin-access-denied.md"
+   ],
+   "manual": [
+    "AC5: снятие права без перелогина (≤1 мин) — нужен второй админ-аккаунт",
+    "роль support видит только поддержку — аккаунта нет"
+   ],
+   "note": "План specs/audit-log.md 1.1–4.2, все @desktop @prod-safe, только чтение. Решение 12.11: AuditLog закрыт RLS — 200 и [] вместо 403 (принято). Токен — из localStorage страницы, apikey — из запроса страницы к Supabase. Тесты написаны вручную (генератор падает), не запускались."
+  },
+  {
+   "hash": "a901b1",
+   "id": "3e67aa8b78a92ed3b6a901b1",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "invoices",
+   "tests": [
+    "e2e/tests/invoices/create-new-from-open-invoice-empty-form.spec.ts",
+    "e2e/tests/invoices/two-tabs-create-invoice-at-once-unique-numbers.spec.ts",
+    "e2e/tests/invoices/patch-invoice-number-to-taken-409.spec.ts"
+   ],
+   "cases": [
+    "tests/invoices/IN-05-create-new-from-open-invoice-empty-form.md",
+    "tests/invoices/IN-06-two-tabs-create-invoice-unique-numbers.md",
+    "tests/invoices/IN-07-change-number-to-taken-blocked-409.md"
+   ],
+   "manual": [
+    "Generate Invoice из работы / Copy to Invoice из сметы — без дублей номера (скрины a901b1-5-*)",
+    "Сообщение в интерфейсе при ручной смене номера на занятый (Invoice Preview)"
+   ],
+   "note": "План specs/invoices.md 3.1–3.3. PROD, компания test (selected-company-id ставится и проверяется), asUser('admin'), EN. 3.1 @desktop @prod-safe — только просмотр. 3.2/3.3 @desktop @writes @data — счета QA-unit client $1 с позициями «QA-AUTO a901 …», очистка Actions → Delete; 3.3 — PATCH Supabase REST Invoice → 409 hint invoice_number_taken. Тесты написаны вручную (генератор падает), не запускались (L-20261007-1), --list ок; разметка сверена с бандлом app.techory.ai 12.11."
+  },
+  {
+   "hash": "772441",
+   "id": "2463dc9f6efacefcb0772441",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "gps-workflow",
+   "tests": [
+    "e2e/tests/gps-workflow/mobile-list-above-map-map-not-covered-by-fab.spec.ts"
+   ],
+   "cases": [
+    "tests/gps-workflow/GW-07-mobile-list-above-map-scroll.md",
+    "tests/gps-workflow/GW-08-desktop-map-left-list-right.md"
+   ],
+   "manual": [
+    "Жесты: один палец — прокрутка страницы, два — карта (реальный телефон)"
+   ],
+   "note": "План specs/gps-workflow.md 4.1–4.3, все @prod-safe, только просмотр. 4.1/4.2 @mobile (Pixel 7 + iPhone 13 mini), 4.3 @desktop. PROD, asUser('gps'), компания «בדיקה». Предусловие — во вкладке All сообщений больше, чем помещается в список. Тесты написаны вручную, не запускались, --list ок; разметка сверена с бандлом GPSWorkflow 12.11."
+  },
+  {
+   "hash": "04d33a",
+   "id": "6a4fad600e673484ac04d33a",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "job-assignment",
+   "tests": [
+    "e2e/tests/job-assignment/take-off-and-reassign.spec.ts"
+   ],
+   "cases": [
+    "tests/job-assignment/JA-01-assign-technician-assigned-history.md",
+    "tests/job-assignment/JA-02-take-off-technician-submitted.md",
+    "tests/job-assignment/JA-03-unassigned-job-in-submitted-list.md",
+    "tests/job-assignment/JA-04-replace-technician-reassigned.md",
+    "tests/job-assignment/JA-05-leave-right-after-take-off.md"
+   ],
+   "manual": [
+    "реальная доставка SMS и Send again после согласия техника",
+    "колокольчик у техника с входом",
+    "техник: поле назначения заблокировано (F-1)",
+    "нагрузка/занятость в списке техников, Dispatch",
+    "HE"
+   ],
+   "note": "@writes, desktop, EN: работа QA-AUTO 04d33a job (переиспользуется, в конце Submitted без техника); Allow Multiple Techs только читается (ON → skip); только QA-Tech Alpha/Beta. Не запускались; селекторы combobox/карточки истории/поиска Jobs не сверены с сайтом"
+  },
+  {
+   "hash": "de116e",
+   "id": "0feb95d7337a398d84de116e",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-12",
+   "feature": "technicians-sms",
+   "tests": [
+    "e2e/tests/technicians-sms/text-selected-result-toast-fits-screen.spec.ts"
+   ],
+   "cases": [
+    "tests/technicians-sms/TS-01-result-toast-desktop-fully-visible.md",
+    "tests/technicians-sms/TS-02-result-toast-phone-full-width.md",
+    "tests/technicians-sms/TS-03-two-result-toasts-stacked.md",
+    "tests/technicians-sms/TS-04-result-toast-he-rtl.md",
+    "tests/job-create-sms/JS-01-toasts-job-created-and-sms-stacked.md"
+   ],
+   "manual": [
+    "реальная доставка SMS",
+    "время показа тоста (не требование)",
+    "роль מוקדן"
+   ],
+   "note": "План specs/technicians-sms.md 1.1–1.4, все @prod-safe: service worker block, message-technicians перехвачен context.route до goto/Send (фейковый 200), send-sms/assignment-notices abort; тест падает, если POST ушёл в сеть (posts == fulfilled == Send). 1.1/1.2 без пометки устройства (десктоп 1440 + iPhone 13 mini + Pixel 7), 1.3/1.4 @android 360px (EN/HE). PROD, admin, компания test, только QA-F5 tech и QA-Tech Gamma. Написаны вручную, не запускались, --list ок; разметка сверена скриптом проверки 12.11."
+  },
+  {
+   "hash": "4f4eab",
+   "id": "1dbcd670e8c781831c4f4eab",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "android-app",
+   "tests": [
+    "e2e/tests/android-app/billing-menu-lite-plan-cannot-manage-in-app.spec.ts"
+   ],
+   "note": "skip: нужен Android через CDP (меню аккаунта в APK). Полный id тикета не найден — id = короткий hash. План specs/android-app.md 3.1."
+  },
+  {
+   "hash": "4315cf",
+   "id": "c61b86679f7051264b4315cf",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "android-app",
+   "tests": [
+    "e2e/tests/android-app/back-closes-address-suggestions-before-leave-dialog.spec.ts"
+   ],
+   "note": "skip: нужен Android через CDP (системная «Назад»). План specs/android-app.md 3.2."
+  },
+  {
+   "hash": "24c5b2",
+   "id": "6b02ba8b83338baf3224c5b2",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "android-app",
+   "tests": [
+    "e2e/tests/android-app/offline-toast-below-header-burger-opens.spec.ts"
+   ],
+   "note": "Веб-эмуляция Pixel 7 (Pre-Prod, preprod-ttp); тап adb по бургеру — test.skip «нужен Android через CDP». План 3.3/3.4."
+  },
+  {
+   "hash": "809888",
+   "id": "75901d2b8b316f9dc4809888",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "android-app",
+   "tests": [
+    "e2e/tests/android-app/back-from-job-keeps-jobs-tab.spec.ts"
+   ],
+   "note": "Веб-эмуляция Pixel 7 (?tab=pending, history back, reload); системная «Назад» в APK — test.skip «нужен Android через CDP». План 3.5/3.6."
+  },
+  {
+   "hash": "0cd6c0",
+   "id": "be8fe6bb6e216f6a990cd6c0",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "dashboard",
+   "tests": [
+    "e2e/tests/dashboard/greeting-estimates-count-matches-estimates-list.spec.ts"
+   ],
+   "note": "Pre-Prod, preprod-ttp, @prod-safe. План specs/dashboard.md 4.1."
+  },
+  {
+   "hash": "a83f47",
+   "id": "11cefea68d69c719f7a83f47",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "payments-portal",
+   "tests": [
+    "e2e/tests/payments-portal/view-details-opens-payment-window.spec.ts"
+   ],
+   "note": "Pre-Prod, preprod-ttp, @prod-safe (окно Payment details, Refunded). План specs/payments-portal.md 1.1/1.2."
+  },
+  {
+   "hash": "70ca62",
+   "id": "b05d98b1e97453b12f70ca62",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "invoices",
+   "tests": [
+    "e2e/tests/invoices/escape-in-invoice-name-keeps-previous-name.spec.ts"
+   ],
+   "note": "Pre-Prod, preprod-ttp, @prod-safe (ничего не сохраняет). План specs/invoices.md 4.1/4.2."
+  },
+  {
+   "hash": "ca1a27",
+   "id": "a0497f56e55e63325fca1a27",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "estimates",
+   "tests": [
+    "e2e/tests/estimates/empty-save-send-show-field-errors-no-alert.spec.ts"
+   ],
+   "note": "Pre-Prod, preprod-ttp, @prod-safe. План specs/estimates.md 1.1–1.3."
+  },
+  {
+   "hash": "5e4fe6",
+   "id": "e8ec4ead147fbe0ac05e4fe6",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "payments-portal",
+   "tests": [
+    "e2e/tests/payments-portal/totals-exclude-refunded-portal-and-reports.spec.ts"
+   ],
+   "note": "Pre-Prod, preprod-ttp, @prod-safe (Refunded не входят в итоги портала; отчёт ≥ портала). План specs/payments-portal.md 2.1/2.2."
+  },
+  {
+   "hash": "5315ab",
+   "id": "c73f2020df85e988ff5315ab",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "job-payments",
+   "tests": [
+    "e2e/tests/job-payments/job-header-number-and-remaining-to-pay-label.spec.ts"
+   ],
+   "note": "Pre-Prod, preprod-ttp, @prod-safe (JOB-0003, Remaining to pay $0.00 без мелькания). План specs/job-payments.md 4.1/4.2."
+  },
+  {
+   "hash": "b20fe6",
+   "id": "67351651e984c8ec34b20fe6",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "billing",
+   "tests": [
+    "e2e/tests/billing/extra-companies-cancels-on-date.spec.ts"
+   ],
+   "note": "Pre-Prod, preprod-ttp, @prod-safe; после 12.12.2026 skip. План specs/billing.md 1.1."
+  },
+  {
+   "hash": "458056",
+   "id": "3382d45be53e3e1ffc458056",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "stripe-connect",
+   "tests": [
+    "e2e/tests/stripe-connect/payment-link-block-shows-refunded.spec.ts"
+   ],
+   "note": "Pre-Prod, preprod-ttp → компания QA-Connect 1211, @prod-safe. План specs/stripe-connect.md 1.4."
+  },
+  {
+   "hash": "63ed24",
+   "id": "a2e6806879e601458363ed24",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "technicians-sms",
+   "tests": [
+    "e2e/tests/technicians-sms/toast-does-not-cover-page-buttons-desktop.spec.ts"
+   ],
+   "note": "PROD, admin, test; SMS перехвачены, @prod-safe. План specs/technicians-sms.md 2.1."
+  },
+  {
+   "hash": "feb50f",
+   "id": "864fe736a7c46329eafeb50f",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "billing",
+   "tests": [
+    "e2e/tests/billing/checkout-currency-usd-no-ils.spec.ts"
+   ],
+   "note": "Pre-Prod Stripe test, @writes @data @stripe-test (Payment Link $1 без оплаты); 2.2 — preprod-a Add another company. Live prod Stripe — вручную. План specs/billing.md 2.1/2.2."
+  },
+  {
+   "hash": "ffde48",
+   "id": "c6bc0a43982c1fbf4bffde48",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "invoices",
+   "tests": [
+    "e2e/tests/invoices/test-company-invoice-numbers-unique.spec.ts"
+   ],
+   "note": "PROD, admin, test, только чтение @prod-safe. План specs/invoices.md 5.1/5.2."
+  },
+  {
+   "hash": "8595f7",
+   "id": "a0a1c340e2947342c88595f7",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "technicians-sms",
+   "tests": [
+    "e2e/tests/technicians-sms/send-disabled-reason-and-char-counter.spec.ts"
+   ],
+   "note": "PROD, admin, test; Send не нажимается, @prod-safe. План specs/technicians-sms.md 3.1."
+  },
+  {
+   "hash": "0e73d5",
+   "id": "82f1bed28db52ceaf10e73d5",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "mobile-nav",
+   "tests": [
+    "e2e/tests/mobile-nav/side-menu-last-item-not-cut-low-phone-screens.spec.ts"
+   ],
+   "note": "PROD, admin, test, @prod-safe; 375×812/667/629 (@iphone), 360×640 (@android), EN/HE; реальный Safari не проверен. План specs/mobile-nav.md 3.1–3.8."
+  },
+  {
+   "hash": "a96197",
+   "id": "8c23cc6e05d0fec390a96197",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "estimates",
+   "tests": [
+    "e2e/tests/estimates/send-window-does-not-save-draft.spec.ts"
+   ],
+   "note": "PROD, admin, test, @writes @data (смета не сохраняется; страховочная очистка). План specs/estimates.md 2.1."
+  },
+  {
+   "hash": "cacd64",
+   "id": "3a96bf197b2571c020cacd64",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "job-assignment",
+   "tests": [
+    "e2e/tests/job-assignment/jobs-list-fresh-after-assignment-change.spec.ts"
+   ],
+   "note": "PROD, admin, test, @writes @data (QA-Tech Alpha без согласия на SMS). План specs/job-assignment.md 2.1/2.2."
+  },
+  {
+   "hash": "c9f0f5",
+   "id": "4f226c50f7ce18f05fc9f0f5",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "job-assignment",
+   "tests": [
+    "e2e/tests/job-assignment/no-leave-site-warning-after-assignment-change.spec.ts"
+   ],
+   "note": "PROD, admin, test, @writes @data. План specs/job-assignment.md 2.3/2.4."
+  },
+  {
+   "hash": "4030e4",
+   "id": "e99770a8f15bda36264030e4",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "clients-import",
+   "tests": [
+    "e2e/tests/clients-import/import-window-preview-and-columns.spec.ts",
+    "e2e/tests/clients-import/import-clients-no-duplicates-zip-notes.spec.ts"
+   ],
+   "note": "PROD, admin, test. Окно Import clients (@prod-safe, импорт не выполняется) + импорт и повторный импорт 3 клиентов QA-Import (@writes @data, удаление в finally). Дополнительная запись 17.11 «импорт пользователем» (workiz-all-clients.csv) — та же фича, ручная сверка полей. План specs/clients-import.md."
+  },
+  {
+   "hash": "126f07",
+   "id": "9fac1088dd30aa7ff6126f07",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "invoices",
+   "tests": [
+    "e2e/tests/invoices/invoices-list-right-after-create-no-empty-state.spec.ts"
+   ],
+   "note": "PROD, admin, test, @writes @data (счёт QA-AUTO 126f07, Delete в finally). План specs/invoices.md 6.1."
+  },
+  {
+   "hash": "98c982",
+   "id": "e959869d45828151a998c982",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "gps-workflow",
+   "tests": [
+    "e2e/tests/gps-workflow/no-sms-pending-for-technician-without-consent.spec.ts"
+   ],
+   "note": "PROD, gps, @writes @data (назначение/снятие техника без согласия; QA_GPS_JOB, QA_GPS_NO_SMS_TECH). План specs/gps-workflow.md 6.1."
+  },
+  {
+   "hash": "621cd7",
+   "id": "4c5ba59158935614c5621cd7",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "gps-workflow",
+   "tests": [
+    "e2e/tests/gps-workflow/job-from-sms-country-and-zip-kept.spec.ts"
+   ],
+   "note": "PROD, gps, @prod-safe на существующих данных (JOB-0020, QA-Gil Shore); сценарий с новым входящим SMS — test.skip. План specs/gps-workflow.md 5.1/5.2."
+  },
+  {
+   "hash": "22cfa9",
+   "id": "bb2fa91d3663a4b4ad22cfa9",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "gps-workflow",
+   "tests": [
+    "e2e/tests/gps-workflow/list-and-open-message-refresh-after-actions.spec.ts"
+   ],
+   "note": "PROD, gps: 7.1 @prod-safe (чтение статуса «Job created»); Assign/Create jobs/Create estimates над новыми сообщениями — test.skip (нужны входящие SMS). План specs/gps-workflow.md 7.1/7.2."
+  },
+  {
+   "hash": "ec42a8",
+   "id": "3e3f053e8db01e4da6ec42a8",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "payments-portal",
+   "tests": [
+    "e2e/tests/payments-portal/refund-confirm-in-app-window.spec.ts",
+    "e2e/tests/payments-portal/refund-success-toast-and-totals.spec.ts"
+   ],
+   "note": "Pre-Prod, preprod-ttp. Окно Refund + Cancel (не подтверждается); toast «The payment was refunded.» — @writes @stripe-test, test.skip без QA_ALLOW_REFUND=1. План specs/payments-portal.md 3.1–3.3."
+  },
+  {
+   "hash": "2185f2",
+   "id": "24e1859127d98384972185f2",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "billing",
+   "tests": [
+    "e2e/tests/billing/cancel-subscription-window-and-keep-my-plan.spec.ts",
+    "e2e/tests/billing/cancel-subscription-buttons-under-table-412.spec.ts"
+   ],
+   "note": "Pre-Prod, preprod-a. Окно отмены (имя пакета, дата, HE) и Keep my plan в окне; кнопки под таблицей на 412. Отмена не подтверждается. План specs/billing.md 3.1–3.3."
+  },
+  {
+   "hash": "687146",
+   "id": "d8b3c3d5a02a881d30687146",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "job-payments",
+   "tests": [
+    "e2e/tests/job-payments/add-item-toast-names-updated-invoice.spec.ts"
+   ],
+   "note": "Pre-Prod, preprod-ttp, @writes @data (работа QA-AUTO → Cancelled). Оплаченный инвойс — test.skip (нет в Pre-Prod). План specs/job-payments.md 4.1/4.2."
+  },
+  {
+   "hash": "1649c3",
+   "id": "70a941352b6570d0941649c3",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "billing",
+   "tests": [
+    "e2e/tests/billing/add-company-checkout-return.spec.ts"
+   ],
+   "note": "Pre-Prod, preprod-a. Add another company → окно → Add for $49/mo → Checkout → Back: возврат на Billing и Company Settings, «Checkout cancelled / Nothing was charged.» (@writes @stripe-test, без оплаты). Успешная оплата — test.skip без QA_ALLOW_COMPANY_PAY=1 (оплату вводит человек). План specs/billing.md 4.1–4.3."
+  },
+  {
+   "hash": "04d338",
+   "id": "6a4fad600e673484ac04d338",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "rbac",
+   "tests": [
+    "e2e/tests/rbac/invite-link-locked-email.spec.ts",
+    "e2e/tests/rbac/ops-manager-no-delete.spec.ts"
+   ],
+   "note": "PROD, компания test, admin + dispatcher (Test Nikita), @writes (приглашение QA-…@example.test отзывается; роль Ops manager временно, возврат в finally). Регистрация по приглашению — test.skip (пароль вводит человек). План specs/rbac.md 1.1–3.1."
+  },
+  {
+   "hash": "48acac",
+   "id": "73794e4f55feffb90648acac",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "billing",
+   "tests": [
+    "e2e/tests/billing/extra-companies-active-next-charge.spec.ts"
+   ],
+   "note": "Pre-Prod, preprod-a, /BillingSubscription, только чтение (@prod-safe): при активной доп. компании строка Extra companies — Active, $49/month, Monthly, дата; Upcoming billing — Extra companies (N), AMOUNT DUE $49, DUE ON <дата>. Skip, если доп. компании нет или «Cancels on». План specs/billing.md 5.1."
+  },
+  {
+   "hash": "0c3606",
+   "id": "d562ccd27c85b726650c3606",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-17",
+   "feature": "gps-workflow",
+   "tests": [
+    "e2e/tests/gps-workflow/incoming-sms-client-and-auto-assign-regression.spec.ts"
+   ],
+   "note": "PROD, gps (компания «בדיקה»), @prod-safe регресс на существующих данных: R1.1 QA-Gil Shore/JOB-0020, R2.1 клиент +972537240114 (JOB-0017) отдельно от QA-John Miller, правила Auto-assign (By time / By category), JOB-0023 «Assigned to QA-Tech Auto» + «SMS sent». Сценарии с новым входящим SMS (серия, автоназначение, SMS технику, новое R2.1) — test.skip. План specs/gps-workflow.md 8.1–8.5."
+  }
+ ]
+}

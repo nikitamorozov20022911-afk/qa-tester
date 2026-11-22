@@ -1,0 +1,14 @@
+import { chromium } from 'playwright';
+import fs from 'fs';
+const Q='/Users/avielshnaider/magnet-moe/.qa';
+const b=await chromium.launch({headless:true});
+const ctx=await b.newContext({storageState:Q+'/auth/free-r11map.json'});
+const p=await ctx.newPage(); let key=null;
+p.on('request',q=>{const h=q.headers(); if(!key&&h.apikey) key=h.apikey;});
+await p.goto('https://magnet.expo.app/discover',{waitUntil:'networkidle'}).catch(()=>{});
+console.log(p.url(), !!key);
+const api=JSON.parse(fs.readFileSync('api.json')); api.apikey=key; fs.writeFileSync('api.json',JSON.stringify(api));
+await ctx.storageState({path:Q+'/auth/free-r11map.json'});
+const r=await fetch(api.base+'/rest/v1/profiles?id=eq.ea5d7f41-6a81-41d5-b107-ce0314ed5bd6&select=*',{headers:{apikey:key,Authorization:api.auth}});
+console.log(r.status, await r.text());
+await b.close();

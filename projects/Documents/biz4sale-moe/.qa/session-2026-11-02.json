@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-02",
+  "project": "biz4sale",
+  "args": "без тикетов לא ניתן לשיחזור",
+  "skipped_cannot_reproduce": [
+    "#fe3470",
+    "#a47bd6"
+  ],
+  "queue": [
+    "#d152dd",
+    "#b4b8c9",
+    "#d777c9",
+    "#8bea2a"
+  ],
+  "logins": {
+    "admin": "alive",
+    "user": "alive",
+    "chat": "alive"
+  },
+  "tickets": [
+    {
+      "hash": "#d777c9",
+      "title": "פיתוח: Sitemap ו-robots לדפים סטטיים",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "feature": "seo-robots-sitemap",
+      "role": "guest",
+      "devices": [
+        "desktop/http"
+      ],
+      "notes": "robots 20 Disallow, все боты; sitemap 399 URL = 355 активных + 35 категорий + 9 стат.; реджект rej_0effd95e закрыт программистом (PR #185)",
+      "confirmed_by_user": "2026-11-02"
+    },
+    {
+      "hash": "#d152dd",
+      "title": "הפקת סרטוני הסבר למשתמשים",
+      "verdict": "reject",
+      "action": "reject",
+      "rejection_id": "rej_bc6dab2b866ca001628e5b02",
+      "column": "לביצוע",
+      "notes": "нет видео 3 «חיפוש עסקים»; в видео 1 нет экрана кода SMS и выбора аккаунта Google. Находки: кадр ошибки 0:46, контролы закрывают субтитры, демо-объявление #b49b1dfe בהמתנה на проде, видео калькулятора (WhatsApp) не опубликовано"
+    },
+    {
+      "hash": "#b4b8c9",
+      "title": "מסנני הטווח מ-0 + מקסימום; להסיר 3 מסננים",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "feature": "search-filters-price-range",
+      "role": "guest",
+      "devices": [
+        "desktop 1440",
+        "Pixel 7 emulation"
+      ],
+      "notes": "2 прогона ✅; реджект rej_8e7ff245 закрыт программистом (PR #186); сохранённый поиск — не проверено (прод); реальный Pixel 6 — ждёт ответа",
+      "confirmed_by_user": "2026-11-02"
+    },
+    {
+      "hash": "#8bea2a",
+      "title": "שם לחשבונית מס בשלב 5",
+      "verdict": "pass (с Не проверено: имя в счёте)",
+      "action": "pass",
+      "column": "הושלם",
+      "feature": "addbusiness-step5-invoice-name",
+      "role": "user",
+      "devices": [
+        "desktop 1440",
+        "Pixel 7 emulation",
+        "390"
+      ],
+      "notes": "поле только при платном, maxlength 100, customerName в POST /api/payments (пусто → имя профиля); Cardcom-страница без блока Invoice details; счёт Morning — не проверено",
+      "confirmed_by_user": "2026-11-02 (пользователь сам оплатил и проверил счёт)"
+    }
+  ],
+  "test_data": [
+    {
+      "what": "QA-TEST объявление c961eac6-e72d-4e5f-b978-354a9d4f21fe",
+      "status": "удалено (DELETE 204)"
+    },
+    {
+      "what": "платёжная запись biz4sale-be + LowProfile Cardcom 43545, 299₪, customerName «QA-TEST חשבונית 8bea2a», ~10:30 UTC",
+      "status": "не оплачена, через сайт не удалить"
+    },
+    {
+      "what": "user_activity ×1 (шаг 1→2)",
+      "status": "через сайт не удалить"
+    }
+  ]
+}

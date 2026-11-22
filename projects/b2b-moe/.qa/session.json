@@ -1,0 +1,273 @@
+{
+  "date": "2026-11-19",
+  "session": 1,
+  "queue": "בבדיקות",
+  "tickets": [
+    {
+      "hash": "#61c0f4",
+      "title": "הגדרות העסק: שדה ח.פ. של המפיץ בתעודת משלוח ובקבלה",
+      "state": "pass",
+      "batch": 2,
+      "role": "admin, dist2, buyer",
+      "devices": "1440 + print",
+      "feature": "settings tax_id (digits, ≤15, optional, per-business), shown in delivery note under business name and in new receipt (מנפיק); receipts are snapshots",
+      "screenshots": "screenshots/61c0f4-*",
+      "action": "pass",
+      "column": "הושלם",
+      "autotests": [
+        "tests/settings/business-tax-id.spec.ts"
+      ]
+    },
+    {
+      "hash": "#255bc0",
+      "title": "create_walkin_order / create_customer_order — קודי שגיאה שונים",
+      "state": "pass",
+      "batch": 2,
+      "role": "dist2 (API)",
+      "devices": "API",
+      "feature": "create_walkin_order & create_customer_order: foreign/nonexistent customer → 403 42501 FORBIDDEN both",
+      "action": "pass",
+      "column": "הושלם",
+      "autotests": [
+        "tests/auth-security/distributor-isolation-api.spec.ts"
+      ]
+    },
+    {
+      "hash": "#6aae65",
+      "title": "FOREIGN_REFERENCE ב-customer_prices תמיד product_id",
+      "state": "pass",
+      "batch": 2,
+      "role": "dist2 (API)",
+      "devices": "API",
+      "feature": "customer_prices FOREIGN_REFERENCE names real field (customer_id / product_id)",
+      "action": "pass",
+      "column": "הושלם",
+      "autotests": [
+        "tests/auth-security/distributor-isolation-api.spec.ts"
+      ]
+    },
+    {
+      "hash": "#c3fdb1",
+      "title": "אישור חוזר של הזמנה מאושרת (204) + הערה",
+      "state": "pass",
+      "batch": 2,
+      "role": "admin, buyer (API+UI)",
+      "devices": "1440 + API",
+      "feature": "approve_order on approved → 400 ALREADY_APPROVED, no note/updated_at/receipt; rejected → ALREADY_REJECTED; UI stale tab toast «ההזמנה כבר אושרה.»",
+      "action": "pass",
+      "column": "הושלם",
+      "autotests": [
+        "tests/auth-security/order-reapprove-api.spec.ts"
+      ]
+    },
+    {
+      "hash": "#834c8e",
+      "title": "הזמנה ריקה בהוספה ישירה ל-orders",
+      "state": "pass",
+      "batch": 2,
+      "note": "API all ✅; regression of UI order creation (walk-in, new order, rep) running",
+      "role": "admin, buyer, rep (API+UI)",
+      "devices": "1440 + API",
+      "feature": "direct INSERT into orders → 403 for all roles; RPC EMPTY_CART/EMPTY_ORDER; UI walk-in and «הזמנה מהודעה» still create orders",
+      "action": "pass",
+      "column": "הושלם",
+      "autotests": [
+        "tests/auth-security/orders-no-direct-insert-api.spec.ts"
+      ]
+    },
+    {
+      "hash": "#787114",
+      "title": "תעודת משלוח בהדפסה: «סה״כ פריטים» בשורת הסיכום",
+      "state": "pass",
+      "batch": 1,
+      "role": "admin",
+      "devices": "1440 print",
+      "feature": "delivery note print: totals row labels (סה״כ פריטים next to qty, סה״כ לתשלום next to ₪)",
+      "screenshots": "screenshots/787114-*",
+      "action": "pass",
+      "column": "הושלם",
+      "autotests": [
+        "tests/delivery/delivery-note-print-totals-row.spec.ts"
+      ]
+    },
+    {
+      "hash": "#adfbdf",
+      "title": "דוח לרואה חשבון בהדפסה: ח.פ. וסכום מיושרים לשמאל",
+      "state": "pass",
+      "batch": 1,
+      "role": "admin",
+      "devices": "1440 print",
+      "feature": "accounting report print: sub-lines (ח.פ., paid amount) right-aligned under main text",
+      "screenshots": "screenshots/adfbdf-*",
+      "action": "pass",
+      "column": "הושלם",
+      "autotests": [
+        "tests/ui-general/accounting-report-print-subrows.spec.ts"
+      ]
+    },
+    {
+      "hash": "#35cb11",
+      "title": "תעודת משלוח בהדפסה: בלוק מספר/תאריך מיושר לשמאל",
+      "state": "pass",
+      "batch": 1,
+      "role": "admin",
+      "devices": "1440 print",
+      "feature": "delivery note print header meta block right-aligned (pd-meta), regress receipt/accounting/delivery board headers",
+      "screenshots": "screenshots/35cb11-*",
+      "action": "pass",
+      "column": "הושלם",
+      "autotests": [
+        "tests/delivery/print-header-meta-alignment.spec.ts"
+      ]
+    },
+    {
+      "hash": "#b75d3b",
+      "title": "קבלה: סדר פריטים הפוך, מק\"ט בלי כותרת",
+      "state": "pass",
+      "batch": 1,
+      "note": "all ✅ except עריכת הזמנה order — checked in batch 2 agent (QA-AUTO-c3fdb1 order)",
+      "role": "admin, buyer",
+      "devices": "1440 + print",
+      "feature": "items sorted by name everywhere (order card, edit, shop order, receipt screen+print, delivery note); receipt screen «מק\"ט: …»",
+      "screenshots": "screenshots/b75d3b-*",
+      "action": "pass",
+      "column": "הושלם",
+      "autotests": [
+        "tests/orders/items-order-by-name.spec.ts"
+      ]
+    },
+    {
+      "hash": "#a597e8",
+      "title": "מכירה מיידית: טקסט מסך הקבלה",
+      "state": "pass",
+      "batch": 1,
+      "role": "admin",
+      "devices": "1440",
+      "feature": "/orders/<id>/receipt texts by order type (walk-in/pending/rejected/legacy)",
+      "screenshots": "screenshots/a597e8-*",
+      "action": "pass",
+      "column": "הושלם",
+      "autotests": [
+        "tests/orders/receipt-no-receipt-texts.spec.ts"
+      ]
+    },
+    {
+      "hash": "#de732f",
+      "title": "/orders/<מספר> — «טעינת ההזמנה נכשלה» ו-400",
+      "state": "pass",
+      "batch": 1,
+      "role": "admin,buyer,rep",
+      "devices": "1440",
+      "feature": "/orders/<number> → redirect to uuid or «ההזמנה לא נמצאה» without 400; /edit /receipt /shop/order/<n>",
+      "screenshots": "screenshots/de732f-*",
+      "action": "pass",
+      "column": "הושלם",
+      "autotests": [
+        "tests/orders/order-by-number-url.spec.ts"
+      ]
+    }
+  ],
+  "test_data": [
+    {
+      "what": "order #697 (2a83f5eb-4120-4e7f-af6d-6dcb8825b88c) buyer test, note QA-AUTO-61c0f4, ₪5, approved, receipt #7",
+      "state": "approved — no reject button after approval; needs cleanup",
+      "ticket": "#61c0f4"
+    },
+    {
+      "what": "dist2 customer QA-AUTO-6aae65-C (cb15460a-…) and product QA-AUTO-6aae65-P (e51273eb-…)",
+      "state": "archived (DELETE 403)",
+      "ticket": "#6aae65"
+    },
+    {
+      "what": "admin business tax_id",
+      "state": "restored to null"
+    },
+    {
+      "what": "orders #693 (₪14, approved, receipt #4), #695 (₪5 approved), #696 (₪5 approved, note «QA-AUTO par B») — QA-AUTO-c3fdb1",
+      "state": "approved, cannot reject (INVALID_STATUS_TRANSITION) — needs cleanup (deliver to סופק)",
+      "ticket": "#c3fdb1"
+    },
+    {
+      "what": "order #694 QA-AUTO-c3fdb1-R ₪5",
+      "state": "rejected",
+      "ticket": "#c3fdb1"
+    },
+    {
+      "what": "#698 walk-in QA-AUTO-834r ₪5 paid cash, delivered; stock «מצית קליפט» −1",
+      "state": "delivered (not deletable)",
+      "ticket": "#834c8e"
+    },
+    {
+      "what": "#699, #700 QA-AUTO-834r ₪5 customer test",
+      "state": "rejected",
+      "ticket": "#834c8e"
+    }
+  ],
+  "log": [
+    {
+      "time": "2026-11-19",
+      "note": "start: MCP ok (token до 12.12); queue 11; logins admin/buyer/rep alive; no account for 2nd מפיץ «פיצוציה»; 24 done tickets not in ledger; researchers ×3 started"
+    },
+    {
+      "time": "2026-11-19",
+      "note": "user: dist2 (aviel@, business «test») logged in via manual window → auth/dist2.json; test data allowed; backfill of 24 done tickets — at the end of session (user)"
+    },
+    {
+      "time": "2026-11-19",
+      "note": "batch 1 started: #787114+#35cb11 (admin-2), #b75d3b+#a597e8 (admin-3, buyer-2), #adfbdf+#de732f (admin, buyer, rep)"
+    },
+    {
+      "time": "2026-11-19",
+      "note": "#a597e8 pass (4 walk-in + pending/rejected/legacy texts); #b75d3b ✅ except edit-order sort; batch 2 started #c3fdb1+#834c8e (admin-3, buyer-2)"
+    },
+    {
+      "time": "2026-11-19",
+      "note": "batch 1 verdicts: #787114 #35cb11 #adfbdf #a597e8 pass; #de732f pass (Д3 cross-business in batch 2); #b75d3b waits edit-order check. Batch 2b started: #255bc0 #6aae65 #de732f-Д3 #61c0f4 (admin, buyer, dist2)"
+    },
+    {
+      "time": "2026-11-19",
+      "note": "user: #787114 #35cb11 #adfbdf #a597e8 прошли → column הושלם; autotests + ledger deferred to end of session together with backfill"
+    },
+    {
+      "time": "2026-11-19",
+      "note": "batch 2b: #255bc0 #6aae65 #61c0f4 pass, #de732f Д3 ok → pass. Findings: walkin empty p_items → 400 EMPTY_ORDER before ownership; tax_id letters rejected on save not on input"
+    },
+    {
+      "time": "2026-11-19",
+      "note": "batch 2a: #c3fdb1 pass, #b75d3b pass (edit-order sort ok on #693), #834c8e API ✅ — UI order-creation regression agent started"
+    },
+    {
+      "time": "2026-11-19",
+      "note": "user: #c3fdb1 #b75d3b #255bc0 #6aae65 #de732f #61c0f4 проведены → הושלם; autotests at end"
+    },
+    {
+      "time": "2026-11-19",
+      "note": "#834c8e pass (UI regression ok: #698 walk-in, #699/#700 via הזמנה מהודעה). All 11 verdicts done."
+    },
+    {
+      "time": "2026-11-19",
+      "note": "user: #834c8e проведён; user: «открой» finding «רישום ההזמנה · 0 שורות» clickable during «בודק מלאי ומחירים…» → dup check none; bug-verifier started. Autotest-writers ×3 running for 10 tickets"
+    },
+    {
+      "time": "2026-11-19",
+      "note": "autotests written (not run) for 7 tickets: API 4 (16 active), routing/receipt/report 3 (21); ledger updated. Backfill inventory of 24 started."
+    },
+    {
+      "time": "2026-11-19",
+      "note": "finding «רישום ההזמנה · 0 שורות» clickable during check → bug-verifier NOT CONFIRMED 0/3 (button disabled=true during «בודק מלאי ומחירים…»; Playwright auto-wait explains #700). Bug not created."
+    },
+    {
+      "time": "2026-11-19",
+      "note": "print autotests written (17, not run); all 11 in ledger. Backfill new: 21 has-tests/superseded → ledger; 3 automatable (#5e97b8, #3c03f6, #746c35) writers running"
+    },
+    {
+      "time": "2026-11-19",
+      "note": "backfill new done: 24 tickets → 21 covered/superseded, 3 automatable written (#5e97b8 6 tests, #3c03f6 5, #746c35 1), no findings. Ledger complete."
+    },
+    {
+      "time": "2026-11-19",
+      "note": "user: regress not now; handoff written, session closed"
+    }
+  ],
+  "backfill_after_session": true
+}

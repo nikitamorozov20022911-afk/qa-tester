@@ -1,0 +1,26 @@
+import { newBrowser, ctx, go, txt, shot, sleep } from './qasp6-lib.mjs';
+const b = await newBrowser(); const RUN=process.env.RUN||'r1';
+const log=(...a)=>console.log(...a);
+const { p } = await ctx(b, 'client', 375);
+await go(p,'/profile'); await p.getByText('ארנקים משותפים',{exact:true}).click(); await sleep(2500); log('profile->shared', p.url());
+await p.getByText('QA-ארנק משותף 03.10').click(); await sleep(2500); log('card->', p.url());
+await p.getByRole('button',{name:'לשימוש בכרטיס'}).click(); await sleep(2500); log('לשימוש בכרטיס->', p.url());
+await p.getByRole('button',{name:'חזרה'}).first().click(); await sleep(2000); log('back->', p.url());
+await p.getByRole('button',{name:'חזרה'}).first().click(); await sleep(2000); log('back->', p.url());
+await go(p,'/profile'); await p.getByText('ארנקי ילדים',{exact:true}).click(); await sleep(2500); log('profile->kids', p.url());
+await p.getByText('הארנק של QA-ילד 03.10').click(); await sleep(2500); log('card->', p.url());
+await p.getByRole('button',{name:'עריכת מגבלות'}).click(); await sleep(2500); log('edit->', p.url());
+await go(p,'/wallet'); const t=await txt(p); log('wallet home extra:', t.split('ארנקים נוספים')[1]?.split('פעולות אחרונות')[0].replace(/\n/g,' | '));
+await p.getByText('ארנקי ילדים',{exact:true}).click(); await sleep(2500); log('home->kids', p.url());
+await go(p,'/wallet'); await p.getByText('ארנקים משותפים',{exact:true}).click(); await sleep(2500); log('home->shared', p.url());
+const k = await ctx(b, 'client2', 375);
+await go(k.p,'/kid'); 
+log(await k.p.locator('body').ariaSnapshot());
+await k.p.getByRole('button',{name:'לשימוש בכרטיס'}).click().catch(e=>log('no card btn')); await sleep(2500); log('[kid] card->', k.p.url());
+await go(k.p,'/kid'); const btns = k.p.getByRole('button'); log('[kid] buttons', await btns.count());
+await btns.first().click(); await sleep(2500); log('[kid] first button ->', k.p.url());
+await go(k.p,'/kid/settings'); log(await k.p.locator('body').ariaSnapshot());
+await k.p.getByText('הגדרות כלליות').click(); await sleep(1500); log('[kid] tap הגדרות כלליות ->', k.p.url());
+for (const path of ['/profile','/wallet/kids','/wallet/kids/2e7de39a-13d7-4d7d-a22d-d982a9b95971/limits','/wallet/shared/fdafdb02-3ca8-42d9-ac0c-29bea4d07659','/wallet/transfer']) { await go(k.p, path, 3000); log('[kid] direct', path, '->', k.p.url()); }
+log('console', p._console, k.p._console);
+await b.close();

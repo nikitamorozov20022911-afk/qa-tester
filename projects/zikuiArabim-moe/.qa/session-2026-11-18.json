@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-18",
+  "command": "/qa-client",
+  "created_tickets": {
+    "3a9b4249cfabd6c35236c6b2": {"hash": "#36c6b2", "ticket": 34, "title": "בקשת לקוח: האפליקציה צריכה לעבוד גם בלי אינטרנט כשהטלפון במצב טיסה", "type": "task", "status": "todo", "change_id": "7ff3bbbbee908db53cb0eba1", "docs": "меняет"},
+    "568585209561197bc11f0dd2": {"hash": "#1f0dd2", "ticket": 35, "title": "בקשת לקוח: iPhone — טווח שעות התפילה במסך הבית מוצג בסדר הפוך", "type": "bug", "status": "todo", "change_id": "9b8d71cb7dde04a6a740f00e", "docs": "в рамках"},
+    "e38ae44217c389f14486e6bc": {"hash": "#86e6bc", "ticket": 36, "title": "בקשת לקוח: מסך הבית — תאריכים חשובים: «+» ליד הכותרת, הצגה שבועיים לפני, «להראות הכל» / «להסתיר הכל»", "type": "task", "status": "todo", "change_id": "314e1d04fc97b2817226e009", "docs": "меняет"}
+  },
+  "notes": "Вложения через upload_path дали upload_not_complete при PUT 200 — приложены через public url (fallback из mifrat-board-mcp). Реестр client-requests.md и context.md обновлены."
+}

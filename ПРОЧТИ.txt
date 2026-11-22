@@ -1,0 +1,11 @@
+Перенос QA-данных на второй ПК (22.11.2026)
+
+projects\<проект>\  -> положить содержимое в папку проекта на втором ПК
+   (.qa, .mcp.json, .claude\agents). Пути с Mac: ~/<проект>, ~/Documents/<проект>, ~/Projects/<проект>.
+.qa-tester\  -> C:\Users\<пользователь>\.qa-tester\ (lessons.md, config.json)
+
+НЕ включено (временное/тяжёлое, >5.9 ГБ): node_modules, browser-profile, screenshots,
+tmp, tmp-upload, scratchpad, .playwright-cli, media, audio, test-faces, design-videos.
+После распаковки в каждой папке .qa\e2e выполнить: npm install
+
+ВНИМАНИЕ: внутри пароли тестовых аккаунтов (accounts.env) и сохранённые входы (auth).

@@ -1,0 +1,326 @@
+{
+  "_generator": "qa-tester © 2026 Nikita Morozov. ID: QAT-NM-2026-344086DC45B0⁠​‌​‌​​​‌​‌​​​​​‌​‌​‌​‌​​​​‌​‌‌​‌​‌​​‌‌‌​​‌​​‌‌​‌​​‌​‌‌​‌​​‌‌​​‌​​​‌‌​​​​​​‌‌​​‌​​​‌‌​‌‌​​​‌​‌‌​‌​​‌‌​​‌‌​​‌‌​‌​​​​‌‌​‌​​​​‌‌​​​​​​‌‌‌​​​​​‌‌​‌‌​​‌​​​‌​​​‌​​​​‌‌​​‌‌​‌​​​​‌‌​‌​‌​‌​​​​‌​​​‌‌​​​​​‌‌‌‌‌​​​‌​​‌‌‌​​‌‌​‌​​‌​‌‌​‌​‌‌​‌‌​‌​​‌​‌‌‌​‌​​​‌‌​​​​‌​​‌​​​​​​‌​​‌‌​‌​‌‌​‌‌‌‌​‌‌‌​​‌​​‌‌​‌‌‌‌​‌‌‌‌​‌​​‌‌​‌‌‌‌​‌‌‌​‌‌​⁣",
+  "project": "hunters",
+  "date": "2026-10-04",
+  "environment": "staging",
+  "tickets": [
+    {
+      "hash": "#abcd1234",
+      "title": "<заголовок>",
+      "type": "bug | task | feature | improvement",
+      "action": "pass | reject | status-todo | blocked | waiting-user | new-bug | new-task",
+      "column": "הושלם | לביצוע | בבדיקות",
+      "notes": "",
+      "at": "YYYY-MM-DDTHH:MM"
+    }
+  ],
+  "test_data": [
+    {
+      "what": "משרה QA-AUTO-neg-job 🚀 (draft после шага 1, id c0b56860-6482-4097-acf8-331bd7d98657)",
+      "where": "/publish/job → /publish/job/questions?id=c0b56860-6482-4097-acf8-331bd7d98657",
+      "role": "hunter_plus",
+      "how_to_delete": "המשרות שלי → פעולות משרה → מחיקה/ארכוב (или admin → משרות)",
+      "created_at": "2026-10-04T08:15",
+      "status": "удалено из ленты: העברה לארכיון («לסגור») 2026-10-04 08:25; для talent по прямой ссылке → 404"
+    },
+    {
+      "what": "Файл 0 байт QA-AUTO-empty.pdf в Supabase Storage (bucket documents/232703e1-5749-4a4f-a57c-174b1cdfd6c3/candidate-cv-1791102023158-QA-AUTO-empty.pdf) — загружен сразу при выборе файла в форме «הוספת מועמד», форма не отправлена",
+      "where": "/my-candidates/new",
+      "role": "hunter_plus",
+      "how_to_delete": "через UI нельзя (после «הסרת הקובץ» остаётся в storage) — удалить разработчику в Supabase Storage",
+      "created_at": "2026-10-04T08:21",
+      "status": "не удалено (нет UI)"
+    },
+    {
+      "what": "Исходные значения профиля hunter_plus (до негативных проверок формы עריכת פרופיל)",
+      "where": "/profile?edit=details",
+      "role": "hunter_plus",
+      "original": "### Result\n\"{\\\"avatar_path\\\":\\\"232703e1-5749-4a4f-a57c-174b1cdfd6c3/avatar-1789991235128.png\\\",\\\"first_name\\\":\\\"נועם\\\",\\\"last_name\\\":\\\"כהן\\\",\\\"username\\\":\\\"noamcohen\\\",\\\"headline\\\":\\\"הד האנטר לתפקידי טכנולוגיה וניהול\\\",\\\"company_name\\\":\\\"Acme בע״מ\\\",\\\"phoneCode\\\":\\\"+972\\\",\\\"phone\\\":\\\"521234567\\\",\\\"phone_altCode\\\":\\\"+972\\\",\\\"phone_alt\\\":\\\"\\\",\\\"email\\\":\\\"claude-test@hunters.dev\\\",\\\"bio\\\":\\\"מעצבת מוצר עם ניסיון רב בחברות SaaS, אוהבת לבנות מערכות עיצוב ולהוביל צוותים.\\\",\\\"expertise\\\":\\\"finance\\\",\\\"languages\\\":\\\"he\\\",\\\"website\\\":\\\"https://www.hunters-hub.com\\\",\\\"linkedin\\\":\\\"\\\",\\\"facebook\\\":\\\"https://facebook.com/hunters\\\",\\\"instagram\\\":\\\"https://instagram.com/hunters\\\",\\\"tiktok\\\":\\\"https://tiktok.com/@hunters\\\",\\\"address\\\":\\\"תל אביב, ישראל\\\"}\"",
+      "created_at": "2026-10-04T08:35",
+      "status": "не изменялось (валидация блокировала, диалог закрыт без сохранения); сверено после перезагрузки — совпадает"
+    },
+    {
+      "what": "Исходные значения профиля talent (до негативных проверок)",
+      "where": "/profile?edit=details",
+      "role": "talent",
+      "original": "### Result\n\"{\\\"linkedin\\\":\\\"\\\",\\\"avatar_path\\\":\\\"\\\",\\\"first_name\\\":\\\"משה\\\",\\\"last_name\\\":\\\"כהן\\\",\\\"username\\\":\\\"moshecohen\\\",\\\"phoneCode\\\":\\\"+972\\\",\\\"phone\\\":\\\"521234567\\\",\\\"phone_altCode\\\":\\\"+972\\\",\\\"phone_alt\\\":\\\"\\\",\\\"email\\\":\\\"demo-talent-1@hunters.dev\\\",\\\"bio\\\":\\\"מפתח Full Stack עם 7 שנות ניסיון בבניית מוצרי SaaS בקנה מידה גדול. אוהב לעבוד בצוותים קטנים ומהירים, להוביל פיצ׳רים מקצה לקצה ולחנוך מפתחים צעירים. מחפש את האתגר הבא בחברת מוצר עם השפעה אמיתית.\\\",\\\"expertise\\\":\\\"marketing-sales\\\",\\\"languages\\\":\\\"he\\\",\\\"facebook\\\":\\\"https://facebook.com/moshe\\\",\\\"instagram\\\":\\\"https://instagram.com/moshe\\\",\\\"tiktok\\\":\\\"https://tiktok.com/@moshe\\\",\\\"address\\\":\\\"תל אביב, ישראל\\\"}\"",
+      "created_at": "2026-10-04T08:45",
+      "status": "не изменялось (диалог закрыт без «שמירה»); сверено после перезагрузки — совпадает, QA-AUTO место работы не сохранилось"
+    },
+    {
+      "what": "Сообщение в чате «QA-AUTO-neg-chat 😀🚀 עברית English <b>x</b>» (1 шт.; 2 попытки длинного сообщения 5036 симв. не отправились — 400)",
+      "where": "/messages?c=a111c44b-9ca4-4b2e-a216-84c02f6fd455 (диалог с הד האנטר דמו 2, demo-hunter-2@hunters.dev)",
+      "role": "hunter_plus",
+      "how_to_delete": "в UI удаления сообщения не найдено — оставить/удалить разработчику",
+      "created_at": "2026-10-04T08:55",
+      "status": "не удалено"
+    },
+    {
+      "what": "משרה QA-AUTO-neg-job-2 back-test (id 877c3e2e-34fb-47c3-a5dc-3482702362d1)",
+      "where": "/publish/job",
+      "role": "hunter_plus",
+      "how_to_delete": "המשרות שלי → פעולות משרה → העברה לארכיון → לסגור",
+      "created_at": "2026-10-04T09:10",
+      "status": "удалено из ленты: העברה לארכיון («לסגור») 2026-10-04 09:20"
+    },
+    {
+      "what": "משרה-טיוטה QA-AUTO-neg-job-3 abandoned-step1 (id 1d9d9eb4-4a72-4270-b36d-09888c98cae8), статус טיוטה",
+      "where": "/publish/job (брошено после шага 1)",
+      "role": "hunter_plus",
+      "how_to_delete": "в UI хед-хантера черновики не видны (המשרות שלי/ארכיון) — удалить через admin/разработчика",
+      "created_at": "2026-10-04T09:15",
+      "status": "создано"
+    },
+    {
+      "what": "Файл 0 байт QA-AUTO-verify-empty.pdf в Supabase Storage (documents/232703e1-5749-4a4f-a57c-174b1cdfd6c3/candidate-cv-1791104266289-QA-AUTO-verify-empty.pdf, Id 58f24d20-8341-407d-a230-5ccd33771d45) — загружен при выборе файла в «הוספת מועמד» при перепроверке; после «הסרת הקובץ» DELETE не было, объект остался (size=0); форма не сохранялась",
+      "where": "/my-candidates/new",
+      "role": "hunter_plus",
+      "how_to_delete": "через UI нельзя — удалить разработчику в Supabase Storage",
+      "created_at": "2026-10-04T08:57",
+      "status": "не удалено (нет UI)"
+    },
+    {
+      "what": "черновик משרה QA-AUTO-retest2 salary-1-2 (сейчас зарплата 0-0), id 36c7b2cd-fd6f-4654-8ca9-56d2497c8afa",
+      "where": "/my-jobs?page=2",
+      "role": "hunter_plus",
+      "created": "2026-10-05",
+      "cleanup": "через UI не удаляется — разработчик"
+    },
+    {
+      "what": "черновик משרה «DEMO - לא לפרסם», id 18146d5f-4b83-4bb6-b065-7d8dcc91e54a (шаги 1-2, не опубликован)",
+      "where": "/my-jobs",
+      "role": "company (demo-company-1)",
+      "created": "2026-10-05",
+      "cleanup": "удалить/архивировать — решение пользователя"
+    },
+    {
+      "what": "кандидат «QA-AUTO flow candidate Close-test», id 24df8084-ca2a-4242-b9d1-aeec0f004b62",
+      "where": "/my-candidates",
+      "role": "hunter (demo-hunter-3)",
+      "created": "2026-10-05",
+      "cleanup": "удалить — разработчик/вручную"
+    },
+    {
+      "what": "подача 3589bb33-bee6-41f9-b1a7-9829a792a3e6 на вакансию QA company post test (7e4ad713), полный профиль",
+      "where": "/applications/3589bb33…",
+      "role": "hunter→company",
+      "created": "2026-10-05",
+      "cleanup": "удалить — разработчик"
+    },
+    {
+      "what": "вакансия QA company post test закрыта и возвращена в פעיל (дважды), срок прежний 26.10.2026",
+      "where": "/admin/jobs/7e4ad713…",
+      "role": "company/admin",
+      "created": "2026-10-05",
+      "cleanup": "возвращено"
+    }
+  ],
+  "findings": [
+    {
+      "id": "NEG-1",
+      "audit": "2026-10-04-negative",
+      "severity": "высокая",
+      "where": "/hunters, /profile/<id>, десктоп, talent (FREE)",
+      "summary": "FREE-кандидат видит email и телефоны всех хед-хантеров на /hunters и в профиле хед-хантера (там ещё больше: второй телефон, адрес), а в деталях משרה те же данные закрыты «פרטי ההד האנטר זמינים למנויי PRO». Ограничение тарифа обходится. В списке есть похожие на реальные данные внешнего пользователя (gmail, телефон)",
+      "status": "filed",
+      "board": "mifrat לביצוע, 2026-10-04 (EN)",
+      "hash": "#bfc6447e"
+    },
+    {
+      "id": "NEG-2",
+      "audit": "2026-10-04-negative",
+      "severity": "средняя",
+      "where": "/profile?edit=details, десктоп, hunter_plus и talent",
+      "summary": "«כמה מילים עליך» >3000 символов → под полем сырой ключ `onboarding.errors.Too big: expected string to have <=3000 characters`; нет maxlength и счётчика",
+      "status": "filed",
+      "board": "mifrat לביצוע, 2026-10-04 (EN)"
+    },
+    {
+      "id": "NEG-3",
+      "audit": "2026-10-04-negative",
+      "severity": "средняя",
+      "where": "/my-candidates/new «קובץ קו״ח», десктоп, hunter_plus",
+      "summary": "Пустой PDF (0 байт) принимается и сразу грузится в Supabase storage до сохранения формы; «הסרת הקובץ» не удаляет файл (нет DELETE). .exe: клиент отправляет загрузку, сервер 400/415 invalid_mime_type, в UI ничего. PDF 26 МБ: молча не появляется, без сообщения",
+      "status": "filed",
+      "board": "mifrat לביצוע, 2026-10-04 (EN)"
+    },
+    {
+      "id": "NEG-4",
+      "audit": "2026-10-04-negative",
+      "severity": "средняя",
+      "where": "/publish/job, десктоп, hunter_plus",
+      "summary": "Зарплата 0–0 и 1–2 ₪ принимается; комиссия 0% молча",
+      "status": "filed",
+      "board": "mifrat לביצוע, 2026-10-04 (EN)",
+      "note": "заведена только часть про зарплату; комиссия 0% — существующий тикет «אין ולידציה על עמלת שת״פ»"
+    },
+    {
+      "id": "NEG-5",
+      "audit": "2026-10-04-negative",
+      "severity": "средняя",
+      "where": "/my-candidates/new, десктоп, hunter_plus",
+      "summary": "Ошибки валидации показываются по одной: сначала только зарплата, остальные (имя из пробелов, телефон «abc», email «a@b») — со второго нажатия",
+      "status": "filed",
+      "board": "mifrat לביצוע, 2026-10-04 (EN)"
+    },
+    {
+      "id": "NEG-6",
+      "audit": "2026-10-04-negative",
+      "severity": "средняя",
+      "where": "/publish/job, десктоп, hunter_plus",
+      "summary": "Смена языка he→en посреди формы стирает введённые данные без предупреждения",
+      "status": "filed",
+      "board": "mifrat לביצוע, 2026-10-04 (EN)"
+    },
+    {
+      "id": "NEG-7",
+      "audit": "2026-10-04-negative",
+      "severity": "средняя",
+      "where": "/profile → «ניסיון מקצועי», десктоп, talent",
+      "summary": "Окончание 01.2020 раньше начала 01.2026 — принимается («ינו׳ 2026 - ינו׳ 2020»)",
+      "status": "filed",
+      "board": "mifrat לביצוע, 2026-10-04 (EN)"
+    },
+    {
+      "id": "NEG-8",
+      "audit": "2026-10-04-negative",
+      "severity": "низкая",
+      "where": "/messages, десктоп, hunter_plus",
+      "summary": "Сообщение 5036 символов → 400 и «ההודעה לא נשלחה. נסו שוב», про лимит ни слова, нет счётчика",
+      "status": "filed",
+      "board": "mifrat לביצוע, 2026-10-04 (EN)"
+    },
+    {
+      "id": "NEG-9",
+      "audit": "2026-10-04-negative",
+      "severity": "низкая",
+      "where": "/messages поиск, десктоп, hunter_plus",
+      "summary": "Нет пустого состояния при отсутствии результатов",
+      "status": "filed",
+      "board": "mifrat לביצוע, 2026-10-04 (EN)"
+    },
+    {
+      "id": "NEG-10",
+      "audit": "2026-10-04-negative",
+      "severity": "низкая",
+      "where": "/publish/job, десктоп, hunter_plus",
+      "summary": "Брошенный после шага 1 черновик («טיוטה») не виден владельцу ни в «המשרות שלי», ни в архиве — только в /admin/jobs",
+      "status": "filed",
+      "board": "mifrat לביצוע, 2026-10-04 (EN)"
+    },
+    {
+      "id": "NEG-11",
+      "audit": "2026-10-04-negative",
+      "severity": "низкая",
+      "where": "/collaborations?budgetMin=-500&budgetMax=abc, десктоп, hunter_plus",
+      "summary": "Фильтр показывает «₪-500 – ₪NaN»; min>max не исправляется; ?page=999 → «לא נמצאו משרות התואמות את החיפוש»",
+      "status": "filed",
+      "board": "mifrat לביצוע, 2026-10-04 (EN)"
+    },
+    {
+      "id": "NEG-12",
+      "audit": "2026-10-04-negative",
+      "severity": "низкая",
+      "where": "/collaborations?q=_ (hunter_plus), /admin/jobs?q=_ (admin), десктоп",
+      "summary": "Поиск «_» и «%» возвращает все результаты (12 / 52) — спецсимволы не экранируются",
+      "status": "filed",
+      "board": "mifrat לביצוע, 2026-10-04 (EN)"
+    },
+    {
+      "id": "NEG-13",
+      "audit": "2026-10-04-negative",
+      "severity": "низкая",
+      "where": "/my-jobs → «העברה לארכיון», десктоп, hunter_plus",
+      "summary": "В диалоге «העברת משרה» кнопка «לסגור את המכרז» (מכרז вместо משרה)",
+      "status": "filed",
+      "board": "mifrat לביצוע, 2026-10-04 (EN)"
+    },
+    {
+      "id": "NEG-14",
+      "audit": "2026-10-04-negative",
+      "severity": "низкая",
+      "where": "/collaborations/<id>, десктоп, hunter_plus",
+      "summary": "Поле «מס' ימי אחריות לגיוס» в деталях подписано «שלבי אחריות 30»",
+      "status": "filed",
+      "board": "mifrat לביצוע, 2026-10-04 (EN)"
+    },
+    {
+      "id": "NEG-15",
+      "audit": "2026-10-04-negative",
+      "severity": "низкая",
+      "where": "/my-candidates/new, /profile, десктоп, hunter_plus и talent",
+      "summary": "Телефон из 8 цифр «05212345» принимается",
+      "status": "filed",
+      "board": "mifrat לביצוע, 2026-10-04 (EN)"
+    },
+    {
+      "id": "NEG-16",
+      "audit": "2026-10-04-negative",
+      "severity": "низкая",
+      "where": "/publish/job, десктоп, hunter_plus",
+      "summary": "Описание >5000 символов молча обрезается, нет счётчика; отрицательные числа → «יש להזין מספר»",
+      "status": "filed",
+      "board": "mifrat לביצוע, 2026-10-04 (EN)"
+    },
+    {
+      "id": "NEG-17",
+      "audit": "2026-10-04-negative",
+      "severity": "низкая",
+      "where": "/login, /forgot-password, /register, /admin/users «הוספת משתמש», десктоп, гость и admin",
+      "summary": "Только встроенные подсказки браузера (на английском при английском браузере); на /register подпись «או התחבר עם כתובת אימייל»; в админке имена из пробелов проходят обязательность",
+      "status": "filed",
+      "board": "mifrat לביצוע, 2026-10-04 (EN)"
+    },
+    {
+      "id": "NEG-18",
+      "audit": "2026-10-04-negative",
+      "severity": "низкая",
+      "where": "/qa-nonexistent-xyz, десктоп, гость",
+      "summary": "Несуществующий адрес → /login вместо 404; после входа нет возврата на исходную страницу",
+      "status": "filed",
+      "board": "mifrat לביצוע, 2026-10-04 (EN)"
+    },
+    {
+      "id": "NEG-19",
+      "audit": "2026-10-04-negative",
+      "severity": "низкая",
+      "where": "подвал всех страниц, включая кабинет",
+      "summary": "Ссылки от чужого шаблона «הצטרפות ל-MentMe», «כל המנטורים», «ההזמנות שלי» (lorem ipsum в подвале — известно)",
+      "status": "duplicate",
+      "board": "уже есть: [E2E] פווטר מכיל תוכן של מוצר אחר (\"MentMe\") — רשימת משימות"
+    }
+  ],
+  "retests": [
+    {
+      "date": "2026-10-05",
+      "what": "ретест 18 тикетов NEG-1..18 из הושלם",
+      "fixed": [
+        "NEG-2",
+        "NEG-3",
+        "NEG-5",
+        "NEG-6",
+        "NEG-7",
+        "NEG-8",
+        "NEG-9",
+        "NEG-13",
+        "NEG-14",
+        "NEG-15",
+        "NEG-16",
+        "NEG-12",
+        "NEG-17"
+      ],
+      "partial": {
+        "NEG-1": "email/телефон закрыты; адрес (список+профиль), сайт и соцсети (профиль) видны FREE — подтверждено bug-verifier",
+        "NEG-10": "черновик виден в /my-jobs, но без метки טיוטה",
+        "NEG-11": "NaN/min>max исправлены; ?page=999 — пусто",
+        "NEG-18": "404 исправлено; возврат после входа не проверен (next= передаётся)"
+      },
+      "not_fixed": {
+        "NEG-4": "зарплата 0-0 и 1-2 проходит на шаг 2 — подтверждено bug-verifier; минимум в доке не описан"
+      },
+      "blockers": "—; admin-сессия обновлена пользователем 2026-10-05",
+      "screenshots": ".qa/screenshots/2026-10-05-retest/",
+      "board_actions": "нет, ждём решения пользователя"
+    }
+  ]
+}

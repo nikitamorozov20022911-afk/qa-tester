@@ -1,0 +1,16 @@
+import { chromium, devices } from 'playwright';
+const out = '../screenshots/client-2810/';
+const b = await chromium.launch();
+const c = await b.newContext({ ...devices['iPhone 13'], storageState: '../auth/client.json' });
+const p = await c.newPage();
+await p.goto('https://safepay.expo.app/wallet', { waitUntil: 'networkidle' });
+await p.waitForTimeout(3000);
+await p.screenshot({ path: out + 'wallet-ils-only.png' });
+console.log('url', p.url());
+console.log((await p.locator('body').innerText()).slice(0, 600));
+await p.goto('https://safepay.expo.app/wallet/withdraw', { waitUntil: 'networkidle' });
+await p.waitForTimeout(2500);
+await p.screenshot({ path: out + 'withdraw.png' });
+console.log('url2', p.url());
+console.log((await p.locator('body').innerText()).slice(0, 400));
+await b.close();

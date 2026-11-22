@@ -1,0 +1,2367 @@
+{
+  "#6a86f7e7": {
+    "class": "has-tests",
+    "feature": "",
+    "tests": [
+      "tests/prayer-mode/pm-01-toggle-default-and-marking.spec.ts",
+      "tests/prayer-mode/pm-02-same-content-arvit-ashkenaz.spec.ts",
+      "tests/prayer-mode/pm-02-same-content-mincha-ashkenaz.spec.ts",
+      "tests/prayer-mode/pm-02-same-content-mincha-sfarad.spec.ts",
+      "tests/prayer-mode/pm-02-same-content-shacharit-ashkenaz.spec.ts",
+      "tests/prayer-mode/pm-02-same-content-shacharit-sfarad.spec.ts",
+      "tests/prayer-mode/pm-03-switch-mid-prayer-keeps-position.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7e7489027bf85afa2d9",
+    "title": "פיתוח: מצב תפילה ביחיד או במניין"
+  },
+  "#6a86f7d8666a": {
+    "class": "has-tests",
+    "feature": "",
+    "tests": [
+      "tests/nusach-switch/ns-01-menu-desktop.spec.ts",
+      "tests/nusach-switch/ns-01-menu-mobile.spec.ts",
+      "tests/nusach-switch/ns-02-cancel-and-replace-parallel-section.spec.ts",
+      "tests/nusach-switch/ns-02-missing-section-fallback.spec.ts",
+      "tests/nusach-switch/ns-02-profile-unchanged.spec.ts",
+      "tests/nusach-switch/ns-02-same-nusach-no-dialog.spec.ts"
+    ],
+    "reason": " [тесты сопоставлены по общему #6a86f7d8 — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7d8666aaa74e0e2f4aa",
+    "title": "עיצוב מוקאפ: תפילה מודרכת — קטע עם מחליף נוסח"
+  },
+  "#6a86f7df72ec": {
+    "class": "has-tests",
+    "feature": "",
+    "tests": [
+      "tests/guided-prayer/gp-05-explanation-and-source-additions.spec.ts",
+      "tests/guided-prayer/gp-05-explanation-and-source-berachot.spec.ts",
+      "tests/guided-prayer/gp-05-explanation-and-source-main-prayers.spec.ts",
+      "tests/guided-prayer/gp-05-explanation-example-mincha-sfarad-ashrei.spec.ts",
+      "tests/guided-prayer/gp-06-share-button-geometry-and-absence.spec.ts",
+      "tests/guided-prayer/gp-06-share-button-main-prayers.spec.ts",
+      "tests/guided-prayer/gp-06-share-dialog-text-and-payload.spec.ts",
+      "tests/journey/jr-03-rtl-layout-coordinates.spec.ts",
+      "tests/prayer-mode/pm-02-same-content-arvit-ashkenaz.spec.ts",
+      "tests/prayer-mode/pm-02-same-content-mincha-ashkenaz.spec.ts",
+      "tests/prayer-mode/pm-02-same-content-mincha-sfarad.spec.ts",
+      "tests/prayer-mode/pm-02-same-content-shacharit-ashkenaz.spec.ts",
+      "tests/prayer-mode/pm-02-same-content-shacharit-sfarad.spec.ts",
+      "tests/zmanim/zm-01-rows-method-names-desktop.spec.ts",
+      "tests/zmanim/zm-01-rows-method-names-mobile.spec.ts",
+      "tests/zmanim/zm-02-dates-location-daily-study.spec.ts",
+      "tests/zmanim/zm-04-no-location.spec.ts"
+    ],
+    "reason": " [тесты сопоставлены по общему #6a86f7df — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7df72ec5aaabef3a52b",
+    "title": "עיצוב מוקאפ: זמני תפילות ולימוד יומי"
+  },
+  "#6a86f7daaed0": {
+    "class": "automatable",
+    "feature": "tehilim",
+    "tests": [
+      "tests/tehilim/th-01-chapter-reading-screen.spec.ts"
+    ],
+    "reason": "Экран чтения תהילים по последнему реджекту (29.09): нет полосы перехода между главами; под текстом «סיים», строка «האזן להקראה» («אין הקראה לפרק הזה», кнопка неактивна), кнопка «חזק את חברך» (шеринг с ссылкой на главу /tehilim/N), ⓘ в шапке, нижняя навигация. @prod-safe [тесты сопоставлены по общему #6a86f7da — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7daaed065fa18912a83",
+    "title": "עיצוב מוקאפ: קריאת תהילים עם הקראה ושיתוף"
+  },
+  "#6a86f7e6d81d": {
+    "class": "automatable",
+    "feature": "important-dates",
+    "tests": [
+      "tests/impact-map/im-01-invite-dialog-text-and-share.spec.ts",
+      "tests/impact-map/im-02-map-me-two-branches-counter.spec.ts",
+      "tests/impact-map/im-03-own-invite-link-message.spec.ts",
+      "tests/important-dates/id-02-edit-save-delete.spec.ts",
+      "tests/important-dates/id-03-memorial-future-sunset-adar.spec.ts"
+    ],
+    "reason": "Добавление/редактирование/удаление תאריך חשוב и אזכרה: выбор месяца/года по клику на заголовок, без поля ручного ввода и «מעבר» (реджект 29.09), чекбокс «אחרי השקיעה», будущая дата смерти заблокирована, пометка אדר א׳/ב׳. Создаёт данные (с удалением). AC6 (סדר אזכרה) — заблокирован решением, не тестировать [тесты сопоставлены по общему #6a86f7e6 — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7e6d81dc311e455cfae",
+    "title": "פיתוח: לוח תאריכים אישי ואזכרות"
+  },
+  "#6a86f7e9b68d": {
+    "class": "automatable",
+    "feature": "guided-prayer",
+    "tests": [
+      "tests/guided-prayer/gp-01-run-without-finish.spec.ts",
+      "tests/prayer-history/ph-02-same-minute-seconds.spec.ts"
+    ],
+    "reason": "Прохождение молитвы: имя и נוסח в шапке, «חלק X מתוך Y», הבא/הקודם, сохранение позиции при выходе/возврате, «סיים תפילה». По реджекту 29.09: время в истории HH:mm, при ≥2 записях той же молитвы в ту же минуту — HH:mm:ss (история и «תפילות אחרונות»). Завершение создаёт запись (append-only, не удаляется) [тесты сопоставлены по общему #6a86f7e9 — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7e9b68d4d0f208d1b1b",
+    "title": "פיתוח: הרצת תפילה מודרכת עד סיום"
+  },
+  "#6a86f7fa1720": {
+    "class": "automatable",
+    "feature": "reminders",
+    "tests": [
+      "tests/reminders/rm-01-quick-reminders-block.spec.ts",
+      "tests/reminders/rm-02-reminders-off-manage-link.spec.ts",
+      "tests/reminders/rm-03-profile-settings-consent-dialog.spec.ts"
+    ],
+    "reason": "«תזכורות מהירות» на главной: у напоминания заголовок + пояснение; при выключенном «תזכורות במערכת» — «התזכורות כבויות — אפשר להפעיל בפרופיל», «ניהול תזכורות» ведёт к тумблеру в профиле (реджект 29.09). Переключение тумблера — изменение настройки (вернуть). Конкретный контент (יעלה ויבוא, мועד) зависит от даты — не проверять текст [тесты сопоставлены по общему #6a86f7fa — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7fa1720e0539dbc797e",
+    "title": "פיתוח: תזכורות מהירות למה שנדרש היום"
+  },
+  "#abd60e27": {
+    "class": "automatable",
+    "feature": "profile",
+    "tests": [],
+    "reason": "Финальный реджект 29.09: «שינוי סיסמה»/«שכחתי סיסמה» НЕ нужны — проверить отсутствие строки «שינוי סיסמה» и экранов смены/сброса пароля в профиле; контактные данные на месте. @prod-safe",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "abd60e27f4366efdc9693dcd",
+    "title": "חסרים «שינוי סיסמה» ו«שכחתי סיסמה» בפרופיל האישי"
+  },
+  "#6a86f7ddcb72": {
+    "class": "manual-only",
+    "feature": "home",
+    "tests": [],
+    "reason": "Состояние «מתחיל» (0 молитв) требует нового аккаунта (регистрация нового номера), окно ערבית с заката и активность кнопки по времени — зависят от времени суток/заката",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7ddcb7260e2da49f430",
+    "title": "עיצוב מוקאפ: מסך הבית — מתחיל (שחרית)"
+  },
+  "#6a86f7e11906": {
+    "class": "manual-only",
+    "feature": "azkara",
+    "tests": [],
+    "reason": "Окно «סדר אזכרה» открывается только в день יארצייט (конкретная дата), текст סדר אזכרה заблокирован решением о галахическом авторитете",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7e11906148da08ba7a9",
+    "title": "עיצוב מוקאפ: מסך הבית — מתקדם (סדר אזכרה לנפטר)"
+  },
+  "#8eab5904": {
+    "class": "automatable",
+    "feature": "reminders",
+    "tests": [
+      "tests/reminders/rm-04-important-date-today-tomorrow.spec.ts"
+    ],
+    "reason": "Важная дата/אזכרה на сегодня или завтра появляется в «תזכורות מהירות» («היום – …» / «מחר – …») — проверяемо, создав дату на сегодня (с удалением после). Создаёт данные",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "8eab5904d505f2e3411c7f37",
+    "title": "«תזכורות מהירות» ריק תמיד — אין דרך ליצור תזכורת"
+  },
+  "#6a86f7d9": {
+    "class": "manual-only",
+    "feature": "achievements",
+    "tests": [
+      "tests/achievements/ac-02-achievement-dialog-share.spec.ts"
+    ],
+    "reason": "Окно достижения появляется только в момент разблокировки нового достижения (1/3 дня/7/30/100) — нельзя повторяемо воспроизвести на user1/user2 без невозвратных записей молитв и ожидания дней; текст шеринга проверять вручную",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7d92e5ab16b96f7c294",
+    "title": "עיצוב מוקאפ: חלון הישג שנפתח"
+  },
+  "#6a86f7ff163a": {
+    "class": "automatable",
+    "feature": "guided-prayer",
+    "tests": [
+      "tests/guided-prayer/gp-02-explanation-layer.spec.ts",
+      "tests/prayer-catalog/pc-01-catalog-search.spec.ts"
+    ],
+    "reason": "Из экрана молитвы открывается слой «הסבר» (ⓘ) с названием текущей молитвы; закрытие возвращает в тот же חלק. Текст объяснения/совета зависит от одобренного контента (решение) — проверять наличие слоя и возврат, не текст. @prod-safe [тесты сопоставлены по общему #6a86f7ff — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7ff163a2a12bdf47ce0",
+    "title": "פיתוח: הסבר והכוונה על התפילה הנוכחית"
+  },
+  "#6a86f800ce2e": {
+    "class": "automatable",
+    "feature": "zmanim",
+    "tests": [
+      "tests/prayer-history/ph-01-empty-history-message.spec.ts",
+      "tests/prayer-history/ph-01-history-grouping-search.spec.ts",
+      "tests/splash/sp-01-brand-promise-single-cta.spec.ts",
+      "tests/zmanim/zm-05-alot-mga-19-8-and-72.spec.ts",
+      "tests/zmanim/zm-06-source-unavailable.spec.ts"
+    ],
+    "reason": "/zmanim: город расчёта, еврейская и григорианская дата, пары «название–время», методы (в т.ч. строка «עלות השחר (מג״א, 19.8°)» — реджект 27.09), ряды לימוד יומי; невычислимое время — «לא ניתן לחשב ביום זה», строка не исчезает. Точные значения времени не сверять. @prod-safe [тесты сопоставлены по общему #6a86f800 — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f800ce2e9a0aa4068268",
+    "title": "פיתוח: זמני תפילה הלכתיים לפי מיקום"
+  },
+  "#6a86f7db": {
+    "class": "duplicate",
+    "feature": "torah-lessons",
+    "tests": [],
+    "reason": "Дубль 6a86f7fcc8318e651941580c (פיתוח: שיעורי תורה) — тот же реджект про тестовый урок; экран чтения урока покрывается сценарием фичи",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7dbeaab2087e9ad1b0e",
+    "title": "עיצוב מוקאפ: שיעורי תורה — קריאת שיעור"
+  },
+  "#6a86f7fc": {
+    "class": "automatable",
+    "feature": "torah-lessons",
+    "tests": [
+      "tests/torah-lessons/tl-01-empty-list.spec.ts",
+      "tests/torah-lessons/tl-01-lesson-not-found.spec.ts",
+      "tests/torah-lessons/tl-01-list-and-lesson-text-source.spec.ts"
+    ],
+    "reason": "Таб «תפילות» → вход в «שיעורי תורה»: список уроков с заголовками, открытие урока показывает полный текст и источник (тестовый урок по реджекту 27.09), пустое состояние на иврите. @prod-safe",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7fcc8318e651941580c",
+    "title": "פיתוח: שיעורי תורה"
+  },
+  "#6a86f7fa0767": {
+    "class": "automatable",
+    "feature": "reminders",
+    "tests": [
+      "tests/reminders/rm-01-quick-reminders-block.spec.ts",
+      "tests/reminders/rm-02-reminders-off-manage-link.spec.ts",
+      "tests/reminders/rm-03-profile-settings-consent-dialog.spec.ts"
+    ],
+    "reason": "В профиле: тумблер называется «תזכורות במערכת», строка «הודעות במייל, SMS ו־WhatsApp» со значением «מאושר»/«לא מאושר», в окне согласия «אפשר לשנות את הבחירה בכל עת» (реджект 27.09). Часть onboarding (экран включения) — только с новым аккаунтом. Чтение @prod-safe; выключение/включение — изменение настройки [тесты сопоставлены по общему #6a86f7fa — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7fa076716a9ad4f31b5",
+    "title": "פיתוח: הפעלת תזכורות לזמני תפילה ולמצוות"
+  },
+  "#6a86f7ffe0e4": {
+    "class": "automatable",
+    "feature": "prayer-catalog",
+    "tests": [
+      "tests/guided-prayer/gp-02-explanation-layer.spec.ts",
+      "tests/prayer-catalog/pc-01-catalog-search.spec.ts"
+    ],
+    "reason": "/prayers: список с נוסח, поиск фильтрует; синонимы (מעריב→ערבית, עמידה/שמונה עשרה, ק״ש שעל המיטה, קידוש לבנה→ברכת הלבנה) и поиск по названию נוסח (реджект 24.09); пустой результат — сообщение + «נקה חיפוש»; клик открывает /prayer/<key>. @prod-safe [тесты сопоставлены по общему #6a86f7ff — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7ffe0e41765b92b8be0",
+    "title": "פיתוח: קטלוג תפילות עם חיפוש"
+  },
+  "#ecda5d38": {
+    "class": "automatable",
+    "feature": "guided-prayer",
+    "tests": [
+      "tests/guided-prayer/gp-03-nusach-availability-switch.spec.ts",
+      "tests/nusach-switch/ns-03-legacy-sfarad-edot-consistent.spec.ts"
+    ],
+    "reason": "Нусах «עדות המזרח» недоступен: в списке/в молитве указано, что показывается в נוסח ספרד; смена נוסח внутри молитвы работает на уровне всей молитвы (или предупреждение о сбросе), недоступный нусах помечен в переключателе. @prod-safe (смена внутри молитвы)",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "ecda5d38a345af824b52076b",
+    "title": "אי-עקביות בטיפול בנוסח «ספרד / עדות המזרח» — החלפת נוסח בתוך תפילה נכשלת ורשימת התפילות מציגה אי-זמינות ללא ציון החלופה"
+  },
+  "#f6970bc6": {
+    "class": "automatable",
+    "feature": "journey",
+    "tests": [
+      "tests/journey/jr-02-header-opens-profile.spec.ts"
+    ],
+    "reason": "В «המסע שלי» клик по аватару или имени открывает «פרופיל אישי». @prod-safe",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "f6970bc68b439e3dcdd7beaa",
+    "title": "במסך «המסע שלי» לחיצה על תמונת הפרופיל או שם המשתמש אינה מעבירה ל«פרופיל אישי»"
+  },
+  "#ba9c188c": {
+    "class": "automatable",
+    "feature": "profile",
+    "tests": [
+      "tests/profile/pr-02-edit-name.spec.ts"
+    ],
+    "reason": "Редактирование имени в «פרופיל אישי» (клик по имени с карандашом): новое имя видно в профиле, «המסע שלי», на главной, сохраняется после reload; пустое имя не сохраняется, макс. 60 символов. Изменяет данные — вернуть исходное имя",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "ba9c188cca07fdf596e11836",
+    "title": "במסך «פרופיל אישי» אין אפשרות לערוך את שם המשתמש"
+  },
+  "#7b04425b": {
+    "class": "duplicate",
+    "feature": "important-dates",
+    "tests": [],
+    "reason": "Дубль 6a86f7e6d81dc311e455cfae (פיתוח: לוח תאריכים אישי ואזכרות) — пункт 4 его реджекта 27.09: карандаш открывает редактирование с сохранением/удалением",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "7b04425bf1e17c4a007962ec",
+    "title": "לא ניתן לערוך רשומות באזור \"תאריכים חשובים\" בעמוד הבית באמצעות אייקון העיפרון"
+  },
+  "#0e824cde": {
+    "class": "automatable",
+    "feature": "profile",
+    "tests": [],
+    "reason": "Загрузка/замена/удаление фото профиля (JPG/PNG/WEBP ≤2MB) через аватар/иконку камеры; фото видно в профиле, «המסע שלי», на главной; «הסרת התמונה» с подтверждением. Изменяет данные — удалить после",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "0e824cdecf6c7c3c989ded56",
+    "title": "במסך «פרופיל אישי» אין אפשרות להעלות או לשנות תמונת פרופיל"
+  },
+  "#6a86f7ed": {
+    "class": "automatable",
+    "feature": "achievements",
+    "tests": [
+      "tests/achievements/ac-01-grid-six-achievements.spec.ts"
+    ],
+    "reason": "В «המסע שלי» список 6 достижений (תפילה ראשונה, 3 ימים רצופים, שבוע שלם, 30 תפילות, חודש רצוף, 100 תפילות), полученные отмечены и не дублируются. Открытый реджект про еврейский день/закат — вне автотеста (manual). @prod-safe",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7ed077a4d93f7702907",
+    "title": "פיתוח: הישגים ואבני דרך"
+  },
+  "#6a86f7e04288": {
+    "class": "automatable",
+    "feature": "important-dates",
+    "tests": [
+      "tests/important-dates/id-01-add-window-by-type.spec.ts",
+      "tests/important-dates/id-04-calendar-month-year-picker.spec.ts"
+    ],
+    "reason": "Окно добавления по «+»: заголовок = выбранный тип («אזכרה»/«תאריך חשוב»), поля по типу («שם הנפטר»/«שם התאריך»); после сохранения אזכרה в записи видно имя умершего, a11y-имя кнопки правки «אזכרה, <имя>: פתיחה לעריכה». Создаёт данные (с удалением) [тесты сопоставлены по общему #6a86f7e0 — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7e0428831bba5e587a1",
+    "title": "עיצוב מוקאפ: מסך הבית — מתקדם (לוח תאריכים, אזכרה)"
+  },
+  "#5c9434dd": {
+    "class": "manual-only",
+    "feature": "hebrew-day",
+    "tests": [],
+    "reason": "Синхронизация еврейского дня/zmanim с закатом и локацией (смена даты после שקיעה, ночные זמנים, отсутствие дублей в календаре после заката) — зависит от времени/заката; только ручная проверка или с подменой часов",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "5c9434dd5640862ad44ff9b5",
+    "title": "חוסר סנכרון בחישוב היום העברי, זמני התפילות והמיקום – התאריך מתחלף באופן שגוי, זמני התפילות אינם מותאמים למיקום וקיימות בעיות בטעינה ובזיהוי מיקום"
+  },
+  "#6a86f7e50893": {
+    "class": "automatable",
+    "feature": "home",
+    "tests": [
+      "tests/home/hm-02-recent-prayers.spec.ts",
+      "tests/home/hm-03-time-window-and-date-tags.spec.ts"
+    ],
+    "reason": "Главная пользователя с историей: «תפילות אחרונות» различимы (время выполнения), ограничение + «צפה בהכל» при большем числе, 5 табов навигации с едиными названиями, нет пустого состояния/ошибки до загрузки. @prod-safe (у user1 есть история) [тесты сопоставлены по общему #6a86f7e5 — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7e50893fd8a6c1cc546",
+    "title": "עיצוב מוקאפ: מסך הבית — מתקדם (תפילות אחרונות)"
+  },
+  "#6a86f7e6cfbe": {
+    "class": "automatable",
+    "feature": "journey",
+    "tests": [
+      "tests/impact-map/im-01-invite-dialog-text-and-share.spec.ts",
+      "tests/impact-map/im-02-map-me-two-branches-counter.spec.ts",
+      "tests/impact-map/im-03-own-invite-link-message.spec.ts",
+      "tests/important-dates/id-02-edit-save-delete.spec.ts",
+      "tests/important-dates/id-03-memorial-future-sunset-adar.spec.ts"
+    ],
+    "reason": "Лестница уровней в «המסע שלי»: «X / 10», название уровня на иврите, «N תפילות לדרגה הבאה». Повышение уровня как событие — manual (требует новых молитв). @prod-safe [тесты сопоставлены по общему #6a86f7e6 — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7e6cfbe0bb7b17f4ac0",
+    "title": "פיתוח: סולם דרגות התחזקות"
+  },
+  "#6a86f7fe": {
+    "class": "manual-only",
+    "feature": "onboarding",
+    "tests": [],
+    "reason": "Экраны /nusach, /level, /dates (тексты-пояснения, radio с доступными именами) доступны только в onboarding нового аккаунта — нужна регистрация нового номера; radio «רמת התחזקות» в профиле покрыт сценарием профиля (6a86f7f98ae7b6509aa9d337)",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7fe61f897b86fa0ce22",
+    "title": "פיתוח: התאמה אישית ראשונית של חוויית התפילה"
+  },
+  "#6a86f800e0b2": {
+    "class": "automatable",
+    "feature": "prayer-history",
+    "tests": [
+      "tests/prayer-history/ph-01-empty-history-message.spec.ts",
+      "tests/prayer-history/ph-01-history-grouping-search.spec.ts",
+      "tests/splash/sp-01-brand-promise-single-cta.spec.ts",
+      "tests/zmanim/zm-05-alot-mga-19-8-and-72.spec.ts",
+      "tests/zmanim/zm-06-source-unavailable.spec.ts"
+    ],
+    "reason": "/journey/history: группировка по дням, в записи — время выполнения (HH:mm, секунды при совпадении минуты), поиск по названию, григорианской и еврейской дате («תשרי», «י״ב»), подгрузка/пагинация длинной истории, пустое состояние. @prod-safe [тесты сопоставлены по общему #6a86f800 — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f800e0b2e2197815c212",
+    "title": "פיתוח: היסטוריית תפילות עם חיפוש"
+  },
+  "#96a6e418": {
+    "class": "automatable",
+    "feature": "home",
+    "tests": [
+      "tests/home/hm-04-loading-skeleton.spec.ts"
+    ],
+    "reason": "Загрузка главной: единый skeleton без заголовков пустых секций, одно пустое состояние только после загрузки (проверяемо с задержкой ответа через page.route). @prod-safe",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "96a6e418edad36fee5efdd11",
+    "title": "טעינת מסך הבית מציגה שלושה מצבים שונים ברצף"
+  },
+  "#6a86f7e29ae6": {
+    "class": "manual-only",
+    "feature": "onboarding",
+    "tests": [],
+    "reason": "Экран включения напоминаний в onboarding — только для нового аккаунта (регистрация нового номера); push-доставка — внешний сервис",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7e29ae60cd40deec6e6",
+    "title": "עיצוב מוקאפ: התאמה אישית — הפעלת תזכורות"
+  },
+  "#6a86f7ff6472": {
+    "class": "automatable",
+    "feature": "guided-prayer",
+    "tests": [
+      "tests/guided-prayer/gp-02-explanation-layer.spec.ts",
+      "tests/prayer-catalog/pc-01-catalog-search.spec.ts"
+    ],
+    "reason": "«סיים תפילה» → окно успеха: название завершённой молитвы, фраза חיזוק («תפילה שנאמרת בכוונה - עולה למעלה»), одна кнопка возврата на главную; молитва попадает в историю/счётчики. Создаёт невозвратную запись (append-only) [тесты сопоставлены по общему #6a86f7ff — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7ff64728b48c5abe9b1",
+    "title": "פיתוח: רגע הסיום והחיזוק אחרי תפילה"
+  },
+  "#6a86f7fd": {
+    "class": "manual-only",
+    "feature": "zmanim",
+    "tests": [],
+    "reason": "Поведение при недоступности внешнего источника (Hebcal) — внешний сервис; можно позже эмулировать page.route-abort, но сейчас ручная",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7fd24201876fc5ba237",
+    "title": "פיתוח: תלות חיצונית בזמנים הלכתיים ובלוח עברי"
+  },
+  "#6a86f7e99b6e": {
+    "class": "manual-only",
+    "feature": "rtl-nikud",
+    "tests": [
+      "tests/guided-prayer/gp-01-run-without-finish.spec.ts",
+      "tests/prayer-history/ph-02-same-minute-seconds.spec.ts"
+    ],
+    "reason": "Процесс сверки никуда/обрезки шрифта (скрипты verify-liturgy, codepoint-сверка с Sefaria) — нет конкретного UI-поведения для e2e; визуальная проверка вручную [тесты сопоставлены по общему #6a86f7e9 — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7e99b6e4b0dc07d8102",
+    "title": "פיתוח: אימות תצוגת עברית מנוקדת מימין לשמאל"
+  },
+  "#6a86f7dd94e5": {
+    "class": "duplicate",
+    "feature": "guided-prayer",
+    "tests": [],
+    "reason": "Дубль 6a86f7ff64728b48c5abe9b1 (פיתוח: רגע הסיום והחיזוק אחרי תפילה) — то же окно Congratulations",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7dd94e57a03a61f56a5",
+    "title": "עיצוב מוקאפ: חלון סיום תפילה בהצלחה"
+  },
+  "#6a9878c284e6": {
+    "class": "manual-only",
+    "feature": "splash",
+    "tests": [],
+    "reason": "Пиксельная проверка наложения scrim/контраста на 320x568 — визуальное измерение контраста, не поведение; ручная/визуальная",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a9878c284e6b75df9473adb",
+    "title": "Two legibility scrims overlap at narrow widths and reintroduce the banding the single-scrim merge exists to avoid"
+  },
+  "#6a9878c284e6b75df9473ada": {
+    "class": "manual-only",
+    "feature": "splash",
+    "tests": [],
+    "reason": "Состояние ошибки splash при ненастроенном Supabase (сбой окружения) на 320x568 — нельзя воспроизвести на expo.app без поломки бэкенда",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a9878c284e6b75df9473ada",
+    "title": "The splash error state pushes its own retry button off-screen at 320x568"
+  },
+  "#6a86f7fbd3b2": {
+    "class": "automatable",
+    "feature": "journey",
+    "tests": [
+      "tests/journey/jr-04-commitment-set-remove-restore.spec.ts"
+    ],
+    "reason": "«מקבל על עצמי» в «המסע שלי»: задать קבלה, изменить, удалить (пустое поле + сохранение), без фиктивного прогресса. Изменяет данные — вернуть исходное [тесты сопоставлены по общему #6a86f7fb — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7fbd3b266f8ba1c02b6",
+    "title": "פיתוח: קבלה אישית"
+  },
+  "#6a86f7fb6235": {
+    "class": "automatable",
+    "feature": "journey",
+    "tests": [
+      "tests/journey/jr-04-commitment-set-remove-restore.spec.ts"
+    ],
+    "reason": "Счётчики «ימים רצופים», «תפילות היום», «סה״כ תפילות» одинаковы на главной и в «המסע שלי». Рост счётчика после молитвы — создаёт данные. Чтение @prod-safe [тесты сопоставлены по общему #6a86f7fb — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7fb6235767572533724",
+    "title": "פיתוח: מוני תפילות ורצף ימים"
+  },
+  "#96038396": {
+    "class": "manual-only",
+    "feature": "important-dates",
+    "tests": [],
+    "reason": "Еврейская дата важной даты, добавленной после שקיעה — зависит от заката (реджект не закрыт)",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "96038396450feb1938bb2ef6",
+    "title": "התאריך העברי ב«תאריכים חשובים» אינו לפי כלל השקיעה"
+  },
+  "#6a86f7d87d0c": {
+    "class": "manual-only",
+    "feature": "home",
+    "tests": [
+      "tests/nusach-switch/ns-01-menu-desktop.spec.ts",
+      "tests/nusach-switch/ns-01-menu-mobile.spec.ts",
+      "tests/nusach-switch/ns-02-cancel-and-replace-parallel-section.spec.ts",
+      "tests/nusach-switch/ns-02-missing-section-fallback.spec.ts",
+      "tests/nusach-switch/ns-02-profile-unchanged.spec.ts",
+      "tests/nusach-switch/ns-02-same-nusach-no-dialog.spec.ts"
+    ],
+    "reason": "Состояние «מתחיל» (0 молитв) с ערבית — нужен новый аккаунт и вечернее время [тесты сопоставлены по общему #6a86f7d8 — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7d87d0c735723220cad",
+    "title": "עיצוב מוקאפ: מסך הבית — מתחיל (ערבית)"
+  },
+  "#6a86f7da6651": {
+    "class": "duplicate",
+    "feature": "prayer-history",
+    "tests": [
+      "tests/tehilim/th-01-chapter-reading-screen.spec.ts"
+    ],
+    "reason": "Дубль 6a86f800e0b2e2197815c212 (פיתוח: היסטוריית תפילות עם חיפוש) — тот же экран /journey/history [тесты сопоставлены по общему #6a86f7da — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7da665179ac029871d7",
+    "title": "עיצוב מוקאפ: היסטוריית התפילות שלי"
+  },
+  "#6a86f7dc50c1": {
+    "class": "duplicate",
+    "feature": "important-dates",
+    "tests": [],
+    "reason": "Дубль 6a86f7e6d81dc311e455cfae (פיתוח: לוח תאריכים אישי ואזכרות) — добавление нового תאריך חשוב покрыто сценарием фичи",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7dc50c11941ed276057",
+    "title": "עיצוב מוקאפ: מסך הבית — מתקדם (לוח תאריכים, תאריך חדש)"
+  },
+  "#6a86f7dce39e": {
+    "class": "manual-only",
+    "feature": "onboarding",
+    "tests": [],
+    "reason": "Добавление важных дат на шаге תאריך לידה в onboarding — только при регистрации нового аккаунта; карточка «תאריכים חשובים» в профиле покрыта сценарием профиля",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7dce39e612a4c21c311",
+    "title": "עיצוב מוקאפ: התאמה אישית — תאריך לידה והוספת תאריכים חשובים"
+  },
+  "#6a86f7dd17f0": {
+    "class": "manual-only",
+    "feature": "onboarding",
+    "tests": [],
+    "reason": "Экраны регистрации/onboarding (выравнивание, слайдер רמת התחזקות, экран תזכורות после מיקום) — только при регистрации нового номера",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7dd17f0618acff3df06",
+    "title": "עיצוב מוקאפ: יצירת חשבון — פרטי המשתמש"
+  },
+  "#6a86f7de226d": {
+    "class": "manual-only",
+    "feature": "onboarding",
+    "tests": [],
+    "reason": "Экран «יש! יצרת חשבון» показывается только после создания нового аккаунта",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7de226d1ac44debc305",
+    "title": "עיצוב מוקאפ: אישור יצירת חשבון והזמנה להתאמה אישית"
+  },
+  "#6a86f7dee650": {
+    "class": "manual-only",
+    "feature": "onboarding",
+    "tests": [],
+    "reason": "Экран תאריך לידה в onboarding — только при регистрации нового номера; мокап без отдельного поведения",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7dee6504f80322878dd",
+    "title": "עיצוב מוקאפ: התאמה אישית — תאריך לידה"
+  },
+  "#6a86f7df3389": {
+    "class": "automatable",
+    "feature": "journey",
+    "tests": [
+      "tests/guided-prayer/gp-05-explanation-and-source-additions.spec.ts",
+      "tests/guided-prayer/gp-05-explanation-and-source-berachot.spec.ts",
+      "tests/guided-prayer/gp-05-explanation-and-source-main-prayers.spec.ts",
+      "tests/guided-prayer/gp-05-explanation-example-mincha-sfarad-ashrei.spec.ts",
+      "tests/guided-prayer/gp-06-share-button-geometry-and-absence.spec.ts",
+      "tests/guided-prayer/gp-06-share-button-main-prayers.spec.ts",
+      "tests/guided-prayer/gp-06-share-dialog-text-and-payload.spec.ts",
+      "tests/journey/jr-03-rtl-layout-coordinates.spec.ts",
+      "tests/prayer-mode/pm-02-same-content-arvit-ashkenaz.spec.ts",
+      "tests/prayer-mode/pm-02-same-content-mincha-ashkenaz.spec.ts",
+      "tests/prayer-mode/pm-02-same-content-mincha-sfarad.spec.ts",
+      "tests/prayer-mode/pm-02-same-content-shacharit-ashkenaz.spec.ts",
+      "tests/prayer-mode/pm-02-same-content-shacharit-sfarad.spec.ts",
+      "tests/zmanim/zm-01-rows-method-names-desktop.spec.ts",
+      "tests/zmanim/zm-01-rows-method-names-mobile.spec.ts",
+      "tests/zmanim/zm-02-dates-location-daily-study.spec.ts",
+      "tests/zmanim/zm-04-no-location.spec.ts"
+    ],
+    "reason": "RTL-раскладка «המסע שלי»: в «מקבל על עצמי» текст справа, стрелка слева; в «פילוח תפילות» названия справа, числа слева; «N תפילות לדרגה הבאה» справа, «X/10» слева (по координатам). @prod-safe [тесты сопоставлены по общему #6a86f7df — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7df33897c11a86418e5",
+    "title": "עיצוב מוקאפ: המסע שלי — התקדמות, הישגים ומפת השפעה"
+  },
+  "#6a86f7e0b47b": {
+    "class": "automatable",
+    "feature": "important-dates",
+    "tests": [
+      "tests/important-dates/id-01-add-window-by-type.spec.ts",
+      "tests/important-dates/id-04-calendar-month-year-picker.spec.ts"
+    ],
+    "reason": "Календарь в окне אזכרה: показываются только дни текущего месяца (или с корректной еврейской датой), заголовок еврейского месяца формата «אלול תשפ״ו – תשרי תשפ״ז». Без сохранения — @prod-safe. Сочетание с תפילין-напоминанием — по дате, manual [тесты сопоставлены по общему #6a86f7e0 — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7e0b47bf4e5c233eb4a",
+    "title": "עיצוב מוקאפ: מסך הבית — מתקדם (לוח תאריכים, אזכרה)"
+  },
+  "#6a86f7e1a26f": {
+    "class": "duplicate",
+    "feature": "auth-login",
+    "tests": [],
+    "reason": "Дубль 6a86f7ecaba09fed4f69d553 (פיתוח: כניסה למוצר באמצעות מספר נייד וקוד אימות) — мокап того же экрана /phone",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7e1a26ff0db05b269f0",
+    "title": "עיצוב מוקאפ: כניסה באמצעות מספר נייד"
+  },
+  "#6a86f7e28081": {
+    "class": "duplicate",
+    "feature": "splash",
+    "tests": [],
+    "reason": "Дубль 6a86f80035be8e6d12fca1d2 (פיתוח: מסך כניסה ראשוני והצגת המוצר) — мокап того же splash-экрана",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7e28081e99b3c49fce8",
+    "title": "עיצוב מוקאפ: מסך פתיחה וברוכים הבאים"
+  },
+  "#6a86f7e217cc": {
+    "class": "manual-only",
+    "feature": "onboarding",
+    "tests": [],
+    "reason": "Мокап экрана מיקום в onboarding без реджектов/конкретного поведения; доступен только при регистрации нового номера",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7e217cc722e2cbb054d",
+    "title": "עיצוב מוקאפ: התאמה אישית — מיקום"
+  },
+  "#6a86f7e3eb71": {
+    "class": "manual-only",
+    "feature": "onboarding",
+    "tests": [],
+    "reason": "Мокап экрана «מה מניע אותך» в onboarding — только при регистрации нового номера",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7e3eb71518549a1ef7d",
+    "title": "עיצוב מוקאפ: התאמה אישית — מה מניע אותך"
+  },
+  "#6a86f7e39866": {
+    "class": "manual-only",
+    "feature": "onboarding",
+    "tests": [],
+    "reason": "Мокап экрана выбора נוסח в onboarding — только при регистрации нового номера (смена נוסח после входа — в профиле)",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7e398666095fba7d6ac",
+    "title": "עיצוב מוקאפ: התאמה אישית — בחירת נוסח תפילה"
+  },
+  "#6a86f7e42330": {
+    "class": "manual-only",
+    "feature": "onboarding",
+    "tests": [],
+    "reason": "Мокап экрана רמת התחזקות в onboarding — только при регистрации нового номера",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7e42330a27e1b01e2f5",
+    "title": "עיצוב מוקאפ: התאמה אישית — רמת ההתחזקות ותדירות התפילה"
+  },
+  "#6a86f7e4db51": {
+    "class": "manual-only",
+    "feature": "onboarding",
+    "tests": [],
+    "reason": "Мокап экрана сводки настроек onboarding — только при регистрации нового номера",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7e4db51d4cbd035ac45",
+    "title": "עיצוב מוקאפ: התאמה אישית — סיכום ההגדרות"
+  },
+  "#6a86f7e5abd5": {
+    "class": "duplicate",
+    "feature": "auth-login",
+    "tests": [
+      "tests/home/hm-02-recent-prayers.spec.ts",
+      "tests/home/hm-03-time-window-and-date-tags.spec.ts"
+    ],
+    "reason": "Дубль 6a86f7ecaba09fed4f69d553 (פיתוח: כניסה למוצר באמצעות מספר נייד וקוד אימות) — мокап экрана ввода OTP, покрыт сценарием входа [тесты сопоставлены по общему #6a86f7e5 — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7e5abd5272888e07097",
+    "title": "עיצוב מוקאפ: הזנת קוד אימות"
+  },
+  "#6a86f7e5cfe3": {
+    "class": "automatable",
+    "feature": "home",
+    "tests": [
+      "tests/home/hm-02-recent-prayers.spec.ts",
+      "tests/home/hm-03-time-window-and-date-tags.spec.ts"
+    ],
+    "reason": "По реджекту 14.09 (проверяемо на user1 в состоянии «מתקדם»): окно времени молитвы в верхней левой части под датой; тег карточки «תאריכים חשובים» — еврейская дата («אדר / י״ג»), григорианская — вторичной строкой. Состояние «מתחיל» — manual. @prod-safe (если у user1 есть важные даты) [тесты сопоставлены по общему #6a86f7e5 — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7e5cfe391841cc86bce",
+    "title": "עיצוב מוקאפ: מסך הבית — מתחיל (מנחה)"
+  },
+  "#6a86f7e8": {
+    "class": "automatable",
+    "feature": "journey",
+    "tests": [
+      "tests/journey/jr-01-intermediate-level-15-prayers.spec.ts",
+      "tests/journey/jr-01-new-user-zero-prayers.spec.ts",
+      "tests/journey/jr-01-real-data.spec.ts"
+    ],
+    "reason": "/journey: уровень и «N לדרגה הבאה», три счётчика, קבלה, פילוח по молитвам, последние молитвы, אגרגט מפת השפעה, сетка достижений (получено/не получено различимо), переход в историю. @prod-safe",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7e80e67a30f2e6966df",
+    "title": "פיתוח: מסך המסע האישי"
+  },
+  "#6a86f7ea": {
+    "class": "automatable",
+    "feature": "home",
+    "tests": [
+      "tests/home/hm-01-daily-home.spec.ts"
+    ],
+    "reason": "Главная: еврейская дата, ближайшая молитва с именем, נוסח и окном времени, кнопка «התחל תפילה» → /prayer/<key>, 3 счётчика, «תזכורות מהירות», «תאריכים חשובים», нижняя навигация. Состав табов — по более новым тикетам 6a86f7fcc8318e651941580c/6a86f7daaed065fa18912a83: תהילים, תפילות, בית, המסע שלי, ברכות (реджект 16.09 со «שיעורי תורה» устарел). @prod-safe",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7ea711223d9ba93535f",
+    "title": "פיתוח: מסך בית יומי עם התפילה הקרובה"
+  },
+  "#6a86f7ecaba0": {
+    "class": "automatable",
+    "feature": "auth-login",
+    "tests": [],
+    "reason": "Вход: / → «בואו נתחיל» → /phone (очистить мокап-номер), ввод номера user1, «שילחו קוד אימות», ввод 4-значного тестового OTP → /home; повторная отправка кода. Без создания данных — @prod-safe. Чекбокс תנאי השימוש на /register — только при регистрации (manual)",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7ecaba09fed4f69d553",
+    "title": "פיתוח: כניסה למוצר באמצעות מספר נייד וקוד אימות"
+  },
+  "#6a86f7ecd8d9": {
+    "class": "manual-only",
+    "feature": "registration",
+    "tests": [],
+    "reason": "Создание аккаунта (форма /register, порядок «מוכנים להתחיל» → «יש! יצרת חשבון» → главная) — требует регистрации нового номера и SMS",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7ecd8d9c33a71a74b79",
+    "title": "פיתוח: יצירת חשבון והסכמות דיוור"
+  },
+  "#6a86f7f9": {
+    "class": "automatable",
+    "feature": "profile",
+    "tests": [
+      "tests/profile/pr-01-guest-no-password.spec.ts",
+      "tests/profile/pr-01-personal-profile-preferences.spec.ts",
+      "tests/profile/pr-04-edit-preferences.spec.ts"
+    ],
+    "reason": "«פרופיל אישי» (клик по имени на главной): показаны מיקום, תאריך לידה, תזכורות, נוסח, רמת התחזקות (radio «פעם בשבוע»/«כל יום» с доступными именами), תאריכים חשובים, «התנתקות»; редактирование и сохранение. Просмотр @prod-safe; изменение — вернуть исходное",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f7f98ae7b6509aa9d337",
+    "title": "פיתוח: עריכת פרופיל והעדפות אחרי ההצטרפות"
+  },
+  "#6a86f80035be": {
+    "class": "automatable",
+    "feature": "splash",
+    "tests": [
+      "tests/prayer-history/ph-01-empty-history-message.spec.ts",
+      "tests/prayer-history/ph-01-history-grouping-search.spec.ts",
+      "tests/splash/sp-01-brand-promise-single-cta.spec.ts",
+      "tests/zmanim/zm-05-alot-mga-19-8-and-72.spec.ts",
+      "tests/zmanim/zm-06-source-unavailable.spec.ts"
+    ],
+    "reason": "Splash (/ без входа): бренд, обещание, пасук, одна кнопка «בואו נתחיל» → /phone. Пункты реджекта 08.09 о главной (аватар справа от имени, «התנתקות» не в шапке главной, а в профиле, «בית» в центре навигации) — в сценарии home. @prod-safe [тесты сопоставлены по общему #6a86f800 — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a86f80035be8e6d12fca1d2",
+    "title": "פיתוח: מסך כניסה ראשוני והצגת המוצר"
+  },
+  "#6a8edf78d640": {
+    "class": "automatable",
+    "feature": "web-shell",
+    "tests": [
+      "tests/registration/rg-02-consent-keyboard-progress-aria.spec.ts",
+      "tests/web-shell/ws-01-title-and-favicon-guest.spec.ts",
+      "tests/web-shell/ws-01-title-and-favicon-user1.spec.ts"
+    ],
+    "reason": "На каждом маршруте document.title не пустой и есть link[rel*=icon]. @prod-safe [тесты сопоставлены по общему #6a8edf78 — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8edf78d6400316c09cd8ca",
+    "title": "The web target has no document title and no favicon"
+  },
+  "#6a8edf78d6400316c09cd8c9": {
+    "class": "automatable",
+    "feature": "a11y",
+    "tests": [
+      "tests/registration/rg-02-consent-keyboard-progress-aria.spec.ts",
+      "tests/web-shell/ws-01-title-and-favicon-guest.spec.ts",
+      "tests/web-shell/ws-01-title-and-favicon-user1.spec.ts"
+    ],
+    "reason": "При смене маршрута (/ → /phone и др.) фокус переходит на новый экран, в консоли нет предупреждения «Blocked aria-hidden…». @prod-safe [тесты сопоставлены по общему #6a8edf78 — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8edf78d6400316c09cd8c9",
+    "title": "Focus is not moved on route change, so aria-hidden is applied over the focused element"
+  },
+  "#6a8edf78d6400316c09cd8c8": {
+    "class": "manual-only",
+    "feature": "tech-debt",
+    "tests": [
+      "tests/registration/rg-02-consent-keyboard-progress-aria.spec.ts",
+      "tests/web-shell/ws-01-title-and-favicon-guest.spec.ts",
+      "tests/web-shell/ws-01-title-and-favicon-user1.spec.ts"
+    ],
+    "reason": "Код-ревью: значения дизайна в theme/tokens.ts вместо литералов в компонентах — нет UI-поведения [тесты сопоставлены по общему #6a8edf78 — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8edf78d6400316c09cd8c8",
+    "title": "Measured design values live in components instead of theme/tokens.ts"
+  },
+  "#6a8edf78d6400316c09cd8c7": {
+    "class": "manual-only",
+    "feature": "tech-debt",
+    "tests": [
+      "tests/registration/rg-02-consent-keyboard-progress-aria.spec.ts",
+      "tests/web-shell/ws-01-title-and-favicon-guest.spec.ts",
+      "tests/web-shell/ws-01-title-and-favicon-user1.spec.ts"
+    ],
+    "reason": "Конфиг нативной сборки app.json (slug, scheme, bundle id, splash asset) — не проверяется в веб-браузере [тесты сопоставлены по общему #6a8edf78 — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8edf78d6400316c09cd8c7",
+    "title": "app.json still carries the template identity, and so does the native splash asset"
+  },
+  "#6a8edf78d6400316c09cd8c6": {
+    "class": "manual-only",
+    "feature": "registration",
+    "tests": [
+      "tests/registration/rg-02-consent-keyboard-progress-aria.spec.ts",
+      "tests/web-shell/ws-01-title-and-favicon-guest.spec.ts",
+      "tests/web-shell/ws-01-title-and-favicon-user1.spec.ts"
+    ],
+    "reason": "Хранение регистрационных данных в user_profiles/reminder_consents (БД) — бэкенд, требует регистрации нового номера [тесты сопоставлены по общему #6a8edf78 — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8edf78d6400316c09cd8c6",
+    "title": "Registration data lives in auth.users.user_metadata and must move to user_profiles and reminder_consents"
+  },
+  "#6a8edf78d6400316c09cd8c5": {
+    "class": "manual-only",
+    "feature": "auth-login",
+    "tests": [
+      "tests/registration/rg-02-consent-keyboard-progress-aria.spec.ts",
+      "tests/web-shell/ws-01-title-and-favicon-guest.spec.ts",
+      "tests/web-shell/ws-01-title-and-favicon-user1.spec.ts"
+    ],
+    "reason": "Сообщение при rate-limit отправки SMS (429 over_sms_send_rate_limit) — внешний SMS-провайдер, воспроизводится только превышением лимита [тесты сопоставлены по общему #6a8edf78 — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8edf78d6400316c09cd8c5",
+    "title": "classifyAuthError over-triggers the delivery branch and tells the user not to retry"
+  },
+  "#6a8edf78d6400316c09cd8c4": {
+    "class": "automatable",
+    "feature": "registration",
+    "tests": [
+      "tests/registration/rg-02-consent-keyboard-progress-aria.spec.ts",
+      "tests/web-shell/ws-01-title-and-favicon-guest.spec.ts",
+      "tests/web-shell/ws-01-title-and-favicon-user1.spec.ts"
+    ],
+    "reason": "На /register (гость, через «הצטרפו אלינו») чекбокс согласия переключается клавишей Space, aria-checked меняется true/false. Без отправки формы — @prod-safe [тесты сопоставлены по общему #6a8edf78 — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8edf78d6400316c09cd8c4",
+    "title": "The consent checkbox is not operable by keyboard and never exposes aria-checked"
+  },
+  "#6a8ee2aa": {
+    "class": "superseded",
+    "feature": "splash",
+    "tests": [],
+    "reason": "Контраст бренда/пасука на splash при широком экране — дефект «переехал», актуальное требование в 6a98690cc6a3a85a885383ed (контраст пасука и wordmark на всех ширинах); проверка визуальная/ручная",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8ee2aab9e1458daf9c8ea1",
+    "title": "The splash brand mark and verse lose contrast on a wide viewport"
+  },
+  "#6a8f0108": {
+    "class": "manual-only",
+    "feature": "tech-debt",
+    "tests": [],
+    "reason": "Список замечаний код-ревью спринта 1 (+ iOS-устройство) — не UI-поведение",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8f0108431f913901d9439e",
+    "title": "Act on the sprint-1 code-review advisories"
+  },
+  "#6a905cebd33c": {
+    "class": "automatable",
+    "feature": "a11y",
+    "tests": [
+      "tests/a11y/a11y-02-unique-ids-guest.spec.ts",
+      "tests/a11y/a11y-02-unique-ids-user1.spec.ts"
+    ],
+    "reason": "Все id в отрендеренном документе уникальны — проверяемо на доступных маршрутах (/, /phone, /home, /journey, /profile, /zmanim). Сам /dates (onboarding) недоступен зарегистрированному — там manual. @prod-safe [тесты сопоставлены по общему #6a905ceb — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a905cebd33cb282cef3f9ad",
+    "title": "Figma layer names leak into the DOM as duplicate ids"
+  },
+  "#6a905cebd33cb282cef3f9ac": {
+    "class": "manual-only",
+    "feature": "onboarding",
+    "tests": [
+      "tests/a11y/a11y-02-unique-ids-guest.spec.ts",
+      "tests/a11y/a11y-02-unique-ids-user1.spec.ts"
+    ],
+    "reason": "Стиль строки «שיתוף מיקום» на экране מיקום в onboarding — только при регистрации нового номера [тесты сопоставлены по общему #6a905ceb — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a905cebd33cb282cef3f9ac",
+    "title": "The location share row is permanently styled as selected"
+  },
+  "#6a905cebd33cb282cef3f9ab": {
+    "class": "manual-only",
+    "feature": "onboarding",
+    "tests": [
+      "tests/a11y/a11y-02-unique-ids-guest.spec.ts",
+      "tests/a11y/a11y-02-unique-ids-user1.spec.ts"
+    ],
+    "reason": "Состояние загрузки экрана מיקום (код/документация состояний) — onboarding нового аккаунта, без наблюдаемого поведения [тесты сопоставлены по общему #6a905ceb — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a905cebd33cb282cef3f9ab",
+    "title": "The location screen has a loading state that can never render"
+  },
+  "#6a905cebd33cb282cef3f9aa": {
+    "class": "superseded",
+    "feature": "onboarding",
+    "tests": [
+      "tests/a11y/a11y-02-unique-ids-guest.spec.ts",
+      "tests/a11y/a11y-02-unique-ids-user1.spec.ts"
+    ],
+    "reason": "Индикатор прогресса onboarding (5 точек на 6 экранов) — переделан в 6a9fd44e142183c659facb10 (прогресс начинается с экрана регистрации, убран со splash/phone/OTP) [тесты сопоставлены по общему #6a905ceb — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a905cebd33cb282cef3f9aa",
+    "title": "The onboarding progress indicator has five dots for six screens"
+  },
+  "#6a905cebd33cb282cef3f9a9": {
+    "class": "superseded",
+    "feature": "splash",
+    "tests": [
+      "tests/a11y/a11y-02-unique-ids-guest.spec.ts",
+      "tests/a11y/a11y-02-unique-ids-user1.spec.ts"
+    ],
+    "reason": "Контраст заголовка «ברוכים הבאים לאור הגאולה» на splash — дефект контраста «переехал» далее, актуально 6a98690cc6a3a85a885383ed; визуальная проверка вручную [тесты сопоставлены по общему #6a905ceb — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a905cebd33cb282cef3f9a9",
+    "title": "The splash heading is white on white — the contrast defect moved rather than left"
+  },
+  "#6a967a00": {
+    "class": "automatable",
+    "feature": "registration",
+    "tests": [
+      "tests/registration/rg-01-join-link-opens-register.spec.ts"
+    ],
+    "reason": "Ссылка «הצטרפו אלינו» на /phone ведёт на экран регистрации (/register по Figma), а не на вход по номеру; тексты /phone — про вход. Без отправки — @prod-safe",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a967a00d06d6646b46a1af6",
+    "title": "לא ניתן להתחיל הרשמה דרך הקישור \"הצטרפו אלינו\""
+  },
+  "#6a98690cc6a3": {
+    "class": "automatable",
+    "feature": "registration",
+    "tests": [
+      "tests/registration/rg-02-consent-keyboard-progress-aria.spec.ts",
+      "tests/splash/sp-02-single-top-heading.spec.ts"
+    ],
+    "reason": "На экране регистрации [role=progressbar] имеет aria-valuemin/max/now (или не декларирует accessibilityValue). Без отправки — @prod-safe [тесты сопоставлены по общему #6a98690c — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a98690cc6a3a85a885383f1",
+    "title": "OnboardingProgress accessibilityValue never reaches the web DOM"
+  },
+  "#6a98690cc6a3a85a885383f0": {
+    "class": "automatable",
+    "feature": "splash",
+    "tests": [
+      "tests/registration/rg-02-consent-keyboard-progress-aria.spec.ts",
+      "tests/splash/sp-02-single-top-heading.spec.ts"
+    ],
+    "reason": "На splash ровно один заголовок верхнего уровня (h1/aria-level=1); wordmark не второй h1. @prod-safe [тесты сопоставлены по общему #6a98690c — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a98690cc6a3a85a885383f0",
+    "title": "The splash renders two competing top-level headings"
+  },
+  "#6a98690cc6a3a85a885383ef": {
+    "class": "manual-only",
+    "feature": "tech-debt",
+    "tests": [
+      "tests/registration/rg-02-consent-keyboard-progress-aria.spec.ts",
+      "tests/splash/sp-02-single-top-heading.spec.ts"
+    ],
+    "reason": "Правило четырёх состояний в docs/AGENTS.md — документация, без UI [тесты сопоставлены по общему #6a98690c — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a98690cc6a3a85a885383ef",
+    "title": "The four-states house rule now contradicts shipped code with no exception clause"
+  },
+  "#6a98690cc6a3a85a885383ee": {
+    "class": "manual-only",
+    "feature": "tech-debt",
+    "tests": [
+      "tests/registration/rg-02-consent-keyboard-progress-aria.spec.ts",
+      "tests/splash/sp-02-single-top-heading.spec.ts"
+    ],
+    "reason": "Скрипты проверки ассетов в gate/CI — без UI [тесты сопоставлены по общему #6a98690c — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a98690cc6a3a85a885383ee",
+    "title": "Asset-integrity guards run in no gate, so both are currently theatre"
+  },
+  "#6a98690cc6a3a85a885383ed": {
+    "class": "manual-only",
+    "feature": "splash",
+    "tests": [
+      "tests/registration/rg-02-consent-keyboard-progress-aria.spec.ts",
+      "tests/splash/sp-02-single-top-heading.spec.ts"
+    ],
+    "reason": "Контраст пасука и wordmark на splash (WCAG worst-pixel, 320x568 и др.) — пиксельные измерения контраста, ручная/визуальная проверка [тесты сопоставлены по общему #6a98690c — коллизия #hash, сверить по id]",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a98690cc6a3a85a885383ed",
+    "title": "The splash verse is invisible at narrow widths — the contrast defect moved again, one element up"
+  },
+  "#6a9d7d62": {
+    "class": "manual-only",
+    "feature": "registration",
+    "tests": [],
+    "reason": "Ошибка 500 при создании аккаунта / отправке SMS — регистрация нового номера и SMS-провайдер",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a9d7d62bfb09c5bdfce1ae5",
+    "title": "שגיאת 500 בעת יצירת חשבון – לא ניתן לשלוח קוד SMS ולהשלים את ההרשמה"
+  },
+  "#6a9fcde7": {
+    "class": "automatable",
+    "feature": "registration",
+    "tests": [],
+    "reason": "Регистрация с уже зарегистрированным номером (user1 0501112243) на /register: сразу на шаге номера — сообщение «חשבון כבר קיים» со ссылкой на вход, код не отправляется, кнопка неактивна. Данные не создаются — @prod-safe",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a9fcde7f726a16b4f7ef7ba",
+    "title": "משתמש שכבר רשום יכול לעבור את כל תהליך ההרשמה והשגיאה מוצגת רק בשלב האחרון"
+  },
+  "#6a9fd44e": {
+    "class": "automatable",
+    "feature": "auth-login",
+    "tests": [],
+    "reason": "Прогресс-бар отсутствует на splash, /phone и экране OTP (появляется только в регистрации). @prod-safe",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a9fd44e142183c659facb10",
+    "title": "פס התקדמות מוצג במסכי פתיחה ואימות שבהם הוא לא נדרש"
+  },
+  "#6a9fdcc5": {
+    "class": "automatable",
+    "feature": "web-shell",
+    "tests": [],
+    "reason": "Шрифт по дизайну (Heebo) применён к заголовкам, тексту, кнопкам, навигации, карточкам, полям — проверка computed font-family/weight на главной. Сравнение с Figma — визуально. @prod-safe",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a9fdcc581ca4e63ef234a48",
+    "title": "הפונט באתר אינו תואם לפונט בעיצוב"
+  },
+  "#6a9fdd33": {
+    "class": "automatable",
+    "feature": "home",
+    "tests": [],
+    "reason": "В приветствии на главной отображается имя пользователя (display name), а не e-mail. @prod-safe",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a9fdd33038c207781fc0813",
+    "title": "לאחר ההרשמה מוצג האימייל במקום שם המשתמש שהוזן בתהליך ההרשמה"
+  },
+  "#6aa268eb": {
+    "class": "automatable",
+    "feature": "auth-login",
+    "tests": [],
+    "reason": "После «התנתקות» в профиле повторный вход тем же номером + OTP проходит без 502 и ведёт на /home. Данные не создаются (после — пересохранить storageState). @prod-safe",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6aa268ebf91b42fb1c47355c",
+    "title": "לא ניתן להתחבר מחדש לחשבון לאחר Logout — מתקבלת שגיאת 502 Bad Gateway לאחר אימות OTP"
+  },
+  "#6aa7f009": {
+    "class": "automatable",
+    "feature": "onboarding",
+    "tests": [
+      "tests/onboarding/ob-01-registered-user-redirect.spec.ts"
+    ],
+    "reason": "Зарегистрированный пользователь, открывающий вручную /level, /summary, /birth-date, /dates, /nusach и др. маршруты onboarding/регистрации, перенаправляется на /home. @prod-safe",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6aa7f0097df27a08d26aeddc",
+    "title": "משתמש רשום יכול לגשת לעמודי ה-Onboarding באמצעות שינוי ה-URL"
+  },
+  "#6aa7ca27": {
+    "class": "automatable",
+    "feature": "home",
+    "tests": [],
+    "reason": "Ближайшая молитва (тип + окно времени, напр. «מנחה 12:30 - 18:45») и еврейская дата всегда показаны на главной и в «המסע שלי» рядом с «מעבר לתפילה הקרובה». @prod-safe",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6aa7ca279d6e64c76883f464",
+    "title": "התאריך והשעה של התפילה הבאה אינם מוצגים בעמוד הראשי ובעמוד \"המסע שלי\""
+  },
+  "#31c88137": {
+    "class": "has-tests",
+    "feature": "journey",
+    "tests": [
+      "tests/journey/jr-04-commitment-set-remove-restore.spec.ts",
+      "tests/journey/jr-05-commitment-load-error-retry.spec.ts",
+      "tests/journey/jr-05-commitment-open-during-loading.spec.ts",
+      "tests/journey/jr-05-empty-commitment-empty-state.spec.ts",
+      "tests/journey/jr-05-save-right-after-load-keeps-commitment.spec.ts"
+    ],
+    "reason": "миграция журнала 2026-10-06: #hash найден в .qa/tests / .qa/e2e/tests, вне инвентаря backfill (проверен в /qa)",
+    "date": "2026-10-06",
+    "source": "qa"
+  },
+  "#22c9d541": {
+    "class": "has-tests",
+    "feature": "journey",
+    "tests": [
+      "tests/journey/jr-06-rankup-window-not-repeated-clean-device.spec.ts"
+    ],
+    "reason": "миграция журнала 2026-10-06: #hash найден в .qa/tests / .qa/e2e/tests, вне инвентаря backfill (проверен в /qa)",
+    "date": "2026-10-06",
+    "source": "qa"
+  },
+  "#3cc72778": {
+    "class": "has-tests",
+    "feature": "reminders",
+    "tests": [
+      "tests/reminders/rm-01-quick-reminders-block.spec.ts",
+      "tests/reminders/rm-05-tefillin-row-days-israel.spec.ts",
+      "tests/reminders/rm-06-tefillin-row-alot-to-shkiya.spec.ts",
+      "tests/reminders/rm-07-tefillin-row-date-back-and-forth.spec.ts"
+    ],
+    "reason": "миграция журнала 2026-10-06: #hash найден в .qa/tests / .qa/e2e/tests, вне инвентаря backfill (проверен в /qa)",
+    "date": "2026-10-06",
+    "source": "qa"
+  },
+  "#a5decf4a": {
+    "class": "qa-passed",
+    "feature": "admin",
+    "tests": [
+      "tests/admin/ad-01-admin-access-by-role.spec.ts",
+      "tests/admin/ad-02-profile-admin-entry.spec.ts",
+      "tests/admin/ad-04-prayer-admin-screen-cards.spec.ts",
+      "tests/guided-prayer/gp-02-explanation-layer.spec.ts",
+      "tests/guided-prayer/gp-07-approved-source-line.spec.ts",
+      "tests/guided-prayer/gp-07-admin-user-approval-consistency.spec.ts",
+      "tests/guided-prayer/gp-08-no-recording-listen-disabled.spec.ts",
+      "tests/guided-prayer/gp-05-explanation-and-source-main-prayers.spec.ts",
+      "tests/guided-prayer/gp-05-explanation-and-source-additions.spec.ts",
+      "tests/guided-prayer/gp-05-explanation-and-source-berachot.spec.ts"
+    ],
+    "reason": "עבר QA 06.10. Автотесты только на просмотр (@prod-safe @mobile). Вручную: AD-05 валидация формы קטע, AD-06 черновик→«אישור ופרסום», AD-07 загрузка/удаление MP3, AD-08 утверждение объяснения/совета — прод, утверждение необратимо, загрузка видна всем.",
+    "date": "2026-10-06",
+    "source": "qa",
+    "id": "a5decf4a9de744b22c38c93f",
+    "title": "חסרה אפשרות לניהול ואישור טקסט והקלטות של תפילות דרך ממשק הניהול"
+  },
+  "#6a86f7e16f63": {
+    "class": "qa-passed",
+    "feature": "guided-prayer",
+    "tests": [
+      "tests/guided-prayer/gp-02-explanation-layer.spec.ts"
+    ],
+    "reason": "עבר QA 06.10 (мокап S-21, Figma 454:4469). Автотест — структура окна, «נוסח זמני» / «מקור: … · אושר על ידי …», закрытие ✕ на тот же קטע. Визуальная сверка с Figma (позиция, скругления, цвета, 1–2 строки без прокрутки) — вручную.",
+    "date": "2026-10-06",
+    "source": "qa",
+    "id": "6a86f7e16f63045a0146bff6",
+    "title": "עיצוב מוקאפ: חלון הסבר על התפילה"
+  },
+  "#6a86f7eda7b2": {
+    "title": "פיתוח: האזנה להקראת התפילה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-11",
+    "platform": "iOS app (TestFlight)",
+    "tests": [
+      "app-e2e/specs/recordings/rc-01-no-recording-state.e2e.ts",
+      "app-e2e/specs/recordings/rc-02-per-page-playback.e2e.ts",
+      "app-e2e/specs/recordings/rc-03-other-nusach-no-playback.e2e.ts",
+      "app-e2e/specs/recordings/rc-04-tehilim-39-player.e2e.ts",
+      "app-e2e/specs/recordings/rc-05-approve-recording-in-app.e2e.ts",
+      "app-e2e/specs/recordings/rc-06-remove-recordings-cleanup.e2e.ts"
+    ]
+  },
+  "#b7a78c66": {
+    "class": "qa-passed",
+    "feature": "home",
+    "tests": [
+      "app-e2e/specs/home/hm-04-prayer-name-not-clipped-b7a78c66.e2e.ts"
+    ],
+    "reason": "עבר QA 13.10.2026 (iPhone, TestFlight 1.0.0 (19)). Имя молитвы на главной не срезано. Пиксели верха букв — @manual-check.",
+    "date": "2026-10-13",
+    "source": "qa",
+    "id": "b7a78c66d9b000fbc0f7d7cb",
+    "platform": "iOS app (TestFlight)"
+  },
+  "#26ca8b97": {
+    "class": "qa-passed",
+    "feature": "tehilim",
+    "tests": [
+      "app-e2e/specs/tehilim-list/tl-04-search-placeholder-rtl-26ca8b97.e2e.ts"
+    ],
+    "reason": "עבר QA 13.10.2026 (iPhone, TestFlight 1.0.0 (19)). Placeholder поиска справа, лупа (תהילים, פרקי אבות). Выравнивание внутри поля — @manual-check.",
+    "date": "2026-10-13",
+    "source": "qa",
+    "id": "26ca8b97f0071246c8bc9c09",
+    "platform": "iOS app (TestFlight)"
+  },
+  "#cc02d264": {
+    "class": "qa-passed",
+    "feature": "share",
+    "tests": [
+      "app-e2e/specs/share/sh-01-share-dialogs-cc02d264.e2e.ts"
+    ],
+    "reason": "עבר QA 13.10.2026 (iPhone, TestFlight 1.0.0 (19)). Окна «שיתוף»/«חזק את חברך» справа, «ביטול», share sheet (закрыт без отправки), вкладки работают.",
+    "date": "2026-10-13",
+    "source": "qa",
+    "id": "cc02d264463b24e61ea805d9",
+    "platform": "iOS app (TestFlight)"
+  },
+  "#4063a39b": {
+    "class": "qa-passed",
+    "feature": "admin",
+    "tests": [
+      "app-e2e/specs/admin/ad-09-edit-section-rtl-4063a39b.e2e.ts"
+    ],
+    "reason": "עבר QA 13.10.2026 (iPhone, TestFlight 1.0.0 (19)). «עריכת קטע»: ввод справа налево, выход без сохранения. Позиция курсора — @manual-check.",
+    "date": "2026-10-13",
+    "source": "qa",
+    "id": "4063a39b6d45e6f9e1d3d862",
+    "platform": "iOS app (TestFlight)"
+  },
+  "#6a86f7ed9d38": {
+    "class": "qa-passed",
+    "feature": "admin",
+    "tests": [
+      "app-e2e/specs/admin/ad-10-mp3-upload-in-app-haetz-6a86f7ed9d38.e2e.ts",
+      "app-e2e/specs/admin/ad-07-recording-upload.e2e.ts",
+      "app-e2e/specs/recordings/rc-05-approve-recording-in-app.e2e.ts"
+    ],
+    "reason": "עבר QA 13.10.2026 (iPhone, TestFlight 1.0.0 (19)). F-92: загрузка MP3 в приложении → утверждение → у пользователя играет → удаление. iOS: выбор файла в «Файлы» — @manual-check.",
+    "date": "2026-10-13",
+    "source": "qa",
+    "id": "6a86f7ed9d38b8e55508d699",
+    "platform": "iOS app (TestFlight)"
+  },
+  "#c66fac12": {
+    "class": "qa-passed",
+    "feature": "admin",
+    "tests": [
+      "app-e2e/specs/admin/ad-08-broken-mp3-c66fac12.e2e.ts"
+    ],
+    "reason": "עבר QA 13.10.2026 (iPhone, TestFlight 1.0.0 (19)). Битый MP3 → «הקובץ שנבחר אינו קובץ שמע תקין…», записи нет. iOS: выбор файла — @manual-check.",
+    "date": "2026-10-13",
+    "source": "qa",
+    "id": "c66fac122c16a223a577751a",
+    "platform": "iOS app (TestFlight)"
+  },
+  "#6a86f7fca7ea": {
+    "class": "qa-passed",
+    "feature": "tehilim",
+    "tests": [
+      "app-e2e/specs/tehilim/th-04-f52-chapter1-list-empty-chapter-6a86f7fc.e2e.ts",
+      "app-e2e/specs/share/sh-01-share-dialogs-cc02d264.e2e.ts"
+    ],
+    "reason": "עבר QA 13.10.2026 (iPhone, TestFlight 1.0.0 (19)). F-52 AC1–AC5. AC2 @data (не убирается); AC4 @data @manual-check — пустая ל״ט готовится в админке, текст вернуть из orig-tehilim-39.txt. Ключ не #6a86f7fc — коллизия с другим тикетом.",
+    "date": "2026-10-13",
+    "source": "qa",
+    "id": "6a86f7fca7ea70e0f9ead0d3",
+    "platform": "iOS app (TestFlight)"
+  },
+  "#07650fd9": {
+    "class": "qa-passed",
+    "feature": "journey",
+    "tests": [
+      "app-e2e/specs/journey/jr-07-statusbar-scroll-07650fd9.e2e.ts"
+    ],
+    "reason": "עבר QA 13.10.2026 (iPhone, TestFlight 1.0.0 (19)). Контент не заходит под строку статуса («המסע שלי», «בית»). Белый текст статус-бара принят как есть. Пиксели — @manual-check.",
+    "date": "2026-10-13",
+    "source": "qa",
+    "id": "07650fd9d421f9aaf1bdceb7",
+    "platform": "iOS app (TestFlight)"
+  },
+  "#81a2fb8e": {
+    "class": "qa-passed",
+    "feature": "registration",
+    "tests": [
+      "app-e2e/specs/registration/rg-04-legal-back-button-81a2fb8e.e2e.ts"
+    ],
+    "reason": "עבר QA 13.10.2026 (iPhone, TestFlight 1.0.0 (19)). «חזרה» с «תנאי השימוש»/«מדיניות הפרטיות» → «יצירת חשבון». Нужен выход из аккаунта. Направление стрелки — @manual-check.",
+    "date": "2026-10-13",
+    "source": "qa",
+    "id": "81a2fb8ecbdb429cabc687b5",
+    "platform": "iOS app (TestFlight)"
+  },
+  "#403c0b3d": {
+    "class": "qa-passed",
+    "feature": "achievements",
+    "tests": [
+      "app-e2e/specs/achievements/ac-02-achievement-dialog-share.e2e.ts"
+    ],
+    "reason": "עבר QA 13.10.2026 (iPhone, TestFlight 1.0.0 (19)). «שיתוף ההישג» → share sheet → закрыть → вкладки; путь «ביטול»; «מפת השפעה» без изменений (AC-02b, AC-02c).",
+    "date": "2026-10-13",
+    "source": "qa",
+    "id": "403c0b3d68a0731743731d65",
+    "platform": "iOS app (TestFlight)"
+  },
+  "#6a86f7e837c3": {
+    "class": "qa-passed",
+    "feature": "auth-login",
+    "tests": [
+      "app-e2e/specs/auth-login/al-04-no-external-provider-6a86f7e8.e2e.ts",
+      "app-e2e/specs/share/sh-01-share-dialogs-cc02d264.e2e.ts",
+      "app-e2e/specs/achievements/ac-02-achievement-dialog-share.e2e.ts",
+      "e2e/tests/impact-map/im-04-share-failure-message.spec.ts"
+    ],
+    "reason": "עבר QA 13.10.2026 (iPhone, TestFlight 1.0.0 (19)). F-95: AC1 нет внешнего провайдера; AC4 шаринг; AC3 сбой шаринга — только web (im-04), в приложении @manual-check. Ключ не #6a86f7e8 — коллизия.",
+    "date": "2026-10-13",
+    "source": "qa",
+    "id": "6a86f7e837c38d2b29bd68b9",
+    "platform": "iOS app (TestFlight)"
+  },
+  "#3298e56c": {
+    "class": "qa-passed",
+    "feature": "registration",
+    "tests": [
+      "app-e2e/specs/registration/rg-05-account-created-screen-3298e56c.e2e.ts"
+    ],
+    "reason": "עבר QA 13.10.2026 (iPhone, TestFlight 1.0.0 (19)). «יש! יצרת חשבון» без «החשבון נוצר ונשמר…». Регистрацию делает человек (QA_REG_MANUAL=1) — @manual-check @data.",
+    "date": "2026-10-13",
+    "source": "qa",
+    "id": "3298e56cc2f12b54178b733a",
+    "platform": "iOS app (TestFlight)"
+  },
+  "#b398d352": {
+    "class": "qa-passed",
+    "feature": "guided-prayer",
+    "tests": [
+      "app-e2e/specs/guided-prayer/gp-09-prayer-title-centered-b398d352.e2e.ts"
+    ],
+    "reason": "עבר QA 13.10.2026 (iPhone, TestFlight 1.0.0 (19)). Заголовок молитвы по центру (±4 pt). Вне окна молитвы — skip.",
+    "date": "2026-10-13",
+    "source": "qa",
+    "id": "b398d35241bbead5460a9f7f",
+    "platform": "iOS app (TestFlight)"
+  },
+  "#6a86f7fd7a0e": {
+    "class": "qa-passed",
+    "feature": "reminders",
+    "tests": [
+      "app-e2e/specs/profile/pr-05-system-reminders-switch-6a86f7fd.e2e.ts",
+      "app-e2e/specs/reminders/rm-09-prayer-push-6a86f7fd.e2e.ts"
+    ],
+    "reason": "עבר QA 13.10.2026 (iPhone, TestFlight 1.0.0 (19)). F-36: тумблер «תזכורות במערכת» («השינוי נשמר.», нет «…עדיין אינו זמין», «פתיחת הגדרות המכשיר» при запрете) — @data; push по молитвам (שחרית пришёл, AC4/AC5 не пришли) — @manual-check, QA_PUSH=1; экран «תפילות» падает (#70e8283a) → skip, время ставить в web expo.app/prayers. Ключ не #6a86f7fd — коллизия с другим тикетом.",
+    "date": "2026-10-13",
+    "source": "qa",
+    "id": "6a86f7fd7a0ea006134e7fe1",
+    "platform": "iOS app (TestFlight)",
+    "title": "פיתוח: תלות חיצונית במסירת תזכורות והתראות"
+  },
+  "#1cbe2254": {
+    "class": "qa-passed",
+    "feature": "important-dates",
+    "tests": [
+      "app-e2e/specs/important-dates/id-05-hebrew-date-sunset-1cbe2254.e2e.ts"
+    ],
+    "reason": "עבר QA 13.10.2026 (iPhone, TestFlight 1.0.0 (19), 18:42, закат 18:11). Еврейская дата записи на сегодня = дате заголовка главной («ג׳ חשון תשפ״ז», «מהשקיעה»). @data; уборка ID-05b пропускается, пока не исправлен #9bc6265b (удалить вручную).",
+    "date": "2026-10-13",
+    "source": "qa",
+    "id": "1cbe2254766506dfd3839afc",
+    "platform": "iOS app (TestFlight)",
+    "title": "תיקון QA: התאריך העברי ב«תאריכים חשובים» אינו לפי כלל השקיעה"
+  },
+  "#70e8283a": {
+    "class": "qa-passed",
+    "date": "2026-10-14",
+    "source": "qa",
+    "platform": "iOS app (TestFlight)",
+    "id": "70e8283a725c4a342be6258b",
+    "feature": "prayer-catalog",
+    "tests": [
+      "app-e2e/specs/prayer-catalog/pc-02-prayers-screen-no-crash-70e8283a.e2e.ts"
+    ],
+    "title": "iOS - לחיצה על לשונית «תפילות» בניווט התחתון גורמת לקריסת האפליקציה (גרסה 1.0.0 (19))",
+    "reason": "עבר QA 14.10.2026 (iPhone, TestFlight 1.0.0 (20), вход клиента). Вкладка «תפילות» и ☰ → «רשימת התפילות» открывают S-27 без крэша, прокрутка, 3 повторных входа. @prod-safe."
+  },
+  "#43533eab": {
+    "class": "qa-passed",
+    "date": "2026-10-14",
+    "source": "qa",
+    "platform": "iOS app (TestFlight)",
+    "id": "43533eabf7a5e241a175df1d",
+    "feature": "prayer-catalog",
+    "tests": [
+      "app-e2e/specs/prayer-catalog/pc-03-search-placeholder-rtl-43533eab.e2e.ts"
+    ],
+    "reason": "עבר QA 14.10.2026 (iPhone, TestFlight 1.0.0 (20)). Placeholder «חיפוש» и лупа справа, ввод «מנ» справа → «מנחה», «שיעורי תורה». @prod-safe @manual-check (позиция букв в поле)."
+  },
+  "#6a86f7dbc7a1": {
+    "class": "qa-passed",
+    "date": "2026-10-14",
+    "source": "qa",
+    "platform": "iOS app (TestFlight)",
+    "id": "6a86f7dbc7a1b906a507db97",
+    "feature": "prayer-catalog",
+    "tests": [
+      "app-e2e/specs/prayer-catalog/pc-04-gold-scrollbar-time-bell-6a86f7db.e2e.ts"
+    ],
+    "title": "עיצוב מוקאפ: רשימת התפילות",
+    "reason": "עבר QA 14.10.2026 (iPhone, TestFlight 1.0.0 (20)). Тонкая золотая полоса прокрутки справа (по пикселям скриншота), время+колокольчик в строке названия раскрытой «מנחה». Ключ не #6a86f7db — коллизия с 6a86f7dbeaab… (שיעורי תורה). @prod-safe."
+  },
+  "#39f5e7d5": {
+    "class": "qa-passed",
+    "date": "2026-10-14",
+    "source": "qa",
+    "platform": "iOS app (TestFlight)",
+    "id": "39f5e7d526d0174d1709d34a",
+    "feature": "guided-prayer",
+    "tests": [
+      "app-e2e/specs/guided-prayer/gp-10-ashrei-lines-no-overlap-39f5e7d5.e2e.ts"
+    ],
+    "reason": "עבר QA 14.10.2026 (iPhone, TestFlight 1.0.0 (20)). «מנחה (אשכנזי)» → אשרי: строки с ניקוד без наложения до конца отрывка. @prod-safe @manual-check (если отрывок — один элемент)."
+  },
+  "#6cfcbcb7": {
+    "class": "qa-passed",
+    "date": "2026-10-14",
+    "source": "qa",
+    "platform": "iOS app (TestFlight)",
+    "id": "6cfcbcb774ecddfef579e779",
+    "feature": "important-dates",
+    "tests": [
+      "app-e2e/specs/important-dates/id-06-date-card-rtl-delete-dialog-6cfcbcb7-9bc6265b.e2e.ts"
+    ],
+    "reason": "עבר QA 14.10.2026 (iPhone, TestFlight 1.0.0 (20)). Карточка «תאריכים חשובים»: имя и григорианская дата справа вплотную к бейджу еврейской даты, карандаш слева (ID-06a, временная QA-AUTO-дата). @data."
+  },
+  "#9bc6265b": {
+    "class": "qa-passed",
+    "date": "2026-10-14",
+    "source": "qa",
+    "platform": "iOS app (TestFlight)",
+    "id": "9bc6265b0d26bbb2b017a126",
+    "feature": "important-dates",
+    "tests": [
+      "app-e2e/specs/important-dates/id-06-date-card-rtl-delete-dialog-6cfcbcb7-9bc6265b.e2e.ts",
+      "app-e2e/specs/important-dates/id-05-hebrew-date-sunset-1cbe2254.e2e.ts"
+    ],
+    "reason": "עבר QA 14.10.2026 (iPhone, TestFlight 1.0.0 (20)). «מחיקת התאריך» → «למחוק את התאריך?» («ביטול»/«מחיקה», текст ««<имя>» יימחק…»), «מחיקה» удаляет, после перезапуска нет; «בדיקת QA» не трогается. id-05 ID-05b — skip заменён проверкой. @data @cleanup."
+  },
+  "#1cf95182": {
+    "class": "qa-passed",
+    "date": "2026-10-14",
+    "source": "qa",
+    "platform": "iOS app (TestFlight)",
+    "id": "1cf9518294d3d368ce75afe6",
+    "feature": "reminders",
+    "tests": [
+      "app-e2e/specs/reminders/rm-10-quick-reminders-rtl-1cf95182.e2e.ts"
+    ],
+    "reason": "עבר QA 14.10.2026 (iPhone, TestFlight 1.0.0 (20)). «תזכורות מהירות» (при включённом «תזכורות במערכת», после — вернуть): заголовок и текст карточек справа рядом с иконкой. @data."
+  },
+  "#bad2d0dd": {
+    "class": "qa-passed",
+    "date": "2026-10-14",
+    "source": "qa",
+    "platform": "iOS app (TestFlight)",
+    "id": "bad2d0dd5689a4c0bdaa74b6",
+    "feature": "registration",
+    "tests": [
+      "app-e2e/specs/registration/rg-06-unfinished-registration-back-bad2d0dd.e2e.ts"
+    ],
+    "reason": "עבר QA 14.10.2026 (iPhone, TestFlight 1.0.0 (20)). Номер без завершённой регистрации: «יצירת חשבון» с «חזרה», после холодного перезапуска снова с «חזרה» → «כניסה דרך מספר נייד»; аккаунт после «שלח» без настройки → «תאריך לידה» с «חזרה» → вход; затем вход другим номером. «התנתקות» в профиле без настройки — недостижимо, не проверялось. QA_REG_MANUAL=1, @data @manual-check."
+  },
+  "#add32f72": {
+    "class": "qa-passed",
+    "date": "2026-10-14",
+    "source": "qa",
+    "platform": "iOS app (TestFlight)",
+    "id": "add32f721c0702296cf138b1",
+    "feature": "registration",
+    "tests": [
+      "app-e2e/specs/registration/rg-07-account-created-icons-add32f72.e2e.ts"
+    ],
+    "reason": "עבר QA 14.10.2026 (iPhone, TestFlight 1.0.0 (20)). «יש! יצרת חשבון»: антенна (волны справа сверху) и будильник (дуги наружу) как Figma 444:818; 3 пункта и «בואו נתקדם». Иконки — скрин в runs/ для ручной сверки. QA_REG_MANUAL=1, @data @manual-check."
+  },
+  "#36a75b77": {
+    "class": "qa-passed",
+    "date": "2026-10-18",
+    "source": "qa",
+    "platform": "iOS app (TestFlight)",
+    "id": "36a75b778027ed97e0a701ec",
+    "feature": "important-dates",
+    "tests": [
+      "app-e2e/specs/important-dates/id-08-edit-window-statusbar-scroll-36a75b77.e2e.ts"
+    ],
+    "reason": "עבר QA 18.10.2026 (iPhone, TestFlight 1.0.0 (20) + OTA 607022e): после прокрутки «עריכת תאריך» 'סגירה' y=95 visible 3/3; «×» и «שמירת השינויים» работают. Кейс ID-08."
+  },
+  "#8d9eb38f": {
+    "class": "qa-passed",
+    "date": "2026-10-18",
+    "source": "qa",
+    "platform": "iOS app (TestFlight)",
+    "id": "8d9eb38fafaf51be081b862d",
+    "feature": "registration",
+    "tests": [
+      "app-e2e/specs/registration/rg-08-create-account-phone-after-restart-8d9eb38f.e2e.ts"
+    ],
+    "reason": "עבר QA 18.10.2026 (iPhone, TestFlight 1.0.0 (20) + OTA 6be8635): «מספר טלפון» = подтверждённый номер после 3 перезапусков (A 0501112044, B 0501112055, оба ≠ мокап). Кейс RG-08. QA_REG_MANUAL=1, @data."
+  },
+  "#ba6e9b8d": {
+    "class": "qa-passed",
+    "date": "2026-10-19",
+    "source": "qa",
+    "platform": "iOS app (TestFlight)",
+    "tests": [
+      "app-e2e/specs/registration/rg-07-account-created-icons-add32f72.e2e.ts",
+      "app-e2e/specs/registration/rg-09-onboarding-order-dots-location-f688d2b0.e2e.ts"
+    ],
+    "id": "ba6e9b8db8eb3f2ad42d1ef3",
+    "feature": "registration/progress-dots",
+    "reason": "עבר QA 19.10 (iPhone, 1.0.0 (20)+OTA): «מיקום» после выбора города 5 точек видимы y=813 без прокрутки 3/3; «יש!» 5 точек, активная справа. Кейсы RG-07b, RG-07c. Автотесты записаны 19.10 (app-e2e, QA_REG_MANUAL=1, не запускались)."
+  },
+  "#f688d2b0": {
+    "class": "qa-passed",
+    "date": "2026-10-19",
+    "source": "qa",
+    "platform": "iOS app (TestFlight)",
+    "tests": [
+      "app-e2e/specs/registration/rg-09-onboarding-order-dots-location-f688d2b0.e2e.ts",
+      "app-e2e/specs/registration/rg-05-account-created-screen-3298e56c.e2e.ts",
+      "app-e2e/specs/registration/rg-07-account-created-icons-add32f72.e2e.ts"
+    ],
+    "id": "f688d2b08243e7482c172511",
+    "feature": "registration/order",
+    "reason": "עבר QA 19.10: «שלח» → сразу «יש! יצרת חשבון»; «בואו נתקדם» → «תאריך לידה» (точка 2); «בוא נתחיל» → главная. Автотесты записаны 19.10 (app-e2e, QA_REG_MANUAL=1, не запускались)."
+  },
+  "#6370c87e": {
+    "class": "qa-passed",
+    "date": "2026-10-19",
+    "source": "qa",
+    "platform": "iOS app (TestFlight)",
+    "tests": [
+      "app-e2e/specs/registration/rg-09-onboarding-order-dots-location-f688d2b0.e2e.ts"
+    ],
+    "id": "6370c87ef65087c8971071ae",
+    "feature": "registration/location",
+    "reason": "עבר QA 19.10: новый аккаунт — на «מיקום» нет поля «שם המיקום» и города до «בחר מיקום»; сводка = выбранный город. Автотесты записаны 19.10 (app-e2e, QA_REG_MANUAL=1, не запускались)."
+  },
+  "#1108fa0d": {
+    "class": "qa-passed",
+    "date": "2026-10-21",
+    "source": "qa",
+    "platform": "iOS app (TestFlight 1.0.0 (20) + OTA 3e0afa75)",
+    "tests": [
+      "app-e2e/specs/qa-2110/q-01-home-mincha-sunset-icon-2be089.e2e.ts",
+      "app-e2e/specs/readiness/rd-09-known-bugs.e2e.ts"
+    ],
+    "cases": [
+      "tests/home/HM-07-header-prayer-icon.md"
+    ],
+    "id": "1108fa0dc734b4c8512be089",
+    "feature": "home/header-icon",
+    "reason": "עבר QA 21.10 (#2be089): иконка заката у «מנחה» в шапке главной и «המסע שלי». Автотест: шапка + скрины, иконку сверяет человек (@manual-check)."
+  },
+  "#0f8f122d": {
+    "class": "qa-passed",
+    "date": "2026-10-21",
+    "source": "qa",
+    "platform": "iOS app (TestFlight 1.0.0 (20) + OTA 3e0afa75)",
+    "tests": [
+      "app-e2e/specs/qa-2110/q-02-catalog-search-filters-lessons-110daf.e2e.ts",
+      "app-e2e/specs/prayer-catalog/pc-03-search-placeholder-rtl-43533eab.e2e.ts",
+      "app-e2e/specs/readiness/rd-09-known-bugs.e2e.ts"
+    ],
+    "cases": [
+      "tests/prayer-catalog/PC-05-search-filters-lessons-card.md",
+      "tests/prayer-catalog/PC-03-search-placeholder-rtl.md"
+    ],
+    "id": "0f8f122dc7c514c459110daf",
+    "feature": "prayer-catalog/search",
+    "reason": "עבר QA 21.10 (#110daf): пустой поиск без «שיעורי תורה», «ניקוי החיפוש», «תורה» → S-28, «מנ» → только «מנחה»."
+  },
+  "#9b0df2d0": {
+    "class": "qa-passed",
+    "date": "2026-10-21",
+    "source": "qa",
+    "platform": "iOS app (TestFlight 1.0.0 (20) + OTA 3e0afa75)",
+    "tests": [
+      "app-e2e/specs/qa-2110/q-03-home-impact-map-button-edb46e.e2e.ts",
+      "app-e2e/specs/readiness/rd-09-known-bugs.e2e.ts"
+    ],
+    "cases": [
+      "tests/impact-map/IM-04-home-button-opens-map.md"
+    ],
+    "id": "9b0df2d0d928981d43edb46e",
+    "feature": "impact-map/home-button",
+    "reason": "עבר QA 21.10 (#edb46e): «מפת ההשפעה» на главной → «המסע שלי» на секции карты."
+  },
+  "#414ae351": {
+    "class": "qa-passed",
+    "date": "2026-10-21",
+    "source": "qa",
+    "platform": "iOS app (TestFlight 1.0.0 (20) + OTA 3e0afa75)",
+    "tests": [
+      "app-e2e/specs/qa-2110/q-04-bracha-title-centered-1c8de4.e2e.ts",
+      "app-e2e/specs/readiness/rd-09-known-bugs.e2e.ts"
+    ],
+    "cases": [
+      "tests/guided-prayer/GP-11-bracha-title-centered.md"
+    ],
+    "id": "414ae351ea2f8ae9241c8de4",
+    "feature": "brachot/title",
+    "reason": "עבר QA 21.10 (#1c8de4): заголовок брахи по центру (201 pt), как у «שחרית»."
+  },
+  "#00542c25": {
+    "class": "qa-passed",
+    "date": "2026-10-21",
+    "source": "qa",
+    "platform": "iOS app (TestFlight 1.0.0 (20) + OTA 3e0afa75)",
+    "tests": [
+      "app-e2e/specs/qa-2110/q-05-texts-as-figma-32d78d.e2e.ts",
+      "app-e2e/specs/important-dates/id-01-add-window-by-type.e2e.ts",
+      "app-e2e/specs/profile/pr-05-system-reminders-switch-6a86f7fd.e2e.ts",
+      "app-e2e/specs/reminders/rm-03-profile-settings-consent-dialog.e2e.ts",
+      "app-e2e/specs/readiness/rd-09-known-bugs.e2e.ts"
+    ],
+    "cases": [
+      "tests/readiness/TX-01-texts-as-figma.md",
+      "tests/important-dates/ID-01-type-title-fields-a11y.md",
+      "tests/profile/PR-05-system-reminders-switch.md",
+      "tests/reminders/RM-03-profile-consent-names.md"
+    ],
+    "id": "00542c25175d1f6e0132d78d",
+    "feature": "texts/figma",
+    "reason": "עבר QA 21.10 (#32d78d): S-08 подзаголовок, «תאריך חדש», «חזרה למסך ראשי», «תזכורות והתראות». S-08 и первая молитва с достижением — вручную (новый аккаунт)."
+  },
+  "#be1e2077": {
+    "class": "qa-passed",
+    "date": "2026-10-21",
+    "source": "qa",
+    "platform": "iOS app (TestFlight 1.0.0 (20) + OTA 3e0afa75)",
+    "tests": [
+      "app-e2e/specs/qa-2110/q-06-home-empty-card-text-c75c08.e2e.ts",
+      "app-e2e/specs/readiness/rd-09-known-bugs.e2e.ts"
+    ],
+    "cases": [
+      "tests/home/HM-08-empty-card-text.md"
+    ],
+    "id": "be1e20773463385376c75c08",
+    "feature": "home/empty-card",
+    "reason": "עבר QA 21.10 (#c75c08): текст пустой карточки главной как Figma S-01. Автотест — только на аккаунте без молитв."
+  },
+  "#9e970625": {
+    "class": "qa-passed",
+    "date": "2026-10-21",
+    "source": "qa",
+    "platform": "iOS app (TestFlight 1.0.0 (20) + OTA 3e0afa75)",
+    "tests": [
+      "app-e2e/specs/qa-2110/q-07-history-header-463316.e2e.ts",
+      "app-e2e/specs/prayer-history/ph-01-history-grouping-search.e2e.ts",
+      "app-e2e/specs/prayer-history/ph-02-same-minute-seconds.e2e.ts",
+      "app-e2e/specs/home/hm-02-recent-prayers.e2e.ts",
+      "app-e2e/specs/readiness/rd-01-home-history.e2e.ts",
+      "app-e2e/specs/readiness/rd-09-known-bugs.e2e.ts"
+    ],
+    "cases": [
+      "tests/prayer-history/PH-03-history-header.md",
+      "tests/prayer-history/PH-01-history-grouping-search.md"
+    ],
+    "id": "9e970625b0b90fee67463316",
+    "feature": "prayer-history/header",
+    "reason": "עבר QA 21.10 (#463316): шапка «היסטוריית התפילות שלי» как у других экранов, поиск, назад."
+  },
+  "#32e3cd9a": {
+    "class": "qa-passed",
+    "date": "2026-10-21",
+    "source": "qa",
+    "platform": "iOS app (TestFlight 1.0.0 (20) + OTA 3e0afa75)",
+    "tests": [
+      "app-e2e/specs/qa-2110/q-08-nusach-two-options-24d9b5.e2e.ts",
+      "app-e2e/specs/profile/pr-01-personal-profile-preferences.e2e.ts",
+      "app-e2e/specs/profile/pr-04-edit-preferences.e2e.ts",
+      "app-e2e/specs/nusach-switch/ns-01-menu.e2e.ts",
+      "app-e2e/specs/guided-prayer/gp-03-nusach-availability-switch.e2e.ts"
+    ],
+    "cases": [
+      "tests/nusach-switch/NS-04-two-nusach-options.md",
+      "tests/profile/PR-01-profile-sections-no-password.md",
+      "tests/profile/PR-04-edit-preferences.md",
+      "tests/nusach-switch/NS-01-menu.md",
+      "tests/nusach-switch/NS-03-legacy-sfarad-edot-consistent.md",
+      "tests/guided-prayer/GP-03-nusach-availability-switch.md"
+    ],
+    "id": "32e3cd9a851ca9000824d9b5",
+    "feature": "nusach/options",
+    "reason": "עבר QA 21.10 (#24d9b5): 2 нусаха в онбординге/профиле («נוסח אשכנז» / «נוסח ספרד / עדות המזרח»), в молитве «אשכנזי»/«ספרדי» (S-33). Онбординг — вручную."
+  },
+  "#16933ca6": {
+    "class": "qa-passed",
+    "date": "2026-10-21",
+    "source": "qa",
+    "platform": "iOS app (TestFlight 1.0.0 (20) + OTA 3e0afa75)",
+    "tests": [
+      "app-e2e/specs/qa-2110/q-09-admin-section-position-order-delete-6bddd9.e2e.ts",
+      "app-e2e/specs/readiness/rd-07-admin-text-mp3.e2e.ts"
+    ],
+    "cases": [
+      "tests/admin/AD-12-section-position-order-delete.md",
+      "tests/readiness/RD-07-admin-text-mp3.md"
+    ],
+    "id": "16933ca6d980d788116bddd9",
+    "feature": "admin/section-structure",
+    "reason": "עבר QA 21.10 (#6bddd9): קטע в начало/после, порядок, удаление, всё через «אישור ופרסום»; автотест @admin @data (QA_ADMIN_MANUAL=1), возврат в исходное."
+  },
+  "#b7295677": {
+    "class": "qa-passed",
+    "date": "2026-10-21",
+    "source": "qa",
+    "platform": "iOS app (TestFlight 1.0.0 (20) + OTA 3e0afa75)",
+    "tests": [
+      "app-e2e/specs/qa-2110/q-10-delete-account-dialog-cancel-a7caf6.e2e.ts",
+      "app-e2e/specs/readiness/rd-04-profile.e2e.ts"
+    ],
+    "cases": [
+      "tests/profile/PR-06-delete-account.md",
+      "tests/readiness/RD-04-profile.md"
+    ],
+    "id": "b729567785c43ca4bea7caf6",
+    "feature": "profile/delete-account",
+    "reason": "עבר QA 21.10 (#a7caf6): кнопка «מחיקת חשבון», окно со списком данных, «ביטול» — автотест; само удаление проверил пользователь на одноразовом аккаунте — вручную."
+  },
+  "#f38f7474": {
+    "class": "qa-passed",
+    "date": "2026-10-25",
+    "source": "qa",
+    "platform": "iOS app (TestFlight 1.0.0 (20) + OTA iOS d4164b5d+)",
+    "id": "f38f747408a2e846c51b6593",
+    "feature": "prayer-catalog/no-crash-after-publish",
+    "tests": [
+      "app-e2e/specs/qa-2510/q-11-prayers-no-crash-after-publish-1b6593.e2e.ts",
+      "app-e2e/specs/qa-2110/q-09-admin-section-position-order-delete-6bddd9.e2e.ts"
+    ],
+    "cases": [
+      "tests/prayer-catalog/PC-06-prayers-no-crash-after-publish.md",
+      "tests/admin/AD-12-section-position-order-delete.md"
+    ],
+    "reason": "עבר QA 25.10 (#1b6593): после «אישור ופרסום» QA קטע в «ברכת הלבנה · אשכנז» и удаления — холодные старты ×3 → «תפילות», «רשימת התפילות» из молитвы и ברכה без падения и без перелогина; у пользователя «1 מתוך 2» → «1 מתוך 1». Q-11a @prod-safe, Q-11b @admin @data (QA_ADMIN_MANUAL=1). Обход в q-09 убран."
+  },
+  "#99af04b9": {
+    "class": "qa-passed",
+    "date": "2026-10-25",
+    "source": "qa",
+    "platform": "iOS app (TestFlight 1.0.0 (20) + OTA iOS d4164b5d+)",
+    "id": "99af04b9faa9d626508a7f1a",
+    "feature": "prayer-catalog/search",
+    "tests": [
+      "app-e2e/specs/qa-2510/q-12-clear-search-keyboard-open-8a7f1a.e2e.ts",
+      "app-e2e/specs/prayer-catalog/pc-03-search-placeholder-rtl-43533eab.e2e.ts",
+      "app-e2e/specs/qa-2110/q-02-catalog-search-filters-lessons-110daf.e2e.ts"
+    ],
+    "cases": [
+      "tests/prayer-catalog/PC-07-clear-search-keyboard-open.md",
+      "tests/prayer-catalog/PC-03-search-placeholder-rtl.md",
+      "tests/prayer-catalog/PC-05-search-filters-lessons-card.md"
+    ],
+    "reason": "עבר QA 25.10 (#8a7f1a): «זזזזז» при открытой клавиатуре → одно нажатие «ניקוי החיפוש» очищает поле, закрывает клавиатуру, список возвращается (3/3). Обходы hideKeyboard в tapClearSearch и pc-03 убраны."
+  },
+  "#d6a68154": {
+    "class": "qa-passed",
+    "date": "2026-10-25",
+    "source": "qa",
+    "platform": "iOS app (TestFlight 1.0.0 (20) + OTA iOS d4164b5d+)",
+    "id": "d6a68154ed9b7e6c9707cdd6",
+    "feature": "tehilim/search-placeholder",
+    "tests": [
+      "app-e2e/specs/qa-2510/q-13-avot-search-placeholder-07cdd6.e2e.ts",
+      "app-e2e/specs/tehilim-list/tl-04-search-placeholder-rtl-26ca8b97.e2e.ts"
+    ],
+    "cases": [
+      "tests/tehilim/TH-02-search-placeholder-rtl.md"
+    ],
+    "reason": "עבר QA 25.10 (#07cdd6): «פרקי אבות» — placeholder «חיפוש לפי מילים מתוך הפרקים» (Figma 641:2687), «תהילים» — прежний «חיפוש לפי מספר פרק או מילים», переключение туда-обратно. tl-04 и TH-02 обновлены."
+  },
+  "#48c24d61": {
+    "class": "qa-passed",
+    "date": "2026-10-25",
+    "source": "qa",
+    "platform": "iOS app (TestFlight 1.0.0 (20) + OTA iOS d4164b5d+)",
+    "id": "48c24d613618cdf6947d0998",
+    "feature": "offline",
+    "tests": [
+      "app-e2e/specs/qa-2510/q-14-offline-saved-content-7d0998.e2e.ts",
+      "app-e2e/specs/readiness/rd-06-offline.e2e.ts"
+    ],
+    "cases": [
+      "tests/readiness/RD-06-offline.md"
+    ],
+    "reason": "עבר QA 25.10 (#7d0998): офлайн холодный старт ×3 → «בית» + баннер «אין חיבור לאינטרנט. מוצג מה שכבר נשמר במכשיר.» с «נסו שוב»; «תפילות» ×3; ערבית из кэша; неоткрытая → «הקטע אינו זמין כרגע.»; уроки, ל״ט, פרקי אבות, «רשימת התפילות» из ברכה; זמנים «היום הבא» → сообщение про связь + еврейская дата недоступна; после сети ×3 без падения. @manual-check (QA_OFFLINE_MANUAL=1, сеть — человек)."
+  },
+  "#4cfbf19e": {
+    "class": "qa-passed",
+    "date": "2026-10-25",
+    "source": "qa",
+    "platform": "iOS app + web expo.app (подмена часов)",
+    "id": "4cfbf19e5cc11c71a68060ad",
+    "feature": "tehilim/avot-week",
+    "tests": [
+      "e2e/tests/tehilim/th-05-avot-week-dates-4cfbf19e.spec.ts",
+      "app-e2e/specs/qa-2510/q-15-avot-week-off-season-8060ad.e2e.ts",
+      "app-e2e/specs/readiness/rd-09-known-bugs.e2e.ts"
+    ],
+    "cases": [
+      "tests/tehilim/TH-04-avot-week-chapter.md",
+      "tests/readiness/RD-09-known-bugs.md"
+    ],
+    "reason": "עבר QA 25.10 (#8060ad): веб expo.app подменой часов — 11 дат 2027 совпали с Hebcal (сдвоенные 18.9 ג׳–ד׳ и 25.9 ה׳–ו׳ с метками на обеих) — Playwright th-05 (@iphone, user1); в приложении — только вне сезона (q-15) и регресс вкладок/глав (rd-09 @passed-2510)."
+  },
+  "#56d002bd": {
+    "class": "qa-passed",
+    "date": "2026-10-25",
+    "source": "qa",
+    "platform": "iOS app (TestFlight 1.0.0 (20) + OTA iOS d4164b5d+)",
+    "id": "56d002bd345eb272b07580ef",
+    "feature": "content/spelling",
+    "tests": [
+      "app-e2e/specs/qa-2510/q-16-spelling-names-7580ef.e2e.ts",
+      "app-e2e/specs/readiness/rd-09-known-bugs.e2e.ts",
+      "app-e2e/specs/readiness/rd-01-home-history.e2e.ts",
+      "app-e2e/specs/prayer-history/ph-01-history-grouping-search.e2e.ts",
+      "e2e/tests/prayer-history/ph-01-history-grouping-search.spec.ts"
+    ],
+    "cases": [
+      "tests/spelling/SP-01-names-spelling.md",
+      "tests/readiness/RD-09-known-bugs.md",
+      "tests/readiness/RD-01-home-history.md",
+      "tests/prayer-history/PH-01-history-grouping-search.md"
+    ],
+    "reason": "עבר QA 25.10 (#7580ef): каталог «תהילים ק״ל»; לימוד יומי — номер дафа с ׳/״ («בכורות דף ל״ז», «סנהדרין דף ו׳»); «יעלה ויבוא» в каталоге и метке קטע (без «ויבא»); S-26 «היסטוריית התפילות שלי» (25.10 не перепроверен — у клиента 2 молитвы; прошёл 21.10); ל״ט «למנצח לידותון מזמור» без скобок, «אושר על ידי מנהל תוכן» 22.10. rd-09 KB-56d002bd → @passed-2510; th-04/rc-06 — новое имя קטע ל״ט."
+  },
+  "regression-audio-2026-10-25": {
+    "class": "regression-audio",
+    "date": "2026-10-25",
+    "source": "qa",
+    "platform": "iOS app (iPhone 17, TestFlight 1.0.0 (20) + OTA), вход клиента = админ + пользователь",
+    "id": "",
+    "feature": "recordings/admin-mp3",
+    "tests": [
+      "app-e2e/specs/qa-2510/q-17-recording-lifecycle-own-section-2510.e2e.ts",
+      "app-e2e/specs/qa-2510/q-18-delete-section-with-recording-544d9c.e2e.ts"
+    ],
+    "lib": [
+      "app-e2e/specs/_lib/app-2510.ts",
+      "app-e2e/specs/_lib/app-1310.ts"
+    ],
+    "cases": [
+      "tests/admin/AD-13-recording-lifecycle-own-section.md",
+      "tests/admin/AD-10-mp3-upload-in-app.md",
+      "tests/guided-prayer/GP-08-no-recording-listen-disabled.md"
+    ],
+    "known_bugs": [
+      "#544d9c (1c5b7fc0)"
+    ],
+    "reason": "Проверка озвучки 25.10 (не тикет): F-91/F-92 на своём QA קטע «ברכת הלבנה · אשכנז» — ממתינה (у пользователя אין הקראה, השמע disabled) → אושרה («הקראה: בודק QA · אושרה על ידי מנהל תוכן», השמע/השהה, пауза→продолжение, стоп в конце 23 с) → правка текста → לא תואמת (новый текст сразу, אין הקראה) → הסרת ההקראה → удаление קטע. Найден #544d9c: קטע с записью не удаляется («הפעולה לא בוצעה: הנתונים השתנו בינתיים…») — q-18 @known-bug. Тесты записаны, не запускались."
+  },
+  "#db1dba97": {
+    "class": "qa-passed",
+    "date": "2026-10-25",
+    "source": "qa",
+    "platform": "iOS app (iPhone 17, TestFlight 1.0.0 (20) + OTA новее dc2b259), вход клиента; веб zichui-harabim.expo.app (user1)",
+    "id": "db1dba9783e89397fd772789",
+    "feature": "reminders/quick-reminders",
+    "tests": [
+      "app-e2e/specs/qa-2510/q-19-quick-reminders-hide-recorded-772789.e2e.ts",
+      "e2e/tests/reminders/rm-11-quick-reminders-hide-recorded-prayer-db1dba97.spec.ts"
+    ],
+    "lib": [
+      "app-e2e/specs/_lib/app-2510.ts"
+    ],
+    "plans": [
+      "e2e/specs/reminders.md"
+    ],
+    "cases": [
+      "tests/reminders/RM-11-quick-reminders-hide-recorded-prayer.md"
+    ],
+    "reason": "עבר QA 25.10 (#772789): iPhone 12:00 — מנחה записана → карточка «מנחה · אפשר להתפלל עכשיו, עד …» исчезла из «תזכורות מהירות», «הנחת תפילין» осталась, «תפילות אחרונות» первая «מנחה», «תפילות היום» +1, держится после 2 холодных стартов; повтор — «התפילה כבר נרשמה היום» с «ביטול»/«רשום שוב» (решение 20.10). Веб 17:05 — ערבית после שקיעה записана (POST 201) → исчезла, «לראש חודש» на месте; 2 reload + новая вкладка. Тесты зависят от времени (skip без открытого окна), @data; записаны, не запускались. @known-bug для db1dba97 не было."
+  },
+  "#1c5b7fc0": {
+    "class": "qa-passed",
+    "date": "2026-10-26",
+    "source": "qa",
+    "platform": "iOS app (TestFlight 1.0.0 (20) + OTA iOS 02bc5041+)",
+    "id": "1c5b7fc03793cee7c1544d9c",
+    "feature": "admin/delete-section-with-recording",
+    "tests": [
+      "app-e2e/specs/qa-2510/q-18-delete-section-with-recording-544d9c.e2e.ts",
+      "app-e2e/specs/qa-2510/q-17-recording-lifecycle-own-section-2510.e2e.ts",
+      "app-e2e/specs/qa-2110/q-09-admin-section-position-order-delete-6bddd9.e2e.ts"
+    ],
+    "cases": [
+      "tests/admin/AD-14-delete-section-with-recording.md",
+      "tests/admin/AD-13-recording-lifecycle-own-section.md",
+      "tests/admin/AD-12-section-position-order-delete.md"
+    ],
+    "reason": "עבר QA 26.10 (#544d9c): в «ברכת הלבנה · אשכנז» QA קטע с утверждённой записью и с записью «לא תואמת» → «מחיקת הקטע» без «הסרת ההקראה» → «הקטע מסומן למחיקה. עד האישור המשתמשים עדיין רואים אותו.», без «הפעולה לא בוצעה»; до утверждения у пользователя «2 מתוך 2» + «הקראה: בודק QA · …»; «אישור ופרסום השינוי» → история «…: הקטע נמחק ממקום 2…» → «1 מתוך 1», запись не перешла; «ביטול» ничего не удаляет. Q-18a/b @admin @data @manual-check (QA_ADMIN_MANUAL=1), @known-bug снят. Не автоматизируется: удаление файла MP3 из хранилища."
+  },
+  "#30e340e0": {
+    "class": "qa-passed",
+    "date": "2026-10-26",
+    "source": "qa",
+    "platform": "iOS app (TestFlight 1.0.0 (20) + OTA) + web expo.app (подмена часов)",
+    "id": "30e340e0fefb146bba70ef78",
+    "feature": "tehilim/avot-week",
+    "tests": [
+      "app-e2e/specs/qa-2610/q-20-avot-off-season-text-70ef78.e2e.ts",
+      "e2e/tests/tehilim/th-06-avot-off-season-text-70ef78.spec.ts",
+      "e2e/tests/tehilim/th-05-avot-week-dates-4cfbf19e.spec.ts",
+      "app-e2e/specs/qa-2510/q-15-avot-week-off-season-8060ad.e2e.ts"
+    ],
+    "cases": [
+      "tests/tehilim/TH-05-avot-off-season-text.md",
+      "tests/tehilim/TH-04-avot-week-chapter.md"
+    ],
+    "reason": "עבר QA 26.10 (#70ef78): текст вне сезона «…הסימון יחזור בשבוע של השבת הראשונה שאחרי פסח.» на iPhone (сегодня, q-20 @prod-safe) и в вебе; подмена часов (th-06 @iphone @prod-safe): 24.4.2027 09:00 и 2.10.2027 — новый текст без меток; 25.4, 29.4, 1.5.2027 — «פרק השבוע: פרקי אבות א׳.», метка только на א׳; 18.9.2027 — ג׳–ד׳. Старые тесты #8060ad (th-05, q-15, app-2510 AVOT_OFF_SEASON_FULL, план tehilim.md) обновлены на новый текст."
+  },
+  "#c7b97e": {
+    "class": "qa-passed",
+    "date": "2026-11-03",
+    "source": "qa",
+    "platform": "Android Pixel 6 (Android 17), app 1.0.0 (6) + OTA; SMS Pulseem",
+    "id": "6a9fc20e73f0c860c8c7b97e",
+    "feature": "registration/otp-send",
+    "tests": [
+      "app-e2e/specs/qa-0311/q-24-register-otp-no-422-late-code-c7b97e.e2e.ts"
+    ],
+    "cases": [
+      "tests/registration/RG-11-register-otp-no-422-late-code.md",
+      "tests/auth-login/AL-01-phone-login-otp.md"
+    ],
+    "reason": "עבר QA 03.11 (#c7b97e): «הצטרפו אלינו» → «שלח» 13:40:23 без 422 → «קוד אימות» (6 клеток, номер 0537240114); код из SMS → «יש! יצרת חשבון» 13:40:54; верный код через ~3 мин принят. Q-24 @manual-otp @data (QA_REG_MANUAL=1: форму, код и выдержку делает человек — создание аккаунта не автоматизируем). Реджекты b4882474/rej_bd4e5bd0 закрыты."
+  },
+  "#41747e": {
+    "class": "qa-passed",
+    "date": "2026-11-03",
+    "source": "qa",
+    "platform": "Android Pixel 6 (Android 17), app 1.0.0 (6) + OTA; SMS Pulseem",
+    "id": "6a86f7feb882fcc40241747e",
+    "feature": "auth-login/otp-delivery (F-39)",
+    "tests": [
+      "app-e2e/specs/qa-0311/q-21-otp-code-screen-wrong-code-41747e-5623bc.e2e.ts",
+      "app-e2e/specs/qa-0311/q-22-otp-resend-old-code-4572c6-41747e.e2e.ts",
+      "app-e2e/specs/qa-0311/q-23-otp-send-offline-hebrew-error-41747e.e2e.ts",
+      "app-e2e/specs/auth-login/al-01-phone-login-otp.e2e.ts"
+    ],
+    "cases": [
+      "tests/auth-login/AL-05-otp-code-screen-number.md",
+      "tests/auth-login/AL-07-otp-resend-old-code.md",
+      "tests/auth-login/AL-08-otp-send-failure-offline.md",
+      "tests/auth-login/AL-01-phone-login-otp.md"
+    ],
+    "reason": "עבר QA 03.11 (#41747e, F-39): AC1 «הקוד בן שש הספרות נשלח למספר …»; AC2 офлайн → «הקוד לא נשלח: …» на иврите (находка «сервер» → #02f519, исправлена 03.11); AC3 код SMS4 после SMS5 → «אינו נכון»; AC4 «שלח קוד מחדש» доступна и после ошибки; «מצב בדיקה» нет. Q-21 (@sms авто), Q-22a/b (@sms, b — @manual-otp), Q-23 (авто, без SMS). Ключ «#6a86f7fe» в журнале — другой тикет (hash не уникален)."
+  },
+  "#5623bc": {
+    "class": "qa-passed",
+    "date": "2026-11-03",
+    "source": "qa",
+    "platform": "Android Pixel 6 (Android 17), app 1.0.0 (6) + OTA; SMS Pulseem",
+    "id": "b774bc6273218323445623bc",
+    "feature": "auth-login/otp-wrong-vs-expired",
+    "tests": [
+      "app-e2e/specs/qa-0311/q-21-otp-code-screen-wrong-code-41747e-5623bc.e2e.ts"
+    ],
+    "cases": [
+      "tests/auth-login/AL-06-otp-wrong-vs-expired.md"
+    ],
+    "reason": "עבר QA 03.11 (#5623bc): неверный код сразу и через +2:22 → «הקוד שהוזן אינו נכון. בדקו את שש הספרות שקיבלתם והזינו שוב, או בקשו קוד חדש.»; код старше 300 с → «הקוד פג תוקף. בקשו קוד חדש ונסו שוב.». Q-21 автоматизирует «111111» сразу (@sms); >60 с и >300 с — вручную (по времени, AL-06 шаги 4–5)."
+  },
+  "#4572c6": {
+    "class": "qa-passed",
+    "date": "2026-11-03",
+    "source": "qa",
+    "platform": "Android Pixel 6 (Android 17), app 1.0.0 (6) + OTA; SMS Pulseem",
+    "id": "cd8e8bb3e10ac268a44572c6",
+    "feature": "auth-login/otp-resend",
+    "tests": [
+      "app-e2e/specs/qa-0311/q-22-otp-resend-old-code-4572c6-41747e.e2e.ts"
+    ],
+    "cases": [
+      "tests/auth-login/AL-07-otp-resend-old-code.md"
+    ],
+    "reason": "עבר QA 03.11 (#4572c6): «שלח קוד מחדש» → «נשלח קוד חדש. הזינו את שש הספרות החדשות.» и SMS реально приходит (14:10:51, 14:19:09, 14:19:32 — интервал 23 с); код последнего SMS → вход. Q-22a авто (@sms), Q-22b @manual-otp (SMS видит только человек); resend через 23 с и баланс 0 — вручную."
+  },
+  "#85332a": {
+    "class": "qa-passed",
+    "date": "2026-11-03",
+    "source": "qa",
+    "platform": "iPhone 17 (iOS 26.6.1), TestFlight 1.0.0 (20) + OTA (dc85141)",
+    "id": "0a168fbe361c9f8c5785332a",
+    "title": "iOS - מסך הבית: הברכה «צהריים טובים <שם>, מוכן לתפילה מרוממת?» נשברת לשלוש שורות ועולה על שם התפילה הגדול «מנחה»",
+    "feature": "home/greeting-header",
+    "tests": [
+      "app-e2e/specs/qa-0311/q-25-home-greeting-no-overlap-prayer-name-85332a.e2e.ts"
+    ],
+    "cases": [
+      "tests/home/HM-09-greeting-no-overlap-long-name.md"
+    ],
+    "reason": "עבר QA 03.11 (#85332a): окно «צהריים» ~14:35, имя 2/3/4 строки — приветствие h48/h72/h96 (y138), «מנחה» y214/y226/y250, без наложения; rej_bad41c20 закрыт. Q-25 (HM-09) меняет имя и возвращает исходное (@data, только iPhone); вне «צהריים» — тот же критерий для текущей ברכה. Дата в шапке при длинном имени — #58ba6a, q-26 (HM-10)."
+  },
+  "#58ba6a": {
+    "class": "qa-passed",
+    "date": "2026-11-03",
+    "source": "qa",
+    "platform": "iPhone 17 (iOS 26.6.1), TestFlight 1.0.0 (20) + OTA 38b2d3b0",
+    "id": "47b60dea112b28f61b58ba6a",
+    "ticket": 24,
+    "title": "iOS - header long name overlaps hebrew date",
+    "feature": "home/header-name-date (+ journey header)",
+    "tests": [
+      "app-e2e/specs/qa-0311/q-26-header-long-name-no-overlap-date-58ba6a.e2e.ts"
+    ],
+    "cases": [
+      "tests/home/HM-10-header-long-name-no-overlap-date.md"
+    ],
+    "reason": "עבר QA 03.11 (#58ba6a, наш баг, «прошли»): «Tatiana Dombek Alexandrovna Longname» — «בית» имя x166..378 (многоточие), «זמני התפילות של היום» x72..154; «המסע שלי» имя x185..378, дата x72..174; без наложения, имя возвращено «QA reg 0311». Q-26 (HM-10): дата + 8 pt ≤ имя, @iphone @data."
+  },
+  "#02f519": {
+    "class": "qa-passed",
+    "date": "2026-11-03",
+    "source": "qa",
+    "platform": "Android Pixel 6 (Android 17), app 1.0.0 (6) + OTA",
+    "id": "4a56edffc3e70c195302f519",
+    "ticket": 25,
+    "title": "Android - offline OTP send shows server error",
+    "feature": "auth-login/otp-delivery (F-39, S-02 AC1)",
+    "tests": [
+      "app-e2e/specs/qa-0311/q-23-otp-send-offline-hebrew-error-41747e.e2e.ts"
+    ],
+    "cases": [
+      "tests/auth-login/AL-08-otp-send-failure-offline.md"
+    ],
+    "reason": "עבר QA 03.11 (#02f519, наш баг, «прошли»): авиарежим → «שילחו קוד אימות» → «הקוד לא נשלח: אין תשובה מהשרת. בדקו את חיבור האינטרנט ונסו שוב.», кнопка активна, повтор — то же. Q-23 ужесточён: содержит «בדקו את חיבור האינטרנט», не содержит «השרת החזיר שגיאה», повторное нажатие."
+  },
+  "#bcf9c3": {
+    "class": "qa-passed",
+    "date": "2026-11-05",
+    "source": "qa",
+    "platform": "Android Pixel 6, app 1.0.0 (6) + OTA (прогон 03.11)",
+    "id": "7502ac409ccbf9f633bcf9c3",
+    "title": "תיקון QA: שגיאת 500 בעת יצירת חשבון – לא ניתן לשלוח קוד SMS ולהשלים את ההרשמה",
+    "feature": "registration/otp (F-88, F-39, S-11)",
+    "tests": [
+      "app-e2e/specs/qa-0311/q-24-register-otp-no-422-late-code-c7b97e.e2e.ts"
+    ],
+    "cases": [
+      "tests/registration/RG-11-register-otp-no-422-late-code.md"
+    ],
+    "reason": "עבר QA 05.11 (пользователь «провел»): регистрация 03.11 — «שלח» без 500/422, SMS пришло, аккаунт создан. Отдельный автотест не нужен — q-24 покрывает AC."
+  },
+  "#63e34a": {
+    "class": "qa-passed",
+    "date": "2026-11-08",
+    "source": "qa",
+    "platform": "Android Pixel 6, app 1.0.0 (6) + OTA (с 2fbec33), wm density 840 → reset; веб zichui-harabim.expo.app user1 @195",
+    "id": "b6eac71496158ecc2463e34a",
+    "title": "BUG · כותרת המסך נחתכת בזום 200% בארבעה מסכים שחולקים את צורת הכותרת המשותפת",
+    "feature": "zoom-200/screen-titles (S-общая шапка)",
+    "tests": [
+      "app-e2e/specs/qa-0911/q-27-zoom200-screen-titles-63e34a-ebcfa6.e2e.ts"
+    ],
+    "tests_web_planned": [
+      "e2e/tests/zoom-200/z2-01-titles-prayers-zmanim-tehilim-profile.spec.ts",
+      "e2e/tests/zoom-200/z2-01-titles-lessons-and-lesson-item.spec.ts"
+    ],
+    "web_plan": "e2e/specs/zoom-200.md",
+    "cases": [
+      "tests/zoom-200/Z2-01-screen-titles.md"
+    ],
+    "reason": "עבר QA 08.11 (пользователь провёл): AC — заголовки /prayers, /zmanim, /tehilim/[chapter], /profile целиком без «…» в 200%; веб 195 + Android density 840; реджект rej_1351cced закрыт. Регресс — на телефоне (app-e2e qa-0911, npm run test:android:0911, @android @prod-safe @manual-check, не прогонялись). Web-тесты (@web, viewport 195) — в плане, файлы создаёт playwright-test-generator; пока не записаны."
+  },
+  "#db5c46": {
+    "class": "qa-passed",
+    "date": "2026-11-08",
+    "source": "qa",
+    "platform": "Android Pixel 6, app 1.0.0 (6) + OTA (с 2fbec33), wm density 840 → reset; веб zichui-harabim.expo.app user1 @195",
+    "id": "6d45ca5a95df2fb3b6db5c46",
+    "title": "BUG · עמודת הכותרת בשורות הרשימה מצטמצמת ל-27pt בזום 200% ב-/lessons וב-/tehilim",
+    "feature": "zoom-200/list-rows",
+    "tests": [
+      "app-e2e/specs/qa-0911/q-28-zoom200-list-row-titles-db5c46.e2e.ts"
+    ],
+    "tests_web_planned": [
+      "e2e/tests/zoom-200/z2-02-list-rows-lessons-tehilim.spec.ts"
+    ],
+    "web_plan": "e2e/specs/zoom-200.md",
+    "cases": [
+      "tests/zoom-200/Z2-02-list-row-titles.md"
+    ],
+    "reason": "עבר QA 08.11: строки /lessons и /tehilim читаются подряд, не рвутся по 2–3 буквы (веб 195 + Android density 840); «לא ניתן לשחזר» снят. Регресс — на телефоне (app-e2e qa-0911, npm run test:android:0911, @android @prod-safe @manual-check, не прогонялись). Web-тесты (@web, viewport 195) — в плане, файлы создаёт playwright-test-generator; пока не записаны."
+  },
+  "#d73fd4": {
+    "class": "qa-passed",
+    "date": "2026-11-09",
+    "source": "qa",
+    "platform": "Android Pixel 6, app 1.0.0 (7) Play, wm density 840 (≈205dp, шрифт 1.15) → reset",
+    "id": "1f157e30a9544d36a6d73fd4",
+    "title": "BUG · תוויות הניווט התחתון נשברות באמצע מילה בזום 200%",
+    "feature": "zoom-200/tab-labels",
+    "tests": [
+      "app-e2e/specs/qa-0911/q-29-zoom200-tab-labels-d73fd4.e2e.ts"
+    ],
+    "tests_web_planned": [
+      "e2e/tests/zoom-200/z2-03-tab-labels-no-mid-word-break.spec.ts"
+    ],
+    "web_plan": "e2e/specs/zoom-200.md",
+    "cases": [
+      "tests/zoom-200/Z2-03-tab-labels.md"
+    ],
+    "reason": "עבר QA 09.11: все 5 подписей нижней навигации, активные (жирные) и неактивные, без разрыва внутри слова; активная «תפילות» целая 3/3 (фикс e6eabb8; реджект 08.11 rej_dc6620d0). Регресс — на телефоне (app-e2e qa-0911, npm run test:android:0911, @android @prod-safe @manual-check, не прогонялись). Web-тесты (@web, viewport 195) — в плане, файлы создаёт playwright-test-generator; пока не записаны."
+  },
+  "#ebcfa6": {
+    "class": "qa-passed",
+    "date": "2026-11-09",
+    "source": "qa",
+    "platform": "Android Pixel 6, app 1.0.0 (7) Play, wm density 840 (≈205dp, шрифт 1.15) → reset",
+    "id": "a1d3cc727e7ecdd64febcfa6",
+    "title": "Android - כותרת «היסטוריית התפילות שלי» נשברת באמצע מילה בזום 200%",
+    "ticket": 27,
+    "feature": "zoom-200/history-title (/journey/history)",
+    "tests": [
+      "app-e2e/specs/qa-0911/q-27-zoom200-screen-titles-63e34a-ebcfa6.e2e.ts"
+    ],
+    "tests_web_planned": [
+      "e2e/tests/zoom-200/z2-04-history-title-breaks-between-words.spec.ts"
+    ],
+    "web_plan": "e2e/specs/zoom-200.md",
+    "cases": [
+      "tests/zoom-200/Z2-04-history-title.md"
+    ],
+    "reason": "עבר QA 09.11 (наш баг №27): «היסטוריית / התפילות שלי» — перенос только между словами (042e5ab). Регресс — на телефоне (app-e2e qa-0911, npm run test:android:0911, @android @prod-safe @manual-check, не прогонялись). Web-тесты (@web, viewport 195) — в плане, файлы создаёт playwright-test-generator; пока не записаны."
+  },
+  "#67d710": {
+    "class": "qa-passed",
+    "date": "2026-11-09",
+    "source": "qa",
+    "platform": "Android Pixel 6, app 1.0.0 (7) Play, wm density 840 (≈205dp, шрифт 1.15) → reset",
+    "id": "0957e7baebecc3ec1067d710",
+    "title": "Android - במסך «המסע שלי» הטקסט «דרגה 1 מתוך 10» נחתך מחוץ למסך בזום 200%",
+    "ticket": 31,
+    "feature": "zoom-200/journey-level (/journey)",
+    "tests": [
+      "app-e2e/specs/qa-0911/q-30-zoom200-journey-level-67d710.e2e.ts"
+    ],
+    "tests_web_planned": [
+      "e2e/tests/zoom-200/z2-05-journey-level-inside-screen.spec.ts"
+    ],
+    "web_plan": "e2e/specs/zoom-200.md",
+    "cases": [
+      "tests/zoom-200/Z2-05-journey-level.md"
+    ],
+    "reason": "עבר QA 09.11 (наш баг №31): «דרגה 1 מתוך 10» своей строкой в экране, значок шапки в экране (f03c00a). Регресс — на телефоне (app-e2e qa-0911, npm run test:android:0911, @android @prod-safe @manual-check, не прогонялись). Web-тесты (@web, viewport 195) — в плане, файлы создаёт playwright-test-generator; пока не записаны."
+  },
+  "#43ca04": {
+    "class": "qa-passed",
+    "date": "2026-11-09",
+    "source": "qa",
+    "platform": "Android Pixel 6, app 1.0.0 (7) Play, wm density 840 (≈205dp, шрифт 1.15) → reset",
+    "id": "7b7e5a3717255ee04243ca04",
+    "title": "Android - בפרופיל האישי הערכים של השורות לא מוצגים בזום 200%",
+    "ticket": 30,
+    "feature": "zoom-200/profile-values (/profile)",
+    "tests": [
+      "app-e2e/specs/qa-0911/q-31-zoom200-profile-values-43ca04.e2e.ts"
+    ],
+    "tests_web_planned": [
+      "e2e/tests/zoom-200/z2-06-profile-row-title-and-value.spec.ts"
+    ],
+    "web_plan": "e2e/specs/zoom-200.md",
+    "cases": [
+      "tests/zoom-200/Z2-06-profile-values.md"
+    ],
+    "reason": "עבר QA 09.11 (наш баг №30): заголовок и значение в каждой строке — אשכנז, 1.1.1990, פתח / תקווה, להתחזק, כל יום, без «..» (14ad0d8). Регресс — на телефоне (app-e2e qa-0911, npm run test:android:0911, @android @prod-safe @manual-check, не прогонялись). Web-тесты (@web, viewport 195) — в плане, файлы создаёт playwright-test-generator; пока не записаны."
+  },
+  "#3be8ad": {
+    "class": "qa-passed",
+    "date": "2026-11-09",
+    "source": "qa",
+    "platform": "Android Pixel 6, app 1.0.0 (7) Play, wm density 840 (≈205dp, шрифт 1.15) → reset",
+    "id": "3bb0425fb9b55010ca3be8ad",
+    "title": "Android - ברשימת הברכות שם הברכה ו-placeholder של החיפוש נחתכים בזום 200%",
+    "ticket": 33,
+    "feature": "zoom-200/brachot-and-search",
+    "tests": [
+      "app-e2e/specs/qa-0911/q-32-zoom200-brachot-and-search-3be8ad.e2e.ts"
+    ],
+    "tests_web_planned": [
+      "e2e/tests/zoom-200/z2-07-brachot-name-and-search-placeholders.spec.ts"
+    ],
+    "web_plan": "e2e/specs/zoom-200.md",
+    "cases": [
+      "tests/zoom-200/Z2-07-brachot-search.md"
+    ],
+    "reason": "עבר QA 09.11 (наш баг №33): «נטילת ידים והמוציא» целиком; placeholder «חיפוש ברכה» и «חיפוש לפי מספר פרק או מילים» целиком (efdc1ec). Регресс — на телефоне (app-e2e qa-0911, npm run test:android:0911, @android @prod-safe @manual-check, не прогонялись). Web-тесты (@web, viewport 195) — в плане, файлы создаёт playwright-test-generator; пока не записаны."
+  },
+  "#a4899f": {
+    "class": "qa-passed",
+    "date": "2026-11-09",
+    "source": "qa",
+    "platform": "Android Pixel 6, app 1.0.0 (7) Play, wm density 840 (≈205dp, шрифт 1.15) → reset",
+    "id": "476f7014d9ee275ceea4899f",
+    "title": "Android - בפרק תהילים כפתור הפרק הנוכחי מסתיר את «פרק הקודם/הבא» בזום 200%",
+    "ticket": 32,
+    "feature": "zoom-200/tehilim-chapter-nav (/tehilim/3)",
+    "tests": [
+      "app-e2e/specs/qa-0911/q-33-zoom200-chapter-nav-a4899f.e2e.ts"
+    ],
+    "tests_web_planned": [
+      "e2e/tests/zoom-200/z2-08-tehilim-chapter-nav-no-overlap.spec.ts"
+    ],
+    "web_plan": "e2e/specs/zoom-200.md",
+    "cases": [
+      "tests/zoom-200/Z2-08-chapter-nav.md"
+    ],
+    "reason": "עבר QA 09.11 (наш баг №32): «פרק ב׳» / «ג׳» / «פרק ד׳» не налезают (751dfff). Регресс — на телефоне (app-e2e qa-0911, npm run test:android:0911, @android @prod-safe @manual-check, не прогонялись). Web-тесты (@web, viewport 195) — в плане, файлы создаёт playwright-test-generator; пока не записаны."
+  },
+  "#536fbb": {
+    "class": "qa-passed",
+    "date": "2026-11-19",
+    "source": "qa",
+    "platform": "Android Pixel 6, wm density 840 (≈205dp, шрифт 1.15) → reset",
+    "title": "Android - בזום 200% שם התפילה הקרובה במסך הבית נשבר באמצע המילה",
+    "feature": "zoom-200/home-prayer-name",
+    "tests": [
+      "app-e2e/specs/qa-1911/q-34-zoom200-home-prayer-name-one-line-536fbb.e2e.ts"
+    ],
+    "cases": [
+      "tests/phone/qa-2026-11-19.md#Q19-01"
+    ],
+    "reason": "עבר QA 19.11 (подтвердил пользователь): имя ближайшей молитвы («מנחה») на главной — одно слово в одну строку. Регресс — на телефоне (app-e2e qa-1911, npm run test:android:1911, @android @prod-safe, не прогонялся).",
+    "id": "74604d89d6d32c1df4536fbb",
+    "ticket": 28
+  },
+  "#422034": {
+    "class": "qa-passed",
+    "date": "2026-11-19",
+    "source": "qa",
+    "platform": "Android Pixel 6, wm density 840 (≈205dp, шрифт 1.15) → reset",
+    "title": "Android - בזום 200% במסך «זמני תפילות» «חצות הלילה» ותוויות הזמנים נשברים באמצע המילה",
+    "feature": "zoom-200/zmanim",
+    "tests": [
+      "app-e2e/specs/qa-1911/q-35-zoom200-zmanim-wrap-between-words-422034.e2e.ts"
+    ],
+    "cases": [
+      "tests/phone/qa-2026-11-19.md#Q19-02"
+    ],
+    "reason": "עבר QA 19.11 (подтвердил пользователь): «חצות הלילה» и подписи времён переносятся только между словами. Регресс — на телефоне (qa-1911, @android @prod-safe, не прогонялся).",
+    "id": "affef5d2518e13e3d5422034",
+    "ticket": 29
+  },
+  "#86e6bc": {
+    "class": "qa-passed",
+    "date": "2026-11-19",
+    "source": "qa",
+    "platform": "iPhone и Android",
+    "title": "תאריכים חשובים במסך הבית: כפתור + בשורת הכותרת, שבועיים בתצוגה מקופלת, להראות הכל / להסתיר הכל",
+    "feature": "important-dates/home-list",
+    "tests": [
+      "app-e2e/specs/qa-1911/q-36-important-dates-header-collapsed-86e6bc.e2e.ts",
+      "app-e2e/specs/qa-1911/q-37-important-dates-14-days-show-all-86e6bc.e2e.ts"
+    ],
+    "cases": [
+      "tests/phone/qa-2026-11-19.md#Q19-03"
+    ],
+    "reason": "עבר QA 19.11 (подтвердил пользователь): «+» в строке заголовка; свёрнуто — даты 14 дней по порядку; «אין תאריכים חשובים בשבועיים הקרובים.»; «להראות הכל» / «להסתיר הכל». Регресс — на телефоне (qa-1911: q-36 @prod-safe, q-37 @data с удалением, не прогонялись).",
+    "id": "e38ae44217c389f14486e6bc",
+    "ticket": 36
+  },
+  "#36c6b2": {
+    "class": "qa-passed",
+    "date": "2026-11-19",
+    "source": "qa",
+    "platform": "iPhone и Android",
+    "title": "בלי חיבור לאינטרנט: מסך הבית, תפילה, תהילים והשלמת תפילה",
+    "feature": "offline",
+    "tests": [
+      "app-e2e/specs/qa-1911/q-38-offline-launch-prayer-tehilim-36c6b2.e2e.ts",
+      "app-e2e/specs/qa-1911/q-39-offline-finish-prayer-sync-36c6b2.e2e.ts"
+    ],
+    "cases": [
+      "tests/phone/qa-2026-11-19.md#Q19-04"
+    ],
+    "reason": "עבר QA 19.11 (подтвердил пользователь): офлайн — главная с датой/временем/баннером, «שחרית», глава תהילים, завершение молитвы и синхронизация. Регресс — на телефоне (qa-1911: q-38, q-39 @data; QA_OFFLINE_MANUAL=1, режим полёта — человек; не прогонялись).",
+    "id": "3a9b4249cfabd6c35236c6b2",
+    "ticket": 34
+  },
+  "#1f0dd2": {
+    "class": "qa-passed",
+    "date": "2026-11-19",
+    "source": "qa",
+    "platform": "iPhone 17 и Android Pixel 6",
+    "title": "iPhone — טווח שעות התפילה במסך הבית מוצג בסדר הפוך (11:25 - 04:55 במקום 04:55 - 11:25)",
+    "feature": "home/prayer-time-range",
+    "tests": [
+      "app-e2e/specs/qa-1911/q-40-prayer-time-range-order-rtl-1f0dd2.e2e.ts"
+    ],
+    "cases": [
+      "tests/phone/qa-2026-11-19.md#Q19-05"
+    ],
+    "reason": "עבר QA 19.11 (подтвердил пользователь): диапазон часов молитвы на главной и в шапке «המסע שלי» — начало первым (правее в RTL), конец левее (фикс 5e36c61). Регресс — на телефоне (qa-1911: q-40 @prod-safe @manual-check, не прогонялся).",
+    "id": "568585209561197bc11f0dd2",
+    "ticket": 35
+  }
+}

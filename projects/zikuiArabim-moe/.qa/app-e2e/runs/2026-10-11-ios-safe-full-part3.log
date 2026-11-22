@@ -1,0 +1,873 @@
+
+Execution of 44 workers started at 2026-10-11T11:52:42.000Z
+
+[0-4] RUNNING in iOS on iOS - file:///specs/prayer-history/ph-01-history-grouping-search.e2e.ts
+[0-4] Error in "История молитв.PH-01 «היסטוריית תפילות שלי»: группировка по дням, HH:mm, поиск, подгрузка #6a86f800 @prod-safe"
+Error: Timeout of 300000ms exceeded. The execution in the test "История молитв PH-01 «היסטוריית תפילות שלי»: группировка по дням, HH:mm, поиск, подгрузка #6a86f800 @prod-safe" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-history/ph-01-history-grouping-search.e2e.ts)
+    at createTimeoutError (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/mocha/lib/errors.js:498:15)
+    at Runnable._timeoutError (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/mocha/lib/runnable.js:429:10)
+    at Timeout.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/mocha/lib/runnable.js:244:24)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+[0-4] 2026-10-11T12:01:06.678Z WARN webdriver: WebDriverError: Session 5ED6EE28-C593-4330-8EB2-743FFEA72C43 was deleted while this request was still pending when running "element/2C000000-0000-0000-166E-000000000000/rect" with method "GET"
+[0-4] 2026-10-11T12:01:06.771Z ERROR webdriver: WebDriverError: A session is either terminated or not started when running "element/2C000000-0000-0000-166E-000000000000/rect" with method "GET"
+[0-4] FAILED in iOS on iOS - file:///specs/prayer-history/ph-01-history-grouping-search.e2e.ts
+[0-5] RUNNING in iOS on iOS - file:///specs/prayer-history/ph-02-same-minute-seconds.e2e.ts
+[0-5] Error in "История молитв.PH-02 Записи одной молитвы в одну минуту — с секундами, одиночная — HH:mm (י״ב תשרי · 23 בספט׳) #6a86f7e9 @prod-safe"
+Error: element ("-ios predicate string:label == "י״ב תשרי · 23 בספט׳" OR value == "י״ב תשרי · 23 בספט׳" OR name == "י״ב תשרי · 23 בספט׳" OR label BEGINSWITH "י״ב תשרי · 23 בספט׳, " OR label BEGINSWITH "י״ב תשרי · 23 בספט׳ — " OR label ENDSWITH ", י״ב תשרי · 23 בספט׳" OR label CONTAINS ", י״ב תשרי · 23 בספט׳, "") still not displayed after 20000ms
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-history/ph-02-same-minute-seconds.e2e.ts:21:5)
+[0-5] FAILED in iOS on iOS - file:///specs/prayer-history/ph-02-same-minute-seconds.e2e.ts
+[0-6] RUNNING in iOS on iOS - file:///specs/prayer-mode/pm-01-toggle-default-and-marking.e2e.ts
+[0-6] Error in "Режим молитвы «יחיד / מניין».PM-01 Переключатель «יחיד/מניין» вверху под счётчиком, по умолчанию «יחיד», выбранный отмечен #6a86f7e7 @prod-safe"
+Error: Expect $(`-ios predicate string:label == "שחרית (ספרדי)" OR value == "שחרית (ספרדי)" OR name == "שחרית (ספר... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:62:30)
+    at switchNusach (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-mode/pm-01-toggle-default-and-marking.e2e.ts:36:9)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-mode/pm-01-toggle-default-and-marking.e2e.ts:45:61)
+[0-6] FAILED in iOS on iOS - file:///specs/prayer-mode/pm-01-toggle-default-and-marking.e2e.ts
+[0-7] RUNNING in iOS on iOS - file:///specs/prayer-mode/pm-02-same-content-arvit-ashkenaz.e2e.ts
+[0-7] Error in "Режим молитвы «יחיד / מניין».PM-02 Содержание и счётчик одинаковы в «יחיד» и «מניין» — arvit_ashkenaz #6a86f7e7 #6a86f7df @prod-safe"
+Error: Expect $(`-ios predicate string:label == "ערבית (אשכנזי)" OR value == "ערבית (אשכנזי)" OR name == "ערבית (א... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:62:30)
+    at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-mode/pm-02-same-content-arvit-ashkenaz.e2e.ts:81:11)
+[0-7] FAILED in iOS on iOS - file:///specs/prayer-mode/pm-02-same-content-arvit-ashkenaz.e2e.ts
+[0-8] RUNNING in iOS on iOS - file:///specs/prayer-mode/pm-02-same-content-mincha-ashkenaz.e2e.ts
+[0-8] Error in "Режим молитвы «יחיד / מניין».PM-02 Содержание и счётчик одинаковы в «יחיד» и «מניין» — mincha_ashkenaz #6a86f7e7 #6a86f7df @prod-safe"
+Error: Expect $(`-ios predicate string:label == "מנחה (אשכנזי)" OR value == "מנחה (אשכנזי)" OR name == "מנחה (אשכנ... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:62:30)
+    at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-mode/pm-02-same-content-mincha-ashkenaz.e2e.ts:81:11)
+[0-8] FAILED in iOS on iOS - file:///specs/prayer-mode/pm-02-same-content-mincha-ashkenaz.e2e.ts
+[0-9] RUNNING in iOS on iOS - file:///specs/prayer-mode/pm-02-same-content-mincha-sfarad.e2e.ts
+[0-9] Error in "Режим молитвы «יחיד / מניין».PM-02 Содержание и счётчик одинаковы в «יחיד» и «מניין» — mincha_sfarad #6a86f7e7 #6a86f7df @prod-safe"
+Error: Expect $(`-ios predicate string:label == "מנחה (ספרדי)" OR value == "מנחה (ספרדי)" OR name == "מנחה (ספרדי)... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:62:30)
+    at switchNusach (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-mode/pm-02-same-content-mincha-sfarad.e2e.ts:67:9)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-mode/pm-02-same-content-mincha-sfarad.e2e.ts:79:19)
+[0-9] FAILED in iOS on iOS - file:///specs/prayer-mode/pm-02-same-content-mincha-sfarad.e2e.ts
+[0-10] RUNNING in iOS on iOS - file:///specs/prayer-mode/pm-02-same-content-shacharit-ashkenaz.e2e.ts
+[0-10] Error in "Режим молитвы «יחיד / מניין».PM-02 Содержание и счётчик одинаковы в «יחיד» и «מניין» — shacharit_ashkenaz #6a86f7e7 #6a86f7df @prod-safe"
+Error: Expect $(`-ios predicate string:label == "שחרית (אשכנזי)" OR value == "שחרית (אשכנזי)" OR name == "שחרית (א... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:62:30)
+    at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-mode/pm-02-same-content-shacharit-ashkenaz.e2e.ts:81:11)
+[0-10] FAILED in iOS on iOS - file:///specs/prayer-mode/pm-02-same-content-shacharit-ashkenaz.e2e.ts
+[0-11] RUNNING in iOS on iOS - file:///specs/prayer-mode/pm-02-same-content-shacharit-sfarad.e2e.ts
+[0-11] Error in "Режим молитвы «יחיד / מניין».PM-02 Содержание и счётчик одинаковы в «יחיד» и «מניין» — shacharit_sfarad #6a86f7e7 #6a86f7df @prod-safe"
+Error: Expect $(`-ios predicate string:label == "שחרית (ספרדי)" OR value == "שחרית (ספרדי)" OR name == "שחרית (ספר... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:62:30)
+    at switchNusach (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-mode/pm-02-same-content-shacharit-sfarad.e2e.ts:67:9)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-mode/pm-02-same-content-shacharit-sfarad.e2e.ts:79:19)
+[0-11] FAILED in iOS on iOS - file:///specs/prayer-mode/pm-02-same-content-shacharit-sfarad.e2e.ts
+[0-12] RUNNING in iOS on iOS - file:///specs/prayer-mode/pm-03-switch-mid-prayer-keeps-position.e2e.ts
+[0-12] Error in "Режим молитвы «יחיד / מניין».PM-03 Смена режима посреди молитвы не сбрасывает позицию #6a86f7e7 @prod-safe"
+Error: Expect $(`-ios predicate string:label == "מנחה (אשכנזי)" OR value == "מנחה (אשכנזי)" OR name == "מנחה (אשכנ... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:62:30)
+    at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-mode/pm-03-switch-mid-prayer-keeps-position.e2e.ts:39:11)
+[0-12] FAILED in iOS on iOS - file:///specs/prayer-mode/pm-03-switch-mid-prayer-keeps-position.e2e.ts
+[0-13] RUNNING in iOS on iOS - file:///specs/profile/pr-01-guest-no-password.e2e.ts
+[0-13] PASSED in iOS on iOS - file:///specs/profile/pr-01-guest-no-password.e2e.ts
+[0-14] RUNNING in iOS on iOS - file:///specs/profile/pr-01-personal-profile-preferences.e2e.ts
+[0-14] Error in "Профиль — вошедший пользователь.PR-01 «פרופיל אישי» — все предпочтения видны и открываются на правку; «סיסמה» нет #6a86f7f9 @prod-safe"
+Error: Не найден текст после прокрутки: רמת התחזקות
+    at scrollToText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:82:9)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/profile/pr-01-personal-profile-preferences.e2e.ts:67:5)
+[0-14] FAILED in iOS on iOS - file:///specs/profile/pr-01-personal-profile-preferences.e2e.ts
+[0-17] RUNNING in iOS on iOS - file:///specs/recordings/rc-01-no-recording-state.e2e.ts
+[0-17] Error in "Озвучка: страница без записи.RC-01 קטע без записи: «אין הקראה לקטע הזה», «השמע» неактивна, строки «הקראה:» нет #6a86f7eda7b2 #6a86f7ed9d38 @prod-safe"
+Error: Expect $(`-ios predicate string:label CONTAINS "(אשכנזי)" OR value CONTAINS "(אשכנזי)"`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at ensureNusach (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-0710.ts:30:33)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/recordings/rc-01-no-recording-state.e2e.ts:16:5)
+[0-17] FAILED in iOS on iOS - file:///specs/recordings/rc-01-no-recording-state.e2e.ts
+[0-18] RUNNING in iOS on iOS - file:///specs/recordings/rc-02-per-page-playback.e2e.ts
+[0-18] Error in "Озвучка: своя запись на каждой странице.RC-02 стр.3 «השמע» → «השהה» → конец без перелистывания; «המשך» останавливает; стр.4 — своя запись #6a86f7eda7b2 #6a86f7ed9d38 @prod-safe @manual-check"
+Error: Expect $(`-ios predicate string:label CONTAINS "(אשכנזי)" OR value CONTAINS "(אשכנזי)"`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at ensureNusach (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-0710.ts:30:33)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/recordings/rc-02-per-page-playback.e2e.ts:27:5)
+[0-18] FAILED in iOS on iOS - file:///specs/recordings/rc-02-per-page-playback.e2e.ts
+[0-19] RUNNING in iOS on iOS - file:///specs/recordings/rc-03-other-nusach-no-playback.e2e.ts
+[0-19] Error in "Озвучка: запись привязана к נוסח.RC-03 Смена נוסח в молитве → запись אשכנז не играет в ספרד; возврат אשכנזי — запись снова доступна #6a86f7eda7b2 #6a86f7ed9d38 @prod-safe"
+Error: Expect $(`-ios predicate string:label CONTAINS "(אשכנזי)" OR value CONTAINS "(אשכנזי)"`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at ensureNusach (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-0710.ts:30:33)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/recordings/rc-03-other-nusach-no-playback.e2e.ts:17:5)
+[0-19] FAILED in iOS on iOS - file:///specs/recordings/rc-03-other-nusach-no-playback.e2e.ts
+[0-20] RUNNING in iOS on iOS - file:///specs/recordings/rc-04-tehilim-39-player.e2e.ts
+[0-20] Error in "Озвучка: экран תהילים.RC-04a תהילים ל״ט без записи: «אין הקראה לפרק הזה», «השמע» неактивна #6a86f7eda7b2 #6a86f7ed9d38 @prod-safe"
+Error: Can't call click on element with selector "-ios predicate string:label == "ל״ט" OR value == "ל״ט" OR name == "ל״ט" OR label BEGINSWITH "ל״ט, " OR label BEGINSWITH "ל״ט — " OR label ENDSWITH ", ל״ט" OR label CONTAINS ", ל״ט, "" because element wasn't found
+    at async openTehilimChapter (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-0710.ts:66:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/recordings/rc-04-tehilim-39-player.e2e.ts:18:5)
+[0-20] Error in "Озвучка: экран תהילים.RC-04b תהילים ל״ט с записью: без автозапуска, «השמע» → «השהה» → пауза/продолжение → конец #6a86f7eda7b2 #6a86f7ed9d38 @prod-safe @manual-check"
+Error: Can't call click on element with selector "-ios predicate string:label == "ל״ט" OR value == "ל״ט" OR name == "ל״ט" OR label BEGINSWITH "ל״ט, " OR label BEGINSWITH "ל״ט — " OR label ENDSWITH ", ל״ט" OR label CONTAINS ", ל״ט, "" because element wasn't found
+    at async openTehilimChapter (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-0710.ts:66:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/recordings/rc-04-tehilim-39-player.e2e.ts:29:5)
+[0-20] FAILED in iOS on iOS - file:///specs/recordings/rc-04-tehilim-39-player.e2e.ts
+[0-21] RUNNING in iOS on iOS - file:///specs/registration/rg-01-join-link-opens-register.e2e.ts
+[0-21] PASSED in iOS on iOS - file:///specs/registration/rg-01-join-link-opens-register.e2e.ts
+[0-22] RUNNING in iOS on iOS - file:///specs/registration/rg-02-consent-toggle.e2e.ts
+[0-22] Error in "Регистрация.RG-02 Экран регистрации: чекбокс согласия переключается, «שלח» неактивна без согласия #6a8edf78 #6a98690c @prod-safe"
+Error: waitUntil condition failed with the following reason: Can't call getAttribute on element with selector "~אני מאשר את תנאי השימוש ואת מדיניות הפרטיות" because element wasn't found
+    at async checked (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/registration/rg-02-consent-toggle.e2e.ts:45:13)
+    ---
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/registration/rg-02-consent-toggle.e2e.ts:72:5)
+[0-22] FAILED in iOS on iOS - file:///specs/registration/rg-02-consent-toggle.e2e.ts
+[0-23] RUNNING in iOS on iOS - file:///specs/reminders/rm-01-quick-reminders-block.e2e.ts
+[0-23] Error in "Напоминания.RM-01 «תזכורות מהירות» — строки с пояснением, ближайшая молитва с окном HH:MM, «ניהול תזכורות» #6a86f7fa #3cc72778 @prod-safe"
+Error: element ("-ios predicate string:label == "תזכורות מהירות" OR value == "תזכורות מהירות" OR name == "תזכורות מהירות" OR label BEGINSWITH "תזכורות מהירות, " OR label BEGINSWITH "תזכורות מהירות — " OR label ENDSWITH ", תזכורות מהירות" OR label CONTAINS ", תזכורות מהירות, "") still not displayed after 20000ms
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/reminders/rm-01-quick-reminders-block.e2e.ts:14:5)
+[0-23] FAILED in iOS on iOS - file:///specs/reminders/rm-01-quick-reminders-block.e2e.ts
+[0-25] RUNNING in iOS on iOS - file:///specs/reminders/rm-03-profile-settings-consent-dialog.e2e.ts
+[0-25] Error in "Напоминания.RM-03 Профиль — «תזכורות במערכת» и «הודעות במייל, SMS ו־WhatsApp», окно согласия #6a86f7fa @prod-safe"
+Error: expect(received).toContain(expected) // indexOf
+
+Expected value: "checkbox, checked"
+Received array: ["1", "true"]
+    at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/reminders/rm-03-profile-settings-consent-dialog.e2e.ts:47:32)
+[0-25] FAILED in iOS on iOS - file:///specs/reminders/rm-03-profile-settings-consent-dialog.e2e.ts
+[0-27] RUNNING in iOS on iOS - file:///specs/reminders/rm-05-07-tefillin-row-today.e2e.ts
+[0-27] Error in "Напоминания.RM-05/06/07 «הנחת תפילין» в «תזכורות מהירות» — по календарю и окну עלות השחר–שקיעה на сегодня, без дублей #3cc72778 @prod-safe"
+Error: element ("-ios predicate string:label == "בית" OR value == "בית" OR name == "בית" OR label BEGINSWITH "בית, " OR label BEGINSWITH "בית — " OR label ENDSWITH ", בית" OR label CONTAINS ", בית, "") still not displayed after 15000ms
+    at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:52:3)
+    at async toHome (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:86:3)
+[0-27] FAILED in iOS on iOS - file:///specs/reminders/rm-05-07-tefillin-row-today.e2e.ts
+[0-29] RUNNING in iOS on iOS - file:///specs/seasonal/se-01-additions-card-today.e2e.ts
+[0-29] [SE-01] ожидание по Hebcal: yaaleh
+[0-29] Error in "תוספות עונתיות: сегодня.SE-01 מנחה сегодня: карточка «תוספות בתפילה» по еврейскому дню (Hebcal), неактуальные свёрнуты «לא נאמר היום» — в אשכנזי и ספרדי #6a86f7fb5ce7 @prod-safe"
+Error: Expect $(`-ios predicate string:label CONTAINS "(אשכנזי)" OR value CONTAINS "(אשכנזי)"`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at ensureNusach (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-0710.ts:30:33)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/seasonal/se-01-additions-card-today.e2e.ts:73:5)
+[0-29] FAILED in iOS on iOS - file:///specs/seasonal/se-01-additions-card-today.e2e.ts
+[0-31] RUNNING in iOS on iOS - file:///specs/source-of-truth/st-01-approved-source-line.e2e.ts
+[0-31] Error in "מקור אמת: строка источника и утверждения.ST-01 Утверждённые (ערבית אשכנז קטע 3, תהילים ל״ט, בורא פרי העץ אשכנז): «מקור: … · אושר על ידי …» #6a86f7e7fbd6 @prod-safe"
+Error: Expect $(`-ios predicate string:label CONTAINS "(אשכנזי)" OR value CONTAINS "(אשכנזי)"`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at ensureNusach (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-0710.ts:30:33)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/source-of-truth/st-01-approved-source-line.e2e.ts:36:5)
+[0-31] Error in "מקור אמת: строка источника и утверждения.ST-02 Неутверждённые (ערבית אשכנז קטע 1, מנחה ספרד קטע 1): «הטקסט עדיין לא אושר…» + источник, без «אושר על ידי» #6a86f7e7fbd6 @prod-safe"
+Error: Expect $(`-ios predicate string:label CONTAINS "(אשכנזי)" OR value CONTAINS "(אשכנזי)"`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at ensureNusach (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-0710.ts:30:33)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/source-of-truth/st-01-approved-source-line.e2e.ts:59:5)
+[0-31] FAILED in iOS on iOS - file:///specs/source-of-truth/st-01-approved-source-line.e2e.ts
+[0-32] RUNNING in iOS on iOS - file:///specs/splash/sp-01-brand-promise-single-cta.e2e.ts
+[0-32] PASSED in iOS on iOS - file:///specs/splash/sp-01-brand-promise-single-cta.e2e.ts
+[0-33] RUNNING in iOS on iOS - file:///specs/tehilim-list/tl-01-day-filter-ranges.e2e.ts
+[0-33] Error in "Список תהילים: фильтр по дням.TL-01 Каждый день недели показывает свои פרקים (א׳ 1–29 … שבת 120–150), «כל הימים» — весь список #6a86f7d99a8f @prod-safe"
+Error: Не найден текст после прокрутки вверх: א׳
+    at scrollUpToText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-0710.ts:105:9)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/tehilim-list/tl-01-day-filter-ranges.e2e.ts:31:14)
+[0-33] FAILED in iOS on iOS - file:///specs/tehilim-list/tl-01-day-filter-ranges.e2e.ts
+[0-34] RUNNING in iOS on iOS - file:///specs/tehilim-list/tl-02-search-words-and-shir-hamaalot.e2e.ts
+[0-34] Error in "Список תהילים: поиск.TL-02 Поиск «רעי לא אחסר» → только כ״ג и открывает его; «שיר המעלות» → ровно 15 (ק״כ–קל״ד) #6a86f7d99a8f @prod-safe"
+Error: Expect $(`-ios predicate string:label == "כ״ג" OR value == "כ״ג" OR name == "כ״ג" OR label BEGINSWITH "כ״ג,... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:62:30)
+    at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/tehilim-list/tl-02-search-words-and-shir-hamaalot.e2e.ts:25:11)
+[0-34] FAILED in iOS on iOS - file:///specs/tehilim-list/tl-02-search-words-and-shir-hamaalot.e2e.ts
+[0-35] RUNNING in iOS on iOS - file:///specs/tehilim-list/tl-03-pirkei-avot-tab.e2e.ts
+[0-35] Error in "Список תהילים: вкладка פרקי אבות.TL-03 «פרקי אבות» → пояснение и 6 פרקים (א׳–ו׳), без чипов дней; возврат «תהילים» — список פרקים #6a86f7d99a8f @prod-safe"
+Error: Expect $(`-ios predicate string:label == "אשרי האיש אשר" OR value == "אשרי האיש אשר" OR name == "אשרי האיש ... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:62:30)
+    at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/tehilim-list/tl-03-pirkei-avot-tab.e2e.ts:38:11)
+[0-35] FAILED in iOS on iOS - file:///specs/tehilim-list/tl-03-pirkei-avot-tab.e2e.ts
+[0-36] RUNNING in iOS on iOS - file:///specs/tehilim/th-01-chapter-reading-screen.e2e.ts
+[0-36] Error in "Чтение תהילים.TH-01 Экран פרק תהילים — без полосы перехода; «סיים קריאה», «האזן להקראה», ⓘ, «חזק את חברך», нижняя навигация #6a86f7da @prod-safe"
+Error: Expect $(`-ios predicate string:label == "לשלמה אלהים משפטיך" OR value == "לשלמה אלהים משפטיך" OR name == "... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:62:30)
+    at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/tehilim/th-01-chapter-reading-screen.e2e.ts:37:11)
+[0-36] FAILED in iOS on iOS - file:///specs/tehilim/th-01-chapter-reading-screen.e2e.ts
+[0-37] RUNNING in iOS on iOS - file:///specs/tehilim/th-02-list-switch-days-search.e2e.ts
+[0-37] Error in "Список תהילים.TH-02 Переключатель «תהילים / פרקי אבות», фильтр дней, поиск по словам, «שיר המעלות» = 15 #6a86f7d99a8f @prod-safe"
+Error: element ("-ios predicate string:label == "א׳" OR value == "א׳" OR name == "א׳" OR label BEGINSWITH "א׳, " OR label BEGINSWITH "א׳ — " OR label ENDSWITH ", א׳" OR label CONTAINS ", א׳, "") still not displayed after 15000ms
+    at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:52:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/tehilim/th-02-list-switch-days-search.e2e.ts:48:5)
+[0-37] FAILED in iOS on iOS - file:///specs/tehilim/th-02-list-switch-days-search.e2e.ts
+[0-39] RUNNING in iOS on iOS - file:///specs/torah-lessons/tl-01-lesson-not-found.e2e.ts
+[0-39] PASSED in iOS on iOS - file:///specs/torah-lessons/tl-01-lesson-not-found.e2e.ts
+[0-40] RUNNING in iOS on iOS - file:///specs/torah-lessons/tl-01-list-and-lesson-text-source.e2e.ts
+[0-40] Error in "שיעורי תורה.TL-01 Список уроков и урок с текстом и источником #6a86f7fc @prod-safe"
+Error: element ("~שיעורי תורה, השיעורים הזמינים לקריאה") still not displayed after 15000ms
+    at async tapLabel (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:57:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/torah-lessons/tl-01-list-and-lesson-text-source.e2e.ts:18:5)
+[0-40] FAILED in iOS on iOS - file:///specs/torah-lessons/tl-01-list-and-lesson-text-source.e2e.ts
+[0-41] RUNNING in iOS on iOS - file:///specs/zmanim/zm-01-rows-method-names.e2e.ts
+[0-41] Error in "זמני היום.ZM-01 Строки זמנים: имя + час рядом, полное название метода, без переносов #6a86f7df @prod-safe"
+Error: element ("-ios predicate string:label CONTAINS "שקיעת החמה" OR value CONTAINS "שקיעת החמה"") still not displayed after 25000ms
+    at async openZmanim (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/zmanim/zm-01-rows-method-names.e2e.ts:28:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/zmanim/zm-01-rows-method-names.e2e.ts:58:5)
+[0-41] FAILED in iOS on iOS - file:///specs/zmanim/zm-01-rows-method-names.e2e.ts
+[0-42] RUNNING in iOS on iOS - file:///specs/zmanim/zm-02-dates-location-daily-study.e2e.ts
+[0-42] Error in "זמני היום.ZM-02 Даты (сегодня), навигация по дням и годам, место расчёта, ежедневное изучение #6a86f7df @prod-safe"
+Error: element ("-ios predicate string:label CONTAINS "שקיעת החמה" OR value CONTAINS "שקיעת החמה"") still not displayed after 25000ms
+    at async openZmanim (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/zmanim/zm-02-dates-location-daily-study.e2e.ts:44:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/zmanim/zm-02-dates-location-daily-study.e2e.ts:60:5)
+[0-42] FAILED in iOS on iOS - file:///specs/zmanim/zm-02-dates-location-daily-study.e2e.ts
+[0-43] RUNNING in iOS on iOS - file:///specs/zmanim/zm-05-alot-mga-19-8-and-72.e2e.ts
+[0-43] Error in "זמני היום.ZM-05 «עלות השחר (מג״א, 19.8°)» и «(מג״א, 72 דקות)» в списке вместе с זמנים, что от них считаются #6a86f800 @prod-safe"
+Error: element ("-ios predicate string:label CONTAINS "שקיעת החמה" OR value CONTAINS "שקיעת החמה"") still not displayed after 25000ms
+    at async openZmanim (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/zmanim/zm-05-alot-mga-19-8-and-72.e2e.ts:26:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/zmanim/zm-05-alot-mga-19-8-and-72.e2e.ts:73:5)
+[0-43] FAILED in iOS on iOS - file:///specs/zmanim/zm-05-alot-mga-19-8-and-72.e2e.ts
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[iOS #0-4] Running: on iOS
+[iOS #0-4] Session ID: 044e3a56-257f-4fef-9f90-77c7fd479754
+[iOS #0-4]
+[iOS #0-4] » specs/prayer-history/ph-01-history-grouping-search.e2e.ts
+[iOS #0-4] История молитв
+[iOS #0-4]    ✖ PH-01 «היסטוריית תפילות שלי»: группировка по дням, HH:mm, поиск, подгрузка #6a86f800 @prod-safe
+[iOS #0-4]
+[iOS #0-4] 1 failing (7m 56.2s)
+[iOS #0-4]
+[iOS #0-4] 1) История молитв PH-01 «היסטוריית תפילות שלי»: группировка по дням, HH:mm, поиск, подгрузка #6a86f800 @prod-safe
+[iOS #0-4] Timeout of 300000ms exceeded. The execution in the test "История молитв PH-01 «היסטוריית תפילות שלי»: группировка по дням, HH:mm, поиск, подгрузка #6a86f800 @prod-safe" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-history/ph-01-history-grouping-search.e2e.ts)
+[iOS #0-4] Error: Timeout of 300000ms exceeded. The execution in the test "История молитв PH-01 «היסטוריית תפילות שלי»: группировка по дням, HH:mm, поиск, подгрузка #6a86f800 @prod-safe" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-history/ph-01-history-grouping-search.e2e.ts)
+[iOS #0-4]     at createTimeoutError (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/mocha/lib/errors.js:498:15)
+[iOS #0-4]     at Runnable._timeoutError (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/mocha/lib/runnable.js:429:10)
+[iOS #0-4]     at Timeout.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/mocha/lib/runnable.js:244:24)
+[iOS #0-4]     at listOnTimeout (node:internal/timers:585:17)
+[iOS #0-4]     at process.processTimers (node:internal/timers:521:7)
+------------------------------------------------------------------
+[iOS #0-5] Running: on iOS
+[iOS #0-5] Session ID: 3b8c1d65-9573-4e04-9235-a25af1d7bed4
+[iOS #0-5]
+[iOS #0-5] » specs/prayer-history/ph-02-same-minute-seconds.e2e.ts
+[iOS #0-5] История молитв
+[iOS #0-5]    ✖ PH-02 Записи одной молитвы в одну минуту — с секундами, одиночная — HH:mm (י״ב תשרי · 23 בספט׳) #6a86f7e9 @prod-safe
+[iOS #0-5]
+[iOS #0-5] 1 failing (2m 20.5s)
+[iOS #0-5]
+[iOS #0-5] 1) История молитв PH-02 Записи одной молитвы в одну минуту — с секундами, одиночная — HH:mm (י״ב תשרי · 23 בספט׳) #6a86f7e9 @prod-safe
+[iOS #0-5] element ("-ios predicate string:label == "י״ב תשרי · 23 בספט׳" OR value == "י״ב תשרי · 23 בספט׳" OR name == "י״ב תשרי · 23 בספט׳" OR label BEGINSWITH "י״ב תשרי · 23 בספט׳, " OR label BEGINSWITH "י״ב תשרי · 23 בספט׳ — " OR label ENDSWITH ", י״ב תשרי · 23 בספט׳" OR label CONTAINS ", י״ב תשרי · 23 בספט׳, "") still not displayed after 20000ms
+[iOS #0-5] Error: element ("-ios predicate string:label == "י״ב תשרי · 23 בספט׳" OR value == "י״ב תשרי · 23 בספט׳" OR name == "י״ב תשרי · 23 בספט׳" OR label BEGINSWITH "י״ב תשרי · 23 בספט׳, " OR label BEGINSWITH "י״ב תשרי · 23 בספט׳ — " OR label ENDSWITH ", י״ב תשרי · 23 בספט׳" OR label CONTAINS ", י״ב תשרי · 23 בספט׳, "") still not displayed after 20000ms
+[iOS #0-5]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-history/ph-02-same-minute-seconds.e2e.ts:21:5)
+------------------------------------------------------------------
+[iOS #0-6] Running: on iOS
+[iOS #0-6] Session ID: 622bc845-9c1c-4109-8dbc-3bc6ec964c03
+[iOS #0-6]
+[iOS #0-6] » specs/prayer-mode/pm-01-toggle-default-and-marking.e2e.ts
+[iOS #0-6] Режим молитвы «יחיד / מניין»
+[iOS #0-6]    ✖ PM-01 Переключатель «יחיד/מניין» вверху под счётчиком, по умолчанию «יחיד», выбранный отмечен #6a86f7e7 @prod-safe
+[iOS #0-6]
+[iOS #0-6] 1 failing (23.8s)
+[iOS #0-6]
+[iOS #0-6] 1) Режим молитвы «יחיד / מניין» PM-01 Переключатель «יחיד/מניין» вверху под счётчиком, по умолчанию «יחיד», выбранный отмечен #6a86f7e7 @prod-safe
+[iOS #0-6] Expect $(`-ios predicate string:label == "שחרית (ספרדי)" OR value == "שחרית (ספרדי)" OR name == "שחרית (ספר... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[iOS #0-6] Error: Expect $(`-ios predicate string:label == "שחרית (ספרדי)" OR value == "שחרית (ספרדי)" OR name == "שחרית (ספר... to be displayed
+[iOS #0-6]
+[iOS #0-6] Expected: "displayed"
+[iOS #0-6] Received: "not displayed"
+[iOS #0-6]     at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:62:30)
+[iOS #0-6]     at switchNusach (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-mode/pm-01-toggle-default-and-marking.e2e.ts:36:9)
+[iOS #0-6]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-mode/pm-01-toggle-default-and-marking.e2e.ts:45:61)
+------------------------------------------------------------------
+[iOS #0-7] Running: on iOS
+[iOS #0-7] Session ID: a7ac6614-c5d3-4d2d-9860-77fd473352a2
+[iOS #0-7]
+[iOS #0-7] » specs/prayer-mode/pm-02-same-content-arvit-ashkenaz.e2e.ts
+[iOS #0-7] Режим молитвы «יחיד / מניין»
+[iOS #0-7]    ✖ PM-02 Содержание и счётчик одинаковы в «יחיד» и «מניין» — arvit_ashkenaz #6a86f7e7 #6a86f7df @prod-safe
+[iOS #0-7]
+[iOS #0-7] 1 failing (22.1s)
+[iOS #0-7]
+[iOS #0-7] 1) Режим молитвы «יחיד / מניין» PM-02 Содержание и счётчик одинаковы в «יחיד» и «מניין» — arvit_ashkenaz #6a86f7e7 #6a86f7df @prod-safe
+[iOS #0-7] Expect $(`-ios predicate string:label == "ערבית (אשכנזי)" OR value == "ערבית (אשכנזי)" OR name == "ערבית (א... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[iOS #0-7] Error: Expect $(`-ios predicate string:label == "ערבית (אשכנזי)" OR value == "ערבית (אשכנזי)" OR name == "ערבית (א... to be displayed
+[iOS #0-7]
+[iOS #0-7] Expected: "displayed"
+[iOS #0-7] Received: "not displayed"
+[iOS #0-7]     at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:62:30)
+[iOS #0-7]     at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-mode/pm-02-same-content-arvit-ashkenaz.e2e.ts:81:11)
+------------------------------------------------------------------
+[iOS #0-8] Running: on iOS
+[iOS #0-8] Session ID: 17d16405-e28e-4951-ad5c-f70c19cbf28b
+[iOS #0-8]
+[iOS #0-8] » specs/prayer-mode/pm-02-same-content-mincha-ashkenaz.e2e.ts
+[iOS #0-8] Режим молитвы «יחיד / מניין»
+[iOS #0-8]    ✖ PM-02 Содержание и счётчик одинаковы в «יחיד» и «מניין» — mincha_ashkenaz #6a86f7e7 #6a86f7df @prod-safe
+[iOS #0-8]
+[iOS #0-8] 1 failing (22s)
+[iOS #0-8]
+[iOS #0-8] 1) Режим молитвы «יחיד / מניין» PM-02 Содержание и счётчик одинаковы в «יחיד» и «מניין» — mincha_ashkenaz #6a86f7e7 #6a86f7df @prod-safe
+[iOS #0-8] Expect $(`-ios predicate string:label == "מנחה (אשכנזי)" OR value == "מנחה (אשכנזי)" OR name == "מנחה (אשכנ... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[iOS #0-8] Error: Expect $(`-ios predicate string:label == "מנחה (אשכנזי)" OR value == "מנחה (אשכנזי)" OR name == "מנחה (אשכנ... to be displayed
+[iOS #0-8]
+[iOS #0-8] Expected: "displayed"
+[iOS #0-8] Received: "not displayed"
+[iOS #0-8]     at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:62:30)
+[iOS #0-8]     at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-mode/pm-02-same-content-mincha-ashkenaz.e2e.ts:81:11)
+------------------------------------------------------------------
+[iOS #0-9] Running: on iOS
+[iOS #0-9] Session ID: 2769d109-3153-441c-9892-fa827ef6d398
+[iOS #0-9]
+[iOS #0-9] » specs/prayer-mode/pm-02-same-content-mincha-sfarad.e2e.ts
+[iOS #0-9] Режим молитвы «יחיד / מניין»
+[iOS #0-9]    ✖ PM-02 Содержание и счётчик одинаковы в «יחיד» и «מניין» — mincha_sfarad #6a86f7e7 #6a86f7df @prod-safe
+[iOS #0-9]
+[iOS #0-9] 1 failing (24.8s)
+[iOS #0-9]
+[iOS #0-9] 1) Режим молитвы «יחיד / מניין» PM-02 Содержание и счётчик одинаковы в «יחיד» и «מניין» — mincha_sfarad #6a86f7e7 #6a86f7df @prod-safe
+[iOS #0-9] Expect $(`-ios predicate string:label == "מנחה (ספרדי)" OR value == "מנחה (ספרדי)" OR name == "מנחה (ספרדי)... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[iOS #0-9] Error: Expect $(`-ios predicate string:label == "מנחה (ספרדי)" OR value == "מנחה (ספרדי)" OR name == "מנחה (ספרדי)... to be displayed
+[iOS #0-9]
+[iOS #0-9] Expected: "displayed"
+[iOS #0-9] Received: "not displayed"
+[iOS #0-9]     at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:62:30)
+[iOS #0-9]     at switchNusach (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-mode/pm-02-same-content-mincha-sfarad.e2e.ts:67:9)
+[iOS #0-9]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-mode/pm-02-same-content-mincha-sfarad.e2e.ts:79:19)
+------------------------------------------------------------------
+[iOS #0-10] Running: on iOS
+[iOS #0-10] Session ID: 2b2c9e88-57a9-4e9a-a8f1-34bc4ee34b99
+[iOS #0-10]
+[iOS #0-10] » specs/prayer-mode/pm-02-same-content-shacharit-ashkenaz.e2e.ts
+[iOS #0-10] Режим молитвы «יחיד / מניין»
+[iOS #0-10]    ✖ PM-02 Содержание и счётчик одинаковы в «יחיד» и «מניין» — shacharit_ashkenaz #6a86f7e7 #6a86f7df @prod-safe
+[iOS #0-10]
+[iOS #0-10] 1 failing (22.6s)
+[iOS #0-10]
+[iOS #0-10] 1) Режим молитвы «יחיד / מניין» PM-02 Содержание и счётчик одинаковы в «יחיד» и «מניין» — shacharit_ashkenaz #6a86f7e7 #6a86f7df @prod-safe
+[iOS #0-10] Expect $(`-ios predicate string:label == "שחרית (אשכנזי)" OR value == "שחרית (אשכנזי)" OR name == "שחרית (א... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[iOS #0-10] Error: Expect $(`-ios predicate string:label == "שחרית (אשכנזי)" OR value == "שחרית (אשכנזי)" OR name == "שחרית (א... to be displayed
+[iOS #0-10]
+[iOS #0-10] Expected: "displayed"
+[iOS #0-10] Received: "not displayed"
+[iOS #0-10]     at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:62:30)
+[iOS #0-10]     at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-mode/pm-02-same-content-shacharit-ashkenaz.e2e.ts:81:11)
+------------------------------------------------------------------
+[iOS #0-11] Running: on iOS
+[iOS #0-11] Session ID: 3b2f6613-f68c-49c1-8467-2bfbbc8c6a39
+[iOS #0-11]
+[iOS #0-11] » specs/prayer-mode/pm-02-same-content-shacharit-sfarad.e2e.ts
+[iOS #0-11] Режим молитвы «יחיד / מניין»
+[iOS #0-11]    ✖ PM-02 Содержание и счётчик одинаковы в «יחיד» и «מניין» — shacharit_sfarad #6a86f7e7 #6a86f7df @prod-safe
+[iOS #0-11]
+[iOS #0-11] 1 failing (23.8s)
+[iOS #0-11]
+[iOS #0-11] 1) Режим молитвы «יחיד / מניין» PM-02 Содержание и счётчик одинаковы в «יחיד» и «מניין» — shacharit_sfarad #6a86f7e7 #6a86f7df @prod-safe
+[iOS #0-11] Expect $(`-ios predicate string:label == "שחרית (ספרדי)" OR value == "שחרית (ספרדי)" OR name == "שחרית (ספר... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[iOS #0-11] Error: Expect $(`-ios predicate string:label == "שחרית (ספרדי)" OR value == "שחרית (ספרדי)" OR name == "שחרית (ספר... to be displayed
+[iOS #0-11]
+[iOS #0-11] Expected: "displayed"
+[iOS #0-11] Received: "not displayed"
+[iOS #0-11]     at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:62:30)
+[iOS #0-11]     at switchNusach (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-mode/pm-02-same-content-shacharit-sfarad.e2e.ts:67:9)
+[iOS #0-11]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-mode/pm-02-same-content-shacharit-sfarad.e2e.ts:79:19)
+------------------------------------------------------------------
+[iOS #0-12] Running: on iOS
+[iOS #0-12] Session ID: 751ced0b-76e2-4767-b5ae-2018ee7c906c
+[iOS #0-12]
+[iOS #0-12] » specs/prayer-mode/pm-03-switch-mid-prayer-keeps-position.e2e.ts
+[iOS #0-12] Режим молитвы «יחיד / מניין»
+[iOS #0-12]    ✖ PM-03 Смена режима посреди молитвы не сбрасывает позицию #6a86f7e7 @prod-safe
+[iOS #0-12]
+[iOS #0-12] 1 failing (23s)
+[iOS #0-12]
+[iOS #0-12] 1) Режим молитвы «יחיד / מניין» PM-03 Смена режима посреди молитвы не сбрасывает позицию #6a86f7e7 @prod-safe
+[iOS #0-12] Expect $(`-ios predicate string:label == "מנחה (אשכנזי)" OR value == "מנחה (אשכנזי)" OR name == "מנחה (אשכנ... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[iOS #0-12] Error: Expect $(`-ios predicate string:label == "מנחה (אשכנזי)" OR value == "מנחה (אשכנזי)" OR name == "מנחה (אשכנ... to be displayed
+[iOS #0-12]
+[iOS #0-12] Expected: "displayed"
+[iOS #0-12] Received: "not displayed"
+[iOS #0-12]     at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:62:30)
+[iOS #0-12]     at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-mode/pm-03-switch-mid-prayer-keeps-position.e2e.ts:39:11)
+------------------------------------------------------------------
+[iOS #0-13] Running: on iOS
+[iOS #0-13] Session ID: 9ee1e91d-7932-45bf-bf5f-b49af13c4078
+[iOS #0-13]
+[iOS #0-13] » specs/profile/pr-01-guest-no-password.e2e.ts
+[iOS #0-13] Профиль — гость: нет входа/экранов с паролем
+[iOS #0-13]    ✓ PR-01 Гость: на экранах номера и регистрации нет входа по паролю, экраны пароля не открываются #6a86f7f9 @prod-safe
+[iOS #0-13]
+[iOS #0-13] 1 passing (47.1s)
+------------------------------------------------------------------
+[iOS #0-14] Running: on iOS
+[iOS #0-14] Session ID: 0de22780-6d90-4f64-bc6e-47d717cbef27
+[iOS #0-14]
+[iOS #0-14] » specs/profile/pr-01-personal-profile-preferences.e2e.ts
+[iOS #0-14] Профиль — вошедший пользователь
+[iOS #0-14]    ✖ PR-01 «פרופיל אישי» — все предпочтения видны и открываются на правку; «סיסמה» нет #6a86f7f9 @prod-safe
+[iOS #0-14]    ✖ "after each" hook for Профиль — вошедший пользователь
+[iOS #0-14]
+[iOS #0-14] 2 failing (1m 10.6s)
+[iOS #0-14]
+[iOS #0-14] 1) Профиль — вошедший пользователь PR-01 «פרופיל אישי» — все предпочтения видны и открываются на правку; «סיסמה» нет #6a86f7f9 @prod-safe
+[iOS #0-14] Не найден текст после прокрутки: רמת התחזקות
+[iOS #0-14] Error: Не найден текст после прокрутки: רמת התחזקות
+[iOS #0-14]     at scrollToText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:82:9)
+[iOS #0-14]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/profile/pr-01-personal-profile-preferences.e2e.ts:67:5)
+[iOS #0-14]
+[iOS #0-14] 2) Профиль — вошедший пользователь "after each" hook for Профиль — вошедший пользователь
+[iOS #0-14] element ("-ios predicate string:label == "בית" OR value == "בית" OR name == "בית" OR label BEGINSWITH "בית, " OR label BEGINSWITH "בית — " OR label ENDSWITH ", בית" OR label CONTAINS ", בית, "") still not displayed after 15000ms
+[iOS #0-14] Error: element ("-ios predicate string:label == "בית" OR value == "בית" OR name == "בית" OR label BEGINSWITH "בית, " OR label BEGINSWITH "בית — " OR label ENDSWITH ", בית" OR label CONTAINS ", בית, "") still not displayed after 15000ms
+[iOS #0-14]     at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:52:3)
+[iOS #0-14]     at async toHome (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:86:3)
+[iOS #0-14]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/profile/pr-01-personal-profile-preferences.e2e.ts:40:27)
+------------------------------------------------------------------
+[iOS #0-17] Running: on iOS
+[iOS #0-17] Session ID: 2511925d-b226-484d-90fb-d984cdae55e9
+[iOS #0-17]
+[iOS #0-17] » specs/recordings/rc-01-no-recording-state.e2e.ts
+[iOS #0-17] Озвучка: страница без записи
+[iOS #0-17]    ✖ RC-01 קטע без записи: «אין הקראה לקטע הזה», «השמע» неактивна, строки «הקראה:» нет #6a86f7eda7b2 #6a86f7ed9d38 @prod-safe
+[iOS #0-17]
+[iOS #0-17] 1 failing (29.1s)
+[iOS #0-17]
+[iOS #0-17] 1) Озвучка: страница без записи RC-01 קטע без записи: «אין הקראה לקטע הזה», «השמע» неактивна, строки «הקראה:» нет #6a86f7eda7b2 #6a86f7ed9d38 @prod-safe
+[iOS #0-17] Expect $(`-ios predicate string:label CONTAINS "(אשכנזי)" OR value CONTAINS "(אשכנזי)"`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[iOS #0-17] Error: Expect $(`-ios predicate string:label CONTAINS "(אשכנזי)" OR value CONTAINS "(אשכנזי)"`) to be displayed
+[iOS #0-17]
+[iOS #0-17] Expected: "displayed"
+[iOS #0-17] Received: "not displayed"
+[iOS #0-17]     at ensureNusach (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-0710.ts:30:33)
+[iOS #0-17]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/recordings/rc-01-no-recording-state.e2e.ts:16:5)
+------------------------------------------------------------------
+[iOS #0-18] Running: on iOS
+[iOS #0-18] Session ID: 6d40204f-5915-4c7e-b8da-b4bd7846f5af
+[iOS #0-18]
+[iOS #0-18] » specs/recordings/rc-02-per-page-playback.e2e.ts
+[iOS #0-18] Озвучка: своя запись на каждой странице
+[iOS #0-18]    ✖ RC-02 стр.3 «השמע» → «השהה» → конец без перелистывания; «המשך» останавливает; стр.4 — своя запись #6a86f7eda7b2 #6a86f7ed9d38 @prod-safe @manual-check
+[iOS #0-18]
+[iOS #0-18] 1 failing (29.5s)
+[iOS #0-18]
+[iOS #0-18] 1) Озвучка: своя запись на каждой странице RC-02 стр.3 «השמע» → «השהה» → конец без перелистывания; «המשך» останавливает; стр.4 — своя запись #6a86f7eda7b2 #6a86f7ed9d38 @prod-safe @manual-check
+[iOS #0-18] Expect $(`-ios predicate string:label CONTAINS "(אשכנזי)" OR value CONTAINS "(אשכנזי)"`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[iOS #0-18] Error: Expect $(`-ios predicate string:label CONTAINS "(אשכנזי)" OR value CONTAINS "(אשכנזי)"`) to be displayed
+[iOS #0-18]
+[iOS #0-18] Expected: "displayed"
+[iOS #0-18] Received: "not displayed"
+[iOS #0-18]     at ensureNusach (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-0710.ts:30:33)
+[iOS #0-18]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/recordings/rc-02-per-page-playback.e2e.ts:27:5)
+------------------------------------------------------------------
+[iOS #0-19] Running: on iOS
+[iOS #0-19] Session ID: 03dab9d3-4e8b-454f-a0d5-58a11fd3e18b
+[iOS #0-19]
+[iOS #0-19] » specs/recordings/rc-03-other-nusach-no-playback.e2e.ts
+[iOS #0-19] Озвучка: запись привязана к נוסח
+[iOS #0-19]    ✖ RC-03 Смена נוסח в молитве → запись אשכנז не играет в ספרד; возврат אשכנזי — запись снова доступна #6a86f7eda7b2 #6a86f7ed9d38 @prod-safe
+[iOS #0-19]
+[iOS #0-19] 1 failing (29.2s)
+[iOS #0-19]
+[iOS #0-19] 1) Озвучка: запись привязана к נוסח RC-03 Смена נוסח в молитве → запись אשכנז не играет в ספרד; возврат אשכנזי — запись снова доступна #6a86f7eda7b2 #6a86f7ed9d38 @prod-safe
+[iOS #0-19] Expect $(`-ios predicate string:label CONTAINS "(אשכנזי)" OR value CONTAINS "(אשכנזי)"`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[iOS #0-19] Error: Expect $(`-ios predicate string:label CONTAINS "(אשכנזי)" OR value CONTAINS "(אשכנזי)"`) to be displayed
+[iOS #0-19]
+[iOS #0-19] Expected: "displayed"
+[iOS #0-19] Received: "not displayed"
+[iOS #0-19]     at ensureNusach (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-0710.ts:30:33)
+[iOS #0-19]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/recordings/rc-03-other-nusach-no-playback.e2e.ts:17:5)
+------------------------------------------------------------------
+[iOS #0-20] Running: on iOS
+[iOS #0-20] Session ID: edb62d22-58ec-4486-ad81-7735fa2df0fe
+[iOS #0-20]
+[iOS #0-20] » specs/recordings/rc-04-tehilim-39-player.e2e.ts
+[iOS #0-20] Озвучка: экран תהילים
+[iOS #0-20]    ✖ RC-04a תהילים ל״ט без записи: «אין הקראה לפרק הזה», «השמע» неактивна #6a86f7eda7b2 #6a86f7ed9d38 @prod-safe
+[iOS #0-20]    ✖ RC-04b תהילים ל״ט с записью: без автозапуска, «השמע» → «השהה» → пауза/продолжение → конец #6a86f7eda7b2 #6a86f7ed9d38 @prod-safe @manual-check
+[iOS #0-20]
+[iOS #0-20] 2 failing (41.2s)
+[iOS #0-20]
+[iOS #0-20] 1) Озвучка: экран תהילים RC-04a תהילים ל״ט без записи: «אין הקראה לפרק הזה», «השמע» неактивна #6a86f7eda7b2 #6a86f7ed9d38 @prod-safe
+[iOS #0-20] Can't call click on element with selector "-ios predicate string:label == "ל״ט" OR value == "ל״ט" OR name == "ל״ט" OR label BEGINSWITH "ל״ט, " OR label BEGINSWITH "ל״ט — " OR label ENDSWITH ", ל״ט" OR label CONTAINS ", ל״ט, "" because element wasn't found
+[iOS #0-20] Error: Can't call click on element with selector "-ios predicate string:label == "ל״ט" OR value == "ל״ט" OR name == "ל״ט" OR label BEGINSWITH "ל״ט, " OR label BEGINSWITH "ל״ט — " OR label ENDSWITH ", ל״ט" OR label CONTAINS ", ל״ט, "" because element wasn't found
+[iOS #0-20]     at async openTehilimChapter (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-0710.ts:66:5)
+[iOS #0-20]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/recordings/rc-04-tehilim-39-player.e2e.ts:18:5)
+[iOS #0-20]
+[iOS #0-20] 2) Озвучка: экран תהילים RC-04b תהילים ל״ט с записью: без автозапуска, «השמע» → «השהה» → пауза/продолжение → конец #6a86f7eda7b2 #6a86f7ed9d38 @prod-safe @manual-check
+[iOS #0-20] Can't call click on element with selector "-ios predicate string:label == "ל״ט" OR value == "ל״ט" OR name == "ל״ט" OR label BEGINSWITH "ל״ט, " OR label BEGINSWITH "ל״ט — " OR label ENDSWITH ", ל״ט" OR label CONTAINS ", ל״ט, "" because element wasn't found
+[iOS #0-20] Error: Can't call click on element with selector "-ios predicate string:label == "ל״ט" OR value == "ל״ט" OR name == "ל״ט" OR label BEGINSWITH "ל״ט, " OR label BEGINSWITH "ל״ט — " OR label ENDSWITH ", ל״ט" OR label CONTAINS ", ל״ט, "" because element wasn't found
+[iOS #0-20]     at async openTehilimChapter (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-0710.ts:66:5)
+[iOS #0-20]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/recordings/rc-04-tehilim-39-player.e2e.ts:29:5)
+------------------------------------------------------------------
+[iOS #0-21] Running: on iOS
+[iOS #0-21] Session ID: bdb112b5-c13b-43f0-aadd-c4d9ade1af15
+[iOS #0-21]
+[iOS #0-21] » specs/registration/rg-01-join-link-opens-register.e2e.ts
+[iOS #0-21] Регистрация
+[iOS #0-21]    ✓ RG-01 «הצטרפו אלינו» на экране номера открывает регистрацию #6a967a00 @prod-safe
+[iOS #0-21]
+[iOS #0-21] 1 passing (47.4s)
+------------------------------------------------------------------
+[iOS #0-22] Running: on iOS
+[iOS #0-22] Session ID: 1c91bfc3-a4e8-44cb-8f05-012d891d9846
+[iOS #0-22]
+[iOS #0-22] » specs/registration/rg-02-consent-toggle.e2e.ts
+[iOS #0-22] Регистрация
+[iOS #0-22]    ✖ RG-02 Экран регистрации: чекбокс согласия переключается, «שלח» неактивна без согласия #6a8edf78 #6a98690c @prod-safe
+[iOS #0-22]
+[iOS #0-22] 1 failing (1m 1s)
+[iOS #0-22]
+[iOS #0-22] 1) Регистрация RG-02 Экран регистрации: чекбокс согласия переключается, «שלח» неактивна без согласия #6a8edf78 #6a98690c @prod-safe
+[iOS #0-22] waitUntil condition failed with the following reason: Can't call getAttribute on element with selector "~אני מאשר את תנאי השימוש ואת מדיניות הפרטיות" because element wasn't found
+[iOS #0-22] Error: waitUntil condition failed with the following reason: Can't call getAttribute on element with selector "~אני מאשר את תנאי השימוש ואת מדיניות הפרטיות" because element wasn't found
+[iOS #0-22]     at async checked (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/registration/rg-02-consent-toggle.e2e.ts:45:13)
+[iOS #0-22]     ---
+[iOS #0-22]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/registration/rg-02-consent-toggle.e2e.ts:72:5)
+------------------------------------------------------------------
+[iOS #0-23] Running: on iOS
+[iOS #0-23] Session ID: 2d1fd6c5-1f27-40aa-91d6-edb7950bdd5f
+[iOS #0-23]
+[iOS #0-23] » specs/reminders/rm-01-quick-reminders-block.e2e.ts
+[iOS #0-23] Напоминания
+[iOS #0-23]    ✖ RM-01 «תזכורות מהירות» — строки с пояснением, ближайшая молитва с окном HH:MM, «ניהול תזכורות» #6a86f7fa #3cc72778 @prod-safe
+[iOS #0-23]
+[iOS #0-23] 1 failing (25.2s)
+[iOS #0-23]
+[iOS #0-23] 1) Напоминания RM-01 «תזכורות מהירות» — строки с пояснением, ближайшая молитва с окном HH:MM, «ניהול תזכורות» #6a86f7fa #3cc72778 @prod-safe
+[iOS #0-23] element ("-ios predicate string:label == "תזכורות מהירות" OR value == "תזכורות מהירות" OR name == "תזכורות מהירות" OR label BEGINSWITH "תזכורות מהירות, " OR label BEGINSWITH "תזכורות מהירות — " OR label ENDSWITH ", תזכורות מהירות" OR label CONTAINS ", תזכורות מהירות, "") still not displayed after 20000ms
+[iOS #0-23] Error: element ("-ios predicate string:label == "תזכורות מהירות" OR value == "תזכורות מהירות" OR name == "תזכורות מהירות" OR label BEGINSWITH "תזכורות מהירות, " OR label BEGINSWITH "תזכורות מהירות — " OR label ENDSWITH ", תזכורות מהירות" OR label CONTAINS ", תזכורות מהירות, "") still not displayed after 20000ms
+[iOS #0-23]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/reminders/rm-01-quick-reminders-block.e2e.ts:14:5)
+------------------------------------------------------------------
+[iOS #0-25] Running: on iOS
+[iOS #0-25] Session ID: aff1a9df-9b7f-47b0-951f-c9614def4de6
+[iOS #0-25]
+[iOS #0-25] » specs/reminders/rm-03-profile-settings-consent-dialog.e2e.ts
+[iOS #0-25] Напоминания
+[iOS #0-25]    ✖ RM-03 Профиль — «תזכורות במערכת» и «הודעות במייל, SMS ו־WhatsApp», окно согласия #6a86f7fa @prod-safe
+[iOS #0-25]    ✖ "after each" hook for Напоминания
+[iOS #0-25]
+[iOS #0-25] 2 failing (35.5s)
+[iOS #0-25]
+[iOS #0-25] 1) Напоминания RM-03 Профиль — «תזכורות במערכת» и «הודעות במייל, SMS ו־WhatsApp», окно согласия #6a86f7fa @prod-safe
+[iOS #0-25] expect(received).toContain(expected) // indexOf
+
+Expected value: "checkbox, checked"
+Received array: ["1", "true"]
+[iOS #0-25] Error: expect(received).toContain(expected) // indexOf
+[iOS #0-25]
+[iOS #0-25] Expected value: "checkbox, checked"
+[iOS #0-25] Received array: ["1", "true"]
+[iOS #0-25]     at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/reminders/rm-03-profile-settings-consent-dialog.e2e.ts:47:32)
+[iOS #0-25]
+[iOS #0-25] 2) Напоминания "after each" hook for Напоминания
+[iOS #0-25] element ("-ios predicate string:label == "בית" OR value == "בית" OR name == "בית" OR label BEGINSWITH "בית, " OR label BEGINSWITH "בית — " OR label ENDSWITH ", בית" OR label CONTAINS ", בית, "") still not displayed after 15000ms
+[iOS #0-25] Error: element ("-ios predicate string:label == "בית" OR value == "בית" OR name == "בית" OR label BEGINSWITH "בית, " OR label BEGINSWITH "בית — " OR label ENDSWITH ", בית" OR label CONTAINS ", בית, "") still not displayed after 15000ms
+[iOS #0-25]     at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:52:3)
+[iOS #0-25]     at async toHome (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:86:3)
+[iOS #0-25]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/reminders/rm-03-profile-settings-consent-dialog.e2e.ts:24:27)
+------------------------------------------------------------------
+[iOS #0-27] Running: on iOS
+[iOS #0-27] Session ID: 9b011786-3c94-4de8-9e11-3deaaa9cef15
+[iOS #0-27]
+[iOS #0-27] » specs/reminders/rm-05-07-tefillin-row-today.e2e.ts
+[iOS #0-27] Напоминания
+[iOS #0-27]    ✖ RM-05/06/07 «הנחת תפילין» в «תזכורות מהירות» — по календарю и окну עלות השחר–שקיעה на сегодня, без дублей #3cc72778 @prod-safe
+[iOS #0-27]    ✖ "after each" hook for Напоминания
+[iOS #0-27]
+[iOS #0-27] 2 failing (39.3s)
+[iOS #0-27]
+[iOS #0-27] 1) Напоминания RM-05/06/07 «הנחת תפילין» в «תזכורות מהירות» — по календарю и окну עלות השחר–שקיעה на сегодня, без дублей #3cc72778 @prod-safe
+[iOS #0-27] element ("-ios predicate string:label == "בית" OR value == "בית" OR name == "בית" OR label BEGINSWITH "בית, " OR label BEGINSWITH "בית — " OR label ENDSWITH ", בית" OR label CONTAINS ", בית, "") still not displayed after 15000ms
+[iOS #0-27] Error: element ("-ios predicate string:label == "בית" OR value == "בית" OR name == "בית" OR label BEGINSWITH "בית, " OR label BEGINSWITH "בית — " OR label ENDSWITH ", בית" OR label CONTAINS ", בית, "") still not displayed after 15000ms
+[iOS #0-27]     at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:52:3)
+[iOS #0-27]     at async toHome (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:86:3)
+[iOS #0-27]
+[iOS #0-27] 2) Напоминания "after each" hook for Напоминания
+[iOS #0-27] element ("-ios predicate string:label == "בית" OR value == "בית" OR name == "בית" OR label BEGINSWITH "בית, " OR label BEGINSWITH "בית — " OR label ENDSWITH ", בית" OR label CONTAINS ", בית, "") still not displayed after 15000ms
+[iOS #0-27] Error: element ("-ios predicate string:label == "בית" OR value == "בית" OR name == "בית" OR label BEGINSWITH "בית, " OR label BEGINSWITH "בית — " OR label ENDSWITH ", בית" OR label CONTAINS ", בית, "") still not displayed after 15000ms
+[iOS #0-27]     at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:52:3)
+[iOS #0-27]     at async toHome (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:86:3)
+[iOS #0-27]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/reminders/rm-05-07-tefillin-row-today.e2e.ts:52:27)
+------------------------------------------------------------------
+[iOS #0-29] Running: on iOS
+[iOS #0-29] Session ID: d5eb8d13-c368-452c-ac6c-83c15d317dab
+[iOS #0-29]
+[iOS #0-29] » specs/seasonal/se-01-additions-card-today.e2e.ts
+[iOS #0-29] תוספות עונתיות: сегодня
+[iOS #0-29]    ✖ SE-01 מנחה сегодня: карточка «תוספות בתפילה» по еврейскому дню (Hebcal), неактуальные свёрнуты «לא נאמר היום» — в אשכנזי и ספרדי #6a86f7fb5ce7 @prod-safe
+[iOS #0-29]
+[iOS #0-29] 1 failing (29.5s)
+[iOS #0-29]
+[iOS #0-29] 1) תוספות עונתיות: сегодня SE-01 מנחה сегодня: карточка «תוספות בתפילה» по еврейскому дню (Hebcal), неактуальные свёрнуты «לא נאמר היום» — в אשכנזי и ספרדי #6a86f7fb5ce7 @prod-safe
+[iOS #0-29] Expect $(`-ios predicate string:label CONTAINS "(אשכנזי)" OR value CONTAINS "(אשכנזי)"`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[iOS #0-29] Error: Expect $(`-ios predicate string:label CONTAINS "(אשכנזי)" OR value CONTAINS "(אשכנזי)"`) to be displayed
+[iOS #0-29]
+[iOS #0-29] Expected: "displayed"
+[iOS #0-29] Received: "not displayed"
+[iOS #0-29]     at ensureNusach (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-0710.ts:30:33)
+[iOS #0-29]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/seasonal/se-01-additions-card-today.e2e.ts:73:5)
+------------------------------------------------------------------
+[iOS #0-31] Running: on iOS
+[iOS #0-31] Session ID: c56c54fa-3bf5-4586-b089-0207294fa64c
+[iOS #0-31]
+[iOS #0-31] » specs/source-of-truth/st-01-approved-source-line.e2e.ts
+[iOS #0-31] מקור אמת: строка источника и утверждения
+[iOS #0-31]    ✖ ST-01 Утверждённые (ערבית אשכנז קטע 3, תהילים ל״ט, בורא פרי העץ אשכנז): «מקור: … · אושר על ידי …» #6a86f7e7fbd6 @prod-safe
+[iOS #0-31]    ✖ ST-02 Неутверждённые (ערבית אשכנז קטע 1, מנחה ספרד קטע 1): «הטקסט עדיין לא אושר…» + источник, без «אושר על ידי» #6a86f7e7fbd6 @prod-safe
+[iOS #0-31]
+[iOS #0-31] 2 failing (58.4s)
+[iOS #0-31]
+[iOS #0-31] 1) מקור אמת: строка источника и утверждения ST-01 Утверждённые (ערבית אשכנז קטע 3, תהילים ל״ט, בורא פרי העץ אשכנז): «מקור: … · אושר על ידי …» #6a86f7e7fbd6 @prod-safe
+[iOS #0-31] Expect $(`-ios predicate string:label CONTAINS "(אשכנזי)" OR value CONTAINS "(אשכנזי)"`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[iOS #0-31] Error: Expect $(`-ios predicate string:label CONTAINS "(אשכנזי)" OR value CONTAINS "(אשכנזי)"`) to be displayed
+[iOS #0-31]
+[iOS #0-31] Expected: "displayed"
+[iOS #0-31] Received: "not displayed"
+[iOS #0-31]     at ensureNusach (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-0710.ts:30:33)
+[iOS #0-31]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/source-of-truth/st-01-approved-source-line.e2e.ts:36:5)
+[iOS #0-31]
+[iOS #0-31] 2) מקור אמת: строка источника и утверждения ST-02 Неутверждённые (ערבית אשכנז קטע 1, מנחה ספרד קטע 1): «הטקסט עדיין לא אושר…» + источник, без «אושר על ידי» #6a86f7e7fbd6 @prod-safe
+[iOS #0-31] Expect $(`-ios predicate string:label CONTAINS "(אשכנזי)" OR value CONTAINS "(אשכנזי)"`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[iOS #0-31] Error: Expect $(`-ios predicate string:label CONTAINS "(אשכנזי)" OR value CONTAINS "(אשכנזי)"`) to be displayed
+[iOS #0-31]
+[iOS #0-31] Expected: "displayed"
+[iOS #0-31] Received: "not displayed"
+[iOS #0-31]     at ensureNusach (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-0710.ts:30:33)
+[iOS #0-31]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/source-of-truth/st-01-approved-source-line.e2e.ts:59:5)
+------------------------------------------------------------------
+[iOS #0-32] Running: on iOS
+[iOS #0-32] Session ID: 8b970e6b-8109-431a-8e5e-83bad53bb8a8
+[iOS #0-32]
+[iOS #0-32] » specs/splash/sp-01-brand-promise-single-cta.e2e.ts
+[iOS #0-32] Splash — экран входа
+[iOS #0-32]    ✓ SP-01 Splash: бренд, обещание, пасук, одна кнопка → экран номера #6a86f800 @prod-safe
+[iOS #0-32]
+[iOS #0-32] 1 passing (43.5s)
+------------------------------------------------------------------
+[iOS #0-33] Running: on iOS
+[iOS #0-33] Session ID: a335125e-3a1e-4f76-9ec1-c97cd3847b74
+[iOS #0-33]
+[iOS #0-33] » specs/tehilim-list/tl-01-day-filter-ranges.e2e.ts
+[iOS #0-33] Список תהילים: фильтр по дням
+[iOS #0-33]    ✖ TL-01 Каждый день недели показывает свои פרקים (א׳ 1–29 … שבת 120–150), «כל הימים» — весь список #6a86f7d99a8f @prod-safe
+[iOS #0-33]
+[iOS #0-33] 1 failing (24.7s)
+[iOS #0-33]
+[iOS #0-33] 1) Список תהילים: фильтр по дням TL-01 Каждый день недели показывает свои פרקים (א׳ 1–29 … שבת 120–150), «כל הימים» — весь список #6a86f7d99a8f @prod-safe
+[iOS #0-33] Не найден текст после прокрутки вверх: א׳
+[iOS #0-33] Error: Не найден текст после прокрутки вверх: א׳
+[iOS #0-33]     at scrollUpToText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-0710.ts:105:9)
+[iOS #0-33]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/tehilim-list/tl-01-day-filter-ranges.e2e.ts:31:14)
+------------------------------------------------------------------
+[iOS #0-34] Running: on iOS
+[iOS #0-34] Session ID: 7d43627e-7007-4b70-b5f5-c2e1c2509a23
+[iOS #0-34]
+[iOS #0-34] » specs/tehilim-list/tl-02-search-words-and-shir-hamaalot.e2e.ts
+[iOS #0-34] Список תהילים: поиск
+[iOS #0-34]    ✖ TL-02 Поиск «רעי לא אחסר» → только כ״ג и открывает его; «שיר המעלות» → ровно 15 (ק״כ–קל״ד) #6a86f7d99a8f @prod-safe
+[iOS #0-34]
+[iOS #0-34] 1 failing (22.6s)
+[iOS #0-34]
+[iOS #0-34] 1) Список תהילים: поиск TL-02 Поиск «רעי לא אחסר» → только כ״ג и открывает его; «שיר המעלות» → ровно 15 (ק״כ–קל״ד) #6a86f7d99a8f @prod-safe
+[iOS #0-34] Expect $(`-ios predicate string:label == "כ״ג" OR value == "כ״ג" OR name == "כ״ג" OR label BEGINSWITH "כ״ג,... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[iOS #0-34] Error: Expect $(`-ios predicate string:label == "כ״ג" OR value == "כ״ג" OR name == "כ״ג" OR label BEGINSWITH "כ״ג,... to be displayed
+[iOS #0-34]
+[iOS #0-34] Expected: "displayed"
+[iOS #0-34] Received: "not displayed"
+[iOS #0-34]     at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:62:30)
+[iOS #0-34]     at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/tehilim-list/tl-02-search-words-and-shir-hamaalot.e2e.ts:25:11)
+------------------------------------------------------------------
+[iOS #0-35] Running: on iOS
+[iOS #0-35] Session ID: eac6db96-f8bb-41be-9a6c-daeefb5a7ab1
+[iOS #0-35]
+[iOS #0-35] » specs/tehilim-list/tl-03-pirkei-avot-tab.e2e.ts
+[iOS #0-35] Список תהילים: вкладка פרקי אבות
+[iOS #0-35]    ✖ TL-03 «פרקי אבות» → пояснение и 6 פרקים (א׳–ו׳), без чипов дней; возврат «תהילים» — список פרקים #6a86f7d99a8f @prod-safe
+[iOS #0-35]
+[iOS #0-35] 1 failing (30.4s)
+[iOS #0-35]
+[iOS #0-35] 1) Список תהילים: вкладка פרקי אבות TL-03 «פרקי אבות» → пояснение и 6 פרקים (א׳–ו׳), без чипов дней; возврат «תהילים» — список פרקים #6a86f7d99a8f @prod-safe
+[iOS #0-35] Expect $(`-ios predicate string:label == "אשרי האיש אשר" OR value == "אשרי האיש אשר" OR name == "אשרי האיש ... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[iOS #0-35] Error: Expect $(`-ios predicate string:label == "אשרי האיש אשר" OR value == "אשרי האיש אשר" OR name == "אשרי האיש ... to be displayed
+[iOS #0-35]
+[iOS #0-35] Expected: "displayed"
+[iOS #0-35] Received: "not displayed"
+[iOS #0-35]     at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:62:30)
+[iOS #0-35]     at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/tehilim-list/tl-03-pirkei-avot-tab.e2e.ts:38:11)
+------------------------------------------------------------------
+[iOS #0-36] Running: on iOS
+[iOS #0-36] Session ID: 9cfe6f86-259b-4f27-9667-3d5890f7777e
+[iOS #0-36]
+[iOS #0-36] » specs/tehilim/th-01-chapter-reading-screen.e2e.ts
+[iOS #0-36] Чтение תהילים
+[iOS #0-36]    ✖ TH-01 Экран פרק תהילים — без полосы перехода; «סיים קריאה», «האזן להקראה», ⓘ, «חזק את חברך», нижняя навигация #6a86f7da @prod-safe
+[iOS #0-36]
+[iOS #0-36] 1 failing (22.1s)
+[iOS #0-36]
+[iOS #0-36] 1) Чтение תהילים TH-01 Экран פרק תהילים — без полосы перехода; «סיים קריאה», «האזן להקראה», ⓘ, «חזק את חברך», нижняя навигация #6a86f7da @prod-safe
+[iOS #0-36] Expect $(`-ios predicate string:label == "לשלמה אלהים משפטיך" OR value == "לשלמה אלהים משפטיך" OR name == "... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[iOS #0-36] Error: Expect $(`-ios predicate string:label == "לשלמה אלהים משפטיך" OR value == "לשלמה אלהים משפטיך" OR name == "... to be displayed
+[iOS #0-36]
+[iOS #0-36] Expected: "displayed"
+[iOS #0-36] Received: "not displayed"
+[iOS #0-36]     at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:62:30)
+[iOS #0-36]     at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/tehilim/th-01-chapter-reading-screen.e2e.ts:37:11)
+------------------------------------------------------------------
+[iOS #0-37] Running: on iOS
+[iOS #0-37] Session ID: 5af5e8e7-393d-4fd6-9bca-91e2ce658de0
+[iOS #0-37]
+[iOS #0-37] » specs/tehilim/th-02-list-switch-days-search.e2e.ts
+[iOS #0-37] Список תהילים
+[iOS #0-37]    ✖ TH-02 Переключатель «תהילים / פרקי אבות», фильтр дней, поиск по словам, «שיר המעלות» = 15 #6a86f7d99a8f @prod-safe
+[iOS #0-37]
+[iOS #0-37] 1 failing (27.2s)
+[iOS #0-37]
+[iOS #0-37] 1) Список תהילים TH-02 Переключатель «תהילים / פרקי אבות», фильтр дней, поиск по словам, «שיר המעלות» = 15 #6a86f7d99a8f @prod-safe
+[iOS #0-37] element ("-ios predicate string:label == "א׳" OR value == "א׳" OR name == "א׳" OR label BEGINSWITH "א׳, " OR label BEGINSWITH "א׳ — " OR label ENDSWITH ", א׳" OR label CONTAINS ", א׳, "") still not displayed after 15000ms
+[iOS #0-37] Error: element ("-ios predicate string:label == "א׳" OR value == "א׳" OR name == "א׳" OR label BEGINSWITH "א׳, " OR label BEGINSWITH "א׳ — " OR label ENDSWITH ", א׳" OR label CONTAINS ", א׳, "") still not displayed after 15000ms
+[iOS #0-37]     at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:52:3)
+[iOS #0-37]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/tehilim/th-02-list-switch-days-search.e2e.ts:48:5)
+------------------------------------------------------------------
+[iOS #0-39] Running: on iOS
+[iOS #0-39] Session ID: adbe6d80-a0d9-45d6-8e97-7bd9a570d506
+[iOS #0-39]
+[iOS #0-39] » specs/torah-lessons/tl-01-lesson-not-found.e2e.ts
+[iOS #0-39] שיעורי תורה
+[iOS #0-39]    ? TL-01 Несуществующий урок #6a86f7fc @prod-safe
+[iOS #0-39]    - TL-01 Несуществующий урок #6a86f7fc @prod-safe
+[iOS #0-39]
+[iOS #0-39] 1 skipped (2.5s)
+------------------------------------------------------------------
+[iOS #0-40] Running: on iOS
+[iOS #0-40] Session ID: 4ab338fc-1590-4751-85e5-85db71be538f
+[iOS #0-40]
+[iOS #0-40] » specs/torah-lessons/tl-01-list-and-lesson-text-source.e2e.ts
+[iOS #0-40] שיעורי תורה
+[iOS #0-40]    ✖ TL-01 Список уроков и урок с текстом и источником #6a86f7fc @prod-safe
+[iOS #0-40]
+[iOS #0-40] 1 failing (19.3s)
+[iOS #0-40]
+[iOS #0-40] 1) שיעורי תורה TL-01 Список уроков и урок с текстом и источником #6a86f7fc @prod-safe
+[iOS #0-40] element ("~שיעורי תורה, השיעורים הזמינים לקריאה") still not displayed after 15000ms
+[iOS #0-40] Error: element ("~שיעורי תורה, השיעורים הזמינים לקריאה") still not displayed after 15000ms
+[iOS #0-40]     at async tapLabel (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:57:3)
+[iOS #0-40]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/torah-lessons/tl-01-list-and-lesson-text-source.e2e.ts:18:5)
+------------------------------------------------------------------
+[iOS #0-41] Running: on iOS
+[iOS #0-41] Session ID: 54f0b3a2-5aaa-4ebe-8448-7738c4377e41
+[iOS #0-41]
+[iOS #0-41] » specs/zmanim/zm-01-rows-method-names.e2e.ts
+[iOS #0-41] זמני היום
+[iOS #0-41]    ✖ ZM-01 Строки זמנים: имя + час рядом, полное название метода, без переносов #6a86f7df @prod-safe
+[iOS #0-41]
+[iOS #0-41] 1 failing (1m 16.5s)
+[iOS #0-41]
+[iOS #0-41] 1) זמני היום ZM-01 Строки זמנים: имя + час рядом, полное название метода, без переносов #6a86f7df @prod-safe
+[iOS #0-41] element ("-ios predicate string:label CONTAINS "שקיעת החמה" OR value CONTAINS "שקיעת החמה"") still not displayed after 25000ms
+[iOS #0-41] Error: element ("-ios predicate string:label CONTAINS "שקיעת החמה" OR value CONTAINS "שקיעת החמה"") still not displayed after 25000ms
+[iOS #0-41]     at async openZmanim (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/zmanim/zm-01-rows-method-names.e2e.ts:28:3)
+[iOS #0-41]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/zmanim/zm-01-rows-method-names.e2e.ts:58:5)
+------------------------------------------------------------------
+[iOS #0-42] Running: on iOS
+[iOS #0-42] Session ID: 9a8f63e6-37c1-4fbf-a6e6-db35626f7aa7
+[iOS #0-42]
+[iOS #0-42] » specs/zmanim/zm-02-dates-location-daily-study.e2e.ts
+[iOS #0-42] זמני היום
+[iOS #0-42]    ✖ ZM-02 Даты (сегодня), навигация по дням и годам, место расчёта, ежедневное изучение #6a86f7df @prod-safe
+[iOS #0-42]
+[iOS #0-42] 1 failing (1m 16.2s)
+[iOS #0-42]
+[iOS #0-42] 1) זמני היום ZM-02 Даты (сегодня), навигация по дням и годам, место расчёта, ежедневное изучение #6a86f7df @prod-safe
+[iOS #0-42] element ("-ios predicate string:label CONTAINS "שקיעת החמה" OR value CONTAINS "שקיעת החמה"") still not displayed after 25000ms
+[iOS #0-42] Error: element ("-ios predicate string:label CONTAINS "שקיעת החמה" OR value CONTAINS "שקיעת החמה"") still not displayed after 25000ms
+[iOS #0-42]     at async openZmanim (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/zmanim/zm-02-dates-location-daily-study.e2e.ts:44:3)
+[iOS #0-42]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/zmanim/zm-02-dates-location-daily-study.e2e.ts:60:5)
+------------------------------------------------------------------
+[iOS #0-43] Running: on iOS
+[iOS #0-43] Session ID: 55951cf1-4bf0-49c6-b5c9-4849bd358ec0
+[iOS #0-43]
+[iOS #0-43] » specs/zmanim/zm-05-alot-mga-19-8-and-72.e2e.ts
+[iOS #0-43] זמני היום
+[iOS #0-43]    ✖ ZM-05 «עלות השחר (מג״א, 19.8°)» и «(מג״א, 72 דקות)» в списке вместе с זמנים, что от них считаются #6a86f800 @prod-safe
+[iOS #0-43]
+[iOS #0-43] 1 failing (1m 15.8s)
+[iOS #0-43]
+[iOS #0-43] 1) זמני היום ZM-05 «עלות השחר (מג״א, 19.8°)» и «(מג״א, 72 דקות)» в списке вместе с זמנים, что от них считаются #6a86f800 @prod-safe
+[iOS #0-43] element ("-ios predicate string:label CONTAINS "שקיעת החמה" OR value CONTAINS "שקיעת החמה"") still not displayed after 25000ms
+[iOS #0-43] Error: element ("-ios predicate string:label CONTAINS "שקיעת החמה" OR value CONTAINS "שקיעת החמה"") still not displayed after 25000ms
+[iOS #0-43]     at async openZmanim (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/zmanim/zm-05-alot-mga-19-8-and-72.e2e.ts:26:3)
+[iOS #0-43]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/zmanim/zm-05-alot-mga-19-8-and-72.e2e.ts:73:5)
+
+
+Spec Files:	 4 passed, 29 failed, 11 skipped, 44 total (100% completed) in 00:37:02  
+

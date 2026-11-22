@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-09",
+  "command": "/qa (continuation, user: 'начинай тестить')",
+  "env": "Android Pixel 6 over Wi-Fi adb 10.0.0.5:5555, app 1.0.0 build 7 (Play, installed 2026-11-08 20:35), expo-updates: NoUpdatesAvailable 13:20; wm density 840 -> reset",
+  "iphone": "not needed now; only #76bc4c push evening 9.11",
+  "tickets": [
+    {
+      "hash": "#d73fd4",
+      "verdict_draft": "pass",
+      "note": "all 5 tabs active/inactive, no mid-word break; active תפילות whole 3/3 (fix e6eabb8)",
+      "open_rejection": "rej_dc6620d0 -> resolve"
+    },
+    {
+      "hash": "#ebcfa6",
+      "verdict_draft": "pass",
+      "note": "היסטוריית / התפילות שלי, break between words (042e5ab)"
+    },
+    {
+      "hash": "#67d710",
+      "verdict_draft": "pass",
+      "note": "דרגה 1 מתוך 10 on own line inside screen; header icon inside (f03c00a)"
+    },
+    {
+      "hash": "#43ca04",
+      "verdict_draft": "pass",
+      "note": "all profile values shown under titles, פתח / תקווה (14ad0d8)"
+    },
+    {
+      "hash": "#3be8ad",
+      "verdict_draft": "pass",
+      "note": "נטילת ידים והמוציא full; placeholders חיפוש ברכה and חיפוש לפי מספר פרק או מילים full (efdc1ec)"
+    },
+    {
+      "hash": "#a4899f",
+      "verdict_draft": "pass",
+      "note": "פרק ב׳ / ג׳ / פרק ד׳ no overlap (751dfff)"
+    },
+    {
+      "hash": "#536fbb",
+      "verdict_draft": "fix not on device",
+      "note": "מנח / ה still split; dev: 7a316c1 'arrives with next OTA'; device NoUpdatesAvailable"
+    },
+    {
+      "hash": "#422034",
+      "verdict_draft": "fix not on device",
+      "note": "חצות הלילה one-two letters per line; dev: f7c6d7f 'OTA not yet published'"
+    }
+  ],
+  "screenshots": "scratchpad 0911_*.png",
+  "test_data": [],
+  "board_actions": [
+    {
+      "time": "11:31Z",
+      "hash": "#536fbb",
+      "action": "task_add_rejection",
+      "rejection_id": "rej_12c4ea35a72ef801c235f572",
+      "status": "todo",
+      "why": "fix 7a316c1 not in OTA; asked dev to publish OTA"
+    },
+    {
+      "time": "11:31Z",
+      "hash": "#422034",
+      "action": "task_add_rejection",
+      "rejection_id": "rej_9604d5d1d1b9c40c050c1630",
+      "status": "todo",
+      "why": "fix f7c6d7f not in OTA; asked dev to publish OTA"
+    },
+    {
+      "hash": "#d73fd4",
+      "action": "task_resolve_rejection",
+      "rejection_id": "rej_dc6620d02bf389b687dd45a2",
+      "by": "user 'Да, закрой'"
+    }
+  ],
+  "user_moved_done": [
+    "#d73fd4",
+    "#ebcfa6",
+    "#67d710",
+    "#43ca04",
+    "#3be8ad",
+    "#a4899f"
+  ],
+  "autotests": "written by autotest-writer: tests/zoom-200 (8 cases), app-e2e/specs/qa-0911 (7 native, not run), e2e/specs/zoom-200.md (web plan, specs not generated); ledger qa-passed x8",
+  "next": [
+    "calibration run: cd app-e2e && npm run test:android:0911 on Pixel 6 (user: later)",
+    "generate 9 web specs from e2e/specs/zoom-200.md",
+    "#76bc4c push on iPhone evening 9.11",
+    "renew mifrat token by 10.11",
+    "re-test #536fbb, #422034 after OTA"
+  ]
+}

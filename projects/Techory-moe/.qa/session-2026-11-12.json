@@ -1,0 +1,2073 @@
+{
+ "project": "Techory",
+ "date": "2026-11-12",
+ "environment": "https://app.techory.ai",
+ "tickets": [
+  {
+   "id": "6eed7c73f86190f44e2b3784",
+   "hash": "#6eed7c73",
+   "title": "לוגיקת עדיפות: הקצאה ידנית גוברת על מסלול Stripe וחזרה אוטומטית בתפוגה",
+   "type": "feature",
+   "action": "blocked",
+   "column": "בבדיקות",
+   "notes": "Реджект 1 (прошедшая дата) — исправлено, прогон 1: EN «Pick today or a later date.» + Save disabled; HE «יש לבחור את היום או תאריך מאוחר יותר.» + שמירה disabled; min=сегодня; сегодня → Save активна. Скрины .qa/screenshots/6eed7c73/. Не проверено: назначение/отмена со стороны пользователя (нужен 2-й аккаунт), возврат по сроку (на следующий день), webhook Stripe. Дубль: #226301e0. | 2 прогона (EN 1440, HE 375) с аккаунтом «בדיקה» (Starter Tech Trial): назначение Pro Tech → у пользователя AI открылся без перезагрузки за 53 с (оба прогона), в меню AI, на Billing «Granted by Techory until …»; назначение «до сегодня» сохраняется; Change/extend (שינוי / הארכה) меняет срок; Revoke требует причину, после — AI закрыт за 53 с, строка вернулась к Starter Tech Trial. Запросы: rpc admin_set_plan_assignment / admin_revoke_plan_assignment с причиной. Не проверено: возврат по сроку (завтра), перекрытие реального плана Stripe (у аккаунта trial, не Stripe). Аккаунт возвращён в исходное (проверено). | 04.10: реджект 29.9 отмечен «טופל»; поставлена «לא ניתן לשחזר»: ממתין לחיבור Stripe (перекрытие Stripe + автовозврат по сроку). Проверено перезагрузкой.",
+   "at": "2026-10-04T22:55"
+  },
+  {
+   "id": "6a33fdffe01eb914556f8c0a",
+   "hash": "#6a33fdff",
+   "title": "טאב Call Masing בעמוד ai",
+   "type": "feature",
+   "action": "status-todo",
+   "column": "לביצוע",
+   "notes": "Заглушка есть и корректна: AI → Call Masking / «הסתרת שיחה», «Coming Soon»/«בקרוב» + описание; EN/HE, 1440 и 375, без горизонтальной прокрутки, без ошибок консоли. Скрины .qa/screenshots/6a33fdff/. Открытый реджект 29.9 требует полную функцию (5 возможностей) — противоречит описанию тикета «כהכנה לפיתוח עתידי» и коммент. программиста (F-7/F-8 в Backlog). Нужно решение. | Решение пользователя: реджект не выполнен → статус לביצוע (без нового реджекта), проверено перезагрузкой.",
+   "at": "2026-10-04T23:05"
+  },
+  {
+   "id": "6a81d1770d5a6f7930b03668",
+   "hash": "#6a81d177",
+   "title": "תקופת ניסיון חינם ל-7 ימים ותזכורת לפני סיום",
+   "type": "improvement",
+   "action": "blocked",
+   "column": "בבדיקות",
+   "notes": "Активная пометка «לא ניתן לשחזר»: «לא ניתן לבדוק עד חיבור תשלום» — не трогаем (L-20261003-13). Наблюдение: «auto test» в Trial до 06.10 — напоминание можно проверить сейчас, если пользователь захочет; email-напоминание не сделано (коммент. программиста).",
+   "at": "2026-10-04T17:55"
+  },
+  {
+   "id": "6a4fad600e673484ac04d345",
+   "hash": "#6a4fad60",
+   "title": "[F-14] מדרגי מנוי ואכיפת מכסות",
+   "type": "feature",
+   "action": "reject",
+   "column": "לביצוע",
+   "notes": "Прогон частичный. /pricing (EN/HE): 3 тарифа — Techory Lite / Starter Tech $49 / Pro Tech $99; Growth $199 и Enterprise $299 из тикета отсутствуют (D-20). Годовые цены на сайте $499/$999 vs $500/$1,000 в тикете. Lite: на сайте нет «קבלה אחת ביום», но есть «No inventory» (нет в тикете). Billing (admin, Pro Tech Grandfathered): нет блока расхода квоты против потолка. Гейтинг по тарифам (AI/Inventory/key codes/25 работ/$1,000) не проверен — нужен 2-й аккаунт; проверка квот создаёт данные на prod. Комментариев программиста нет — объём реализации неизвестен. | Гейтинг через «בדיקה»: Lite — AI закрыт («AI tools are not part of your plan… from Pro Tech and up»), Inventory закрыт («…from Starter Tech and up»), в меню нет AI/Inventory, Map виден (на /pricing у Lite «No GPS»); Starter — AI закрыт, Inventory открыт; Pro — AI открыт. В назначении 5 тарифов: Lite/Starter Tech/Pro Tech/Growth Company/Scale Enterprise. Billing без расхода квот. Не проверено: квоты 25 работ/$1,000/квитанция в день (создают данные на prod), места техников Growth, key codes, QuickBooks/LSA Enterprise (QuickBooks не реализован — см. F-11). | КВОТЫ Lite (admin iamdejar на Techory Lite «Assigned», компания test, 0 работ/счетов в октябре до теста): создано 27 работ (JOB-0014…JOB-0040) — 26-я и 27-я (другим путём: Create new → New Job) созданы без блокировки и без предложения апгрейда; счёт $1,200 (INV-0014) создан — потолок $1,000 не применён; второй счёт за день (INV-0015 $10) создан — «קבלה אחת ביום» не применено. Скрины .qa/screenshots/f14q/. Admin возвращён на Pro Tech Grandfathered (проверено). | РЕДЖЕКТ отправлен 04.10 (через Chrome): «מכסות מסלול Techory Lite לא נאכפות…», 7 шагов, 3 скриншота; статус → לביצוע, проверено перезагрузкой.",
+   "at": "2026-10-04T22:10"
+  },
+  {
+   "id": "6a4fad600e673484ac04d342",
+   "hash": "#6a4fad60",
+   "title": "[F-11] אינטגרציית QuickBooks",
+   "type": "feature",
+   "action": "reject",
+   "column": "לביצוע",
+   "notes": "2 независимых прогона (агент + мой поиск по 116 JS-чанкам и 8 страницам): QuickBooks/Intuit не реализован — есть только строка в описании тарифа Enterprise и флаг quickbooks:!0 в конфиге тарифов. Нет кнопки подключения, OAuth, синхронизации. Связано: #6a4f81c8 (одобрение Intuit, в לביצוע). Переведён в בבדיקות 24.09 через MCP без комментария. | РЕДЖЕКТ отправлен 04.10: «אינטגרציית QuickBooks לא קיימת במערכת», 4 шага, 2 скриншота; статус → לביצוע, проверено перезагрузкой.",
+   "at": "2026-10-04T22:35"
+  },
+  {
+   "id": "ca5577077ede228f833aa4f6",
+   "hash": "#ca557707",
+   "title": "מסך אדמין: ניהול והקצאת חבילות למשתמשים",
+   "type": "feature",
+   "action": "pass",
+   "column": "הושלם",
+   "notes": "Plans: столбцы Account/Plan/Source/Subscription status/Until, фильтры планов/источников/статусов; назначение/изменение/продление/отмена с обязательной причиной — работают EN+HE; изменения видны пользователю ≤60 с. Не-admin: /adminpanel «Access Denied» (вкладки видны — известный баг #12126fac), rpc admin_list_plan_accounts → 403. Чтение таблицы PlanAssignment под пользователем — запрещено системой разрешений (не проверено). Осталось: фильтр Subscription status по всем значениям, AC S-15 (дата начала, история/audit в UI, уведомление пользователю). | Все пункты «תיאור» проверены: список всех аккаунтов (51), поиск (часть email, регистр, иврит, пробелы, пусто «No accounts match these filters.»/«אין חשבונות שתואמים לסינון.»), фильтры план/источник/статус — 0 несовпадений по каждому значению, назначение/смена/продление/отмена (2 прогона EN/HE), источник и дата окончания показаны. Вне «תיאור» (S-15): нет даты начала, нет просмотра истории в UI, уведомление пользователю не найдено — расхождение с документацией, не реджект.",
+   "at": "2026-10-04T22:20"
+  },
+  {
+   "id": "226301e0b345e86872b42657",
+   "hash": "#226301e0",
+   "title": "שכבת שרת: עדיפות הקצאה ידנית על מסלול Stripe וחזרה אוטומטית בתפוגה",
+   "type": "feature",
+   "action": "blocked",
+   "column": "בבדיקות",
+   "notes": "Дубль #6eed7c73, проверено вместе. Поставлена «לא ניתן לשחזר» (04.10): ממתין לחיבור Stripe — проверить, что Stripe не перекрывает ручное назначение, и автовозврат по сроку. Остальное проверено и работает.",
+   "at": "2026-10-04T22:45"
+  },
+  {
+   "id": "6a4fad600e673484ac04d349",
+   "hash": "#6a4fad60",
+   "title": "[F-18] מצב כהה (dark mode)",
+   "type": "feature",
+   "action": "pass",
+   "column": "הושלם",
+   "notes": "05.10, превью Vercel через Chrome пользователя (данные prod). Переключатель: меню аватара → Theme/ערכת נושא → Light/Dark/System (בהיר/כהה/לפי המערכת), текущий отмечен. Выбор хранится на сервере per-user (после удаления localStorage и F5 вернулся выбранный, а не системный) ✅. System + тёмная ОС → тёмный ✅. Экраны в Dark без светлых островов и с контрастом ≥4.5 (скрипт): dashboard, ai, schedule, leads, jobs, job detail, job form (dropdown, date picker), customers, estimates, invoices, pricebook, inventory, reports, payments, map, adminpanel, supportinbox, Create new menu ✅. HE+RTL в dark ✅, подписи темы на иврите ✅, смена языка не сбрасывает тему ✅. /pricing остаётся светлой (по задумке) ✅. Light после Dark — без тёмных остатков ✅. Inline-скрипт темы в HTML (против вспышки) ✅. НЕ проверено: ширина 375 (окно Chrome не сужается), живое переключение темы ОС, ошибка сохранения, тема второго пользователя, выход/вход. Конфликт: по умолчанию Light (программист) vs «לפי הגדרת המערכת» (S-13/D-14). Состояние восстановлено: Dark, язык по умолчанию. | 05.10 ПОЛНЫЙ ПРОХОД Dark (скрипт: светлые острова, текст ≥4.5/≥3 крупный, иконки ≥3, рамки полей + глазами по скринам): 15 разделов меню со всеми вкладками (Jobs 6, Inventory 7, AI 6 + Chat/Notes, Admin Users/Plans/Funnel, Support Bug/Task/Chat + открытое обращение), 16 отчётов, 8 страниц меню профиля (Account, Profile, Company, Payment/Stripe, Billing, Technicians, Settings/JobOptions, окно Support), детальные: работа (7 вкладок), клиент (6 вкладок), смета (модалка), счёт; формы: New Job/Client/Lead/Estimate/Technician, New Event, New Item, New Product, Create with AI, Assign plan (+ выпадающий список); выпадающие/календари/меню; Schedule Day/Week/Month. Дефектов тёмной темы НЕ найдено. 3 места контраста (имя счёта 1.68, BUILT-IN 4.30, стрелки сортировки 2.95) — на prod Light хуже (1.00/2.33/1.41) → не дефект F-18, общая находка. Schedule: клик мышью через расширение по Week/Month не переключает, клавиатурой переключает; на prod (Playwright) клик работает — нужно подтверждение пользователя руками. Решение пользователя: по умолчанию Light — ок. Не проверено: 375px, живая смена темы ОС, toast. | 05.10 МОБИЛЬНЫЙ (DevTools iPhone, 440px): 16 экранов (dashboard, jobs, job detail, invoices, invoice form, customers, schedule, leads, estimates, pricebook, inventory, reports, payments, admin, support, ai, billing) + мобильное меню More + меню аватара с подменю темы (помещается) + HE/RTL на 4 экранах — без горизонтальной прокрутки, светлых островов и низкого контраста. Schedule Week: пользователь подтвердил, что клик работает (странность только расширения). Итог: дефектов тёмной темы нет.",
+   "at": "2026-10-05T12:00"
+  },
+  {
+   "id": "0977347127ca7b53ef785064",
+   "hash": "#09773471",
+   "date": "2026-10-08",
+   "result": "Редирект user /supportinbox → /dashboard ✅ (EN/HE, F5, варианты URL, назад), Access Denied 0; admin консоль ✅. Вспышка крошки «Workspace / SupportInbox» 0.17–0.88 c — подтверждено bug-verifier 12/12. Ждём решения A/B.",
+   "screens": ".qa/screenshots/09773471/",
+   "action": "08.10 Passed QA → Done, проверено на доске; вспышка вынесена в #26087e6e"
+  },
+  {
+   "id": "12126fac460d60260738a5f1",
+   "hash": "#12126fac",
+   "date": "2026-10-08",
+   "result": "Ретест после реджекта 07.10: редирект /adminpanel → /dashboard ✅ (EN/HE, F5, 6 вариантов URL, назад/вперёд), Access Denied/вкладок 0; admin панель и шапка ✅. Вспышка «Workspace / AdminPanel» 150–370 мс (подтверждено 6/6). Ждём решения A/B.",
+   "screens": ".qa/screenshots/12126fac/2026-10-08/",
+   "action": "08.10 סמן כטופל (реджект 07.10) + Passed QA → Done, проверено на доске"
+  },
+  {
+   "hash": "#26087e6e",
+   "date": "2026-10-08",
+   "title": "בהפניה מ-/supportinbox ו-/adminpanel … פירורי הלחם",
+   "action": "новый BUG, To do, Low, 3 скрина, проверено"
+  },
+  {
+   "hash": "#f109cde8",
+   "date": "2026-10-08",
+   "result": "Пользователь зарегистрировал аккаунт «testik» 08.10: Billing — Starter Tech, Trial — 7 days left, auto-renewal Oct 15, 2026, Billing cycle Monthly. Сценарий «вход на следующий день → 6 дней» — завтра. | 2-й аккаунт «trtrtrtrt» (xofayes535@aahzz.com) Starter Tech Yearly: Trial — 7 days left, Annual $499/year, до Oct 15 ✅. После регистрации вход автоматический — сценарий «первый вход позже регистрации» через UI не создать.",
+   "screens": ".qa/screenshots/f109cde8/",
+   "action": "08.10 Passed QA → Done, проверено на доске"
+  },
+  {
+   "id": "6a4fad600e673484ac04d345",
+   "hash": "#6a4fad60",
+   "date": "2026-10-08",
+   "result": "Ретест реджекта 04.10. Admin на Lite (временно): новая работа блокируется (Jobs и Create new) «Plan limit reached — Techory Lite allows 25 jobs per month», Upgrade plan → Billing; счёт $1,200 блок (cap $1,000/мес). «trtrtrtrt» на Lite (временно): $1,200 блок; INV-0001 $100 создан; второй $50 блок «allows 1 invoice per day»; Upgrade plan → Billing. Оба аккаунта восстановлены (admin Pro Tech Grandfathered; trtrtrtrt Starter Trial до 15.10 Annual). Находки: проверка квоты на клиенте (POST не уходит) — серверная не подтверждена; daily estimates limit в бандле не в тикете; тост 9.6 c; подсказки клиентов перекрывают Phone.",
+   "screens": ".qa/screenshots/f14q/2026-10-08/",
+   "action": "ожидает решения"
+  },
+  {
+   "hash": "#6a4fad60",
+   "date": "2026-10-08",
+   "part": "tiers vs description",
+   "result": "trtrtrtrt по тарифам: Starter (trial) AI закрыт/нет в меню ✅, Inventory ✅, счета без лимита (INV-0002 $1,500 2-й за день) ✅, 1 доп. техник создан (описание «משתמש אחד»); Pro AI ✅ AutoCode Hyundai/Kia/Nissan 2006–2016 0/2 ✅, 2-й доп. техник блок «Pro Tech includes 1 technician seat» (AC: «משתמש יחיד ללא מושבי טכנאי»); Growth 3 доп. техника ✅, 4-й блок ✅, AutoCode 0/4 ✅, routing/partial automation — в UI нет, в коде не используется; Enterprise 6 техников ✅ 7-й блок ✅, AutoCode 0/6 ✅, Company Slots «up to 2 companies» ✅, QuickBooks/LSA/3 phone lines/full automation — нет в UI, только текст тарифа. Trial без key codes — не проверено. Аккаунт восстановлен Starter Trial до 15.10.",
+   "screens": ".qa/screenshots/f14-tiers/"
+  },
+  {
+   "hash": "#6a4fad60",
+   "date": "2026-10-08",
+   "action": "08.10: старый реджект 04.10 (квоты Lite) → Mark as resolved; новый реджект «חלק מתכונות המסלולים מהתיאור לא קיימות…» (3 шага, 3 скрина f14-tiers) → To do, проверено на доске"
+  },
+  {
+   "id": "f576f6d3e6620f16af0ff043",
+   "title": "sitemap.xml לא קיים",
+   "date": "2026-10-14",
+   "action": "verdict-pass-pending",
+   "column": "בבדיקות",
+   "facts": "3 прогона: techory.ai и www → 200 application/xml, xmllint OK, 3 URL (/,/privacy,/terms) = все маршруты бандла лендинга; GSC — только пользователь"
+  },
+  {
+   "id": "8d3f16b1388a6237ee6f7c8d",
+   "title": "robots.txt לא קיים",
+   "date": "2026-10-14",
+   "action": "verdict-pass-pending",
+   "column": "בבדיקות",
+   "facts": "3 прогона: 200 text/plain, User-agent:* Allow:/ Sitemap: https://techory.ai/sitemap.xml (открывается 200)"
+  },
+  {
+   "id": "08737d6c2b0dae50b9f62af1",
+   "title": "חלון \"Select Client\" ... שקוף",
+   "date": "2026-10-14",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "реджект закрыт через MCP 14.10 (кроме b4c3bed5 — не было); bug-verifier подтвердил",
+   "role": "admin / гость",
+   "devices": "desktop 1440, Pixel 7",
+   "autotests": "пишутся 14.10 (без запуска)"
+  },
+  {
+   "id": "f576f6d3e6620f16af0ff043",
+   "title": "sitemap.xml לא קיים",
+   "date": "2026-10-14",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "реджект закрыт через MCP 14.10 (кроме b4c3bed5 — не было); bug-verifier подтвердил",
+   "role": "admin / гость",
+   "devices": "desktop 1440, Pixel 7",
+   "autotests": "пишутся 14.10 (без запуска)"
+  },
+  {
+   "id": "8d3f16b1388a6237ee6f7c8d",
+   "title": "robots.txt לא קיים",
+   "date": "2026-10-14",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "реджект закрыт через MCP 14.10 (кроме b4c3bed5 — не было); bug-verifier подтвердил",
+   "role": "admin / гость",
+   "devices": "desktop 1440, Pixel 7",
+   "autotests": "пишутся 14.10 (без запуска)"
+  },
+  {
+   "id": "b4c3bed5dae1acda4bba6f09",
+   "title": "חלון Price Book ... שקוף",
+   "date": "2026-10-14",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "реджект закрыт через MCP 14.10 (кроме b4c3bed5 — не было); bug-verifier подтвердил",
+   "role": "admin / гость",
+   "devices": "desktop 1440, Pixel 7",
+   "autotests": "пишутся 14.10 (без запуска)"
+  },
+  {
+   "id": "8ffd6e2645f08c18a2e17576",
+   "title": "מספר דירה (Unit/Apt) ... לא עובר לשדה Unit/Apt",
+   "date": "2026-10-14",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "реджект уже был закрыт при Passed QA пользователем; bug-verifier подтвердил",
+   "autotests": "пишутся 14.10 (без запуска)"
+  },
+  {
+   "id": "b2f74544d40c5b51239e97e2",
+   "title": "ה-Unit מוצג אחרי המדינה ברשימת הלקוחות...",
+   "date": "2026-10-14",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "Passed QA пользователем; bug-verifier подтвердил 3/3",
+   "autotests": "пишутся 14.10 (без запуска)"
+  },
+  {
+   "id": "dc2f0de9402a1e3735ab0cf3",
+   "title": "Leads Map – \"0\" מיותר",
+   "date": "2026-10-14",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "реджект 46b477af закрыт MCP; verifier подтвердил",
+   "autotests": "пишутся 14.10 (без запуска)"
+  },
+  {
+   "id": "6e6f101d39fbef16f4473066",
+   "title": "מובייל – Google Maps",
+   "date": "2026-10-14",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "реджектов нет; пустая карта на /map — не реджект (по умолчанию); реальное приложение не проверено",
+   "autotests": "пишутся 14.10 (без запуска)"
+  },
+  {
+   "id": "94c0810270192f521803e6aa",
+   "title": "Closed date/time",
+   "date": "2026-10-14",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "verifier подтвердил на JOB-0050",
+   "autotests": "пишутся 14.10 (без запуска)"
+  },
+  {
+   "id": "cdf10b1bd71ea57de731c3de",
+   "title": "פריסת הטאבים Job Details",
+   "date": "2026-10-14",
+   "action": "reject",
+   "column": "לביצוע",
+   "note": "старый f2dfed62 закрыт; новый rej_2a80e0e00656e25362126ab7 (1024px Equipment обрезан), 2 скрина; откат не нужен (решение пользователя 14.10)"
+  },
+  {
+   "id": "4c255f56b189c1f4bbb809a6",
+   "title": "NEW BUG #4c255f56 RTL Job Details/New Job",
+   "date": "2026-10-14",
+   "action": "new-bug",
+   "column": "לביצוע",
+   "note": "ticket 11, 3 скрина"
+  },
+  {
+   "id": "6d5cda04fc84142bdb8a42c1",
+   "title": "Scheduled Date → Date",
+   "date": "2026-10-14",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "verifier подтвердил 3/3 EN/HE desktop+Pixel7; реджектов нет",
+   "autotests": "пишутся 14.10 (без запуска)"
+  },
+  {
+   "id": "5814749d4a8c75d847cb2a0a",
+   "title": "Team Performance сумма техников",
+   "date": "2026-10-14",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "verifier подтвердил; не проверено: несколько техников на работе (нужен Allow Multiple Techs), топ-5 (3 техника); П3 подтверждён verifier (JOB-0084 только у Lead Owen); осталось топ-5 (3 техника); принят пользователем без топ-5",
+   "autotests": "пишутся 14.10 (без запуска)"
+  },
+  {
+   "id": "444b9ee75c6c2fb0b01110f3",
+   "title": "Invoices due из карточки",
+   "date": "2026-10-14",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "verifier подтвердил; не проверено: техник не видит советов Stripe/компании (нет аккаунта техника); пункт техника неприменим (техники без входа — решение пользователя)",
+   "autotests": "пишутся 14.10 (без запуска)"
+  },
+  {
+   "id": "06130db71f74be94fc4d730b",
+   "title": "מובייל Tooltip גרף",
+   "date": "2026-10-14",
+   "action": "reject",
+   "column": "לביצוע",
+   "note": "решение пользователя: статичный график без данных не принимается; rej_c34095570eac3c2721b240ac через דחה משימה; исходный c286cfd2 НЕ закрыт"
+  },
+  {
+   "id": "b6cecf04c4c52d3e624457e1",
+   "title": "מובייל A clear view of your day",
+   "date": "2026-10-14",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "verifier 6/6",
+   "autotests": "пишутся 14.10 (без запуска)"
+  },
+  {
+   "id": "1748ba2b50b80723b5c264a7",
+   "title": "מובייל תפריט More",
+   "date": "2026-10-14",
+   "action": "reject",
+   "column": "לביצוע",
+   "note": "15 пунктов, 720>691 на 390x844, последний обрезан, 24/24; реджект rej_9db268e73f0cea19a91f1190 через דחה משימה, 1 скрин"
+  },
+  {
+   "id": "ea504c9fa4ddaff4db6c9a1f",
+   "title": "כמה כתובות לכל לקוח",
+   "date": "2026-10-14",
+   "action": "reject",
+   "column": "לביצוע",
+   "note": "rej_7cdf1b8390c31db724d3d7b3 через דחה משימה: Unit кратный в счёте + мобильный список за экраном, 3 скрина; права техника не проверены"
+  },
+  {
+   "id": "3e67aa8b78a92ed3b6a901b1",
+   "title": "NEW BUG #3e67aa8b дубль номера счёта (high)",
+   "date": "2026-10-14",
+   "action": "new-bug",
+   "column": "לביצוע",
+   "note": "ticket 12"
+  },
+  {
+   "id": "686de3bc74f697ba606605fa",
+   "title": "NEW BUG #686de3bc Today для будущих + HE без לפני",
+   "date": "2026-10-14",
+   "action": "new-bug",
+   "column": "לביצוע",
+   "note": "ticket 13"
+  },
+  {
+   "id": "e0978aaa8a688df8aa664ccb",
+   "title": "NEW BUG #e0978aaa повторный клик сбрасывает дату (high)",
+   "date": "2026-10-14",
+   "action": "new-bug",
+   "column": "לביצוע",
+   "note": "ticket 14"
+  },
+  {
+   "id": "4431acb4fae557071f6c02bf",
+   "title": "NEW BUG #4431acb4 Schedule день 06-22",
+   "date": "2026-10-14",
+   "action": "new-bug",
+   "column": "לביצוע",
+   "note": "ticket 15"
+  },
+  {
+   "id": "26087e6eedad2ed25bb865ca",
+   "title": "פירורי הלחם SupportInbox/AdminPanel",
+   "date": "2026-10-14",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "64+12 прогонов чисто; verifier подтвердил; исходный реджект 76c1f8f1 — закрыть после да; реджект уже закрыт Passed QA пользователя",
+   "autotests": "пишутся 14.10 (без запуска)"
+  },
+  {
+   "id": "3db49a080afd0dfe7b505dd7",
+   "title": "תאריך ושעת ההודעות בממשק התמיכה",
+   "date": "2026-10-14",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "verifier 3/3; реджектов нет; пользователь и поддержка — один аккаунт admin",
+   "autotests": "пишутся 14.10 (без запуска)"
+  },
+  {
+   "id": "99cf43b7e21a699f01d8d1f3",
+   "title": "תמונות המערכת ב-Landing Page",
+   "date": "2026-10-14",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "verifier подтвердил 4 картинки; реджектов нет",
+   "autotests": "пишутся 14.10 (без запуска)"
+  },
+  {
+   "id": "a6270ed870ad31870a80550f",
+   "title": "כמה טכנאים לעבודה אחת",
+   "date": "2026-10-14",
+   "action": "pass-partial",
+   "column": "בבדיקות",
+   "note": "verifier подтвердил всё кроме реальной доставки SMS всем назначенным → SMS-сессия"
+  },
+  {
+   "id": "6a4fad600e673484ac04d338",
+   "title": "[F-1] RBAC",
+   "date": "2026-10-14",
+   "action": "partial",
+   "column": "בבדיקות",
+   "note": "владелец: экран ролей, форма приглашения, изоляция данных ✅; роли/audit/отключение — нужен приглашённый аккаунт"
+  },
+  {
+   "id": "6a4fad600e673484ac04d339",
+   "title": "[F-2] ריבוי עסקים",
+   "date": "2026-10-14",
+   "action": "partial",
+   "column": "בבדיקות",
+   "note": "переключатель и изоляция ✅; перенос сотрудника и роли — нужен приглашённый аккаунт; находки: Billing «up to 1 company» при 2; Add company шлёт платный запрос без подтверждения"
+  },
+  {
+   "id": "6a4fad600e673484ac04d347",
+   "title": "[F-16] usage tracking",
+   "date": "2026-10-14",
+   "action": "partial",
+   "column": "בבדיקות",
+   "note": "события job/lead/assign/call, счётчики, график, пусто, HE ✅; роли מוקדן/מנהל, SMS-событие, хранение 13 мес — нет; By person показывает email, не имя; verifier подтвердил проверяемое 3/3"
+  },
+  {
+   "id": "6a4fad600e673484ac04d346",
+   "title": "[F-15] referral",
+   "date": "2026-10-14",
+   "action": "partial",
+   "column": "בבדיקות",
+   "note": "пункты реджекта 29.09 есть (ссылка, карточка, меню); статусы/кредит $50 — только с реальной регистрацией/60 дней; verifier подтвердил проверяемое 3/3; реферал Pending у admin виден (re***@backyr.com, «Waiting for their first payment»)"
+  },
+  {
+   "id": "291f7a9d96683d441c4497a9",
+   "title": "מימוש קופון בתהליך החיוב",
+   "date": "2026-10-14",
+   "action": "reject",
+   "column": "לביצוע",
+   "note": "нет поля купона в процессе апгрейда (п.1 тикета), блок купона только starter_tech monthly; остальное ✅ (verifier 3/3); rej_81b789c33e3aff018bbe2c9c"
+  },
+  {
+   "id": "dc0451ee552ed1b25afc4fa4",
+   "title": "RBAC + audit log",
+   "date": "2026-10-14",
+   "action": "reject",
+   "column": "לביצוע",
+   "note": "rej_aeac7e7f607cab7d1f9f5499: нет до/после, аккаунта, фильтра купонов; 2 скрина (обрезаны от чужих почт)"
+  },
+  {
+   "id": "3b8ba7388bdd0940ed351eb3",
+   "title": "NEW BUG #3b8ba738 купон лимит 0 → без лимита",
+   "date": "2026-10-14",
+   "action": "new-bug",
+   "column": "לביצוע",
+   "note": "ticket 16, 2 скрина"
+  },
+  {
+   "id": "273a39ce1e86a2ec065f7ffb",
+   "title": "NEW BUG Dispatch SMS без согласия (high)",
+   "date": "2026-10-14",
+   "action": "new-bug",
+   "column": "לביצוע",
+   "note": "ticket 17"
+  },
+  {
+   "id": "0feb95d7337a398d84de116e",
+   "title": "NEW BUG toast Text selected обрезан",
+   "date": "2026-10-14",
+   "action": "new-bug",
+   "column": "לביצוע",
+   "note": "ticket 18"
+  },
+  {
+   "id": "2ad16bf9aca5e46cc28feef0",
+   "title": "NEW BUG SMS «Job: JOB-0088 Job» (low)",
+   "date": "2026-10-14",
+   "action": "new-bug",
+   "column": "לביצוע",
+   "note": "ticket 19"
+  },
+  {
+   "id": "24019e0399b6623fee05c270",
+   "title": "NEW BUG SMS сметы id=undefined (high)",
+   "date": "2026-10-14",
+   "action": "new-bug",
+   "column": "לביצוע",
+   "note": "ticket 20"
+  },
+  {
+   "id": "a29db9b3d22c2a648d8ae966",
+   "title": "NEW BUG toast SMS перекрывает Job Created",
+   "date": "2026-10-14",
+   "action": "new-bug",
+   "column": "לביצוע",
+   "note": "ticket 21"
+  },
+  {
+   "id": "2b0c1f2d3d7ebd692e1a7125",
+   "title": "NEW BUG Stripe test-customer на prod (high)",
+   "date": "2026-10-14",
+   "action": "new-bug",
+   "column": "לביצוע",
+   "note": "ticket 22, по сообщению пользователя"
+  },
+  {
+   "id": "90ad3efad312cd517b2f4dd9",
+   "title": "NEW BUG Add company без подтверждения + up to 1 company",
+   "date": "2026-10-14",
+   "action": "new-bug",
+   "column": "לביצוע",
+   "note": "ticket 23"
+  },
+  {
+   "id": "d0392fa9f2916aefc4dc7d92",
+   "title": "אחרי אימות אימייל הדפים לא נטענים",
+   "date": "2026-10-14",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "пользователь зарегистрировался: дашборд сразу, 1 компания ggg; нужна перепроверка/повторный вход"
+  },
+  {
+   "id": "6a54dcf5c86d4bb9b85fbb66",
+   "title": "Dispatch tab SMS Preview",
+   "date": "2026-10-18",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "bug-verifier 18.10: вкладка, превью, получатели, Send disabled без техника, toast непрозрачный (через Account settings), EN/HE; реальная отправка и STOP — 14.10. Открытый реджект №2 закрыть после «да» | реджект rej_1791707264797 закрыт 18.10; дизайн как в макете — решение пользователя; фича: dispatch-sms, роль admin, десктоп EN/HE",
+   "autotests": "пишутся 18.10 (без запуска)"
+  },
+  {
+   "id": "a6270ed870ad31870a80550f",
+   "title": "כמה טכנאים לעבודה אחת",
+   "date": "2026-10-18",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "bug-verifier 18.10: Job Info+Dispatch мультивыбор, после перезагрузки все видны (JOB-0094/0096); SMS 14.10",
+   "autotests": "пишутся 18.10 (без запуска)"
+  },
+  {
+   "id": "6a4fad600e673484ac04d33c",
+   "title": "[F-5] SMS мאדמין",
+   "date": "2026-10-18",
+   "action": "reject",
+   "column": "לביצוע",
+   "note": "verifier подтвердил: сырой код recipient_opted_out/recipient_invalid в истории офисных сообщений; toast без причины. Спорно по требованию — спросили: реджект или баг | решение пользователя: реджект; rej_afc46e4907e19871ef7bde0d через דחה משימה 18.10, 2 скрина; F-4-зависимые пункты не включены"
+  },
+  {
+   "id": "6a4fad600e673484ac04d33a",
+   "title": "[F-3] הקצאת עבודות",
+   "date": "2026-10-18",
+   "action": "reject",
+   "column": "לביצוע",
+   "note": "чек-лист 6/6 ✅ (нагрузка/занят, Assigned+вкладка, снятие→Submitted, история הועבר מ-X ל-Y, no_consent+Send again, Unassigned в списке простым текстом, usage +). На перепроверке: потеря удаления в multi-mode, notice навсегда sending при уходе со страницы, PATCH Customer с null-контактами | verifier: (2) ПОДТВЕРЖДЕНО 3/3 JOB-0098/99/100 — notice навсегда sending, нет Send again → реджект DoD5; (1) гонка удаления в multi-mode подтверждена в окне «Saving…» → находка/баг; (3) не подтверждено | rej_52e69f0fbb11c159d7f98e30 через דחה משימה 18.10, 1 скрин"
+  },
+  {
+   "id": "6a4fad600e673484ac04d338",
+   "title": "[F-1] RBAC",
+   "date": "2026-10-18",
+   "action": "reject",
+   "column": "לביצוע",
+   "note": "под диспетчером: Admin Panel/Support скрыты, биллинг закрыт (клиент), команда — роли ниже, журнал до/после ✅, смена роли ~27с, отключение <1 мин ✅. Кандидаты: Ops manager видит Delete счёта при «Cannot delete invoices»; нет подтверждения успеха (S-01); приглашение нового пользователя → /login без регистрации (наблюдал сам). A6 серверная запись — не проверено (нужно разрешение) | пользователь сказал «делай» на реджект (2 пункта: Delete у Ops manager + 200[] вместо 403; приглашение → /login). MCP Internal error — не отправлено. Скрины: 04d338-v-opsmgr-invoice-actions-run1, 04d338-v-opsmgr-invoice-delete-error-toast, 04d338-invite-goes-to-login-redacted | отправлен через Chrome пользователя (MCP Internal error) 18.10, 3 скрина; статус לביצוע, דחיות QA (1)"
+  },
+  {
+   "id": "6a4fad600e673484ac04d347",
+   "title": "[F-16] usage",
+   "date": "2026-10-18",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "Admin-dispatcher и Operations manager видят Activity & usage (программист открыл; DoD «מנהל/בעלים») ; счётчики растут",
+   "autotests": "пишутся 18.10 (без запуска)"
+  },
+  {
+   "id": "6a4fad600e673484ac04d339",
+   "title": "[F-2] ריבוי עסקים",
+   "date": "2026-10-18",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "второй бизнес только платно: Company Settings → «Add new company - 49/mo» → stripe-subscription 500 (live key vs test customer cus_VDA374Z1ODqRDE — вероятно дубль бага #2b0c1f2d). Перенос/изоляция не проверены. Т6 косвенно ✅ | 18.10 вторым бизнесом стал Onsite (решение пользователя: клиент сказал, что тестовая). Пользователь руками: своя команда, QA-B2 client/job не видны в test, перенос с Saved+Change history, счёт от имени Onsite, возврат в test. Я: диспетчер в Onsite — прямой URL JOB-0094 test → тихий редирект на /Jobs (изоляция ок, без сообщения); после возврата — в test. Реджектов нет.",
+   "autotests": "пишутся 18.10 (без запуска)"
+  },
+  {
+   "id": "bea158e0d390c0999f550b46",
+   "title": "NEW BUG #550b46 автосохранение работы теряет изменения техников (high)",
+   "date": "2026-10-18",
+   "action": "new-bug",
+   "column": "לביצוע",
+   "note": "ticket 24, находки a+b объединены, 2 скрина"
+  },
+  {
+   "id": "34aaaa8636a311c1facecff8",
+   "title": "NEW BUG #cecff8 HE не переведены Dispatch/даты/STOP (low)",
+   "date": "2026-10-18",
+   "action": "deleted-by-user",
+   "column": "לביצוע",
+   "note": "ticket 25, 2 скрина | удалён пользователем: перевод на иврит не нужен"
+  },
+  {
+   "id": "6a4fad600e673484ac04d346",
+   "title": "[F-15] referral",
+   "date": "2026-10-18",
+   "action": "reject",
+   "column": "לביצוע",
+   "note": "решение пользователя: реджект с просьбой дать тестовый механизм (кредит $50 без 2 мес.); rej_7acce972db24e7fbb9cb3af1, 1 скрин. Старый реджект 29.09 открыт (не закрывали — нет «да»)"
+  },
+  {
+   "id": "79dc4c5a68c099227ea10206",
+   "title": "купоны API + Stripe",
+   "date": "2026-10-18",
+   "action": "left-in-testing",
+   "column": "בבדיקות",
+   "note": "admin_list_coupons: у всех QA-купонов stripe_coupon_id, sync_error null → синк есть; не проверено: сбой синка, сохранность старых погашений | решение пользователя: оставить в בבדיקות"
+  },
+  {
+   "id": "a29db9b3d22c2a648d8ae966",
+   "title": "toast SMS перекрывает Job Created",
+   "date": "2026-10-18",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "3/3: тосты стопкой, зазор 8px, оба читаются; только QA-F5 tech (fake), реальные SMS не уходили; реджектов нет",
+   "autotests": "пишутся 18.10 (без запуска)"
+  },
+  {
+   "id": "2ad16bf9aca5e46cc28feef0",
+   "title": "SMS «Job: JOB-0088 Job»",
+   "date": "2026-10-18",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "3/3 тело send-sms: «Job: JOB-0104» без лишнего Job; реджектов нет",
+   "autotests": "пишутся 18.10 (без запуска)"
+  },
+  {
+   "id": "3b8ba7388bdd0940ed351eb3",
+   "title": "купон лимит 0",
+   "date": "2026-10-18",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "New/Edit: 0, -1, дробные → ошибка «At least 1…», Save disabled, запроса нет; пусто → 0/∞; 1/3 сохраняются. Серверный отказ 0 не проверен (обход). Реджектов нет",
+   "autotests": "пишутся 18.10 (без запуска)"
+  },
+  {
+   "id": "cdf10b1bd71ea57de731c3de",
+   "title": "Job Details tabs layout",
+   "date": "2026-10-18",
+   "action": "reject",
+   "column": "לביצוע",
+   "note": "реджект 14.10 (1024 Equipment) исправлен EN/HE, 1280/1440/телефон ок; на перепроверке: на 1024 поле телефона 26px — номер не виден | rej_0bd74fa75de883e3f82ef7f4 (телефон 1024 + вкладки должны быть горизонтальной прокруткой — решение пользователя), 3 скрина; старый rej_2a80e0e… закрыт"
+  },
+  {
+   "id": "4c255f56b189c1f4bbb809a6",
+   "title": "HE RTL Job Details/New Job",
+   "date": "2026-10-18",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "вкладки/колонки/лейблы RTL на Job Details, New Job, Jobs list; EN без изменений; реджектов нет",
+   "autotests": "пишутся 18.10 (без запуска)"
+  },
+  {
+   "id": "e0978aaa8a688df8aa664ccb",
+   "title": "повторный клик сбрасывает дату",
+   "date": "2026-10-18",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "EN/HE/NY tz: дата сохраняется, работа в Schedule; Not scheduled для без даты; реджектов нет",
+   "autotests": "пишутся 18.10 (без запуска)"
+  },
+  {
+   "id": "686de3bc74f697ba606605fa",
+   "title": "Today для будущих + HE לפני",
+   "date": "2026-10-18",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "Tomorrow/In 3 days/Yesterday/לפני N ימים, Today только сегодня, месяцы; годы не проверены; реджектов нет",
+   "autotests": "пишутся 18.10 (без запуска)"
+  },
+  {
+   "id": "4431acb4fae557071f6c02bf",
+   "title": "Schedule день 06-22",
+   "date": "2026-10-18",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "Day 03:00–23:00 показывает 03:55/23:30, обычный день 06–22, Week/Month ок; реджектов нет",
+   "autotests": "пишутся 18.10 (без запуска)"
+  },
+  {
+   "id": "8178c3b1e66db029116f9da3",
+   "title": "Landing AI-чат",
+   "date": "2026-10-18",
+   "action": "reject",
+   "column": "לביצוע",
+   "note": "проверял пользователь руками на Preview; rej_1020674a8146d47580e5dd25: Search a vehicle ничего не делает; после подтверждения email → Dashboard, вопрос потерян (тот же браузер). Google/Apple не сделаны — ждёт OAuth клиента, не в реджекте. Пользователь создал реальный аккаунт при регистрации на Preview"
+  },
+  {
+   "id": "6a54d1f9e639f555b506a307",
+   "title": "Stripe Connect",
+   "date": "2026-10-19",
+   "action": "cannot-reproduce",
+   "column": "בבדיקות",
+   "note": "раунд 4 шаги 1–6: у test уже незавершённый Connect acct_1URr8q2W5xYS7IEV (создан раньше), ключей нет; «Card payments are not set up…» ✅; Continue setup/возврат ✅ без мигания; первая страница Stripe просит EMAIL, не телефон (тикет: телефон) — вопрос пользователю; шаги 7–10 — пользователь с Кириллом | решение пользователя: email первым — норма (Stripe Express: сначала email, потом телефон). Шаги 7–10 (реальный платёж) не тестируем | помечен לא ניתן לשחזר до test mode (#407c8d)"
+  },
+  {
+   "id": "40258ec56e2eb5f76eb93722+79dc4c5a68c099227ea10206",
+   "title": "купоны раунд 1",
+   "date": "2026-10-19",
+   "action": "pass",
+   "column": "הושלם",
+   "note": "Expired виден и отключается; для одного аккаунта (несуществующий email отклонён); Check $49→$39.20, Stripe Checkout со скидкой (без оплаты); Redemptions At checkout, +1 at checkout; ошибки not_found/not_for_account/disabled/expired; поиск/фильтр. Не проверено: Used up, Not in Stripe. Toast «Coupon saved», а не «Coupon created in Stripe»",
+   "autotests": "пишутся 19.10 (без запуска)"
+  },
+  {
+   "id": "6eed7c73f86190f44e2b3784+226301e0b345e86872b42657",
+   "title": "ручная выдача тарифа",
+   "date": "2026-10-19",
+   "action": "partial-pass",
+   "column": "בבדיקות",
+   "note": "прошлая дата запрещена; Pro Tech выдан → у пользователя AI/Inventory и «Granted by Techory until» за 44 с; смена на Starter 41 с; Revoke 47 с; журнал до/после; карта не добавлена. Не проверено: автоматический возврат после истечения"
+  },
+  {
+   "id": "12e4628f70cfa8711af93a74",
+   "title": "NEW BUG #f93a74 HE: работа с адресом США не создаётся (high)",
+   "date": "2026-10-19",
+   "action": "new-bug",
+   "column": "לביצוע",
+   "note": "ticket 25, 1 скрин, ссылка на закрытый #a67b0f"
+  },
+  {
+   "id": "14e977896e73a6e94c407c8d",
+   "title": "NEW TASK #407c8d Pre-Prod со Stripe test mode",
+   "date": "2026-10-19",
+   "action": "new-task",
+   "column": "לביצוע",
+   "note": "ticket 26, по просьбе пользователя"
+  },
+  {
+   "id": "6a81d1770d5a6f7930b03668",
+   "title": "trial 7 дней",
+   "date": "2026-10-19",
+   "action": "already-done",
+   "column": "הושלם",
+   "note": "проведён пользователем 18.10 (статус done); пользователь проверил: работает, старое до 7 дней пропало"
+  },
+  {
+   "type": "feature",
+   "action": "pass",
+   "column": "הושלם",
+   "date": "2026-10-20",
+   "at": "2026-10-20",
+   "notes": "20.10 (авто-проверка по расписанию, prod, только просмотр): выдача Pro Tech b2475f37 истекла 2026-10-19 20:59:59 UTC — wojeg вернулся на Techory Lite сам. Пользователь: меню без AI и Inventory; /aiworkspace — «AI tools are not part of your plan / Current plan: Techory Lite»; Billing — Techory Lite (Trial ended) $0, нет «Granted by Techory until», «No upcoming charge is scheduled.». Admin → Plans (компания test): строка wojeg — Techory Lite · Source Free · Trial ended · Until —, не Assigned. Audit log: отдельной записи об истечении нет (последняя по wojeg — Plan granted pro_tech 2026-10-19, 19.10 18:12) — ожидаемо: срок проверяется при чтении, без задачи по расписанию (комментарий программиста 30.9); AC 6 — про изменения админом. Скрины .qa/screenshots/r3c-1…5-*.png. Карта не добавлялась, Stripe не открывался. Вердикт: прошёл, реджектов нет; עבר QA проводит пользователь. | пометка לא ניתן לשחזר снята 20.10; עבר QA провёл пользователь",
+   "id": "6eed7c73f86190f44e2b3784",
+   "hash": "#6eed7c73",
+   "title": "לוגיקת עדיפות: הקצאה ידנית גוברת על מסלול Stripe וחזרה אוטומטית בתפוגה",
+   "autotests": "пишутся 20.10 (без запуска)"
+  },
+  {
+   "type": "feature",
+   "action": "pass",
+   "column": "הושלם",
+   "date": "2026-10-20",
+   "at": "2026-10-20",
+   "notes": "Дубль #6eed7c73, проверено вместе. 20.10 (авто-проверка по расписанию, prod, только просмотр): выдача Pro Tech b2475f37 истекла 2026-10-19 20:59:59 UTC — wojeg вернулся на Techory Lite сам. Пользователь: меню без AI и Inventory; /aiworkspace — «AI tools are not part of your plan / Current plan: Techory Lite»; Billing — Techory Lite (Trial ended) $0, нет «Granted by Techory until», «No upcoming charge is scheduled.». Admin → Plans (компания test): строка wojeg — Techory Lite · Source Free · Trial ended · Until —, не Assigned. Audit log: отдельной записи об истечении нет (последняя по wojeg — Plan granted pro_tech 2026-10-19, 19.10 18:12) — ожидаемо: срок проверяется при чтении, без задачи по расписанию (комментарий программиста 30.9); AC 6 — про изменения админом. Скрины .qa/screenshots/r3c-1…5-*.png. Карта не добавлялась, Stripe не открывался. Вердикт: прошёл, реджектов нет; עבר QA проводит пользователь. | пометка לא ניתן לשחזר снята 20.10; עבר QA провёл пользователь",
+   "id": "226301e0b345e86872b42657",
+   "hash": "#226301e0",
+   "title": "שכבת שרת: עדיפות הקצאה ידנית על מסלול Stripe וחזרה אוטומטית בתפוגה",
+   "autotests": "пишутся 20.10 (без запуска)"
+  },
+  {
+   "hash": "e9cbda",
+   "id": "a4ff379867125b8e9fe9cbda",
+   "title": "בקשת לקוח: תפריט צד במובייל מוצג בשתי עמודות — צריך עמודה אחת",
+   "type": "bug",
+   "action": "pass",
+   "column": "הושלם",
+   "date": "2026-11-02",
+   "at": "2026-11-02",
+   "feature": "mobile-nav",
+   "roles": [
+    "admin"
+   ],
+   "devices": [
+    "iPhone 390x844",
+    "iPhone 375x812"
+   ],
+   "notes": "Проверил и провёл עבר QA пользователь сам (02.11). Фикс: меню More в нижней панели на мобильном — одна колонка, все пункты без прокрутки (EN и HE). Автотесты — только написать, не запускать."
+  },
+  {
+   "hash": "4030e4",
+   "id": "e99770a8f15bda36264030e4",
+   "title": "בקשת לקוח: אפשרות להעביר (מיגרציה) לקוחות מ-Workiz ל-Techory",
+   "type": "feature",
+   "action": "reject",
+   "column": "לביצוע",
+   "date": "2026-11-02",
+   "at": "2026-11-02T11:29Z",
+   "feature": "clients-import",
+   "rejection_id": "rej_0d2db5eb7471ace1f7de65c5",
+   "notes": "Реджект: повторный импорт дублирует клиентов без телефона/email; ZIP теряет ведущий 0; CSV без имени создаёт клиента без имени. Находки вне объёма: xlsx без сообщения, нет Ext, окно не влезает в 1440x900, превью 3 строки, карточка без Phone2/Notes, пустая иконка телефона, грамматика '1 clients'. Вложения через url (upload_path MCP не принял — upload_not_complete, хотя PUT 200)."
+  },
+  {
+   "hash": "0c3606",
+   "id": "d562ccd27c85b726650c3606",
+   "title": "בקשת לקוח: GPS Workflow — מסך עבודות נכנסות עם מפה, מספר Twilio לכל חברה ושיוך אוטומטי לטכנאים",
+   "type": "feature",
+   "action": "reject",
+   "column": "לביצוע",
+   "date": "2026-11-02",
+   "at": "2026-11-02T12:49Z",
+   "feature": "gps-workflow",
+   "rejection_id": "rej_de87330d3f4a3ad21b1c11a0",
+   "account": "gps (Nikita Test, компания בדיקה d70f1465)",
+   "notes": "Реджект: (1) все Job/Estimate из SMS одного отправителя пишутся на первого клиента (QA-John Miller), телефон клиента = номер отправителя, Phone: из текста не используется; (2) SMS с +972537240114 перестали доходить после 4 (решение пользователя). Не проверено: мульти-выбор, срабатывание правил на новом SMS, уведомление технику с SMS-согласием. Правило 00:00–23:59 → QA-Tech Auto осталось включённым — пользователь: оставить.",
+   "new_bugs": [
+    "#f45391 Create invoice → Invoice started без счёта",
+    "#de10b1 Estimates: пустая колонка Customer",
+    "#324ddc адрес из SMS без улицы"
+   ]
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#05c270",
+   "id": "24019e0399b6623fee05c270",
+   "title": "ב-SMS של הצעת מחיר הקישור שבור (AssessmentDetail?id=undefined)",
+   "type": "bug",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "estimates-sms-link",
+   "roles": [
+    "admin",
+    "guest"
+   ],
+   "devices": [
+    "desktop 1440",
+    "Pixel 7 emu",
+    "iPhone (SMS получено)"
+   ],
+   "notes": "prod, test: EST-0013, 1 SMS на +972537240114 получено (скрин 05c270-sms-received-iphone.png): Hi QA-Contact Dana, #EST-0013, /estimate?t=… ; публичная страница без входа, Download PDF, битая ссылка → not valid. Находка: черновик сохраняется при открытии окна Send."
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#1a4863",
+   "id": "e22b0c4becfa9419ae1a4863",
+   "title": "New Invoice: Create Invoice בלי לקוח",
+   "type": "bug",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "invoices",
+   "roles": [
+    "preprod-ttp"
+   ],
+   "devices": [
+    "Pixel 6 Techory Dev 1.2",
+    "desktop 1440 / Pixel 7 emu (веб Pre-Prod)"
+   ],
+   "notes": "2 прогона (агент + bug-verifier), все пункты ✅; Pre-Prod TTP Test Locks"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#dce958",
+   "id": "42013be3b70cda42cbdce958",
+   "title": "Invoice name ריק — מלבן אפור",
+   "type": "bug",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "invoices",
+   "roles": [
+    "preprod-ttp"
+   ],
+   "devices": [
+    "Pixel 6 Techory Dev 1.2",
+    "desktop 1440 / Pixel 7 emu (веб Pre-Prod)"
+   ],
+   "notes": "2 прогона (агент + bug-verifier), все пункты ✅; Pre-Prod TTP Test Locks"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#dad444",
+   "id": "e5aaa7b1be6415e2a9dad444",
+   "title": "City = שכונה",
+   "type": "bug",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "addresses",
+   "roles": [
+    "preprod-ttp"
+   ],
+   "devices": [
+    "Pixel 6 Techory Dev 1.2",
+    "desktop 1440 / Pixel 7 emu (веб Pre-Prod)"
+   ],
+   "notes": "2 прогона (агент + bug-verifier), все пункты ✅; Pre-Prod TTP Test Locks"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#18d185",
+   "id": "10f5de70a9b38cd01d18d185",
+   "title": "Android חזרה כשחלון פתוח",
+   "type": "bug",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "android-app",
+   "roles": [
+    "preprod-ttp"
+   ],
+   "devices": [
+    "Pixel 6 Techory Dev 1.2",
+    "desktop 1440 / Pixel 7 emu (веб Pre-Prod)"
+   ],
+   "notes": "2 прогона (агент + bug-verifier), все пункты ✅; Pre-Prod TTP Test Locks"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#f220cc",
+   "id": "353e76f7d1122fadb7f220cc",
+   "title": "יציאה מטופס מלא בחזרה",
+   "type": "bug",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "android-app",
+   "roles": [
+    "preprod-ttp"
+   ],
+   "devices": [
+    "Pixel 6 Techory Dev 1.2",
+    "desktop 1440 / Pixel 7 emu (веб Pre-Prod)"
+   ],
+   "notes": "2 прогона (агент + bug-verifier), все пункты ✅; Pre-Prod TTP Test Locks"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#6f8ef9",
+   "id": "35eb0f8a82e6ad29966f8ef9",
+   "title": "בלי אינטרנט אין הודעה",
+   "type": "bug",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "android-app",
+   "roles": [
+    "preprod-ttp"
+   ],
+   "devices": [
+    "Pixel 6 Techory Dev 1.2",
+    "desktop 1440 / Pixel 7 emu (веб Pre-Prod)"
+   ],
+   "notes": "2 прогона (агент + bug-verifier), все пункты ✅; Pre-Prod TTP Test Locks"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#df9bec",
+   "id": "6a8b07dba7da536e97df9bec",
+   "title": "פריט חדש בהצעת מחיר נוסף ל-Price Book",
+   "type": "bug",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "pricebook",
+   "notes": "2 прогона веб Pre-Prod; пользователь: прошёл; автотесты пишутся"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#ca1a27",
+   "id": "a0497f56e55e63325fca1a27",
+   "title": "Estimate מלשונית Estimates בעבודה",
+   "type": "bug",
+   "action": "reject",
+   "column": "לביצוע",
+   "rejection_id": "rej_4177dcf36ea0770692ca963c",
+   "notes": "alert вместо сообщений у полей; остальное исправлено"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#0cd6c0",
+   "id": "be8fe6bb6e216f6a990cd6c0",
+   "title": "Dashboard 0 estimates",
+   "type": "bug",
+   "action": "reject",
+   "column": "לביצוע",
+   "rejection_id": "rej_011acdfdb0f6454096727125",
+   "notes": "итог верный, но 0 estimates мелькает 180–280 мс 6/6 (решение пользователя: реджект)"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#5e4fe6",
+   "id": "e8ec4ead147fbe0ac05e4fe6",
+   "title": "Payment Portal ודוח Payments",
+   "type": "bug",
+   "action": "reject",
+   "column": "לביצוע",
+   "rejection_id": "rej_a20ba11e660909a0c761815b",
+   "notes": "Refunded входят в Total Amount (решение пользователя: реджект)"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#06a307",
+   "id": "6a54d1f9e639f555b506a307",
+   "title": "Stripe Connect",
+   "type": "improvement",
+   "action": "pass",
+   "column": "הושלם",
+   "notes": "шаги 7–10 Pre-Prod test: Active, Succeeded, Refund, dashboard; имя продавца Contract Test Locksmith — не реджект (решение пользователя); пометка לא ניתן לשחזר снята | 12.11 полная регистрация на QA-Connect 1211 + шаги 8–10 ✅; пользователь провёл עבר QA"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#5315ab",
+   "id": "c73f2020df85e988ff5315ab",
+   "title": "Job # ריק ו-Remaining to pay",
+   "type": "bug",
+   "action": "reject",
+   "column": "לביצוע",
+   "rejection_id": "rej_574d0a255c793f0223b9acea",
+   "notes": "номер исправлен; $0.00 мелькает 10/10"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#67b4b4",
+   "id": "0f1c532efa592ec2db67b4b4",
+   "title": "Tap to Pay + Payment Link",
+   "type": "feature",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "job-payments",
+   "notes": "app Pixel + web Pre-Prod; пользователь провёл עבר QA"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#51cdcc",
+   "id": "ddcbc09a0289d6925e51cdcc",
+   "title": "Payment Link host",
+   "type": "bug",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "job-payments",
+   "notes": "app + web, 2 оплаты 4242"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#5bfdd1",
+   "id": "c8dd45769668111ba05bfdd1",
+   "title": "Stripe payment read-only",
+   "type": "bug",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "job-payments",
+   "notes": "app + web"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#2185f2",
+   "id": "24e1859127d98384972185f2",
+   "title": "Billing: нет отмены подписки",
+   "type": "bug",
+   "action": "reject",
+   "column": "לביצוע",
+   "rejection_id": "rej_fd61d4aeabd6cbf250a06f05",
+   "notes": "десктоп работает; мобильный — кнопка за краем; в окне Techory Lite (test clock?); просьба аккаунт без test clock"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#1a7125",
+   "id": "2b0c1f2d3d7ebd692e1a7125",
+   "title": "Add another company",
+   "type": "bug",
+   "action": "wait",
+   "column": "בבדיקות",
+   "notes": "Pre-Prod 2 прогона ✅; пользователь: проверим, когда сами подключим новый Stripe (prod)"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#f45391",
+   "id": "92f9fdf3ec54a74348f45391",
+   "title": "GPS Create invoice",
+   "type": "bug",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "gps-workflow",
+   "roles": [
+    "gps"
+   ],
+   "notes": "prod gps; пользователь провёл עבר QA; автотесты пишутся"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#de10b1",
+   "id": "5f600704396c1b8db5de10b1",
+   "title": "Estimates Customer",
+   "type": "bug",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "gps-workflow",
+   "roles": [
+    "gps"
+   ],
+   "notes": "prod gps; пользователь провёл עבר QA; автотесты пишутся"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#324ddc",
+   "id": "e74f22d1cb5064fe29324ddc",
+   "title": "GPS адрес без улицы",
+   "type": "bug",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "gps-workflow",
+   "roles": [
+    "gps"
+   ],
+   "notes": "prod gps; пользователь провёл עבר QA; автотесты пишутся"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#0c3606",
+   "id": "d562ccd27c85b726650c3606",
+   "title": "GPS Workflow",
+   "type": "feature",
+   "action": "reject",
+   "column": "לביצוע",
+   "notes": "п.1–2 прошлого реджекта исправлены; мульти-выбор и правила ✅; реджект: сообщение без имени/телефона → клиент по номеру отправителя; не проверено: SMS технику (номер техника = номер отправителя → SMS не становятся заявками)"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#fc4fa4",
+   "id": "dc0451ee552ed1b25afc4fa4",
+   "title": "RBAC супер-админ: тарифы/купоны + audit log",
+   "type": "feature",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "audit-log",
+   "roles": [
+    "user",
+    "dispatcher",
+    "admin"
+   ],
+   "notes": "2 прогона: AuditLog для user/dispatcher 200 [] (3/3), team_change_history изолирован, супер-админ видит 75 записей/фильтр Coupons/до-после; пустой список вместо 403 принят пользователем; пользователь провёл עבר QA"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#04d338",
+   "id": "6a4fad600e673484ac04d338",
+   "title": "[F-1] RBAC",
+   "type": "feature",
+   "action": "reject",
+   "column": "לביצוע",
+   "notes": "реджект 2 (регистрация по приглашению) исправлен: сразу вход, Active, Invited/Joined; новый реджект: email на форме регистрации редактируется (решение пользователя). Реджект 1 (Delete у Ops manager, 403) не перепроверялся — пользователь не делал удаление"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#0e73d5",
+   "id": "82f1bed28db52ceaf10e73d5",
+   "title": "мобильное меню 375×812",
+   "type": "bug",
+   "action": "reject",
+   "column": "לביצוע",
+   "notes": "375×812 ок; Safari iPhone 13 mini 375×629 и 375×667/360×640 — Support Console за краем (решение пользователя: реджект)"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#772441",
+   "id": "2463dc9f6efacefcb0772441",
+   "title": "GPS Workflow мобильный",
+   "type": "task",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "gps-workflow",
+   "roles": [
+    "gps"
+   ],
+   "devices": [
+    "iPhone 13 mini emu",
+    "Pixel 7 emu",
+    "desktop 1440"
+   ],
+   "notes": "список над картой, своя прокрутка, карта 70% целиком после прокрутки, «+» не перекрывает внизу; при открытии «+» на карте — находка (решение пользователя: прошёл)"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#04d33a",
+   "id": "6a4fad600e673484ac04d33a",
+   "title": "[F-3] назначение техников",
+   "type": "feature",
+   "action": "pass",
+   "column": "הושלם",
+   "notes": "X при OFF ✅, Submitted, история, reload, уход 3/3, регресс Sending 3/3; JOB-0112 | run2 JOB-0121 ✅; пользователь провёл עבר QA"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#a901b1",
+   "id": "3e67aa8b78a92ed3b6a901b1",
+   "title": "New Invoice дубли номеров",
+   "type": "bug",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "invoices",
+   "roles": [
+    "admin"
+   ],
+   "notes": "2 прогона, 5 раундов гонки — номера разные; 409 на занятый номер; пользователь провёл עבר QA"
+  },
+  {
+   "date": "2026-11-12",
+   "hash": "#de116e",
+   "id": "0feb95d7337a398d84de116e",
+   "title": "тост Text selected обрезан",
+   "type": "bug",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "technicians-sms",
+   "notes": "prod: десктоп и 360/375/390/iPhone — в экране; HE ок; отправка перехвачена (0 SMS); Pre-Prod без мобильного фикса; на 1-м кадре анимации пустой отступ +16px справа ~0.1–0.2 с — не реджект"
+  }
+ ],
+ "test_data": [
+  {
+   "what": "Исходное состояние «בדיקה» (wojeg27104@blobapps.com): Starter Tech, source Trial, status Trial, until Oct 11, 2026 (trial начат 04.10 — возможно при первом входе qa-login)",
+   "where": "Admin → Plans",
+   "created_at": "2026-10-04T19:55"
+  },
+  {
+   "what": "Назначен Pro Tech до 03.11.2026 аккаунту «בדיקה», причина «QA-test #6eed7c73…» — будет отменён (Revoke)",
+   "where": "Admin → Plans",
+   "created_at": "2026-10-04T20:00"
+  },
+  {
+   "what": "Назначения Pro Tech аккаунту «בדיקה» (run1 до 03.11, run2 до сегодня → продлено до 09.10) — оба отменены, состояние Starter Tech Trial до 11.10 подтверждено",
+   "where": "Admin → Plans",
+   "created_at": "2026-10-04T20:20"
+  },
+  {
+   "what": "Назначение Techory Lite аккаунту «בדיקה» (F-14) — отменено, состояние Starter Tech Trial до 11.10 подтверждено",
+   "where": "Admin → Plans",
+   "created_at": "2026-10-04T20:40"
+  },
+  {
+   "what": "Исходное состояние admin iamdejar@gmail.com: Pro Tech, source Grandfathered; компания «test» (4432bd2f-…); в октябре 0 работ и 0 счетов",
+   "where": "Admin → Plans / Jobs / Invoices",
+   "created_at": "2026-10-04T20:50"
+  },
+  {
+   "what": "Admin iamdejar назначен Techory Lite до 04.10 (страховка), причина «QA-test F-14 quotas…» — будет отменён",
+   "where": "Admin → Plans",
+   "created_at": "2026-10-04T20:55"
+  },
+  {
+   "what": "Клиент «QA-quota client» (558aed84-…) и работа JOB-0014 «QA-quota 01»",
+   "where": "компания test → Clients / Jobs",
+   "created_at": "2026-10-04T21:00"
+  },
+  {
+   "what": "Работы QA-quota 02–26 (JOB-0015…JOB-0039) + второй клиент «QA-quota client» (e0b2f0eb-…), все Repair, Miami FL, без телефона и техника",
+   "where": "компания test → Jobs / Clients",
+   "created_at": "2026-10-04T21:10"
+  },
+  {
+   "what": "Работа JOB-0040 «QA-quota 27» (проверка другим путём)",
+   "where": "компания test → Jobs",
+   "created_at": "2026-10-04T21:15"
+  },
+  {
+   "what": "Счёт INV-0014 $1,200 (pending, не отправлен) клиенту «QA-quota client» e0b2f0eb + позиция Price Book «QA-quota invoice item» ($1,200, создана автоматически)",
+   "where": "компания test → Invoices / Price Book",
+   "created_at": "2026-10-04T21:25"
+  },
+  {
+   "what": "Счёт INV-0015 $10 (pending, не отправлен) клиенту «QA-quota client»",
+   "where": "компания test → Invoices",
+   "created_at": "2026-10-04T21:28"
+  },
+  {
+   "what": "Admin iamdejar: назначение Lite отменено, Pro Tech Grandfathered восстановлен, AI открыт (проверено)",
+   "where": "Admin → Plans",
+   "created_at": "2026-10-04T21:32"
+  },
+  {
+   "what": "Новый аккаунт «testik» (компания test), зарегистрирован пользователем 08.10, Starter Tech trial до 15.10",
+   "where": "app.techory.ai",
+   "created_at": "2026-10-08"
+  },
+  {
+   "what": "Аккаунт «trtrtrtrt» xofayes535@aahzz.com, Starter Tech Yearly trial до 15.10, зарегистрирован пользователем",
+   "where": "app.techory.ai",
+   "created_at": "2026-10-08"
+  },
+  {
+   "what": "Исходное «trtrtrtrt» xofayes535@aahzz.com: Starter Tech / Trial / Trial / Oct 15, 2026 (до назначения Lite для F-14)",
+   "where": "Admin → Plans",
+   "created_at": "2026-10-08"
+  },
+  {
+   "what": "Аккаунт trtrtrtrt: клиент «QA-quota client» (305) 555-0100 + счёт INV-0001 $100 (не отправлен); временно Lite — отменён, восстановлен Starter Trial до 15.10 Annual (проверено)",
+   "where": "app.techory.ai (аккаунт пользователя xofayes535)",
+   "created_at": "2026-10-08"
+  },
+  {
+   "what": "Admin iamdejar временно Lite (F-14 retest) — отменён, Pro Tech Grandfathered восстановлен (проверено)",
+   "where": "Admin → Plans",
+   "created_at": "2026-10-08"
+  },
+  {
+   "what": "trtrtrtrt: техники QA-tech 1…6 (qa-tech1..6@example.com, (305) 555-0101…0106, без SMS-согласия), счёт INV-0002 $1,500 (не отправлен); тариф временно Pro/Growth/Enterprise — отменён, Starter Trial до 15.10 (проверено в Plans)",
+   "where": "app.techory.ai аккаунт xofayes535",
+   "created_at": "2026-10-08"
+  },
+  {
+   "date": "2026-10-14",
+   "company": "test",
+   "what": "лид QA-map lead fed70d11-11a5-4b4e-ba03-1352681dacb5 (+13055550199, без адреса)",
+   "ticket": "dc2f0de9"
+  },
+  {
+   "date": "2026-10-14",
+   "company": "test",
+   "what": "4 клиента QA-autosave client (dde0bd35, a6125736, b7ae5a2b, 65d4984a) — случайно, коллизия скриптов в scratchpad",
+   "ticket": "8ffd6e26-v"
+  },
+  {
+   "date": "2026-10-14",
+   "company": "test",
+   "what": "клиент QA-quota client 558aed84…: phone +1 → null (побочный PATCH автосохранения JobDetail)",
+   "ticket": "8ffd6e26"
+  },
+  {
+   "date": "2026-10-14",
+   "company": "test",
+   "what": "клиент QA-unit client fea68c2f…; работы JOB-0044 (Suite 3300), JOB-0046 (Apt 5B), JOB-0047 (#12); клиент QA-autosave client bf23c8a8…; работа JOB-0043 QA-autosave job",
+   "ticket": "b2f74544 / 8ffd6e26-v"
+  },
+  {
+   "date": "2026-10-14",
+   "company": "test",
+   "what": "клиент QA-multiaddr client 7fddb3c3… (+email/company), адреса QA-Warehouse/QA-Rental; JOB-0045, JOB-0048; EST-0002; счета INV-0017 $150 draft 94188d99… и дубль INV-0017 $100 cb66c653…; Price Book «QA-multiaddr inv item»; JOB-0042 QA-closed 1",
+   "ticket": "ea504c9f / 94c08102"
+  },
+  {
+   "date": "2026-10-14",
+   "company": "test",
+   "what": "даты: JOB-0051..0058,0060..0066 (QA-date), сметы EST-0003..0005 (QA-date est, approved); JOB-0049 QA-TP (Owen, Completed $123.45), JOB-0059 (без техника), клиент QA-TP client; JOB-0050 QA-closed 2",
+   "ticket": "dates / 5814749d / 94c08102"
+  },
+  {
+   "date": "2026-10-14",
+   "company": "test",
+   "what": "QA-datev: JOB-0070..0082 (часть с scheduled_date null — JOB-0073..0075, 0080..0082)",
+   "ticket": "dates-v"
+  },
+  {
+   "date": "2026-10-14",
+   "company": "test",
+   "what": "JOB-0083 (QA-multi 1, Kirill+Owen+Sofia, Assigned), JOB-0084 (QA-multi 2, Owen lead+Kirill, $77.77 Completed). Allow Multiple Techs возвращена OFF.",
+   "ticket": "a6270ed8"
+  },
+  {
+   "date": "2026-10-14",
+   "company": "test",
+   "what": "SupportTicket 8c3d2ad8… «Chat — QA-support 14.10» + 3 сообщения",
+   "ticket": "3db49a08"
+  },
+  {
+   "date": "2026-10-14",
+   "company": "test",
+   "what": "сообщение «QA-support verify 14.10» в SupportTicket 8c3d2ad8…",
+   "ticket": "3db49a08-v"
+  },
+  {
+   "date": "2026-10-14",
+   "company": "(глобально, Admin Panel → Coupons, живой Stripe)",
+   "what": "купоны QA-PCT10-1410 (f3856eee…, Stripe UTPLySNV), QA-FIX5-1410 (38ade046…, QuV5N3T1), QA-NEG-1410 (a01ed536…, Disabled; Stripe X5Ep6QO0 и OfPCqng6). Удаляет программист; PCT10/FIX5 отключить после теста погашения",
+   "ticket": "coupons"
+  },
+  {
+   "date": "2026-10-14",
+   "company": "test",
+   "what": "JOB-0086 «QA-multiv 1» (Owen lead + Kirill + Sofia, Assigned)",
+   "ticket": "a6270ed8-v"
+  },
+  {
+   "date": "2026-10-14",
+   "company": "(Coupons)",
+   "what": "купон QA-LIM0-1410 (Stripe tJ8ZrM0A) — Disabled",
+   "ticket": "coupons-v"
+  },
+  {
+   "date": "2026-10-14",
+   "company": "test",
+   "what": "JOB-0085 «QA-F16 usage job» (Cancelled), лид #3 «QA-F16 usage lead» (+13055550100)",
+   "ticket": "F-16"
+  },
+  {
+   "date": "2026-10-14",
+   "company": "аккаунт «בדיקה» wojeg27104",
+   "what": "2 live Stripe Checkout сессии без оплаты (истекут сами); Billing теперь показывает «Card on file» без карты; QA-PCT10/FIX5 Disabled, у каждого «+1 at checkout»",
+   "ticket": "291f7a9d"
+  },
+  {
+   "date": "2026-10-14",
+   "company": "test",
+   "what": "JOB-0087 «QA-F16v job»",
+   "ticket": "F-16-v"
+  },
+  {
+   "date": "2026-10-14",
+   "company": "(Coupons)",
+   "what": "купон QA-V15-1410 — Disabled; ещё 3 Stripe Checkout сессии без оплаты",
+   "ticket": "291f7a9d-v"
+  },
+  {
+   "date": "2026-10-14",
+   "company": "test",
+   "what": "JOB-0088 «QA-SMS 1» (Sofia lead + Owen, Assigned); Sofia Marin sms_consent=true (оставлено); 4 SMS на +972537240114; Allow Multiple Techs OFF",
+   "ticket": "sms-stage1"
+  },
+  {
+   "date": "2026-10-14",
+   "company": "test",
+   "what": "EST-0009 «QA-SMS estimate» (Sent), JOB-0089 «QA-SMS 2», JOB-0090 «QA-SMS 3», JOB-0091 «QA-SMS 3b»; итого 5 реальных SMS на номер пользователя",
+   "ticket": "sms-stage2/3"
+  },
+  {
+   "date": "2026-10-14",
+   "company": "новый аккаунт пользователя",
+   "what": "аккаунт re***@backyr.com, компания «ggg», зарегистрирован пользователем по реферальной ссылке admin (NG34ESMA), Lite",
+   "ticket": "F-15 / d0392fa9"
+  },
+  {
+   "date": "2026-10-14",
+   "company": "test",
+   "what": "приглашение на sixaka2671@betshubs.com (роль אדמין-מוקדן) — для F-1/F-2/F-16",
+   "ticket": "F-1"
+  },
+  {
+   "date": "2026-10-18",
+   "company": "test",
+   "what": "техник QA-F5 tech (id 8ccf1d7b-8a1d-4e48-86fd-6b0e533386a3, +15555550100 fake, sms_consent ON) + 9 TechnicianMessage failed"
+  },
+  {
+   "date": "2026-10-18",
+   "company": "test",
+   "what": "техники QA-Tech Alpha/Beta/Gamma (+1305555018x fake, без согласия)"
+  },
+  {
+   "date": "2026-10-18",
+   "company": "test",
+   "what": "работы JOB-0094 (3 техника), JOB-0095 (без техника), JOB-0096 (Alpha+Beta); черновик счёта INV-0019 к JOB-0095 (не отправлен)"
+  },
+  {
+   "date": "2026-10-18",
+   "company": "test",
+   "what": "техники QA-F3 tech A/B (+1305555010x fake, без согласия); JOB-0092, JOB-0093 (18 JobAssignment, одна sending)"
+  },
+  {
+   "date": "2026-10-18",
+   "company": "test",
+   "what": "клиент QA-F3 contact client (d464d833…, +13055550199); работы JOB-0097…JOB-0101"
+  },
+  {
+   "date": "2026-10-18",
+   "company": "test",
+   "what": "приглашение sixaka2671@betshubs.com «QA Dispatcher» Admin-dispatcher, id 2d4bdc15-c837-4211-8506-491927fce891, status invited"
+  },
+  {
+   "date": "2026-10-18",
+   "company": "Onsite Locksmith",
+   "what": "клиент QA-B2 client (305) 555-0177, работа JOB-1036 QA-B2 job, черновик счёта (не отправлен) — создал пользователь"
+  },
+  {
+   "date": "2026-10-18",
+   "company": "test",
+   "what": "JOB-0102, JOB-0103 (описание QA-headdr EN r1/r2)"
+  },
+  {
+   "date": "2026-10-18",
+   "company": "live Stripe",
+   "what": "купон QA-EXP-1810 (id 251e5a6d-…, Stripe SKAMhX43), привязан к wojeg27104, Disabled"
+  },
+  {
+   "date": "2026-10-18",
+   "company": "test",
+   "what": "JOB-0104, JOB-0106, JOB-0107 (QA-unit client, техник QA-F5 tech, title Job)"
+  },
+  {
+   "date": "2026-10-18",
+   "company": "live Stripe",
+   "what": "купоны QA-L1-351-1810, QA-LNO-351-1810 (wojeg27104), Disabled"
+  },
+  {
+   "date": "2026-10-18",
+   "company": "test",
+   "what": "JOB-0105, JOB-0108…JOB-0112 (QA-quota client, описание QA-dates …)"
+  },
+  {
+   "date": "2026-10-18",
+   "company": "live Stripe",
+   "what": "купон QA-EXP2-1810 (id 1ddcde7c-3a6c-48a5-95f1-eaf8bcfb520f, wojeg27104) ОСТАВЛЕН Active до проверки Expired (после 2026-10-18 21:00 UTC) — потом Disable"
+  },
+  {
+   "date": "2026-10-18",
+   "company": "prod",
+   "what": "аккаунт, зарегистрированный пользователем на Preview лендинга (#6f9da3) — реальный prod-аккаунт с Pro Tech trial"
+  },
+  {
+   "date": "2026-10-19",
+   "company": "test",
+   "what": "live Stripe Connect Express acct_1URr8q2W5xYS7IEV (незавершённый, создан до 19.10) — удалять по решению пользователя"
+  },
+  {
+   "date": "2026-10-19",
+   "company": "live Stripe",
+   "what": "купоны QA-R1-PCT-1910, QA-R1-ONLY-1910 (Disabled); QA-EXP2-1810 Disabled; незавершённая Checkout-сессия wojeg с QA-R1-PCT-1910"
+  },
+  {
+   "date": "2026-10-19",
+   "company": "wojeg27104",
+   "what": "выдача Pro Tech b2475f37-fd2b-452e-a610-6146040e683d до 2026-10-19T20:59:59Z — ОСТАВЛЕНА для проверки истечения; после полуночи проверить возврат на Lite"
+  },
+  "2026-11-02 · компания test: 19 клиентов QA-WZ… и QA-V… (импорт CSV #4030e4), Total 20→35 — не чистим. Аккаунт gps (Nikita Test, компания «בדיקה» d70f1465-…): номер Twilio (507) 568-6036 — освобождать вручную в консоли Twilio.",
+  "2026-11-12 · prod test: клиент QA-SMS Client (QA-Contact Dana, +972537240114), смета EST-0013 QA-SMS estimate 1211 $10 Sent; 1 SMS",
+  "2026-11-12 · Pre-Prod TTP: INV-0002 (QA-Item 1a4863 $10), лид #2 QA-Addr Lead",
+  {
+   "date": "2026-11-12",
+   "company": "Pre-Prod TTP Test Locks",
+   "what": "ВЕРНУТЬ: выдача Pro Tech ae2bd5a9-293f-4d0d-8027-88bc0c2db540 до 2026-11-13 (было Techory Lite / Free / until —). В конце сессии Revoke через preprod-a → Admin → Plans"
+  },
+  "2026-11-12 · Pre-Prod TTP: INV-0003 (QA-V2 Item), INV-0004 из JOB-0001, лид QA-V2 Offline Lead, клиент QA-Offline Client, EST-0003 QA-Est from job, EST-0004 QA-Count est, JobItem QA-PB job line в JOB-0003",
+  {
+   "date": "2026-11-12",
+   "company": "Pre-Prod TTP Test Locks",
+   "what": "ВЕРНУТЬ/учесть: тестовая подписка Stripe «additional company» $49/мес (cs_test_a0N07K5…), слоты 1→2, карта 4242 на файле — после 13.11 возможны тестовые списания; отменить подписку слота в конце"
+  },
+  {
+   "date": "2026-11-12",
+   "company": "Pre-Prod TTP Test Locks",
+   "what": "JOB-0004 QA-Pay job 1211 ($5): TTP $1, Link $1 (Refunded), Cash $1 (QA edit); EST-0005, INV-0005, позиция QA-V PB job $4 в JOB-0003"
+  },
+  {
+   "date": "2026-11-12",
+   "company": "Pre-Prod TTP аккаунт",
+   "what": "новая компания QA-Connect 1211 (Stripe Express test acct_1UavnT2a00e8onh0, Active), клиент QA-Connect Client, JOB-0001, платёж pi_3Uavy7… $1 Refunded; pp-a: тестовая подписка Starter Tech (отменена, ends Nov 3 по test clock), карта 4242"
+  },
+  "2026-11-12 · prod gps (בדיקה): клиенты QA-Ron Levi, QA-Maya Cohen, QA-Multi A–E, QA-Cat Keys, QA-Cat Repair; JOB-0004…0012; EST-0002/0003; INV-0001; правило Keys→Nikita Test (выключено); правило по времени ВКЛ; QA-Tech Auto возвращён +13055550199 без согласия",
+  {
+   "date": "2026-11-12",
+   "company": "Pre-Prod TTP Test Locks",
+   "what": "ВОЗВРАЩЕНО: выдача Pro Tech снята (Revoke) → Techory Lite/Free; подписка слота sub_1UavXkF3hxnCstPz3OwEIqUm отменена (Cancels Dec 12, 2026, до этого 2 слота); выбрана компания TTP Test Locks"
+  },
+  "2026-11-12 · prod test: участник QA Invite 1211 (citoden835@bwingmedia.com, Admin-dispatcher, Active) — зарегистрирован пользователем по приглашению",
+  "2026-11-12 · prod test: счета INV-0036…INV-0052 (QA-unit client, $1/0, не отправлены) — #a901b1; JOB-0112 история назначений Alpha/Beta/Gamma (#04d33a)"
+ ],
+ "findings": [
+  {
+   "text": "Lite: пункт Map виден в меню, хотя /pricing для Lite пишет «No GPS or workflow automation» — проверить, считается ли Map GPS-функцией",
+   "screenshot": ".qa/screenshots/f14/lite-BillingSubscription.png",
+   "status": "reported"
+  },
+  {
+   "text": "Первый вход qa-login в «בדיקה» мог запустить пробный период Starter Tech (Trial до 11.10, аккаунт создан 16.09) — уточнить у программиста",
+   "screenshot": ".qa/screenshots/plans/user-before-billing.png",
+   "status": "reported"
+  },
+  {
+   "text": "Превью feat/dark-mode: карта не грузится — «Map unavailable — Google rejected the site's Maps key» (ключ Google Maps не разрешён для домена превью) — окружение, не тема",
+   "screenshot": "",
+   "status": "skipped"
+  },
+  {
+   "text": "Контраст (и в Light, и в Dark): поле «Invoice name» в счёте (bg-gray-300 text-gray-300, Light 1.00:1), подпись «BUILT-IN» на /JobOptionsSettings (Light 2.33:1), стрелки сортировки в заголовках таблиц Estimates/Invoices (Light 1.41:1) — ниже WCAG AA",
+   "screenshot": "",
+   "status": "skipped"
+  },
+  {
+   "date": "2026-10-08",
+   "what": "HE: загрузчик «Loading your workspace…» и document.title на английском"
+  },
+  {
+   "date": "2026-10-08",
+   "what": "admin дашборд 1440px: горизонтальный скролл +16px",
+   "screen": ".qa/screenshots/12126fac/2026-10-08/7-admin-header-menu-desktop.png"
+  },
+  {
+   "date": "2026-10-14",
+   "what": "Job Details: выбранный новый адрес не сохраняется после reload (5/5, bug-verifier) — кандидат в баг, ждём #ea504c9f",
+   "src": "8ffd6e26-v"
+  },
+  {
+   "date": "2026-10-14",
+   "what": "New Job: после выбора адреса в другом штате ZIP в форме остаётся старый (34994) — в сохранённой работе верный; адрес клиента из подсказки без ZIP/USA (\"…, Stuart, Florida\")",
+   "src": "b2f74544"
+  },
+  {
+   "date": "2026-10-14",
+   "what": "New Invoice после открытия другого счёта: Service address и номер берутся от прошлого → дубль INV-0017 (на проверке)",
+   "src": "ea504c9f"
+  },
+  {
+   "date": "2026-10-14",
+   "what": "Даты: Б1 Copy to job ставит дату сметы (жалоба клиента); Б2 будущая дата = Today; Б3 повторный клик сбрасывает дату → null; Б4 HE без לפני; Р1 Schedule день 06-22 скрывает ранние/поздние работы — на перепроверке",
+   "src": "dates"
+  },
+  {
+   "date": "2026-10-14",
+   "what": "Техник Sofia Marin в компании test уже имеет номер пользователя +972537240114; у всех техников нет sms_consent → SMS при назначении не уходят (\"No SMS\"). Dispatch-превью не предупреждает об отсутствии согласия.",
+   "src": "a6270ed8"
+  },
+  {
+   "date": "2026-10-14",
+   "what": "Support: кнопка «+ Create new» перекрывает кнопку отправки (Pixel 7 и десктоп); HE «Kirill :לקוח», «Close Chat» не переведён; карточка в мобильном списке консоли «Oct 14, 03:08 PM»",
+   "src": "3db49a08"
+  },
+  {
+   "date": "2026-10-14",
+   "what": "Billing: после открытия/закрытия Stripe Checkout без оплаты показывает «Card on file»; HE bidi «10%» в строке купона; Checkout по умолчанию в ILS; /pricing → Choose plan у залогиненного → тихий редирект на Dashboard",
+   "src": "291f7a9d"
+  },
+  {
+   "date": "2026-10-14",
+   "what": "SMS: Dispatch «Send SMS» шлёт без проверки согласия и не пишется в историю техника; toast «Text selected» обрезан правым краем на 1440; разные форматы SMS («Job: JOB-0088 Job»); Dispatch preview «Job Id: N/A»",
+   "src": "sms-stage1"
+  },
+  {
+   "date": "2026-10-18",
+   "what": "HE: New Job из выбранного клиента — «אנא הכנס כתובת תקינה» при заполненном адресе, 3/3 HE, 0/2 EN",
+   "shot": "screenshots/80550f-v-outofscope-he-address-invalid-desktop.png"
+  },
+  {
+   "date": "2026-10-18",
+   "what": "HE: вкладка/заголовок Dispatch не переведены; даты в превью SMS в формате EN"
+  },
+  {
+   "date": "2026-10-18",
+   "what": "HE: причина STOP в записях назначения на английском"
+  },
+  {
+   "date": "2026-10-18",
+   "what": "HE грамматика «1 פתוחות» → «פתוחה»; форма техника требует телефон; история назначений ~270мс показывает «Nobody has been assigned»"
+  },
+  {
+   "date": "2026-10-18",
+   "what": "multi-tech: удаление техника во время «Saving…» первой автосохранки теряется, индикатор показывает Saved (5/5 в окне ~0.5с)",
+   "shot": "screenshots/04d33a-v-f1-afterpatch-after-reload-desktop.png"
+  },
+  {
+   "date": "2026-10-18",
+   "what": "страница работы: автосохранение с задержкой 3с, уход/перезагрузка раньше — изменение молча теряется"
+  },
+  {
+   "date": "2026-10-18",
+   "what": "история назначений: у старой строки пропадает «Send again», когда появляется новая"
+  },
+  {
+   "date": "2026-10-18",
+   "what": "auth/admin.json истёк (слоты admin-2..5 живы) — перед /qa-regress нужен qa-login; селекторы Allow Multiple Techs в автотестах #80550f не сверены"
+  },
+  {
+   "date": "2026-10-18",
+   "what": "первый вход диспетчера после приглашения: пустой toast, 403 RLS Subscription.create (дальше не повторяется)"
+  },
+  {
+   "date": "2026-10-18",
+   "what": "диспетчер на /Team видит только себя; имя в шапке из профиля ≠ имя участника; /pricing доступен ролям без биллинга; токен диспетчера читает Subscription владельца"
+  },
+  {
+   "date": "2026-10-18",
+   "what": "F-2: прямой URL на работу чужого бизнеса — тихий редирект на /Jobs без сообщения «нет прав»"
+  },
+  {
+   "date": "2026-10-18",
+   "what": "ПОДТВЕРЖДЕНО 3/3 HE, 0/2 EN: New Job из клиента в HE — «אנא הכנס כתובת תקינה», google-places autocomplete с language=iw region=il возвращает [] для US-адреса, POST Job не уходит. Возможна регрессия закрытого #a67b0f. Ждёт решения пользователя (HE не приоритет)",
+   "shot": "screenshots/bug-he-address-verify-he-r1-desktop.png"
+  },
+  {
+   "date": "2026-10-18",
+   "what": "купоны: дата окончания хранится как конец дня по Израилю (20:59:59 UTC), а клиенты в США"
+  },
+  {
+   "date": "2026-10-18",
+   "what": "превью SMS в Dispatch не совпадает с реально отправляемым текстом назначения (Powered by/Job Id: N/A/Name/Phone vs Techory: New job/Job:/Client:)"
+  },
+  {
+   "date": "2026-10-18",
+   "what": "HE bidi: «JOB-0103#», номер дома в конце адреса, телефоны «…+» в списке"
+  },
+  {
+   "date": "2026-10-18",
+   "what": "Jobs таблица шире контейнера на 1440 (EN/HE) — колонка Actions частично скрыта"
+  },
+  {
+   "date": "2026-10-19",
+   "what": "Stripe Checkout по умолчанию в ILS (₪), USD только после переключения"
+  },
+  {
+   "date": "2026-10-19",
+   "what": "при выданном тарифе Billing показывает «$99/month, Monthly» хотя списаний нет"
+  },
+  {
+   "date": "2026-10-19",
+   "what": "журнал Plans: сырые ключи pro_tech/starter_tech вместо названий"
+  },
+  {
+   "date": "2026-11-12",
+   "what": "#05c270: смета сохраняется draft уже при открытии окна Send; Cancel оставляет черновик"
+  },
+  {
+   "date": "2026-11-12",
+   "what": "#04d33a: список Jobs после быстрого ухода со страницы работы показывает устаревшее назначение (6/9); окно Leave site? после работы со страницей работы"
+  }
+ ],
+ "deferred_questions": [
+  "Можно ли использовать «auto test» (setaci8510@aminavin.com, Pro Tech Trial до 06.10) для назначения тарифа на prod + его пароль в accounts.env",
+  "Закрывать #226301e0 как дубль вместе с #6eed7c73",
+  "Принимаем ли проверку срока при чтении вместо задачи по расписанию",
+  "Проверка webhook Stripe — только с разработчиком/тестовым режимом Stripe",
+  "#6a33fdff Call Masking: тикет = только заглушка (тогда проходит, реджект устарел) или полная функция (тогда реджект, дубль F-7/F-8)?",
+  "#6a81d177: снять «לא ניתן לשחזר» и проверить напоминание на «auto test» до 06.10? Отсутствие email-напоминания — реджект?",
+  "F-14: на сайте 3 тарифа (Lite/Starter/Pro), в тикете 5 (D-20); проверка квот создаёт данные на prod",
+  {
+   "date": "2026-10-14",
+   "what": "#8178c3b1 Landing AI-чат — отложен пользователем (только превью Vercel; вопрос Apple/Google вход)"
+  },
+  {
+   "date": "2026-11-02",
+   "ticket": "0c3606",
+   "q": "Job из SMS берёт телефон клиента = номер отправителя SMS (+972537240114), а не Phone: из текста (13055550177). В формате Ucallz отправитель — сервис, не клиент. Реджект или отдельная задача? Пользователь: решим позже.",
+   "default": "включить в реджект",
+   "resolved": "включено в реджект 02.11"
+  }
+ ],
+ "queue": {
+  "date": "2026-10-14",
+  "batch1": [
+   "8ffd6e26",
+   "08737d6c",
+   "b4c3bed5",
+   "dc2f0de9",
+   "6e6f101d"
+  ],
+  "skip_blocked": [
+   "6eed7c73",
+   "226301e0",
+   "6a81d177"
+  ]
+ },
+ "user_decisions": [
+  "#226301e0 — не закрывать отдельно; при успехе #6eed7c73 провести вместе с #226301e0 (разберёмся в конце)",
+  "#6a81d177 — проверим потом",
+  "[F-11] QuickBooks (6a4fad600e673484ac04d342) — вернуть в לביצוע; текст и действие — в конце сессии",
+  "#6a33fdff Call Masking — решим в конце",
+  "Второй аккаунт для назначения тарифа: wojeg27104@blobapps.com (id user), пароль вписывает пользователь",
+  "05.10: [F-18] — по умолчанию Light ок; провести. Новые задачи на находки (контраст, карта превью) не открывать.",
+  "2026-10-07: тестовые данные в компании «test» не чистим — тестовый аккаунт",
+  "2026-10-07: Map ≠ GPS — Map у Lite не баг, #a0acc801 удаляет пользователь"
+ ],
+ "cleanup_pending": [
+  "27 работ JOB-0014…JOB-0040 «QA-quota 01–27» (компания test)",
+  "2 клиента «QA-quota client» (558aed84-…, e0b2f0eb-…)",
+  "Счета INV-0014 ($1,200) и INV-0015 ($10), pending, не отправлены",
+  "Позиция Price Book «QA-quota invoice item» ($1,200)"
+ ],
+ "sessions_log": [
+  {
+   "date": "2026-10-07",
+   "tickets": [
+    {
+     "id": "12126fac460d60260738a5f1",
+     "title": "הטאבים Users / Plans / Funnel של Admin Panel מוצגים למשתמש רגיל בכניסה ישירה לכתובת",
+     "result": "не-admin: /adminpanel → один экран Access Denied (EN/HE), вкладок нет, после reload то же; admin видит Users/Plans/Funnel, в шапке Kirill · Admin. Решение пользователя 07.10: нужен редирект на /dashboard → реджект (ждёт «да»)",
+     "screens": ".qa/screenshots/12126fac/",
+     "action": "07.10 דחה משימה (2 скрина, 3 шага) → לביצוע, проверено после перезагрузки доски"
+    },
+    {
+     "id": "550e01dbc9a5cf1ce85bd0d0",
+     "title": "במסך החיוב מוצג טקסט על תקופת ניסיון כשלמשתמש יש חבילה שהוקצתה ידנית",
+     "result": "Trial до назначения — текст про trial ✅; Starter Tech назначен — «Your plan is granted by Techory until Nov 6, 2026, so no card is needed until then.» без trial, EN/HE, за 21 c без перезагрузки ✅; Growth Company и Scale Enterprise — кнопки Add Payment Method нет ✅; Pro Tech — есть ✅; Revoke → Starter Tech Trial до 11.10 ✅. К עבר QA (ждёт «да»)",
+     "screens": ".qa/screenshots/550e01db/",
+     "action": "07.10 עבר QA → הושלם, проверено после перезагрузки доски"
+    }
+   ],
+   "test_data": [
+    "«בדיקה»: 2 цикла назначений (Starter→Growth→Pro; Starter→Scale Enterprise) с причиной «QA-test #550e01db…» — оба отменены (Revoke), Starter Tech Trial до 11.10 подтверждён"
+   ],
+   "new_tickets": [
+    {
+     "id": "0977347127ca7b53ef785064",
+     "title": "ממשק התמיכה (/supportinbox): משתמש רגיל רואה מסך Access Denied במקום מעבר לדף הבית",
+     "column": "לביצוע",
+     "files": 2
+    },
+    {
+     "id": "a0acc801b6678b2868669625",
+     "title": "במסלול Techory Lite מוצג בתפריט הפריט Map, למרות שבעמוד המחירים כתוב ל-Lite No GPS",
+     "column": "לביצוע",
+     "files": 2,
+     "note": "удалён пользователем 07.10 (Map ≠ GPS)"
+    },
+    {
+     "id": "f109cde86a9e009a32694acb",
+     "title": "תקופת ניסיון של 7 ימים מתחילה בכניסה הראשונה ולא בהרשמה",
+     "column": "לביצוע",
+     "files": 3
+    }
+   ],
+   "autotests": "#550e01db: tests/billing-granted-plan 2.1–2.3 @writes написаны, прогнаны 07.10 (зелёные, аккаунт вернулся в Trial); дальше — только генерация без запуска (решение пользователя: запуск в регрессе). 1.1 и 11 тестов #ca557707 — пишет autotest-writer без запуска.",
+   "daily_summary": "07.10 בדיקה יומית: 4 тикета (550e01db, 12126fac, 09773471, f109cde8)"
+  },
+  {
+   "date": "2026-10-08",
+   "command": "/qa без «לא ניתן לשחזר»",
+   "skipped": [
+    "6eed7c73",
+    "226301e0",
+    "6a81d177"
+   ],
+   "queue": [
+    "09773471",
+    "12126fac",
+    "f109cde8",
+    "6a4fad60"
+   ]
+  },
+  {
+   "date": "2026-10-14",
+   "cmd": "/qa",
+   "note": "очередь testing 39 (3 blocked не трогаем); слоты auth/admin-2..4.json созданы для параллели (slot-login.cjs)"
+  },
+  {
+   "date": "2026-10-18",
+   "what": "mifrat MCP Internal error — реджект F-1 через браузер (Claude in Chrome) по согласию пользователя"
+  },
+  {
+   "date": "2026-10-19",
+   "what": "handoff сохранён; осталось: истечение выдачи wojeg (#2b3784/#b42657) утром 20.10; Pre-Prod #407c8d"
+  },
+  {
+   "date": "2026-10-20",
+   "what": "handoff сохранён, сессия закрыта пользователем; ждём #407c8d (Pre-Prod Stripe test mode)"
+  }
+ ],
+ "rejection_ids": {
+  "8ffd6e2645f08c18a2e17576": "6e9b5e26-bb0e-4008-b69e-9f0f8cccce5d",
+  "dc2f0de9402a1e3735ab0cf3": "46b477af-bb2b-4012-913f-d20de697a813",
+  "b2f74544d40c5b51239e97e2": "eeed5bfb-a468-4a96-a121-7ecc8c464805",
+  "cdf10b1bd71ea57de731c3de": "f2dfed62-a424-48b2-8385-e321a142d46f"
+ },
+ "log": [
+  {
+   "date": "2026-11-08",
+   "ticket": "#67b4b4",
+   "id": "0f1c532efa592ec2db67b4b4",
+   "action": "reject",
+   "rejection_id": "rej_ba5c3030d322b3f8dc695d4a",
+   "column": "לביצוע",
+   "time": "17:52",
+   "notes": "Techory Dev (Pre-Prod) Pixel 6: TTP $1 ok, cancel ok; reject = UX Payments (решение пользователя, карандаш слева от суммы) + long-press decline не работает. Payment Link не оплачивался (карта 4242 не вводилась).",
+   "findings": [
+    "Payment Link из Techory Dev ведёт на app.techory.ai (prod) → 'not valid'; на preprod-хосте работает",
+    "переплата разрешена (122%)",
+    "оплату Stripe можно редактировать/удалить в Edit Payment",
+    "Payment Portal 0 транзакций",
+    "Job # без номера",
+    "Add Payment по умолчанию Cash",
+    "checkout merchant 'Contract Test Locksmith' vs 'TTP Test Locks'"
+   ],
+   "test_data": [
+    "TTP Test Locks (pre-prod): TTP payment $1 на JOB TTP lockout; Payment Link $1 wAizS4t3… (не оплачен)"
+   ]
+  },
+  {
+   "date": "2026-11-08",
+   "ticket": "#407c8d",
+   "id": "14e977896e73a6e94c407c8d",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "time": "18:05",
+   "notes": "Pre-Prod: отдельная БД osieklastrq, Stripe test (cs_test, Sandbox), Connect Active (TTP Test Locks), test clock +1 day Oct26→Oct27 (pp-a), [fail-sync] купон Not in Stripe→Retry→Active, webhook: оплата Payment Link 4242 (пользователь) → платёж в Job автоматически, ссылка Paid.",
+   "test_data": [
+    "pre-prod купон QA-FAILSYNC-0811 (Active)",
+    "pre-prod pp-a test clock = Oct 27 2026",
+    "pre-prod TTP lockout: +$1 link payment, +$1 TTP"
+   ]
+  },
+  {
+   "date": "2026-11-08",
+   "ticket": "#4ed2a1",
+   "id": "0705ed6f12349c436e4ed2a1",
+   "action": "in-progress",
+   "time": "18:15",
+   "notes": "Techory Dev 1.1 (sideload, не из Play). OK: 12 разделов, вход сохраняется, Reports CSV/Word share, PDF скрыт, клавиатура прячет нижнее меню, Tap to Pay. FAIL: Invoice→Download 3/3 (app) + web preprod: 'Error downloading PDF: null.split', нет share/сообщения (INV-0001 id 42785adb…). Не проверено: Estimate Preview (смета из вкладки Job не в списке Estimates, без Preview), регистрация, Delete account (клик заблокирован классификатором), splash (видео не разобрать).",
+   "findings": [
+    "смета из вкладки Job сохраняется с пустыми обязательными полями, не видна в Estimates",
+    "отчёт Payments: 0 платежей в ноябре при 4 оплатах",
+    "метка вкладки Payments 'Remaining to pay: $120' при оплате $147"
+   ],
+   "test_data": [
+    "pre-prod TTP Test Locks: INV-0001 (из TTP lockout), смета #EST-1794154198475 $0"
+   ]
+  },
+  {
+   "date": "2026-11-08",
+   "ticket": "#4ed2a1",
+   "id": "0705ed6f12349c436e4ed2a1",
+   "action": "reject",
+   "rejection_id": "rej_a276151367dc2fc44d1a8899",
+   "column": "לביצוע",
+   "time": "18:37",
+   "notes": "Invoice Download null.split 3/3 app + web preprod. Не проверено: Estimate Preview, signup, Delete account, splash."
+  },
+  {
+   "date": "2026-11-08",
+   "ticket": "#407c8d",
+   "action": "pass-confirmed",
+   "column": "הושלם",
+   "notes": "пользователь провёл עבר QA; автотестов нет — задача про окружение"
+  },
+  {
+   "date": "2026-11-08",
+   "action": "new-bugs",
+   "tickets": [
+    "#51cdcc Payment Link host",
+    "#5bfdd1 Edit Stripe payment",
+    "#5e4fe6 Payment Portal/Report 0",
+    "#ca1a27 job estimate empty fields",
+    "#5315ab Job # / tab label"
+   ],
+   "column": "לביצוע"
+  },
+  {
+   "date": "2026-11-08",
+   "ticket": "#4ed2a1",
+   "action": "explore",
+   "time": "18:55",
+   "ok": [
+    "Back в форме с клавиатурой закрывает только клавиатуру",
+    "загрузка вложения через picker",
+    "tel: открывает звонилку",
+    "валидация New Client",
+    "подсказки адреса Google",
+    "+ перетаскивается"
+   ],
+   "bugs": [
+    "Back при открытом окне (Add Payment) закрывает окно и уходит со страницы работы",
+    "Estimate Preview: null.split (company_address null) — та же причина, что Invoice Download",
+    "нижний навигатор есть (решение пользователя: не должно быть) — app + mobile web"
+   ],
+   "test_data": [
+    "pre-prod: клиент QA-App Client (350 5th Ave Brooklyn), смета QA-App estimate, вложение QA-attach.png в TTP lockout; на телефоне /sdcard/Download/QA-attach.png"
+   ]
+  },
+  {
+   "date": "2026-11-08",
+   "action": "board",
+   "items": [
+    "#4ed2a1 comment: Estimate Preview null.split (company_address)",
+    "new bug #18d185 Android back closes dialog + leaves page",
+    "new task #5f2140 remove mobile bottom nav"
+   ],
+   "column": "לביצוע"
+  },
+  {
+   "date": "2026-11-08",
+   "ticket": "#4ed2a1",
+   "action": "explore-2",
+   "time": "19:10",
+   "board": [
+    "#18d185 comment: Back with sidebar open leaves screen",
+    "new bug #df9bec Price Book auto-add from estimate"
+   ],
+   "ok": [
+    "job create JOB-0001 + Schedule",
+    "client create",
+    "estimate create EST-0001",
+    "lead create + map marker",
+    "menus/sidebar/bell/company/avatar/More",
+    "Profile Settings has Delete account link",
+    "online again after offline works"
+   ],
+   "findings_open": [
+    "Back #2 on filled form leaves without unsaved warning",
+    "Dashboard '0 estimates' while EST-0001 exists",
+    "lead address 400 Broad St Seattle → City='Uptown'",
+    "offline: lists stuck on skeleton without 'no internet' message; create shows generic alert 'Error saving customer'",
+    "FAB covers filters/columns (movable)"
+   ],
+   "test_data": [
+    "pre-prod: job JOB-0001 (QA-App Client), lead QA-App Lead (400 Broad St Seattle), Price Book item QA-Lockout service"
+   ]
+  },
+  {
+   "date": "2026-11-08",
+   "action": "new-bugs",
+   "tickets": [
+    "#dad444 City=neighborhood",
+    "#0cd6c0 dashboard 0 estimates",
+    "#6f8ef9 offline no message",
+    "#f220cc unsaved form back"
+   ],
+   "column": "לביצוע"
+  },
+  {
+   "date": "2026-11-08",
+   "ticket": "#4ed2a1",
+   "action": "explore-3",
+   "time": "19:20",
+   "ok": [
+    "splash: Techory logo then Loading workspace",
+    "Schedule Week/Month + Next/Today",
+    "invoice: client picker, Price Book Select; Lite quota message shown",
+    "no prices/upgrade buttons in app: Billing 'cannot be managed in the app', /pricing redirects, Inventory/AI no buttons"
+   ],
+   "findings_open": [
+    "Create Invoice without client: no message",
+    "Invoice name empty shown as gray block (looks broken)",
+    "quota toast in app says 'Upgrade your plan to create more'"
+   ]
+  },
+  {
+   "date": "2026-11-08",
+   "action": "new-bugs",
+   "tickets": [
+    "#1a4863 Create Invoice without client no msg",
+    "#dce958 Invoice name gray block"
+   ],
+   "column": "לביצוע"
+  },
+  {
+   "date": "2026-11-08",
+   "action": "note",
+   "notes": "#f547e7 создан, пользователь удаляет сам — не тикет"
+  },
+  {
+   "date": "2026-11-08",
+   "action": "new-tickets",
+   "tickets": [
+    "#228932 app: return plan change for owner (reminder)",
+    "#2185f2 web: no cancel subscription (seen by user on PC)"
+   ],
+   "column": "לביצוע"
+  },
+  {
+   "date": "2026-11-12",
+   "ticket": "#05c270",
+   "action": "pass-confirmed",
+   "column": "הושלם",
+   "notes": "пользователь провёл עבר QA; автотесты пишутся (без запуска)"
+  },
+  {
+   "date": "2026-11-12",
+   "action": "pass-confirmed",
+   "tickets": [
+    "#18d185",
+    "#1a4863",
+    "#6f8ef9",
+    "#dad444",
+    "#dce958",
+    "#f220cc"
+   ],
+   "column": "הושלם",
+   "notes": "пользователь провёл עבר QA; автотесты пишутся"
+  },
+  {
+   "date": "2026-11-12",
+   "ticket": "#1a7125",
+   "action": "cannot-reproduce",
+   "notes": "решение пользователя; проверить на prod после нового Stripe"
+  },
+  {
+   "date": "2026-11-12",
+   "action": "new-bugs",
+   "column": "לביצוע",
+   "tickets": [
+    "#809888",
+    "#24c5b2",
+    "#4315cf",
+    "#4f4eab",
+    "#a83f47",
+    "#458056",
+    "#ec42a8",
+    "#feb50f",
+    "#48acac",
+    "#b20fe6",
+    "#1649c3",
+    "#a96197",
+    "#687146",
+    "#126f07",
+    "#70ca62",
+    "#ffde48",
+    "#cacd64",
+    "#c9f0f5",
+    "#22cfa9",
+    "#98c982",
+    "#621cd7",
+    "#6d5396",
+    "#63ed24",
+    "#8595f7",
+    "#1cdb04",
+    "#e9ccde"
+   ],
+   "notes": "26 находок сессии 12.11 по «открывай» пользователя; находка «+ поверх Billing» не заведена (решение 08.11)"
+  }
+ ]
+}

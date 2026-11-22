@@ -1,0 +1,91 @@
+{
+ "project": "hunters",
+ "date": "2026-11-22",
+ "environment": "https://hunters-sooty.vercel.app",
+ "queue": [
+  "#f921ce",
+  "#c3887f",
+  "#c110f9",
+  "#633ce9",
+  "#90dccb",
+  "#837e7f",
+  "#2e6aa2",
+  "#c2bc5d",
+  "#56ac83"
+ ],
+ "note": "retest of 15.11 rejects (Brian commit 2b8754e) + 3 new tickets; relogin admin/hunter_plus/hunter_free/hunter_free_2/company via qa-login OK",
+ "tickets": [
+  {
+   "hash": "#f921ce",
+   "verdict": "pass",
+   "runs": 2,
+   "note": "placeholder name@example.com he/en/ru/ar at 1440 and 375, 8/8 both runs; screenshots 2026-11-22_f921ce_*"
+  },
+  {
+   "hash": "#c3887f",
+   "verdict": "pass-pending-rerun",
+   "runs": 1,
+   "note": "₪49 option removed (per #c2bc5d decision); ₪150 verification window from chat 1180px = PREMIUM, coupon Apply not covered (elementFromPoint), card fields normal, he/en/ru/ar 1440+375. finding: he coupon placeholder truncated at 375"
+  },
+  {
+   "hash": "#c2bc5d",
+   "verdict": "reject-draft",
+   "note": "T1/T2 ok (free NDA + verification ₪150, no ₪49); T4 BUG: signature save server action returns false, NDA not sent 3/3 (claude-test) -> bug-verifier; T5-T13 not tested yet | p2: T6 T10 T12 T13 ok; T9 ok (old pair); T8 FAIL company/HR->unverified hunter: NDA auto-sent on opening chat, no bar/button, no signature window/image (verifying); T5 no recipient signature image on 15.11 NDA (pre-migration); T7 T14-server not checkable | v2 CONFIRMED T8 auto-send + no sender signature image (admin view of approved NDA: only recipient image)"
+  },
+  {
+   "hash": "#633ce9",
+   "verdict": "wait-R1",
+   "note": "R2 R3 R4 AC ok; R1 needs new account (user registers); R4 email button says 'sent' (delivery unverified) - verify with new temp-mail account"
+  },
+  {
+   "hash": "#c110f9",
+   "verdict": "pass-pending-rerun",
+   "note": "mask, reveal w/ reason, 30s auto-hide, hide on nav/back/reload, log entry, escaping, he/en, non-admin 404, full code absent in 313 responses/storage/DOM; DB encryption unverifiable (dev word); optional main-admin not done"
+  },
+  {
+   "hash": "#56ac83",
+   "verdict": "blocked",
+   "note": "demo-hunter-2 FREE: step2 returns draft = input copy, no AI; rerun on claude-test PLUS"
+  },
+  {
+   "hash": "#90dccb",
+   "verdict": "blocked",
+   "note": "jobs not lost: all expired (J-148 פג תוקף 07.11); creating new job QA-AUTO 2211 by demo-company-1, retest on claude-test"
+  },
+  {
+   "hash": "#837e7f",
+   "verdict": "blocked-ai",
+   "note": "company size field ✅ 4 langs + 375; file errors ✅; import returns {error:unreadable} 9/9 any file/role -> AI down on staging; items 1c,1d,2,3 unverifiable"
+  }
+ ],
+ "test_data": [
+  {
+   "date": "2026-11-22",
+   "what": "#c2bc5d: 3 orphan signature files in Storage documents/232703e1-.../signature-1795338423957.png, -484095, -503985 (claude-test); company_6 pressed «שמרתי את הקוד»"
+  },
+  {
+   "date": "2026-11-22",
+   "what": "#633ce9: demo-talent-3 password reset twice by admin (11:13 via R-30, 11:14 general), current temp pw in research/633ce9/demo-talent-3-temp-password.txt; R-30 -> טופל; 'email send' 11:13:35"
+  },
+  {
+   "date": "2026-11-22",
+   "what": "#c110f9: 7 log entries «צפייה בקוד סודי» for demo-hunter-3 with reasons QA-AUTO c110f9 ...; demo-hunter-3 code window still unconfirmed"
+  },
+  {
+   "date": "2026-11-22",
+   "what": "#c2bc5d-v: 3 more orphan signature files claude-test signature-1795338839865/866435/876809.png"
+  },
+  {
+   "date": "2026-11-22",
+   "what": "#837e7f: ~10 linkedin-shot-*.png possibly left in Storage documents/995a2f1e-... (demo-company-1) and company_6 after unreadable errors; no profile saves"
+  },
+  {
+   "date": "2026-11-22",
+   "what": "#c2bc5d-p2: pending NDAs company_2->hunter_new (conv 56e5f75c) and company_6->hunter_new (conv bcb73601), not approved; code windows confirmed «שמרתי» for company_2, company_6, hunter_new, hunter_free_2"
+  },
+  {
+   "date": "2026-11-22",
+   "what": "#c2bc5d-v2: ACCIDENTAL approve via bell «אישור ה-NDA»: NDA company_6 (מיכל לוי) <-> hunter_new now valid to 22.02.2027; company_2->hunter_new still pending"
+  }
+ ]
+}

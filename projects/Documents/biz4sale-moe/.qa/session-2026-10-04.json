@@ -1,0 +1,93 @@
+{
+  "project": "biz4sale",
+  "date": "2026-10-04",
+  "environment": "https://www.biz4sale.co.il/ (prod)",
+  "scope": "בבדיקות кроме тикетов с пометкой «לא ניתן לשחזר» (#6a988662, #6a1c6024)",
+  "tickets": [
+    {
+      "hash": "#be14fc06",
+      "id": "be14fc06c4290f2f64195a4b",
+      "title": "כותרת השיחה בצ'אט נשברת במובייל — השם נחתך ואייקון WhatsApp מכסה אותו",
+      "type": "bug",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "2 прогона: Android Pixel 7, iPhone 13 mini, 320/360/375/390, регресс 1440/768. Сессия chat (одна переписка); длинные тексты — подменой в DOM. Тап-зоны <44px — находка.",
+      "at": "2026-10-04T14:01"
+    },
+    {
+      "hash": "#5c17718d",
+      "id": "5c17718d460edda4626de6dc",
+      "action": "checked-by-user",
+      "notes": "пользователь проверил сам (2026-10-04)",
+      "at": "2026-10-04T13:30"
+    },
+    {
+      "hash": "#56ab261a",
+      "id": "56ab261a68120fdc568c00a6",
+      "action": "checked-by-user",
+      "notes": "пользователь проверил сам (2026-10-04)",
+      "at": "2026-10-04T13:30"
+    },
+    {
+      "hash": "#5bb39418",
+      "id": "5bb394180ccfe84cf9f239a4",
+      "action": "checked-by-user",
+      "notes": "пользователь проверил сам (2026-10-04)",
+      "at": "2026-10-04T13:30"
+    },
+    {
+      "hash": "#8b3f4629",
+      "id": "8b3f4629503c12e573cee3b8",
+      "action": "checked-by-user",
+      "notes": "пользователь проверил сам (2026-10-04)",
+      "at": "2026-10-04T13:30"
+    },
+    {
+      "hash": "#ea1f09be",
+      "id": "ea1f09be6ee2533b5c464adb",
+      "action": "checked-by-user",
+      "notes": "пользователь проверил сам (2026-10-04)",
+      "at": "2026-10-04T13:30"
+    },
+    {
+      "hash": "#77b21da6",
+      "id": "77b21da6e80fe7e23d6291d9",
+      "action": "checked-by-user",
+      "notes": "пользователь проверил сам (2026-10-04)",
+      "at": "2026-10-04T13:30"
+    }
+  ],
+  "test_data": [],
+  "findings": [
+    {
+      "text": "<html lang=\"en\"> без dir на ивритском RTL-сайте",
+      "screenshot": "",
+      "status": "skipped"
+    },
+    {
+      "text": "/messages при прямой загрузке/перезагрузке показывает «אין שיחות עדיין», хотя переписка есть (внутри сайта видна)",
+      "screenshot": ".qa/screenshots/be14fc06-messages-list-empty-android.png",
+      "status": "reported"
+    },
+    {
+      "text": "/messages?conversation=… по прямому URL грузится ~30 с (внутри сайта 0.5–2.5 с); на мобиле над чатом блок «אזור אישי», шапка чата ниже первого экрана",
+      "screenshot": "",
+      "status": "reported"
+    },
+    {
+      "text": "Номер в заголовке чата — центральный BIZ4SALE или реальный продавца? (F-09 AC5/D-11) — не проверить: продавец в переписке сам BIZ4SALE",
+      "screenshot": "",
+      "status": "reported"
+    },
+    {
+      "text": "Кнопки шапки чата <44px: WhatsApp 36×36, телефон 36×36, глаз 40×32, X 43×36",
+      "screenshot": ".qa/screenshots/be14fc06-tap-targets-android.png",
+      "status": "reported"
+    },
+    {
+      "text": "Планшет 768: навигация шапки сайта уходит на 2px за левый край",
+      "screenshot": "",
+      "status": "reported"
+    }
+  ]
+}

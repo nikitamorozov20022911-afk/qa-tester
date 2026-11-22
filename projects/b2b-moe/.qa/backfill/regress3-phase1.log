@@ -1,0 +1,557 @@
+
+Running 149 tests using 4 workers
+
+  ✓    4 [tests] › tests/auth-security/landing-and-session.spec.ts:12:9 › auth-security — נחיתה לפי תפקיד וסשן › מפיץ › מפיץ נוחת ב-/catalog, נשאר מחובר אחרי רענון, כתובת לא מוכרת → /catalog #6a38cf59 #6a6f302c #6a672659 @desktop @prod-safe (3.4s)
+  ✓    2 [tests] › tests/catalog/catalog-buyer.spec.ts:10:9 › catalog — לקוח עסקי › לקוח לא נכנס ל-/catalog — הפניה ל-/shop #6a38cf5d #6a38cf5e @desktop @prod-safe (4.5s)
+  ✓    5 [tests] › tests/auth-security/landing-and-session.spec.ts:31:9 › auth-security — נחיתה לפי תפקיד וסשן › לקוח › לקוח נוחת ב-/shop, כתובת לא מוכרת → /shop בלי 403 #6a672659 #6a38cf59 #6a6f302c @prod-safe (3.8s)
+  ✓    6 [tests] › tests/catalog/catalog-buyer.spec.ts:10:9 › catalog — לקוח עסקי › לקוח לא נכנס ל-/catalog/new — הפניה ל-/shop #6a38cf5d #6a38cf5e @desktop @prod-safe (3.3s)
+  ✓    7 [tests] › tests/auth-security/landing-and-session.spec.ts:49:11 › auth-security — נחיתה לפי תפקיד וסשן › אורח › אורח ב-/catalog מופנה להתחברות בעברית RTL #6a38cf59 @prod-safe (1.5s)
+  ✓    1 [tests] › tests/auth-security/impersonation.spec.ts:36:7 › auth-security — כניסה כעובד › מנהל נכנס כנציג, רואה חיווי, הרשאות הנציג, וחוזר לחשבון הניהול #6a8da3df #6a749714 @desktop (8.8s)
+  ✓    3 [tests] › tests/auth-security/customer-isolation.spec.ts:16:7 › auth-security — בידוד נתוני לקוח › לקוח לא נכנס למסכי הניהול — מופנה ל-/shop #6a38cf59 #6a749714 @desktop @prod-safe (8.9s)
+  ✓    8 [tests] › tests/catalog/catalog-buyer.spec.ts:10:9 › catalog — לקוח עסקי › לקוח לא נכנס ל-/catalog/categories — הפניה ל-/shop #6a38cf5d #6a38cf5e @desktop @prod-safe (2.7s)
+  ✓    9 [tests] › tests/auth-security/landing-and-session.spec.ts:49:11 › auth-security — נחיתה לפי תפקיד וסשן › אורח › אורח ב-/shop מופנה להתחברות בעברית RTL #6a38cf59 @prod-safe (2.5s)
+  ✓   13 [tests] › tests/auth-security/landing-and-session.spec.ts:49:11 › auth-security — נחיתה לפי תפקיד וסשן › אורח › אורח ב-/team מופנה להתחברות בעברית RTL #6a38cf59 @prod-safe (1.6s)
+  ✓   14 [tests] › tests/auth-security/landing-and-session.spec.ts:49:11 › auth-security — נחיתה לפי תפקיד וסשן › אורח › אורח ב-/shop/orders מופנה להתחברות בעברית RTL #6a38cf59 @prod-safe (1.2s)
+  ✓   12 [tests] › tests/catalog/catalog-buyer.spec.ts:18:7 › catalog — לקוח עסקי › דף מוצר אצל הלקוח — בלי «יחידת מכירה» / מארזים, כמות מספרית #6a858d3f @desktop @prod-safe (3.6s)
+  ✓   11 [tests] › tests/auth-security/customer-isolation.spec.ts:25:7 › auth-security — בידוד נתוני לקוח › לקוח פותח הזמנה של לקוח אחר — «אין הרשאה»; הזמנה לא קיימת — «לא נמצאה» #6a38cf5a @prod-safe (6.5s)
+  ✓   15 [tests] › tests/client-ordering/catalog.spec.ts:18:7 › client-ordering — קטלוג: גלישה, חיפוש וסינון › קטלוג מאורגן בקטגוריות עם מחירון אישי #6a38cf5e @prod-safe (3.3s)
+  ✓   16 [tests] › tests/client-ordering/order-history.spec.ts:11:9 › client-ordering — היסטוריית הזמנות › buyer с заказами › רשימת ההזמנות עם תאריך, פריטים, סכום וסטטוס; פירוט מלא; לשוניות #6a38cf5c @prod-safe (4.1s)
+  -   19 [tests] › tests/client-ordering/order-history.spec.ts:45:7 › client-ordering — היסטוריית הזמנות › לקוח חדש ללא הזמנות — מצב ריק עם קישור לקטלוג #6a38cf5c @prod-safe
+  ✓   10 [tests] › tests/auth-security/impersonation.spec.ts:64:9 › auth-security — כניסה כעובד › משה כהן — יעד נחיתה חוקי ו-403 בלי לולאה #6a672659 @desktop (9.4s)
+  ✓   17 [tests] › tests/auth-security/customer-isolation.spec.ts:35:7 › auth-security — בידוד נתוני לקוח › RLS: ה-API מחזיר ללקוח רק את ההזמנות והלקוח שלו #6a38cf5a @desktop @prod-safe (3.3s)
+  -   22 [tests] › tests/auth-security/customer-isolation.spec.ts:65:7 › auth-security — בידוד נתוני לקוח › שני לקוחות — מחירים והיסטוריה מבודדים, לקוח חדש — רשימה ריקה #6a38cf5a
+  ✓   18 [tests] › tests/client-ordering/catalog.spec.ts:28:7 › client-ordering — קטלוג: גלישה, חיפוש וסינון › חיפוש מסנן בזמן אמת; אין תוצאות → מצב ריק ו«נקה סינון» #6a38cf5e @prod-safe (5.2s)
+  ✓   20 [tests] › tests/client-ordering/product-card.spec.ts:16:7 › client-ordering — כרטיס מוצר › רק «במלאי» / «אזל», בלי «כמות מוגבלת»; מוצר שאזל לא ניתן להוספה #6a748c9a @prod-safe (4.8s)
+  ✓   21 [tests] › tests/auth-security/impersonation.spec.ts:64:9 › auth-security — כניסה כעובד › עובד מחסן בדיקה — יעד נחיתה חוקי ו-403 בלי לולאה #6a672659 @desktop (7.6s)
+  ✓   25 [tests] › tests/client-ordering/product-card.spec.ts:35:7 › client-ordering — כרטיס מוצר › מוצר שאזל — «אזל מהמלאי», כפתורים חסומים #6a748c9a @prod-safe (2.9s)
+  ✓   24 [tests] › tests/client-ordering/catalog.spec.ts:50:7 › client-ordering — קטלוג: גלישה, חיפוש וסינון › סינון לפי קטגוריה מציג רק את מוצרי הקטגוריה #6a38cf5e @prod-safe (4.1s)
+  ✓   23 [tests] › tests/customers-pricing/customers-access.spec.ts:30:7 › customers — נציג מכירות › נציג בלי לקוחות משויכים: רשימה ריקה, אין «לקוח חדש», כרטיס זר — «הלקוח לא נמצא.» #6a38cf5d @desktop @prod-safe (9.7s)
+  -   29 [tests] › tests/customers-pricing/customers-access.spec.ts:54:7 › customers — נציג מכירות › נציג רואה לקוח שהוקצה לו #6a38cf5d @desktop
+  ✓   30 [tests] › tests/customers-pricing/customers-access.spec.ts:62:9 › customers / pricing — לקוח עסקי › לקוח לא נכנס ל-/customers — הפניה ל-/shop #6a38cf5d #6a38cf59 #6a38cf58 @desktop @prod-safe (2.4s)
+  -   27 [tests] › tests/client-ordering/product-card.spec.ts:45:7 › client-ordering — כרטיס מוצר › מינימום הזמנה נאכף והסכום מוצג עבור המינימום #6a788a95 @desktop @prod-safe
+  ✓   28 [tests] › tests/client-ordering/catalog.spec.ts:63:7 › client-ordering — קטלוג: גלישה, חיפוש וסינון › קטלוג גדול נטען בהדרגה בגלילה #6a38cf5e @desktop @prod-safe (5.9s)
+  ✓   31 [tests] › tests/customers-pricing/customers-access.spec.ts:62:9 › customers / pricing — לקוח עסקי › לקוח לא נכנס ל-/pricing/groups — הפניה ל-/shop #6a38cf5d #6a38cf59 #6a38cf58 @desktop @prod-safe (2.4s)
+  ✓   26 [tests] › tests/auth-security/impersonation.spec.ts:64:9 › auth-security — כניסה כעובד › יוסי הנהג — יעד נחיתה חוקי ו-403 בלי לולאה #6a672659 @desktop (8.5s)
+  -   35 [tests] › tests/auth-security/impersonation.spec.ts:83:7 › auth-security — הרשאות שדורשות חשבון נוסף › נציג לא יכול לשנות unit_price ישירות דרך ה-API #6a6755e0
+  -   36 [tests] › tests/auth-security/impersonation.spec.ts:87:7 › auth-security — הרשאות שדורשות חשבון נוסף › לקוח מושבת לא מצליח להתחבר #6a38cf59
+  ✓   33 [tests] › tests/customers-pricing/customers-list.spec.ts:30:7 › customers — רשימה וכרטיס לקוח (מפיץ) › עמוד לקוחות נטען בלי 400 ובלי approval_status #6a72fb85 @desktop @prod-safe (2.3s)
+  ✓   32 [tests] › tests/client-ordering/product-card.spec.ts:69:7 › client-ordering — כרטיס מוצר › כפתור «שיתוף המוצר» בכרטיס המוצר משתף שם וקישור (Web Share) #6a672659 @desktop @prod-safe (2.9s)
+  ✓   34 [tests] › tests/customers-pricing/customers-access.spec.ts:62:9 › customers / pricing — לקוח עסקי › לקוח לא נכנס ל-/pricing/customer — הפניה ל-/shop #6a38cf5d #6a38cf59 #6a38cf58 @desktop @prod-safe (3.2s)
+  ✓   37 [tests] › tests/delivery/delivery-board.spec.ts:32:7 › delivery — לוח משלוחים ותעודת משלוח (מפיץ) › לוח משלוחים: טקסט הסבר למפיץ, לחיצה על הזמנה פותחת תעודת משלוח עם שיוך נהג #6a70b080 #6a70ae75 @desktop @prod-safe (2.8s)
+  ✓   39 [tests] › tests/client-ordering/product-card.spec.ts:83:7 › client-ordering — כרטיס מוצר › שיתוף ללא Web Share API — העתקת קישור #6a672659 @desktop @prod-safe (2.8s)
+  ✓   38 [tests] › tests/customers-pricing/customers-list.spec.ts:42:7 › customers — רשימה וכרטיס לקוח (מפיץ) › שגיאה זמנית: alert ו«נסה שוב» טוען את הרשימה בלי רענון #6a72fb85 @desktop @prod-safe (3.0s)
+  -   41 [tests] › tests/delivery/delivery-board.spec.ts:52:7 › delivery — לוח משלוחים ותעודת משלוח (מפיץ) › תעודת משלוח: טבלת הפריטים פרוסה על כל הרוחב, «הדפסה / PDF» פותח הדפסה #6a7492a2 #6a70b0b7 @desktop @prod-safe
+  ✓   40 [tests] › tests/customers-pricing/customers-access.spec.ts:62:9 › customers / pricing — לקוח עסקי › לקוח לא נכנס ל-/pricing/discounts — הפניה ל-/shop #6a38cf5d #6a38cf59 #6a38cf58 @desktop @prod-safe (3.3s)
+  ✓   43 [tests] › tests/customers-pricing/customers-list.spec.ts:58:7 › customers — רשימה וכרטיס לקוח (מפיץ) › «קישור הצטרפות» רק ללקוח שלא השלים הצטרפות #6a8f0847 @desktop @prod-safe (2.8s)
+  ✓   44 [tests] › tests/delivery/delivery-board.spec.ts:80:7 › delivery — לוח משלוחים ותעודת משלוח (מפיץ) › הזמנה «בדרך ללקוח» — עדיין ניתן לשנות נהג, מסלול ותאריך אספקה #6a70b080 @desktop @prod-safe (3.9s)
+  ✓   46 [tests] › tests/customers-pricing/customers-list.spec.ts:76:7 › customers — רשימה וכרטיס לקוח (מפיץ) › שם לקוח ארוך נחתך ב-ellipsis, בלי גלילה אופקית #6a70a5da @desktop @prod-safe (3.0s)
+  -   47 [tests] › tests/delivery/delivery-board.spec.ts:94:7 › delivery — לוח משלוחים ותעודת משלוח (מפיץ) › כרטיס ההזמנה: נהג + תאריך אספקה, «שמירת שיבוץ» נדלק רק אחרי שינוי #6a7491c7 @desktop @prod-safe
+  ✓   48 [tests] › tests/customers-pricing/customers-list.spec.ts:95:7 › customers — רשימה וכרטיס לקוח (מפיץ) › כרטיס לקוח: פרטים, טבלה, מונה = «מציג», סינון תשלום/משלוח #6a38cf5d #6a677c6b @desktop @prod-safe (2.8s)
+  ✓   42 [tests] › tests/delivery/driver.spec.ts:32:7 › delivery — נהג (כניסה כעובד) › נהג: טקסט ההסבר משקף את הזרימה, אין «הפריטים במשלוח», תעודה של נהג אחר חסומה #6a70ae75 #6a70b0b7 @desktop (9.0s)
+  ✓   49 [tests] › tests/orders/orders-list.spec.ts:19:7 › orders — רשימת הזמנות › לשוניות הסטטוס מימין, «הכל» ראשון; כפתורי הפעולה העליונים אחידים #6a859021 @desktop @prod-safe (3.0s)
+  ✓   50 [tests] › tests/customers-pricing/customers-list.spec.ts:122:7 › customers — רשימה וכרטיס לקוח (מפיץ) › הזמנה שנדחתה: מונה N−1 וההחרגה מסומנת במפורש #6a677c6b @desktop @prod-safe (2.8s)
+  ✓   45 [tests] › tests/inventory/inventory-views.spec.ts:96:7 › inventory — עובד מחסן בדף ניהול מלאי › עובד מחסן רואה תמונת מוצר וקטגוריה #6a8da5bc @desktop @prod-safe (9.9s)
+  ✓   52 [tests] › tests/orders/orders-list.spec.ts:42:7 › orders — רשימת הזמנות › עימוד: חיצי «העמוד הקודם»/«העמוד הבא» משני צדי המספרים #6a6755e0 @desktop @prod-safe (3.2s)
+  ✓   53 [tests] › tests/customers-pricing/customers-list.spec.ts:134:7 › customers — רשימה וכרטיס לקוח (מפיץ) › RTL בכרטיס לקוח: חץ «חזרה ללקוחות» מימין, אריחים מיושרים לימין #6a70a1e1 @desktop @prod-safe (2.9s)
+  ✓   51 [tests] › tests/orders/orders-rep.spec.ts:19:7 › orders — נציג מכירות › נציג ללא לקוחות משויכים: «הכל 0» ומצב ריק, הזמנות של לקוחות אחרים לא מוצגות #6a38cf5f @desktop @prod-safe (7.9s)
+  -   57 [tests] › tests/orders/orders-rep.spec.ts:34:7 › orders — נציג מכירות › נציג רואה הזמנה של לקוח שהוקצה לו #6a38cf5f @desktop
+  ✓   55 [tests] › tests/orders/orders-list.spec.ts:59:7 › orders — רשימת הזמנות › סינון לפי שלב + סטטוס תשלום, מצב ריק עם «איפוס סינון» #6a38cf5c @desktop @prod-safe (3.3s)
+  ✓   56 [tests] › tests/orders/walk-in-sale.spec.ts:9:7 › orders — מכירה מיידית › מסך מכירה במקום: מזומן, הוספת מוצר, אי אפשר לחרוג מהמלאי #6a7496de @desktop @prod-safe (3.7s)
+  -   60 [tests] › tests/orders/walk-in-sale.spec.ts:39:7 › orders — מכירה מיידית › רישום מכירה: הודעת הצלחה, המלאי יורד בכמות שנמכרה #6a7496de @desktop
+  ✓   54 [tests] › tests/inventory/inventory-views.spec.ts:115:7 › inventory — עובד מחסן בדף ניהול מלאי › עובד מחסן: לחיצה על הכמות — קליטה עם מוצר נבחר, שדה «כמות»; אין קליטה ב-⋮ #6a858f15 #6a8466f2 @desktop @prod-safe (8.6s)
+  ✓   61 [tests] › tests/ui-general/accounting-report.spec.ts:24:7 › ui-general — דוח לרואה חשבון › הפקה מהדשבורד לפי טווח: עמודות, סיכומים, רק מאושרות, הערה על מספר תשלומים #6a7b3fa8 @desktop @prod-safe (2.9s)
+  ✓   59 [tests] › tests/orders/orders-list.spec.ts:101:7 › orders — רשימת הזמנות › מיון: «תאריך — מהישן לחדש» מסדר את התאריכים בסדר עולה #6a38cf5c @desktop @prod-safe (4.1s)
+  ✓   62 [tests] › tests/inventory/inventory-views.spec.ts:125:7 › inventory — מפיץ (קריאה בלבד) › רף מינימום מספר בלבד; סטטוס לפי כמות ורף #6a846775 #6a70b149 #6a84687f @desktop @prod-safe (3.5s)
+  ✓   63 [tests] › tests/ui-general/accounting-report.spec.ts:41:7 › ui-general — דוח לרואה חשבון › הורדת PDF וייצוא לאקסל מורידים קבצים #6a7b3fa8 @desktop @prod-safe (2.9s)
+  ✓   58 [tests] › tests/picking/picking-views.spec.ts:30:7 › picking — תצוגות (קריאה בלבד) › ליקוט וניתוב: קיבוץ לפי מקום, «ללא מיקום» בסוף, מצב ללא בחירה #6a5cb979 @desktop @prod-safe (7.9s)
+  ✓   64 [tests] › tests/orders/orders-list.spec.ts:120:7 › orders — רשימת הזמנות › כשל טעינה (500): שגיאה עם «נסה שוב» תוך שניות, בלי מונים 0 ומצב ריק שקרי #6a6755e0 #6a677c6b #6a38cf5f @desktop @prod-safe (4.1s)
+  ✓   66 [tests] › tests/ui-general/accounting-report.spec.ts:52:7 › ui-general — דוח לרואה חשבון › טווח מעל 366 ימים ותאריך סיום לפני התחלה — הודעה ברורה #6a7b3fa8 @desktop @prod-safe (2.4s)
+  ✓   65 [tests] › tests/inventory/inventory-views.spec.ts:150:7 › inventory — מפיץ (קריאה בלבד) › קליטה מהכמות ומכפתור «קליטת מלאי» — שדות, בלי (יח'), בלי קליטה ב-⋮ #6a858f15 #6a8466f2 #6a5cb979 @desktop @prod-safe (4.2s)
+  ✓   67 [tests] › tests/picking/picking-views.spec.ts:45:7 › picking — תצוגות (קריאה בלבד) › מפת המחסן: מדף ריק מציג «המדף ריק · טרם נקלט אליו מלאי» #6a7192ed @desktop @prod-safe (3.9s)
+  -   71 [tests] › tests/picking/picking-views.spec.ts:58:7 › picking — תצוגות (קריאה בלבד) › בחירת אסטרטגיית מסלול (סריאלי/אזורי/גלי) למחסן ולהזמנה #6a5cb979 @desktop
+  -   72 [tests] › tests/warehouse-map/map-create.spec.ts:11:5 › ארון QA: הוספת כמה מדפים ברצף — הארון נשאר מסומן #6a846807 @desktop
+  -   73 [tests] › tests/warehouse-map/map-create.spec.ts:14:5 › משטח / אזור ארגזים QA: «חלוקה לארגזים» יוצר ארגז אחד; מחיקת האחרון מחזירה ללא חלוקה #6a85943e @desktop
+  -   74 [tests] › tests/warehouse-map/map-create.spec.ts:17:5 › משטח QA בלי ארגזים — «אין ארגזים במשטח», בלי הוספת מוצר #6a8595c3 @desktop
+  -   75 [tests] › tests/warehouse-map/map-create.spec.ts:20:5 › יצירה/מחיקה של אלמנט מעדכנת את הרשימה והמונים #6a730a70 @desktop
+  ✓   69 [tests] › tests/ui-general/navigation.spec.ts:28:7 › ui-general — תפריט הצד (מפיץ) › סדר ושמות הפריטים: «מפה וליקוט» במקום «מלאי», כותרת «קטלוג וניהול» #6a858e15 #6a6755e0 @desktop @prod-safe (2.2s)
+  ✓   68 [tests] › tests/ui-general/load-errors.spec.ts:18:9 › ui-general — כשל טעינה (500) › קטלוג: שגיאה עם «נסה שוב» תוך שניות, בלי מצב ריק שקרי #6a677c6b @desktop @prod-safe (4.0s)
+  ✓   77 [tests] › tests/ui-general/navigation.spec.ts:40:7 › ui-general — תפריט הצד (מפיץ) › כפתור «כיווץ» מכווץ ומרחיב את תפריט הצד #6a6755e0 @desktop @prod-safe (2.6s)
+  ✓   70 [tests] › tests/inventory/inventory-views.spec.ts:174:7 › inventory — מפיץ (קריאה בלבד) › ייצוא לאקסל — כל המוצרים עם מלאי ומחירים #6a749638 @desktop @prod-safe (3.4s)
+  ✓   78 [tests] › tests/ui-general/load-errors.spec.ts:18:9 › ui-general — כשל טעינה (500) › לקוחות: שגיאה עם «נסה שוב» תוך שניות, בלי מצב ריק שקרי #6a677c6b @desktop @prod-safe (2.8s)
+  ✓   76 [tests] › tests/warehouse-map/map-edit-readonly.spec.ts:41:7 › warehouse-map — עריכת מפה (צפייה בלבד, בלי שמירה) › כפתורי פעולות אחידים; אין «הוספת פריט» בראש העמוד בעריכה #6a859245 @desktop @prod-safe (4.4s)
+  ✓   79 [tests] › tests/ui-general/navigation.spec.ts:53:7 › ui-general — תפריט הצד (מפיץ) › אין סימן «‹» דקורטיבי; החץ של «מפה וליקוט» פותח תת-תפריט #6a677c6b @desktop @prod-safe (2.5s)
+  ✓   80 [tests] › tests/warehouse-map/map-view.spec.ts:18:7 › warehouse-map — צפייה › מקום עם מוצר משויך לא מוצג «ריק» #6a8f3153 @desktop @prod-safe (4.2s)
+  ✓   82 [tests] › tests/warehouse-map/map-edit-readonly.spec.ts:58:7 › warehouse-map — עריכת מפה (צפייה בלבד, בלי שמירה) › פלטת סוגי אחסון ומונחים: ארון → מדפים, משטח → ארגזים #6a730a70 #6a85943e #6a5cb979 @desktop @prod-safe (5.1s)
+  -   84 [tests] › tests/warehouse-map/map-view.spec.ts:35:7 › warehouse-map — צפייה › משטח — רשימת ארגזים, הוספת מוצר רק אחרי בחירת ארגז #6a8595c3 #6a85943e #6a730a70 @desktop @prod-safe
+  ✓   85 [tests] › tests/warehouse-map/map-edit-readonly.spec.ts:96:7 › warehouse-map — עריכת מפה (צפייה בלבד, בלי שמירה) › כלי עריכה: נקודת התחלה לליקוט, ביטול/ביצוע מחדש, הצמדה לרשת #6a5cb979 @desktop @prod-safe (3.2s)
+  -   86 [tests] › tests/warehouse-map/map-view.spec.ts:51:7 › warehouse-map — צפייה › אזור ארגזים בלי ארגזים — «אין ארגזים באזור», בלי הוספת מוצר #6a8595c3 @desktop @prod-safe
+  ✘   81 [tests] › tests/ui-general/load-errors.spec.ts:18:9 › ui-general — כשל טעינה (500) › קבוצות מוצרים: שגיאה עם «נסה שוב» תוך שניות, בלי מצב ריק שקרי #6a677c6b @desktop @prod-safe (11.4s)
+  ✓   87 [tests] › tests/warehouse-map/map-worker.spec.ts:8:5 › עובד מחסן רואה את מפת המחסן בלי «עריכת המפה» #6a5cb979 #6a859245 @desktop (6.5s)
+  ✓   89 [tests] › tests/ui-general/load-errors.spec.ts:18:9 › ui-general — כשל טעינה (500) › קבוצות מוצרים: שגיאה עם «נסה שוב» תוך שניות, בלי מצב ריק שקרי #6a677c6b @desktop @prod-safe (retry #1) (3.4s)
+  ✓   91 [tests] › tests/ui-general/load-errors.spec.ts:18:9 › ui-general — כשל טעינה (500) › לוח בקרה: שגיאה עם «נסה שוב» תוך שניות, בלי מצב ריק שקרי #6a677c6b @desktop @prod-safe (3.0s)
+  ✓   90 [tests] › tests/catalog/catalog-list.spec.ts:31:7 › catalog — קטלוג וניהול (מפיץ) › דף מאוחד: טבלה אחת, לשוניות מימין, כפתורים אחידים, ייבוא/ייצוא אקסל ב-Dropdown #6a84687f #6a8590ff @desktop @prod-safe (3.4s)
+  ✓   92 [tests] › tests/ui-general/load-errors.spec.ts:18:9 › ui-general — כשל טעינה (500) › משלוחים: שגיאה עם «נסה שוב» תוך שניות, בלי מצב ריק שקרי #6a677c6b @desktop @prod-safe (2.9s)
+  ✘   83 [tests] › tests/ui-general/navigation.spec.ts:64:7 › ui-general — תפריט הצד (מפיץ) › «הגדרות» ו«לוח בקרה» בתפריט מעבירים למסכים שלהם #6a70b4a9 @desktop @prod-safe (21.2s)
+  ✓   93 [tests] › tests/catalog/catalog-list.spec.ts:58:7 › catalog — קטלוג וניהול (מפיץ) › עריכה נפתחת רק בלחיצה על שם המוצר; תפריט ⋮ בלי «עריכה» #6a8da839 #6a8468b6 #6a858f55 @desktop @prod-safe (4.1s)
+  ✓   95 [tests] › tests/ui-general/navigation.spec.ts:64:7 › ui-general — תפריט הצד (מפיץ) › «הגדרות» ו«לוח בקרה» בתפריט מעבירים למסכים שלהם #6a70b4a9 @desktop @prod-safe (retry #1) (2.4s)
+  ✓   96 [tests] › tests/catalog/catalog-list.spec.ts:80:7 › catalog — קטלוג וניהול (מפיץ) › רף מינימום ומלאי — מספר בלבד, בלי מארזים/יח׳; דיאלוג רף בלי בחירת יחידה #6a858ac8 #6a858d3f @desktop @prod-safe (3.1s)
+  ✓   94 [iphone] › tests/auth-security/customer-isolation.spec.ts:25:7 › auth-security — בידוד נתוני לקוח › לקוח פותח הזמנה של לקוח אחר — «אין הרשאה»; הזמנה לא קיימת — «לא נמצאה» #6a38cf5a @prod-safe (6.9s)
+  -   99 [iphone] › tests/auth-security/customer-isolation.spec.ts:65:7 › auth-security — בידוד נתוני לקוח › שני לקוחות — מחירים והיסטוריה מבודדים, לקוח חדש — רשימה ריקה #6a38cf5a
+  -  100 [iphone] › tests/auth-security/impersonation.spec.ts:83:7 › auth-security — הרשאות שדורשות חשבון נוסף › נציג לא יכול לשנות unit_price ישירות דרך ה-API #6a6755e0
+  -  101 [iphone] › tests/auth-security/impersonation.spec.ts:87:7 › auth-security — הרשאות שדורשות חשבון נוסף › לקוח מושבת לא מצליח להתחבר #6a38cf59
+  ✘   98 [tests] › tests/catalog/catalog-list.spec.ts:104:7 › catalog — קטלוג וניהול (מפיץ) › אחרי ביטול עריכה — אותו עמוד ואותה שורה; אחרי «חזרה» — החיפוש והמיון נשמרים #6a858b4e @desktop @prod-safe (5.9s)
+  ✓   97 [tests] › tests/ui-general/navigation.spec.ts:77:7 › ui-general — נציג מכירות (כניסה כעובד) › נציג: תפריט לפי הרשאות; לוח בקרה רק ללקוחות שלו — מצב ריק; דוח רו״ח חסום #6a70b4a9 #6a70b2db @desktop (7.6s)
+  -  103 [tests] › tests/ui-general/navigation.spec.ts:101:7 › ui-general — נציג מכירות (כניסה כעובד) › נציג רואה בלוח הבקרה נתונים של לקוח המשויך אליו בלבד #6a70b2db @desktop
+  ✓  102 [iphone] › tests/auth-security/landing-and-session.spec.ts:31:9 › auth-security — נחיתה לפי תפקיד וסשן › לקוח › לקוח נוחת ב-/shop, כתובת לא מוכרת → /shop בלי 403 #6a672659 #6a38cf59 #6a6f302c @prod-safe (3.8s)
+  ✓  106 [iphone] › tests/auth-security/landing-and-session.spec.ts:49:11 › auth-security — נחיתה לפי תפקיד וסשן › אורח › אורח ב-/catalog מופנה להתחברות בעברית RTL #6a38cf59 @prod-safe (1.5s)
+  ✓  107 [iphone] › tests/auth-security/landing-and-session.spec.ts:49:11 › auth-security — נחיתה לפי תפקיד וסשן › אורח › אורח ב-/shop מופנה להתחברות בעברית RTL #6a38cf59 @prod-safe (1.3s)
+  ✓  104 [tests] › tests/catalog/catalog-list.spec.ts:104:7 › catalog — קטלוג וניהול (מפיץ) › אחרי ביטול עריכה — אותו עמוד ואותה שורה; אחרי «חזרה» — החיפוש והמיון נשמרים #6a858b4e @desktop @prod-safe (retry #1) (4.1s)
+  ✓  105 [iphone] › tests/client-ordering/catalog.spec.ts:18:7 › client-ordering — קטלוג: גלישה, חיפוש וסינון › קטלוג מאורגן בקטגוריות עם מחירון אישי #6a38cf5e @prod-safe (4.1s)
+  ✓  108 [iphone] › tests/auth-security/landing-and-session.spec.ts:49:11 › auth-security — נחיתה לפי תפקיד וסשן › אורח › אורח ב-/team מופנה להתחברות בעברית RTL #6a38cf59 @prod-safe (1.3s)
+  ✘   88 [tests] › tests/warehouse-map/map-view.spec.ts:63:7 › warehouse-map — צפייה › «הוספת פריט» פותח דיאלוג קליטה עם מוצר, מקום וכמות; ביטול סוגר #6a71ef21 #6a859245 @desktop @prod-safe (31.1s)
+  ✓  111 [iphone] › tests/auth-security/landing-and-session.spec.ts:49:11 › auth-security — נחיתה לפי תפקיד וסשן › אורח › אורח ב-/shop/orders מופנה להתחברות בעברית RTL #6a38cf59 @prod-safe (1.6s)
+  ✓  109 [tests] › tests/catalog/catalog-list.spec.ts:144:7 › catalog — קטלוג וניהול (מפיץ) › אין בלוק «מיקום במחסן» בעריכת מוצר ובמוצר חדש #6a858bf1 @desktop @prod-safe (3.3s)
+  ✓  114 [tests] › tests/warehouse-map/map-view.spec.ts:63:7 › warehouse-map — צפייה › «הוספת פריט» פותח דיאלוג קליטה עם מוצר, מקום וכמות; ביטול סוגר #6a71ef21 #6a859245 @desktop @prod-safe (retry #1) (4.4s)
+  ✓  110 [iphone] › tests/client-ordering/catalog.spec.ts:28:7 › client-ordering — קטלוג: גלישה, חיפוש וסינון › חיפוש מסנן בזמן אמת; אין תוצאות → מצב ריק ו«נקה סינון» #6a38cf5e @prod-safe (7.8s)
+  ✓  113 [tests] › tests/catalog/catalog-list.spec.ts:157:7 › catalog — קטלוג וניהול (מפיץ) › פעולות מהירות: מק"ט → סריקה, מיקום → מפת מחסן, תמונה → מצלמה #6a846655 @desktop @prod-safe (5.3s)
+  ✓  112 [iphone] › tests/client-ordering/order-history.spec.ts:11:9 › client-ordering — היסטוריית הזמנות › buyer с заказами › רשימת ההזמנות עם תאריך, פריטים, סכום וסטטוס; פירוט מלא; לשוניות #6a38cf5c @prod-safe (7.8s)
+  -  118 [iphone] › tests/client-ordering/order-history.spec.ts:45:7 › client-ordering — היסטוריית הזמנות › לקוח חדש ללא הזמנות — מצב ריק עם קישור לקטלוג #6a38cf5c @prod-safe
+  ✓  117 [tests] › tests/catalog/catalog-list.spec.ts:188:7 › catalog — קטלוג וניהול (מפיץ) › התראה «N מוצרים בקטלוג עדיין ללא תמונה» ניתנת לסגירה #6a843433 @desktop @prod-safe (3.2s)
+  ✓  115 [tests] › tests/warehouse-map/map-view.spec.ts:82:7 › warehouse-map — צפייה › מפה מרובת קומות: קנבס, זום, החלפת קומה #6a5cb979 @desktop @prod-safe (3.9s)
+  ✓  120 [tests] › tests/catalog/catalog-list.spec.ts:198:7 › catalog — קטלוג וניהול (מפיץ) › פאנל סינון: שמות פילטרים ייחודיים, לכל היותר פילטר אחד לפי ק״ג #6a70b389 @desktop @prod-safe (3.0s)
+  ✘  116 [iphone] › tests/client-ordering/catalog.spec.ts:50:7 › client-ordering — קטלוג: גלישה, חיפוש וסינון › סינון לפי קטגוריה מציג רק את מוצרי הקטגוריה #6a38cf5e @prod-safe (7.0s)
+  ✓  119 [iphone] › tests/client-ordering/product-card.spec.ts:16:7 › client-ordering — כרטיס מוצר › רק «במלאי» / «אזל», בלי «כמות מוגבלת»; מוצר שאזל לא ניתן להוספה #6a748c9a @prod-safe (7.7s)
+  ✓  122 [iphone] › tests/ui-general/mobile-layout.spec.ts:16:7 › ui-general — מובייל (מפיץ) › לוח בקרה: שדות התאריכים בדוח רו״ח קומפקטיים והתאריך מלא #6a8597e8 @mobile @prod-safe (3.4s)
+  ✓  124 [iphone] › tests/client-ordering/product-card.spec.ts:35:7 › client-ordering — כרטיס מוצר › מוצר שאזל — «אזל מהמלאי», כפתורים חסומים #6a748c9a @prod-safe (2.9s)
+  ✓  123 [iphone] › tests/client-ordering/catalog.spec.ts:50:7 › client-ordering — קטלוג: גלישה, חיפוש וסינון › סינון לפי קטגוריה מציג רק את מוצרי הקטגוריה #6a38cf5e @prod-safe (retry #1) (4.9s)
+  ✓  125 [iphone] › tests/ui-general/mobile-layout.spec.ts:30:7 › ui-general — מובייל (מפיץ) › מוצרים: כפתורים עליונים מימין מתחת לכותרת, «עודכן לאחרונה» מלא, לשוניות מימין #6a8597e8 @mobile @prod-safe (3.5s)
+  ✓  126 [iphone] › tests/warehouse-map/map-view.spec.ts:117:7 › warehouse-map — צפייה › מפת המחסן במובייל — בלי גלילה אופקית #6a5cb979 @mobile @prod-safe (3.0s)
+  -  129 [android] › tests/auth-security/impersonation.spec.ts:83:7 › auth-security — הרשאות שדורשות חשבון נוסף › נציג לא יכול לשנות unit_price ישירות דרך ה-API #6a6755e0
+  -  130 [android] › tests/auth-security/impersonation.spec.ts:87:7 › auth-security — הרשאות שדורשות חשבון נוסף › לקוח מושבת לא מצליח להתחבר #6a38cf59
+  ✓  128 [iphone] › tests/ui-general/mobile-layout.spec.ts:52:7 › ui-general — מובייל (מפיץ) › הזמנות: לשוניות מימין; הסטטוס לא חופף לכפתור ⋮ #6a8597e8 @mobile @prod-safe (3.4s)
+  ✘  127 [android] › tests/auth-security/customer-isolation.spec.ts:25:7 › auth-security — בידוד נתוני לקוח › לקוח פותח הזמנה של לקוח אחר — «אין הרשאה»; הזמנה לא קיימת — «לא נמצאה» #6a38cf5a @prod-safe (6.2s)
+  ✓  132 [iphone] › tests/ui-general/mobile-layout.spec.ts:79:7 › ui-general — מובייל (מפיץ) › תעודת משלוח: «תאריך אספקה» קומפקטי והתאריך מוצג במלואו #6a8597e8 @mobile @prod-safe (4.2s)
+  ✘  131 [android] › tests/auth-security/landing-and-session.spec.ts:31:9 › auth-security — נחיתה לפי תפקיד וסשן › לקוח › לקוח נוחת ב-/shop, כתובת לא מוכרת → /shop בלי 403 #6a672659 #6a38cf59 #6a6f302c @prod-safe (6.1s)
+  ✓  133 [android] › tests/auth-security/customer-isolation.spec.ts:25:7 › auth-security — בידוד נתוני לקוח › לקוח פותח הזמנה של לקוח אחר — «אין הרשאה»; הזמנה לא קיימת — «לא נמצאה» #6a38cf5a @prod-safe (retry #1) (4.3s)
+  -  136 [android] › tests/auth-security/customer-isolation.spec.ts:65:7 › auth-security — בידוד נתוני לקוח › שני לקוחות — מחירים והיסטוריה מבודדים, לקוח חדש — רשימה ריקה #6a38cf5a
+  ✓  135 [android] › tests/auth-security/landing-and-session.spec.ts:31:9 › auth-security — נחיתה לפי תפקיד וסשן › לקוח › לקוח נוחת ב-/shop, כתובת לא מוכרת → /shop בלי 403 #6a672659 #6a38cf59 #6a6f302c @prod-safe (retry #1) (3.9s)
+  ✓  137 [android] › tests/client-ordering/catalog.spec.ts:18:7 › client-ordering — קטלוג: גלישה, חיפוש וסינון › קטלוג מאורגן בקטגוריות עם מחירון אישי #6a38cf5e @prod-safe (2.6s)
+  ✓  138 [android] › tests/auth-security/landing-and-session.spec.ts:49:11 › auth-security — נחיתה לפי תפקיד וסשן › אורח › אורח ב-/catalog מופנה להתחברות בעברית RTL #6a38cf59 @prod-safe (1.1s)
+  ✓  140 [android] › tests/auth-security/landing-and-session.spec.ts:49:11 › auth-security — נחיתה לפי תפקיד וסשן › אורח › אורח ב-/shop מופנה להתחברות בעברית RTL #6a38cf59 @prod-safe (989ms)
+  ✓  134 [iphone] › tests/ui-general/mobile-layout.spec.ts:97:7 › ui-general — מובייל (לקוח) RTL › עברית RTL בכל מסכי הלקוח, בלי גלילה אופקית, מצב ריק/רשימות בעברית #6a38cf5a @mobile @prod-safe (7.9s)
+  ✓  141 [android] › tests/auth-security/landing-and-session.spec.ts:49:11 › auth-security — נחיתה לפי תפקיד וסשן › אורח › אורח ב-/team מופנה להתחברות בעברית RTL #6a38cf59 @prod-safe (1.3s)
+  ✓  143 [android] › tests/auth-security/landing-and-session.spec.ts:49:11 › auth-security — נחיתה לפי תפקיד וסשן › אורח › אורח ב-/shop/orders מופנה להתחברות בעברית RTL #6a38cf59 @prod-safe (1.1s)
+  ✓  139 [android] › tests/client-ordering/catalog.spec.ts:28:7 › client-ordering — קטלוג: גלישה, חיפוש וסינון › חיפוש מסנן בזמן אמת; אין תוצאות → מצב ריק ו«נקה סינון» #6a38cf5e @prod-safe (4.4s)
+  ✓  142 [iphone] › tests/ui-general/mobile-layout.spec.ts:109:7 › ui-general — מובייל (לקוח) RTL › חיפוש בעברית: יישור לימין וסינון תוצאות #6a38cf5a @mobile @prod-safe (3.9s)
+  ✘  121 [tests] › tests/warehouse-map/map-view.spec.ts:97:7 › warehouse-map — צפייה › חיפוש במפה מסמן מקומות תואמים #6a5cb979 @desktop @prod-safe (31.1s)
+  ✓  144 [android] › tests/client-ordering/order-history.spec.ts:11:9 › client-ordering — היסטוריית הזמנות › buyer с заказами › רשימת ההזמנות עם תאריך, פריטים, סכום וסטטוס; פירוט מלא; לשוניות #6a38cf5c @prod-safe (3.7s)
+  -  147 [android] › tests/client-ordering/order-history.spec.ts:45:7 › client-ordering — היסטוריית הזמנות › לקוח חדש ללא הזמנות — מצב ריק עם קישור לקטלוג #6a38cf5c @prod-safe
+  ✓  148 [android] › tests/ui-general/mobile-layout.spec.ts:16:7 › ui-general — מובייל (מפיץ) › לוח בקרה: שדות התאריכים בדוח רו״ח קומפקטיים והתאריך מלא #6a8597e8 @mobile @prod-safe (6.9s)
+  ✘  145 [android] › tests/client-ordering/catalog.spec.ts:50:7 › client-ordering — קטלוג: גלישה, חיפוש וסינון › סינון לפי קטגוריה מציג רק את מוצרי הקטגוריה #6a38cf5e @prod-safe (11.0s)
+  ✓  146 [android] › tests/client-ordering/product-card.spec.ts:16:7 › client-ordering — כרטיס מוצר › רק «במלאי» / «אזל», בלי «כמות מוגבלת»; מוצר שאזל לא ניתן להוספה #6a748c9a @prod-safe (10.1s)
+  ✓  150 [android] › tests/ui-general/mobile-layout.spec.ts:30:7 › ui-general — מובייל (מפיץ) › מוצרים: כפתורים עליונים מימין מתחת לכותרת, «עודכן לאחרונה» מלא, לשוניות מימין #6a8597e8 @mobile @prod-safe (3.9s)
+  ✓  149 [tests] › tests/warehouse-map/map-view.spec.ts:97:7 › warehouse-map — צפייה › חיפוש במפה מסמן מקומות תואמים #6a5cb979 @desktop @prod-safe (retry #1) (5.4s)
+  ✓  152 [android] › tests/client-ordering/product-card.spec.ts:35:7 › client-ordering — כרטיס מוצר › מוצר שאזל — «אזל מהמלאי», כפתורים חסומים #6a748c9a @prod-safe (3.9s)
+  ✓  153 [android] › tests/ui-general/mobile-layout.spec.ts:52:7 › ui-general — מובייל (מפיץ) › הזמנות: לשוניות מימין; הסטטוס לא חופף לכפתור ⋮ #6a8597e8 @mobile @prod-safe (3.6s)
+  ✓  151 [android] › tests/client-ordering/catalog.spec.ts:50:7 › client-ordering — קטלוג: גלישה, חיפוש וסינון › סינון לפי קטגוריה מציג רק את מוצרי הקטגוריה #6a38cf5e @prod-safe (retry #1) (4.8s)
+  ✓  154 [tests] › tests/warehouse-map/map-view.spec.ts:106:7 › warehouse-map — צפייה › יומן תנועות — סינון לפי סוג תנועה #6a5cb979 @desktop @prod-safe (4.3s)
+  ✓  155 [android] › tests/warehouse-map/map-view.spec.ts:117:7 › warehouse-map — צפייה › מפת המחסן במובייל — בלי גלילה אופקית #6a5cb979 @mobile @prod-safe (2.8s)
+  ✘  156 [android] › tests/ui-general/mobile-layout.spec.ts:79:7 › ui-general — מובייל (מפיץ) › תעודת משלוח: «תאריך אספקה» קומפקטי והתאריך מוצג במלואו #6a8597e8 @mobile @prod-safe (21.2s)
+  ✓  157 [android] › tests/ui-general/mobile-layout.spec.ts:79:7 › ui-general — מובייל (מפיץ) › תעודת משלוח: «תאריך אספקה» קומפקטי והתאריך מוצג במלואו #6a8597e8 @mobile @prod-safe (retry #1) (3.9s)
+  ✓  158 [android] › tests/ui-general/mobile-layout.spec.ts:97:7 › ui-general — מובייל (לקוח) RTL › עברית RTL בכל מסכי הלקוח, בלי גלילה אופקית, מצב ריק/רשימות בעברית #6a38cf5a @mobile @prod-safe (6.6s)
+  ✓  159 [android] › tests/ui-general/mobile-layout.spec.ts:109:7 › ui-general — מובייל (לקוח) RTL › חיפוש בעברית: יישור לימין וסינון תוצאות #6a38cf5a @mobile @prod-safe (2.6s)
+
+
+  1) [tests] › tests/catalog/catalog-list.spec.ts:104:7 › catalog — קטלוג וניהול (מפיץ) › אחרי ביטול עריכה — אותו עמוד ואותה שורה; אחרי «חזרה» — החיפוש והמיון נשמרים #6a858b4e @desktop @prod-safe 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('heading', { name: 'קטלוג וניהול', level: 1 })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('heading', { name: 'קטלוג וניהול', level: 1 }) with timeout 5000ms
+      - waiting for getByRole('heading', { name: 'קטלוג וניהול', level: 1 })
+
+
+      18 | async function openCatalog(page: Page) {
+      19 |   await page.goto('/catalog');
+    > 20 |   await expect(page.getByRole('heading', { level: 1, name: 'קטלוג וניהול' })).toBeVisible();
+         |                                                                               ^
+      21 |   await expect(minCells(page).first()).toBeVisible({ timeout: 20_000 });
+      22 | }
+      23 |
+        at openCatalog (/Users/avielshnaider/b2b-moe/.qa/e2e/tests/catalog/catalog-list.spec.ts:20:79)
+        at /Users/avielshnaider/b2b-moe/.qa/e2e/tests/catalog/catalog-list.spec.ts:105:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/catalog-catalog-list-catal-60309--6a858b4e-desktop-prod-safe-tests/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/catalog-catalog-list-catal-60309--6a858b4e-desktop-prod-safe-tests/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/catalog-catalog-list-catal-60309--6a858b4e-desktop-prod-safe-tests/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/catalog-catalog-list-catal-60309--6a858b4e-desktop-prod-safe-tests/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [tests] › tests/ui-general/load-errors.spec.ts:18:9 › ui-general — כשל טעינה (500) › קבוצות מוצרים: שגיאה עם «נסה שוב» תוך שניות, בלי מצב ריק שקרי #6a677c6b @desktop @prod-safe 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText('אירעה שגיאה בטעינת קבוצות המוצרים. נסה שוב.')
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByText('אירעה שגיאה בטעינת קבוצות המוצרים. נסה שוב.') with timeout 10000ms
+      - waiting for getByText('אירעה שגיאה בטעינת קבוצות המוצרים. נסה שוב.')
+
+
+      20 |       const t0 = Date.now();
+      21 |       await page.goto(s.url);
+    > 22 |       await expect(page.getByText(s.error)).toBeVisible({ timeout: 10_000 });
+         |                                             ^
+      23 |       expect(Date.now() - t0).toBeLessThan(10_000);
+      24 |       const retry = page.getByRole('button', { name: 'נסה שוב' });
+      25 |       await expect(retry).toBeVisible();
+        at /Users/avielshnaider/b2b-moe/.qa/e2e/tests/ui-general/load-errors.spec.ts:22:45
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/ui-general-load-errors-ui--8dd4f--6a677c6b-desktop-prod-safe-tests/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/ui-general-load-errors-ui--8dd4f--6a677c6b-desktop-prod-safe-tests/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/ui-general-load-errors-ui--8dd4f--6a677c6b-desktop-prod-safe-tests/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/ui-general-load-errors-ui--8dd4f--6a677c6b-desktop-prod-safe-tests/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [tests] › tests/ui-general/navigation.spec.ts:64:7 › ui-general — תפריט הצד (מפיץ) › «הגדרות» ו«לוח בקרה» בתפריט מעבירים למסכים שלהם #6a70b4a9 @desktop @prod-safe 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('heading', { name: 'קטלוג וניהול', level: 1 })
+    Expected: visible
+    Timeout: 20000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('heading', { name: 'קטלוג וניהול', level: 1 }) with timeout 20000ms
+      - waiting for getByRole('heading', { name: 'קטלוג וניהול', level: 1 })
+
+
+      64 |   test('«הגדרות» ו«לוח בקרה» בתפריט מעבירים למסכים שלהם #6a70b4a9 @desktop @prod-safe', async ({ page }) => {
+      65 |     await page.goto('/catalog');
+    > 66 |     await expect(page.getByRole('heading', { level: 1, name: 'קטלוג וניהול' })).toBeVisible({ timeout: 20_000 });
+         |                                                                                 ^
+      67 |     await nav(page).getByRole('link', { name: 'הגדרות' }).click();
+      68 |     await expect(page).toHaveURL(/\/settings$/);
+      69 |     await expect(page.getByRole('heading', { level: 1, name: 'הגדרות' })).toBeVisible();
+        at /Users/avielshnaider/b2b-moe/.qa/e2e/tests/ui-general/navigation.spec.ts:66:81
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/ui-general-navigation-ui-g-017c2--6a70b4a9-desktop-prod-safe-tests/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/ui-general-navigation-ui-g-017c2--6a70b4a9-desktop-prod-safe-tests/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/ui-general-navigation-ui-g-017c2--6a70b4a9-desktop-prod-safe-tests/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/ui-general-navigation-ui-g-017c2--6a70b4a9-desktop-prod-safe-tests/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [tests] › tests/warehouse-map/map-view.spec.ts:63:7 › warehouse-map — צפייה › «הוספת פריט» פותח דיאלוג קליטה עם מוצר, מקום וכמות; ביטול סוגר #6a71ef21 #6a859245 @desktop @prod-safe 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('heading', { name: 'מפת המחסן', level: 1 })
+    Expected: visible
+    Timeout: 30000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('heading', { name: 'מפת המחסן', level: 1 }) with timeout 30000ms
+      - waiting for getByRole('heading', { name: 'מפת המחסן', level: 1 })
+
+
+       at tests/warehouse-map/_helpers.ts:14
+
+      12 | export async function openMap(page: Page, floor?: string) {
+      13 |   await page.goto('/warehouse/map');
+    > 14 |   await expect(page.getByRole('heading', { level: 1, name: 'מפת המחסן' })).toBeVisible({ timeout: 30_000 });
+         |                                                                            ^
+      15 |   await expect(page.getByRole('tablist', { name: 'קומות המחסן' })).toBeVisible({ timeout: 30_000 });
+      16 |   if (floor) {
+      17 |     await page.getByRole('tablist', { name: 'קומות המחסן' }).getByRole('tab', { name: floor }).click();
+        at openMap (/Users/avielshnaider/b2b-moe/.qa/e2e/tests/warehouse-map/_helpers.ts:14:76)
+        at /Users/avielshnaider/b2b-moe/.qa/e2e/tests/warehouse-map/map-view.spec.ts:64:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/warehouse-map-map-view-war-40fb6--6a859245-desktop-prod-safe-tests/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/warehouse-map-map-view-war-40fb6--6a859245-desktop-prod-safe-tests/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/warehouse-map-map-view-war-40fb6--6a859245-desktop-prod-safe-tests/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/warehouse-map-map-view-war-40fb6--6a859245-desktop-prod-safe-tests/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [tests] › tests/warehouse-map/map-view.spec.ts:97:7 › warehouse-map — צפייה › חיפוש במפה מסמן מקומות תואמים #6a5cb979 @desktop @prod-safe 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('heading', { name: 'מפת המחסן', level: 1 })
+    Expected: visible
+    Timeout: 30000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('heading', { name: 'מפת המחסן', level: 1 }) with timeout 30000ms
+      - waiting for getByRole('heading', { name: 'מפת המחסן', level: 1 })
+
+
+       at tests/warehouse-map/_helpers.ts:14
+
+      12 | export async function openMap(page: Page, floor?: string) {
+      13 |   await page.goto('/warehouse/map');
+    > 14 |   await expect(page.getByRole('heading', { level: 1, name: 'מפת המחסן' })).toBeVisible({ timeout: 30_000 });
+         |                                                                            ^
+      15 |   await expect(page.getByRole('tablist', { name: 'קומות המחסן' })).toBeVisible({ timeout: 30_000 });
+      16 |   if (floor) {
+      17 |     await page.getByRole('tablist', { name: 'קומות המחסן' }).getByRole('tab', { name: floor }).click();
+        at openMap (/Users/avielshnaider/b2b-moe/.qa/e2e/tests/warehouse-map/_helpers.ts:14:76)
+        at /Users/avielshnaider/b2b-moe/.qa/e2e/tests/warehouse-map/map-view.spec.ts:98:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/warehouse-map-map-view-war-ae8c0--6a5cb979-desktop-prod-safe-tests/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/warehouse-map-map-view-war-ae8c0--6a5cb979-desktop-prod-safe-tests/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/warehouse-map-map-view-war-ae8c0--6a5cb979-desktop-prod-safe-tests/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/warehouse-map-map-view-war-ae8c0--6a5cb979-desktop-prod-safe-tests/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [iphone] › tests/client-ordering/catalog.spec.ts:50:7 › client-ordering — קטלוג: גלישה, חיפוש וסינון › סינון לפי קטגוריה מציג רק את מוצרי הקטגוריה #6a38cf5e @prod-safe 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('searchbox', { name: 'חיפוש מוצר' })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('searchbox', { name: 'חיפוש מוצר' }) with timeout 5000ms
+      - waiting for getByRole('searchbox', { name: 'חיפוש מוצר' })
+
+
+      12 |   test.beforeEach(async ({ page }) => {
+      13 |     await page.goto('/shop');
+    > 14 |     await expect(page.getByRole('searchbox', { name: 'חיפוש מוצר' })).toBeVisible();
+         |                                                                       ^
+      15 |     await expect(page.locator('article').first()).toBeVisible();
+      16 |   });
+      17 |
+        at /Users/avielshnaider/b2b-moe/.qa/e2e/tests/client-ordering/catalog.spec.ts:14:71
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/client-ordering-catalog-cl-94426-הקטגוריה-6a38cf5e-prod-safe-iphone/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/client-ordering-catalog-cl-94426-הקטגוריה-6a38cf5e-prod-safe-iphone/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/client-ordering-catalog-cl-94426-הקטגוריה-6a38cf5e-prod-safe-iphone/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/client-ordering-catalog-cl-94426-הקטגוריה-6a38cf5e-prod-safe-iphone/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7) [android] › tests/auth-security/customer-isolation.spec.ts:25:7 › auth-security — בידוד נתוני לקוח › לקוח פותח הזמנה של לקוח אחר — «אין הרשאה»; הזמנה לא קיימת — «לא נמצאה» #6a38cf5a @prod-safe 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText('אין הרשאה לצפות בהזמנה זו — היא שייכת ללקוח אחר.')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByText('אין הרשאה לצפות בהזמנה זו — היא שייכת ללקוח אחר.') with timeout 5000ms
+      - waiting for getByText('אין הרשאה לצפות בהזמנה זו — היא שייכת ללקוח אחר.')
+
+
+      25 |   test('לקוח פותח הזמנה של לקוח אחר — «אין הרשאה»; הזמנה לא קיימת — «לא נמצאה» #6a38cf5a @prod-safe', async ({ page }) => {
+      26 |     await page.goto(`/shop/order/${FOREIGN_ORDER_ID}`);
+    > 27 |     await expect(page.getByText('אין הרשאה לצפות בהזמנה זו — היא שייכת ללקוח אחר.')).toBeVisible();
+         |                                                                                      ^
+      28 |     await expect(page.getByText('חזרה להזמנות')).toBeVisible();
+      29 |     await expect(page.getByText(/הזמנה #367/)).toHaveCount(0);
+      30 |
+        at /Users/avielshnaider/b2b-moe/.qa/e2e/tests/auth-security/customer-isolation.spec.ts:27:86
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/auth-security-customer-iso-ce395-א-נמצאה»-6a38cf5a-prod-safe-android/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-security-customer-iso-ce395-א-נמצאה»-6a38cf5a-prod-safe-android/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/auth-security-customer-iso-ce395-א-נמצאה»-6a38cf5a-prod-safe-android/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/auth-security-customer-iso-ce395-א-נמצאה»-6a38cf5a-prod-safe-android/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  8) [android] › tests/auth-security/landing-and-session.spec.ts:31:9 › auth-security — נחיתה לפי תפקיד וסשן › לקוח › לקוח נוחת ב-/shop, כתובת לא מוכרת → /shop בלי 403 #6a672659 #6a38cf59 #6a6f302c @prod-safe 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/shop/
+    Received string:  "https://b2b-tau-five.vercel.app/login"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        4 × locator resolved to <html lang="he" dir="rtl">…</html>
+          - unexpected value "https://b2b-tau-five.vercel.app/"
+        10 × locator resolved to <html lang="he" dir="rtl">…</html>
+           - unexpected value "https://b2b-tau-five.vercel.app/login"
+
+
+      31 |     test('לקוח נוחת ב-/shop, כתובת לא מוכרת → /shop בלי 403 #6a672659 #6a38cf59 #6a6f302c @prod-safe', async ({ page }) => {
+      32 |       await page.goto('/');
+    > 33 |       await expect(page).toHaveURL(/\/shop/);
+         |                          ^
+      34 |       await expect(page.getByText('שלום,').first()).toBeVisible();
+      35 |
+      36 |       await page.goto('/definitely-not-a-route');
+        at /Users/avielshnaider/b2b-moe/.qa/e2e/tests/auth-security/landing-and-session.spec.ts:33:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/auth-security-landing-and--fe556-6a38cf59-6a6f302c-prod-safe-android/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-security-landing-and--fe556-6a38cf59-6a6f302c-prod-safe-android/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/auth-security-landing-and--fe556-6a38cf59-6a6f302c-prod-safe-android/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/auth-security-landing-and--fe556-6a38cf59-6a6f302c-prod-safe-android/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  9) [android] › tests/client-ordering/catalog.spec.ts:50:7 › client-ordering — קטלוג: גלישה, חיפוש וסינון › סינון לפי קטגוריה מציג רק את מוצרי הקטגוריה #6a38cf5e @prod-safe 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('searchbox', { name: 'חיפוש מוצר' })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('searchbox', { name: 'חיפוש מוצר' }) with timeout 5000ms
+      - waiting for getByRole('searchbox', { name: 'חיפוש מוצר' })
+
+
+      12 |   test.beforeEach(async ({ page }) => {
+      13 |     await page.goto('/shop');
+    > 14 |     await expect(page.getByRole('searchbox', { name: 'חיפוש מוצר' })).toBeVisible();
+         |                                                                       ^
+      15 |     await expect(page.locator('article').first()).toBeVisible();
+      16 |   });
+      17 |
+        at /Users/avielshnaider/b2b-moe/.qa/e2e/tests/client-ordering/catalog.spec.ts:14:71
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/client-ordering-catalog-cl-94426-הקטגוריה-6a38cf5e-prod-safe-android/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/client-ordering-catalog-cl-94426-הקטגוריה-6a38cf5e-prod-safe-android/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/client-ordering-catalog-cl-94426-הקטגוריה-6a38cf5e-prod-safe-android/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/client-ordering-catalog-cl-94426-הקטגוריה-6a38cf5e-prod-safe-android/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  10) [android] › tests/ui-general/mobile-layout.spec.ts:79:7 › ui-general — מובייל (מפיץ) › תעודת משלוח: «תאריך אספקה» קומפקטי והתאריך מוצג במלואו #6a8597e8 @mobile @prod-safe 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('link', { name: /^תעודת משלוח · הזמנה #\d+/ }).first()
+    Expected: visible
+    Timeout: 20000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('link', { name: /^תעודת משלוח · הזמנה #\d+/ }).first() with timeout 20000ms
+      - waiting for getByRole('link', { name: /^תעודת משלוח · הזמנה #\d+/ }).first()
+
+
+      80 |     await page.goto('/delivery');
+      81 |     const note = page.getByRole('link', { name: /^תעודת משלוח · הזמנה #\d+/ }).first();
+    > 82 |     await expect(note).toBeVisible({ timeout: 20_000 });
+         |                        ^
+      83 |     // центр карточки перекрыт ссылкой адреса (Google Maps, by design) — переходим по href карточки
+      84 |     await page.goto((await note.getAttribute('href'))!);
+      85 |     const date = page.getByLabel('תאריך אספקה');
+        at /Users/avielshnaider/b2b-moe/.qa/e2e/tests/ui-general/mobile-layout.spec.ts:82:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/ui-general-mobile-layout-u-cf778-ו-6a8597e8-mobile-prod-safe-android/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/ui-general-mobile-layout-u-cf778-ו-6a8597e8-mobile-prod-safe-android/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/ui-general-mobile-layout-u-cf778-ו-6a8597e8-mobile-prod-safe-android/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/ui-general-mobile-layout-u-cf778-ו-6a8597e8-mobile-prod-safe-android/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  10 flaky
+    [tests] › tests/catalog/catalog-list.spec.ts:104:7 › catalog — קטלוג וניהול (מפיץ) › אחרי ביטול עריכה — אותו עמוד ואותה שורה; אחרי «חזרה» — החיפוש והמיון נשמרים #6a858b4e @desktop @prod-safe 
+    [tests] › tests/ui-general/load-errors.spec.ts:18:9 › ui-general — כשל טעינה (500) › קבוצות מוצרים: שגיאה עם «נסה שוב» תוך שניות, בלי מצב ריק שקרי #6a677c6b @desktop @prod-safe 
+    [tests] › tests/ui-general/navigation.spec.ts:64:7 › ui-general — תפריט הצד (מפיץ) › «הגדרות» ו«לוח בקרה» בתפריט מעבירים למסכים שלהם #6a70b4a9 @desktop @prod-safe 
+    [tests] › tests/warehouse-map/map-view.spec.ts:63:7 › warehouse-map — צפייה › «הוספת פריט» פותח דיאלוג קליטה עם מוצר, מקום וכמות; ביטול סוגר #6a71ef21 #6a859245 @desktop @prod-safe 
+    [tests] › tests/warehouse-map/map-view.spec.ts:97:7 › warehouse-map — צפייה › חיפוש במפה מסמן מקומות תואמים #6a5cb979 @desktop @prod-safe 
+    [iphone] › tests/client-ordering/catalog.spec.ts:50:7 › client-ordering — קטלוג: גלישה, חיפוש וסינון › סינון לפי קטגוריה מציג רק את מוצרי הקטגוריה #6a38cf5e @prod-safe 
+    [android] › tests/auth-security/customer-isolation.spec.ts:25:7 › auth-security — בידוד נתוני לקוח › לקוח פותח הזמנה של לקוח אחר — «אין הרשאה»; הזמנה לא קיימת — «לא נמצאה» #6a38cf5a @prod-safe 
+    [android] › tests/auth-security/landing-and-session.spec.ts:31:9 › auth-security — נחיתה לפי תפקיד וסשן › לקוח › לקוח נוחת ב-/shop, כתובת לא מוכרת → /shop בלי 403 #6a672659 #6a38cf59 #6a6f302c @prod-safe 
+    [android] › tests/client-ordering/catalog.spec.ts:50:7 › client-ordering — קטלוג: גלישה, חיפוש וסינון › סינון לפי קטגוריה מציג רק את מוצרי הקטגוריה #6a38cf5e @prod-safe 
+    [android] › tests/ui-general/mobile-layout.spec.ts:79:7 › ui-general — מובייל (מפיץ) › תעודת משלוח: «תאריך אספקה» קומפקטי והתאריך מוצג במלואו #6a8597e8 @mobile @prod-safe 
+  26 skipped
+  113 passed (3.4m)
+exit 0

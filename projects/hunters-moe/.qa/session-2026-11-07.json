@@ -1,0 +1,241 @@
+{
+ "project": "hunters",
+ "date": "2026-11-07",
+ "environment": "https://hunters-sooty.vercel.app",
+ "queue": [
+  "#2b0521",
+  "#f2c5ce",
+  "#8ad3b0",
+  "#416558",
+  "#56ac83",
+  "#cca841",
+  "#8fc7be",
+  "#0224f4",
+  "#1d9069",
+  "#1eabe4",
+  "#d0bc44",
+  "#fb0f43"
+ ],
+ "tickets": [
+  {
+   "hash": "#cca841",
+   "title": "Payment window: Escape does not close it from the Cardcom fields, and the payment step has no close button",
+   "verdict": "pass",
+   "runs": 2,
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "payment-window",
+   "role": "hunter_free_2",
+   "devices": [
+    "desktop",
+    "mobile-375"
+   ],
+   "note": "Escape inside Cardcom iframe not closing — allowed by ticket (at least item 1)",
+   "confirmed_by_user": "2026-11-07"
+  },
+  {
+   "hash": "#f2c5ce",
+   "title": "Submit form: masculine-only «המועמד»",
+   "verdict": "pass",
+   "note": "tender side (company_6 T-44) + owner badge /applications/8f88518a ✅; job side pending new job",
+   "runs": 2,
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "submit-form",
+   "role": "company_6/company/hunter_plus",
+   "devices": [
+    "desktop"
+   ],
+   "confirmed_by_user": "2026-11-07"
+  },
+  {
+   "hash": "#416558",
+   "title": "Headhunter's candidate page: masculine-only badge «מועמד»",
+   "verdict": "pass",
+   "runs": 2,
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "candidate-badge",
+   "role": "hunter_plus",
+   "devices": [
+    "desktop"
+   ],
+   "confirmed_by_user": "2026-11-07"
+  },
+  {
+   "hash": "#8ad3b0",
+   "title": "Job/tender panel: heading «הגשת מועמד» and search placeholder «חיפוש מועמד» are masculine-only",
+   "verdict": "pass",
+   "runs": 2,
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "submit-panel",
+   "role": "hunter_free/hunter_free_2/company_6",
+   "devices": [
+    "desktop"
+   ],
+   "confirmed_by_user": "2026-11-07"
+  },
+  {
+   "hash": "#2b0521",
+   "title": "Clean up test data",
+   "verdict": "reject",
+   "draft": "drafts/reject-2b0521.md",
+   "status": "отправлен 07.11 16:37",
+   "action": "reject",
+   "rejection_id": "rej_8aad1e880cd91ff5a1d9fc1d",
+   "column": "לביצוע"
+  },
+  {
+   "hash": "#56ac83",
+   "title": "AI title and summary masculine",
+   "verdict": "reject",
+   "draft": "drafts/reject-56ac83.md",
+   "status": "отправлен 07.11 16:37",
+   "action": "reject",
+   "rejection_id": "rej_b7d486e98ec92255939c0ab7",
+   "column": "לביצוע"
+  },
+  {
+   "hash": "#8fc7be",
+   "title": "Auto-fill from LinkedIn screenshot",
+   "verdict": "reject",
+   "draft": "drafts/reject-8fc7be.md",
+   "status": "отправлен 07.11 16:37",
+   "note": "registration not checked — needs new talent from user",
+   "action": "reject",
+   "rejection_id": "rej_609567e71d9bc8a689bae758",
+   "column": "לביצוע"
+  },
+  {
+   "hash": "#d0bc44",
+   "verdict": "pass",
+   "runs": 2,
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "hunter-nda",
+   "role": "hunter_plus/hunter_free_2",
+   "devices": [
+    "desktop"
+   ],
+   "confirmed_by_user": "2026-11-07"
+  },
+  {
+   "hash": "#fb0f43",
+   "verdict": "pass",
+   "note": "server item 3: UI cannot send (client blocks); direct supabase insert POST /rest/v1/messages → 400 'hunter nda required' 3/3, nothing saved",
+   "runs": 2,
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "hunter-nda",
+   "role": "hunter_plus/hunter_free_2",
+   "devices": [
+    "desktop"
+   ],
+   "confirmed_by_user": "2026-11-07"
+  },
+  {
+   "hash": "#0224f4",
+   "verdict": "reject",
+   "draft": "drafts/reject-0224f4.md",
+   "status": "отправлен 07.11 16:37",
+   "action": "reject",
+   "rejection_id": "rej_0ca2901b31e18e5fd971e45f",
+   "column": "לביצוע"
+  },
+  {
+   "hash": "#1d9069",
+   "verdict": "reject",
+   "draft": "drafts/reject-1d9069.md",
+   "status": "отправлен 07.11 16:37",
+   "action": "reject",
+   "rejection_id": "rej_831cd552557e8bc7f9bf2e01",
+   "column": "לביצוע"
+  },
+  {
+   "hash": "#1eabe4",
+   "verdict": "reject",
+   "note": "paid 07.11: badge on own profile, /hunters list, public profile ✅; «אתם מאומתים עד 07.11.2027» ✅; invoice ₪1 ✅; verified sender still waits for other side approval (question to user); receiver auto-approve not testable (no free pair)",
+   "action": "reject",
+   "rejection_id": "rej_83115d84883a48b94f3f6129",
+   "column": "לביצוע"
+  }
+ ],
+ "test_data": [
+  {
+   "what": "job J-148 «QA 0711 משרה חברה»",
+   "id": "fedc4b3d-3de6-414e-9821-af96a34469ae",
+   "owner": "demo-company-1"
+  },
+  {
+   "what": "job J-149 «QA 0711 משרה האנטר 2»",
+   "id": "3a0aa4d9-ff9f-48f2-a3f9-9438b289343c",
+   "owner": "demo-hunter-2"
+  },
+  {
+   "what": "job J-150 «QA 0711 משרה האנטר 3»",
+   "id": "192164e9-2c24-4a35-8572-023ec2dc1b39",
+   "owner": "demo-hunter-3"
+  },
+  {
+   "what": "anon submission QA-AUTO 0211 d4f6e7 B → J-148",
+   "id": "2b98a35e-b0d5-4bb8-8ee2-725552074805",
+   "by": "claude-test"
+  },
+  {
+   "what": "full submission QA-AUTO 0211 d4f6e7 A → J-148",
+   "id": "b8d3c81a-4410-4d44-9126-a1d508cd1995",
+   "by": "claude-test"
+  },
+  {
+   "what": "held submission QA-AUTO 2810 c1b861 refuse → J-150 (בוטל)"
+  },
+  {
+   "what": "NDA claude-test↔demo-hunter-3 approved 07.11.2026–07.02.2027, 1 msg each in c=9339566b"
+  },
+  {
+   "what": "NDA request claude-test→demo-hunter-1 pending, c=daf8b54a"
+  },
+  {
+   "what": "empty chat claude-test↔U-50 c=24ae1314"
+  },
+  {
+   "what": "demo-hunter-3 bought «אימות» for ₪1 (user paid), verified until 07.11.2027; saved card ••••8782 removed by QA on user request"
+  },
+  {
+   "what": "NDA requests from verified demo-hunter-3 → demo-hunter-1 (c=525fb19b) and → דב האנטר (c=11ec1344), pending"
+  }
+ ],
+ "findings": [
+  "#f2c5ce: step 2 «חוזקות» stays «ממתינים לתקציר ה-AI…» for a few seconds (not waited)",
+  "#cca841: focus ring on ✕ is default browser blue, not the teal style of #730ae5 (visible, ok)",
+  "#2b0521: notification to tender a0e11b5e → soft 404 (HTTP 200), React #419 1/3",
+  "#2b0521: admin tender opens as /admin/jobs/<id> with key admin.common.jobStatus.tender",
+  "#8fc7be: «להשתמש בזה» 81×21 on 375; imported experience not marked unsaved on «ניסיון מקצועי»",
+  "#56ac83: AI adds facts not in input («ניסיון שיפוטי»), «והיווצרות כמנהל/ת מוצר בעלים»",
+  "#d0bc44: B bell keeps active «אישור ה-NDA» on old NDA requests after refusal/approval",
+  "#d0bc44: A's candidate list shows «נשלח/ה» while card shows «ממתין/ה ל-NDA»; B's «מועמדים שהוגשו» counter 1 after refusal, list empty",
+  "#1eabe4: no toggle on /profile?tab=subscription cards (only in «בחירת חבילה» dialog)"
+ ],
+ "price_changes": [
+  {
+   "product": "nda_verification (אימות אמינות והתחייבות)",
+   "was": "150.00",
+   "now": "1.00",
+   "when": "2026-11-07",
+   "why": "#1eabe4 user test payment as demo-hunter-3",
+   "returned": "150.00 (07.11, verified after reload)"
+  }
+ ],
+ "notes": [
+  "roles re-logged 07.11 via setup -g; jobs/collabs wiped by #2b0521 (05.11)",
+  "07.11: mifrat attachment_upload_start upload_path → upload_not_complete despite PUT 200; workaround: pass attachments as {url,filename,type,size} with the public URL"
+ ],
+ "new_tickets": [
+  {
+   "hash": "#294851",
+   "title": "Client request: separate «אימות אמינות והתחייבות» price for each package",
+   "status": "todo"
+  }
+ ]
+}

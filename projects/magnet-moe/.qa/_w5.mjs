@@ -1,0 +1,28 @@
+import { chromium } from 'playwright';
+import fs from 'fs';
+const GO='/private/tmp/claude-502/-Users-avielshnaider--claude-spares-spare-Xwbc7V/d9295d8e-b5d2-4a72-8429-be4dbeea285d/scratchpad/go.flag';
+const MSG=process.argv[2]||'QA-AUTO r12 gift';
+try{fs.unlinkSync(GO)}catch{}
+const b = await chromium.launch();
+const c = await b.newContext({ storageState: '/Users/avielshnaider/magnet-moe/.qa/auth/new02.json', viewport:{width:390,height:844}, isMobile:true, hasTouch:true, deviceScaleFactor:2 });
+const p = await c.newPage();
+await p.goto('https://magnet.expo.app/chat/22cd6c5a-2446-492e-8ca6-295074aaf56b', {waitUntil:'networkidle'});
+const sk=p.locator("[data-testid=gift-intro-skip]"); await sk.waitFor({timeout:6000}).catch(()=>{}); await sk.click({force:true}).catch(()=>{}); await sk.waitFor({state:"detached",timeout:8000}).catch(()=>console.log("skip still"));
+await p.getByRole('button',{name:"פעולות על הצ'אט"}).click();
+await p.getByText(/שליחת מתנה ל/).first().click();
+await p.getByRole('button',{name:/ורד זהב · חינם/}).click();
+await p.waitForTimeout(1500);
+const f = p.locator('input[type=text], textarea, input:not([type])').last();
+await f.fill(MSG);
+console.log(await p.locator('button:visible').evaluateAll(bs=>bs.map(b=>(b.getAttribute('aria-label')||b.innerText||'').trim()).filter(Boolean)));
+await p.screenshot({path:'/Users/avielshnaider/magnet-moe/.qa/screenshots/r12-fc49b2-ios17-web-sender-ready.png'});
+console.log('READY');
+while(!fs.existsSync(GO)) await new Promise(r=>setTimeout(r,50));
+const btn=p.getByRole('button',{name:/שליחת מתנה/}).last();
+const t0=Date.now();
+await btn.click();
+console.log('SENT_AT', t0, Date.now());
+await p.waitForTimeout(3000);
+await p.screenshot({path:'/Users/avielshnaider/magnet-moe/.qa/screenshots/r12-fc49b2-ios17-web-sender-after.png'});
+await c.storageState({path:'/Users/avielshnaider/magnet-moe/.qa/auth/new02.json'});
+await b.close();

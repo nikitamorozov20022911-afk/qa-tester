@@ -1,0 +1,537 @@
+{
+  "project": "kfir-dadon",
+  "date": "2026-11-17",
+  "environment": "https://kfir-dadon.vercel.app",
+  "queue_count": 22,
+  "queue": {
+    "returned_2026-11-17": [
+      "d65b5b",
+      "799398",
+      "bf7c47",
+      "cddab4",
+      "17fdd9",
+      "94c3ab",
+      "4a3af4",
+      "e6d959",
+      "5983f7"
+    ],
+    "returned_2026-11-05": [
+      "ece93f",
+      "a02f01",
+      "ea1aa0",
+      "bdd327",
+      "a69b41",
+      "5a8325"
+    ],
+    "cnr_waiting_anthropic": [
+      "09bb9c",
+      "87ec23",
+      "acbcab",
+      "5c8f24",
+      "d194e7"
+    ],
+    "leftover": [
+      "d9996c",
+      "597ccf"
+    ]
+  },
+  "logins": {
+    "admin": "alive x3",
+    "user": "alive x3",
+    "business": "DEAD x3 (expired) — needs npm run qa-login by user"
+  },
+  "tickets": [
+    {
+      "hash": "e6d959",
+      "title": "ניקיון במנוע הניתוח: בדיקת קלט שטחית, קוד מת ותשובת applied:false שמתעלמים ממנה",
+      "action": "verdict-pass-proposed",
+      "basis": "programmer evidence 17.11 (3 new DB cases, green 8/8 x2, red old/strict check)",
+      "column": "בבדיקות",
+      "time": "2026-11-17"
+    },
+    {
+      "hash": "5983f7",
+      "action": "waiting-user-question",
+      "note": "Storage upload window unmeasured -> separate bug? default yes",
+      "time": "2026-11-17"
+    },
+    {
+      "hash": "cddab4",
+      "action": "tested-partial",
+      "note": "recruiter all ✅ (filter manager, combo, URL, empty, 10 cols, 53px, report link, 390). Pending business regress: full 4 icons, scope cross-check",
+      "time": "2026-11-17"
+    },
+    {
+      "hash": "4a3af4",
+      "action": "tested",
+      "time": "2026-11-17",
+      "note": "T1-T5 reject points ✅; T6/T7/T3 error/T11 390/T12 access log ✅; empty note blocked on click (finding, not AC); widths 169.6/337 vs Figma 161/316 at 1440 -> bug-verifier; pending: loading state T8, T6 close ×/Esc/ביטול"
+    },
+    {
+      "hash": "d65b5b",
+      "title": "פיתוח: סיום השיחה לפי תנאי התרחיש",
+      "action": "not-ready",
+      "column": "בבדיקות",
+      "time": "2026-11-17",
+      "role": "admin",
+      "devices": [
+        "desktop 1440",
+        "390"
+      ],
+      "note": "AC5 drawer סיבת סיום/משך בפועל ✅ 4 attempts + next_step; report consistent; — for no attempt; earlier AC ✅ 21.10/04.11 | 17.11 user asked \"точно?\": NOT 100% — business report after shared wording change not checked"
+    },
+    {
+      "hash": "799398",
+      "title": "מסך הדוח: העמודה הצדדית אצל Super Admin, גלילת העמוד מעל העמודה, וניקיון בקוד",
+      "action": "pass",
+      "column": "הושלם",
+      "time": "2026-11-17",
+      "role": "admin",
+      "note": "AC5 evidence (diff/grep/red-green) + site min-height 160px, aside fits, wheel continues"
+    },
+    {
+      "hash": "e6d959",
+      "action": "pass",
+      "column": "הושלם",
+      "time": "2026-11-17",
+      "note": "programmer evidence only, no autotests"
+    },
+    {
+      "hash": "4a3af4",
+      "title": "פיתוח: שמירת מידע, מחיקה וטיפול בבקשות מועמד",
+      "action": "pass",
+      "column": "הושלם",
+      "time": "2026-11-17",
+      "role": "admin",
+      "devices": [
+        "desktop 1440",
+        "390"
+      ],
+      "note": "all reject-2 points ✅; T6 close ×/Esc/ביטול ✅, loading ✅ per 872:5561; widths = font bug #82fb2b (verifier); backdrop click no close — no requirement"
+    },
+    {
+      "hash": "bf7c47",
+      "action": "not-ready",
+      "time": "2026-11-17",
+      "note": "reject-2 5 points ✅ (copy btn width 149.5 = font #82fb2b); AC2/AC3 live ✅ (QA-PHONE-17fdd9-0411-A now manual); pending AC4 UI as manager + × in business drawers (need business); AC5 earlier ✅ 14.10/21.10 not affected"
+    },
+    {
+      "hash": "ece93f",
+      "title": "פיתוח: שמירת דמות הלקוח המדומה ומעקות תוכן",
+      "action": "not-ready",
+      "column": "בבדיקות",
+      "time": "2026-11-17",
+      "role": "admin",
+      "note": "AC5 content_flag in attempt record: API + audit drawer + content view, 25ab637f 01:13 & 29565e5c 00:35, 1440/390; no-flag attempts clean; AC1-4 ✅ 21.10 calls, code unchanged | 17.11 user asked \"точно?\": NOT 100% — R13 scenario-condition vs end, R11 content view w/o reason, business view of flag not checked"
+    },
+    {
+      "hash": "5983f7",
+      "title": "באג: אחרי השלמת בקשת מחיקה קישור המועמד נשאר פעיל, ותוכן שנכתב במקביל למחיקה יכול לשרוד אותה",
+      "action": "pass",
+      "column": "הושלם",
+      "time": "2026-11-17",
+      "note": "part1 ✅ 04.11 site; part2 measured evidence 24 writers x4 runs, 0 left; Storage window -> separate finding (user)"
+    },
+    {
+      "hash": "a02f01",
+      "title": "פיתוח: חשיפת מידע מדורגת והעלאת ההתנגדות בשיחה",
+      "action": "reject",
+      "column": "לביצוע",
+      "time": "2026-11-17T13:07",
+      "note": "rej_3030baacc92492330e73e34b: Anthropic blocked until 01.12 — PM ask client to top up tokens"
+    },
+    {
+      "hashes": [
+        "09bb9c",
+        "87ec23",
+        "acbcab",
+        "5c8f24",
+        "d194e7"
+      ],
+      "action": "cnr-updated",
+      "column": "בבדיקות",
+      "time": "2026-11-17T13:10",
+      "note": "rejects undone by user request; CNR note: waiting for #a02f01"
+    },
+    {
+      "hash": "ece93f",
+      "action": "tested",
+      "time": "2026-11-17",
+      "note": "R11 ✅ (UI blocks w/o reason; RPC 400 reason_required/invalid_reason). R13 ⚠ question to user: 29565e5c ended customer_refused after insult without explicit insult condition in scenario; 25ab637f continued after apology despite 'תוקפני' end condition. Pending business view of flag."
+    },
+    {
+      "hash": "d9996c",
+      "action": "reject-ready-blocked",
+      "time": "2026-11-17",
+      "note": "CONFIRMED 3/3: attention block slice(0,3) tech failures first -> no «הארכת תוקף» rows for 4 links expiring today 18:40 (biz משה כהן). Reject blocked by auto-mode classifier; figma attachment uploaded uploads/2026-11/9fbcf68e52807ab9160cfc7d_d9996c-figma-697-912-expiring-row.png. Regress ✅ (7 metrics, cards, bar, activity, 390)."
+    },
+    {
+      "hash": "d9996c",
+      "title": "פיתוח: דשבורד תפעולי לעסק",
+      "action": "reject",
+      "column": "לביצוע",
+      "time": "2026-11-17T13:27",
+      "note": "rej_8febb74eacb66a5c8c2be2a8 attention block slice(0,3) hides «הארכת תוקף» rows; 2 screenshots"
+    },
+    {
+      "hash": "bf7c47",
+      "title": "פיתוח: טיפול בכשל בהפקת דוח והרצה חוזרת של העיבוד",
+      "action": "pass",
+      "column": "הושלם",
+      "time": "2026-11-17",
+      "role": "admin+business",
+      "note": "reject-2 5 pts ✅ (copy btn = font); AC2/AC3 live ✅; AC4 manager testim 3 error reports: explanation+פנייה לתמיכה, no reprocess (page, list) ✅; × 40×40 admin+business modals ✅; AC5 earlier ✅ unaffected"
+    },
+    {
+      "hash": "ece93f",
+      "title": "פיתוח: שמירת דמות הלקוח המדומה ומעקות תוכן",
+      "action": "pass",
+      "column": "הושלם",
+      "time": "2026-11-17",
+      "note": "R9 flag in admin drawer/content view + business report header (01:13/00:35 = API); no-flag clean; R11 ✅; R13 not reject (user); AC1-4 ✅ 21.10"
+    },
+    {
+      "hash": "d65b5b",
+      "title": "פיתוח: סיום השיחה לפי תנאי התרחיש",
+      "action": "pass",
+      "column": "הושלם",
+      "time": "2026-11-17",
+      "note": "AC5 admin drawer + admin report + business report (6 reasons incl next_step, scenario_natural_end; error reports too) = API; R5 customer_refused shown as reason, no failure wording; other AC ✅ 21.10"
+    },
+    {
+      "hash": "cddab4",
+      "action": "waiting-user-question",
+      "time": "2026-11-17",
+      "note": "all ✅ (recruiter, business Moshe, testim regress, union 30); question: previous-version v1 candidate «QA-DS קנדידט 3» not visible to recruiter — default not reject"
+    },
+    {
+      "hash": "cddab4",
+      "title": "פיתוח: רשימת מועמדים עם חיפוש, סינון ופעולות מהירות",
+      "action": "pass",
+      "column": "הושלם",
+      "time": "2026-11-17",
+      "role": "user+business",
+      "devices": [
+        "desktop 1440",
+        "390"
+      ],
+      "note": "recruiter manager filter + combo + URL + empty + regress; business x2 (Moshe, testim) filters/4 icons/copy/extend; scope 30 = v2 24 + own 6; previous version not shown — per spec (user yes); user passed עבר QA"
+    },
+    {
+      "hash": "a69b41",
+      "action": "tested",
+      "time": "2026-11-17",
+      "note": "T1 /settings/users name/role/שיוך one line + … + title ✅; T2 admin access-log ✅ (302 truncated all with title); business has no access log; email column wraps 3-4 lines -> verifier; admin biz card users table wraps (DOM-injected) -> scope question"
+    },
+    {
+      "hash": "5a8325",
+      "action": "tested",
+      "time": "2026-11-17",
+      "note": "literal 409 ✅ (exact/order/scattered/on_question/reverse, no false positive); 503 warning ✅; ❌ «שמירה בכל זאת» 500; ❌ manual draft never saves (500) on new sims -> verifier; paraphrase not checked (Anthropic)"
+    },
+    {
+      "hash": "bdd327",
+      "title": "פיתוח: מכסת סימולציות ומעקב צריכה",
+      "action": "pass",
+      "time": "2026-11-17",
+      "note": "AC1 ✅; reject «נותרו 6 מתוך 10» footer manager+recruiter ✅; AC3 banner manager ✅; AC4 overage modal + confirm_overage + overage counter, API 400 quota_exceeded w/o confirm ✅; AC6 UI+403 ✅; foreign biz 403 ✅; AC2 ✅ 21.10 unaffected",
+      "column": "הושלם"
+    },
+    {
+      "hash": "ea1aa0",
+      "action": "tested",
+      "time": "2026-11-17",
+      "note": "counter manager+recruiter ✅, תפקיד select ✅, banner ✅, AC1/2/4/5 ✅; ❌? footer wraps at 100000 (143 vs 77), ❌? manager text 32px vs 17, ❌? phone 12345/landline accepted -> verifier"
+    },
+    {
+      "hash": "5a8325",
+      "action": "reject-ready-blocked",
+      "time": "2026-11-17",
+      "note": "CONFIRMED 12/12 manual draft save 500 (even fields:{}), confirm_unchecked 500 3/3; screenshots uploaded (6826bf01…, 328b04a3…); reject blocked by classifier — waiting user yes"
+    },
+    {
+      "hash": "a69b41",
+      "action": "waiting-user-question",
+      "time": "2026-11-17",
+      "note": "email column wraps (28 chars -> 2 lines, no ellipsis) CONFIRMED 3/3; admin biz card users real rows fine; question: email in scope of 'columns one line'? default reject"
+    },
+    {
+      "hash": "5a8325",
+      "title": "באג: טיוטת תרחיש ידנית יכולה להציג מידע נסתר כגלוי",
+      "action": "reject",
+      "column": "לביצוע",
+      "time": "2026-11-17T13:54",
+      "note": "rej_13a1cb4ca1f4f88ecb039ad8 manual draft save 500"
+    },
+    {
+      "hash": "a69b41",
+      "title": "באג: טבלאות צפופות ברוחב 1440",
+      "action": "reject",
+      "column": "לביצוע",
+      "time": "2026-11-17T13:55",
+      "note": "rej_9bba5fd23ab131e2b5377f14 email column wraps (user: yes reject)"
+    },
+    {
+      "hash": "ea1aa0",
+      "action": "reject-ready-blocked",
+      "time": "2026-11-17",
+      "note": "CONFIRMED 3/3: footer wraps at 100000 (494×143 vs 77, form scroll), manager select text 51px vs 18 Figma. Phone 12345/landline -> finding (no format in spec). Screenshots a13f386e…, 2da530c3…; waiting user yes"
+    },
+    {
+      "hash": "ea1aa0",
+      "title": "פיתוח: יצירת רשומת מועמד והפקת קישור אישי",
+      "action": "reject",
+      "column": "לביצוע",
+      "time": "2026-11-17T14:08",
+      "note": "rej_e62443d6eb368b343ba9a36e footer wrap + manager select alignment"
+    },
+    {
+      "hash": "94c3ab",
+      "action": "tested",
+      "time": "2026-11-17",
+      "note": "lock during official call ✅ (list/editor/invite/RPC 400), unlock ~1s ✅, empty state = Figma 864:3646 ✅, report header ✅, save w/o changes no version ✅, AC4 server ✅; pending: deactivate-while-locked, AC4 recruiter UI"
+    },
+    {
+      "hash": "94c3ab",
+      "title": "פיתוח: ניהול גרסאות וסטטוסים של סימולציה",
+      "action": "pass",
+      "column": "הושלם",
+      "time": "2026-11-17",
+      "role": "business+user",
+      "note": "lock/unlock ✅ 3 calls; deactivate while locked blocked (UI hides, RPC 400 invalid_transition) ✅; AC4 recruiter notice (reactivate/ask manager) + RPC 400 ✅, manager shows only active ✅; empty state = Figma ✅; AC5, save w/o changes ✅; AC1/req5 ✅ earlier"
+    },
+    {
+      "hash": "17fdd9",
+      "title": "פיתוח: ביצוע הסימולציה הרשמית",
+      "action": "pass",
+      "column": "הושלם",
+      "time": "2026-11-17",
+      "role": "candidate",
+      "devices": [
+        "Pixel 6 Chrome"
+      ],
+      "note": "R17: mic off -> prompt 3.4-3.6s with Android step, back 0.2s, >30s -> technical_failure end screen + contact, partial recording saved (is_partial true 42s), no new attempt; no false alarm 40s silence; AC1/AC2/AC4 ✅; AC3 ✅ earlier"
+    },
+    {
+      "hash": "5eeb0c",
+      "ticket": 58,
+      "action": "new-bug",
+      "column": "לביצוע",
+      "title": "באג: שדה הטלפון ביצירת מועמד מקבל «12345» ומספרים שאינם תקינים"
+    },
+    {
+      "hash": "43eb81",
+      "ticket": 59,
+      "action": "new-bug",
+      "column": "לביצוע",
+      "title": "באג: מחיקת נתוני מועמד — העלאת הקלטה ל-Storage במקביל… מצבי מרוץ"
+    },
+    {
+      "hash": "cea536",
+      "ticket": 60,
+      "action": "new-improvement",
+      "column": "לביצוע",
+      "title": "שיפור: הודעת «אין גישה למיקרופון» באנדרואיד…"
+    },
+    {
+      "hash": "597ccf",
+      "id": "bda08b8d4fb6c3dcfb597ccf",
+      "action": "pass",
+      "column": "הושלם",
+      "time": "2026-11-18T00:31+02:00",
+      "title": "באג: «קליטת בקשה» של Super Admin דוחה את תאריך היום אחרי חצות כ«בעתיד»",
+      "role": "Super Admin",
+      "devices": [
+        "desktop"
+      ],
+      "notes": "ночь 00:30 IST (UTC 17.11): сегодня 18.11 → 200 ×3; завтра 19.11 → «לא בעתיד» в UI ×3, API 400; вчера → 200. Нужно снять метку לא ניתן לשחזר (после «да»). Скрины screenshots/2026-11-18/597ccf-*",
+      "confirmed": "2026-11-18"
+    }
+  ],
+  "test_data": [
+    {
+      "what": "data request QA-4a3af4-1711 (deletion, completed) on QA-DEL2-1601",
+      "biz": "testim"
+    },
+    {
+      "what": "data request QA-4a3af4-1711-mobile (deletion, completed) on QA-VER-1239 — candidate data may be really deleted",
+      "biz": "testim"
+    },
+    {
+      "what": "rerun report on QA-PHONE-17fdd9-0411-A (attempt cd290d00) -> manual_handling=true",
+      "biz": "testim"
+    },
+    {
+      "what": "invite QA-a69b41-1711 long name, qa-a69b41-long-email-...@example.com (pending)",
+      "biz": "משה כהן"
+    },
+    {
+      "what": "simulation QA-N15 4edcd13c (3 info items)",
+      "biz": "משה כהן"
+    },
+    {
+      "what": "simulation QA-T791 43fe6f70",
+      "biz": "משה כהן"
+    },
+    {
+      "what": "QA-CAND-1711-1/2/3 + trtrt link extended",
+      "biz": "משה כהן"
+    },
+    {
+      "what": "testim quota: new quota_usage row 2026-11-01..11-30 (8f10a6fd) quota 100000 thr 80 overage 1 — cannot delete; dashboard now '4 of 100,000 01.11–30.11' instead of '72 of 100,000'",
+      "biz": "testim"
+    },
+    {
+      "what": "candidates QA-Q-1711-val (0201234567), QA-Q-1711-val2 (12345), QA-Q-1711-A, QA-Q-1711-over (overage confirmed)",
+      "biz": "testim"
+    },
+    {
+      "what": "QA-V-1711-phone-landline, QA-V-1711-phone-5d candidates",
+      "biz": "testim"
+    },
+    {
+      "what": "QA-LOCK-1711 (attempt 05aacf93 66s), QA-LOCK-1711-B (b51f3f55 187s), QA-LOCK-1711-C; draft v2 0c5ab5eb of QA-791a-1013 (not deleted)",
+      "biz": "משה כהן"
+    },
+    {
+      "what": "QA-LOCK-1711-D (attempt d386f900 completed); QA-DS r2 deactivated+reactivated (restored active)",
+      "biz": "משה כהן / testim"
+    },
+    {
+      "what": "17fdd9 Pixel6 1711: QA-PH-1711-1 (cand 768ca5c5, attempt f89ec5b6 completed/candidate_ended 126s), QA-PH-1711-2 (cand a10642b7, attempt eb1243fe technical_failure 42s); phones 0501711031/32; sim QA-791a-1013 (5e972c36)"
+    },
+    {
+      "what": "QA-PH-1711-1 (attempt f89ec5b6 completed), QA-PH-1711-2 (eb1243fe technical_failure)",
+      "biz": "משה כהן"
+    },
+    {
+      "what": "Data requests QA-597ccf-1811: d5cda226, 1e107a92, d5526ae4 (18.11), fffa7f3d (17.11) — статус התקבלה",
+      "biz": "משה כהן / QA-CAND-1711-1"
+    }
+  ],
+  "findings": [
+    {
+      "hash": "4a3af4",
+      "text": "«השלמת הבקשה» enabled with empty «תיעוד הטיפול (חובה)», blocked only by validation on click (since 04.11, not in AC)"
+    },
+    {
+      "hash": "d65b5b",
+      "text": "end-reason wording differs: drawer/report «נקבע צעד הבא», «הלקוח המדומה סירב להמשיך», «הזמן שהוקצב לשיחה הסתיים» vs support table «הושג צעד הבא», «הלקוח סירב», «הזמן הסתיים»"
+    },
+    {
+      "hash": "d65b5b",
+      "text": "support page stuck on «טוען את הסטטוס הטכני…» after re-selecting «כל התאריכים» without reload (seen once)"
+    },
+    {
+      "hash": "bf7c47",
+      "text": "log window lines show time only, order looks non-monotonic; two 04.11 entries both 'attempt 1 of 2'"
+    },
+    {
+      "hash": "ece93f",
+      "text": "flag time = detection moment, 4.6–12 s after phrase (already bug #874e93)"
+    },
+    {
+      "hash": "5983f7",
+      "text": "Storage upload during deletion not measured; parallel save creates 2 rows; parallel transcript save hangs (programmer self-report) — candidate new bug"
+    },
+    {
+      "hash": "ece93f",
+      "text": "29565e5c end_reason customer_refused doesn't match any refusal condition literally (ended on insult by model judgement)"
+    },
+    {
+      "hash": "bf7c47",
+      "text": "aria-label of row link «פנייה לתמיכה: הפעלת עיבוד מחדש: <name>» on a mailto link — misleading for screen readers"
+    },
+    {
+      "hash": "bf7c47",
+      "text": "× hit area ::before 42×42 offset top-left, not 44 centered"
+    },
+    {
+      "hash": "cddab4",
+      "text": "filter changes don't add history entries (Back leaves page)"
+    },
+    {
+      "hash": "bdd327",
+      "text": "overage modal opens immediately on drawer open (not on submit)"
+    },
+    {
+      "hash": "ea1aa0",
+      "text": "phone field accepts '12345' and landlines (only 05… mobiles validated; spec gives no format)"
+    },
+    {
+      "hash": "94c3ab",
+      "text": "official call QA-LOCK-1711 ended by itself after 66 s with end_reason candidate_ended (no end click) — possibly #17fdd9 mic-loss logic; call 2 transcript not captured"
+    },
+    {
+      "hash": "94c3ab",
+      "text": "deactivate during lock returns raw 'invalid_transition' (UI hides action)"
+    },
+    {
+      "hash": "94c3ab",
+      "text": "manager invite: inactive simulation just hidden ('מוצגות רק סימולציות פעילות'), no explicit reactivate offer"
+    },
+    {
+      "hash": "17fdd9",
+      "text": "mic-loss card steps 2-3 describe Chrome site permission, not the Android device mic toggle"
+    }
+  ],
+  "user_answers": [
+    {
+      "q": "a69b41 truncation",
+      "a": "да"
+    },
+    {
+      "q": "5983f7 storage window separate",
+      "a": "да"
+    },
+    {
+      "q": "17fdd9 Pixel",
+      "a": "на потом"
+    },
+    {
+      "q": "עבר QA",
+      "a": "5983f7 4a3af4 e6d959 799398 — провёл",
+      "time": "2026-11-17"
+    },
+    {
+      "q": "ece93f R13 reject?",
+      "a": "нет"
+    },
+    {
+      "q": "עבר QA",
+      "a": "bf7c47 ece93f d65b5b — провёл",
+      "time": "2026-11-17"
+    },
+    {
+      "q": "cddab4 previous version",
+      "a": "да, прошёл, провёл"
+    },
+    {
+      "q": "a69b41 email",
+      "a": "да реджект"
+    },
+    {
+      "q": "עבר QA bdd327",
+      "a": "провёл"
+    },
+    {
+      "q": "עבר QA 94c3ab",
+      "a": "провёл"
+    },
+    {
+      "q": "עבר QA 17fdd9",
+      "a": "провёл"
+    }
+  ],
+  "notes": [
+    "Anthropic usage limit until 2026-12-01 (programmer #4bd727 17.11): analysis reports + scenario drafts fail. Default: wait."
+  ],
+  "previous_session": "session-2026-11-04.json",
+  "deferred_questions": [
+    {
+      "hash": "ece93f",
+      "q": "R13 end/continue after insult without explicit scenario condition — reject?",
+      "default": "not reject (in character, consistent with persona)"
+    }
+  ]
+}

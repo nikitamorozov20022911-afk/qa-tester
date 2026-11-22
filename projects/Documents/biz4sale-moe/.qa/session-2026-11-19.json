@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-19",
+  "project": "biz4sale",
+  "queue": [
+    "#494e0b"
+  ],
+  "tickets": [
+    {
+      "hash": "#494e0b",
+      "ticket": 96,
+      "title": "בקשת לקוח: חיתוך אוטומטי של שוליים שחורים/אחידים מהתמונה הראשית בכרטיס העסק",
+      "action": "pass",
+      "column": "הושלם",
+      "time": "2026-11-19",
+      "feature": "listing-images-trim",
+      "roles": [
+        "guest",
+        "user"
+      ],
+      "devices": [
+        "mobile-emulation Pixel 7 375px",
+        "desktop 1440"
+      ],
+      "checks": {
+        "search_card_mobile": "card3 554x600 (было 277x600), на экране 236x256 из рамки 341x256, чёрных полос нет (1 строка)",
+        "content_not_cropped": "аспект card3 0.923 = аспект постера в оригинале 0.927, ширина 738→ без обрезки",
+        "existing_regenerated": "/search 156 картинок (145 card3), 0 с полями >10%",
+        "gallery_detail": "cover 16:9 343x193 — чёрного в кадре нет (файл галереи — оригинал 738x1600 с полями 402/402)",
+        "new_upload": "400x1000 чёрные сверху/снизу → 400x400; 1000x400 белые слева/справа → 400x400; контроль 800x600 без изменений; card3 так же"
+      },
+      "screenshots": [
+        ".qa/screenshots/494e0b-search-card-mobile.png",
+        ".qa/screenshots/494e0b-detail-gallery-mobile.png",
+        ".qa/screenshots/494e0b-upload-step3.png"
+      ],
+      "test_data": "черновик QA-TEST be4cc94e-e5bf-483a-8d4a-9d1244284c31 создан и удалён (UI DELETE 204); остались 6 файлов storage uploads/*qa-test-494e0b*",
+      "findings": [
+        "оригинал существующих объявлений (файл галереи/лайтбокса) не обрезан — в рамке cover и на чёрном лайтбоксе не видно"
+      ],
+      "confirmed_by_user": "2026-11-19"
+    }
+  ]
+}

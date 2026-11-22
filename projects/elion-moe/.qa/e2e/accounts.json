@@ -1,0 +1,15 @@
+[
+  {
+    "id": "admin",
+    "role": "Admin (מנהל מערכת)",
+    "emailVar": "QA_USER_ADMIN_EMAIL",
+    "passwordVar": "QA_USER_ADMIN_PASSWORD"
+  },
+  {
+    "id": "admin-stand",
+    "role": "Admin (מנהל מערכת) — qa-stand",
+    "loginPath": "https://elion-git-qa-stand-aviels-projects.vercel.app/login",
+    "emailVar": "QA_USER_ADMIN_EMAIL",
+    "passwordVar": "QA_USER_ADMIN_PASSWORD"
+  }
+]

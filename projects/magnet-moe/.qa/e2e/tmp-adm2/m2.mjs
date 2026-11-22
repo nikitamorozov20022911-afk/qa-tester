@@ -1,0 +1,10 @@
+import {admin,SS} from './h.mjs';
+const A=await admin(); const p=A.p;
+await p.goto('https://magnet-admin.vercel.app/matchmaker',{waitUntil:'domcontentloaded'});
+const row=p.locator('tr').filter({hasText:'דניאל'}); await row.waitFor({timeout:20000});
+console.log((await row.evaluate(e=>e.outerHTML)).replace(/<svg.*?<\/svg>/g,'').replace(/class="[^"]*"/g,'').slice(0,3000));
+console.log('all textareas/inputs in page',await p.locator('textarea,input').count());
+await row.locator('td').nth(1).click();
+await p.waitForTimeout(0);
+await p.locator('[role=dialog],dialog[open],textarea').first().waitFor({timeout:5000}).then(async()=>console.log('opened:',(await p.locator('[role=dialog],dialog[open]').first().innerText().catch(()=>'')).slice(0,800))).catch(()=>console.log('no detail on row click; url',p.url()));
+await A.close();

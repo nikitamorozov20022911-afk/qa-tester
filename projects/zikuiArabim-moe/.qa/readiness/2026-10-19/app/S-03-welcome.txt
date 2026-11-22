@@ -1,0 +1,7 @@
+== page 1
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+StaticText   vis=t y= 182 x= 160 82x20 | אור הגאולה
+StaticText   vis=t y= 242 x=  59 284x47 | ה' רֹעִי לֹא אֶחְסָר
+StaticText   vis=t y= 465 x=  69 264x37 | ברוכים הבאים לאור הגאולה
+StaticText   vis=t y= 505 x=  91 220x40 | התפילה החכמה שתלווה אותך בכל מקום ובכל זמן
+Button       vis=t y= 576 x=  92 218x56 | בואו נתחיל

@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-19",
+  "status": "done",
+  "env": "staging https://benjico.expo.app + iPad Pro 13, Benjico 0.1.0 build 8; Android-планшет ожидается 22.11",
+  "queue": [
+    "#0e3868",
+    "#567965",
+    "#45d7ca",
+    "#77969d",
+    "#c93048",
+    "#28ef35"
+  ],
+  "tickets": [
+    {
+      "hash": "#c93048",
+      "action": "reject",
+      "column": "todo",
+      "note": "390: «השתק» прыгает 441→505 при загрузке рассказа",
+      "time": "11:10"
+    },
+    {
+      "hash": "#0e3868",
+      "action": "pass",
+      "column": "הושלם (провёл пользователь)",
+      "feature": "writing-surface",
+      "role": "parent→QA-R2-2",
+      "devices": [
+        "iPad build 8"
+      ],
+      "time": "11:28"
+    },
+    {
+      "hash": "#45d7ca",
+      "action": "reject",
+      "column": "todo",
+      "note": "Larger Text max: «אימות זהות» кнопки под клавиатурой",
+      "time": "11:27"
+    },
+    {
+      "hash": "#567965",
+      "action": "reject",
+      "note": "перо: аккуратное «אבא אמא» прочитано верно 0/5; искажённая ב без подсказки; похвала за «אבא מאמא»",
+      "column": "todo",
+      "feature": "writing-feedback",
+      "role": "parent→QA-R2-2",
+      "devices": [
+        "iPad build 8"
+      ]
+    },
+    {
+      "hash": "#77969d",
+      "action": "reject",
+      "note": "подсветка отстаёт ~1 с (оценка пользователя)",
+      "column": "todo"
+    },
+    {
+      "hash": "#28ef35",
+      "action": "skip",
+      "note": "Android-планшет 22.11"
+    }
+  ],
+  "new_tickets": [
+    "#caa4e6 (בית: нет приветствия голосом, iPad b7/b8)",
+    "#5187cb (застрявшая попытка чтения, рассказ снят)",
+    "#8bfc3c (робот-голос speechSynthesis в вебе)",
+    "#39900e (השתק 320/ландшафт)",
+    "#c74dd3 (390 кнопка чтения ниже экрана)",
+    "#789f1a (иконка звука наоборот)",
+    "#32cb03 (отправляется черновик הקלדה вместо рукописи)",
+    "#6a0cbc (текст/placeholder на линии тетради, улучшение)"
+  ],
+  "test_data": [
+    "QA-R2-2: незавершённая попытка ddec5167… (рассказ снят) — причина #5187cb",
+    "тетрадь QA-R2-2 «מִי בַּבַּיִת»: добавлены строки אבא/אמא/סבתא/דני/נועה к черновику",
+    "много заходов в «תרגול קריאה» QA-R2-1 (web)",
+    "parent в вебе остался в режиме ребёнка QA-R2-2"
+  ],
+  "autotests": {
+    "#0e3868": [
+      "e2e/tests/writing-surface-undo/typing-lines-align-and-restore.spec.ts",
+      "e2e/tests/writing-surface-undo/typing-lines-align-and-restore-1194.spec.ts",
+      "e2e/tests/writing-surface-undo/clear-confirm-dialog.spec.ts",
+      "e2e/tests/writing-surface-undo/clear-confirm-dialog-handwriting.spec.ts",
+      "e2e/tests/writing-surface-undo/finish-confirm-not-yet.spec.ts",
+      "e2e/tests/writing-surface-undo/stroke-right-to-left-stays-drawing.spec.ts",
+      "e2e/tests/writing-surface-undo/notebook-lines-full-width-1440.spec.ts",
+      "e2e/tests/writing-surface-undo/notebook-lines-full-width-1194.spec.ts"
+    ],
+    "status": "generated, not run"
+  }
+}

@@ -1,0 +1,32 @@
+GET 200 https://nhiqtgupncikobhbjhfs.supabase.co/rest/v1/admin_actions?select=id%2Cnote%2Ccreated_at&action=eq.warn&seen_at=is.null&order=created_at.desc&limit=1
+  BODY:
+  RESP:[]
+POST 200 https://nhiqtgupncikobhbjhfs.supabase.co/rest/v1/rpc/my_matches
+  BODY:{}
+  RESP:[{"match_id":"23ff7d2f-f1f1-45cf-a525-91470d774a32","peer_id":"00000000-0000-4000-8000-000000000025","display_name":"אור","avatar_url":"https://i.pravatar.cc/400?img=59","age":33,"is_verified":true,"matched_at":"2026-11-10T21:23:33.65688+00:00","is_new":false,"last_message":"כעיככ","last_message_at":"2026-11-15T14:42:43.102541+00:00","last_sender_id":"ea5d7f41-6a81-41d5-b107-ce0314ed5bd6","unread":0,"peer_gender":"man","last_is_gift":false,"gift_id":"gold-rose","gift_name":"ורד זהב","gift_sender_id":"00000000-0000-4000-8000-000000000025","gift_unseen":false,"gift_unseen_at":null,"opened_by":"00000000-0000-4000-8000-000000000025","awaiting_reply":false}, 
+ {"match_id":"96e2ded1-2deb-4314-a3d6-b9d5a5d4324a","peer_id":"a98f0b44-8682-4330-95b1-8b2e248b282a","display_name":"QA הרשמה","avatar_url":"https://nhiqtgupncikobhbjhfs.supabase.co/storage/v1/object/public/avatars/a98f0b44-8682-4330-95b1-8b2e248b282a/6180c930-f207-41f7-b15b-385435322a69.jpg","age":40,"is_verified":true,"matched_at":"2026-11-10T22:00:41.289905+00:00","is_new":false,"last_message":"קפה עליי?","last_message_at":"2026-11-10T22:00:41.289905+00:00","last_sender_id":"ea5d7f41-6a81-41d5-b107-ce0314ed5bd6","unread":0,"peer_gender":"man","last_is_gift":true,"gift_id":"rose-bouquet","gift_name":"זר ורדים ענק","gift_sender_id":"ea5d7f41-6a81-41d5-b107-ce0314ed5bd6","gift_unseen":false,"gift_unseen_at":null,"opened_by":"ea5d7f41-6a81-41d5-b107-ce0314ed5bd6","awaiting_reply":true}, 
+ {"match_id":"3971328f-e3e4-4a25-a297-8
+GET 200 https://nhiqtgupncikobhbjhfs.supabase.co/rest/v1/profiles?select=*&id=eq.ea5d7f41-6a81-41d5-b107-ce0314ed5bd6
+  BODY:
+  RESP:{"id":"ea5d7f41-6a81-41d5-b107-ce0314ed5bd6","display_name":"סיון","birth_date":"1989-10-29","gender":"woman","interested_in":"men","region":"אור עקיבא","purpose":"serious","self_definition":"jewish","onboarding_step":"done","terms_accepted_at":"2026-11-12T16:19:05.538+00:00","status":"active","suspended_until":null,"created_at":"2026-10-25T11:52:57.360147+00:00","updated_at":"2026-11-15T14:32:05.337242+00:00","bio":null,"avatar_url":"https://nhiqtgupncikobhbjhfs.supabase.co/storage/v1/object/public/avatars/ea5d7f41-6a81-41d5-b107-ce0314ed5bd6/80ccdc95-c473-4ff8-9420-f2060c755466.jpg","height_cm":158,"pref_age_min":21,"pref_age_max":99,"pref_distance_km":100,"nearby_opt_in":false,"push_enabled":true,"last_active_at":null,"plan":"free","plan_expires_at":null,"friends_waitlist":false,"gender_custom":null,"photos":["https://nhiqtgupncikobhbjhfs.supabase.co/storage/v1/object/public/avatars/ea5d7f41-6a81-41d5-b107-ce0314ed5bd6/80ccdc95-c473-4ff8-9420-f2060c755466.jpg"],"is_verified":true,"verified_at":"2026-11-03T14:45:24.984291+00:00","share_location":true,"date_now_until":null,"date_now_started_at":null,"quiet_mode":false,"paused_at":null,"hide_distance":false,"quiet_until":null,"quiet_started_at":null,"quiet_ended_at":null,"notify_prefs":{},"leave_reason":null,"can_create_rooms":true,"gender_other":[],"interested_other":[],"shown_answers":[]}
+GET 200 https://nhiqtgupncikobhbjhfs.supabase.co/rest/v1/notifications?select=*%2Cactor%3Apublic_profiles%21notifications_actor_id_fkey%28display_name%2Cavatar_url%29&order=created_at.desc&limit=100
+  BODY:
+  RESP:[{"id":487,"user_id":"ea5d7f41-6a81-41d5-b107-ce0314ed5bd6","kind":"streak","title":"הרצף שלך עומד להתאפס 🔥","body":"4 ימים ברצף. כנס/י היום כדי לשמור עליו","url":"/streak","actor_id":null,"dedupe_key":"streak-reminder:2026-11-14","created_at":"2026-11-14T17:00:00.080947+00:00","read_at":null,"pushed_at":"2026-11-14T17:00:00.089391+00:00","count":1,"push_result":"sent","actor":null}, 
+ {"id":359,"user_id":"ea5d7f41-6a81-41d5-b107-ce0314ed5bd6","kind":"profile_reminder","title":"הפרופיל שלך כמעט מוכן","body":"תמונה וכמה מילים עליך מכפילים את הסיכוי להתאמה","url":"/(tabs)/profile","actor_id":null,"dedupe_key":"profile_reminder","created_at":"2026-11-11T14:45:00.136693+00:00","read_at":null,"pushed_at":"2026-11-11T14:46:00.124813+00:00","count":1,"push_result":"off","actor":null}, 
+ {"id":330,"user_id":"ea5d7f41-6a81-41d5-b107-ce0314ed5bd6","kind":"message","title":"QA חופשי","body":"QA-A תודה על המתנה","url":"/chat/3971328f-e3e4-4a25-a297-8215ad39eae5","actor_id":"5a645751-1038-4a8c-9012-2ec2391c2cd6","dedupe_key":"msg:3971328f-e3e4-4a25-a297-8215ad39eae5","created_at":"2026-11-10T21:45:44.357147+00:00","read_at":"2026-11-10T21:45:44.842435+00:00","pushed_at":"2026-11-10T21:46:00.078078+00:00","count":1,"push_result":"off","actor":{"avatar_url": "https://nhiqtgupncikobhbjhfs.supabase.co/storage/v1/object/public/avatars/5a645751-1038-4a8c-9012-2ec2391c2cd6/dbda2a71-edd1-478e-85b5-1dc5cb07a901.jpg", "display_name": "QA חופשי"}}, 
+ {"id":327,"user_id":"ea5d7f41-6a81-41d5-b107-ce0
+POST 200 https://nhiqtgupncikobhbjhfs.supabase.co/rest/v1/rpc/discovery_quota
+  BODY:{}
+  RESP:{"limits": {"likes_per_day": 30, "date_now_hours": 1, "rewinds_per_day": 1, "boosts_per_month": 0, "date_now_per_week": 1, "rewinds_per_month": null, "super_likes_per_day": 1, "like_reveals_per_day": 1, "super_likes_per_month": null}, "credits": {"gift": 0}, "likes_used": 0, "boosts_used": 0, "rewinds_used": 0, "super_likes_used": 0, "boost_active_until": null}
+GET 200 https://nhiqtgupncikobhbjhfs.supabase.co/rest/v1/story_feed?select=*&order=created_at.asc
+  BODY:
+  RESP:[]
+POST 200 https://nhiqtgupncikobhbjhfs.supabase.co/rest/v1/rpc/discovery_feed
+  BODY:{"p_limit":20}
+  RESP:[]
+POST 200 https://nhiqtgupncikobhbjhfs.supabase.co/rest/v1/rpc/check_in
+  BODY:{}
+  RESP:{"lost": 0, "credits": {"gift": 0, "boost": 0, "rewind": 0, "super_like": 0}, "current": 6, "longest": 6, "restarted": false, "reward_every": 7, "next_reward_at": 7, "next_reward_in": 1, "rewards_claimed": 0, "checked_in_today": true, "rewards_available": 0}
+GET 200 https://nhiqtgupncikobhbjhfs.supabase.co/rest/v1/swipes?select=created_at&actor_id=eq.ea5d7f41-6a81-41d5-b107-ce0314ed5bd6&order=created_at.desc&limit=1
+  BODY:
+  RESP:[{"created_at":"2026-11-13T12:08:40.730696+00:00"}]

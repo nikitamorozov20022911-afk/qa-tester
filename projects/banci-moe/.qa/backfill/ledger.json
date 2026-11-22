@@ -1,0 +1,1296 @@
+[
+  {
+    "hash": "e9802dc6",
+    "title": "מסך «בית» — לא ניתן לגלול למטה…",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-07",
+    "cases": [
+      "tests/home/HOME-001.md"
+    ],
+    "spec": "specs/home.md",
+    "tests": [
+      "tests/home/home-scroll-to-end.spec.ts"
+    ],
+    "verified": "2026-10-07 iphone: green"
+  },
+  {
+    "hash": "8b11bf53",
+    "title": "מסך «מכשירים» — מוצגים גם מכשירים «לא מחובר»…",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-07",
+    "cases": [
+      "tests/devices/DEV-001.md"
+    ],
+    "spec": "specs/devices.md",
+    "tests": [
+      "tests/devices/devices-only-connected.spec.ts"
+    ],
+    "verified": "2026-10-07 iphone: green"
+  },
+  {
+    "hash": "22865e77",
+    "title": "פיתוח: עקרונות עיצוב והצעת מיתוג",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-07",
+    "cases": [
+      "tests/design-system/DS-001.md",
+      "tests/design-system/DS-002.md",
+      "tests/design-system/DS-003.md"
+    ],
+    "spec": "specs/design-system.md",
+    "tests": [
+      "tests/design-system/text-styles-line-height.spec.ts",
+      "tests/design-system/tap-targets-44.spec.ts",
+      "tests/design-system/red-palette-only-figma.spec.ts"
+    ],
+    "verified": "2026-10-07 iphone: green"
+  },
+  {
+    "hash": "840d8543",
+    "title": "פיתוח: הצגת פרסומות בשלבי הכנה והגדרה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-07",
+    "cases": [
+      "tests/ads/ADS-001.md",
+      "tests/ads/ADS-002.md"
+    ],
+    "spec": "specs/ads.md",
+    "tests": [
+      "tests/ads/banner-prep-and-summary.spec.ts",
+      "tests/ads/no-ads-monitoring-alarm.spec.ts",
+      "tests/ads/no-ads-failure-moved.spec.ts",
+      "tests/ads/no-ads-emergency.spec.ts"
+    ],
+    "verified": "2026-10-07 iphone: green"
+  },
+  {
+    "hash": "a5b844f5",
+    "title": "פיתוח: רכיב באנר פרסומת",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-07",
+    "cases": [
+      "tests/ads/ADS-001.md",
+      "tests/ads/ADS-002.md"
+    ],
+    "spec": "specs/ads.md",
+    "tests": [
+      "tests/ads/banner-prep-and-summary.spec.ts",
+      "tests/ads/no-ads-monitoring-alarm.spec.ts",
+      "tests/ads/no-ads-failure-moved.spec.ts",
+      "tests/ads/no-ads-emergency.spec.ts"
+    ],
+    "verified": "2026-10-07 iphone: green"
+  },
+  {
+    "hash": "e824b3d3",
+    "title": "פיתוח: פעולות חירום מתוך מסך ההתראה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-07",
+    "cases": [
+      "tests/emergency/EMG-001.md",
+      "tests/emergency/EMG-002.md"
+    ],
+    "spec": "specs/emergency.md",
+    "tests": [
+      "tests/emergency/alarm-actions-mda.spec.ts",
+      "tests/emergency/emergency-screen-topics.spec.ts"
+    ],
+    "verified": "2026-10-07 iphone: green"
+  },
+  {
+    "hash": "7be18ee9",
+    "title": "ניתן להירשם עם סיסמה באותיות שאינן לטיניות…",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-07",
+    "cases": [
+      "tests/auth/AUTH-001.md",
+      "tests/auth/AUTH-002.md"
+    ],
+    "spec": "specs/auth.md",
+    "tests": [
+      "tests/auth/empty-fields-validation.spec.ts"
+    ],
+    "verified": "2026-10-07 iphone: green",
+    "manual": "AUTH-001 (нелатинский пароль) — вручную: агент не вводит пароли"
+  },
+  {
+    "hash": "25e8f258",
+    "title": "פיתוח: סיום ניטור וסיכום",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-20",
+    "platform": "app-ios (Eitan, TestFlight 0.1.1 build 6, iPhone 17)",
+    "cases": [
+      "tests/summary/SUM-001.md",
+      "tests/summary/SUM-002.md",
+      "tests/summary/SUM-003.md",
+      "tests/summary/SUM-004.md",
+      "tests/summary/SUM-005.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [
+      ".qa/e2e-app/tests/summary/history-last-session-summary.test.mjs",
+      ".qa/e2e/tests/summary/summary-no-events-home.spec.ts",
+      ".qa/e2e/tests/summary/summary-two-alerts.spec.ts",
+      ".qa/e2e/tests/summary/summary-failure-history.spec.ts"
+    ],
+    "manual": "Живой итог сразу после «סיום ניטור» (запускает мониторинг) — вручную; клипы событий, завершение при выгрузке ОС — вручную",
+    "verified": "2026-10-21: записаны (нативные, Appium REST), не прогонялись; веб (.qa/e2e) — 2026-10-08 записаны генератором"
+  },
+  {
+    "hash": "7076cfab",
+    "title": "פיתוח: כיוון מצלמה וזיהוי שטח מים",
+    "class": "qa-passed-web",
+    "source": "qa",
+    "date": "2026-10-08",
+    "cases": [
+      "tests/monitoring/MON-001.md",
+      "tests/monitoring/MON-002.md",
+      "tests/monitoring/MON-004.md",
+      "tests/monitoring/MON-005.md"
+    ],
+    "spec": "specs/monitoring.md",
+    "tests": [
+      "tests/monitoring/camera-hints-blocked.spec.ts",
+      "tests/monitoring/camera-calm-continue.spec.ts",
+      "tests/monitoring/camera-manual-mark-unlock.spec.ts"
+    ],
+    "manual": "Натив: живая камера (AC1/AC2), автоопределение воды, реальный свет, акселерометр; MON-002 перетаскивание углов пальцем без прокрутки страницы — вручную на iPhone",
+    "verified": "2026-10-08: записаны генератором, не прогонялись"
+  },
+  {
+    "hash": "1273694f",
+    "title": "חיוג למד״א 101…",
+    "class": "qa-passed-web",
+    "source": "qa",
+    "date": "2026-10-08",
+    "cases": [
+      "tests/emergency/EMG-003.md",
+      "tests/emergency/EMG-004.md"
+    ],
+    "spec": "specs/emergency.md",
+    "tests": [
+      "tests/emergency/call-101-confirm.spec.ts",
+      "tests/emergency/call-101-error-message.spec.ts"
+    ],
+    "manual": "Натив: системное окно звонка iOS «Позвонить 101/Отменить», настоящий звонок, нативный Alert ошибки; EMG-004 — вручную, если сбой tel: в браузере не вызывается без изменения кода",
+    "verified": "2026-10-08: записаны генератором, не прогонялись"
+  },
+  {
+    "hash": "09b2de78",
+    "title": "מסך «בית» — ב«ניטורים אחרונים» לא מוצג הניטור האחרון שנקטע…",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-12",
+    "cases": [
+      "tests/home/HOME-001.md",
+      "tests/home/HOME-002.md",
+      "tests/home/HOME-003.md"
+    ],
+    "spec": "specs/home.md",
+    "tests": [
+      "tests/home/home-scroll-to-end.spec.ts",
+      "tests/home/recent-same-as-history.spec.ts",
+      "tests/home/recent-interrupted-2-failures-first.spec.ts"
+    ],
+    "manual": "Сверка с Figma 06.1 глазами; ⚠ wake lock в Safari (#3bf9dd7f) — в автотесте обход «בדיקה חוזרת»",
+    "verified": "2026-10-12: тесты написаны вручную (генератор недоступен); прогон iphone — 3/3 passed (recent-interrupted @data отдельно)"
+  },
+  {
+    "hash": "78e3149c",
+    "title": "פיתוח: היסטוריית ניטורים",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-12",
+    "cases": [
+      "tests/history/HIST-001.md",
+      "tests/history/HIST-002.md",
+      "tests/history/HIST-003.md",
+      "tests/history/HIST-004.md"
+    ],
+    "spec": "specs/history.md",
+    "tests": [
+      "tests/history/list-by-day-and-details.spec.ts",
+      "tests/history/loading-and-load-more.spec.ts",
+      "tests/history/empty-state-new4.spec.ts",
+      "tests/history/new-session-first-in-history-and-home.spec.ts"
+    ],
+    "manual": "Сверка с Figma 11.4/11.5 глазами; empty-state-new4 требует сессию .qa/auth/new4.json (qa-login new4)",
+    "verified": "2026-10-12: тесты написаны вручную (генератор недоступен); прогон iphone — 4/4 passed (new-session @data отдельно)"
+  },
+  {
+    "hash": "1c852837",
+    "title": "מסך «מכשירים»: אחרי שגיאת טעינה ולחיצה על «נסו שוב» המכשיר הראשי מוצג כ«הטלפון הזה עוד לא מחובר לחשבון»…",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-12",
+    "cases": [
+      "tests/devices/DEV-004.md",
+      "tests/devices/DEV-005.md",
+      "tests/devices/DEV-006.md"
+    ],
+    "spec": "specs/devices.md",
+    "tests": [
+      "tests/devices/error-retry-own-phone.spec.ts",
+      "tests/devices/delete-dialog-figma-05-4.spec.ts"
+    ],
+    "manual": "DEV-005 на главном устройстве Mac (профиль devA) — вручную; автотест покрывает устройство сессии user.json",
+    "verified": "2026-10-12: тесты написаны вручную; error-retry-own-phone (iphone) и delete-dialog-figma-05-4 (desktop) — passed; при обрыве сети ошибка появляется через ~50 с (приложение повторяет запрос)"
+  },
+  {
+    "hash": "fb3b8d53",
+    "title": "בניית ארכיטקטורת ניווט ורכיבי UI משותפים",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-12",
+    "cases": [
+      "tests/navigation/NAV-001.md",
+      "tests/navigation/NAV-002.md",
+      "tests/navigation/NAV-003.md",
+      "tests/navigation/NAV-004.md",
+      "tests/history/HIST-003.md"
+    ],
+    "spec": "specs/navigation.md",
+    "tests": [
+      "tests/navigation/tab-bar-single-active.spec.ts",
+      "tests/navigation/guest-welcome-redirects.spec.ts",
+      "tests/navigation/empty-children-new4.spec.ts",
+      "tests/navigation/logout-confirmation.spec.ts",
+      "tests/history/empty-state-new4.spec.ts"
+    ],
+    "manual": "Повторный вход после выхода (пароль) — вручную; empty-children-new4 требует сессию new4",
+    "verified": "2026-10-12: тесты написаны вручную; прогон iphone — 5/5 passed (logout @data отдельно, запрос выхода перехвачен 204)"
+  },
+  {
+    "hash": "ec8ab82d",
+    "title": "הקמת שכבת אימות והרשאות משתמשים (Authentication & Authorization)",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-12",
+    "cases": [
+      "tests/auth/AUTH-002.md",
+      "tests/auth/AUTH-003.md",
+      "tests/auth/AUTH-004.md",
+      "tests/auth/AUTH-005.md",
+      "tests/devices/DEV-004.md",
+      "tests/devices/DEV-007.md"
+    ],
+    "spec": "specs/auth.md",
+    "tests": [
+      "tests/auth/empty-fields-validation.spec.ts",
+      "tests/devices/delete-dialog-figma-05-4.spec.ts"
+    ],
+    "manual": "AUTH-003 (письмо с кодом, таймер 60 с), AUTH-004 (неверный/верный пароль), AUTH-005 (код из почты, новые пароли), DEV-007 (разблокировка паролем) — вручную; DEV-002/003 — нужны 2 устройства",
+    "verified": "2026-10-12: empty-fields-validation (iphone) и delete-dialog-figma-05-4 (desktop) — passed"
+  },
+  {
+    "hash": "3bf9dd7f",
+    "title": "בדיקת בטיחות (Safari): בכל פתיחה מוצגת אזהרה «הטלפון יישאר דלוק — לא הצלחנו להשאיר את המסך דלוק» ו«המשך» אפור",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-14",
+    "cases": [
+      "tests/monitoring/MON-009.md",
+      "tests/monitoring/MON-NATIVE-3bf9dd7f.md"
+    ],
+    "spec": "specs/monitoring.md",
+    "tests": [
+      "tests/monitoring/safety-check-wake-lock.spec.ts"
+    ],
+    "verified": "2026-10-14 iphone: green (2/2, repeat-each 2)",
+    "app_regression": "mandatory"
+  },
+  {
+    "hash": "92d9fdd3",
+    "title": "פרטי ניטור מההיסטוריה: בניטור עם כשל בכותרת «מה קרה» מוצג «בלי התרעות» במקום מספר האירועים",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-14",
+    "cases": [
+      "tests/history/HIST-005.md"
+    ],
+    "spec": "specs/history.md",
+    "tests": [
+      "tests/history/details-what-happened-event-count.spec.ts"
+    ],
+    "manual": "Сводка /monitor/summary сразу после сеанса с тревогами («7 אירועים») — вручную (автотест не создаёт сеансы)",
+    "verified": "2026-10-14 iphone: green 3/3 (со сбоем 6=6, спокойный 2=2, с тревогами 7=7)"
+  },
+  {
+    "hash": "0af24eb7",
+    "title": "מסך «מכשירים»: כשאין חיבור לרשת «טוען…» מוצג כ-55–60 שניות לפני הודעת השגיאה «משהו השתבש»",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-14",
+    "cases": [
+      "tests/devices/DEV-008.md"
+    ],
+    "spec": "specs/devices.md",
+    "tests": [
+      "tests/devices/offline-error-fast-retry.spec.ts"
+    ],
+    "manual": "Настоящий авиарежим (без веб-обхода) — вручную на телефоне/в приложении",
+    "verified": "2026-10-14 iphone: green 3/3 (ошибка ~9 с, список после «נסו שוב» < 1 с)"
+  },
+  {
+    "hash": "89b3e786",
+    "title": "מסך «היסטוריה»: מספר הניטורים בכותרת היום סופר רק את הרשומות שנטענו",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-14",
+    "cases": [
+      "tests/history/HIST-006.md",
+      "tests/history/HIST-002.md"
+    ],
+    "spec": "specs/history.md",
+    "tests": [
+      "tests/history/day-header-count-full-day.spec.ts"
+    ],
+    "verified": "2026-10-14 iphone: green 1/1 (все дни: число до/после догрузки равно, после полной загрузки = записям дня)"
+  },
+  {
+    "hash": "e41636dd",
+    "title": "נגישות: לתיבות סימון ולכפתורי בחירה חסר מצב מסומן/לא מסומן (aria-checked)",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-18",
+    "platform": "app-ios (TestFlight 0.1.0 build 3, iPhone 17)",
+    "cases": [
+      "tests/monitoring/MON-010.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [
+      ".qa/e2e-app/tests/accessibility/checkbox-checked-state.test.mjs"
+    ],
+    "manual": "VoiceOver на слух; английские «checkbox, checked» — находка вне тикета; веб aria-checked — без автотеста",
+    "verified": "2026-10-18: записаны (нативные, Appium REST), не прогонялись"
+  },
+  {
+    "hash": "1273694f",
+    "title": "חיוג למד״א 101: אם פתיחת החייגן נכשלת, אין הודעה למשתמש",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-18",
+    "platform": "app-ios (TestFlight 0.1.0 build 3, iPhone 17)",
+    "cases": [
+      "tests/emergency/EMG-005.md",
+      "tests/emergency/EMG-003.md",
+      "tests/emergency/EMG-004.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [
+      ".qa/e2e-app/tests/emergency/call-101-confirm-cancel.test.mjs"
+    ],
+    "manual": "Настоящий звонок 101 — только пользователь вручную; нативный Alert ошибки (EMG-004) — вручную. Веб-тесты — запись 2026-10-08 (specs/emergency.md)",
+    "verified": "2026-10-18: записаны (нативные, Appium REST), не прогонялись"
+  },
+  {
+    "hash": "f7167929",
+    "title": "האפליקציה מוצגת באנגלית ובכיווניות LTR כששפת המכשיר הראשונה היא אנגלית",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-18",
+    "platform": "app-ios (TestFlight 0.1.0 build 3, iPhone 17)",
+    "cases": [
+      "tests/i18n/I18N-001.md",
+      "tests/i18n/I18N-002.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [
+      ".qa/e2e-app/tests/rtl/hebrew-rtl-layout.test.mjs"
+    ],
+    "manual": "Смена языка iPhone (English/русский) — вручную перед прогоном; гостевые экраны и даты истории — вручную",
+    "verified": "2026-10-18: записаны (нативные, Appium REST), не прогонялись"
+  },
+  {
+    "hash": "c48aff34",
+    "title": "פיתוח: אינטגרציית פנייה לרכישה בוואטסאפ",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-18",
+    "platform": "app-ios (TestFlight 0.1.0 build 3, iPhone 17)",
+    "cases": [
+      "tests/shop/SHOP-004.md",
+      "tests/shop/SHOP-001.md",
+      "tests/shop/SHOP-002.md",
+      "tests/shop/SHOP-003.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [
+      ".qa/e2e-app/tests/shop/whatsapp-open-dialog.test.mjs"
+    ],
+    "manual": "Текст в чате WhatsApp — вручную (не отправлять); AC4 не проверяем (решение 2026-10-18)",
+    "verified": "2026-10-18: записаны (нативные, Appium REST), не прогонялись"
+  },
+  {
+    "hash": "8ff79b80",
+    "title": "פיתוח: אונבורדינג ראשוני ואישור דיסקליימר",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-18",
+    "platform": "app-ios (TestFlight 0.1.0 build 3, iPhone 17)",
+    "cases": [
+      "tests/onboarding/ONB-001.md"
+    ],
+    "spec": null,
+    "tests": [],
+    "manual": "Только вручную на новом аккаунте (регистрирует пользователь) — на существующем аккаунте онбординг не повторить; автотеста нет",
+    "verified": "2026-10-18: только ручная"
+  },
+  {
+    "hash": "3f4c7c1e",
+    "title": "מסך «צילום ילד לזיהוי»: כל פריים מתקבל כ«התמונה מוכנה» — גם פריים שחור לגמרי בלי פנים",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-20",
+    "platform": "app-ios (Eitan, TestFlight 0.1.1 build 6, iPhone 17)",
+    "cases": [
+      "tests/children/CHD-004.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [
+      ".qa/e2e-app/tests/children/photo-no-face-hint.test.mjs"
+    ],
+    "manual": "Лицо → «התמונה מוכנה», палец, чёрный кадр — вручную; автотест требует, чтобы в кадре не было лиц",
+    "verified": "2026-10-21: записаны (нативные, Appium REST), не прогонялись"
+  },
+  {
+    "hash": "39cbe3a7",
+    "title": "בקשות QA לבדיקת האפליקציה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-20",
+    "platform": "app-ios (Eitan, TestFlight 0.1.1 build 6, iPhone 17)",
+    "cases": [],
+    "spec": null,
+    "tests": [],
+    "manual": "Просьба программисту (включить распознавание, даты last_confirmed_at, чёрный кадр) — не автоматизируется; покрыто #f61490c5, #5ffe7018, #7076cfab",
+    "verified": "2026-10-20: только отметка"
+  },
+  {
+    "hash": "f61490c5",
+    "title": "אינטגרציה עם שירות זיהוי (CV)",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-20",
+    "platform": "app-ios (Eitan, TestFlight 0.1.1 build 6, iPhone 17)",
+    "cases": [
+      "tests/monitoring/MON-011.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [],
+    "manual": "Только при запущенном мониторинге (автотесты его не запускают): нет «הזיהוי עדיין לא פעיל», «fps · ms» (fps ≥ 5, ms < 150), рамки вокруг людей — вручную",
+    "verified": "2026-10-20: только ручная"
+  },
+  {
+    "hash": "50a86b6e",
+    "title": "פיתוח: התרעת סכנה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-20",
+    "platform": "app-ios (Eitan, TestFlight 0.1.1 build 6, iPhone 17)",
+    "cases": [
+      "tests/alerts/ALR-004.md",
+      "tests/alerts/ALR-001.md",
+      "tests/alerts/ALR-002.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [],
+    "manual": "Тревогу автоматом не вызвать — окно «זוהתה סכנה בבריכה», «זו אזעקת שווא» вручную; «חיוג למד״א 101» не нажимать никогда",
+    "verified": "2026-10-20: только ручная"
+  },
+  {
+    "hash": "5ffe7018",
+    "title": "פיתוח: תזכורת תקופתית לעדכון כרטיס ילד",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "platform": "app-ios (Eitan, TestFlight 0.1.1 build 6, iPhone 17)",
+    "cases": [
+      "tests/children/CHD-005.md",
+      "tests/children/CHD-001.md",
+      "tests/children/CHD-002.md",
+      "tests/children/CHD-003.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [
+      ".qa/e2e-app/tests/children/periodic-review-reminder.test.mjs"
+    ],
+    "manual": "Локальное уведомление в 10:00 и тап → карточка; «הפרטים עדיין נכונים» (меняет данные) — вручную",
+    "verified": "2026-10-21: записаны (нативные, Appium REST), не прогонялись"
+  },
+  {
+    "hash": "e2f5c7",
+    "id": "64586270b94cf19db5e2f5c7",
+    "title": "פיתוח: בדיקת בטיחות טרם ניטור",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-25",
+    "platform": "app-ios (Eitan, TestFlight 0.1.1 build 7, iPhone 17)",
+    "cases": [
+      "tests/monitoring/MON-012.md",
+      "tests/monitoring/MON-NATIVE-64586270.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [
+      ".qa/e2e-app/tests/monitoring/safety-volume-max-sound-check.test.mjs",
+      ".qa/e2e-app/tests/monitoring/safety-volume-low-warning.test.mjs"
+    ],
+    "manual": "Громкость выставляется вручную: 1.8 — при максимуме (иначе пропуск), 1.9 — с BANCI_VOLUME=0/low; звук на слух, мьют, 50–99% — вручную",
+    "verified": "2026-10-25: записаны (нативные, Appium REST), не прогонялись"
+  },
+  {
+    "hash": "2bc13b",
+    "id": "33b0a1db12a341e5b02bc13b",
+    "title": "בדיקת בטיחות: לחיצה על השורה «הרשאות מצלמה והתרעות» לא עושה כלום",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-25",
+    "platform": "app-ios (Eitan, TestFlight 0.1.1 build 7, iPhone 17)",
+    "cases": [
+      "tests/monitoring/MON-013.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [
+      ".qa/e2e-app/tests/monitoring/safety-permissions-row-ok.test.mjs",
+      ".qa/e2e-app/tests/monitoring/safety-permissions-row-opens-settings.test.mjs"
+    ],
+    "manual": "Разрешения iOS переключаются вручную: 1.11 — с BANCI_PERMISSION_OFF=notifications/camera; «בדיקה חוזרת» после возврата → ✓ — вручную",
+    "verified": "2026-10-25: записаны (нативные, Appium REST), не прогонялись"
+  },
+  {
+    "hash": "5a6377",
+    "id": "5390840559b7b1fb535a6377",
+    "title": "טקסטים חתוכים מלמעלה באפליקציה (ספרות והאות ל) — בית, היסטוריה, טיימר ניטור",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-25",
+    "platform": "app-ios (Eitan, TestFlight 0.1.1 build 7, iPhone 17)",
+    "cases": [
+      "tests/design-system/DS-004.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [],
+    "manual": "Визуальная проверка обрезки глифов — только вручную на каждой сборке (Appium не видит отрисованные глифы, скриншот-сравнение не делаем)",
+    "verified": "2026-10-25: только ручная"
+  },
+  {
+    "hash": "94e4f3",
+    "id": "5fa2020ab27702c83494e4f3",
+    "title": "בקשת לקוח: אתר הסבר על המערכת עם מעבר אליו מתוך האפליקציה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-25",
+    "platform": "app-ios (Eitan, TestFlight 0.1.1 build 7, iPhone 17)",
+    "cases": [
+      "tests/navigation/NAV-005.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [
+      ".qa/e2e-app/tests/navigation/about-from-account.test.mjs",
+      ".qa/e2e-app/tests/navigation/about-from-home-card.test.mjs"
+    ],
+    "web_spec": ".qa/e2e/specs/navigation.md (5.1) — тест tests/navigation/about-page-content.spec.ts ещё генерирует playwright-test-generator",
+    "manual": "Адрес в строке встроенного браузера, вид страницы /about и RTL, переход по «לתנאי השימוש המלאים» — вручную",
+    "verified": "2026-10-25: записаны (нативные, Appium REST), не прогонялись"
+  },
+  {
+    "hash": "0b59fe",
+    "id": "620738da54812c7ec70b59fe",
+    "title": "פיתוח: זיהוי כשל בניטור",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-25",
+    "platform": "app-ios (Eitan, TestFlight 0.1.1 build 7, iPhone 17)",
+    "cases": [
+      "tests/monitoring/MON-014.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [
+      ".qa/e2e-app/tests/monitoring/background-stopped-sheet.test.mjs"
+    ],
+    "manual": "Блокировка экрана, уведомление на экране блокировки со звуком, возврат < 2 с, авиарежим («לא במעקב»/«אין חיבור»/«החיבור נותק» → «תקין») — вручную; AC5 перегрев не проверялся",
+    "verified": "2026-10-25: записаны (нативные, Appium REST, только с BANCI_MONITORING=1), не прогонялись"
+  },
+  {
+    "hash": "3c3460",
+    "id": "90a850822102d99a5b3c3460",
+    "title": "פיתוח: ניטור רציף של אזור הבריכה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-25",
+    "platform": "app-ios (Eitan, TestFlight 0.1.1 build 7, iPhone 17)",
+    "cases": [
+      "tests/monitoring/MON-015.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [
+      ".qa/e2e-app/tests/monitoring/long-monitoring-no-crash.test.mjs"
+    ],
+    "manual": "Входящие звонки во время мониторинга (ответ+сброс, отклонение) — вручную",
+    "verified": "2026-10-25: записаны (нативные, Appium REST, только с BANCI_MONITORING=1), не прогонялись"
+  },
+  {
+    "hash": "a93d03",
+    "id": "20f854a157021afc77a93d03",
+    "title": "מסך «מנוי»: מוצגים יחד «תקופת הניסיון מסתיימת ב-14 באוק׳ 2026» ו«תקופת הניסיון הסתיימה», והסטטוס עדיין «תקופת ניסיון»",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-25",
+    "platform": "app-ios (Eitan, TestFlight 0.1.1 build 7, iPhone 17)",
+    "account": "user2",
+    "cases": [
+      "tests/subscription/SUB-001.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [
+      ".qa/e2e-app/tests/subscription/trial-ended-status.test.mjs"
+    ],
+    "manual": "Цвет точки статуса (серая), RTL экрана «מנוי» — вручную",
+    "verified": "2026-10-25: записан (нативный, Appium REST, только с BANCI_ACCOUNT=user2), не прогонялся"
+  },
+  {
+    "hash": "48f2b9",
+    "id": "3b546f53277e39c08e48f2b9",
+    "title": "פיתוח: התרעה למכשיר נוסף באותו מנוי",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-25",
+    "platform": "app-ios (Eitan, TestFlight 0.1.1 build 7, 2 iPhone)",
+    "account": "dadayo",
+    "cases": [
+      "tests/alerts/ALR-005.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [
+      ".qa/e2e-app/tests/alerts/test-alert-send.test.mjs",
+      ".qa/e2e-app/tests/alerts/second-device-receives-alerts.test.mjs"
+    ],
+    "manual": "Тревога на второй телефон, «ראיתי, אני בדרך» → «סיום ההתרעה» на главном, приход тестового уведомления на второй — вручную (ALR-005 шаги 3–6); звук на втором — реджект #e9ea54",
+    "verified": "2026-10-25: записаны (нативные, Appium REST), не прогонялись"
+  },
+  {
+    "hash": "f7bfca",
+    "id": "7076cfabd407a73341f7bfca",
+    "title": "פיתוח: כיוון מצלמה וזיהוי שטח מים",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-01",
+    "platform": "app-ios (Eitan, TestFlight 0.1.1 build 7 + OTA f0e1ea8/feb2d22, iPhone 17)",
+    "account": "dadayo",
+    "cases": [
+      "tests/monitoring/MON-016.md",
+      "tests/monitoring/MON-017.md",
+      "tests/monitoring/MON-018.md",
+      "tests/monitoring/MON-019.md",
+      "tests/monitoring/MON-020.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [
+      ".qa/e2e-app/tests/camera-aim/step2-opens.test.mjs",
+      ".qa/e2e-app/tests/camera-aim/water-checkbox-continue.test.mjs",
+      ".qa/e2e-app/tests/camera-aim/preview-full-width.test.mjs"
+    ],
+    "manual": "Палец на объективе (шаг 2 и «כיוון מחדש»), чёрный кадр / слабый свет «חשוך מדי…», точка у края «נראה שחלק מהמים בקצה התמונה…», сбой «התמונה לא ברורה» при пальце во время мониторинга — вручную (MON-017–MON-020); слабый свет 01.11 не проверен",
+    "note": "Тот же тикет, что запись 7076cfab (веб, qa-passed-web, 08.10) — эта запись про нативное приложение",
+    "verified": "2026-11-01: записаны (нативные, Appium REST), не прогонялись — телефон занят мониторингом"
+  },
+  {
+    "hash": "8d2595",
+    "id": "6db8a42548d0e3eb028d2595",
+    "title": "ניטור: כשל «המכשיר זז» מופיע כשהטלפון עומד בלי תנועה — זיהוי התזוזה רגיש מדי",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-01",
+    "platform": "app-ios (Eitan, TestFlight 0.1.1 build 7 + OTA d27bfb4, iPhone 17)",
+    "account": "dadayo",
+    "cases": [
+      "tests/monitoring/MON-021.md",
+      "tests/monitoring/MON-022.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [
+      ".qa/e2e-app/tests/monitoring/still-no-device-moved.test.mjs",
+      ".qa/e2e-app/tests/monitoring/moves-assist.test.mjs"
+    ],
+    "manual": "Сами сдвиги (поворот ×2, стол→пол ×2, наклон ×2), касания экрана и стук во время неподвижности — руками (MON-021 шаг 3, MON-022); проверки после сдвига — полуавтомат moves-assist (@manual-assist, BANCI_MANUAL_ASSIST=1). Ложные «זוהתה סכנה בבריכה» — #18bb68, в тестах только лог",
+    "note": "Открытый реджект rej_abb4c92d08d77356d9604dbd на момент записи не закрыт (по session.json)",
+    "verified": "2026-11-01: записаны (нативные, Appium REST), не прогонялись — телефон занят"
+  },
+  {
+    "hash": "e946f4",
+    "id": "aaa6ea1d51c8559744e946f4",
+    "title": "בקשת לקוח: מסך «כוונו את המצלמה לבריכה» — תצוגת המצלמה נמתחת לכל רוחב המסך, מקצה לקצה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-01",
+    "platform": "app-ios (Eitan, TestFlight 0.1.1 build 7 + OTA f0e1ea8/feb2d22, iPhone 17)",
+    "account": "dadayo",
+    "cases": [
+      "tests/monitoring/MON-016.md",
+      "tests/monitoring/MON-023.md",
+      "tests/monitoring/MON-024.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [
+      ".qa/e2e-app/tests/camera-aim/preview-full-width.test.mjs",
+      ".qa/e2e-app/tests/camera-aim/recal-preview-full-width-assist.test.mjs"
+    ],
+    "manual": "Угловые точки у края экрана не обрезаны (шаг 2 и «כוונו מחדש») — перетаскивание пальцем, вручную (MON-024); «כוונו מחדש» — полуавтомат @data @manual-assist (сдвиг телефона человеком)",
+    "verified": "2026-11-01: записаны (нативные, Appium REST), не прогонялись; preview-full-width общий с #f7bfca (план 1.21)"
+  },
+  {
+    "hash": "50a708",
+    "id": "d57754c5c2d6a6e6f750a708",
+    "title": "RTL באפליקציה (iOS): טקסטים מיושרים לשמאל במקום לימין ברוב המסכים — כותרות, שורות ברשימות, חלונות כשל וטפסים",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-01",
+    "platform": "app-ios (Eitan, TestFlight 0.1.1 build 7 + OTA 29.10, iPhone 17)",
+    "account": "dadayo",
+    "cases": [
+      "tests/i18n/I18N-003.md",
+      "tests/i18n/I18N-004.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [
+      ".qa/e2e-app/tests/rtl/rtl-text-alignment-tabs-support.test.mjs",
+      ".qa/e2e-app/tests/rtl/rtl-text-alignment-monitoring-setup.test.mjs"
+    ],
+    "manual": "RTL окна «המכשיר זז» и экрана мониторинга — нужен мониторинг и сдвиг телефона, вручную (I18N-004)",
+    "verified": "2026-11-01: записаны (нативные, Appium REST), не прогонялись; план 1.25–1.26; хелпер lib/banci.mjs assertRightAligned"
+  },
+  {
+    "hash": "39b1c8",
+    "id": "b40e081daa0bfc44f239b1c8",
+    "title": "בקשת לקוח: כפתור «תמיכה» בעמוד החשבון לשליחת פנייה (תקלה, שאלה או אחר)",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-01",
+    "platform": "app-ios (Eitan, TestFlight 0.1.1 build 7 + OTA, iPhone 17) + Android (Pixel)",
+    "account": "dadayo",
+    "cases": [
+      "tests/support/SUP-001.md",
+      "tests/support/SUP-002.md",
+      "tests/i18n/I18N-003.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [
+      ".qa/e2e-app/tests/support/support-form-texts-topics.test.mjs",
+      ".qa/e2e-app/tests/support/support-send-request.test.mjs",
+      ".qa/e2e-app/tests/rtl/rtl-text-alignment-tabs-support.test.mjs"
+    ],
+    "manual": "Приход письма на почту поддержки — проверяет человек (SUP-002 шаг 5); отправка — только @data с BANCI_SUPPORT_SEND=1",
+    "verified": "2026-11-01: записаны (нативные, Appium REST), не прогонялись; план 1.27–1.28; RTL формы — уже был 1.25 (#50a708)"
+  },
+  {
+    "hash": "af53b1",
+    "id": "a08d66b7dcedbf368baf53b1",
+    "title": "היסטוריה: ניטור שנקטע מוצג כ«17:13 שעות ניטור» — סוף הניטור נרשם רק כשפותחים שוב את האפליקציה למחרת",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-01",
+    "platform": "app-ios (Eitan, TestFlight 0.1.1 build 7 + OTA, iPhone 17)",
+    "account": "dadayo",
+    "cases": [
+      "tests/history/HIST-007.md",
+      "tests/history/HIST-008.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [
+      ".qa/e2e-app/tests/history/interrupted-session-end-time.test.mjs"
+    ],
+    "manual": "Старый сеанс 20.10 16:56 после миграции («8 דק׳ ניטור», «16:56–17:04») — данные аккаунта dadayo, вручную (HIST-008); автотест — только @data с BANCI_MONITORING=1",
+    "verified": "2026-11-01: записан (нативный, Appium REST), не прогонялся; план 1.29"
+  },
+  {
+    "hash": "7b5462",
+    "id": "ee3c3feee3b824231a7b5462",
+    "title": "היסטוריית אירועים בניטור: בניתוק אינטרנט «המצלמה הפסיקה לפעול» ו«הניטור חזר לפעול» נרשמים שוב ושוב כל ~8 שניות (וכפול אחרי נעילה/רקע)",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-01",
+    "platform": "app-ios (Eitan, TestFlight 0.1.1 build 7 + OTA, iPhone 17)",
+    "account": "dadayo",
+    "cases": [
+      "tests/monitoring/MON-025.md",
+      "tests/monitoring/MON-026.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [
+      ".qa/e2e-app/tests/monitoring/background-single-resume-event.test.mjs",
+      ".qa/e2e-app/tests/monitoring/airplane-mode-events-assist.test.mjs"
+    ],
+    "manual": "Авиарежим через Пункт управления включает человек (MON-026); полуавтомат 1.31 — только с BANCI_MONITORING=1 и BANCI_MANUAL_ASSIST=1; фон — @data с BANCI_MONITORING=1",
+    "verified": "2026-11-01: записаны (нативные, Appium REST), не прогонялись; план 1.30–1.31"
+  },
+  {
+    "hash": "e1b6f2",
+    "id": "03a08004b0b4cf8190e1b6f2",
+    "title": "«הוספת טלפון»: סריקת קוד ה-QR במצלמת הטלפון פותחת את האתר ולא את האפליקציה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-01",
+    "platform": "app-ios (Eitan, TestFlight 0.1.1 build 7, iPhone 17 + iPhone 17 Pro tania)",
+    "account": "dadayo",
+    "cases": [
+      "tests/devices/DEV-009.md",
+      "tests/devices/DEV-010.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [
+      ".qa/e2e-app/tests/devices/add-phone-sheet.test.mjs",
+      ".qa/e2e-app/tests/devices/add-phone-copy-link.test.mjs"
+    ],
+    "manual": "Скан QR вторым iPhone (2 телефона) — DEV-010 вручную, с проверкой «התרעות בטלפון הזה» по находке #096cf616",
+    "related": [
+      "#096cf616"
+    ],
+    "verified": "2026-11-01: записаны (нативные, Appium REST), не прогонялись; план 1.32–1.33"
+  },
+  {
+    "hash": "272dc6",
+    "id": "f4a32ae246d20e463c272dc6",
+    "title": "בקשת לקוח: הסרת טלפון מהחשבון = יציאה מהחשבון בטלפון הזה; חזרה רק דרך QR מהטלפון הראשי",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-03",
+    "platform": "app-ios (Eitan 0.1.1 build 7 + OTA, iPhone 17 главный) + app-android (Pixel 6 дополнительный)",
+    "account": "dadayo",
+    "cases": [
+      "tests/devices/DEV-011.md",
+      "tests/devices/DEV-012.md",
+      "tests/devices/DEV-013.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [
+      ".qa/e2e-app/tests/devices/remove-phone-confirm-cancel.test.mjs",
+      ".qa/e2e-app/tests/devices/remove-and-rejoin-assist.test.mjs"
+    ],
+    "manual": "Шаги на втором телефоне (выход на «כניסה», отказ входа паролем, скан QR) — человек в полуавтомате 1.36 (BANCI_MANUAL_ASSIST=1, BANCI_REMOVE_PHONE=1); права и самоудаление дополнительного (Android) — DEV-013 вручную. Мониторинг/тревога во время удаления, iOS-второй — не проверялись",
+    "related": [
+      "#83f7f9",
+      "#e1b6f2",
+      "#ec8ab82d"
+    ],
+    "verified": "2026-11-03: записаны (нативные, Appium REST), не прогонялись; план 1.34, 1.36; DEV-004 и DEV-007 помечены устаревшими"
+  },
+  {
+    "hash": "83f7f9",
+    "id": "096cf61681f0a3ba4683f7f9",
+    "title": "טלפון שמתחבר ב-QR לא מבקש הרשאת התראות",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-03",
+    "platform": "app-ios (Eitan 0.1.1 build 7 + OTA, iPhone 17 главный) + app-android (Pixel 6, Android 17, второй по QR)",
+    "account": "dadayo",
+    "cases": [
+      "tests/devices/DEV-014.md",
+      "tests/devices/DEV-015.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "tests": [
+      ".qa/e2e-app/tests/devices/second-phone-alert-status-test-send.test.mjs",
+      ".qa/e2e-app/tests/devices/remove-and-rejoin-assist.test.mjs"
+    ],
+    "manual": "Системный запрос уведомлений, Allow/Don't allow, тумблер «התרעות בטלפון הזה», настройки ОС, приход уведомления со звуком/вибрацией — на втором телефоне вручную (DEV-014, DEV-015); на главном — 1.35. iOS-вход по QR не проверялся",
+    "related": [
+      "#096cf616",
+      "#272dc6",
+      "#48f2b9",
+      "#e1b6f2"
+    ],
+    "verified": "2026-11-03: записаны (нативные, Appium REST), не прогонялись; план 1.35, 1.36"
+  },
+  {
+    "hash": "89216b",
+    "id": "2c85fc1d2e36dab88b89216b",
+    "title": "בדיקה: מסך «חוקי זיהוי» לאיש המקצוע",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-03",
+    "platform": "web (https://banci.expo.app, desktop 1440 + 390 px)",
+    "account": "expert (jleprog34@gmail.com), user2, guest",
+    "cases": [
+      "tests/expert/EXP-001.md",
+      "tests/expert/EXP-002.md",
+      "tests/expert/EXP-003.md",
+      "tests/expert/EXP-004.md",
+      "tests/expert/EXP-005.md",
+      "tests/expert/EXP-006.md",
+      "tests/expert/EXP-007.md"
+    ],
+    "spec": ".qa/e2e/specs/expert.md",
+    "tests": [
+      ".qa/e2e/tests/expert/parent-no-expert-access.spec.ts",
+      ".qa/e2e/tests/expert/guest-expert-redirect.spec.ts",
+      ".qa/e2e/tests/expert/expert-row-and-screen.spec.ts",
+      ".qa/e2e/tests/expert/expert-rtl-no-clipping.spec.ts",
+      ".qa/e2e/tests/expert/out-of-range-not-saved.spec.ts",
+      ".qa/e2e/tests/expert/no-explanation-message.spec.ts",
+      ".qa/e2e/tests/expert/alarm-mode-warning.spec.ts"
+    ],
+    "manual": "EXP-007 (AC7–AC8: сохранение, окно «לשמור את החוקים?», «החוקים נשמרו», «גרסאות קודמות») — только вручную, сохранение действует на все семьи; «0,1» — открытый баг #1b17df",
+    "related": [
+      "#a1f74f",
+      "#18bb68",
+      "#1b17df"
+    ],
+    "verified": "2026-11-03: записаны вручную (запасной путь), не прогонялись; запись правил заблокирована page.route, save_danger_thresholds = 0; план 1.1–3.3"
+  },
+  {
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-03",
+    "platform": "app iOS (iPhone 17, Eitan build 7 + OTA 02.11); Android не проверялся — блокер #f01e3b",
+    "account": "dadayo",
+    "spec": ".qa/e2e-app/specs/app.md",
+    "verified": "2026-11-03: записаны (Appium, .qa/e2e-app), не прогонялись",
+    "hash": "4a869b",
+    "title": "בקשת לקוח: בדיקת בטיחות — אפשר להתחיל ניטור עם טלפון אחד בלבד",
+    "cases": [
+      "tests/monitoring/MON-027.md"
+    ],
+    "tests": [
+      ".qa/e2e-app/tests/monitoring/safety-one-phone-warning.test.mjs",
+      ".qa/e2e-app/tests/monitoring/one-phone-start-monitoring.test.mjs"
+    ],
+    "plan_items": "1.37–1.38",
+    "manual": "удаление/возврат второго телефона — ручное предусловие (BANCI_ONE_PHONE=1)"
+  },
+  {
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-03",
+    "platform": "app iOS (iPhone 17, Eitan build 7 + OTA 02.11); Android не проверялся — блокер #f01e3b",
+    "account": "dadayo",
+    "spec": ".qa/e2e-app/specs/app.md",
+    "verified": "2026-11-03: записаны (Appium, .qa/e2e-app), не прогонялись",
+    "hash": "e1e168",
+    "id": "1a82ca61a45ba19d4ee1e168",
+    "title": "בקשת לקוח: מסך הניטור — תצוגת המצלמה נמתחת לכל רוחב המסך",
+    "cases": [
+      "tests/monitoring/MON-028.md"
+    ],
+    "tests": [
+      ".qa/e2e-app/tests/monitoring/monitoring-preview-full-width.test.mjs"
+    ],
+    "plan_items": "1.39",
+    "manual": "окно тревоги во всю ширину — MON-028 шаг 4",
+    "related": [
+      "#e946f4"
+    ]
+  },
+  {
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-03",
+    "platform": "app iOS (iPhone 17, Eitan build 7 + OTA 02.11); Android не проверялся — блокер #f01e3b",
+    "account": "dadayo",
+    "spec": ".qa/e2e-app/specs/app.md",
+    "verified": "2026-11-03: записаны (Appium, .qa/e2e-app), не прогонялись",
+    "hash": "8dc640",
+    "id": "998d9f995ed6bd8bae8dc640",
+    "title": "כיוון מצלמה: זיהוי אוטומטי של מי הבריכה בנוסף לסימון הידני",
+    "cases": [
+      "tests/camera-aim/CAM-001.md",
+      "tests/camera-aim/CAM-002.md"
+    ],
+    "tests": [
+      ".qa/e2e-app/tests/camera-aim/water-auto-detect.test.mjs",
+      ".qa/e2e-app/tests/camera-aim/no-water-blocks-continue.test.mjs"
+    ],
+    "plan_items": "1.40–1.41",
+    "manual": "сцена вручную (BANCI_SCENE=water|no-water, медиа .qa/media/empty-pool-side.mp4, table-brown.png); красная зона — визуально"
+  },
+  {
+    "id": "ae0f7339fe0b32d82cdfe620",
+    "hash": "#dfe620",
+    "class": "qa-passed",
+    "source": "qa",
+    "tests": [],
+    "note": "автотесты не нужны — решение пользователя 08.11"
+  },
+  {
+    "id": "952c26be6f9aff4d9ce653a0",
+    "hash": "#e653a0",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-08",
+    "title": "«יצירת חשבון»: שם הנגישות של הכפתור «המשך עם Apple» הוא «מתחברים…» (VoiceOver)",
+    "platform": "app iOS (iPhone 14 Pro, Eitan build 7 + OTA 21d8d5de); веб-автотест — Expo web, iPhone-эмуляция",
+    "account": "guest",
+    "spec": ".qa/e2e/specs/auth.md",
+    "plan_items": "2.1",
+    "cases": [
+      "tests/auth/AUTH-006.md"
+    ],
+    "tests": [
+      ".qa/e2e/tests/auth/social-buttons-accessible-name.spec.ts"
+    ],
+    "verified": "2026-11-08: прогон 1 раз — 2 passed (iphone)",
+    "manual": "нажатие Apple/Google и отмена окна провайдера (busy «מתחברים…» → «המשך עם …») — только вручную в приложении"
+  },
+  {
+    "id": "de6a81464d4565f2c62d7c16",
+    "hash": "#2d7c16",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-08",
+    "tests": [],
+    "note": "мокап Figma — автотест не применим"
+  },
+  {
+    "id": "b0b545614b1f28457d3e0ffa",
+    "hash": "#3e0ffa",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-08",
+    "tests": [],
+    "note": "мокап Figma — автотест не применим"
+  },
+  {
+    "id": "2cbd4070cec842d68a410774",
+    "hash": "#410774",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-08",
+    "tests": [],
+    "note": "мокап Figma — автотест не применим"
+  },
+  {
+    "id": "610dc3a7afa0278fe14a5273",
+    "hash": "#4a5273",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-08",
+    "tests": [],
+    "note": "мокап Figma — автотест не применим"
+  },
+  {
+    "id": "7137b4e5b68acf859e0f64f4",
+    "hash": "#0f64f4",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-08",
+    "tests": [],
+    "note": "мокап Figma — автотест не применим"
+  },
+  {
+    "id": "4ecc48dc397379d98ca26e53",
+    "hash": "#a26e53",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-08",
+    "tests": [],
+    "note": "мокап Figma — автотест не применим"
+  },
+  {
+    "hash": "56611b",
+    "id": "84a6e3d6761175363156611b",
+    "title": "Android: כשל בניטור «הטלפון התחמם» כבר אחרי ~3 דקות ניטור, בסוללה ~37°C (מצב תרמי MODERATE)",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-08",
+    "platform": "app Android (Pixel 6, Eitan versionCode 10 + OTA 0.1.1, override-status по adb); веб-автотест — Expo web, мок warm/hot, Android-эмуляция",
+    "account": "dadayo (приложение); веб-прогон — new1",
+    "cases": [
+      "tests/monitoring/MON-029.md"
+    ],
+    "spec": ".qa/e2e/specs/monitoring.md",
+    "plan_items": "3.1–3.2",
+    "tests": [
+      ".qa/e2e/tests/monitoring/thermal-warm-banner-no-failure.spec.ts",
+      ".qa/e2e/tests/monitoring/thermal-hot-overheated-failure.spec.ts"
+    ],
+    "verified": "2026-11-08: прогон 1 раз — passed (QA_MON_AUTH=new1, --workers=1; user.json протух — для регресса обновить сессию user): 2 passed (android)",
+    "manual": "реальный нагрев на зарядке (нет ложного сбоя) и adb override-status MODERATE/SEVERE + reset — только вручную на устройстве (MON-029)"
+  },
+  {
+    "hash": "15ae4b",
+    "id": "8991a7fb9ab8c4d6d915ae4b",
+    "title": "ניטור: כשלים לא מזוהים — מצלמה מכוסה באצבע 20 שניות ותזוזת טלפון (חצי בריכה מחוץ לפריים) נשארים «תקין»",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-08",
+    "platform": "app iOS (iPhone 17, Eitan build 7 + OTA 578d6c7); Pixel не проверялся (решение пользователя); веб-автотест — Expo web, мок outOfFrame, iPhone-эмуляция",
+    "account": "dadayo (приложение); веб-прогон — new1",
+    "cases": [
+      "tests/monitoring/MON-030.md",
+      "tests/monitoring/MON-031.md"
+    ],
+    "spec": ".qa/e2e/specs/monitoring.md",
+    "plan_items": "3.3",
+    "tests": [
+      ".qa/e2e/tests/monitoring/pool-cut-not-tracked-auto-return.spec.ts"
+    ],
+    "verified": "2026-11-08: прогон 1 раз — passed (QA_MON_AUTH=new1, --workers=1; user.json протух — для регресса обновить сессию user): 1 passed (iphone)",
+    "manual": "«המצלמה מוסתרת» (палец на объективе, в моке сценария нет) — только вручную на устройстве (MON-030); реальный поворот телефона, порог 60/80% — только вручную на устройстве (MON-031); автотест проверяет лишь окно/тексты и авто-возврат по мок-сигналу"
+  },
+  {
+    "hash": "e9ea54",
+    "id": "ea49d956d373ae485ce9ea54",
+    "title": "אינטגרציה עם שירות שליחת התראות Push בין מכשירים",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-08",
+    "platform": "app: Pixel 6 (отправитель) → iPhone 17 (приёмник, заблокирован)",
+    "account": "dadayo",
+    "cases": [
+      "tests/alerts/ALR-006.md"
+    ],
+    "tests": [],
+    "manual": "только вручную на устройстве: push, звук и вибрация между реальными телефонами в вебе (Expo web, Playwright) не воспроизводятся; автотест не писался"
+  },
+  {
+    "hash": "58001d",
+    "id": "541adbf1d1ce76397d58001d",
+    "title": "«חוקי זיהוי» (iPhone): אין פסיק במקלדת",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-17",
+    "platform": "app iOS (iPhone 17, Eitan 0.1.1 (7) + OTA)",
+    "account": "jleprog34 (эксперт)",
+    "cases": [
+      "tests/expert/EXP-008.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "plan_items": "1.42",
+    "tests": [
+      ".qa/e2e-app/tests/expert/decimal-comma-keyboard.test.mjs"
+    ],
+    "verified": "2026-11-17: записан (нативный, Appium REST), не прогонялся; селекторы полей по подписи не сверены на устройстве",
+    "manual": "Android (не менялось) и набор клавиш при другом языке/регионе iPhone — вручную; тест правила не сохраняет"
+  },
+  {
+    "hash": "7581cb",
+    "id": "5815e9e00c228ac0657581cb",
+    "title": "«חוקי זיהוי» (RTL): «מה נקבע ולמה» и «גרסאות קודמות»",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-17",
+    "platform": "app iOS (iPhone 17, Eitan 0.1.1 (7) + OTA)",
+    "account": "jleprog34 (эксперт)",
+    "cases": [
+      "tests/expert/EXP-009.md",
+      "tests/expert/EXP-010.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "plan_items": "1.43, 1.44, 1.45",
+    "tests": [
+      ".qa/e2e-app/tests/expert/rtl-explanation-field.test.mjs",
+      ".qa/e2e-app/tests/expert/rtl-versions-history.test.mjs",
+      ".qa/e2e-app/tests/expert/rtl-save-version-same-values.test.mjs"
+    ],
+    "verified": "2026-11-17: записаны (нативные, Appium REST), не прогонялись; RTL — по пикселям скриншота (lib/pixels.mjs), не сверено на устройстве",
+    "manual": "Порядок слов внутри строки («QA 15.11» правее «בדיקה») — глазами по скриншоту; Android — вручную. ВНИМАНИЕ: тест 1.45 (@data, BANCI_RULES_SAVE=1) СОХРАНЯЕТ версию правил с теми же значениями — единственный, остальные правила не сохраняют"
+  },
+  {
+    "hash": "8edb6e",
+    "title": "Android: בדיקת בטיחות במצב רטט",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-17",
+    "platform": "app Android (Pixel 6 по кабелю, Eitan com.eitan.poolsafety 0.1.1 (10) + OTA)",
+    "account": "dadayo (user)",
+    "cases": [
+      "tests/monitoring/MON-032.md",
+      "tests/monitoring/MON-033.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "plan_items": "1.46, 1.47, 1.48",
+    "tests": [
+      ".qa/e2e-app/android/tests/safety-vibrate-low-volume-hint.test.mjs",
+      ".qa/e2e-app/android/tests/safety-vibrate-max-volume-asks-sound-check.test.mjs",
+      ".qa/e2e-app/android/tests/safety-silent-sound-check-passes.test.mjs"
+    ],
+    "verified": "2026-11-17: записаны (Android, adb + uiautomator dump, раннер run-android.mjs), не прогонялись; селекторы и enabled у «המשך» по uiautomator не сверены на устройстве",
+    "manual": "Сирена в беззвучном/вибрации на слух (MON-033 шаг 4); точный текст «הטלפון במצב רטט — …» из следующей сборки Android не проверялся. Тест 1.48 ГРОМКИЙ — только с BANCI_SOUND=1"
+  },
+  {
+    "hash": "ab4270",
+    "title": "Android: בשלב «כוונו את המצלמה לבריכה» שטח בלי מים מתקבל",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-17",
+    "platform": "app Android (Pixel 6 по кабелю, Eitan com.eitan.poolsafety 0.1.1 (10) + OTA c38476a1) + iPhone 17 (com.julius.banci 0.1.1 (7) + OTA)",
+    "account": "dadayo (user)",
+    "cases": [
+      "tests/camera-aim/CAM-003.md",
+      "tests/camera-aim/CAM-004.md",
+      "tests/camera-aim/CAM-005.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "plan_items": "1.49, 1.50, 1.51, 1.52, 1.53, 1.54",
+    "tests": [
+      ".qa/e2e-app/tests/camera-aim/no-pool-confirm-checkbox.test.mjs",
+      ".qa/e2e-app/tests/camera-aim/pale-pool-water-continue.test.mjs",
+      ".qa/e2e-app/tests/camera-aim/no-water-light-blocks-continue.test.mjs",
+      ".qa/e2e-app/android/tests/step2-no-pool-confirm-checkbox.test.mjs",
+      ".qa/e2e-app/android/tests/step2-pale-pool-water-continue.test.mjs",
+      ".qa/e2e-app/android/tests/step2-no-water-light-blocks-continue.test.mjs"
+    ],
+    "verified": "2026-11-17: записаны (iOS Appium + Android adb/uiautomator), не прогонялись; селекторы Android (текст/clickable/checked чекбокса, свайп по заголовку) по uiautomator не сверены на устройстве",
+    "manual": "Цвет точек (зелёные/красные), рамка и смена сцены стол → видео → стол — глазами по скриншоту. Тесты 1.50–1.51, 1.53–1.54 требуют физической сцены перед камерой (видео girl-swimming-oblique.mp4 / картинка на весь экран Mac, бумага, клавиатура) и BANCI_SCENE, иначе пропуск; Android шаг 1 может просить громкий звук → BANCI_SOUND=1. Слабость правила (решение 08.11, находка): насыщенно-циановая поверхность может пройти",
+    "related": [
+      "8dc640"
+    ]
+  },
+  {
+    "hash": "8b8e4f",
+    "title": "בקשת לקוח: שיחת טלפון נכנסת באמצע ניטור — הניטור ממשיך, והמערכת בודקת שהכול תקין",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-17",
+    "platform": "app iOS (iPhone 17 камера, Eitan com.julius.banci 0.1.1 (7) + OTA) + Android (Pixel 6 приёмник, com.eitan.poolsafety vc10 + OTA)",
+    "account": "dadayo (user)",
+    "cases": [
+      "tests/monitoring/MON-034.md",
+      "tests/monitoring/MON-035.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "plan_items": "1.55",
+    "tests": [
+      ".qa/e2e-app/tests/monitoring/call-interrupt-second-phone-header.test.mjs"
+    ],
+    "verified": "2026-11-17: записан (iOS Appium + Pixel по adb через lib/second-phone.mjs), не прогонялся; селекторы заголовка «הבריכה לא במעקב»/«הניטור פעיל» на Pixel (uiautomator, exact) не сверены на устройстве; фон 45 с имитирует звонок",
+    "manual": "Сам звонок (обычный, WhatsApp, ответ на весь экран / баннер / AirPods, отклонение) — MON-034, звонит человек; push на Pixel, цвет и вёрстка заголовка (кадра Figma нет); Android как камера и Bluetooth-гарнитура не проверялись",
+    "related": [
+      "7f31a2"
+    ]
+  },
+  {
+    "hash": "7f31a2",
+    "title": "«בית» בטלפון השני: «ניטורים אחרונים» לא מתעדכן — מוצג ניטור ישן",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-17",
+    "platform": "app iOS (iPhone 17 камера) + Android (Pixel 6 приёмник, com.eitan.poolsafety vc10 + OTA)",
+    "account": "dadayo (user)",
+    "cases": [
+      "tests/monitoring/MON-036.md"
+    ],
+    "spec": ".qa/e2e-app/specs/app.md",
+    "plan_items": "1.56, 1.57, 1.58, 1.59",
+    "tests": [
+      ".qa/e2e-app/tests/monitoring/recent-monitorings-second-phone.test.mjs",
+      ".qa/e2e-app/tests/monitoring/recent-monitorings-second-phone-other-tab.test.mjs",
+      ".qa/e2e-app/tests/monitoring/recent-monitorings-second-phone-after-background.test.mjs",
+      ".qa/e2e-app/android/tests/home-recent-monitorings-after-background.test.mjs"
+    ],
+    "verified": "2026-11-17: записаны (iOS Appium + Pixel по adb; Android пассивный через adb/uiautomator), не прогонялись; строки списка узнаются по шаблону «hh:mm · …», селекторы вкладок Pixel («ילדים»/«בית») не сверены на устройстве",
+    "manual": "Убить Banci на iPhone во время мониторинга → прерванный сеанс на Pixel сам (MON-036 шаг 5); направление камера Pixel → приёмник iPhone; «היסטוריה» на втором телефоне. Срок ~10 с — ориентир программиста, тест допускает 15 с (BANCI_RECENT_SEC)",
+    "related": [
+      "8b8e4f",
+      "09b2de78",
+      "78e3149c"
+    ]
+  }
+]

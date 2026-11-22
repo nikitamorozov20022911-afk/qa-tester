@@ -1,0 +1,605 @@
+{
+  "project": "hunters",
+  "date": "2026-11-02",
+  "environment": "https://hunters-sooty.vercel.app",
+  "queue": [
+    "#b06506",
+    "#412b53",
+    "#c1b861",
+    "#e6252d",
+    "#29f76e",
+    "#1866b8",
+    "#1f12f6",
+    "#730ae5",
+    "#f44114",
+    "#2f48c9",
+    "#888970",
+    "#f2c5ce",
+    "#5fc833",
+    "#889f5b",
+    "#dcde2e",
+    "#da29dd",
+    "#d81753",
+    "#41dc55",
+    "#d4f6e7"
+  ],
+  "tickets": [
+    {
+      "hash": "#da29dd",
+      "title": "/faq is closed to guests – redirects to the login page",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "role": "guest",
+      "devices": [
+        "desktop"
+      ],
+      "feature": "faq",
+      "runs": 2,
+      "time": "2026-11-02",
+      "notes": "200 на /faq,/en,/ru,/ar без редиректа; вкладки 15/3/2 как у залогиненного; ссылка подвала /faq. Повтор curl ✅"
+    },
+    {
+      "hash": "#b06506",
+      "title": "Admin › Reports & messages: long messages are clamped to 4 lines with «להמשך קריאה»",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "role": "admin",
+      "devices": [
+        "desktop",
+        "375"
+      ],
+      "feature": "admin-reports",
+      "runs": 2,
+      "time": "2026-11-02",
+      "notes": "R-14/R-20 84px=4x21, 5-я строка 0px, he/en 1440/375; ссылки работают; R-13 без ссылки. צ׳אטים מדווחים: в форме жалобы нет текста — нечего обрезать (находка)"
+    },
+    {
+      "hash": "#730ae5",
+      "title": "Payment window: Cardcom card number and CVV fields have no visible focus",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "role": "hunter_free_2",
+      "devices": [
+        "desktop"
+      ],
+      "feature": "payment-window-cardcom",
+      "runs": 2,
+      "time": "2026-11-02",
+      "notes": "click/Tab → inset 1px rgb(0,173,187), как outline у קוד קופון; blur убирает; .invalid !important после :focus"
+    },
+    {
+      "hash": "#1f12f6",
+      "title": "Manual plan grant sends no notification – the old «PLUS הסתיים, עברתם ל-FREE» contradicts the active PLUS",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "role": "admin+hunter_free",
+      "devices": [
+        "desktop"
+      ],
+      "feature": "admin-manual-plan",
+      "runs": 2,
+      "time": "2026-11-02",
+      "notes": "уведомление he/en/ru/ar, дата поля=текст (05.11 и 30.11), повторное сохранение без 2-го уведомления"
+    },
+    {
+      "hash": "#f44114",
+      "title": "Opening a job with ?questions=<id> throws \"Minified React error #419\"",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "role": "talent",
+      "devices": [
+        "desktop"
+      ],
+      "feature": "job-owner-questions",
+      "runs": 2,
+      "time": "2026-11-02",
+      "notes": "0 ошибок 3/3+3/3, /en, колокольчик; модалка открывается"
+    },
+    {
+      "hash": "#2f48c9",
+      "title": "Job of a company: FREE talent sees «פרטי הד האנטר המשרה זמינים למנויי PRO»",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "role": "talent_2",
+      "devices": [
+        "desktop"
+      ],
+      "feature": "job-pro-lock",
+      "runs": 2,
+      "time": "2026-11-02",
+      "notes": "J-49 «פרטי החברה…», J-40 «פרטי ההד האנטר של המשרה…», he/en/ru/ar"
+    },
+    {
+      "hash": "#888970",
+      "title": "Job questions window: inconsistent «ממתין/ממתינה», hints still offer to apply after applying, no \"sending\" feedback",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "role": "talent+talent_2",
+      "devices": [
+        "desktop"
+      ],
+      "feature": "job-owner-questions",
+      "runs": 2,
+      "time": "2026-11-02",
+      "notes": "ממתינה לתשובה везде; подсказки без подачи после подачи, с подачей до; שולח/ת… spinner aria-busy 2/2"
+    },
+    {
+      "hash": "#d81753",
+      "title": "Mobile: footer links are 21px tall – too small to tap",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "role": "guest+hunter_free_2",
+      "devices": [
+        "iphone-emu-375",
+        "desktop"
+      ],
+      "feature": "landing-footer",
+      "runs": 2,
+      "time": "2026-11-02",
+      "notes": "колонки 155.5x45, нижний ряд ≥44x44, без перекрытий, sw 375, en/ru/ar; десктоп 21px без изменений"
+    },
+    {
+      "hash": "#5fc833",
+      "title": "Tender owner: the window of an HR submission is titled «הגשת מועמד:» with nothing after the colon",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "role": "company",
+      "devices": [
+        "desktop"
+      ],
+      "feature": "tender-submissions-texts",
+      "runs": 2,
+      "time": "2026-11-02",
+      "notes": "«הגשת מועמד/ת: מועמד/ת אנונימי/ת» h2+aria, T-62/T-45, 4 языка"
+    },
+    {
+      "hash": "#889f5b",
+      "title": "Candidacy status timeline: labels are cut with «…» on desktop when the step has a full date",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "role": "company+company_6",
+      "devices": [
+        "desktop",
+        "375"
+      ],
+      "feature": "candidacy-timeline",
+      "runs": 2,
+      "time": "2026-11-02",
+      "notes": "перенос строк, scrollWidth==clientWidth, 4 языка, J-49 тоже"
+    },
+    {
+      "hash": "#f2c5ce",
+      "title": "Submit form: masculine-only «המועמד» next to «המועמד/ת» in the same window",
+      "verdict": "reject",
+      "action": "reject",
+      "rejection_id": "rej_fdbf266bd8f083174527e198",
+      "column": "לביצוע",
+      "role": "company_6+hunter_free_2+company",
+      "devices": [
+        "desktop"
+      ],
+      "feature": "submit-form-texts",
+      "runs": 2,
+      "time": "2026-11-02",
+      "notes": "окно подачи исправлено; бейдж «מועמד» на /applications/<id> у владельца (3/3)"
+    },
+    {
+      "hash": "#c1b861",
+      "title": "בקשת לקוח: NDA ראשוני בין הד האנטרים – mutual non-circumvention NDA on the first submission between two headhunters",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "role": "hunter_plus+hunter_free+hunter_free_2+admin",
+      "devices": [
+        "desktop"
+      ],
+      "feature": "hunter-pair-nda",
+      "runs": 2,
+      "time": "2026-11-02",
+      "notes": "без краша, попап 4 языка (1 раз, пара необратима), подпись A→удержание→подпись B, הסכמים обоих+admin, 2-я подача без NDA, отказ B → колокольчик у A 4/4 и подача отменена. Не проверено: платный NDA вакансии ₪35 (не дублируется)"
+    },
+    {
+      "hash": "#41dc55",
+      "title": "Public pages: a logged-in user sees the guest footer links «הרשמה / התחברות»",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "role": "hunter_plus+talent+talent_2+hunter_free_2+guest",
+      "devices": [
+        "desktop",
+        "375"
+      ],
+      "feature": "landing-footer",
+      "runs": 2,
+      "time": "2026-11-02",
+      "notes": "«החשבון שלי» 4 языка, /login,/register → /collaborations, гость без изменений; пустая колонка 0/240 + demo-hunter-3 0/15 (2/19 раньше = невидимая заглушка до гидрации)"
+    },
+    {
+      "hash": "#412b53",
+      "title": "Notification link to an archived job opens a 404 page",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "role": "company+hunter_plus+company_6",
+      "devices": [
+        "desktop"
+      ],
+      "feature": "archived-job",
+      "runs": 2,
+      "time": "2026-11-02",
+      "notes": "ссылка из колокольчика→вакансия, баннеры, 404 для несуществующих; J-136 и тендер T-73: нет кнопок статуса, надпись 4 языка; повтор server action отклонён (final/generic), статус не изменился"
+    },
+    {
+      "hash": "#dcde2e",
+      "title": "/applications/<id>: an existing application the user may not open returns HTTP 200 with the 404 page",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "role": "company+hunter_plus",
+      "devices": [
+        "desktop"
+      ],
+      "feature": "applications-404",
+      "runs": 2,
+      "time": "2026-11-02",
+      "notes": "0cc56444/45967f8d/3d5257f9/3d1d441f → 404 (+/en), свои → 200, not-a-uuid → 404"
+    },
+    {
+      "hash": "#d4f6e7",
+      "title": "Anonymous submission: the AI title keeps the current employer from «תפקיד נוכחי / כותרת» – the job owner sees it",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "role": "hunter_plus+company",
+      "devices": [
+        "desktop"
+      ],
+      "feature": "add-candidate",
+      "runs": 2,
+      "time": "2026-11-02",
+      "notes": "4 кандидата + 3 генерации без работодателя/имени/контактов; подсказка 4 языка; пустая кликуха→не Elbit; владелец J-49 без Wix (2 прогона); 3342cb1e «מפתח/ת Backend»"
+    },
+    {
+      "hash": "#e6252d",
+      "title": "בקשת לקוח: LinkedIn import – sign in with LinkedIn + upload LinkedIn profile PDF (instead of pasting a link)",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "role": "talent_new xolipij245@boffweb.com",
+      "devices": [
+        "desktop"
+      ],
+      "feature": "talent-onboarding",
+      "runs": 1,
+      "time": "2026-11-02",
+      "notes": "LinkedIn connect → тот же шаг, имя/фамилия, email по кнопке (не перезаписан); PDF → bio, LinkedIn URL, תחומים, תפקיד, 3 языка, 2 работы+1 учёба; PDF+CV без дублей (Wix, Check Point, +Monday, TAU); AI-заголовок/резюме; edit profile — обе опции на 4 языках. Не проверено: фото (LinkedIn не отдал picture), путь без LinkedIn/PDF на новом аккаунте. 1 прогон (вход LinkedIn делал пользователь)"
+    },
+    {
+      "hash": "#29f76e",
+      "title": "פיתוח: ייבוא פרופיל מ-LinkedIn",
+      "verdict": "pass",
+      "action": "clear-cannot-reproduce + pass",
+      "column": "הושלם",
+      "role": "talent_new",
+      "devices": [
+        "desktop"
+      ],
+      "feature": "talent-onboarding",
+      "runs": 1,
+      "time": "2026-11-02",
+      "notes": "по решению клиента #e6252d (вместо ссылки — LinkedIn connect + PDF); #e6252d прошёл; «לא ניתן לשחזר» снят 02.11 (change bd3ed221 / dced3fcb)"
+    },
+    {
+      "hash": "#1866b8",
+      "title": "Onboarding מועמד — שלב 3: ייבוא פרופיל מ-LinkedIn",
+      "verdict": "pass",
+      "action": "clear-cannot-reproduce + pass",
+      "column": "הושלם",
+      "role": "talent_new",
+      "devices": [
+        "desktop"
+      ],
+      "feature": "talent-onboarding",
+      "runs": 1,
+      "time": "2026-11-02",
+      "notes": "по решению клиента #e6252d (вместо ссылки — LinkedIn connect + PDF); #e6252d прошёл; «לא ניתן לשחזר» снят 02.11 (change bd3ed221 / dced3fcb)"
+    }
+  ],
+  "test_data": [
+    {
+      "what": "Contact message R-20 «QA-AUTO 2810 b06506» (guest, 2172 chars, status פתוח)",
+      "where": "/admin/reports → טופס יצירת קשר",
+      "created_at": "2026-10-28T13:54",
+      "ticket": "#b06506",
+      "clean": "delete"
+    },
+    {
+      "what": "HR demo-company-6 submission to T-45 «QA-AUTO bc890b מכרז» app f6378225-5715-4723-bed3-566ebc7b2ca9 (full profile requested, suitable)",
+      "where": "tender eba3be25-…",
+      "created_at": "2026-10-28T14:00"
+    },
+    {
+      "what": "Candidate «QA-AUTO 2810 cea191 job» 3f7a1f5e-5cd5-4f6c-ad0c-20782aacdefc (claude-test, +972521409231) — no UI delete",
+      "where": "/my-candidates",
+      "created_at": "2026-10-28T14:05"
+    },
+    {
+      "what": "Job application 3d5257f9-f9fa-460c-8ffd-3b7960d16b4d on J-49 (full profile requested, suitable; to be rejected for #0b7429) → rejected 28.10 reason «ציפיות השכר גבוהות מהתקציב» (#0b7429)",
+      "where": "J-49 7e4ad713-…",
+      "created_at": "2026-10-28T14:10"
+    },
+    {
+      "what": "3 unanswered questions «QA-AUTO 2810 246105 שאלה/dbl/m» from demo-talent-2 on J-49 (app 45967f8d) — limit reached",
+      "where": "J-49 7e4ad713-…",
+      "created_at": "2026-10-28T14:16"
+    },
+    {
+      "what": "Application 3d1d441f (J-136 archived) status «נצפה/תה» → «מתאים/ה» (verification of #412b53)",
+      "where": "J-136 547e6014-…",
+      "created_at": "2026-10-28T15:50"
+    },
+    {
+      "what": "Candidates claude-test «QA-AUTO 2810 c1b861 sign» c8855357-…, «… second» 7cfd0ff5-…, «… refuse» (no UI delete)",
+      "where": "/my-candidates",
+      "created_at": "2026-10-28T16:40"
+    },
+    {
+      "what": "Empty conversation claude-test ↔ demo-hunter-3 c=9339566b-8799-41ce-b222-8c586a4afcce",
+      "where": "/messages",
+      "created_at": "2026-10-28T16:45"
+    },
+    {
+      "what": "Candidates claude-test «QA-AUTO 2810 daf026 Anon» dc603d82-… and «… AnonSub» 17b8ed83-… (no UI delete)",
+      "where": "/my-candidates",
+      "created_at": "2026-10-28T17:20"
+    },
+    {
+      "what": "Submissions to J-49: Anon full profile c4e2711d-…, AnonSub anonymous",
+      "where": "J-49",
+      "created_at": "2026-10-28T17:25"
+    },
+    {
+      "what": "J-49 question threads: talent demo-talent-1 3a1added-… (Q1–Q4, A1–A3), claude-test 21b93c86-… (Q1–Q3, A HH1)",
+      "where": "J-49",
+      "created_at": "2026-10-28T17:50"
+    },
+    {
+      "what": "Application demo-talent-1 (משה כהן) to J-49, full profile, no NDA",
+      "where": "J-49",
+      "created_at": "2026-10-28T17:55"
+    },
+    {
+      "what": "Candidates claude-test «דנה ישראלי QA2810x» 3974840f-… and «רון QA2810y» 3342cb1e-… + 2 anonymous submissions to J-49",
+      "where": "J-49",
+      "created_at": "2026-10-28T18:10"
+    },
+    {
+      "what": "New talent account gasin13853@37xiao.com (registered by user), onboarding in progress",
+      "where": "/onboarding",
+      "created_at": "2026-10-28T18:15"
+    },
+    {
+      "what": "Contact messages R-21 (he), R-22 (en) «QA-AUTO 2810 find»",
+      "where": "/admin/reports?tab=contact",
+      "created_at": "2026-10-28T18:26"
+    },
+    {
+      "what": "claude-test questions on J-49 «QA-AUTO 2810 find Q-…» (7, last 3 unanswered → at limit) + demo-company-1 answers «QA-AUTO 2810 find answer»",
+      "where": "J-49",
+      "created_at": "2026-10-28T18:35"
+    },
+    {
+      "what": "вопросы QA-AUTO 0211 888970 talent1 send 1/2",
+      "role": "demo-talent-1",
+      "where": "J-49",
+      "date": "2026-11-02",
+      "cleanup": "удалить/ответить; talent-1 на лимите 3"
+    },
+    {
+      "what": "U-9 demo-hunter-2: PLUS до 05.11 и до 30.11 → вернул FREE; 2 уведомления «קיבלתם מנוי PLUS» в колокольчике",
+      "role": "admin",
+      "date": "2026-11-02",
+      "cleanup": "тариф возвращён; уведомления не удаляются через UI"
+    },
+    {
+      "what": "NDA ראשוני בין הד האנטרים claude-test ↔ demo-hunter-2 (02.11.2026–02.11.2028)",
+      "date": "2026-11-02",
+      "cleanup": "необратимо, пара потрачена"
+    },
+    {
+      "what": "Подача «QA-AUTO 2810 c1b861 sign» → J-35, application b9e91c3b-a207-4404-8ccc-d29c681b4ca5 (NDA נחתם)",
+      "date": "2026-11-02",
+      "cleanup": "отозвать/оставить"
+    },
+    {
+      "what": "Подача «QA-AUTO 2810 c1b861 second» → J-35 (נשלח/ה)",
+      "date": "2026-11-02",
+      "cleanup": "отозвать/оставить"
+    },
+    {
+      "what": "Чат 9339566b claude-test ↔ demo-hunter-3: подпись A + отказ B (без соглашения), уведомления",
+      "date": "2026-11-02",
+      "cleanup": "—"
+    },
+    {
+      "what": "4 цикла подпись A/отказ B пары claude-test↔demo-hunter-3 + отменённая подача «QA-AUTO 2810 c1b861 refuse» на J-33",
+      "date": "2026-11-02",
+      "cleanup": "—"
+    },
+    {
+      "what": "Тендер T-73 «QA-AUTO 0211 412b53 archive test» bd28c251-96e4-48a0-b308-dd467023f771 (demo-company-1), в архиве",
+      "date": "2026-11-02",
+      "cleanup": "оставить в архиве/удалить в админке"
+    },
+    {
+      "what": "Подача HR (מיכל לוי) a8d2641a-0f34-4cea-acbc-9e67fac004ae на T-73, статус סגור",
+      "date": "2026-11-02",
+      "cleanup": "—"
+    },
+    {
+      "what": "Кандидаты claude-test QA-AUTO 0211 d4f6e7 A/B/C/D (2c8d44a2, fdc97c68, 07f02bea, a887a82a; тел. 0513067510, 0576212118, 0564102036, 0537595910)",
+      "date": "2026-11-02",
+      "cleanup": "нет удаления в UI"
+    },
+    {
+      "what": "Подача A → J-49 анонимно (נצפה/תה)",
+      "date": "2026-11-02",
+      "cleanup": "—"
+    },
+    {
+      "what": "Новый талант xolipij245@boffweb.com (создал пользователь), привязан LinkedIn пользователя (nikita.morozov…@gmail.com, linkedin_oidc), username qa0211e6252d, тел. 0548260211, данные Dana Levi QA2810",
+      "date": "2026-11-02",
+      "cleanup": "отвязать LinkedIn/удалить аккаунт в админке — спросить пользователя"
+    }
+  ],
+  "findings": [
+    {
+      "ticket": "#b06506",
+      "text": "Форма «דיווח על השיחה» без поля текста; карточка R-19 в «צ׳אטים מדווחים» без текста участника"
+    },
+    {
+      "ticket": "#da29dd",
+      "text": "/faq без H1, <title> «Hunters – Recruitment Hub» одинаковый на всех языках"
+    },
+    {
+      "ticket": "#730ae5",
+      "text": "Escape внутри поля Cardcom не закрывает окно оплаты; на шаге оплаты нет кнопки закрытия (только «חזרה» → «סגירה»)"
+    },
+    {
+      "ticket": "#888970",
+      "text": "Ссылки без префикса языка на /collaborations/<id> сбрасывают NEXT_LOCALE в he (ссылка из колокольчика без префикса)"
+    },
+    {
+      "ticket": "#1f12f6",
+      "text": "После возврата на FREE последнее уведомление «קיבלתם מנוי PLUS…» противоречит FREE (FREE ничего не шлёт)"
+    },
+    {
+      "ticket": "#1f12f6",
+      "text": "«המנוי שלי»: ручная выдача названа «מנוי PLUS חודשי», рядом «לא יתחדש» и «מתחדש ב-01.12.2026»"
+    },
+    {
+      "ticket": "#1f12f6",
+      "text": "Иконки уведомлений в колокольчике — серый «?»"
+    },
+    {
+      "ticket": "#c1b861",
+      "text": "После отказа B в чате у B поле «כתיבת הודעה» активно; у A до подписи B тоже"
+    },
+    {
+      "ticket": "#c1b861",
+      "text": "NDA пары использует те же статусы «ממתין/ה ל-NDA / NDA נחתם», что и NDA вакансии, хотя выбрано «אין צורך ב-NDA»"
+    },
+    {
+      "ticket": "#c1b861",
+      "text": "У B заголовок кандидата укорочен: «QA-AUTO Backend» вместо «QA-AUTO 2810 c1b861 Backend»"
+    },
+    {
+      "ticket": "#f2c5ce",
+      "text": "Вне окна мужской род: заголовок панели «הגשת מועמד», плейсхолдер «חיפוש מועמד» (программист оставил сознательно)"
+    },
+    {
+      "ticket": "#c1b861",
+      "text": "После отказа B чат A снова показывает исходный попап «первое обращение» без упоминания отказа; у A нет статуса «בוטל» на подаче (только колокольчик)"
+    },
+    {
+      "ticket": "#c1b861",
+      "text": "На J-33 во время ожидания подписи B у A статус «נשלח/ה», а на J-35 было «ממתין/ה ל-NDA» — непоследовательно"
+    },
+    {
+      "ticket": "#41dc55",
+      "text": "До гидрации сервер рендерит в подвале скрытые гостевые ссылки (invisible, aria-hidden) 0.2–3.4 с; лучше рендерить аккаунт на сервере (SEO/без CSS)"
+    },
+    {
+      "ticket": "#41dc55",
+      "text": "Кнопка «הצטרפות לניסיון חינם» показывается залогиненным на /about и /headhunters"
+    },
+    {
+      "ticket": "#41dc55",
+      "text": "/login?error=<любой> не показывает текста ошибки (и у гостя)"
+    },
+    {
+      "ticket": "#412b53",
+      "text": "Архивный тендер — только бейдж «בארכיון», без текста-баннера как у вакансии"
+    },
+    {
+      "ticket": "#412b53",
+      "text": "Карточка T-73 «מס׳ הצעות 0» при 1 подаче"
+    },
+    {
+      "ticket": "#d4f6e7",
+      "text": "AI-заголовок/резюме B в мужском роде: «חוקר אבטחה»"
+    },
+    {
+      "ticket": "#d4f6e7",
+      "text": "AI-резюме и уровень опыта не совпадают с реальным опытом (3+3 года, «סניור 6–10») у A"
+    },
+    {
+      "ticket": "#d4f6e7",
+      "text": "Страница кандидата у хед-хантера — бейдж «מועמד» (мужской род)"
+    },
+    {
+      "ticket": "#fb0f43",
+      "text": "В неподписанном чате пары B видит телефон и email A (052-123-4567, claude-test@hunters.dev) в шапке — не проверено как баг"
+    }
+  ],
+  "price_changes": [],
+  "notes": [
+    "test_data перенесены из 2026-10-28 (уборка не делалась)",
+    "2026-11-02 пользователь: «делай тесты тикетам в которых я не нужен. если есть реджект делай сразу но пиши мне причину» — реджекты в этой сессии без подтверждения; эмуляция телефона для #d81753 — да",
+    "Находка «работодатель в заголовке анонимного профиля» не подтверждена (0/6): другие видят «מפתח/ת Backend», без Wix/имени/контактов"
+  ],
+  "new_tickets": [
+    {
+      "hash": "#416558",
+      "title": "Headhunter's candidate page: masculine-only badge «מועמד»",
+      "from": "#d4f6e7",
+      "date": "2026-11-02",
+      "status": "todo"
+    },
+    {
+      "hash": "#56ac83",
+      "title": "AI title and summary of a candidate are generated in masculine form («חוקר אבטחה»)",
+      "from": "#d4f6e7",
+      "date": "2026-11-02",
+      "status": "todo"
+    },
+    {
+      "hash": "#8ad3b0",
+      "title": "Job/tender panel: heading «הגשת מועמד» and search placeholder «חיפוש מועמד» are masculine-only",
+      "from": "#f2c5ce",
+      "date": "2026-11-02",
+      "status": "todo"
+    },
+    {
+      "hash": "#d0bc44",
+      "title": "Initial NDA between headhunters: after the other side refuses, A's chat shows the first-contact popup again",
+      "from": "#c1b861",
+      "date": "2026-11-02",
+      "status": "todo"
+    },
+    {
+      "hash": "#cca841",
+      "title": "Payment window: Escape does not close it from the Cardcom fields, no close button",
+      "from": "#730ae5",
+      "date": "2026-11-02",
+      "status": "todo"
+    },
+    {
+      "hash": "#fb0f43",
+      "title": "Initial NDA between headhunters: the chat can be written to although the NDA is not signed by both",
+      "from": "#c1b861",
+      "date": "2026-11-02",
+      "status": "todo"
+    }
+  ]
+}

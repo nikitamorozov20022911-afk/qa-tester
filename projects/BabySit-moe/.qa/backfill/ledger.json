@@ -1,0 +1,144 @@
+{
+  "entries": [
+    {
+      "hash": "#7e1f76",
+      "title": "הקמת תשתית אימות והרשאות (Auth)",
+      "class": "qa-passed",
+      "source": "qa",
+      "tests": [
+        "e2e/specs/auth.md"
+      ],
+      "at": "2026-11-15"
+    },
+    {
+      "hash": "#c766e0",
+      "title": "פיתוח: חבילות — Packages",
+      "class": "qa-passed",
+      "source": "qa",
+      "tests": [
+        "e2e/specs/packages.md"
+      ],
+      "at": "2026-11-15"
+    },
+    {
+      "hash": "#90d3ea",
+      "title": "פיתוח: דירוג הדדי — Mutual rating & feedback",
+      "class": "qa-passed",
+      "source": "qa",
+      "tests": [
+        "e2e/specs/rating.md"
+      ],
+      "at": "2026-11-15"
+    },
+    {
+      "hash": "#34dbda",
+      "title": "פיתוח: דיווח על בעיה — Problem report",
+      "class": "qa-passed",
+      "source": "qa",
+      "tests": [
+        "e2e/specs/problem-report.md"
+      ],
+      "at": "2026-11-15"
+    },
+    {
+      "hash": "#8544e3",
+      "title": "פיתוח: מערכת אדמין — Admin console",
+      "class": "qa-passed",
+      "source": "qa",
+      "tests": [
+        "e2e/specs/admin.md"
+      ],
+      "at": "2026-11-15"
+    },
+    {
+      "hash": "#72fe76",
+      "title": "פיתוח: יום המשימה — Task day execution",
+      "class": "qa-passed",
+      "source": "qa",
+      "tests": [
+        "e2e/specs/task-day.md"
+      ],
+      "at": "2026-11-15"
+    },
+    {
+      "hash": "#f486bc",
+      "title": "פיתוח: אזור חירום — Emergency access",
+      "class": "qa-passed",
+      "source": "qa",
+      "tests": [
+        "e2e/specs/emergency.md"
+      ],
+      "at": "2026-11-15"
+    },
+    {
+      "hash": "#8e159f",
+      "title": "פיתוח: הזמנה חוזרת — Repeat booking",
+      "class": "qa-passed",
+      "source": "qa",
+      "tests": [
+        "e2e/specs/repeat-booking.md"
+      ],
+      "at": "2026-11-15"
+    },
+    {
+      "hash": "#17f983",
+      "title": "עיצוב מוקאפ: צ׳אט — Chat",
+      "class": "qa-passed",
+      "source": "qa",
+      "tests": [
+        "(мокап — автотест не требуется)"
+      ],
+      "at": "2026-11-15"
+    },
+    {
+      "hash": "#fb956a",
+      "title": "עיצוב מוקאפ: פרטי דיווח — Report detail",
+      "class": "qa-passed",
+      "source": "qa",
+      "tests": [
+        "(мокап — автотест не требуется)"
+      ],
+      "at": "2026-11-15"
+    },
+    {
+      "hash": "#e18208",
+      "title": "עיצוב מוקאפ: חבר מביא חבר — Referral",
+      "class": "qa-passed",
+      "source": "qa",
+      "tests": [
+        "(мокап — автотест не требуется)"
+      ],
+      "at": "2026-11-15"
+    },
+    {
+      "hash": "#57fb83",
+      "title": "עיצוב מוקאפ: לוח בקרה — Admin dashboard",
+      "class": "qa-passed",
+      "source": "qa",
+      "tests": [
+        "(мокап — автотест не требуется)"
+      ],
+      "at": "2026-11-15"
+    },
+    {
+      "hash": "#a89273",
+      "title": "פיתוח: מדידה — MVP measurement",
+      "class": "qa-passed",
+      "source": "qa",
+      "tests": [
+        "e2e/specs/mvp-metrics.md"
+      ],
+      "at": "2026-11-15"
+    },
+    {
+      "hash": "#83cd0c",
+      "title": "עיצוב סכמת בסיס הנתונים ומידול הישויות",
+      "class": "qa-passed",
+      "source": "qa",
+      "tests": [
+        "e2e/specs/db-schema.md"
+      ],
+      "at": "2026-11-15"
+    }
+  ]
+}

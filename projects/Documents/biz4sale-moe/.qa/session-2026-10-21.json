@@ -1,0 +1,92 @@
+{
+  "project": "biz4sale",
+  "date": "2026-10-21",
+  "environment": "https://www.biz4sale.co.il/ (prod)",
+  "scope": "בבדיקות кроме «לא ניתן לשחזר» (#fe3470, #bd3aff, #a47bd6, #4dae81)",
+  "queue": [
+    "#469d67",
+    "#c03bf4",
+    "#9b8e31",
+    "#500d1d"
+  ],
+  "tickets": [
+    {
+      "hash": "#469d67",
+      "action": "reject",
+      "notes": "Ретест. AC1 обновлён программистом (308 http→https допустим, ≤2 хопа). Все редиректы 301/308, путь+query сохраняются; http апекс 2 хопа. Исключение: http://biz4sale.co.il/Search/?q=1 → 3 хопа (308→301→301). AC3/AC4 ✅, AC5 снаружи не проверяемо. Вопрос: принимать 308 по новому AC. Открыт rej_bac35c3b1d4a3c46b6454ca6 | старый rej_bac35c3b закрыт; новый rej_c5ee7b0b58463d906bcf34be (308 не принимаем)",
+      "evidence": "research/retest-1021/redirects-run1.txt",
+      "column": "לביצוע",
+      "at": "2026-10-21T08:22"
+    },
+    {
+      "hash": "#c03bf4",
+      "action": "reject",
+      "notes": "Ретест. Варианты регистра/слэша → 301 на канонический, canonical в сыром HTML на всех типах. AC2: business 282f0c7d (בהמתנה) и несуществующее → noindex; срока у объявлений нет (ответ программиста). AC4 http→https 308 — тот же вопрос, что #469d67. Открыт rej_df6ab2b9e4e301427b55754c | старый rej_df6ab2b9 закрыт (варианты исправлены); новый rej_2724f271fb94883dd0e0ea4a (AC4 308)",
+      "evidence": "research/retest-1021/canonical-raw.txt",
+      "column": "לביצוע",
+      "at": "2026-10-21T08:22"
+    },
+    {
+      "hash": "#9b8e31",
+      "action": "pass",
+      "notes": "PDF geo-ai-mentions-2026-10.pdf (35 стр.): queries Q01–Q05, процедура + причина ручного режима, раунд 19.10 — 15/15 полных ответов + итог упоминаний (выборочно сверено с текстом), даты и интерфейсы, 13.10 недостающее = null. Открыт rej_91e8316a881d92985d5b4b1d | rej_91e8316a закрыт",
+      "column": "הושלם",
+      "at": "2026-10-21T08:22"
+    },
+    {
+      "hash": "#500d1d",
+      "action": "pass",
+      "notes": "FAQ faq.html: 1 FAQPage, 8 Q/A валидны; llms.txt 200 text/plain; robots.txt без Disallow для AI-ботов; AC4/AC5 — тот же PDF, что #9b8e31",
+      "column": "הושלם",
+      "at": "2026-10-21T08:22"
+    }
+  ],
+  "test_data": [],
+  "closed": "2026-10-21 (2)",
+  "batches": [
+    {
+      "name": "после фикса 21.10 (2)",
+      "tickets": [
+        {
+          "hash": "#154394",
+          "action": "pass",
+          "column": "הושלם",
+          "notes": "схлопывания галереи нет, 24/24 без сдвига; «прыжок наверх при ≥300px» в исходном тикете — артефакт теста (стрелка под sticky-шапкой)",
+          "evidence": "research/retest-1021b/154394-gallery.txt"
+        },
+        {
+          "hash": "#7bcd98",
+          "action": "pass",
+          "notes": "сортировка desc по last_message_at, 3/3, проверено подменой ответа (у тест-аккаунтов 1 переписка); живое всплытие при новом сообщении не проверено | пользователь принял проверку с подменой",
+          "column": "הושלם"
+        },
+        {
+          "hash": "#00a4d7",
+          "action": "pass",
+          "column": "הושלם",
+          "notes": "стрелка «חזרה לשיחות» в шапке → список 3/3; browser back → список 3/3",
+          "evidence": "research/retest-1021b/00a4d7.txt"
+        },
+        {
+          "hash": "#c03bf4",
+          "action": "done-by-user",
+          "notes": "без изменений: http 308; предложено вернуть в לביצוע с комментарием | комментарий + статус todo | 308 принят; реджект уже закрыт, тикет уже в done",
+          "column": "הושלם"
+        },
+        {
+          "hash": "#a26d82",
+          "action": "reject",
+          "notes": "программист заменил biz4sale.com на .co.il; .com по-прежнему SSL error | пользователь: клиент имел в виду .co.il | пользователь: в WhatsApp нет превью даже с ?v=3 → rej_ea099bdfcfa0f31b2cab82cf",
+          "evidence": "research/retest-1021b/domains.txt",
+          "column": "לביצוע"
+        },
+        {
+          "hash": "#469d67",
+          "action": "done-by-user",
+          "column": "הושלם",
+          "notes": "308 принят; реджект уже закрыт, тикет уже в done"
+        }
+      ]
+    }
+  ]
+}

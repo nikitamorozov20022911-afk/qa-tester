@@ -1,0 +1,26 @@
+[
+  {
+    "id": "admin",
+    "role": "מנהל",
+    "emailVar": "QA_USER_ADMIN_EMAIL",
+    "passwordVar": "QA_USER_ADMIN_PASSWORD"
+  },
+  {
+    "id": "buyer",
+    "role": "קונה",
+    "emailVar": "QA_USER_BUYER_EMAIL",
+    "passwordVar": "QA_USER_BUYER_PASSWORD"
+  },
+  {
+    "id": "rep",
+    "role": "נציג מכירות",
+    "emailVar": "QA_USER_REP_EMAIL",
+    "passwordVar": "QA_USER_REP_PASSWORD"
+  },
+  {
+    "id": "dist2",
+    "role": "מפיץ ראשי (второй מפיץ, aviel@)",
+    "emailVar": "QA_USER_DIST2_EMAIL",
+    "passwordVar": "QA_USER_DIST2_PASSWORD"
+  }
+]

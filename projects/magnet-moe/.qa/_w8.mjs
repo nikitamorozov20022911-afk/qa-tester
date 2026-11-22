@@ -1,0 +1,11 @@
+import { chromium } from 'playwright';
+const AUTH='auth/user2-r11map.json';
+const b = await chromium.launch();
+const c = await b.newContext({ storageState: AUTH, viewport:{width:390,height:844}, isMobile:true, hasTouch:true, deviceScaleFactor:2 });
+const p = await c.newPage();
+const reqs=[]; p.on('response',r=>{ if(/rpc\/swipe|like/.test(r.url())) reqs.push(r.request().method()+' '+r.url().split('/rest/v1/')[1]+' '+r.status()+' '+(r.request().postData()||'')); });
+await p.goto('https://magnet.expo.app/profile/09368ba8-1aa9-4233-9fae-d3a7ff587084',{waitUntil:'networkidle'}); await p.waitForTimeout(2500);
+await p.getByRole('button',{name:'אהבתי'}).click(); await p.waitForTimeout(3500);
+console.log("REQ:"+reqs.join('\n')); console.log((await p.evaluate(()=>document.body.innerText)).slice(0,300));
+await p.screenshot({path:'screenshots/r12-match-user2-liked-user4.png'});
+await c.storageState({path:AUTH}); await b.close();

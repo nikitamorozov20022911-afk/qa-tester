@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "playwright-test": {
+      "command": ".qa/bin/with-node22",
+      "args": [
+        ".qa/e2e/node_modules/.bin/playwright",
+        "run-test-mcp-server",
+        "--headless",
+        "--config",
+        ".qa/e2e/playwright.config.ts"
+      ]
+    }
+  }
+}

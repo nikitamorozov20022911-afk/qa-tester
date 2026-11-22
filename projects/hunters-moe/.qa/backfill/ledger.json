@@ -1,0 +1,2305 @@
+{
+  "#49f47c": {
+    "class": "qa-passed",
+    "feature": "copywriting",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/copywriting/add-candidate-too-long-error-translated.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/copywriting.md"
+    ],
+    "cases": [
+      ".qa/tests/copywriting/CW-5-1.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-19; autotest plan written, .spec.ts not generated (playwright-test MCP disconnected)",
+    "date": "2026-10-19",
+    "source": "qa"
+  },
+  "#3b9172": {
+    "class": "qa-passed",
+    "feature": "copywriting",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/copywriting/submit-candidate-validation.spec.ts",
+      ".qa/e2e/tests/copywriting/submit-candidate-toast-and-company-card.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/copywriting.md"
+    ],
+    "cases": [
+      ".qa/tests/copywriting/CW-5-3.md",
+      ".qa/tests/copywriting/CW-5-14.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-19; autotest plan written, .spec.ts not generated (playwright-test MCP disconnected)",
+    "date": "2026-10-19",
+    "source": "qa"
+  },
+  "#ba4009": {
+    "class": "qa-passed",
+    "feature": "copywriting",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/copywriting/add-candidate-anonymous-requires-title-summary.spec.ts",
+      ".qa/e2e/tests/copywriting/add-candidate-second-phone-validated.spec.ts",
+      ".qa/e2e/tests/copywriting/add-candidate-open-profile-no-anonymous-hint.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/copywriting.md"
+    ],
+    "cases": [
+      ".qa/tests/copywriting/CW-5-2.md",
+      ".qa/tests/copywriting/CW-5-12.md",
+      ".qa/tests/copywriting/CW-5-13.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-19; autotest plan written, .spec.ts not generated (playwright-test MCP disconnected)",
+    "date": "2026-10-19",
+    "source": "qa"
+  },
+  "#cccb78": {
+    "class": "qa-passed",
+    "feature": "copywriting",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/copywriting/add-candidate-anonymous-text-third-person.spec.ts",
+      ".qa/e2e/tests/copywriting/talent-edit-profile-anonymous-text.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/copywriting.md"
+    ],
+    "cases": [
+      ".qa/tests/copywriting/CW-5-18.md",
+      ".qa/tests/copywriting/CW-5-19.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-19; autotest plan written, .spec.ts not generated (playwright-test MCP disconnected)",
+    "date": "2026-10-19",
+    "source": "qa"
+  },
+  "#7f472d": {
+    "class": "qa-passed",
+    "feature": "copywriting",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/copywriting/add-candidate-cv-text-and-phone-prefix.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/copywriting.md"
+    ],
+    "cases": [
+      ".qa/tests/copywriting/CW-5-20.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-19; autotest plan written, .spec.ts not generated (playwright-test MCP disconnected)",
+    "date": "2026-10-19",
+    "source": "qa"
+  },
+  "#9df6cb": {
+    "class": "qa-passed",
+    "feature": "copywriting",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/copywriting/nda-payment-product-name-translated.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/copywriting.md"
+    ],
+    "cases": [
+      ".qa/tests/copywriting/CW-4-6.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-19; autotest plan written, .spec.ts not generated (playwright-test MCP disconnected)",
+    "date": "2026-10-19",
+    "source": "qa"
+  },
+  "#f8ec88": {
+    "class": "qa-passed",
+    "feature": "copywriting",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/copywriting/payment-window-texts-and-coupon-errors-hunter.spec.ts",
+      ".qa/e2e/tests/copywriting/payment-window-coupon-errors-company.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/copywriting.md"
+    ],
+    "cases": [
+      ".qa/tests/copywriting/CW-4-3.md",
+      ".qa/tests/copywriting/CW-4-7.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-19; autotest plan written, .spec.ts not generated (playwright-test MCP disconnected)",
+    "date": "2026-10-19",
+    "source": "qa"
+  },
+  "#11606e": {
+    "class": "qa-passed",
+    "feature": "copywriting",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/copywriting/report-dialog-reasons.spec.ts",
+      ".qa/e2e/tests/copywriting/archive-confirmation-question.spec.ts",
+      ".qa/e2e/tests/copywriting/archived-job-card-no-hot-label.spec.ts",
+      ".qa/e2e/tests/copywriting/anonymous-submission-banner-title.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/copywriting.md"
+    ],
+    "cases": [
+      ".qa/tests/copywriting/CW-5-9.md",
+      ".qa/tests/copywriting/CW-5-15.md",
+      ".qa/tests/copywriting/CW-5-16.md",
+      ".qa/tests/copywriting/CW-5-17.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-19; autotest plan written, .spec.ts not generated (playwright-test MCP disconnected)",
+    "date": "2026-10-19",
+    "source": "qa"
+  },
+  "#d1fbd5": {
+    "class": "qa-passed",
+    "feature": "copywriting",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/copywriting/footer-fits-mobile-all-languages.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/copywriting.md"
+    ],
+    "cases": [
+      ".qa/tests/copywriting/CW-7-3.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-19; autotest plan written, .spec.ts not generated (playwright-test MCP disconnected)",
+    "date": "2026-10-19",
+    "source": "qa"
+  },
+  "#0bb217": {
+    "class": "qa-passed",
+    "feature": "copywriting",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/copywriting/admin-burger-menu-mobile.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/copywriting.md"
+    ],
+    "cases": [
+      ".qa/tests/copywriting/CW-7-1.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-19; autotest plan written, .spec.ts not generated (playwright-test MCP disconnected)",
+    "date": "2026-10-19",
+    "source": "qa"
+  },
+  "#e11528": {
+    "class": "qa-passed",
+    "feature": "copywriting",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/copywriting/admin-tables-mobile.spec.ts",
+      ".qa/e2e/tests/copywriting/admin-empty-states-mobile.spec.ts",
+      ".qa/e2e/tests/copywriting/company-agreements-invoices-mobile.spec.ts",
+      ".qa/e2e/tests/copywriting/headhunter-agreements-invoices-activity-mobile.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/copywriting.md"
+    ],
+    "cases": [
+      ".qa/tests/copywriting/CW-7-4.md",
+      ".qa/tests/copywriting/CW-7-10.md",
+      ".qa/tests/copywriting/CW-7-11.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-19; autotest plan written, .spec.ts not generated (playwright-test MCP disconnected)",
+    "date": "2026-10-19",
+    "source": "qa"
+  },
+  "#950890": {
+    "class": "qa-passed",
+    "feature": "copywriting",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/copywriting/profile-tabs-mobile-talent.spec.ts",
+      ".qa/e2e/tests/copywriting/profile-tabs-mobile-headhunter.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/copywriting.md"
+    ],
+    "cases": [
+      ".qa/tests/copywriting/CW-7-5.md",
+      ".qa/tests/copywriting/CW-7-12.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-19; autotest plan written, .spec.ts not generated (playwright-test MCP disconnected)",
+    "date": "2026-10-19",
+    "source": "qa"
+  },
+  "#282d5b": {
+    "class": "qa-passed",
+    "feature": "copywriting",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/copywriting/company-publish-items-mobile-burger.spec.ts",
+      ".qa/e2e/tests/copywriting/headhunter-plus-publish-and-plan-badge-mobile.spec.ts",
+      ".qa/e2e/tests/copywriting/headhunter-free-plan-badge-mobile.spec.ts",
+      ".qa/e2e/tests/copywriting/no-publish-item-for-talent-mobile.spec.ts",
+      ".qa/e2e/tests/copywriting/no-publish-item-for-hr-mobile.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/copywriting.md"
+    ],
+    "cases": [
+      ".qa/tests/copywriting/CW-7-2.md",
+      ".qa/tests/copywriting/CW-7-8.md",
+      ".qa/tests/copywriting/CW-7-9.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-19; autotest plan written, .spec.ts not generated (playwright-test MCP disconnected)",
+    "date": "2026-10-19",
+    "source": "qa"
+  },
+  "#478fcf": {
+    "class": "qa-passed",
+    "feature": "job-drafts",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/job-drafts/company-drafts-marked-with-actions.spec.ts",
+      ".qa/e2e/tests/job-drafts/company-draft-save-mark-delete.spec.ts",
+      ".qa/e2e/tests/job-drafts/published-job-no-draft-mark.spec.ts",
+      ".qa/e2e/tests/job-drafts/drafts-not-in-headhunter-feed.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/job-drafts.md"
+    ],
+    "cases": [
+      ".qa/tests/job-drafts/JD-1-1.md",
+      ".qa/tests/job-drafts/JD-1-2.md",
+      ".qa/tests/job-drafts/JD-1-3.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-19; autotest plan written, .spec.ts not generated (playwright-test MCP disconnected)",
+    "date": "2026-10-19",
+    "source": "qa"
+  },
+  "#535002": {
+    "class": "qa-passed",
+    "feature": "copywriting",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/copywriting/company-job-titles.spec.ts",
+      ".qa/e2e/tests/copywriting/headhunter-job-titles.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/copywriting.md"
+    ],
+    "cases": [
+      ".qa/tests/copywriting/CW-8-1.md",
+      ".qa/tests/copywriting/CW-8-2.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-19; autotest plan written, .spec.ts not generated (playwright-test MCP disconnected)",
+    "date": "2026-10-19",
+    "source": "qa"
+  },
+  "#9e49e0": {
+    "class": "qa-passed",
+    "feature": "copywriting",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/copywriting/tender-wizard-nda-question.spec.ts",
+      ".qa/e2e/tests/copywriting/remote-region-hebrew-filters.spec.ts",
+      ".qa/e2e/tests/copywriting/admin-regions-remote-hebrew.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/copywriting.md"
+    ],
+    "cases": [
+      ".qa/tests/copywriting/CW-8-3.md",
+      ".qa/tests/copywriting/CW-8-4.md",
+      ".qa/tests/copywriting/CW-8-5.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-19; autotest plan written, .spec.ts not generated (playwright-test MCP disconnected)",
+    "date": "2026-10-19",
+    "source": "qa"
+  },
+  "#674be0": {
+    "class": "qa-passed",
+    "feature": "headhunter-profile",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/headhunter-profile/talent-sees-request-representation.spec.ts",
+      ".qa/e2e/tests/headhunter-profile/company-no-request-representation.spec.ts",
+      ".qa/e2e/tests/headhunter-profile/headhunter-no-request-representation.spec.ts",
+      ".qa/e2e/tests/headhunter-profile/hr-no-request-representation.spec.ts",
+      ".qa/e2e/tests/headhunter-profile/admin-no-request-representation.spec.ts",
+      ".qa/e2e/tests/headhunter-profile/company-no-request-representation-iphone.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/headhunter-profile.md"
+    ],
+    "cases": [
+      ".qa/tests/headhunter-profile/HP-1-1.md",
+      ".qa/tests/headhunter-profile/HP-1-2.md",
+      ".qa/tests/headhunter-profile/HP-1-3.md",
+      ".qa/tests/headhunter-profile/HP-1-4.md",
+      ".qa/tests/headhunter-profile/HP-1-5.md",
+      ".qa/tests/headhunter-profile/HP-1-6.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-19; autotest plan written, .spec.ts not generated (playwright-test MCP disconnected)",
+    "date": "2026-10-19",
+    "source": "qa"
+  },
+  "#5adfe3": {
+    "class": "qa-passed",
+    "feature": "tenders-list",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/tenders-list/no-budget-filter-sort-label-company.spec.ts",
+      ".qa/e2e/tests/tenders-list/no-budget-filter-sort-label-headhunter.spec.ts",
+      ".qa/e2e/tests/tenders-list/no-budget-filter-sort-label-iphone.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/tenders-list.md"
+    ],
+    "cases": [
+      ".qa/tests/tenders-list/TL-1-1.md",
+      ".qa/tests/tenders-list/TL-1-2.md",
+      ".qa/tests/tenders-list/TL-1-3.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-19; autotest plan written, .spec.ts not generated (playwright-test MCP disconnected); sort not applied on «המכרזים שלי» (company_2) — separate finding, not asserted",
+    "date": "2026-10-19",
+    "source": "qa"
+  },
+  "#a92a99": {
+    "class": "qa-passed",
+    "feature": "copywriting",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/copywriting/admin-plans-not-for-hr.spec.ts",
+      ".qa/e2e/tests/copywriting/hr-profile-no-monthly-plan.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/copywriting.md"
+    ],
+    "cases": [
+      ".qa/tests/copywriting/CW-8-6.md",
+      ".qa/tests/copywriting/CW-8-7.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-19; autotest plan written, .spec.ts not generated (playwright-test MCP disconnected)",
+    "date": "2026-10-19",
+    "source": "qa"
+  },
+  "#62b022": {
+    "class": "qa-passed",
+    "feature": "copywriting",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/copywriting/notification-settings-no-dev-text-company.spec.ts",
+      ".qa/e2e/tests/copywriting/notification-settings-no-dev-text-headhunter.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/copywriting.md"
+    ],
+    "cases": [
+      ".qa/tests/copywriting/CW-8-8.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-19; autotest plan written, .spec.ts not generated (playwright-test MCP disconnected)",
+    "date": "2026-10-19",
+    "source": "qa"
+  },
+  "#1afa56": {
+    "class": "qa-passed",
+    "feature": "landing-footer",
+    "task_id": "beea79b59778b8d2bd1afa56",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/landing-footer/no-hash-links-on-public-pages.spec.ts",
+      ".qa/e2e/tests/landing-footer/footer-social-icons-real-or-hidden.spec.ts",
+      ".qa/e2e/tests/landing-footer/about-founders-linkedin-real-or-removed.spec.ts",
+      ".qa/e2e/tests/landing-footer/footer-about-no-horizontal-scroll-mobile.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/landing-footer.md"
+    ],
+    "cases": [
+      ".qa/tests/landing-footer/LF-1-1.md",
+      ".qa/tests/landing-footer/LF-1-2.md",
+      ".qa/tests/landing-footer/LF-1-3.md",
+      ".qa/tests/landing-footer/LF-1-4.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/landing-footer.md",
+      ".qa/tests/landing-footer/LF-1-1.md",
+      ".qa/tests/landing-footer/LF-1-2.md",
+      ".qa/tests/landing-footer/LF-1-3.md",
+      ".qa/tests/landing-footer/LF-1-4.md"
+    ],
+    "reason": "QA passed (retest after reject), user moved to «הושלם» 2026-10-21; autotest plan written, .spec.ts to be generated by playwright-test-generator",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#c8f678": {
+    "class": "qa-passed",
+    "feature": "landing-testimonials",
+    "task_id": "39a438d74070e328ffc8f678",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/landing-testimonials/carousel-one-card-per-press-he.spec.ts",
+      ".qa/e2e/tests/landing-testimonials/carousel-one-card-per-press-en.spec.ts",
+      ".qa/e2e/tests/landing-testimonials/carousel-one-card-per-press-ar.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/landing-testimonials.md"
+    ],
+    "cases": [
+      ".qa/tests/landing-testimonials/TS-1-1.md",
+      ".qa/tests/landing-testimonials/TS-1-2.md",
+      ".qa/tests/landing-testimonials/TS-1-3.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/landing-testimonials.md",
+      ".qa/tests/landing-testimonials/TS-1-1.md",
+      ".qa/tests/landing-testimonials/TS-1-2.md",
+      ".qa/tests/landing-testimonials/TS-1-3.md"
+    ],
+    "reason": "QA passed (retest after reject), user moved to «הושלם» 2026-10-21; autotest plan written, .spec.ts to be generated by playwright-test-generator",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#1604a7": {
+    "class": "qa-passed",
+    "feature": "mobile-header-menu",
+    "task_id": "d2dd44dc8c8052b9401604a7",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/mobile-header-menu/burger-menu-fits-screen-he.spec.ts",
+      ".qa/e2e/tests/mobile-header-menu/burger-menu-fits-screen-en.spec.ts",
+      ".qa/e2e/tests/mobile-header-menu/burger-menu-fits-screen-ru.spec.ts",
+      ".qa/e2e/tests/mobile-header-menu/burger-menu-fits-screen-ar.spec.ts",
+      ".qa/e2e/tests/mobile-header-menu/burger-menu-language-switch.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/mobile-header-menu.md"
+    ],
+    "cases": [
+      ".qa/tests/mobile-header-menu/MM-1-1.md",
+      ".qa/tests/mobile-header-menu/MM-1-2.md",
+      ".qa/tests/mobile-header-menu/MM-1-3.md",
+      ".qa/tests/mobile-header-menu/MM-1-4.md",
+      ".qa/tests/mobile-header-menu/MM-1-5.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/mobile-header-menu.md",
+      ".qa/tests/mobile-header-menu/MM-1-1.md",
+      ".qa/tests/mobile-header-menu/MM-1-2.md",
+      ".qa/tests/mobile-header-menu/MM-1-3.md",
+      ".qa/tests/mobile-header-menu/MM-1-4.md",
+      ".qa/tests/mobile-header-menu/MM-1-5.md"
+    ],
+    "reason": "QA passed (retest after reject), user moved to «הושלם» 2026-10-21; autotest plan written, .spec.ts to be generated by playwright-test-generator",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#24eb58": {
+    "class": "qa-passed",
+    "feature": "faq-texts",
+    "task_id": "9efe48d779043f2a9924eb58",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/faq-texts/faq-no-double-he-organizations.spec.ts",
+      ".qa/e2e/tests/faq-texts/faq-no-double-he-headhunters.spec.ts",
+      ".qa/e2e/tests/faq-texts/faq-no-double-he-talents.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/faq-texts.md"
+    ],
+    "cases": [
+      ".qa/tests/faq-texts/FQ-1-1.md",
+      ".qa/tests/faq-texts/FQ-1-2.md",
+      ".qa/tests/faq-texts/FQ-1-3.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/faq-texts.md",
+      ".qa/tests/faq-texts/FQ-1-1.md",
+      ".qa/tests/faq-texts/FQ-1-2.md",
+      ".qa/tests/faq-texts/FQ-1-3.md"
+    ],
+    "reason": "QA passed (retest after reject), user moved to «הושלם» 2026-10-21; autotest plan written, .spec.ts to be generated by playwright-test-generator",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#d9ffaa": {
+    "class": "qa-passed",
+    "feature": "landing-jobs-block",
+    "task_id": "788be9992d7afc1fc6d9ffaa",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/landing-jobs-block/jobs-block-unique-cards-he.spec.ts",
+      ".qa/e2e/tests/landing-jobs-block/jobs-block-unique-cards-en.spec.ts",
+      ".qa/e2e/tests/landing-jobs-block/jobs-block-unique-cards-mobile.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/landing-jobs-block.md"
+    ],
+    "cases": [
+      ".qa/tests/landing-jobs-block/JB-1-1.md",
+      ".qa/tests/landing-jobs-block/JB-1-2.md",
+      ".qa/tests/landing-jobs-block/JB-1-3.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/landing-jobs-block.md",
+      ".qa/tests/landing-jobs-block/JB-1-1.md",
+      ".qa/tests/landing-jobs-block/JB-1-2.md",
+      ".qa/tests/landing-jobs-block/JB-1-3.md"
+    ],
+    "reason": "QA passed (retest after reject), user moved to «הושלם» 2026-10-21; autotest plan written, .spec.ts to be generated by playwright-test-generator",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#b55501": {
+    "class": "qa-passed",
+    "feature": "organizations-landing",
+    "task_id": "3202b15174e39933e1b55501",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/organizations-landing/company-cta-opens-tender-wizard-he.spec.ts",
+      ".qa/e2e/tests/organizations-landing/company-cta-opens-tender-wizard-en.spec.ts",
+      ".qa/e2e/tests/organizations-landing/hr-cta-opens-tenders.spec.ts",
+      ".qa/e2e/tests/organizations-landing/headhunter-cta-opens-tenders.spec.ts",
+      ".qa/e2e/tests/organizations-landing/guest-cta-opens-register.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/organizations-landing.md"
+    ],
+    "cases": [
+      ".qa/tests/organizations-landing/OL-1-1.md",
+      ".qa/tests/organizations-landing/OL-1-2.md",
+      ".qa/tests/organizations-landing/OL-1-3.md",
+      ".qa/tests/organizations-landing/OL-1-4.md",
+      ".qa/tests/organizations-landing/OL-1-5.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/organizations-landing.md",
+      ".qa/tests/organizations-landing/OL-1-1.md",
+      ".qa/tests/organizations-landing/OL-1-2.md",
+      ".qa/tests/organizations-landing/OL-1-3.md",
+      ".qa/tests/organizations-landing/OL-1-4.md",
+      ".qa/tests/organizations-landing/OL-1-5.md"
+    ],
+    "reason": "QA passed (retest after reject), user moved to «הושלם» 2026-10-21; autotest plan written, .spec.ts to be generated by playwright-test-generator (multi-role tests — by autotest-writer)",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#33f14b": {
+    "class": "qa-passed",
+    "feature": "organizations-landing",
+    "task_id": "5398ef59bd6f06807633f14b",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/organizations-landing/step3-tender-price-all-languages.spec.ts",
+      ".qa/e2e/tests/organizations-landing/step3-price-matches-admin-tender-post.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/organizations-landing.md"
+    ],
+    "cases": [
+      ".qa/tests/organizations-landing/OL-2-1.md",
+      ".qa/tests/organizations-landing/OL-2-2.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/organizations-landing.md",
+      ".qa/tests/organizations-landing/OL-2-1.md",
+      ".qa/tests/organizations-landing/OL-2-2.md"
+    ],
+    "reason": "QA passed (retest after reject), user moved to «הושלם» 2026-10-21; autotest plan written, .spec.ts to be generated by playwright-test-generator (multi-role tests — by autotest-writer)",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#0d978b": {
+    "class": "qa-passed",
+    "feature": "tenders-list",
+    "task_id": "ceeb6c470ee13e1a800d978b",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/tenders-list/my-tenders-sort-newest.spec.ts",
+      ".qa/e2e/tests/tenders-list/my-tenders-sort-deadline.spec.ts",
+      ".qa/e2e/tests/tenders-list/my-tenders-sort-offers.spec.ts",
+      ".qa/e2e/tests/tenders-list/my-tenders-sort-reload-direct-url.spec.ts",
+      ".qa/e2e/tests/tenders-list/my-offers-sort-deadline-headhunter.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/tenders-list.md"
+    ],
+    "cases": [
+      ".qa/tests/tenders-list/TL-2-1.md",
+      ".qa/tests/tenders-list/TL-2-2.md",
+      ".qa/tests/tenders-list/TL-2-3.md",
+      ".qa/tests/tenders-list/TL-2-4.md",
+      ".qa/tests/tenders-list/TL-2-5.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/tenders-list.md",
+      ".qa/tests/tenders-list/TL-2-1.md",
+      ".qa/tests/tenders-list/TL-2-2.md",
+      ".qa/tests/tenders-list/TL-2-3.md",
+      ".qa/tests/tenders-list/TL-2-4.md",
+      ".qa/tests/tenders-list/TL-2-5.md"
+    ],
+    "reason": "QA passed (retest after reject), user moved to «הושלם» 2026-10-21; autotest plan written, .spec.ts to be generated by playwright-test-generator (multi-role tests — by autotest-writer)",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#bc890b": {
+    "class": "qa-passed",
+    "feature": "tender-drafts",
+    "task_id": "6f413ce201fa9f4460bc890b",
+    "tests": [
+      ".qa/e2e/tests/tender-drafts/my-tenders-shows-draft-mark.spec.ts",
+      ".qa/e2e/tests/tender-drafts/unfinished-tender-draft-continue.spec.ts"
+    ],
+    "planned_tests": [
+      ".qa/e2e/tests/tender-drafts/draft-hidden-from-others.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/tender-drafts.md"
+    ],
+    "cases": [
+      ".qa/tests/tender-drafts/TD-1-1.md",
+      ".qa/tests/tender-drafts/TD-1-2.md",
+      ".qa/tests/tender-drafts/TD-1-3.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/tender-drafts.md",
+      ".qa/tests/tender-drafts/TD-1-1.md",
+      ".qa/tests/tender-drafts/TD-1-2.md",
+      ".qa/tests/tender-drafts/TD-1-3.md",
+      ".qa/e2e/tests/tender-drafts/my-tenders-shows-draft-mark.spec.ts",
+      ".qa/e2e/tests/tender-drafts/unfinished-tender-draft-continue.spec.ts",
+      ".qa/e2e/tests/_helpers/tender-wizard.ts"
+    ],
+    "reason": "QA passed (retest after reject), user moved to «הושלם» 2026-10-21; 2 single-role .spec.ts written by autotest-writer (fallback, headless) 2026-10-21 — desktop 2/2 passed (retries=0); multi-role 1.3 draft-hidden-from-others pending (asUser company+hunter_plus)",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#9a6100": {
+    "class": "qa-passed",
+    "feature": "tenders-list",
+    "task_id": "6a70585208ac9b0b629a6100",
+    "tests": [
+      ".qa/e2e/tests/tenders-list/field-chips-multi-select.spec.ts",
+      ".qa/e2e/tests/tenders-list/field-chips-remove-one.spec.ts",
+      ".qa/e2e/tests/tenders-list/field-chips-sidebar-sync.spec.ts",
+      ".qa/e2e/tests/tenders-list/field-chips-multi-select-iphone.spec.ts"
+    ],
+    "planned_tests": [],
+    "spec": [
+      ".qa/e2e/specs/tenders-list.md"
+    ],
+    "cases": [
+      ".qa/tests/tenders-list/TL-3-1.md",
+      ".qa/tests/tenders-list/TL-3-2.md",
+      ".qa/tests/tenders-list/TL-3-3.md",
+      ".qa/tests/tenders-list/TL-3-4.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/tenders-list.md",
+      ".qa/tests/tenders-list/TL-3-1.md",
+      ".qa/tests/tenders-list/TL-3-2.md",
+      ".qa/tests/tenders-list/TL-3-3.md",
+      ".qa/tests/tenders-list/TL-3-4.md"
+    ],
+    "reason": "QA passed (retest after reject), user moved to «הושלם» 2026-10-21; autotest plan written, 4 .spec.ts written by autotest-writer (fallback, headless) 2026-10-21 — desktop 3/3 and iphone 1/1 passed",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#521d84": {
+    "class": "qa-passed",
+    "feature": "promo-filter",
+    "task_id": "6a900c7d6a9e1e1919521d84",
+    "tests": [
+      ".qa/e2e/tests/promo-filter/collaborations-default-all-and-count.spec.ts",
+      ".qa/e2e/tests/promo-filter/collaborations-promo-chip-and-count.spec.ts",
+      ".qa/e2e/tests/promo-filter/collaborations-promo-and-field-reload.spec.ts",
+      ".qa/e2e/tests/promo-filter/tenders-promo-filter.spec.ts",
+      ".qa/e2e/tests/promo-filter/my-jobs-promo-filter.spec.ts",
+      ".qa/e2e/tests/promo-filter/collaborations-promo-filter-en.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/promo-filter.md"
+    ],
+    "cases": [
+      ".qa/tests/promo-filter/PF-1-1.md",
+      ".qa/tests/promo-filter/PF-1-2.md",
+      ".qa/tests/promo-filter/PF-1-3.md",
+      ".qa/tests/promo-filter/PF-1-4.md",
+      ".qa/tests/promo-filter/PF-1-5.md",
+      ".qa/tests/promo-filter/PF-1-6.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/promo-filter.md",
+      ".qa/e2e/tests/promo-filter/collaborations-default-all-and-count.spec.ts",
+      ".qa/e2e/tests/promo-filter/collaborations-promo-and-field-reload.spec.ts",
+      ".qa/e2e/tests/promo-filter/collaborations-promo-chip-and-count.spec.ts",
+      ".qa/e2e/tests/promo-filter/collaborations-promo-filter-en.spec.ts",
+      ".qa/e2e/tests/promo-filter/my-jobs-promo-filter.spec.ts",
+      ".qa/e2e/tests/promo-filter/tenders-promo-filter.spec.ts",
+      ".qa/tests/promo-filter/PF-1-1.md",
+      ".qa/tests/promo-filter/PF-1-2.md",
+      ".qa/tests/promo-filter/PF-1-3.md",
+      ".qa/tests/promo-filter/PF-1-4.md",
+      ".qa/tests/promo-filter/PF-1-5.md",
+      ".qa/tests/promo-filter/PF-1-6.md"
+    ],
+    "reason": "QA passed (retest after reject), user moved to «הושלם» 2026-10-21; autotest plan written, 6 .spec.ts written manually (fallback, headless) 2026-10-21 — desktop 6/6 passed (2 runs, retries=0)",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#1004e9": {
+    "class": "qa-passed",
+    "feature": "tender-offers",
+    "task_id": "34afc826a705037fcd1004e9",
+    "tests": [
+      ".qa/e2e/tests/tender-offers/offer-amount-validation.spec.ts"
+    ],
+    "planned_tests": [
+      ".qa/e2e/tests/tender-offers/hr-offer-view-edit-withdraw.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/tender-offers.md"
+    ],
+    "cases": [
+      ".qa/tests/tender-offers/TO-1-1.md",
+      ".qa/tests/tender-offers/TO-1-2.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/tender-offers.md",
+      ".qa/e2e/tests/tender-offers/offer-amount-validation.spec.ts",
+      ".qa/tests/tender-offers/TO-1-1.md",
+      ".qa/tests/tender-offers/TO-1-2.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21. 1.1 written by hand (headless, company_6) 2026-10-21: run SKIPPED — no open offer-type tender without a company_6 offer on staging (test discovers one itself and skips with reason); form selectors from site i18n, not yet seen live. 1.2 multi-role pending (autotest-writer, asUser company + company_6).",
+    "date": "2026-10-21",
+    "source": "qa",
+    "last_run": {
+      "date": "2026-10-21",
+      "project": "tests",
+      "result": "1 skipped (data precondition)"
+    }
+  },
+  "#4b3041": {
+    "class": "qa-passed",
+    "feature": "candidacy-submission",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/candidacy-submission/nda-decline-not-submitted.spec.ts",
+      ".qa/e2e/tests/candidacy-submission/nda-close-says-not-submitted.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/candidacy-submission.md"
+    ],
+    "cases": [
+      ".qa/tests/candidacy-submission/SB-1-1.md",
+      ".qa/tests/candidacy-submission/SB-1-2.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/candidacy-submission.md",
+      ".qa/tests/candidacy-submission/SB-1-1.md",
+      ".qa/tests/candidacy-submission/SB-1-2.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; autotest plan written, .spec.ts not generated yet (playwright-test-generator / autotest-writer); BLOCKED: needs an active NDA job not signed by hunter_plus",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#158449": {
+    "class": "qa-passed",
+    "feature": "job-drawer",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/job-drawer/archived-job-sender-read-only.spec.ts",
+      ".qa/e2e/tests/job-drawer/candidate-card-submissions-final-status.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/job-drawer.md"
+    ],
+    "cases": [
+      ".qa/tests/job-drawer/DR-1-1.md",
+      ".qa/tests/job-drawer/DR-1-2.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/job-drawer.md",
+      ".qa/tests/job-drawer/DR-1-1.md",
+      ".qa/tests/job-drawer/DR-1-2.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; autotest plan written, .spec.ts not generated yet (playwright-test-generator / autotest-writer)",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#501d04": {
+    "class": "qa-passed",
+    "feature": "candidacy-submission",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/candidacy-submission/send-full-profile-after-rejection.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/candidacy-submission.md"
+    ],
+    "cases": [
+      ".qa/tests/candidacy-submission/SB-1-3.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/candidacy-submission.md",
+      ".qa/tests/candidacy-submission/SB-1-3.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; autotest plan written, .spec.ts not generated yet (playwright-test-generator / autotest-writer); multi-role — autotest-writer via asUser",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#283eb6": {
+    "class": "qa-passed",
+    "feature": "candidacy-status",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/candidacy-status/sender-sees-status-badge-only.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/candidacy-status.md"
+    ],
+    "cases": [
+      ".qa/tests/candidacy-status/CS-1-1.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/candidacy-status.md",
+      ".qa/tests/candidacy-status/CS-1-1.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; autotest plan written, .spec.ts not generated yet (playwright-test-generator / autotest-writer)",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#3973c6": {
+    "class": "qa-passed",
+    "feature": "candidacy-status",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/candidacy-status/company-status-labels-slash-form.spec.ts",
+      ".qa/e2e/tests/candidacy-status/headhunter-status-labels-slash-form.spec.ts",
+      ".qa/e2e/tests/candidacy-submission/send-full-profile-after-rejection.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/candidacy-status.md"
+    ],
+    "cases": [
+      ".qa/tests/candidacy-status/CS-1-2.md",
+      ".qa/tests/candidacy-status/CS-1-3.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/candidacy-status.md",
+      ".qa/tests/candidacy-status/CS-1-2.md",
+      ".qa/tests/candidacy-status/CS-1-3.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; autotest plan written, .spec.ts not generated yet (playwright-test-generator / autotest-writer)",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#31a764": {
+    "class": "qa-passed",
+    "feature": "candidacy-submission",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/candidacy-submission/notification-per-application.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/candidacy-submission.md"
+    ],
+    "cases": [
+      ".qa/tests/candidacy-submission/SB-1-4.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/candidacy-submission.md",
+      ".qa/tests/candidacy-submission/SB-1-4.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; autotest plan written, .spec.ts not generated yet (playwright-test-generator / autotest-writer); multi-role — autotest-writer via asUser",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#a1dd4b": {
+    "class": "qa-passed",
+    "feature": "candidacy-status",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/candidacy-status/iphone-status-menu-on-screen.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/candidacy-status.md"
+    ],
+    "cases": [
+      ".qa/tests/candidacy-status/CS-1-4.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/candidacy-status.md",
+      ".qa/tests/candidacy-status/CS-1-4.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; autotest plan written, .spec.ts not generated yet (playwright-test-generator / autotest-writer)",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#fc00c7": {
+    "class": "qa-passed",
+    "feature": "job-drawer",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/job-drawer/mobile-headhunter-rows-no-overlap.spec.ts",
+      ".qa/e2e/tests/job-drawer/mobile-company-rows-no-overlap.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/job-drawer.md"
+    ],
+    "cases": [
+      ".qa/tests/job-drawer/DR-1-3.md",
+      ".qa/tests/job-drawer/DR-1-4.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/job-drawer.md",
+      ".qa/tests/job-drawer/DR-1-3.md",
+      ".qa/tests/job-drawer/DR-1-4.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; autotest plan written, .spec.ts not generated yet (playwright-test-generator / autotest-writer)",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#7818c8": {
+    "class": "qa-passed",
+    "feature": "add-candidate",
+    "tests": [
+      ".qa/e2e/tests/add-candidate/close-step2-confirm-not-saved.spec.ts",
+      ".qa/e2e/tests/add-candidate/finish-creates-candidate-once.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/add-candidate.md"
+    ],
+    "cases": [
+      ".qa/tests/add-candidate/AC-1-1.md",
+      ".qa/tests/add-candidate/AC-1-2.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/add-candidate.md",
+      ".qa/tests/add-candidate/AC-1-1.md",
+      ".qa/tests/add-candidate/AC-1-2.md",
+      ".qa/e2e/tests/add-candidate/close-step2-confirm-not-saved.spec.ts",
+      ".qa/e2e/tests/add-candidate/finish-creates-candidate-once.spec.ts",
+      ".qa/e2e/tests/add-candidate/helpers.ts"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; autotest plan written, 2 .spec.ts written manually (fallback, headless) 2026-10-21 — desktop 2/2 passed (retries=0); 1.2 creates «QA-AUTO 7818c8 fin <ts>» each run (no delete in UI → manual cleanup)",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#344b9a": {
+    "class": "qa-passed",
+    "feature": "add-candidate",
+    "tests": [
+      ".qa/e2e/tests/add-candidate/cv-parsing-fills-salary.spec.ts",
+      ".qa/e2e/tests/add-candidate/cv-without-salary-fields-empty.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/add-candidate.md"
+    ],
+    "cases": [
+      ".qa/tests/add-candidate/AC-1-3.md",
+      ".qa/tests/add-candidate/AC-1-4.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/add-candidate.md",
+      ".qa/tests/add-candidate/AC-1-3.md",
+      ".qa/tests/add-candidate/AC-1-4.md",
+      ".qa/e2e/fixtures/make-cv-pdf.mjs",
+      ".qa/e2e/fixtures/qa-auto-cv-salary-range.pdf",
+      ".qa/e2e/fixtures/qa-auto-cv-no-salary.pdf",
+      ".qa/e2e/tests/add-candidate/cv-parsing-fills-salary.spec.ts",
+      ".qa/e2e/tests/add-candidate/cv-without-salary-fields-empty.spec.ts",
+      ".qa/e2e/tests/add-candidate/helpers.ts"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; autotest plan written, 2 .spec.ts written manually (fallback, headless) 2026-10-21 — desktop 2/2 passed (retries=0); nothing saved («יציאה»)",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#95bd33": {
+    "class": "qa-passed",
+    "feature": "english-mode",
+    "task_id": "177d6270884bad33da95bd33",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/english-mode/tender-scope-english-cards-and-details.spec.ts",
+      ".qa/e2e/tests/english-mode/contact-phones-one-format.spec.ts",
+      ".qa/e2e/tests/english-mode/talent-bank-phone-format.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/english-mode.md"
+    ],
+    "cases": [
+      ".qa/tests/english-mode/EN-1-1.md",
+      ".qa/tests/english-mode/EN-1-2.md",
+      ".qa/tests/english-mode/EN-1-3.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/english-mode.md",
+      ".qa/tests/english-mode/EN-1-1.md",
+      ".qa/tests/english-mode/EN-1-2.md",
+      ".qa/tests/english-mode/EN-1-3.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; autotest plan written, .spec.ts not generated yet (playwright-test-generator)",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#3b5661": {
+    "class": "qa-passed",
+    "feature": "system-lists",
+    "task_id": "6a7063193794e60bf33b5661",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/system-lists/lists-overview-readonly.spec.ts",
+      ".qa/e2e/tests/system-lists/add-own-value-and-delete.spec.ts",
+      ".qa/e2e/tests/system-lists/duplicate-names-rejected.spec.ts",
+      ".qa/e2e/tests/system-lists/in-use-value-cannot-be-deleted.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/system-lists.md"
+    ],
+    "cases": [
+      ".qa/tests/system-lists/SL-1-1.md",
+      ".qa/tests/system-lists/SL-1-2.md",
+      ".qa/tests/system-lists/SL-1-3.md",
+      ".qa/tests/system-lists/SL-1-4.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/system-lists.md",
+      ".qa/tests/system-lists/SL-1-1.md",
+      ".qa/tests/system-lists/SL-1-2.md",
+      ".qa/tests/system-lists/SL-1-3.md",
+      ".qa/tests/system-lists/SL-1-4.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; autotest plan written, .spec.ts not generated yet (playwright-test-generator)",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#62222f": {
+    "class": "qa-passed",
+    "feature": "admin-notifications",
+    "task_id": "6a706481de1cc9acec62222f",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/admin-notifications/job-report-notifies-admin.spec.ts",
+      ".qa/e2e/tests/admin-notifications/contact-form-notifies-admin.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/admin-notifications.md"
+    ],
+    "cases": [
+      ".qa/tests/admin-notifications/AN-1-1.md",
+      ".qa/tests/admin-notifications/AN-1-2.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/admin-notifications.md",
+      ".qa/tests/admin-notifications/AN-1-1.md",
+      ".qa/tests/admin-notifications/AN-1-2.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; autotest plan written, .spec.ts not generated yet (playwright-test-generator / autotest-writer multi-role)",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#cf108e": {
+    "class": "qa-passed",
+    "feature": "glossary",
+    "task_id": "47533803e7a5d6d05ecf108e",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/glossary/public-pages-no-double-he.spec.ts",
+      ".qa/e2e/tests/glossary/company-faq-no-double-he.spec.ts",
+      ".qa/e2e/tests/glossary/talent-job-pro-hint-no-double-he.spec.ts",
+      ".qa/e2e/tests/glossary/talent-profile-salary-label.spec.ts",
+      ".qa/e2e/tests/glossary/hunter-add-candidate-salary-label.spec.ts",
+      ".qa/e2e/tests/glossary/company-job-submissions-term.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/glossary.md"
+    ],
+    "cases": [
+      ".qa/tests/glossary/GL-1-1.md",
+      ".qa/tests/glossary/GL-1-2.md",
+      ".qa/tests/glossary/GL-1-3.md",
+      ".qa/tests/glossary/GL-1-4.md",
+      ".qa/tests/glossary/GL-1-5.md",
+      ".qa/tests/glossary/GL-1-6.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/glossary.md",
+      ".qa/tests/glossary/GL-1-1.md",
+      ".qa/tests/glossary/GL-1-2.md",
+      ".qa/tests/glossary/GL-1-3.md",
+      ".qa/tests/glossary/GL-1-4.md",
+      ".qa/tests/glossary/GL-1-5.md",
+      ".qa/tests/glossary/GL-1-6.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; autotest plan written, .spec.ts not generated yet (playwright-test-generator)",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#1d74c2": {
+    "class": "qa-passed",
+    "feature": "smart-agent",
+    "task_id": "f500c96bfb9c65b4cb1d74c2",
+    "tests": [
+      ".qa/e2e/tests/smart-agent/recommendations-jobs-ai-reason-plural.spec.ts",
+      ".qa/e2e/tests/smart-agent/recommendations-tenders-ai-reason-plural.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/smart-agent.md"
+    ],
+    "cases": [
+      ".qa/tests/smart-agent/SA-1-1.md",
+      ".qa/tests/smart-agent/SA-1-2.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/smart-agent.md",
+      ".qa/tests/smart-agent/SA-1-1.md",
+      ".qa/tests/smart-agent/SA-1-2.md",
+      ".qa/e2e/tests/smart-agent/recommendations-jobs-ai-reason-plural.spec.ts",
+      ".qa/e2e/tests/smart-agent/recommendations-tenders-ai-reason-plural.spec.ts"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; autotest plan written, 2 .spec.ts written manually (fallback, headless) 2026-10-21 — desktop 2/2 passed (retries=0); read-only",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#cf6dc1": {
+    "class": "qa-passed",
+    "feature": "tender-actions",
+    "tests": [
+      ".qa/e2e/tests/tender-actions/owner-actions-menu-card-and-page.spec.ts",
+      ".qa/e2e/tests/tender-actions/edit-extend-close-archive-own-tender.spec.ts",
+      ".qa/e2e/tests/tender-actions/expired-tender-bell-renew-dialog.spec.ts"
+    ],
+    "planned_tests": [],
+    "spec": [
+      ".qa/e2e/specs/tender-actions.md"
+    ],
+    "cases": [
+      ".qa/tests/tender-actions/TA-1-1.md",
+      ".qa/tests/tender-actions/TA-1-2.md",
+      ".qa/tests/tender-actions/TA-1-3.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/tender-actions.md",
+      ".qa/tests/tender-actions/TA-1-1.md",
+      ".qa/tests/tender-actions/TA-1-2.md",
+      ".qa/tests/tender-actions/TA-1-3.md",
+      ".qa/e2e/tests/tender-actions/owner-actions-menu-card-and-page.spec.ts",
+      ".qa/e2e/tests/tender-actions/edit-extend-close-archive-own-tender.spec.ts",
+      ".qa/e2e/tests/tender-actions/expired-tender-bell-renew-dialog.spec.ts",
+      ".qa/e2e/tests/_helpers/tender-wizard.ts"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; 3 .spec.ts written by autotest-writer (fallback, headless) 2026-10-21 — desktop 3/3 passed (retries=0, 2 runs); 1.1 page menu = 5 items without «צפייה בפרטי המכרז» (per QA evidence cf6dc1-T1-page-menu)",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#805225": {
+    "class": "qa-passed",
+    "feature": "candidacy-submission",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/candidacy-submission/nda-signed-notifies-both-sides.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/candidacy-submission.md"
+    ],
+    "cases": [
+      ".qa/tests/candidacy-submission/SB-2-1.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/candidacy-submission.md",
+      ".qa/tests/candidacy-submission/SB-2-1.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; autotest plan written, .spec.ts not generated yet (multi-role — autotest-writer via asUser)",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#09132b": {
+    "class": "qa-passed",
+    "feature": "english-mode",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/english-mode/admin-job-region-english.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/english-mode.md"
+    ],
+    "cases": [
+      ".qa/tests/english-mode/EN-2-1.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/english-mode.md",
+      ".qa/tests/english-mode/EN-2-1.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; autotest plan written, .spec.ts not generated yet (playwright-test-generator)",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#b63fa1": {
+    "class": "qa-passed",
+    "feature": "candidacy-status",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/candidacy-status/viewed-notification-to-headhunter-once.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/candidacy-status.md"
+    ],
+    "cases": [
+      ".qa/tests/candidacy-status/CS-2-1.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/candidacy-status.md",
+      ".qa/tests/candidacy-status/CS-2-1.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; autotest plan written, .spec.ts not generated yet (multi-role — autotest-writer via asUser)",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#d9db64": {
+    "class": "qa-passed",
+    "feature": "add-candidate",
+    "tests": [
+      ".qa/e2e/tests/add-candidate/ai-title-summary-minimal-candidate.spec.ts",
+      ".qa/e2e/tests/add-candidate/ai-submit-summary-strengths-regenerations.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/add-candidate.md"
+    ],
+    "cases": [
+      ".qa/tests/add-candidate/AC-2-1.md",
+      ".qa/tests/add-candidate/AC-2-2.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/add-candidate.md",
+      ".qa/tests/add-candidate/AC-2-1.md",
+      ".qa/tests/add-candidate/AC-2-2.md",
+      ".qa/e2e/tests/add-candidate/ai-title-summary-minimal-candidate.spec.ts",
+      ".qa/e2e/tests/add-candidate/ai-submit-summary-strengths-regenerations.spec.ts",
+      ".qa/e2e/tests/add-candidate/helpers.ts"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; autotest plan written, 2 .spec.ts written manually (fallback, headless) 2026-10-21 — desktop 2/2 passed (retries=0); each run creates a QA-AUTO-d9db64-<ts> candidate (no delete in UI → manual cleanup), never submits; negation sentences («…לא צוינו») excluded from the forbidden-word check",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#0b18b0": {
+    "class": "qa-passed",
+    "feature": "messages",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/messages/list-loads-headhunter.spec.ts",
+      ".qa/e2e/tests/messages/list-loads-company.spec.ts",
+      ".qa/e2e/tests/messages/list-loads-talent.spec.ts",
+      ".qa/e2e/tests/messages/open-conversation-shows-thread.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/messages.md"
+    ],
+    "cases": [
+      ".qa/tests/messages/MS-1-1.md",
+      ".qa/tests/messages/MS-1-2.md",
+      ".qa/tests/messages/MS-1-3.md",
+      ".qa/tests/messages/MS-1-4.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/messages.md",
+      ".qa/tests/messages/MS-1-1.md",
+      ".qa/tests/messages/MS-1-2.md",
+      ".qa/tests/messages/MS-1-3.md",
+      ".qa/tests/messages/MS-1-4.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; autotest plan written, .spec.ts not generated yet (playwright-test-generator)",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#1396b6": {
+    "class": "qa-passed",
+    "feature": "job-upgrade",
+    "tests": [
+      ".qa/e2e/tests/job-upgrade/below-threshold-services-disabled.spec.ts",
+      ".qa/e2e/tests/job-upgrade/above-threshold-services-available.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/job-upgrade.md"
+    ],
+    "cases": [
+      ".qa/tests/job-upgrade/JU-1-1.md",
+      ".qa/tests/job-upgrade/JU-1-2.md"
+    ],
+    "files": [
+      ".qa/e2e/specs/job-upgrade.md",
+      ".qa/tests/job-upgrade/JU-1-1.md",
+      ".qa/tests/job-upgrade/JU-1-2.md",
+      ".qa/e2e/tests/job-upgrade/below-threshold-services-disabled.spec.ts",
+      ".qa/e2e/tests/job-upgrade/above-threshold-services-available.spec.ts"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; autotest plan written, 2 .spec.ts written manually (fallback, headless) 2026-10-21 — desktop 2/2 passed (retries=0); read-only, J-73/J-70 KEEP",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#1866b6": {
+    "class": "qa-passed",
+    "feature": "talent-onboarding",
+    "tests": [],
+    "spec": [
+      ".qa/e2e/specs/talent-onboarding.md"
+    ],
+    "date": "2026-10-21",
+    "source": "qa",
+    "planned_tests": [
+      ".qa/e2e/tests/talent-onboarding/edit-profile-visibility-radios.spec.ts"
+    ],
+    "cases": [
+      ".qa/tests/talent-onboarding/TO-1-1.md",
+      ".qa/tests/talent-onboarding/TO-2-1.md"
+    ],
+    "manual_cases": [
+      ".qa/tests/talent-onboarding/TO-1-1.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; plan written (§2.1 pending generation); onboarding step 1 manual — needs a new talent account"
+  },
+  "#ca2463": {
+    "class": "qa-passed",
+    "feature": "talent-onboarding",
+    "tests": [],
+    "spec": [
+      ".qa/e2e/specs/talent-onboarding.md"
+    ],
+    "date": "2026-10-21",
+    "source": "qa",
+    "planned_tests": [
+      ".qa/e2e/tests/talent-onboarding/edit-profile-saved-expertise-roles-languages.spec.ts"
+    ],
+    "cases": [
+      ".qa/tests/talent-onboarding/TO-1-3.md",
+      ".qa/tests/talent-onboarding/TO-2-2.md"
+    ],
+    "manual_cases": [
+      ".qa/tests/talent-onboarding/TO-1-3.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; plan written (§2.2 pending generation); full onboarding→profile flow manual — needs a new talent account"
+  },
+  "#2443cb": {
+    "class": "qa-passed",
+    "feature": "talent-onboarding",
+    "tests": [],
+    "spec": [
+      ".qa/e2e/specs/talent-onboarding.md"
+    ],
+    "date": "2026-10-21",
+    "source": "qa",
+    "planned_tests": [],
+    "cases": [
+      ".qa/tests/talent-onboarding/TO-1-2.md"
+    ],
+    "manual_cases": [
+      ".qa/tests/talent-onboarding/TO-1-2.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; manual only — /onboarding/pending is reached only by a new talent finishing step 6 (account creation is not automated)"
+  },
+  "#1866b9": {
+    "class": "qa-passed",
+    "feature": "talent-onboarding",
+    "tests": [
+      ".qa/e2e/tests/talent-onboarding/cv-bucket-not-public.spec.ts"
+    ],
+    "planned_tests": [
+      ".qa/e2e/tests/talent-onboarding/edit-profile-documents-tab-pdf-only.spec.ts",
+      ".qa/e2e/tests/talent-onboarding/hunter-no-cv-anonymous-talent.spec.ts",
+      ".qa/e2e/tests/talent-onboarding/company-404-talent-profile.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/talent-onboarding.md"
+    ],
+    "cases": [
+      ".qa/tests/talent-onboarding/TO-3-1.md",
+      ".qa/tests/talent-onboarding/TO-3-2.md",
+      ".qa/tests/talent-onboarding/TO-3-3.md",
+      ".qa/tests/talent-onboarding/TO-3-4.md",
+      ".qa/tests/talent-onboarding/TO-3-5.md",
+      ".qa/tests/talent-onboarding/TO-3-6.md",
+      ".qa/tests/talent-onboarding/TO-3-7.md"
+    ],
+    "manual": [
+      "TO-3-1",
+      "TO-3-2"
+    ],
+    "blocked": {
+      "TO-3-3": "shared talent account has no CV"
+    },
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; plan §3 written; API test written (not run); generator tests pending",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#7e0769": {
+    "class": "qa-passed",
+    "feature": "copywriting",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/copywriting/talent-profile-tab-no-collaboration-term.spec.ts",
+      ".qa/e2e/tests/copywriting/talent-apply-dialog-job-manager-wording.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/copywriting.md"
+    ],
+    "cases": [
+      ".qa/tests/copywriting/CW-2-7.md",
+      ".qa/tests/copywriting/CW-2-8.md"
+    ],
+    "reason": "QA passed, user confirmed «עבר QA» 2026-10-21; plan copywriting §2.7–2.8 written, generation pending; 2.8 skips when talent apply quota is used",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#9a6101": {
+    "class": "qa-passed",
+    "feature": "onboarding-publish-removed",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/onboarding-publish-removed/hunter-header-publish-job-available.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/onboarding-publish-removed.md"
+    ],
+    "cases": [
+      ".qa/tests/onboarding-publish-removed/OP-1-1.md",
+      ".qa/tests/onboarding-publish-removed/OP-1-2.md",
+      ".qa/tests/onboarding-publish-removed/OP-1-3.md",
+      ".qa/tests/onboarding-publish-removed/OP-2-1.md"
+    ],
+    "manual_cases": [
+      ".qa/tests/onboarding-publish-removed/OP-1-1.md",
+      ".qa/tests/onboarding-publish-removed/OP-1-2.md",
+      ".qa/tests/onboarding-publish-removed/OP-1-3.md"
+    ],
+    "date": "2026-10-21",
+    "source": "qa",
+    "duplicates": [
+      "#9a6103"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; duplicate pair with #9a6103 (same title); plan written (§2.1 pending generation); onboarding flows manual — need new/pending accounts"
+  },
+  "#9a6103": {
+    "class": "qa-passed",
+    "feature": "onboarding-publish-removed",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/onboarding-publish-removed/hunter-header-publish-job-available.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/onboarding-publish-removed.md"
+    ],
+    "cases": [
+      ".qa/tests/onboarding-publish-removed/OP-1-1.md",
+      ".qa/tests/onboarding-publish-removed/OP-1-2.md",
+      ".qa/tests/onboarding-publish-removed/OP-1-3.md",
+      ".qa/tests/onboarding-publish-removed/OP-2-1.md"
+    ],
+    "manual_cases": [
+      ".qa/tests/onboarding-publish-removed/OP-1-1.md",
+      ".qa/tests/onboarding-publish-removed/OP-1-2.md",
+      ".qa/tests/onboarding-publish-removed/OP-1-3.md"
+    ],
+    "date": "2026-10-21",
+    "source": "qa",
+    "duplicate_of": "#9a6101",
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; duplicate pair with #9a6101 (same title); plan written (§2.1 pending generation); onboarding flows manual — need new/pending accounts"
+  },
+  "#41452a": {
+    "class": "qa-passed",
+    "feature": "company-onboarding",
+    "tests": [],
+    "planned_tests": [],
+    "spec": [
+      ".qa/e2e/specs/company-onboarding.md"
+    ],
+    "cases": [
+      ".qa/tests/company-onboarding/CO-1-1.md"
+    ],
+    "manual_cases": [
+      ".qa/tests/company-onboarding/CO-1-1.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; manual only — company onboarding step counter needs a brand-new company account (account creation is not automated)",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#47b00b": {
+    "class": "qa-passed",
+    "feature": "company-onboarding",
+    "tests": [],
+    "planned_tests": [],
+    "spec": [
+      ".qa/e2e/specs/company-onboarding.md"
+    ],
+    "cases": [
+      ".qa/tests/company-onboarding/CO-1-2.md"
+    ],
+    "manual_cases": [
+      ".qa/tests/company-onboarding/CO-1-2.md"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-10-21; manual only — /onboarding/tender needs a brand-new company; possible read-only test on /publish/tender for existing company not planned (step/fields not confirmed)",
+    "date": "2026-10-21",
+    "source": "qa"
+  },
+  "#d36ad4": {
+    "class": "qa-passed",
+    "feature": "avatars",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/avatars/talent-no-photo-silhouette.spec.ts",
+      ".qa/e2e/tests/avatars/old-placeholder-removed.spec.ts",
+      ".qa/e2e/tests/avatars/hunter-lists-silhouette.spec.ts",
+      ".qa/e2e/tests/avatars/admin-users-silhouette.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/avatars.md"
+    ],
+    "cases": [],
+    "reason": "QA passed 22.10, user moved to «הושלם» 2026-10-22; autotest plan written, .spec.ts not generated yet (queued in GENERATION-QUEUE-2026-10-21.md)",
+    "date": "2026-10-22",
+    "source": "qa"
+  },
+  "#301e98": {
+    "class": "qa-passed",
+    "feature": "admin-search",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/admin-search/applications-list-count-matches-chip.spec.ts",
+      ".qa/e2e/tests/admin-search/applications-search-name-number.spec.ts",
+      ".qa/e2e/tests/admin-search/application-row-opens-details.spec.ts",
+      ".qa/e2e/tests/admin-search/users-search-full-name.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/admin-search.md"
+    ],
+    "cases": [],
+    "reason": "QA passed 22.10, user moved to «הושלם» 2026-10-22; autotest plan written, .spec.ts not generated yet (queued in GENERATION-QUEUE-2026-10-21.md); error-message-on-failed-request not automated",
+    "date": "2026-10-22",
+    "source": "qa"
+  },
+  "#abe526": {
+    "class": "qa-passed",
+    "feature": "candidacy-status",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/candidacy-status/chain-direct-link-1-hunter_plus.spec.ts",
+      ".qa/e2e/tests/candidacy-status/chain-direct-link-2-company.spec.ts",
+      ".qa/e2e/tests/candidacy-status/chain-direct-link-3-hunter_plus.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/candidacy-status.md"
+    ],
+    "cases": [],
+    "reason": "QA passed 22.10, user moved to «הושלם» 2026-10-22; autotest plan written, .spec.ts not generated yet (queued in GENERATION-QUEUE-2026-10-21.md); one-role-per-file chain (autotest-writer); later-status-no-rollback not automated (company direct link 404 finding)",
+    "date": "2026-10-22",
+    "source": "qa"
+  },
+  "#e9ce1c": {
+    "class": "qa-passed",
+    "feature": "candidacy-status",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/candidacy-status/chain-decision-1-hunter_plus.spec.ts",
+      ".qa/e2e/tests/candidacy-status/chain-decision-2-company.spec.ts",
+      ".qa/e2e/tests/candidacy-status/chain-decision-3-hunter_plus.spec.ts",
+      ".qa/e2e/tests/candidacy-status/sender-decided-statuses-languages.spec.ts",
+      ".qa/e2e/tests/candidacy-status/company-decided-statuses-locked.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/candidacy-status.md"
+    ],
+    "cases": [],
+    "reason": "QA passed 22.10, user moved to «הושלם» 2026-10-22; autotest plan written, .spec.ts not generated yet (queued in GENERATION-QUEUE-2026-10-21.md); NDA request→sign flow manual",
+    "date": "2026-10-22",
+    "source": "qa"
+  },
+  "#24f795": {
+    "class": "qa-passed",
+    "feature": "candidacy-status",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/candidacy-status/chain-decision-2-company.spec.ts",
+      ".qa/e2e/tests/candidacy-status/chain-decision-3-hunter_plus.spec.ts",
+      ".qa/e2e/tests/candidacy-status/company-decided-statuses-locked.spec.ts",
+      ".qa/e2e/tests/candidacy-status/company-reject-needs-reason.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/candidacy-status.md"
+    ],
+    "cases": [],
+    "reason": "QA passed 22.10, user moved to «הושלם» 2026-10-22; autotest plan written, .spec.ts not generated yet (queued in GENERATION-QUEUE-2026-10-21.md); time-based «still there after minutes» and bell counter not automated",
+    "date": "2026-10-22",
+    "source": "qa"
+  },
+  "#9ac514": {
+    "class": "qa-passed",
+    "feature": "candidacy-status",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/candidacy-status/receiver-full-profile-content.spec.ts",
+      ".qa/e2e/tests/candidacy-status/receiver-anonymous-content.spec.ts",
+      ".qa/e2e/tests/candidacy-status/receiver-disclosed-content.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/candidacy-status.md"
+    ],
+    "cases": [],
+    "reason": "QA passed 22.10, user moved to «הושלם» 2026-10-22; autotest plan written, .spec.ts not generated yet (queued in GENERATION-QUEUE-2026-10-21.md); reads KEEP data of 22.10 on J-49",
+    "date": "2026-10-22",
+    "source": "qa"
+  },
+  "#274d95": {
+    "class": "qa-passed",
+    "feature": "landing-footer",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/landing-footer/footer-description-no-lorem.spec.ts",
+      ".qa/e2e/tests/landing-footer/footer-description-iphone.spec.ts",
+      ".qa/e2e/tests/landing-footer/footer-description-logged-in.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/landing-footer.md"
+    ],
+    "cases": [],
+    "reason": "QA passed 22.10, user moved to «הושלם» 2026-10-22; autotest plan written, .spec.ts not generated yet (queued in GENERATION-QUEUE-2026-10-21.md)",
+    "date": "2026-10-22",
+    "source": "qa"
+  },
+  "#4ba724": {
+    "class": "qa-passed",
+    "feature": "talent-education",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/talent-education/own-profile-education-card.spec.ts",
+      ".qa/e2e/tests/talent-education/hunter-sees-education-by-visibility.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/talent-education.md"
+    ],
+    "cases": [],
+    "reason": "QA passed 22.10, user moved to «הושלם» 2026-10-22; autotest plan written, .spec.ts not generated yet (queued in GENERATION-QUEUE-2026-10-21.md)",
+    "date": "2026-10-22",
+    "source": "qa"
+  },
+  "#437b26": {
+    "class": "qa-passed",
+    "feature": "free-limit",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/free-limit/job-panel-quota-state.spec.ts",
+      ".qa/e2e/tests/free-limit/plan-card-remaining-quota.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/free-limit.md"
+    ],
+    "cases": [],
+    "reason": "QA passed 22.10, user moved to «הושלם» 2026-10-22; autotest plan written, .spec.ts not generated yet (queued in GENERATION-QUEUE-2026-10-21.md); server rejection of 5th submission not automated",
+    "date": "2026-10-22",
+    "source": "qa"
+  },
+  "#f15f60": {
+    "class": "qa-passed",
+    "feature": "landing-mobile",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/landing-mobile/headhunters-feature-cards-fit.spec.ts",
+      ".qa/e2e/tests/landing-mobile/headhunters-feature-cards-fit-320.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/landing-mobile.md"
+    ],
+    "cases": [],
+    "reason": "QA passed 22.10, user moved to «הושלם» 2026-10-22; autotest plan written, .spec.ts not generated yet (queued in GENERATION-QUEUE-2026-10-21.md)",
+    "date": "2026-10-22",
+    "source": "qa"
+  },
+  "#5200a6": {
+    "class": "qa-passed",
+    "feature": "landing-mobile",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/landing-mobile/ru-cta-headings-fit.spec.ts",
+      ".qa/e2e/tests/landing-mobile/ru-cta-headings-fit-320.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/landing-mobile.md"
+    ],
+    "cases": [],
+    "reason": "QA passed 22.10, user moved to «הושלם» 2026-10-22; autotest plan written, .spec.ts not generated yet (queued in GENERATION-QUEUE-2026-10-21.md)",
+    "date": "2026-10-22",
+    "source": "qa"
+  },
+  "#851043": {
+    "class": "qa-passed",
+    "feature": "landing-mobile",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/landing-mobile/home-talents-320-no-overflow.spec.ts",
+      ".qa/e2e/tests/landing-mobile/home-talents-no-overflow.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/landing-mobile.md"
+    ],
+    "cases": [],
+    "reason": "QA passed 22.10, user moved to «הושלם» 2026-10-22; autotest plan written, .spec.ts not generated yet (queued in GENERATION-QUEUE-2026-10-21.md)",
+    "date": "2026-10-22",
+    "source": "qa"
+  },
+  "#7178a2": {
+    "class": "qa-passed",
+    "feature": "submit-candidate",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/submit-candidate/ai-loading-blocks-submit.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/submit-candidate.md"
+    ],
+    "cases": [],
+    "reason": "QA passed 22.10, user moved to «הושלם» 2026-10-22; autotest plan written, .spec.ts not generated yet (queued in GENERATION-QUEUE-2026-10-21.md)",
+    "date": "2026-10-22",
+    "source": "qa"
+  },
+  "#63b8d1": {
+    "class": "qa-passed",
+    "feature": "submit-candidate",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/submit-candidate/iphone-step2-title-latin-name.spec.ts",
+      ".qa/e2e/tests/submit-candidate/iphone-nda-title-latin-name.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/submit-candidate.md"
+    ],
+    "cases": [],
+    "reason": "QA passed 22.10, user moved to «הושלם» 2026-10-22; autotest plan written, .spec.ts not generated yet (queued in GENERATION-QUEUE-2026-10-21.md); only open item 7 automated (items 1–6, 8, 9 fixed earlier)",
+    "date": "2026-10-22",
+    "source": "qa"
+  },
+  "#25ee63": {
+    "class": "qa-passed",
+    "feature": "job-upgrade",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/job-upgrade/nothing-preselected.spec.ts",
+      ".qa/e2e/tests/job-upgrade/button-label-follows-selection.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/job-upgrade.md"
+    ],
+    "cases": [],
+    "reason": "QA passed 22.10, user moved to «הושלם» 2026-10-22; autotest plan written, .spec.ts not generated yet (queued in GENERATION-QUEUE-2026-10-21.md); actual activation (spends monthly free quota) not automated",
+    "date": "2026-10-22",
+    "source": "qa"
+  },
+  "#46b93c": {
+    "class": "qa-passed",
+    "feature": "forms-mobile",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/forms-mobile/guest-forms-font-height.spec.ts",
+      ".qa/e2e/tests/forms-mobile/add-candidate-strengths-tag-field.spec.ts",
+      ".qa/e2e/tests/forms-mobile/profile-and-job-wizard-fields.spec.ts",
+      ".qa/e2e/tests/forms-mobile/admin-search-fields.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/forms-mobile.md"
+    ],
+    "cases": [],
+    "reason": "QA passed 22.10, user moved to «הושלם» 2026-10-22; autotest plan written, .spec.ts not generated yet (queued in GENERATION-QUEUE-2026-10-21.md); real Safari zoom needs a real iPhone (manual)",
+    "date": "2026-10-22",
+    "source": "qa"
+  },
+  "#0f3888": {
+    "class": "qa-passed",
+    "feature": "pending-requests",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/pending-requests/pending-list-structure.spec.ts",
+      ".qa/e2e/tests/pending-requests/chain-pending-1-hunter_plus.spec.ts",
+      ".qa/e2e/tests/pending-requests/chain-pending-2-company.spec.ts",
+      ".qa/e2e/tests/pending-requests/chain-pending-3-hunter_plus.spec.ts",
+      ".qa/e2e/tests/pending-requests/archived-job-notification-link.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/pending-requests.md"
+    ],
+    "cases": [],
+    "reason": "QA passed 22.10, user moved to «הושלם» 2026-10-22; autotest plan written, .spec.ts not generated yet (queued in GENERATION-QUEUE-2026-10-21.md); request on archived job and NDA rows manual",
+    "date": "2026-10-22",
+    "source": "qa"
+  },
+  "#710d8c": {
+    "class": "qa-passed",
+    "feature": "form-validation",
+    "tests": [],
+    "planned_tests": [
+      ".qa/e2e/tests/form-validation/add-candidate-salary-pair-clears.spec.ts",
+      ".qa/e2e/tests/form-validation/job-wizard-salary-pair.spec.ts",
+      ".qa/e2e/tests/form-validation/job-wizard-required-and-length.spec.ts",
+      ".qa/e2e/tests/form-validation/chat-too-long-hunter.spec.ts",
+      ".qa/e2e/tests/form-validation/chat-too-long-company.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/form-validation.md",
+      ".qa/e2e/specs/copywriting.md"
+    ],
+    "cases": [],
+    "reason": "QA passed 22.10, user moved to «הושלם» 2026-10-22; autotest plan written, .spec.ts not generated yet (queued in GENERATION-QUEUE-2026-10-21.md); copywriting.md 5.5/5.6 cover the same ticket (#4c9e57c4)",
+    "date": "2026-10-22",
+    "source": "qa"
+  },
+  "#bebb61": {
+    "class": "qa-passed",
+    "tests": [],
+    "cases": [],
+    "date": "2026-10-22",
+    "source": "qa",
+    "feature": "pending-hunter",
+    "planned_tests": [
+      ".qa/e2e/tests/pending-hunter/pending-page-no-plans-popup.spec.ts",
+      ".qa/e2e/tests/pending-hunter/dashboard-link-no-loop-popup.spec.ts",
+      ".qa/e2e/tests/pending-hunter/pending-page-en-ru-no-popup.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/pending-hunter.md"
+    ],
+    "related": [
+      "#f1f804"
+    ],
+    "reason": "QA passed 22.10, user moved to «הושלם» 2026-10-22; autotest plan written, .spec.ts not generated yet (queued in GENERATION-QUEUE-2026-10-21.md); hunter_pending session is manual-login only; plans after Admin approval and re-login are manual"
+  },
+  "#f1f804": {
+    "class": "qa-passed",
+    "tests": [],
+    "cases": [],
+    "date": "2026-10-22",
+    "source": "qa",
+    "feature": "pending-hunter",
+    "planned_tests": [
+      ".qa/e2e/tests/pending-hunter/logout-offered-page-and-header.spec.ts",
+      ".qa/e2e/tests/pending-hunter/logout-offered-mobile-burger.spec.ts",
+      ".qa/e2e/tests/pending-hunter/zz-logout-ends-session.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/pending-hunter.md"
+    ],
+    "related": [
+      "#bebb61"
+    ],
+    "reason": "QA passed 22.10, user moved to «הושלם» 2026-10-22; autotest plan written, .spec.ts not generated yet (queued); logout test zz-logout-ends-session is opt-in (QA_PENDING_LOGOUT=1, run last — ends the manual-login session); header/burger logout and re-login manual"
+  },
+  "#541d6c": {
+    "class": "qa-passed",
+    "tests": [],
+    "cases": [],
+    "date": "2026-10-22",
+    "source": "qa",
+    "feature": "tender-candidacy",
+    "planned_tests": [
+      ".qa/e2e/tests/tender-candidacy/chain-hr-tender-1-company.spec.ts",
+      ".qa/e2e/tests/tender-candidacy/chain-hr-tender-2-company_6.spec.ts",
+      ".qa/e2e/tests/tender-candidacy/chain-hr-tender-3-company.spec.ts",
+      ".qa/e2e/tests/tender-candidacy/chain-hr-tender-4-company_6.spec.ts",
+      ".qa/e2e/tests/tender-candidacy/chain-hr-tender-5-company.spec.ts",
+      ".qa/e2e/tests/tender-candidacy/hr-legacy-offers-readable.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/tender-candidacy.md"
+    ],
+    "related": [
+      "#1004e9",
+      "#df647e",
+      "#cf6dc1"
+    ],
+    "reason": "QA passed 22.10 (both rejections resolved), user moved to «הושלם» 2026-10-22; autotest plan written, .spec.ts not generated yet (queued); one-role-per-file chain hr-tender (autotest-writer) on fresh QA-AUTO tenders, archived at the end; known findings (משרה texts, duplicate התבקש פרופיל מלא row) excluded; NDA ₪35 and hunter regression not automated"
+  },
+  "#df647e": {
+    "class": "qa-passed",
+    "tests": [],
+    "cases": [],
+    "date": "2026-10-22",
+    "source": "qa",
+    "feature": "tender-offers",
+    "planned_tests": [
+      ".qa/e2e/tests/tender-offers/owner-approve-dialog-names-bidder-amount.spec.ts",
+      ".qa/e2e/tests/tender-offers/owner-reject-dialog-other-reason-field.spec.ts",
+      ".qa/e2e/tests/tender-offers/owner-reject-other-undo-local-deadline.spec.ts",
+      ".qa/e2e/tests/tender-offers/owner-approve-undo.spec.ts",
+      ".qa/e2e/tests/tender-offers/owner-final-decision-no-undo.spec.ts",
+      ".qa/e2e/tests/tender-offers/bidder-pending-offer-waiting.spec.ts",
+      ".qa/e2e/tests/tender-offers/bidder-rejected-offer-shows-reason.spec.ts",
+      ".qa/e2e/tests/tender-offers/chain-offer-window-1-hunter_free_2.spec.ts",
+      ".qa/e2e/tests/tender-offers/chain-offer-window-2-company_2.spec.ts",
+      ".qa/e2e/tests/tender-offers/chain-offer-window-3-hunter_free_2.spec.ts",
+      ".qa/e2e/tests/tender-offers/chain-offer-window-4-company_2.spec.ts",
+      ".qa/e2e/tests/tender-offers/chain-offer-window-5-hunter_free_2.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/tender-offers.md"
+    ],
+    "related": [
+      "#1004e9",
+      "#541d6c",
+      "#24f795"
+    ],
+    "reason": "QA passed 22.10 (both rejections resolved), user moved to «הושלם» 2026-10-22; autotest plan written (tender-offers.md §2–3), .spec.ts not generated yet (queued); legacy money offers cannot be created any more — tests use existing T-35/T-13 offers and skip if none; decisions are undone inside the 5-min window; real-time window checks are a SLOW opt-in chain (QA_SLOW_OFFERS=1); final delivery after the window is manual (consumes the last pending offer)"
+  },
+  "#1866ba": {
+    "class": "qa-passed",
+    "tests": [],
+    "cases": [],
+    "date": "2026-10-22",
+    "source": "qa",
+    "feature": "talent-onboarding",
+    "planned_tests": [
+      ".qa/e2e/tests/talent-onboarding/cv-filled-details-saved.spec.ts",
+      ".qa/e2e/tests/talent-onboarding/cv-filled-experience-saved.spec.ts",
+      ".qa/e2e/tests/talent-onboarding/hunter-sees-cv-level-languages.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/talent-onboarding.md"
+    ],
+    "related": [
+      "#1866b9",
+      "#ca2463",
+      "#4ba724",
+      "#f70a38"
+    ],
+    "reason": "QA passed 22.10 (rejection resolved) on new talent U-48, user moved to «הושלם» 2026-10-22; autotest plan written (talent-onboarding.md §4), .spec.ts not generated yet (queued); CV parsing itself needs a brand-new talent (onboarding runs once) — manual/opt-in 4.1; read-only checks on U-48 (talent_new, manual-login session) and hunter_plus view"
+  },
+  "#cca841": {
+    "class": "qa-passed",
+    "tests": [],
+    "cases": [
+      ".qa/tests/payment-window-cardcom/PWC-2-1.md",
+      ".qa/tests/payment-window-cardcom/PWC-2-2.md",
+      ".qa/tests/payment-window-cardcom/PWC-2-3.md",
+      ".qa/tests/payment-window-cardcom/PWC-2-4.md",
+      ".qa/tests/payment-window-cardcom/PWC-2-5.md",
+      ".qa/tests/payment-window-cardcom/PWC-M-3.md"
+    ],
+    "date": "2026-11-07",
+    "source": "qa",
+    "feature": "payment-window-cardcom",
+    "planned_tests": [
+      ".qa/e2e/tests/payment-window-cardcom/close-button-closes-payment.spec.ts",
+      ".qa/e2e/tests/payment-window-cardcom/close-button-keyboard.spec.ts",
+      ".qa/e2e/tests/payment-window-cardcom/escape-from-coupon-closes.spec.ts",
+      ".qa/e2e/tests/payment-window-cardcom/back-returns-to-plans.spec.ts",
+      ".qa/e2e/tests/payment-window-cardcom/close-button-mobile.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/payment-window-cardcom.md"
+    ],
+    "related": [
+      "#43c7ff",
+      "#730ae5",
+      "#bc3456",
+      "#8f5282"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-11-07; plan payment-window-cardcom.md §2 (5 tests for playwright-test-generator, read-only @prod-safe, no payment), .spec.ts not generated yet; Escape inside Cardcom iframes is a Cardcom limitation accepted by the ticket — manual PWC-M-3; ✕ in other paid windows manual"
+  },
+  "#416558": {
+    "class": "qa-passed",
+    "tests": [
+      "e2e/tests/submit-candidate/hunter-job-submit-neutral-anon.spec.ts"
+    ],
+    "cases": [
+      ".qa/tests/candidate-badge/CB-1-1.md",
+      ".qa/tests/candidate-badge/CB-1-2.md"
+    ],
+    "date": "2026-11-07",
+    "source": "qa",
+    "feature": "candidate-badge",
+    "planned_tests": [
+      ".qa/e2e/tests/candidate-badge/hunter-candidate-page-badge-he.spec.ts",
+      ".qa/e2e/tests/candidate-badge/hunter-candidate-page-badge-i18n.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/candidate-badge.md"
+    ],
+    "related": [
+      "#f2c5ce",
+      "#8ad3b0"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-11-07; plan candidate-badge.md §1 (2 read-only tests for the generator), not generated yet; skip if candidate 3342cb1e is gone"
+  },
+  "#8ad3b0": {
+    "class": "qa-passed",
+    "tests": [
+      "e2e/tests/submit-candidate/hunter-job-submit-neutral-anon.spec.ts"
+    ],
+    "cases": [
+      ".qa/tests/submit-panel/SP-1-1.md",
+      ".qa/tests/submit-panel/SP-1-2.md",
+      ".qa/tests/submit-panel/SP-2-1.md"
+    ],
+    "date": "2026-11-07",
+    "source": "qa",
+    "feature": "submit-panel",
+    "planned_tests": [
+      ".qa/e2e/tests/submit-panel/job-panel-heading-search-he.spec.ts",
+      ".qa/e2e/tests/submit-panel/job-panel-heading-search-en.spec.ts",
+      ".qa/e2e/tests/submit-panel/tender-panel-search-he.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/submit-panel.md"
+    ],
+    "related": [
+      "#f2c5ce",
+      "#416558",
+      "#2b0521"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-11-07; plan submit-panel.md (3 read-only tests for the generator), not generated yet; job J-148 is QA data — test falls back to any foreign job in /collaborations, else skip with reason (no job creation in the test)"
+  },
+  "#f2c5ce": {
+    "class": "qa-passed",
+    "tests": [],
+    "cases": [
+      ".qa/tests/submit-candidate/SC-3-1.md",
+      ".qa/tests/submit-candidate/SC-3-2.md",
+      ".qa/tests/candidate-badge/CB-2-1.md"
+    ],
+    "date": "2026-11-07",
+    "source": "qa",
+    "feature": "submit-candidate",
+    "planned_tests": [
+      ".qa/e2e/tests/submit-candidate/hr-tender-submit-neutral-anon.spec.ts",
+      ".qa/e2e/tests/submit-candidate/hr-tender-submit-neutral-full.spec.ts",
+      ".qa/e2e/tests/submit-candidate/hunter-job-submit-neutral-anon.spec.ts",
+      ".qa/e2e/tests/candidate-badge/owner-application-badge.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/submit-candidate.md",
+      ".qa/e2e/specs/candidate-badge.md"
+    ],
+    "related": [
+      "#416558",
+      "#8ad3b0",
+      "#9dc615",
+      "#5fc833"
+    ],
+    "reason": "QA passed (owner-badge rejection resolved), user moved to «הושלם» 2026-11-07; plan submit-candidate.md §3 + candidate-badge.md 2.1 (4 read-only tests for the generator, never the final submit), not generated yet"
+  },
+  "#d0bc44": {
+    "class": "qa-passed",
+    "tests": [
+      ".qa/e2e/tests/hunter-nda/_pair.ts",
+      ".qa/e2e/tests/hunter-nda/pair-refusal-chat.spec.ts",
+      ".qa/e2e/tests/hunter-nda/pair-refusal-submission.spec.ts",
+      "e2e/tests/hunter-nda/pending-chat-composer-blocked.spec.ts"
+    ],
+    "cases": [
+      ".qa/tests/hunter-nda/HN-1-1.md",
+      ".qa/tests/hunter-nda/HN-1-2.md"
+    ],
+    "date": "2026-11-07",
+    "source": "qa",
+    "feature": "hunter-nda",
+    "planned_tests": [
+      ".qa/e2e/tests/hunter-nda/pair-refusal-chat.spec.ts",
+      ".qa/e2e/tests/hunter-nda/pair-refusal-submission.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/hunter-nda.md"
+    ],
+    "related": [
+      "#fb0f43",
+      "#0224f4",
+      "#1d9069"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-11-07; multi-role tests written by autotest-writer (asUser), NOT run; OPT-IN (QA_PAIR_NDA=1 + pair env) — needs two headhunters without NDA in force, none on the stand since claude-test↔demo-hunter-3 was approved 07.11 (until 07.02.2027); B never approves; 1.2 creates a QA-AUTO submission (journal)"
+  },
+  "#fb0f43": {
+    "class": "qa-passed",
+    "tests": [
+      ".qa/e2e/tests/hunter-nda/pair-refusal-chat.spec.ts",
+      ".qa/e2e/tests/hunter-nda/server-rejects-message-without-nda.spec.ts"
+    ],
+    "cases": [
+      ".qa/tests/hunter-nda/HN-2-1.md",
+      ".qa/tests/hunter-nda/HN-2-2.md",
+      ".qa/tests/hunter-nda/HN-2-3.md"
+    ],
+    "date": "2026-11-07",
+    "source": "qa",
+    "feature": "hunter-nda",
+    "planned_tests": [
+      ".qa/e2e/tests/hunter-nda/pending-chat-composer-blocked.spec.ts",
+      ".qa/e2e/tests/hunter-nda/pair-refusal-chat.spec.ts",
+      ".qa/e2e/tests/hunter-nda/server-rejects-message-without-nda.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/hunter-nda.md"
+    ],
+    "related": [
+      "#d0bc44",
+      "#0224f4",
+      "#1d9069"
+    ],
+    "reason": "QA passed, user moved to «הושלם» 2026-11-07; 2.1 read-only @prod-safe for the generator (claude-test chat c=daf8b54a, NDA with demo-hunter-1 pending; skip if it changes), not generated yet; B-side bars covered by the opt-in multi-role pair-refusal-chat; server guard (400 «hunter nda required») written as opt-in QA_NDA_SERVER=1, NOT run"
+  },
+  "#2b0521": {
+    "class": "qa-passed",
+    "tests": [],
+    "cases": [
+      ".qa/tests/jobs-cleanup/JC-1-1.md",
+      ".qa/tests/jobs-cleanup/JC-1-2.md"
+    ],
+    "date": "2026-11-08",
+    "source": "qa",
+    "feature": "jobs-cleanup",
+    "planned_tests": [
+      ".qa/e2e/tests/jobs-cleanup/bell-no-deleted-job-notices.spec.ts",
+      ".qa/e2e/tests/jobs-cleanup/jobs-screens-open.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/jobs-cleanup.md"
+    ],
+    "related": [
+      "#0224f4",
+      "#1d9069",
+      "#d0bc44"
+    ],
+    "reason": "QA passed after rej_8aad1e88 (retest 08.11, bell demo-hunter-2 clean 3/3), user moved to «הושלם» 2026-11-08; plan jobs-cleanup.md (2 read-only @prod-safe tests for the generator, hunter_free), not generated yet; empty lists not asserted (QA jobs J-148/149/150 published after cleanup); 45 accounts/login — manual"
+  },
+  "#0224f4": {
+    "class": "qa-passed",
+    "tests": [
+      ".qa/e2e/tests/hunter-nda/_auto.ts",
+      ".qa/e2e/tests/hunter-nda/auto-nda-job-owner.spec.ts",
+      ".qa/e2e/tests/hunter-nda/auto-nda-talent.spec.ts",
+      "e2e/tests/hunter-nda/pending-chat-composer-blocked.spec.ts"
+    ],
+    "cases": [
+      ".qa/tests/hunter-nda/HN-3-1.md",
+      ".qa/tests/hunter-nda/HN-3-2.md",
+      ".qa/tests/hunter-nda/HN-3-3.md",
+      ".qa/tests/hunter-nda/HN-3-4.md",
+      ".qa/tests/hunter-nda/HN-3-5.md",
+      ".qa/tests/hunter-nda/HN-4-1.md",
+      ".qa/tests/hunter-nda/HN-4-2.md"
+    ],
+    "date": "2026-11-08",
+    "source": "qa",
+    "feature": "hunter-nda",
+    "planned_tests": [
+      ".qa/e2e/tests/hunter-nda/agreements-auto-nda-3-months.spec.ts",
+      ".qa/e2e/tests/hunter-nda/agreements-auto-nda-filled.spec.ts",
+      ".qa/e2e/tests/hunter-nda/company-agreements-auto-nda.spec.ts",
+      ".qa/e2e/tests/hunter-nda/job-send-message-opens-chat.spec.ts",
+      ".qa/e2e/tests/hunter-nda/talent-pending-nda-chat.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/hunter-nda.md"
+    ],
+    "related": [
+      "#1d9069",
+      "#d0bc44",
+      "#fb0f43",
+      "#1eabe4"
+    ],
+    "reason": "QA passed after rej_0ca2901b (08.11), user moved to «הושלם» 2026-11-08; hunter-nda.md §3 — 5 read-only @prod-safe tests for the generator (agreements +3 months, filled NDA view, company agreements, job «שליחת הודעה», pending talent chat), not generated yet; §4 OPT-IN pair-consuming tests written by autotest-writer (QA_AUTO_NDA=1 [+APPROVE], QA_AUTO_NDA_TALENT=1), NOT run; reminder/renewal/expiry/e-mail — not automatable"
+  },
+  "#1d9069": {
+    "class": "qa-passed",
+    "tests": [
+      ".qa/e2e/tests/hunter-nda/_auto.ts",
+      ".qa/e2e/tests/hunter-nda/auto-nda-job-owner.spec.ts",
+      "e2e/tests/hunter-nda/pending-chat-composer-blocked.spec.ts"
+    ],
+    "cases": [
+      ".qa/tests/hunter-nda/HN-3-1.md",
+      ".qa/tests/hunter-nda/HN-3-2.md",
+      ".qa/tests/hunter-nda/HN-3-4.md",
+      ".qa/tests/hunter-nda/HN-4-1.md"
+    ],
+    "date": "2026-11-08",
+    "source": "qa",
+    "feature": "hunter-nda",
+    "planned_tests": [
+      ".qa/e2e/tests/hunter-nda/agreements-auto-nda-3-months.spec.ts",
+      ".qa/e2e/tests/hunter-nda/agreements-auto-nda-filled.spec.ts",
+      ".qa/e2e/tests/hunter-nda/job-send-message-opens-chat.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/hunter-nda.md"
+    ],
+    "related": [
+      "#0224f4",
+      "#d0bc44",
+      "#fb0f43",
+      "#1eabe4"
+    ],
+    "reason": "QA passed after rej_831cd552 (08.11), user moved to «הושלם» 2026-11-08; covered together with #0224f4: hunter-nda.md 3.1/3.2/3.4 (generator, read-only) + 4.1 OPT-IN multi-role (written, NOT run)"
+  },
+  "#1eabe4": {
+    "class": "qa-passed",
+    "tests": [],
+    "cases": [
+      ".qa/tests/hunter-verification/HV-1-1.md",
+      ".qa/tests/hunter-verification/HV-1-2.md",
+      ".qa/tests/hunter-verification/HV-1-3.md",
+      ".qa/tests/hunter-verification/HV-1-4.md",
+      ".qa/tests/hunter-verification/HV-1-5.md"
+    ],
+    "date": "2026-11-08",
+    "source": "qa",
+    "feature": "hunter-verification",
+    "planned_tests": [
+      ".qa/e2e/tests/hunter-verification/verified-chat-writable.spec.ts",
+      ".qa/e2e/tests/hunter-verification/package-toggle-price.spec.ts",
+      ".qa/e2e/tests/hunter-verification/free-card-separate-purchase.spec.ts",
+      ".qa/e2e/tests/hunter-verification/profile-verified-badge.spec.ts",
+      ".qa/e2e/tests/hunter-verification/package-toggle-mobile.spec.ts"
+    ],
+    "spec": [
+      ".qa/e2e/specs/hunter-verification.md"
+    ],
+    "related": [
+      "#0224f4",
+      "#1d9069",
+      "#294851",
+      "#214b19"
+    ],
+    "reason": "QA passed after rej_83115d84 (08.11), user moved to «הושלם» 2026-11-08; plan hunter-verification.md (5 read-only @prod-safe tests, hunter_free_2 verified until 07.11.2027, no payment; price delta asserted as V/12 from the page, no hardcoded totals), not generated yet; purchase/renewal/annual/badge in lists — manual; reverse direction (unverified → verified) not checkable"
+  },
+  "#8fc7be": {
+    "class": "qa-passed",
+    "feature": "linkedin-screenshot-import",
+    "tests": [
+      "e2e/tests/linkedin-screenshot-import/close-without-saving-unchanged.spec.ts",
+      "e2e/tests/linkedin-screenshot-import/experience-education-no-duplicates.spec.ts",
+      "e2e/tests/linkedin-screenshot-import/filled-fields-suggestion-use-this.spec.ts",
+      "e2e/tests/linkedin-screenshot-import/filled-job-title-suggestion.spec.ts",
+      "e2e/tests/linkedin-screenshot-import/import-block-present.spec.ts",
+      "e2e/tests/linkedin-screenshot-import/import-fills-about-and-link.spec.ts",
+      "e2e/tests/linkedin-screenshot-import/reject-five-images.spec.ts",
+      "e2e/tests/linkedin-screenshot-import/reject-gif.spec.ts",
+      "e2e/tests/linkedin-screenshot-import/reject-over-5mb.spec.ts",
+      "e2e/tests/linkedin-screenshot-import/summary-lists-job-title.spec.ts"
+    ],
+    "planned_tests": [],
+    "spec": [
+      ".qa/e2e/specs/linkedin-screenshot-import.md"
+    ],
+    "cases": [
+      ".qa/tests/linkedin-screenshot-import/LSI-1-1.md",
+      ".qa/tests/linkedin-screenshot-import/LSI-1-2.md",
+      ".qa/tests/linkedin-screenshot-import/LSI-1-3.md",
+      ".qa/tests/linkedin-screenshot-import/LSI-1-4.md",
+      ".qa/tests/linkedin-screenshot-import/LSI-1-5.md",
+      ".qa/tests/linkedin-screenshot-import/LSI-1-6.md",
+      ".qa/tests/linkedin-screenshot-import/LSI-1-7.md",
+      ".qa/tests/linkedin-screenshot-import/LSI-2-1.md",
+      ".qa/tests/linkedin-screenshot-import/LSI-2-2.md",
+      ".qa/tests/linkedin-screenshot-import/LSI-2-3.md",
+      ".qa/tests/linkedin-screenshot-import/LSI-3-1.md",
+      ".qa/tests/linkedin-screenshot-import/LSI-3-2.md"
+    ],
+    "related": [
+      "#e6252d",
+      "#a904f9",
+      "#ca2463"
+    ],
+    "reason": "QA passed after reject rej_609567e7 (headline), user moved to «הושלם» 2026-11-15; plan with 10 Edit Profile tests (talent seed, nothing saved, no payment), .spec.ts not generated yet; registration, Ctrl+V/drag, 4 languages, 375px — manual (LSI-3-1, LSI-3-2)",
+    "date": "2026-11-15",
+    "source": "qa"
+  }
+}

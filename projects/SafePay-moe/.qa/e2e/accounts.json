@@ -1,0 +1,44 @@
+[
+  {
+    "id": "client",
+    "role": "לקוח (הצד המשלם)",
+    "phoneVar": "QA_USER_CLIENT_PHONE",
+    "otpVar": "QA_OTP"
+  },
+  {
+    "id": "provider",
+    "role": "נותן/ת שירות (הצד המקבל)",
+    "phoneVar": "QA_USER_PROVIDER_PHONE",
+    "otpVar": "QA_OTP"
+  },
+  {
+    "id": "client2",
+    "role": "משתמש נוסף (0500000003) — לבדיקת בידוד נתונים",
+    "phoneVar": "QA_USER_CLIENT2_PHONE",
+    "otpVar": "QA_OTP"
+  },
+  {
+    "id": "newuser",
+    "role": "משתמש חדש (0500000007) — בדיקת יצירת פרופיל",
+    "phoneVar": "QA_USER_NEW_PHONE",
+    "otpVar": "QA_OTP"
+  },
+  {
+    "id": "arbitrator",
+    "role": "בורר (0500000006) — פאנל בורר /arbitration",
+    "phoneVar": "QA_USER_ARB_PHONE",
+    "otpVar": "QA_OTP"
+  },
+  {
+    "id": "owner17",
+    "role": "בעל חשבון 050-0000017 «QA פרופיל 17» — מיופה כוח (#5068e1)",
+    "phoneVar": "QA_USER_OWNER17_PHONE",
+    "otpVar": "QA_OTP"
+  },
+  {
+    "id": "pending16",
+    "role": "050-0000016 «QA מחיקה B» в «ממתין למחיקה» (только чтение, #152172) — НЕ нажимать «ביטול בקשת המחיקה»",
+    "phoneVar": "QA_USER_PENDING16_PHONE",
+    "otpVar": "QA_OTP"
+  }
+]

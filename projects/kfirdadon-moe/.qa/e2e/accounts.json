@@ -1,0 +1,73 @@
+[
+  {
+    "id": "admin",
+    "role": "Super Admin (מנהל מערכת)",
+    "emailVar": "QA_USER_ADMIN_EMAIL",
+    "passwordVar": "QA_USER_ADMIN_PASSWORD"
+  },
+  {
+    "id": "business",
+    "role": "מנהל חשבון עסקי",
+    "emailVar": "QA_USER_BUSINESS_EMAIL",
+    "passwordVar": "QA_USER_BUSINESS_PASSWORD"
+  },
+  {
+    "id": "user",
+    "role": "משתמש בית העסק",
+    "emailVar": "QA_USER_MEMBER_EMAIL",
+    "passwordVar": "QA_USER_MEMBER_PASSWORD"
+  },
+  {
+    "id": "blockmgr",
+    "role": "מנהל חשבון QA-A Block 0410",
+    "emailVar": "QA_USER_BLOCKMGR_EMAIL",
+    "passwordVar": "QA_USER_BLOCKMGR_PASSWORD",
+    "loginPath": "/invite/0VpjZ7qpxXQQ-c-RLjYXRaE_oyXe8PIoYd_VIAr242k"
+  },
+  {
+    "id": "spare",
+    "role": "מנהל/ת חשבון — расходный участник testim (для user-access)",
+    "emailVar": "QA_USER_SPARE_EMAIL",
+    "passwordVar": "QA_USER_SPARE_PASSWORD"
+  },
+  {
+    "id": "passmgr",
+    "role": "מנהל חשבון QA-PASS-1310 (первый менеджер, вступление 13.10)",
+    "emailVar": "QA_USER_PASSMGR_EMAIL",
+    "passwordVar": "QA_USER_PASSMGR_PASSWORD",
+    "loginPath": "/invite/ccaxcPhXUHdtu_QfYRxKNQaeEhO8kfBetXypGJzIDBQ"
+  },
+  {
+    "id": "passuser",
+    "role": "משתמש (recruiting_manager) QA-PASS-1310, вступление 13.10",
+    "emailVar": "QA_USER_PASSUSER_EMAIL",
+    "passwordVar": "QA_USER_PASSUSER_PASSWORD",
+    "loginPath": "/invite/ZxfODVDHJ89qsrkHJwSusSWnswMllW9g5xju-m3IwME"
+  },
+  {
+    "id": "passpend",
+    "role": "מנהל/ת מגייס/ת QA-PASS-1310 без назначений (вступление 13.10, FL-09)",
+    "emailVar": "QA_USER_PASSPEND_EMAIL",
+    "passwordVar": "QA_USER_PASSPEND_PASSWORD",
+    "loginPath": "/invite/Eh6Xu11k-geO9kwaj5fFeXIFmL2OmEcapdLObQaJuzI"
+  },
+  {
+    "id": "pilotmgr",
+    "role": "מנהל חשבון עסקי · QA-PILOT-1410 (вход вручную, без пароля в env)"
+  },
+  {
+    "id": "lcjoin",
+    "role": "מנהל חשבון עסקי · QA-LC-JOIN-1410 (qa+lc-join-1410@example.com, вход вручную, без пароля в env)"
+  },
+  {
+    "id": "ceajoin",
+    "role": "מנהל/ת מגייס/ת testim · QA-CEA join 1410 (qa+cea-join-1410@example.com, вступление 14.10 для #cea3ed, вход вручную, без пароля в env)",
+    "loginPath": "/invite/2FlZeMzxeXQCPIx2nd9LgDQ0LmAdcTOgy1M4ljF2e8g"
+  },
+  {
+    "id": "bizt",
+    "role": "מנהל חשבון עסקי testim (fdfdf) — QA_USER_BUSINESS_EMAIL",
+    "emailVar": "QA_USER_BUSINESS_EMAIL",
+    "passwordVar": "QA_USER_BUSINESS_PASSWORD"
+  }
+]

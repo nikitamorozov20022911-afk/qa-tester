@@ -1,0 +1,1 @@
+{"browser":{"browserName":"chromium","launchOptions":{"headless":false,"args":["--use-fake-device-for-media-stream","--deny-permission-prompts"]},"contextOptions":{"viewport":{"width":1440,"height":900}}}}

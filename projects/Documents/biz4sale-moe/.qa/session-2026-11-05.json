@@ -1,0 +1,230 @@
+{
+  "date": "2026-11-05",
+  "project": "biz4sale",
+  "session": "2026-11-05",
+  "queue": [
+    "#2f6eef",
+    "#9c4736",
+    "#04a6d8",
+    "#631293"
+  ],
+  "packets": [
+    [
+      "#2f6eef",
+      "#9c4736",
+      "#04a6d8"
+    ],
+    [
+      "#631293"
+    ]
+  ],
+  "notes": [
+    "mifrat token expires 2026-11-10",
+    "Backfill journal: no new done tickets outside ledger",
+    "All 4 tickets are guest/public — no role logins needed",
+    "#631293: user chose iPhone emulation (WebKit 375px), not real device",
+    "All 4 passed; no board actions needed (no open rejections); user to conduct עבר QA",
+    "User: «Прошли, пиши автотесты» — all 4 conducted עבר QA; autotests being written, not run",
+    "Board multi-select in user Chrome: הושלם - 4 | חדש - 2. Session closed.",
+    "Сессия 4 (2026-11-05): очередь בבדיקות = #a6abaf (тикет 87). Токен mifrat MCP истекает 2026-11-10.",
+    "Сессия 4 закрыта: #a6abaf прошёл (провёл пользователь), автотесты написаны и прогнаны."
+  ],
+  "tickets": [
+    {
+      "hash": "#2f6eef",
+      "ticket": 82,
+      "title": "לכפתור התפריט במובייל אין שם נגיש (aria-label)",
+      "status": "testing",
+      "research": "research/2f6eef.md",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "feature": "nav-menu-a11y",
+      "role": "guest",
+      "devices": [
+        "android-emulation 390"
+      ],
+      "evidence": "aria-label=\"תפריט\" + svg aria-hidden на 6 страницах (ariaSnapshot button \"תפריט\"); бандл index-Dt8eC5R-.js подтверждён; меню/נגישות регресс ок",
+      "screenshots": "screenshots/2026-11-05/2f6eef-*",
+      "findings": [
+        "WhatsApp/נגישות перекрывают низ открытого меню (התחברות, פרסום עסק)",
+        "крестик меню: имя \"Close\" по-английски",
+        "шапка отсутствует в SSR-HTML (только после JS)"
+      ],
+      "autotests": "written (fallback), not run"
+    },
+    {
+      "hash": "#9c4736",
+      "ticket": 81,
+      "title": "בתגית html של האתר אין dir=\"rtl\" — כיוון הדף מוגדר LTR",
+      "status": "testing",
+      "research": "research/9c4736.md",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "feature": "html-rtl-dir",
+      "role": "guest (+user /addbusiness)",
+      "devices": [
+        "desktop 1440",
+        "android-emulation 375"
+      ],
+      "evidence": "<html lang=he dir=rtl> live DOM 9 стр + SSR curl обычный UA и Googlebot + SPA-навигация; body rtl; регресс С1-С4,С6,С8,С9,Д2 ок",
+      "screenshots": "screenshots/2026-11-05/9c4736-*",
+      "findings": [
+        "иконка התחברות в мобильном меню переехала вправо от текста",
+        "toast «שחזרנו את הטיוטה» на /addbusiness поверх меню шапки (до фикса не сверял)",
+        "/auth без <main>"
+      ],
+      "autotests": "written (fallback), not run"
+    },
+    {
+      "hash": "#04a6d8",
+      "ticket": 83,
+      "title": "בסרטון «פרסום עסק למכירה» הכתוביות מסתירות שדות וכפתורים שממלאים באותו רגע",
+      "status": "testing",
+      "research": "research/04a6d8.md",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "feature": "guides-videos",
+      "role": "guest",
+      "devices": [
+        "desktop 1440",
+        "android-emulation 375"
+      ],
+      "evidence": "publish.mp4 etag 0203f8f1… 3709295B 2:06.37; K1-K6 перекрытие 0% (K5 карточка 3 ~6% картинки); плеер 1440/375 ok; синхрон голос-плашка max 0.17с (16 фраз); видео в research/videos/2026-11-05/",
+      "screenshots": "screenshots/2026-11-05/04a6d8-*",
+      "autotest_note": "обновить эталон publish в guides-video-versions.spec.ts/GUIDES-13 и таймкоды GUIDES-12/17/18/20 после «прошли»",
+      "findings": [
+        "1:00.25-1:01.4 поле ותק с «6 שנים» уходит под верхнюю плашку ~1с после ввода (ввод виден)",
+        "плашка при исчезании 1-2 кадра проходит по кнопке (1:29.6, 1:45.1, 1:59.6)",
+        "К5 карточка 3 низ картинки ~15px под плашкой"
+      ],
+      "autotests": "written (fallback), not run"
+    },
+    {
+      "hash": "#631293",
+      "ticket": 84,
+      "title": "בעמוד /guides באייפון חלון התקנת האפליקציה קופץ מעל הסרטון בזמן הצפייה",
+      "status": "testing",
+      "research": "research/631293.md",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "feature": "pwa-install-prompt",
+      "role": "guest (+user регресс)",
+      "devices": [
+        "iphone-emulation WebKit 390"
+      ],
+      "evidence": "/guides: 6/6 прогонов 15-16с с play — окна нет; контроль / 4/4 окно через 3.9-4.8с; snooze 5 дней ок; user: само не всплывает, пункт меню открывает; код DW=/^\\/guides\\b/ в index-Dt8eC5R-.js",
+      "screenshots": "screenshots/2026-11-05/631293-*",
+      "findings": [
+        "/search в headless WebKit окно через 13-27с (главный поток висит до 5.5с) — не подтверждено на устройстве",
+        "SPA /guides→/ после срабатывания таймера — окна нет (согласовано, находка)"
+      ],
+      "autotests": "written (fallback), not run"
+    },
+    {
+      "hash": "#0651d2",
+      "ticket": 85,
+      "title": "בתפריט הנייד הפתוח כפתורי WhatsApp והנגישות הצפים מכסים את הכפתורים «התחברות» ו«פרסום עסק למכירה»",
+      "status": "testing",
+      "research": "research/0651d2.md",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "feature": "nav-menu-a11y",
+      "role": "guest",
+      "devices": [
+        "iphone-emulation WebKit 375x812",
+        "Chromium Pixel7 390x844"
+      ],
+      "evidence": "меню открыто: WhatsApp/נגישות display:none; hit-test 24/24 точек на התחברות/פרסום עסק למכירה = сама кнопка; 4 способа закрытия (✕, фон, Esc, пункт) — кнопки 44x44 возвращаются; 3/3 циклов; регресс #062b41 #7f42b5 #2f6eef #96f55c ок; /search ок",
+      "screenshots": "screenshots/0651d2-*",
+      "findings": [
+        "375x812 /search: «פרסום עסק למכירה» на 8px ниже края окна (меню прокручивается)",
+        "Close aria-label по-английски (известно)"
+      ],
+      "session": "2026-11-05c",
+      "autotests": "написаны запасным путём, не запускались: tests/nav-menu-a11y/floating-buttons-{menu-open,after-close}.spec.ts + floating.helpers.ts; кейсы NAV-A11Y-03..06; ledger ok"
+    },
+    {
+      "hash": "#c49537",
+      "ticket": 86,
+      "title": "בקשת לקוח: בעמוד המודעה התמונה תוצג לפי היחס שלה — גבוהה לתמונה לאורך ורחבה לתמונה לרוחב",
+      "status": "testing",
+      "research": "research/c49537.md",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "feature": "businessdetail-gallery",
+      "role": "guest",
+      "devices": [
+        "Chromium 1440x900",
+        "iphone-emulation WebKit 375x812"
+      ],
+      "evidence": "תפאורות 504x630 (70vh)/343x429; מינימרקט fbc426a0 630x630/343x343; משתלה 4 картинки 800x360/529/360/450 и 343x154/227/154/193 — пропорция 0%, полей 0; карточки 4:3 contain как #0a2499; #154394 прыжков 0/48 на устройство",
+      "screenshots": "screenshots/c49537-*",
+      "findings": [
+        "серый кадр stone-100 при смене картинки 17-350мс (img opacity 0 до загрузки)",
+        "iPhone: нет свайпа, стрелки opacity-0 до тапа",
+        "десктоп scrollY>=240: стрелки под липкой шапкой",
+        "стрелка уходит из-под курсора при смене высоты"
+      ],
+      "session": "2026-11-05c",
+      "autotests": "запасной путь, не запускались: tests/businessdetail-gallery/gallery-aspect-ratio.spec.ts + gallery.helpers.ts; кейсы GALLERY-01..06; ledger ok"
+    },
+    {
+      "hash": "#a6abaf",
+      "ticket": 87,
+      "title": "בעמוד המודעה, במעבר בין תמונות בגלריה, אזור התמונה מתרוקן ומוצג אפור עד שהתמונה הבאה נטענת",
+      "status": "testing",
+      "session": 4,
+      "action": "pass",
+      "column": "הושלם",
+      "time": "2026-11-05T15:24",
+      "result": "Картинка↔картинка ✅ (0 серых кадров, iPhone+десктоп, задержка 1.2с); регресс #c49537 #154394 ✅. Видео→картинка: серая зона на время загрузки (не перепроверено, перепроверка остановлена пользователем) — пользователь проводит тикет. Пользователь: «всё нормально и нету серого» — прошёл.",
+      "feature": "businessdetail-gallery",
+      "role": "guest",
+      "devices": [
+        "desktop",
+        "iphone-emul"
+      ],
+      "findings": [
+        "видео-слайд окно 16:9 с серыми полями",
+        "попап PWA на iPhone перехватывает тапы по стрелкам",
+        "хелперы e2e businessdetail-gallery устарели (.biz-gallery-media нет у img)",
+        "видео→картинка серая зона (не перепроверено)"
+      ],
+      "autotests": "GALLERY-07..10, gallery-no-gray-on-switch.spec.ts (10 тестов), хелперы обновлены; 19/19 ×3 (tests+iphone)"
+    }
+  ],
+  "test_data": [],
+  "created": [
+    {
+      "hash": "#0651d2",
+      "ticket": 85,
+      "title": "בתפריט הנייד הפתוח כפתורי WhatsApp והנגישות הצפים מכסים את הכפתורים «התחברות» ו«פרסום עסק למכירה»",
+      "type": "bug",
+      "column": "לביצוע"
+    },
+    {
+      "hash": "#c49537",
+      "ticket": 86,
+      "title": "בקשת לקוח: בעמוד המודעה התמונה תוצג לפי היחס שלה — גבוהה לתמונה לאורך ורחבה לתמונה לרוחב",
+      "type": "task",
+      "column": "לביצוע",
+      "source": "/qa-client"
+    },
+    {
+      "hash": "#a6abaf",
+      "ticket": 87,
+      "title": "בעמוד המודעה, במעבר בין תמונות בגלריה, אזור התמונה מתרוקן ומוצג אפור עד שהתמונה הבאה נטענת",
+      "type": "bug",
+      "status": "todo",
+      "from": "#c49537 находка",
+      "attachment": "gallery-empty-on-switch-iphone.png"
+    }
+  ],
+  "closed": true
+}

@@ -1,0 +1,104 @@
+{
+ "date": "2026-11-05",
+ "command": "/qa (подключил айфон и андроид)",
+ "devices": "Pixel 6 1A151FDF6007QZ (adb ok), iPhone 17 00008150-001A312921F3401C (online)",
+ "queue": [
+  "#63e34a b6eac71496158ecc2463e34a zoom 200% headers (web)",
+  "#db5c46 6d45ca5a95df2fb3b6db5c46 zoom 200% list rows (web)",
+  "#d73fd4 1f157e30a9544d36a6d73fd4 zoom 200% tab labels (web)",
+  "#86b031 693450a90a7a93d54586b031 iOS mailing channels not sent (iPhone)",
+  "#bcf9c3 7502ac409ccbf9f633bcf9c3 500 SMS provider on registration (phone)",
+  "#76bc4c skip until 9.11 evening"
+ ],
+ "tickets": [
+  {
+   "hash": "#86b031",
+   "id": "693450a90a7a93d54586b031",
+   "device": "iPhone 17 TestFlight 20 + OTA, account 0537240114",
+   "facts": [
+    "dialog now has 3 separate checkboxes: mail, SMS, WhatsApp (בקרוב, disabled)",
+    "text: 'ההסכמה נשמרת בחשבון. בשלב זה נשלחת הודעת בדיקה אחת בכל ערוץ שסימנת. הודעות WhatsApp עדיין אינן נשלחות.'",
+    "all unchecked; not saved (needs user consent to tick)",
+    "12:48:00 SMS consent ticked + saved (user allowed) -> row 'מאושר (SMS)'; waiting user: SMS arrived?",
+    "user: SMS arrived",
+    "consent removed -> 'לא מאושר'"
+   ],
+   "screens": [
+    "screenshots/86b031-0511-ios-01-dialog-raw.png",
+    "screenshots/86b031-0511-ios-02-sms-checked-raw.png",
+    "screenshots/86b031-0511-ios-03-saved-raw.png"
+   ],
+   "verdict": "reject (WhatsApp)",
+   "action": "task_add_rejection rej_d98d034a34c18c06f6a02878 (change fa97a049), screenshot attached",
+   "column": "לביצוע",
+   "tests": "tests/profile/PR-07",
+   "feature": "profile mailing consent"
+  },
+  {
+   "hash": "#63e34a",
+   "verdict": "waiting deploy: fix 2fbec33 on vercel (bundle 069ae03d) all ✅ at 195 and 390; expo.app (bundle 8a8409fa, 05.11 09:20) old build, bug reproduces",
+   "screens": "screenshots/63e34a-0511-*",
+   "column": "בבדיקות (no action)",
+   "action": "reject rej_1351cced (not deployed, request OTA+expo) → לביצוע"
+  },
+  {
+   "hash": "#db5c46",
+   "verdict": "waiting deploy: fix 2fbec33 on vercel (bundle 069ae03d) all ✅ at 195 and 390; expo.app (bundle 8a8409fa, 05.11 09:20) old build, bug reproduces",
+   "screens": "screenshots/db5c46-0511-*",
+   "column": "בבדיקות (no action)",
+   "action": "לא ניתן לשחזר (waiting OTA), stays בבדיקות"
+  },
+  {
+   "hash": "#d73fd4",
+   "verdict": "waiting deploy: fix 2fbec33 on vercel (bundle 069ae03d) all ✅ at 195 and 390; expo.app (bundle 8a8409fa, 05.11 09:20) old build, bug reproduces",
+   "screens": "screenshots/d73fd4-0511-*",
+   "column": "בבדיקות (no action)",
+   "action": "לא ניתן לשחזר (waiting OTA), stays בבדיקות"
+  },
+  {
+   "hash": "#bcf9c3",
+   "id": "7502ac409ccbf9f633bcf9c3",
+   "verdict": "pass by 03.11 Android registration (no 500, SMS arrived, account created); no free number for fresh run (user 05.11)",
+   "action": "none on board (0 open rejections)",
+   "column": "הושלם (пользователь провёл 05.11)",
+   "tests": "tests/registration/RG-11 (autotest q-24 exists)",
+   "feature": "registration OTP",
+   "autotests": "q-24 (уже есть)"
+  }
+ ],
+ "test_data": [
+  "0537240114: SMS consent ON 12:48 → removed (לא מאושר)"
+ ],
+ "status": "done",
+ "findings": [
+  "vercel /prayers 195: card 'לראש חודש' subtitle 9px wide, letter-per-line (zoom 200%, same class as #db5c46) — per 07.10 decision zoom 200% not filed",
+  "vercel /journey/history 195: row text ellipsis"
+ ],
+ "new_tickets": [
+  {
+   "hash": "#e270fb",
+   "id": "429a13180126d902abe270fb",
+   "ticket": 26,
+   "title": "בקשת לקוח: מה לשלוח במייל, ב־SMS וב־WhatsApp...",
+   "status": "todo"
+  }
+ ],
+ "incidents": [
+  "13:07:05 my error: OTP sent to prefilled mock number 0501112233 (field not cleared — broken shell var). 13:07:44 code sent to 0537240114 correctly."
+ ],
+ "android_narrow": {
+  "time": "13:11-13:13",
+  "how": "adb wm density 840 (411dp->205dp = 200%), font_scale 1.15 (user setting, untouched); app relaunched x2 for OTA",
+  "facts": [
+   "/zmanim header 'זמני ת...' ellipsis -> numberOfLines fix 2fbec33 NOT in app",
+   "tab labels 'תפילו/ת', 'תהילי/ם' break"
+  ],
+  "screens": [
+   "screenshots/63e34a-0511-android-zmanim-205dp-raw.png",
+   "screenshots/d73fd4-0511-android-home-205dp-raw.png"
+  ],
+  "result": "app = old build, fix not delivered by OTA; density reset to 420"
+ },
+ "board_selection": "05.11: 6 cards selected in user's Chrome (בחירה מרובה): #e270fb, #86b031, #63e34a, #d73fd4, #db5c46, #bcf9c3",
+ "handoff": "handoff.md 13:30 (old archived to archive/handoff-until-2026-11-05.md)"
+}

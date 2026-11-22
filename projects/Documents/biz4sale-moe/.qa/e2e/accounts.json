@@ -1,0 +1,20 @@
+[
+  {
+    "id": "admin",
+    "role": "מנהל",
+    "emailVar": "QA_USER_ADMIN_EMAIL",
+    "passwordVar": "QA_USER_ADMIN_PASSWORD"
+  },
+  {
+    "id": "user",
+    "role": "משתמש רשום",
+    "emailVar": "QA_USER_USER_EMAIL",
+    "passwordVar": "QA_USER_USER_PASSWORD"
+  },
+  {
+    "id": "chat",
+    "role": "משתמש עם שיחות (вход вручную)",
+    "emailVar": "QA_USER_CHAT_EMAIL",
+    "passwordVar": "QA_USER_CHAT_PASSWORD"
+  }
+]

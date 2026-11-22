@@ -1,0 +1,133 @@
+{
+ "updated": "2026-10-26",
+ "tickets": [
+  {
+   "id": "6a8560fbeb1ae1cd7e337857",
+   "hash": "#6a8560fb",
+   "class": "qa-passed",
+   "source": "qa",
+   "tests": [
+    "appium/tests/chat-keyboard.test.js"
+   ],
+   "cases": [
+    "tests/chat/TC-CHAT-01.md",
+    "tests/chat/TC-CHAT-02.md"
+   ]
+  },
+  {
+   "id": "7c30a0f9f801bc78c026639b",
+   "hash": "#7c30a0f9",
+   "class": "qa-passed",
+   "source": "qa",
+   "tests": [
+    "appium/tests/job-ad-page.test.js"
+   ],
+   "cases": [
+    "tests/job-ad/TC-AD-01.md",
+    "tests/job-ad/TC-AD-02.md",
+    "tests/job-ad/TC-AD-03.md"
+   ]
+  },
+  {
+   "id": "6a61f2a587482e7988bfda95",
+   "hash": "#6a61f2a5",
+   "class": "qa-passed",
+   "source": "qa",
+   "tests": [
+    "appium/tests/qr-deeplink.test.js"
+   ],
+   "cases": [
+    "tests/qr-share/TC-QR-01.md",
+    "tests/qr-share/TC-QR-02.md"
+   ]
+  },
+  {
+   "id": "a8206c81b64f2ea87dafb7da",
+   "hash": "#afb7da",
+   "class": "qa-passed",
+   "source": "qa",
+   "tests": [
+    "appium/tests/api-user-public.test.js"
+   ],
+   "cases": [
+    "tests/api-user/TC-API-01.md",
+    "tests/api-user/TC-API-02.md"
+   ]
+  },
+  {
+   "id": "ee489910ada82927ad5a3976",
+   "hash": "#5a3976",
+   "class": "qa-passed",
+   "source": "qa",
+   "tests": [
+    "appium/tests/job-ad-city-required.test.js"
+   ],
+   "cases": [
+    "tests/job-ad/TC-AD-04.md"
+   ]
+  },
+  {
+   "id": "6a9ff8130fd906fc5e732f80",
+   "hash": "#732f80",
+   "class": "qa-passed",
+   "source": "qa",
+   "tests": [
+    "appium/tests/availability-multiselect.test.js"
+   ],
+   "cases": [
+    "tests/availability/TC-AV-01.md",
+    "tests/availability/TC-AV-02.md"
+   ]
+  },
+  {
+   "id": "6a9fc38ee4c8b8025c5055f4",
+   "hash": "#5055f4",
+   "class": "qa-passed",
+   "source": "qa",
+   "tests": [
+    "appium/tests/profile-video.test.js"
+   ],
+   "cases": [
+    "tests/profile-video/TC-VID-01.md",
+    "tests/profile-video/TC-VID-02.md"
+   ]
+  },
+  {
+   "id": "6a6215b61ff760b468ad36ca",
+   "hash": "#ad36ca",
+   "class": "qa-passed",
+   "source": "qa",
+   "tests": [
+    "appium/tests/distance.test.js"
+   ],
+   "cases": [
+    "tests/distance/TC-DIST-01.md",
+    "tests/distance/TC-DIST-02.md",
+    "tests/distance/TC-DIST-03.md",
+    "tests/distance/TC-DIST-04.md",
+    "tests/distance/TC-DIST-05.md"
+   ]
+  },
+  {
+   "id": "6a60d51d27f90c73a1aaeb71",
+   "hash": "#aaeb71",
+   "class": "qa-passed",
+   "source": "qa",
+   "tests": [
+    "appium/tests/push-android.test.js"
+   ],
+   "cases": [
+    "tests/push/TC-PUSH-01.md",
+    "tests/push/TC-PUSH-02.md",
+    "tests/push/TC-PUSH-03.md",
+    "tests/push/TC-PUSH-04.md",
+    "tests/push/TC-PUSH-05.md",
+    "tests/push/TC-PUSH-06.md",
+    "tests/push/TC-PUSH-07.md",
+    "tests/push/TC-PUSH-08.md",
+    "tests/push/TC-PUSH-09.md",
+    "tests/push/TC-PUSH-10.md"
+   ]
+  }
+ ]
+}

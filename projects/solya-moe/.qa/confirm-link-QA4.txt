@@ -1,0 +1,1 @@
+https://solya-silk.vercel.app/api/auth/callback?token_hash=pkce_7d192204e60de2bb7d390d96f17fe1f12bb4be04df823bd9063db8bf&type=email

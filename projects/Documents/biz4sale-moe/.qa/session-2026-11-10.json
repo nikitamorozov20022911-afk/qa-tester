@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-10",
+  "project": "biz4sale",
+  "board": "mifrat MCP (token expires 2026-11-10T13:01Z)",
+  "queue": [
+    {
+      "hash": "#d31f3b",
+      "ticket": 90,
+      "id": "86241f87e16a27315ad31f3b",
+      "title": "בקשת לקוח: גלריית עמוד המודעה כמו ביד2",
+      "role": "guest",
+      "status": "done",
+      "column": "הושלם",
+      "action": "pass (user verified & moved)"
+    },
+    {
+      "hash": "#359741",
+      "ticket": 88,
+      "id": "c43ef60c039b7f9958359741",
+      "title": "בקשת לקוח: הסתרת המדריכים מהאתר — גלוי רק למנהל",
+      "role": "guest+user+admin",
+      "status": "done",
+      "column": "הושלם",
+      "action": "pass (user verified & moved)"
+    },
+    {
+      "hash": "#6dd27f",
+      "ticket": 89,
+      "id": "6405b109587ef685336dd27f",
+      "title": "בקשת לקוח: מסך לבן בכניסה למסוף ניהול במובייל",
+      "role": "admin",
+      "status": "done",
+      "column": "הושלם",
+      "action": "pass",
+      "autotest_info": {
+        "feature": "admin-mobile",
+        "role": "admin",
+        "devices": [
+          "android 411"
+        ],
+        "check": "menu→מסוף ניהול, title 'ניהול - פאנל מנהל', scrollWidth==innerWidth, scrollX 0"
+      }
+    }
+  ],
+  "logins": {
+    "admin": "alive 2026-11-10",
+    "user": "alive 2026-11-10"
+  },
+  "results": [
+    {
+      "hash": "#6dd27f",
+      "part": "desktop 1440",
+      "result": "all pass (T5,C1,C3,C4)",
+      "pending": "mobile T1-T4 (needs user OK on devices)"
+    },
+    {
+      "hash": "#359741",
+      "part": "desktop 1440 guest+user",
+      "result": "all pass (T1-T5, flicker, back, D1)",
+      "pending": "admin desktop running; mobile menu (devices answer pending)"
+    },
+    {
+      "hash": "#d31f3b",
+      "part": "desktop 1440/1600",
+      "result": "all pass T1-T6,T8-T12,C1,C2; frame 800x400 (2:1, as before #c49537; ticket: 16:9 'לדוגמה')",
+      "pending": "Android Pixel 6 real device running"
+    },
+    {
+      "hash": "#359741",
+      "part": "desktop 1440 admin",
+      "result": "all pass T6a-e, D1; D3 partial (no logout by design)",
+      "pending": "mobile menu guest/user/admin on Pixel 6"
+    },
+    {
+      "hash": "#359741",
+      "result": "user confirmed passed and moved to הושלם",
+      "autotests": "to write (guides tests now admin-only; guest tests must flip)"
+    },
+    {
+      "hash": "#d31f3b",
+      "result": "user confirmed passed and moved to הושלם; desktop+Pixel6 all pass"
+    },
+    {
+      "hash": "#6dd27f",
+      "part": "Pixel 6 real",
+      "result": "pass T1,T2: panel shown in 2064ms, no white screen, scrollWidth 411=innerWidth, scrollX 0"
+    }
+  ],
+  "deferred_questions": [],
+  "findings": [
+    "#6dd27f: pagination ניהול משתמשים in English (Previous/Next) and LTR",
+    "#6dd27f: admin tabs/tables LTR on RTL site",
+    "#6dd27f: ניהול לידים without pagination, ~1653 items, load 11-16s",
+    "#6dd27f: בקרת נתונים loads ~10s",
+    "#359741: tab title briefly 'מדריכי וידאו | Biz4Sale' on /guides before redirect (0.3-1s)",
+    "#359741 (beyond ticket): robots.txt Disallow /guides; /guides/*.mp4 public 200",
+    "#d31f3b: lightbox arrows keys ←/→ don't navigate",
+    "#d31f3b: browser Back with open lightbox leaves page",
+    "#d31f3b: carousel dots overlap native video progress bar",
+    "#d31f3b: video slide grey side bars (contain) — programmer decision",
+    "#d31f3b: at scrollY>=240 page arrows under sticky header (known)",
+    "#359741: admin /guides — mouse click on native video controls didn't start playback in headless (space/play() work) — recheck by tap on real phone"
+  ],
+  "test_data": [],
+  "closed": true,
+  "autotests": "running in background at close (d31f3b, 359741, 6dd27f)"
+}

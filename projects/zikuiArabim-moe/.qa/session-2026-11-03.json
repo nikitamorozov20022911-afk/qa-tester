@@ -1,0 +1,115 @@
+{
+ "date": "2026-11-03",
+ "command": "/qa",
+ "device": "Android Pixel 6 (Android 17), app com.zichuiharabim.app 1.0.0 (6) + OTA; app on welcome screen (logged out)",
+ "queue": [
+  "#c7b97e 6a9fc20e73f0c860c8c7b97e (OTP 422, 2 open rejections)",
+  "#41747e 6a86f7feb882fcc40241747e (F-39 OTP delivery, 1 open rejection)",
+  "#5623bc b774bc6273218323445623bc (our bug: wrong code -> expired)",
+  "#4572c6 cd8e8bb3e10ac268a44572c6 (our bug: resend without SMS)",
+  "#85332a 0a168fbe361c9f8c5785332a (iOS greeting, needs iPhone + Tatiana login)",
+  "#76bc4c (skip until 9.11)"
+ ],
+ "tickets": [
+  {
+   "hash": "#c7b97e+#41747e+#5623bc+#4572c6",
+   "run": "Android OTP 0537240114",
+   "facts": [
+    "13:40:23 registration send: no 422, 6 boxes, number shown; user code -> 'יש! יצרת חשבון' 13:40:54",
+    "13:45:51 login SMS2 (code expired by 14:18 -> 'הקוד פג תוקף')",
+    "14:10:51 resend SMS3 -> 'נשלח קוד חדש', SMS arrived; wrong code 14:11:17 and 14:13:13 (+2:22) -> 'הקוד שהוזן אינו נכון…'",
+    "14:19:09 resend SMS4 arrived; 14:19:32 resend SMS5 arrived (23s later)",
+    "14:20:08 SMS4 code after SMS5 -> rejected 'אינו נכון' (AC3)",
+    "user entered SMS5 code ~14:22-14:23 -> logged in home 'צהריים טובים QA reg 0311'",
+    "no 'מצב בדיקה' line on code screen",
+    "14:26:08 airplane mode -> 'הקוד לא נשלח: השרת החזיר שגיאה שאיננו יודעים לפרט. נסו שוב בעוד רגע.' (Hebrew, AC2 ok; finding: says server, not network)"
+   ],
+   "screens": [
+    "screenshots/otp-0311-android-01..10*.png"
+   ],
+   "verdict": "pass all 4",
+   "action": "resolved c7b97e 26b6a661 (b4882474) + rej_bd4e5bd0 (98f61ea7); 41747e rej_1790690928268 (c396ac4f) + cleared cannot_reproduce (a1fcbe45); user did עבר QA on all 4",
+   "column": "הושלם"
+  },
+  {
+   "hash": "#85332a",
+   "id": "0a168fbe361c9f8c5785332a",
+   "device": "iPhone 17 (Appium), TestFlight build 20 + OTA (relaunched x2)",
+   "facts": [
+    "14:35 login 0537240114 (user entered SMS code)",
+    "name 'QA reg 0311': greeting 2 lines y138-186, מנחה y214",
+    "name 'Tatiana Dombek' 14:37: greeting 3 lines y138-210, מנחה pushed to y226, no overlap",
+    "name 'Tatiana Dombek Alexandrovna Longname': greeting 4 lines y138-234, מנחה y250, no overlap",
+    "name restored to 'QA reg 0311'"
+   ],
+   "screens": [
+    "screenshots/85332a-0311-ios-01-home-qareg.png",
+    "screenshots/85332a-0311-ios-02-home-tatiana.png",
+    "screenshots/85332a-0311-ios-03-home-longname.png"
+   ],
+   "verdict": "pass",
+   "action": "resolved rej_bad41c20 (107856f4), cleared cannot_reproduce (f45a2b6c)",
+   "column": "הושלם (seen on board 03.11)"
+  }
+ ],
+ "test_data": [
+  "account 0537240114 'QA reg 0311' / qa.reg0311@example.com (new registration, onboarding: אשכנז, פתח תקווה, 1.1.1990)"
+ ],
+ "notes": [
+  "SMS inbox of Pixel readable via adb content query; OTP SMS go to the entered number (not this SIM unless its number is used)"
+ ],
+ "findings": [],
+ "autotests": "OTP: q-21..q-24; #85332a: q-25 + HM-09; ledger done; tsc ok; not run",
+ "new_bugs": [
+  {
+   "hash": "#58ba6a",
+   "id": "47b60dea112b28f61b58ba6a",
+   "ticket": 24,
+   "title": "iOS - header long name overlaps hebrew date",
+   "priority": "low"
+  },
+  {
+   "hash": "#02f519",
+   "id": "4a56edffc3e70c195302f519",
+   "ticket": 25,
+   "title": "Android - offline OTP send shows server error",
+   "priority": "low"
+  }
+ ],
+ "board_selection": "03.11: 7 cards selected in user's Chrome (בחירה מרובה): passed #c7b97e #41747e #5623bc #4572c6 #85332a; new #58ba6a #02f519",
+ "status": "done",
+ "devices_closed": "Appium session deleted, Appium server stopped; Android app logged out; iPhone app logged in as 0537240114",
+ "round2": [
+  {
+   "hash": "#58ba6a",
+   "id": "47b60dea112b28f61b58ba6a",
+   "device": "iPhone 17 TestFlight 20 + OTA 38b2d3b0 (relaunched x2), 16:15",
+   "facts": [
+    "long name 'Tatiana Dombek Alexandrovna Longname': home header name button x166-378 'Tatiana Dombek Alexandr…', date button x72-154 — no overlap, date and 11:51-16:49 readable",
+    "המסע שלי header: name x185-378 'Tatiana Dombek Alexa…', date/time x72-174 — no overlap",
+    "name restored to QA reg 0311"
+   ],
+   "screens": [
+    "screenshots/58ba6a-0311b-ios-01-home-longname.png",
+    "screenshots/58ba6a-0311b-ios-02-journey-longname.png"
+   ],
+   "verdict": "pass (our bug, no rejections)",
+   "column": "הושלם (user: прошли)"
+  },
+  {
+   "hash": "#02f519",
+   "id": "4a56edffc3e70c195302f519",
+   "device": "Pixel 6, app 1.0.0 (6) + OTA (relaunched x2 online), 16:18",
+   "facts": [
+    "airplane mode on -> 'שילחו קוד אימות' -> 'הקוד לא נשלח: אין תשובה מהשרת. בדקו את חיבור האינטרנט ונסו שוב.'",
+    "button stays enabled, second tap shows same message"
+   ],
+   "screens": [
+    "screenshots/02f519-0311b-android-01-offline.png"
+   ],
+   "verdict": "pass (our bug, no rejections)",
+   "column": "הושלם (user: прошли)"
+  }
+ ],
+ "round2_autotests": "done: q-26 (HM-10) #58ba6a; q-23 tightened (AL-08) #02f519; ledger; tsc ok; not run"
+}

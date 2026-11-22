@@ -1,0 +1,686 @@
+{
+ "offset": 0,
+ "batch": 154,
+ "next_offset": 154,
+ "total_done_column": 154,
+ "phase": "done",
+ "features": {
+  "picking": {
+   "tickets": [
+    1,
+    51,
+    55,
+    56,
+    61,
+    62,
+    65,
+    74,
+    75,
+    96,
+    99,
+    100
+   ],
+   "status": "pending"
+  },
+  "warehouse-map": {
+   "tickets": [
+    3,
+    19,
+    23,
+    27,
+    29,
+    33,
+    64,
+    92,
+    93,
+    94,
+    95,
+    98
+   ],
+   "status": "pending"
+  },
+  "customers": {
+   "tickets": [
+    4,
+    58,
+    76,
+    77,
+    82,
+    84,
+    112,
+    113
+   ],
+   "status": "pending"
+  },
+  "catalog": {
+   "tickets": [
+    5,
+    12,
+    14,
+    17,
+    22,
+    24,
+    25,
+    26,
+    30,
+    32,
+    37,
+    66,
+    68,
+    108,
+    109,
+    110,
+    111
+   ],
+   "status": "pending"
+  },
+  "inventory": {
+   "tickets": [
+    6,
+    31,
+    34,
+    36,
+    47,
+    48,
+    53,
+    97
+   ],
+   "status": "pending"
+  },
+  "team-permissions": {
+   "tickets": [
+    7,
+    45
+   ],
+   "status": "pending"
+  },
+  "pricing": {
+   "tickets": [
+    11,
+    124,
+    125,
+    126
+   ],
+   "status": "pending"
+  },
+  "orders": {
+   "tickets": [
+    20,
+    46,
+    59,
+    63,
+    86,
+    104,
+    115,
+    116,
+    117,
+    118,
+    119
+   ],
+   "status": "pending"
+  },
+  "ui-general": {
+   "tickets": [
+    21,
+    28,
+    67,
+    81,
+    83,
+    85,
+    121
+   ],
+   "status": "pending"
+  },
+  "reports": {
+   "tickets": [
+    39
+   ],
+   "status": "pending"
+  },
+  "cart-checkout": {
+   "tickets": [
+    42,
+    60,
+    105,
+    106
+   ],
+   "status": "pending"
+  },
+  "payments": {
+   "tickets": [
+    44
+   ],
+   "status": "pending"
+  },
+  "delivery": {
+   "tickets": [
+    49,
+    50,
+    71,
+    72,
+    73
+   ],
+   "status": "pending"
+  },
+  "catalog-client": {
+   "tickets": [
+    52,
+    91,
+    107,
+    114
+   ],
+   "status": "pending"
+  },
+  "dashboard": {
+   "tickets": [
+    57,
+    69
+   ],
+   "status": "pending"
+  },
+  "auth": {
+   "tickets": [
+    80,
+    89,
+    90,
+    123
+   ],
+   "status": "pending"
+  },
+  "security": {
+   "tickets": [
+    87,
+    122
+   ],
+   "status": "pending"
+  }
+ },
+ "findings": [
+  {
+   "ticket": "n45 #6a749714",
+   "feature": "auth-security",
+   "what": "В режиме «כניסה כעובד» на странице 403 пропадают баннер «כניסה כעובד פעילה» и кнопка «חזרה לחשבון הניהול»",
+   "screenshot": ".qa/screenshots/backfill/auth-impersonate-rep-403-no-banner-desktop.png",
+   "severity": "minor"
+  },
+  {
+   "ticket": "n105 #6a38cf5f",
+   "feature": "client-ordering",
+   "what": "Офлайн при отправке заказа: кнопка «שולח…» висит >50 сек без ошибки; при возврате сети заказ создаётся сам (#437). Проверено эмуляцией offline — перепроверить на реальном обрыве",
+   "screenshot": ".qa/screenshots/backfill/client-ordering-offline-submit.png",
+   "severity": "medium"
+  },
+  {
+   "ticket": "n109 #6a38cf5e",
+   "feature": "catalog",
+   "what": "В навигации каталога покупателя нет подкатегории — только чип родительской категории, товары подкатегории показаны под ним (AC: иерархия в навигации)",
+   "screenshot": ".qa/screenshots/backfill/6a38cf5e-catalog-subcategory-not-in-buyer-nav-desktop.png",
+   "severity": "medium"
+  },
+  {
+   "ticket": "n32 #6a858d3f",
+   "feature": "catalog",
+   "what": "На «מוצר חדש» подсказка «ניסוח מהשם, היחידה והאריזה» всё ещё упоминает единицу (логика единиц удалена)",
+   "screenshot": ".qa/screenshots/backfill/6a858d3f-catalog-new-product-unit-hint-desktop.png",
+   "severity": "minor"
+  },
+  {
+   "ticket": "n84 #6a6755e0",
+   "feature": "customers-pricing",
+   "what": "Карточка клиента зеркальна Figma 71:644: карточки контакта слева, таблица справа, плитки в обратном порядке — дословно «Current behavior» тикета, хотя он в הושלם",
+   "screenshot": ".qa/screenshots/backfill/6a6755e0-card-mirrored-desktop.png",
+   "severity": "medium"
+  },
+  {
+   "ticket": "n97 #6a5cb979",
+   "feature": "inventory",
+   "what": "После «הסרה מהמקום» удаление товара проходит, но пункт меню всё ещё подписан «מחיקה · יש מלאי במחסן» (мелкий UX)",
+   "screenshot": ".qa/screenshots/backfill/inventory-delete-label-stock-unlocated-desktop.png",
+   "severity": "minor"
+  },
+  {
+   "ticket": "n3 #6a8f3153",
+   "feature": "warehouse-map",
+   "what": "«קומה 2»: плитка «משטח 1» в сайдбаре «0 · משטח · ריק», а в панели паллеты «ארגז 1 (C1-01)» с 24–25 ед. 2 товаров (вероятно, старые данные; пользователь видит «ריק»)",
+   "screenshot": ".qa/screenshots/backfill/warehouse-map-n3-pallet-empty-while-box-has-stock.png",
+   "severity": "medium"
+  },
+  {
+   "ticket": "n1 #6a8aaae3",
+   "feature": "picking",
+   "what": "После вкладки «קומה 2» у одного заказа → «כל ההזמנות» → выбор нескольких заказов карта остаётся на этаже 2, а не 1 (по свежей ссылке — верно)",
+   "screenshot": ".qa/screenshots/backfill/picking-n1-floor2-kept-after-reselect.png",
+   "severity": "minor"
+  },
+  {
+   "ticket": "n121 #6a38cf5a",
+   "feature": "ui-general",
+   "what": "«ההזמנות שלי» у клиента (мобильный): вкладки 33 px, «הכל» 24×33 — меньше 44 px для касания",
+   "screenshot": ".qa/screenshots/backfill/6a38cf5a-buyer-orders-tabs-small-touch-mobile.png",
+   "severity": "minor"
+  },
+  {
+   "ticket": "n83 #6a677c6b",
+   "feature": "ui-general",
+   "what": "Текст ошибки в каталоге «נסו שוב» (мн.ч.), на остальных экранах «נסה שוב»",
+   "screenshot": null,
+   "severity": "minor"
+  },
+  {
+   "ticket": "n109/n108 #6a38cf5e (категории)",
+   "feature": "catalog",
+   "what": "Категорию С товарами можно удалить, пока в списке грузятся счётчики (первые ~1–2,5 с все «0 מוצרים», «מחיקה» активна); сервер не блокирует — молча обнуляет category_id у товаров. Нарушает cat-12 п.4 / features F-03. Найдено в регрессе (трейс DELETE 204 до ответа products)",
+   "screenshot": ".qa/e2e/test-results/catalog-catalog-lifecycle--280e2-צרים-חסומה-6a38cf5e-desktop-tests/trace.zip",
+   "severity": "high"
+  },
+  {
+   "ticket": "#6a38cf5b (утверждение заказа)",
+   "feature": "orders",
+   "what": "Возможная гонка: если утвердить заказ с внутренней заметкой до загрузки заметок, блок «הערות פנימיות» не появляется до перезагрузки (order_notes не перезапрашивается после approve_order). Не воспроизведено вручную — НЕЯСНО",
+   "screenshot": null,
+   "severity": "question"
+  },
+  {
+   "ticket": "pricing (окно привязки товаров)",
+   "feature": "customers-pricing",
+   "what": "Пока грузится список, окно привязки показывает ложное «אין מוצרים בקטלוג עדיין.» (UX, мелочь)",
+   "screenshot": null,
+   "severity": "minor"
+  }
+ ],
+ "groups": {
+  "auth-security": {
+   "features": [
+    "auth",
+    "security",
+    "team-permissions"
+   ],
+   "tickets": [
+    7,
+    45,
+    80,
+    87,
+    89,
+    90,
+    122,
+    123
+   ],
+   "status": "done",
+   "cases": 13,
+   "test_files": 3,
+   "tests": 34
+  },
+  "client-ordering": {
+   "features": [
+    "catalog-client",
+    "cart-checkout"
+   ],
+   "tickets": [
+    42,
+    52,
+    60,
+    91,
+    105,
+    106,
+    107,
+    114
+   ],
+   "status": "done",
+   "cases": 14,
+   "test_files": 4,
+   "tests": 15
+  },
+  "orders": {
+   "features": [
+    "orders"
+   ],
+   "tickets": [
+    20,
+    46,
+    59,
+    63,
+    86,
+    88,
+    104,
+    115,
+    116,
+    117,
+    118,
+    119
+   ],
+   "status": "done",
+   "cases": 14,
+   "test_files": 4,
+   "tests": 16
+  },
+  "catalog": {
+   "features": [
+    "catalog"
+   ],
+   "tickets": [
+    5,
+    12,
+    13,
+    14,
+    17,
+    22,
+    24,
+    25,
+    26,
+    30,
+    32,
+    37,
+    41,
+    66,
+    68,
+    108,
+    109,
+    110,
+    111
+   ],
+   "status": "done",
+   "cases": 13,
+   "test_files": 3,
+   "tests": 20
+  },
+  "customers-pricing": {
+   "features": [
+    "customers",
+    "pricing"
+   ],
+   "tickets": [
+    4,
+    11,
+    58,
+    76,
+    77,
+    82,
+    84,
+    112,
+    113,
+    124,
+    125,
+    126
+   ],
+   "status": "done",
+   "cases": 10,
+   "test_files": 4,
+   "tests": 28,
+   "note": "n124/n125 проверены глазами buyer; skip-и закрыты (2 теста в serial-блоке)"
+  },
+  "inventory": {
+   "features": [
+    "inventory"
+   ],
+   "tickets": [
+    6,
+    31,
+    34,
+    36,
+    38,
+    47,
+    48,
+    53,
+    70,
+    97
+   ],
+   "status": "done",
+   "cases": 6,
+   "test_files": 2,
+   "tests": 12
+  },
+  "picking": {
+   "features": [
+    "picking"
+   ],
+   "tickets": [
+    1,
+    2,
+    51,
+    55,
+    56,
+    61,
+    62,
+    65,
+    74,
+    75,
+    96,
+    99,
+    100
+   ],
+   "status": "done",
+   "cases": 10,
+   "test_files": 2,
+   "tests": 12
+  },
+  "warehouse-map": {
+   "features": [
+    "warehouse-map"
+   ],
+   "tickets": [
+    3,
+    19,
+    23,
+    27,
+    29,
+    33,
+    64,
+    92,
+    93,
+    94,
+    95,
+    98
+   ],
+   "status": "done",
+   "cases": 12,
+   "test_files": 4,
+   "tests": 17,
+   "note": "4 skip: создание элементов карты сохраняет весь этаж"
+  },
+  "delivery": {
+   "features": [
+    "delivery"
+   ],
+   "tickets": [
+    49,
+    50,
+    71,
+    72,
+    73
+   ],
+   "status": "done",
+   "cases": 5,
+   "test_files": 3,
+   "tests": 8,
+   "note": "n50/n72 ✅ с временным адресом (вариант Б), адрес удалён; n71 — находка"
+  },
+  "ui-general": {
+   "features": [
+    "ui-general",
+    "dashboard",
+    "reports",
+    "payments"
+   ],
+   "tickets": [
+    21,
+    28,
+    39,
+    44,
+    57,
+    67,
+    69,
+    81,
+    83,
+    85,
+    121
+   ],
+   "status": "done",
+   "cases": 10,
+   "test_files": 5,
+   "tests": 29
+  }
+ },
+ "notes": [
+  "У מחסן кнопка на 403 называется «חזרה לתנועות», а ведёт на «מפת המחסן» (замечание)",
+  "orders/order-lifecycle.spec.ts и client-ordering/cart-checkout.spec.ts нельзя гонять параллельно (общая корзина buyer) — регресс с --workers=1 для этих файлов",
+  "D-10 наблюдение: цена пер-клиент (95) побеждает скидку группы (90), даже если дороже; правила не суммируются",
+  "Метка «מחירון אישי» одинакова для цены пер-клиент и скидки группы",
+  "delivery: на доске #439 «1 פריטים» (строки), в תעודה «סה\"כ פריטים: 2» (единицы)",
+  "warehouse-map: коды ячеек повторяются на разных этажах (C-01, B-01, A-02)",
+  "warehouse-map: фильтр журнала «ליקוט» показывает старые «מכירה»",
+  "warehouse-map: полей холодной зоны/температуры/вместимости (TC-066, n93) нет в UI",
+  "picking: admin может довести утверждённый, но не собранный заказ до «סופק» без комплектации (#441)",
+  "«שולם חלקית» при полной сумме (orders) не воспроизвелось в ui-general (#442: остаток 0 → «שולם») — перепроверить",
+  "n71: водитель видит цены в תעודת משלוח — пользователь: «может да может нет» → не баг, оставить как есть",
+  "n96: стратегия маршрута выбирается автоматически — так задумано (пользователь, 2026-10-03)",
+  "n62: переключателя Map / Items List нет, карта и список показаны одновременно — так и должно быть (пользователь, 2026-10-03)",
+  "n27: общей статистики по типам мест хранения нет — не нужна (пользователь, 2026-10-03)"
+ ],
+ "test_data": [
+  "заказ #435 QA-AUTO-orders-backfill-1 (אושרה · בהכנה)",
+  "#436 — утверждён, סופק, שולם חלקית ₪5 (QA-AUTO)",
+  "#437 — отклонён (QA-AUTO cleanup)",
+  "#438 — QA-AUTO inventory n48, סופק, לא שולם; товар QA-AUTO-inventory-manual1 удалён",
+  "#439 — QA-AUTO-delivery, סופק, לא שולם",
+  "#440, #441 — QA-AUTO-picking, סופק; товары удалены",
+  "#442 — QA-AUTO-ui-general-payments, סופק, שולם",
+  "#443 — QA-AUTO-delivery-assign, סופק; адрес клиента test возвращён в пусто",
+  "#445 — QA-AUTO-delivery-e2e (случайный перезапуск диагноста), נדחתה; адрес test возвращён пустым",
+  "#446–#455 — QA-AUTO из прогона регресса этапа 2, все в конечных статусах; хвостов (товары/группы/правила/адрес/корзина) нет — проверено"
+ ],
+ "pending_user": [],
+ "decisions": [
+  "2026-10-03: пользователь разрешил задать клиенту «test» (buyer) цену/скидку ТОЛЬКО на временный QA-AUTO- товар для проверки n124/n125, затем удалить",
+  "2026-10-03: аккаунта второго клиента (buyer2) нет — тесты изоляции двух клиентов остаются skip",
+  "2026-10-03: «הורדת PDF» = печать браузера — норма (n39)",
+  "2026-10-03: n71 цены у водителя — не баг (решение не принято, не реджектим)",
+  "2026-10-03: n96 авто-выбор стратегии ליקוט — by design",
+  "2026-10-03: n62 карта и список ליקוט одновременно, без переключателя — by design",
+  "2026-10-03: n27 статистика ארונות/מדפים/משטחים/ארגזים — не нужна"
+ ],
+ "regress": {
+  "date": "2026-10-03",
+  "phase1": {
+   "passed": 106,
+   "failed": 12,
+   "flaky": 2,
+   "skipped": 29
+  },
+  "phase2": {
+   "passed": 31,
+   "failed": 5,
+   "did_not_run": 19,
+   "skipped": 1
+  },
+  "product_bugs": 0
+ },
+ "regress2": {
+  "phase1": "122 passed, 27 skipped",
+  "phase2": "45 passed, 2 failed, 2 flaky, 4 did not run, 3 skipped — причина: медленный staging (products 4–5 с), тесты ждут фиксированное время"
+ },
+ "bugs_created": {
+  "date": "2026-10-03",
+  "column": "לביצוע",
+  "tickets": [
+   "#19daa080",
+   "#eb5f4560",
+   "#ba86d972",
+   "#16c27b1d",
+   "#a5f94502",
+   "#0f2113ca",
+   "#dac8c6d1",
+   "#71044355",
+   "#98be590c",
+   "#203f0163",
+   "#59d59e6f",
+   "#966c4100"
+  ],
+  "file": "backfill/bugs-created.md"
+ },
+ "note_coverage": "вся колонка «הושלם» (154) инвентаризирована 2026-10-03; новые тикеты в «הושלם» записывать в регресс сразу (урок L-20261003-10)",
+ "new_2026_10_25": {
+  "mode": "новые",
+  "done_column_total": 204,
+  "not_in_ledger": 8,
+  "status": "done",
+  "classes": {
+   "automatable": [
+    "#6c161c",
+    "#6afef6",
+    "#599f82",
+    "#8103a9",
+    "#aef12a"
+   ],
+   "has-tests": [
+    "#8cd9e9",
+    "#ad4f1b",
+    "#279e07"
+   ]
+  },
+  "features": {
+   "client-ordering": {
+    "tickets": [
+     "#8103a9",
+     "#aef12a"
+    ],
+    "files": [
+     "tests/client-ordering/recent-products.spec.ts",
+     "tests/client-ordering/reorder.spec.ts",
+     "tests/client-ordering/_cart-snapshot.ts"
+    ],
+    "tests": 11,
+    "status": "done"
+   },
+   "picking": {
+    "tickets": [
+     "#6c161c"
+    ],
+    "files": [
+     "tests/picking/picking-pick-all.spec.ts"
+    ],
+    "tests": 2,
+    "status": "done"
+   },
+   "catalog": {
+    "tickets": [
+     "#6afef6"
+    ],
+    "files": [
+     "tests/catalog/product-photo-capture.spec.ts",
+     "tests/catalog/catalog-list.spec.ts (обновлён)"
+    ],
+    "tests": 1,
+    "updated": 1,
+    "status": "done"
+   },
+   "delivery": {
+    "tickets": [
+     "#599f82"
+    ],
+    "files": [
+     "tests/delivery/order-time-and-target-hour.spec.ts"
+    ],
+    "tests": 8,
+    "status": "done"
+   },
+   "ui-general": {
+    "tickets": [
+     "#279e07"
+    ],
+    "files": [
+     "tests/ui-general/dashboard-period-url.spec.ts"
+    ],
+    "tests": 1,
+    "status": "done"
+   }
+  },
+  "findings": [],
+  "notes": [
+   "Статусы теперь в ж.р. («סופקה», «יצאה למשלוח», «סמן כיצאה למשלוח»); старые тесты могут упасть: delivery/driver.spec.ts:50, delivery/delivery-lifecycle.spec.ts (/יצא למשלוח/, «סמן כיצא למשלוח», finishOrder), client-ordering/order-history.spec.ts (`\\d+ פריטים` vs «פריט אחד»)",
+   "Новые @data тесты корзины buyer (recent-products, reorder, picking-pick-all, order-time-and-target-hour) — не гонять параллельно с другими тестами корзины; дописать их в список в .qa/e2e/README.md",
+   "picking-pick-all: селекторы экрана רשימת ליקוט вживую 25.10 не проверены (только код сайта); product-photo-capture: миниатюра/загрузка в storage не проверены вживую — при первом прогоне падение там вероятнее ошибка теста",
+   "Клиент «test» уже имеет адрес доставки «פתח תקווה ריבלין 2»",
+   "Агенты сделали state-save в admin-3.json / buyer-2.json (обновление сессий)"
+  ]
+ }
+}

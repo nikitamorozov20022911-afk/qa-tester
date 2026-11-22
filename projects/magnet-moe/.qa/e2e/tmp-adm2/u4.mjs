@@ -1,0 +1,10 @@
+import {admin,SS,outline} from './h.mjs';
+const A=await admin(); const p=A.p;
+await p.goto('https://magnet-admin.vercel.app/users/937979f0-5564-48f1-b890-d6e84b5f6450',{waitUntil:'domcontentloaded'});
+await p.getByText('היסטוריית פעולות').waitFor({timeout:20000});
+const b=p.getByRole('button',{name:'פעולות על QA חילונית'});
+if(await b.count()){await b.click(); await p.getByRole('menuitem').first().waitFor({timeout:5000}).catch(()=>{}); console.log('MENU deleted',await p.getByRole('menuitem').allInnerTexts()); await outline(p,p.getByRole('menu'),'2c7c58-deleted-menu-desktop.png'); await p.keyboard.press('Escape');} else console.log('no action menu');
+await p.goto('https://magnet-admin.vercel.app/reports',{waitUntil:'domcontentloaded'}); await p.getByRole('tablist').first().waitFor();
+await p.locator('article').first().waitFor({timeout:15000});
+console.log('tabs',(await p.getByRole('tablist').first().innerText()).replace(/\n/g,' '),'QA חילונית open cards',await p.locator('article').filter({hasText:'QA חילונית'}).count());
+await A.close();

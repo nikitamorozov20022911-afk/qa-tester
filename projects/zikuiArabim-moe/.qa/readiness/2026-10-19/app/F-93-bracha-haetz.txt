@@ -1,0 +1,42 @@
+== page 1
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=t y=  81 x= 342 44x44 | חזרה
+Button       vis=t y=  74 x= 108 230x58 | בחירת נוסח. הנוסח המוצג: אשכנזי
+Button       vis=t y=  81 x=  60 44x44 | הסבר על התפילה
+Button       vis=t y=  81 x=  16 44x44 | רשימת התפילות
+StaticText   vis=t y= 190 x= 166 70x17 | בורא פרי העץ
+StaticText   vis=t y= 233 x=  48 306x109 | על כל פרי העץ מברך:&#10;בָּרוּךְ אַתָּה יְ‑יָ אֱ‑לֹהֵינוּ מֶלֶךְ הָעוֹלָם בּוֹרֵא פְּרִי הָעֵץ:
+StaticText   vis=t y= 381 x=  64 250x21 | ברכה על פירות העץ
+StaticText   vis=t y= 425 x=  48 306x49 | מקור: Sefaria.org — Siddur Ashkenaz — Daat Siddur Ashkenaz (Public Domain) — http://www.daat.ac.il/daat/sidurim/tohen3.htm · אושר על ידי בודק QA, 7.10.2026
+Button       vis=t y= 527 x= 121 160x57 | חזרה לברכות
+Button       vis=t y= 629 x=  40 77x45 | השמע
+StaticText   vis=t y= 639 x= 274 88x25 | האזן להקראה
+StaticText   vis=t y= 677 x=  40 322x17 | אין הקראה לקטע הזה
+Other        vis=t y= 144 x=   3 30x616 | Vertical scroll bar, 1 page
+Other        vis=t y= 726 x=   0 402x31 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות
+== page 2
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=t y=  81 x= 342 44x44 | חזרה
+Button       vis=t y=  74 x= 108 230x58 | בחירת נוסח. הנוסח המוצג: אשכנזי
+Button       vis=t y=  81 x=  60 44x44 | הסבר על התפילה
+Button       vis=t y=  81 x=  16 44x44 | רשימת התפילות
+StaticText   vis=t y= 190 x= 166 70x17 | בורא פרי העץ
+StaticText   vis=t y= 233 x=  48 306x109 | על כל פרי העץ מברך:&#10;בָּרוּךְ אַתָּה יְ‑יָ אֱ‑לֹהֵינוּ מֶלֶךְ הָעוֹלָם בּוֹרֵא פְּרִי הָעֵץ:
+StaticText   vis=t y= 381 x=  64 250x21 | ברכה על פירות העץ
+StaticText   vis=t y= 425 x=  48 306x49 | מקור: Sefaria.org — Siddur Ashkenaz — Daat Siddur Ashkenaz (Public Domain) — http://www.daat.ac.il/daat/sidurim/tohen3.htm · אושר על ידי בודק QA, 7.10.2026
+Button       vis=t y= 527 x= 121 160x57 | חזרה לברכות
+Button       vis=t y= 629 x=  40 77x45 | השמע
+StaticText   vis=t y= 639 x= 274 88x25 | האזן להקראה
+StaticText   vis=t y= 677 x=  40 322x17 | אין הקראה לקטע הזה
+Other        vis=t y= 144 x=   3 30x616 | Vertical scroll bar, 1 page
+Other        vis=t y= 726 x=   0 402x31 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות

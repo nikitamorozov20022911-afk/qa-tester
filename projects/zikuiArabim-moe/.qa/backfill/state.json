@@ -1,0 +1,141 @@
+{
+ "range": "1-93",
+ "offset": 93,
+ "total_done": 93,
+ "features_done": [
+  "auth-login",
+  "splash",
+  "registration",
+  "onboarding",
+  "home",
+  "guided-prayer",
+  "prayer-catalog",
+  "prayer-history",
+  "zmanim",
+  "nusach-switch",
+  "profile",
+  "tehilim",
+  "journey",
+  "achievements",
+  "reminders",
+  "important-dates",
+  "torah-lessons",
+  "web-shell",
+  "a11y"
+ ],
+ "findings": [
+  {
+   "id": "6a9fdcc581ca4e63ef234a48",
+   "title": "הפונט באתר אינו תואם לפונט בעיצוב",
+   "what": "computed font-family на всех маршрутах — Discovery_Fs-* (Regular/Medium/Demibold/Bold), тексты молитв/תהילים — NotoSansHebrew; Heebo нигде не применён (напр. «צהריים טובים…» Discovery_Fs-Demibold, «התחל תפילה» Discovery_Fs-Medium, таб «בית» Discovery_Fs-Bold)",
+   "expected": "Heebo в заголовках, тексте, кнопках, навигации (план backfill 4.17 #2; Figma 436:1373 «Heebo:Medium», 454:8682 «Heebo:SemiBold/Regular/Bold»). Оговорка: в комментариях программиста (4b0dc07d8102, 2087e9ad1b0e 23.09) переход на Discovery_Fs назван намеренным («חריג ההתאמה היחיד שמוצהר ב-AGENTS.md»), тикет закрыт без реджекта — нужно решение пользователя, какой шрифт эталон",
+   "screenshot": ".qa/screenshots/backfill-4e63ef234a48.png",
+   "status": "accepted-by-user",
+   "decision": "2026-10-03: пользователь — «нормально», не баг"
+  },
+  {
+   "id": "6a8edf78d6400316c09cd8c9",
+   "title": "Focus is not moved on route change, so aria-hidden is applied over the focused element",
+   "what": "Предупреждения «Blocked aria-hidden» нет ни у гостя (/ → /phone), ни у user1 (переходы по табам). Фокус переходит на H1 нового экрана на /phone, /journey, /tehilim, /prayers, /blessings. Но при переходе на /home фокус НЕ уходит на новый экран: из /journey по табу «בית» остаётся на табе (DIV role=tab «בית»), из /profile «חזרה» — на BODY; на /home нет ни одного h1/role=heading",
+   "expected": "AC тикета: «Focus moves to the incoming screen on every route change» (needed behavior: на заголовок нового экрана)",
+   "screenshot": ".qa/screenshots/backfill-0316c09cd8c9.png",
+   "status": "accepted-by-user",
+   "decision": "2026-10-03: пользователь — «нормально», не баг"
+  }
+ ],
+ "phase": "done",
+ "plan": ".qa/backfill/plan.md",
+ "classes": {
+  "automatable": 46,
+  "manual-only": 33,
+  "duplicate": 8,
+  "superseded": 3,
+  "has-tests": 3
+ },
+ "scenarios": 44,
+ "batch1": {
+  "date": "2026-10-03",
+  "cases": 20,
+  "ok": 15,
+  "partial_or_unverified": 5,
+  "findings": 0,
+  "not_verified": [
+   "AL-01 (отправка кода/OTP)",
+   "AL-02 (экран OTP)",
+   "AL-03 (выход+OTP)",
+   "RG-03 (нужна отправка формы)",
+   "GP-04 (@data-irreversible)"
+  ]
+ },
+ "batch2": {
+  "date": "2026-10-03",
+  "features": {
+   "zmanim": {
+    "cases": 2,
+    "ok": 2,
+    "partial_or_unverified": []
+   },
+   "nusach-switch": {
+    "cases": 1,
+    "ok": 1,
+    "partial_or_unverified": []
+   },
+   "profile": {
+    "cases": 4,
+    "ok": 4,
+    "partial_or_unverified": [
+     "PR-03: JPG/WEBP и не-картинка не проверялись (только PNG)"
+    ]
+   },
+   "tehilim": {
+    "cases": 1,
+    "ok": 1,
+    "partial_or_unverified": []
+   },
+   "journey": {
+    "cases": 4,
+    "ok": 4,
+    "partial_or_unverified": []
+   },
+   "achievements": {
+    "cases": 2,
+    "ok": 2,
+    "partial_or_unverified": []
+   },
+   "reminders": {
+    "cases": 4,
+    "ok": 4,
+    "partial_or_unverified": []
+   },
+   "important-dates": {
+    "cases": 4,
+    "ok": 4,
+    "partial_or_unverified": []
+   },
+   "torah-lessons": {
+    "cases": 1,
+    "ok": 1,
+    "partial_or_unverified": []
+   },
+   "web-shell": {
+    "cases": 1,
+    "ok": 1,
+    "partial_or_unverified": [
+     "WS-02 шрифт — НАХОДКА (Discovery_Fs вместо Heebo), тест не планировался"
+    ]
+   },
+   "a11y": {
+    "cases": 1,
+    "ok": 1,
+    "partial_or_unverified": [
+     "A11Y-01 фокус при смене маршрута — НАХОДКА на /home, тест не планировался"
+    ]
+   }
+  },
+  "cases": 25,
+  "ok": 25,
+  "findings": 2
+ },
+ "autotests_files": 64,
+ "cases": 55
+}

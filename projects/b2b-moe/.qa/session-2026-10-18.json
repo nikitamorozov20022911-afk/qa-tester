@@ -1,0 +1,393 @@
+{
+  "date": "2026-10-18",
+  "mode": "qa",
+  "queue_column": "בבדיקות",
+  "board_via": "mifrat MCP (восстановился ~13:30; чтение тикетов было через Chrome)",
+  "auth_check": {
+    "admin": "alive",
+    "buyer": "alive",
+    "rep": "alive"
+  },
+  "queue": [
+    "8cd9e9",
+    "279e07",
+    "ad4f1b",
+    "599f82",
+    "47ba10",
+    "80bb3c",
+    "1f768e",
+    "6afef6",
+    "6c161c",
+    "aef12a",
+    "8103a9"
+  ],
+  "tickets": [
+    {
+      "hash": "8cd9e9",
+      "title": "הוספת הכיתוב \"ברוטו לפני מע\"מ\" לשדה מחיר קנייה",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "ждёт-подтверждения",
+      "feature": "catalog/product-form",
+      "role": "admin",
+      "devices": [
+        "desktop 1440",
+        "1024",
+        "iPhone 390 emu"
+      ],
+      "evidence": "screenshots/8cd9e9-*",
+      "findings": [
+        "1024: подпись в 2 строки, поле на 18px ниже соседнего «מחיר בסיס»",
+        "нет тоста после сохранения редактирования (не перепроверено)"
+      ],
+      "test_data": "QA-AUTO-8cd9-123046 создан и удалён"
+    },
+    {
+      "hash": "6afef6",
+      "title": "קטלוג וניהול – כפתור \"צילום\" פותח בחירת תמונה",
+      "verdict": "pass (эмуляция, fake camera Chromium)",
+      "action": "pass",
+      "column": "ждёт-подтверждения",
+      "feature": "catalog/product-photos",
+      "role": "admin",
+      "devices": [
+        "iPad 810x1080/1080x810 emu",
+        "iPhone 390 emu",
+        "desktop 1440"
+      ],
+      "evidence": "screenshots/6afef6-*",
+      "notes": [
+        "подсказка изменилась → cat-06 п.3 и catalog-list.spec.ts:184 обновить при автотестах"
+      ],
+      "findings": [
+        "застывший кадр вписан с полосами — картинка «прыгает» при צילום (fake camera)"
+      ],
+      "test_data": "QA-AUTO-6afe-6287724 создан (20 фото) и удалён; файлы storage не проверены"
+    },
+    {
+      "hash": "599f82",
+      "title": "הוספת שעת ביצוע ההזמנה ושעת יעד לאספקה",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "ждёт-подтверждения",
+      "feature": "orders/delivery-note",
+      "role": "buyer+admin+driver",
+      "devices": [
+        "desktop 1440",
+        "iPhone 390 emu"
+      ],
+      "evidence": "screenshots/599f82-*, ad4f1b-*"
+    },
+    {
+      "hash": "ad4f1b",
+      "title": "הסרת שדה \"סטטוס\" מתעודת משלוח",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "ждёт-подтверждения",
+      "feature": "orders/delivery-note",
+      "role": "buyer+admin+driver",
+      "devices": [
+        "desktop 1440",
+        "iPhone 390 emu"
+      ],
+      "evidence": "screenshots/599f82-*, ad4f1b-*"
+    },
+    {
+      "hash": "279e07",
+      "title": "הוספת אפשרות סינון לפי יום אחד (היום) בלוח הבקרה הראשי",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "ждёт-подтверждения",
+      "feature": "dashboard/period-filter",
+      "role": "admin+rep",
+      "devices": [
+        "desktop 1440",
+        "1024",
+        "iPhone 390 emu"
+      ],
+      "evidence": "screenshots/279e07-*",
+      "not_checked": [
+        "подпись «לעומת אתמול כולו» при ненулевом вчера",
+        "граница полуночи на данных"
+      ],
+      "findings": [
+        "график «היום» — одна дневная точка, не почасовой",
+        "выбор периода не сохраняется после перезагрузки (→30)"
+      ],
+      "decisions": [
+        "חוב פתוח не по периоду — норма (пользователь 18.10)",
+        "הזמנות פתוחות «נכון לעכשיו» — не реджект (по умолчанию)"
+      ]
+    },
+    {
+      "hash": "47ba10",
+      "verdict": "reject",
+      "action": "reject sent",
+      "points": [
+        "1.5→15 / 2.5→25 / 1e3→13 молча, сохраняется 15 (3/3)"
+      ],
+      "evidence": [
+        "screenshots/47ba10-v-1-qty1.5-becomes15-1440.png",
+        "screenshots/47ba10-v-1-saved15-after-reload-1440.png"
+      ],
+      "findings": [
+        "עריכה сразу после сохранения — старое кол-во (4/4)",
+        "תיעוד עריכה: «משתמש לא ידוע»",
+        "кол-во > остатка",
+        "390 таблица скроллится"
+      ],
+      "rejection_id": "rej_1c154920a27492d195eafd13",
+      "change_id": "903382839b2b91235ad62d64",
+      "column": "לביצוע"
+    },
+    {
+      "hash": "80bb3c",
+      "verdict": "reject",
+      "action": "reject sent",
+      "points": [
+        "продажа остатка «ללא מקום» — 400 23514 (3/3, любая цена)",
+        "кол-во > остатка принимается и продаётся (регресс #6a7496de, 3/3)",
+        "1.5→15 (3/3)"
+      ],
+      "evidence": [
+        "screenshots/80bb3c-v-1a.png",
+        "screenshots/80bb3c-v-3b-plus-3.png",
+        "screenshots/80bb3c-v-4-1_5-1.png"
+      ],
+      "not_checked": [
+        "распознавание штрихкода с камеры (в fake video нет кода)"
+      ],
+      "findings": [
+        "390: колонка שם מוצר и поле кол-ва за краем при открытии",
+        "автотест walk-in-sale.spec.ts устарел"
+      ],
+      "rejection_id": "rej_0248275a2001c4775b297177",
+      "change_id": "6c3f7a6ed964dc7dd41adc7f",
+      "column": "לביצוע"
+    },
+    {
+      "hash": "aef12a",
+      "title": "הוספת כפתור \"הזמן שוב\"",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "ждёт-подтверждения",
+      "feature": "client/order-history-reorder",
+      "role": "buyer+admin",
+      "devices": [
+        "desktop 1440",
+        "iPhone 390 emu"
+      ],
+      "evidence": "screenshots/aef12a-*",
+      "findings": [
+        "корзина ~0.5 с показывает пусто/₪0 после удаления строки",
+        "разные названия статусов buyer/admin"
+      ]
+    },
+    {
+      "hash": "8103a9",
+      "title": "קטגוריית \"מוצרים אחרונים\"",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "ждёт-подтверждения",
+      "feature": "client/catalog-recent",
+      "role": "buyer+admin",
+      "devices": [
+        "desktop 1440",
+        "iPhone 390 emu"
+      ],
+      "evidence": "screenshots/8103a9-*",
+      "not_checked": [
+        "новый клиент без заказов не видит категорию; раздельная история (нет второго клиента)"
+      ],
+      "notes": [
+        "отклонённые заказы учитываются; архивные товары скрыты"
+      ]
+    },
+    {
+      "hash": "1f768e",
+      "verdict": "reject",
+      "action": "reject sent",
+      "points": [
+        "тост на /orders 1440 закрывает всю пагинацию, клик по странице не проходит (3/3)"
+      ],
+      "question": "2 заказа в одном цикле опроса — 2 тоста, 1 звук: провал?",
+      "evidence": [
+        "screenshots/1f768e-v-1.png",
+        "screenshots/1f768e-v-2.png"
+      ],
+      "findings": [
+        "список /orders не показывает новый заказ в момент тоста",
+        "«תכולת המדף» не обновляется после הסרה מהמקום при остатке 0",
+        "cart-checkout.spec adminReject устарел"
+      ],
+      "rejection_id": "rej_06ef534b292d06e452cff276",
+      "change_id": "c4c659bdb77868226fa1693d",
+      "column": "לביצוע"
+    },
+    {
+      "hash": "6c161c",
+      "title": "הוספת כפתור \"ליקוט הכל\"",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "ждёт-подтверждения",
+      "feature": "warehouse/picking-pick-all",
+      "role": "admin+worker",
+      "devices": [
+        "desktop 1440",
+        "iPhone 390 emu"
+      ],
+      "evidence": "screenshots/6c161c-*",
+      "findings": [
+        "товар без места с остатком 0 отмечается «לוקט» (и одиночной кнопкой) — серверный mark_pick_line",
+        "заказ с חסר можно довести до סופק",
+        "удаление товара с остатком «ללא מקום» без предупреждения"
+      ]
+    }
+  ],
+  "test_data": [
+    {
+      "what": "заказ #542 QA-AUTO-599f-1792316090415, test, ₪5, סופק 12:42, водитель יוסי הנהג, доставка 21.10 17:30",
+      "removable": false
+    },
+    {
+      "what": "адрес клиента test «פתח תקווה ריבלין 2» — был до сессии, не трогали",
+      "removable": null
+    },
+    {
+      "what": "оплата ₪5 на заказ #542 (שולם), 18.10 12:49 — основная сессия, для #279e07",
+      "removable": false
+    },
+    {
+      "what": "журнал: 2 приёмки ללא מקום (5 и 3) товаров QA-AUTO-80bb-317187(-B), товары удалены; номера заказов #544 #545 #547 потрачены неудачными продажами",
+      "removable": false
+    },
+    {
+      "what": "заказ #543 QA-AUTO-47ba-1792317011923 test ₪145.50 נדחתה",
+      "removable": false
+    },
+    {
+      "what": "заказ #546 QA-AUTO-47ba-v test נדחתה",
+      "removable": false
+    },
+    {
+      "what": "מכירה מיידית #552 (1×₪7.50) и #553 (1×₪10), סופק/שולם; архив QA-AUTO-80bb-v-U/P; журнал движений; номера #548–#551 сгорели",
+      "removable": false
+    },
+    {
+      "what": "заказ #554 QA-AUTO-aef1-O1 test נדחתה; архив QA-AUTO-aef1-A/B/C/D; журнал: 4 приёмки + החזרה לספק C",
+      "removable": false
+    },
+    {
+      "what": "заказы test #555–#561 QA-AUTO-1f76-* נדחתה; מכירה מיידית #562 (₪1, QA-AUTO-1f76-W) и #563 (₪1, test); архив QA-AUTO-1f76-W-*; E-10 снова ריק",
+      "removable": false
+    },
+    {
+      "what": "заказы test #564–#579 QA-AUTO-1f76-v-* (₪0, פינלנדיה) נדחתה",
+      "removable": false
+    },
+    {
+      "what": "#6c161c: товары QA-AUTO-6c16-21389-A/B/P/S (₪1); места A→G-01, P→G-02(X=2)+G-03(Y=3), S→E-02 (קומה 1), B→A-10 (המחסן שלנו); приёмки в יומן תנועות",
+      "removable": true,
+      "ticket": "6c161c"
+    },
+    {
+      "what": "#6c161c: заказ test #580 (QA-AUTO-6c16-O1, A×2 B×1 P×3 S×1, ₪7) — לוקטה с חוסר S → סופק (rep); החזרה לספק S×1 ref QA-AUTO-6c16-21389-ret (ללא מקום); записи יומן ליקוט/ביטול ליקוט по #580 — неудаляемы",
+      "removable": false,
+      "ticket": "6c161c"
+    },
+    {
+      "what": "#6c161c: заказы test #581 (QA-AUTO-6c16-O3, A×3, חוסר 1) и #582 (QA-AUTO-6c16-O2, B×1 P×1) → סופק; החזרה לספק A×1 из G-01 ref QA-AUTO-6c16-21389-retA; товары QA-AUTO-6c16-21389-A/B/P/S удалены (archived, у B и P оставалось по 1 шт.); G-01/G-02/G-03/A-10/E-02 — ריק",
+      "removable": false,
+      "ticket": "6c161c"
+    },
+    {
+      "what": "заказы test #580 #581 #582 QA-AUTO-6c16-* סופק; возвраты поставщику S×1, A×1; архив QA-AUTO-6c16-21389-*; места G-01..03, A-10, E-02 ריק",
+      "removable": false
+    },
+    {
+      "what": "заказы test #583–#587 QA-AUTO-find-* נדחתה; מכירה מיידית #588–#590 (₪0); архив QA-AUTO-find-S, P1–P5; места E-02..E-05, E-10 ריק",
+      "removable": false
+    }
+  ],
+  "deferred_questions": [],
+  "board_texts": "research/board-2026-10-18/<hash>.md",
+  "incidents": [
+    "13:5x admin.json перезаписан сессией работника (ошибка скрипта агента #6c161c) — восстановлен npm run qa-login"
+  ],
+  "status": "closed",
+  "new_tickets": [
+    {
+      "hash": "#634a4e",
+      "id": "12d12a247021c161dd634a4e",
+      "title": "עריכת הזמנה: עריכה מיד אחרי שמירה — כמות קודמת"
+    },
+    {
+      "hash": "#f5aa41",
+      "id": "cc5326472407b6c430f5aa41",
+      "title": "עגלה: ₪0 לרגע אחרי הסרה"
+    },
+    {
+      "hash": "#38d742",
+      "id": "36dac08244d671f33f38d742",
+      "title": "ליקוט: ללא מיקום 0 מסומן לוקט"
+    },
+    {
+      "hash": "#fd2f41",
+      "id": "b7e1aba7c2ec8b7cfdfd2f41",
+      "title": "כרטיס הזמנה: חוסר + «לוקטו במלואם»"
+    },
+    {
+      "hash": "#6f3c9b",
+      "id": "0937df95a575a7245b6f3c9b",
+      "title": "לוח בקרה: תקופה מתאפסת ברענון"
+    },
+    {
+      "hash": "#26c50b",
+      "id": "7819036c2eb35738b526c50b",
+      "title": "לוח בקרה: גרף היום נקודה אחת"
+    },
+    {
+      "hash": "#94fef5",
+      "id": "be461a57de0cbfba1794fef5",
+      "title": "טופס מוצר 1024: כיתוב בשתי שורות"
+    },
+    {
+      "hash": "#539c2f",
+      "id": "99ac8eb1edc7791540539c2f",
+      "title": "תעודת משלוח: «סופק ב»"
+    },
+    {
+      "hash": "#e1e502",
+      "id": "6881a94f4915ec62cee1e502",
+      "title": "מכירה מיידית 390: שם/כמות מחוץ למסך"
+    },
+    {
+      "hash": "#7ae889",
+      "id": "aa97156f37058619357ae889",
+      "title": "סטטוס הזמנה בלשון לא אחידה"
+    },
+    {
+      "hash": "#ef8f45",
+      "id": "540333de22da3e6644ef8f45",
+      "title": "תיעוד עריכה: משתמש לא ידוע"
+    },
+    {
+      "hash": "#6a98bd",
+      "id": "c2ee2c6f2605577fc76a98bd",
+      "title": "עריכת הזמנה: כמות מעל המלאי בלי אזהרה"
+    },
+    {
+      "hash": "#d9d645",
+      "id": "cb20810cdd852e8afdd9d645",
+      "title": "הזמנות: ההזמנה לא ברשימה ברגע ההתראה"
+    },
+    {
+      "hash": "#aea5d4",
+      "id": "1f7c74b74fd2de7b94aea5d4",
+      "title": "מפת המחסן: תכולת המדף אחרי הסרה עם מלאי 0"
+    }
+  ],
+  "not_confirmed": [
+    "нет тоста после сохранения товара — тост есть"
+  ]
+}

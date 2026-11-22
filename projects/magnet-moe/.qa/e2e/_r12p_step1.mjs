@@ -1,0 +1,16 @@
+import { open, gotoEdit, tiles } from './_r12p_lib.mjs';
+const [acc, authFile] = process.argv.slice(2);
+const { p, close } = await open(acc, authFile);
+await gotoEdit(p);
+console.log('BEFORE', JSON.stringify(await tiles(p), null, 1));
+const t = await tiles(p);
+const fc = p.waitForEvent('filechooser', {timeout:15000});
+await p.locator(`[aria-label="${t.adds[0]}"]`).click();
+const ch = await fc; await ch.setFiles('../test-faces/r12-ai/'+acc+'-2.png');
+await p.waitForTimeout(3000);
+await p.screenshot({path:'../r12p/s1a-'+acc+'.png'});
+console.log((await p.evaluate(()=>document.body.innerText)).slice(0,400).replace(/\n/g,' | '));
+await p.waitForTimeout(8000);
+console.log('AFTER', JSON.stringify(await tiles(p), null, 1));
+await p.screenshot({path:'../r12p/s1b-'+acc+'.png'});
+await close();

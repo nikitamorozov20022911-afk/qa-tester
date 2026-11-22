@@ -1,0 +1,22 @@
+import { newBrowser, ctx, go, txt, shot, sleep } from './qasp6-lib.mjs';
+const W='/wallet/shared/3bf0fc53-2b78-46d2-9f53-f824c57ceb39';
+const b = await newBrowser();
+const { p } = await ctx(b, 'client', 375);
+const log=(...a)=>console.log(...a);
+await go(p, W);
+await p.getByRole('button',{name:'הסרת נגה ברק'}).click(); await sleep(2000);
+log('remove dialog:', (await txt(p)).replace(/\n/g,' | '));
+await shot(p,'6a86f7c7/r1-52-remove-dialog-375');
+log(await p.locator('body').ariaSnapshot());
+// cancel first
+const cancel = p.getByRole('button',{name:/ביטול|חזרה/}).last();
+await cancel.click(); await sleep(1500);
+log('after cancel:', (await txt(p)).replace(/\n/g,' | ').slice(0,300));
+await p.getByRole('button',{name:'הסרת נגה ברק'}).click(); await sleep(2000);
+const confirm = p.getByRole('button',{name:/הסר|אישור/}).last();
+log('confirm label', await confirm.textContent());
+await confirm.click(); await sleep(3500);
+log('after remove:', (await txt(p)).replace(/\n/g,' | '));
+await shot(p,'6a86f7c7/r1-53-after-remove-375', true);
+log('REQ', p._req, p._console);
+await b.close();

@@ -1,0 +1,116 @@
+== page 1
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=t y=  78 x= 358 24x24 | חזרה
+StaticText   vis=t y=  75 x=  44 314x30 | פרופיל אישי
+Button       vis=t y= 138 x= 159 84x84 | העלאת תמונת פרופיל
+Button       vis=t y= 234 x= 145 112x26 | עריכת השם
+StaticText   vis=t y= 264 x= 126 150x21 | qa.reg1910@example.con
+StaticText   vis=t y= 317 x=  20 362x24 | פרטים אישיים
+Button       vis=t y= 350 x=  21 360x57 | נוסח תפילה: אשכנז. מעבר לשלב כדי לשנות
+Button       vis=t y= 407 x=  21 360x57 | תאריך לידה: 1.1.1990. מעבר לשלב כדי לשנות
+Button       vis=t y= 464 x=  21 360x57 | מיקום: תל אביב. מעבר לשלב כדי לשנות
+Button       vis=t y= 521 x=  21 360x57 | היעד שלי: להתחזק. מעבר לשלב כדי לשנות
+Button       vis=t y= 578 x=  21 360x56 | רמת התחזקות: 4 פעמים בשבוע. מעבר לשלב כדי לשנות
+StaticText   vis=t y= 667 x=  20 362x24 | תאריכים חשובים
+StaticText   vis=t y= 716 x= 291 42x24 | אזכרה
+StaticText   vis=t y= 717 x=  37 63x22 | 18.10.2026
+StaticText   vis=t y= 744 x=  37 328x16 | QA בדיקה
+StaticText   vis=t y= 809 x=  20 362x24 | פרטי ההרשמה
+Button       vis=t y= 842 x=  21 360x57 | שם מלא: Qa reg 1910. מעבר לשלב כדי לשנות
+Button       vis=f y= 899 x=  21 360x57 | טלפון: 0501112077. מעבר לשלב כדי לשנות
+Button       vis=f y= 956 x=  21 360x56 | אימייל: qa.reg1910@example.con. מעבר לשלב כדי לשנות
+StaticText   vis=f y=1021 x=  20 362x32 | הפרטים האלה נאספו בעת יצירת החשבון. שינוי הטלפון או האימייל כאן מעדכן את פרטי הקשר בלבד.
+StaticText   vis=f y=1085 x=  20 362x24 | הגדרות
+Switch       vis=f y=1118 x=  21 360x105 | תזכורות במערכת. כולל התראות ל: זמני תפילה, תפילין, ספירת העומר, ראש חודש ומועדים
+Button       vis=f y=1223 x=  21 360x56 | הודעות במייל, SMS ו־WhatsApp: לא מאושר. מעבר לשלב כדי לשנות
+StaticText   vis=f y=1312 x=  20 362x24 | אודות
+StaticText   vis=f y=1361 x=  29 344x72 | אפליקציית &quot;אור הגאולה&quot; נועדה לעזור לך להתפלל בקלות ובנוחות, עם התאמה אוטומטית לזמנים, מקום ונוסח.
+Button       vis=f y=1482 x=  20 362x48 | התנתקות
+Other        vis=t y= 840 x=  61 280x31 | Horizontal scroll bar, 1 page
+== page 2
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=t y=  78 x= 358 24x24 | חזרה
+StaticText   vis=t y=  75 x=  44 314x30 | פרופיל אישי
+Button       vis=f y=-448 x= 159 84x85 | העלאת תמונת פרופיל
+Button       vis=f y=-352 x= 145 112x27 | עריכת השם
+StaticText   vis=f y=-322 x= 126 150x22 | qa.reg1910@example.con
+StaticText   vis=f y=-269 x=  20 362x25 | פרטים אישיים
+Button       vis=f y=-236 x=  21 360x58 | נוסח תפילה: אשכנז. מעבר לשלב כדי לשנות
+Button       vis=f y=-179 x=  21 360x58 | תאריך לידה: 1.1.1990. מעבר לשלב כדי לשנות
+Button       vis=f y=-122 x=  21 360x58 | מיקום: תל אביב. מעבר לשלב כדי לשנות
+Button       vis=f y= -65 x=  21 360x58 | היעד שלי: להתחזק. מעבר לשלב כדי לשנות
+Button       vis=f y=  -8 x=  21 360x57 | רמת התחזקות: 4 פעמים בשבוע. מעבר לשלב כדי לשנות
+StaticText   vis=f y=  81 x=  20 362x25 | תאריכים חשובים
+StaticText   vis=t y= 130 x= 291 42x25 | אזכרה
+StaticText   vis=t y= 131 x=  37 63x23 | 18.10.2026
+StaticText   vis=t y= 158 x=  37 328x17 | QA בדיקה
+StaticText   vis=t y= 223 x=  20 362x25 | פרטי ההרשמה
+Button       vis=t y= 256 x=  21 360x58 | שם מלא: Qa reg 1910. מעבר לשלב כדי לשנות
+Button       vis=t y= 313 x=  21 360x58 | טלפון: 0501112077. מעבר לשלב כדי לשנות
+Button       vis=t y= 370 x=  21 360x57 | אימייל: qa.reg1910@example.con. מעבר לשלב כדי לשנות
+StaticText   vis=t y= 435 x=  20 362x33 | הפרטים האלה נאספו בעת יצירת החשבון. שינוי הטלפון או האימייל כאן מעדכן את פרטי הקשר בלבד.
+StaticText   vis=t y= 499 x=  20 362x25 | הגדרות
+Switch       vis=t y= 532 x=  21 360x106 | תזכורות במערכת. כולל התראות ל: זמני תפילה, תפילין, ספירת העומר, ראש חודש ומועדים
+Button       vis=t y= 637 x=  21 360x57 | הודעות במייל, SMS ו־WhatsApp: לא מאושר. מעבר לשלב כדי לשנות
+StaticText   vis=t y= 726 x=  20 362x25 | אודות
+StaticText   vis=t y= 775 x=  29 344x73 | אפליקציית &quot;אור הגאולה&quot; נועדה לעזור לך להתפלל בקלות ובנוחות, עם התאמה אוטומטית לזמנים, מקום ונוסח.
+Button       vis=f y= 896 x=  20 362x49 | התנתקות
+Other        vis=t y= 840 x=  61 280x31 | Horizontal scroll bar, 1 page
+== page 3
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=t y=  78 x= 358 24x24 | חזרה
+StaticText   vis=t y=  75 x=  44 314x30 | פרופיל אישי
+Button       vis=f y=-538 x= 159 84x84 | העלאת תמונת פרופיל
+Button       vis=f y=-442 x= 145 112x26 | עריכת השם
+StaticText   vis=f y=-412 x= 126 150x21 | qa.reg1910@example.con
+StaticText   vis=f y=-359 x=  20 362x24 | פרטים אישיים
+Button       vis=f y=-326 x=  21 360x57 | נוסח תפילה: אשכנז. מעבר לשלב כדי לשנות
+Button       vis=f y=-269 x=  21 360x57 | תאריך לידה: 1.1.1990. מעבר לשלב כדי לשנות
+Button       vis=f y=-212 x=  21 360x57 | מיקום: תל אביב. מעבר לשלב כדי לשנות
+Button       vis=f y=-155 x=  21 360x57 | היעד שלי: להתחזק. מעבר לשלב כדי לשנות
+Button       vis=f y= -98 x=  21 360x56 | רמת התחזקות: 4 פעמים בשבוע. מעבר לשלב כדי לשנות
+StaticText   vis=f y=  -9 x=  20 362x24 | תאריכים חשובים
+StaticText   vis=f y=  40 x= 291 42x24 | אזכרה
+StaticText   vis=f y=  41 x=  37 63x22 | 18.10.2026
+StaticText   vis=f y=  68 x=  37 328x16 | QA בדיקה
+StaticText   vis=t y= 133 x=  20 362x24 | פרטי ההרשמה
+Button       vis=t y= 166 x=  21 360x57 | שם מלא: Qa reg 1910. מעבר לשלב כדי לשנות
+Button       vis=t y= 223 x=  21 360x57 | טלפון: 0501112077. מעבר לשלב כדי לשנות
+Button       vis=t y= 280 x=  21 360x56 | אימייל: qa.reg1910@example.con. מעבר לשלב כדי לשנות
+StaticText   vis=t y= 345 x=  20 362x32 | הפרטים האלה נאספו בעת יצירת החשבון. שינוי הטלפון או האימייל כאן מעדכן את פרטי הקשר בלבד.
+StaticText   vis=t y= 409 x=  20 362x24 | הגדרות
+Switch       vis=t y= 442 x=  21 360x105 | תזכורות במערכת. כולל התראות ל: זמני תפילה, תפילין, ספירת העומר, ראש חודש ומועדים
+Button       vis=t y= 547 x=  21 360x56 | הודעות במייל, SMS ו־WhatsApp: לא מאושר. מעבר לשלב כדי לשנות
+StaticText   vis=t y= 636 x=  20 362x24 | אודות
+StaticText   vis=t y= 685 x=  29 344x72 | אפליקציית &quot;אור הגאולה&quot; נועדה לעזור לך להתפלל בקלות ובנוחות, עם התאמה אוטומטית לזמנים, מקום ונוסח.
+Button       vis=t y= 806 x=  20 362x48 | התנתקות
+Other        vis=t y= 840 x=  61 280x31 | Horizontal scroll bar, 1 page
+== page 4
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=t y=  78 x= 358 24x24 | חזרה
+StaticText   vis=t y=  75 x=  44 314x30 | פרופיל אישי
+Button       vis=f y=-538 x= 159 84x84 | העלאת תמונת פרופיל
+Button       vis=f y=-442 x= 145 112x26 | עריכת השם
+StaticText   vis=f y=-412 x= 126 150x21 | qa.reg1910@example.con
+StaticText   vis=f y=-359 x=  20 362x24 | פרטים אישיים
+Button       vis=f y=-326 x=  21 360x57 | נוסח תפילה: אשכנז. מעבר לשלב כדי לשנות
+Button       vis=f y=-269 x=  21 360x57 | תאריך לידה: 1.1.1990. מעבר לשלב כדי לשנות
+Button       vis=f y=-212 x=  21 360x57 | מיקום: תל אביב. מעבר לשלב כדי לשנות
+Button       vis=f y=-155 x=  21 360x57 | היעד שלי: להתחזק. מעבר לשלב כדי לשנות
+Button       vis=f y= -98 x=  21 360x56 | רמת התחזקות: 4 פעמים בשבוע. מעבר לשלב כדי לשנות
+StaticText   vis=f y=  -9 x=  20 362x24 | תאריכים חשובים
+StaticText   vis=f y=  40 x= 291 42x24 | אזכרה
+StaticText   vis=f y=  41 x=  37 63x22 | 18.10.2026
+StaticText   vis=f y=  68 x=  37 328x16 | QA בדיקה
+StaticText   vis=t y= 133 x=  20 362x24 | פרטי ההרשמה
+Button       vis=t y= 166 x=  21 360x57 | שם מלא: Qa reg 1910. מעבר לשלב כדי לשנות
+Button       vis=t y= 223 x=  21 360x57 | טלפון: 0501112077. מעבר לשלב כדי לשנות
+Button       vis=t y= 280 x=  21 360x56 | אימייל: qa.reg1910@example.con. מעבר לשלב כדי לשנות
+StaticText   vis=t y= 345 x=  20 362x32 | הפרטים האלה נאספו בעת יצירת החשבון. שינוי הטלפון או האימייל כאן מעדכן את פרטי הקשר בלבד.
+StaticText   vis=t y= 409 x=  20 362x24 | הגדרות
+Switch       vis=t y= 442 x=  21 360x105 | תזכורות במערכת. כולל התראות ל: זמני תפילה, תפילין, ספירת העומר, ראש חודש ומועדים
+Button       vis=t y= 547 x=  21 360x56 | הודעות במייל, SMS ו־WhatsApp: לא מאושר. מעבר לשלב כדי לשנות
+StaticText   vis=t y= 636 x=  20 362x24 | אודות
+StaticText   vis=t y= 685 x=  29 344x72 | אפליקציית &quot;אור הגאולה&quot; נועדה לעזור לך להתפלל בקלות ובנוחות, עם התאמה אוטומטית לזמנים, מקום ונוסח.
+Button       vis=t y= 806 x=  20 362x48 | התנתקות
+Other        vis=t y= 840 x=  61 280x31 | Horizontal scroll bar, 1 page

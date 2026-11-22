@@ -1,0 +1,250 @@
+{
+  "project": "hunters",
+  "date": "2026-11-15",
+  "environment": "https://hunters-sooty.vercel.app",
+  "queue": [
+    "#0224f4",
+    "#1d9069",
+    "#1eabe4",
+    "#2b0521",
+    "#56ac83",
+    "#8fc7be"
+  ],
+  "note": "retest of 07.11 rejects (Brian fixes 8.11, e395cf6/5e2c90d), quick before client call",
+  "tickets": [
+    {
+      "hash": "#2b0521",
+      "verdict": "pass",
+      "runs": 3,
+      "action": "pass",
+      "note": "bell demo-hunter-2: no deleted-job notices 3/3; jobs screens ok",
+      "column": "הושלם",
+      "confirmed_by_user": "2026-11-08"
+    },
+    {
+      "hash": "#56ac83",
+      "verdict": "reject",
+      "note": "L7 «וכמתמ/ח/ה» 1/10; security 5/5 ok; bug-verifier running",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_38fa740d2ac43e0987f2f8a1",
+      "old_rejection_resolved": "rej_b7d486e9",
+      "frequency": "1/22"
+    },
+    {
+      "hash": "#1eabe4",
+      "verdict": "pass",
+      "note": "reject fixed; reverse direction not checkable (no unverified hunter w/o NDA)",
+      "action": "pass",
+      "column": "הושלם",
+      "confirmed_by_user": "2026-11-08"
+    },
+    {
+      "hash": "#8fc7be",
+      "verdict": "wait-user",
+      "note": "edit profile ok; registration needs new talent — user checks himself with PDF/screenshot"
+    },
+    {
+      "hash": "#0224f4",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "confirmed_by_user": "2026-11-08",
+      "rejection_resolved": "rej_0ca2901b"
+    },
+    {
+      "hash": "#1d9069",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "confirmed_by_user": "2026-11-08",
+      "rejection_resolved": "rej_831cd552"
+    }
+  ],
+  "test_data": [
+    "demo-hunter-3 sent «QA r2 0811» to chats 11ec1344, 525fb19b, d595c28f(new), 70419724, 9339566b",
+    "NDA claude-test↔סופר פארם J-148 approved 08.11.2026–08.02.2027, chat dc263bb1 msgs «QA r2 0811»/«QA r2 0811 hunter»",
+    "pending auto NDA claude-test→U-50 chat 24ae1314",
+    {
+      "date": "2026-11-15",
+      "what": "new account hunter_new qa-hunternew-4674404c@fldubai.com (temp mail, registered by user, onboarding not done) for #c2bc5d/#633ce9/#837e7f"
+    },
+    {
+      "date": "2026-11-15",
+      "what": "#90dccb: saved QA-AUTO 90dccb S1, V1y (claude-test); submitted to J-148: S1, N1(unsaved), E1 Delta (claude-test); P1, P2 (demo-hunter-3, FREE 2/4 left); unsaved closed N2,N3,V1-V3,P0"
+    },
+    {
+      "date": "2026-11-15",
+      "what": "#633ce9: contact-admin requests R-27..R-33; demo-talent-3 password reset by admin (temp pw in research/633ce9/demo-talent-3-temp-password.txt); «שמרתי» pressed: claude-test, demo-hunter-2, demo-talent-1"
+    },
+    {
+      "date": "2026-11-15",
+      "what": "#2e6aa2: demo-hunter-2 FREE→PREMIUM (admin grant)→FREE ×2, reverted, verified"
+    },
+    {
+      "date": "2026-11-15",
+      "what": "hunter_new onboarded as head hunter Noa Barak QA1511, status pending admin approval; docs uploaded li-mock-1.png"
+    },
+    {
+      "date": "2026-11-15",
+      "what": "hunter_new U-56 approved by admin (pending→מאושר); demo-talent-3 password reset again (R-32 closed)"
+    },
+    {
+      "date": "2026-11-15",
+      "what": "#c2bc5d: chats hunter_new↔dh3 (151e2fe4, NDA approved till 15.02.2027), dh3↔«דב האנטר 2» (60aa2fbe, NDA request pending), hunter_new↔dh2 (a4933670, keep for payment); possible pending Cardcom orders ₪49/₪150"
+    },
+    {
+      "date": "2026-11-15",
+      "what": "new account talent_li qa-talentli-503897ce@fldubai.com (temp mail, registered by user) for #8fc7be; onboarded as talent Dana Levi QA0711 U-57, FREE"
+    },
+    {
+      "date": "2026-11-15",
+      "what": "PRICE nda_one_time 49.00 → 1.00 (temp, for #c2bc5d payment) — MUST revert to 49.00"
+    },
+    {
+      "date": "2026-11-15",
+      "what": "user paid ₪1 NDA נקודתי hunter_new→dh2 (price 49→1, agent reverting to 49); next: PREMIUM 320→1 (temp) purchase by claude-test (was PLUS, not verified) — revert plan to PLUS + price to 320 after"
+    },
+    {
+      "date": "2026-11-15",
+      "what": "PRICE PREMIUM monthly 320→1 (user) → 320 reverted & verified; NDA נקודתי 49→1→49 reverted"
+    },
+    {
+      "date": "2026-11-15",
+      "what": "claude-test bought PREMIUM ₪1 (user card 7913) → admin set back to PLUS till 15.12.2026 (no renew); card 7913 being removed"
+    },
+    {
+      "date": "2026-11-15",
+      "what": "hunter_new paid ₪1 NDA with dh2 (approved, till 15.02.2027); chat claude-test→hunter_new msg"
+    }
+  ],
+  "findings": [
+    "edit profile: unsaved edits lost switching tabs פרטים אישיים↔ניסיון מקצועי",
+    "verified line «אתם מאומתים…» missing in chats with demo-hunter-2/claude-test",
+    "AI summary L9 wrong years «בין 2016 ל-2023»",
+    "edit candidate: save button shows raw i18n key «people.form.save»",
+    "submit dialog: status «נשלח/ה — היום» shown before «סיום והגשה»",
+    "«המנוי שלי» on PREMIUM doesn't say verification included (programmer claimed)",
+    "verification block on FREE card loads with delay of several seconds",
+    "admin user profile has no 'verified' indicator",
+    "saved card 6526 expired 02/26 offered at payment step",
+    "FREE submissions counter: after 1 submission panel shows 3→2→1, after reload 2 (double decrement client-side) — #90dccb verifier",
+    "direct link /my-candidates/<unsaved id> opens profile of unsaved candidate",
+    "«לחייב NDA(₪35)» no space before bracket",
+    "#633ce9: copy feedback — NOT a bug (toast «הקוד הועתק» shown)",
+    "#837e7f: company import summary uses head-hunter labels («כותרת התפקיד», «כמה מילים עליכם»)",
+    "#837e7f: talent screenshot in company block gives no 'not a company page' error",
+    "mobile: /profile?edit=details sometimes redirects to /__L__/collaborations/<id> 404",
+    "payment modal (₪49 NDA נקודתי): coupon block overlapped by order card, «קוד קופון» title cut"
+  ],
+  "notes": [
+    "#2b0521 rejection rej_8aad1e88 resolve blocked by permission classifier — user to check"
+  ],
+  "queue_2026_11_15": [
+    "#90dccb",
+    "#2e6aa2",
+    "#56ac83",
+    "#837e7f",
+    "#633ce9",
+    "#c2bc5d"
+  ],
+  "tickets_2026_11_15": {
+    "#56ac83": {
+      "verdict": "reject",
+      "step": "done",
+      "draft": "drafts/reject-56ac83-2026-11-15.md",
+      "old_rejection_to_resolve": "rej_38fa740d2ac43e0987f2f8a1",
+      "freq": {
+        "dovret_law": "12/20+9/9",
+        "dovret_csm": "9/9",
+        "vatik": "2/3",
+        "oreach": "8/9",
+        "mitmaked_submit": "4/5"
+      },
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_0f7dd576eef16fee50ce1e86",
+      "resolved_old": "rej_38fa740d2ac43e0987f2f8a1",
+      "attachments": "by public url (upload_path gave upload_not_complete)"
+    },
+    "#90dccb": {
+      "verdict": "reject",
+      "step": "done",
+      "draft": "drafts/reject-90dccb-2026-11-15.md",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_1e24dd3cbc9bcfd2efc105b6",
+      "attachments": 7,
+      "replace": "user asked to replace reject (remove «למלא אותם»); waiting new screenshot",
+      "replaced": "rej_d8db7dc46458881592665662 resolved (wrong word «אותם» about הפרטים)"
+    },
+    "#2e6aa2": {
+      "verdict": "reject",
+      "item": "raw i18n key plans.verification.subscription.inPremium in «המנוי שלי» on purchased PREMIUM",
+      "rest": "all ✅ incl. purchase→badge, plans dialog, invoices 1 line, no-NDA chat, revert→badge gone",
+      "step": "done",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_a70feb3bec1329ddbc6875ec"
+    },
+    "#633ce9": {
+      "verdict": "reject",
+      "step": "done",
+      "draft": "drafts/reject-633ce9-2026-11-15.md",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_9c0b34d920ad44939cb46a84"
+    },
+    "#837e7f": {
+      "step": "done",
+      "reg": "hunter registration ok desktop he",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_e0d55f2c79b0ca1bbe9515f0"
+    },
+    "#c2bc5d": {
+      "verdict": "reject",
+      "items": [
+        "one-time NDA must be free (user decision 15.11), only this person/job, 3 months; verification 12 months paid",
+        "bar text for company/HR mentions annual verification but window has only (a)",
+        "re-sign after 3 months (requirement)"
+      ],
+      "paid_flow": "₪1 paid by user, works both sides",
+      "step": "done",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_b7e774a42d33e7d0a3aa8eba"
+    },
+    "#8fc7be": {
+      "verdict": "pass",
+      "note": "registration ✅ incl reject; edit profile ✅; empty headline in edit impossible (required)",
+      "step": "done",
+      "action": "pass",
+      "column": "הושלם",
+      "confirmed_by_user": "2026-11-15",
+      "rejection_resolved": "rej_609567e71d9bc8a689bae758",
+      "autotests": "10 generated, 10 pass"
+    }
+  },
+  "new_tickets": [
+    {
+      "hash": "#f921ce",
+      "ticket": 80,
+      "title": "«פנייה למנהל המערכת» form: the e-mail field has no placeholder",
+      "status": "todo"
+    },
+    {
+      "hash": "#c110f9",
+      "ticket": 81,
+      "title": "Client request: Secret recovery code — stored encrypted, masked in Admin…",
+      "status": "todo"
+    },
+    {
+      "hash": "#c3887f",
+      "ticket": 82,
+      "title": "Payment window for «NDA נקודתי» (from the chat): the order card covers the coupon «אישור» button, the card form is squeezed",
+      "status": "todo"
+    }
+  ],
+  "status": "completed"
+}

@@ -1,0 +1,827 @@
+
+Execution of 78 workers started at 2026-10-11T10:08:04.233Z
+
+[0-0] RUNNING in iOS on iOS - file:///specs/achievements/ac-01-grid-six-achievements.e2e.ts
+[0-0] PASSED in iOS on iOS - file:///specs/achievements/ac-01-grid-six-achievements.e2e.ts
+[0-1] RUNNING in iOS on iOS - file:///specs/achievements/ac-02-achievement-dialog-share.e2e.ts
+[0-1] Error in "Достижения.AC-02 Окно полученного достижения — строка ободрения, «חזרה למסך ראשי», предпросмотр шеринга с текстом #6a86f7d9 @prod-safe"
+Error: Expect $(`-ios predicate string:label CONTAINS "זו ההודעה שתישלח, בלי שום פרט נוסף:" OR value CONTAINS "זו ... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at expectTextContains (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:59:38)
+    at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/achievements/ac-02-achievement-dialog-share.e2e.ts:33:11)
+[0-1] FAILED in iOS on iOS - file:///specs/achievements/ac-02-achievement-dialog-share.e2e.ts
+[0-2] RUNNING in iOS on iOS - file:///specs/auth-login/al-01-phone-login-otp.e2e.ts
+[0-2] Error in "Вход по мобильному."before all" hook: wrappedHook for "AL-01 Splash → «בואו נתחיל» → экран номера (мокап, две ссылки на документы) → код → главная #6a86f7ec @prod-safe""
+Error: element ("-ios predicate string:label == "פרופיל אישי" OR value == "פרופיל אישי" OR name == "פרופיל אישי"") still not displayed after 20000ms
+    at async logout (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/auth-login/al-01-phone-login-otp.e2e.ts:13:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/auth-login/al-01-phone-login-otp.e2e.ts:34:24)
+[0-2] FAILED in iOS on iOS - file:///specs/auth-login/al-01-phone-login-otp.e2e.ts
+[0-3] RUNNING in iOS on iOS - file:///specs/auth-login/al-03-relogin-after-logout.e2e.ts
+[0-3] Error in "Вход по мобильному.AL-03 Повторный вход после «התנתקות» — главная открывается, без ошибки #6aa268eb @prod-safe"
+Error: Expect $(`-ios predicate string:label == "תזכורות מהירות" OR value == "תזכורות מהירות" OR name == "תזכורות ... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/auth-login/al-03-relogin-after-logout.e2e.ts:42:44)
+[0-3] FAILED in iOS on iOS - file:///specs/auth-login/al-03-relogin-after-logout.e2e.ts
+[0-4] RUNNING in iOS on iOS - file:///specs/brachot/br-01-blessings-list-search-screen.e2e.ts
+[0-4] Error in "מדור ברכות.BR-01 «ברכות» → список и строка נוסח, поиск «גפן», экран ברכה без элементов молитвы, «חזרה לברכות» #6a86f7ee5747 @prod-safe"
+Error: Expect $(`-ios predicate string:label == "נטילת ידים והמוציא" OR value == "נטילת ידים והמוציא" OR name == "... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:56:30)
+    at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/brachot/br-01-blessings-list-search-screen.e2e.ts:28:13)
+[0-4] FAILED in iOS on iOS - file:///specs/brachot/br-01-blessings-list-search-screen.e2e.ts
+[0-5] RUNNING in iOS on iOS - file:///specs/guided-prayer/gp-01-run-without-finish.e2e.ts
+[0-5] Error in "Молитва по шагам.GP-01 Молитва: шапка, «X מתוך Y», המשך/קודם, выход и возврат на тот же חלק #6a86f7e9 @prod-safe"
+Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-01-run-without-finish.e2e.ts:41:7)
+[0-5] FAILED in iOS on iOS - file:///specs/guided-prayer/gp-01-run-without-finish.e2e.ts
+[0-6] RUNNING in iOS on iOS - file:///specs/guided-prayer/gp-02-explanation-layer.e2e.ts
+[0-6] Error in "Молитва по шагам.GP-02 Окно ⓘ «על התפילה» (не утверждено): «על תפילת מנחה», «💡 טיפ», «נוסח זמני…», без «סגירה והמשך בתפילה», ✕ → тот же קטע #6a86f7ff #6a86f7e16f63 @prod-safe"
+Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async openInfo (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-02-explanation-layer.e2e.ts:15:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-02-explanation-layer.e2e.ts:38:20)
+[0-6] Error in "Молитва по шагам.GP-02 Окно ⓘ «על התפילה» (утверждено в админке): «על תפילת ערבית», «מקור: … · אושר על ידי …» вместо «נוסח זמני» #6a86f7e16f63 #a5decf4a @prod-safe"
+Error: element ("-ios predicate string:label == "ערבית" OR value == "ערבית" OR name == "ערבית"") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async openInfo (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-02-explanation-layer.e2e.ts:15:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-02-explanation-layer.e2e.ts:45:20)
+[0-6] FAILED in iOS on iOS - file:///specs/guided-prayer/gp-02-explanation-layer.e2e.ts
+[0-7] RUNNING in iOS on iOS - file:///specs/guided-prayer/gp-03-nusach-availability-switch.e2e.ts
+[0-7] Error in "Молитва по шагам.GP-03 Нусах: עדות המזרח «בקרוב», смена на уровне всей молитвы с подтверждением и возвратом #ecda5d38 @prod-safe"
+Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-03-nusach-availability-switch.e2e.ts:21:5)
+[0-7] FAILED in iOS on iOS - file:///specs/guided-prayer/gp-03-nusach-availability-switch.e2e.ts
+[0-8] RUNNING in iOS on iOS - file:///specs/guided-prayer/gp-05-explanation-and-source-additions.e2e.ts
+[0-8] PASSED in iOS on iOS - file:///specs/guided-prayer/gp-05-explanation-and-source-additions.e2e.ts
+[0-9] RUNNING in iOS on iOS - file:///specs/guided-prayer/gp-05-explanation-and-source-berachot.e2e.ts
+[0-9] PASSED in iOS on iOS - file:///specs/guided-prayer/gp-05-explanation-and-source-berachot.e2e.ts
+[0-10] RUNNING in iOS on iOS - file:///specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts
+[0-10] Error in "Молитва по шагам.GP-05 Строка источника во всех фрагментах основных молитв — shacharit_ashkenaz #6a86f7df #a5decf4a @prod-safe"
+Error: element ("-ios predicate string:label == "שחרית" OR value == "שחרית" OR name == "שחרית"") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:57:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:85:7)
+[0-10] Error in "Молитва по шагам.GP-05 Строка источника во всех фрагментах основных молитв — shacharit_sfarad #6a86f7df #a5decf4a @prod-safe"
+Error: element ("-ios predicate string:label == "שחרית" OR value == "שחרית" OR name == "שחרית"") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:57:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:85:7)
+[0-10] Error in "Молитва по шагам.GP-05 Строка источника во всех фрагментах основных молитв — mincha_ashkenaz #6a86f7df #a5decf4a @prod-safe"
+Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:57:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:85:7)
+[0-10] Error in "Молитва по шагам.GP-05 Строка источника во всех фрагментах основных молитв — mincha_sfarad #6a86f7df #a5decf4a @prod-safe"
+Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:57:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:85:7)
+[0-10] Error in "Молитва по шагам.GP-05 Строка источника во всех фрагментах основных молитв — arvit_ashkenaz #6a86f7df #a5decf4a @prod-safe"
+Error: element ("-ios predicate string:label == "ערבית" OR value == "ערבית" OR name == "ערבית"") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:57:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:85:7)
+[0-10] Error in "Молитва по шагам.GP-05 Строка источника во всех фрагментах основных молитв — arvit_sfarad #6a86f7df #a5decf4a @prod-safe"
+Error: element ("-ios predicate string:label == "ערבית" OR value == "ערבית" OR name == "ערבית"") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:57:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:85:7)
+[0-10] FAILED in iOS on iOS - file:///specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts
+[0-11] RUNNING in iOS on iOS - file:///specs/guided-prayer/gp-05-explanation-example-mincha-sfarad-ashrei.e2e.ts
+[0-11] Error in "Молитва по шагам.GP-05 Пример пояснения: מנחה ספרד «אשרי» — «תהילה לפני תפילת המנחה» #6a86f7df @prod-safe"
+Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-example-mincha-sfarad-ashrei.e2e.ts:23:12)
+[0-11] FAILED in iOS on iOS - file:///specs/guided-prayer/gp-05-explanation-example-mincha-sfarad-ashrei.e2e.ts
+[0-12] RUNNING in iOS on iOS - file:///specs/guided-prayer/gp-06-share-button-geometry-and-absence.e2e.ts
+[0-12] Error in "Молитва по шагам.GP-06 «שיתוף התפילה»: под «קודם»/«סיים תפילה», над «האזן להקראה» (מנחה ספרד, 2 מתוך 11) #6a86f7df @prod-safe"
+Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-geometry-and-absence.e2e.ts:41:12)
+[0-12] FAILED in iOS on iOS - file:///specs/guided-prayer/gp-06-share-button-geometry-and-absence.e2e.ts
+[0-13] RUNNING in iOS on iOS - file:///specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts
+[0-13] Error in "Молитва по шагам.GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — shacharit_ashkenaz #6a86f7df @prod-safe"
+Error: element ("-ios predicate string:label == "שחרית" OR value == "שחרית" OR name == "שחרית"") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:43:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:71:7)
+[0-13] Error in "Молитва по шагам.GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — shacharit_sfarad #6a86f7df @prod-safe"
+Error: element ("-ios predicate string:label == "שחרית" OR value == "שחרית" OR name == "שחרית"") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:43:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:71:7)
+[0-13] Error in "Молитва по шагам.GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — mincha_ashkenaz #6a86f7df @prod-safe"
+Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:43:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:71:7)
+[0-13] Error in "Молитва по шагам.GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — mincha_sfarad #6a86f7df @prod-safe"
+Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:43:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:71:7)
+[0-13] Error in "Молитва по шагам.GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — arvit_ashkenaz #6a86f7df @prod-safe"
+Error: element ("-ios predicate string:label == "ערבית" OR value == "ערבית" OR name == "ערבית"") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:43:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:71:7)
+[0-13] Error in "Молитва по шагам.GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — arvit_sfarad #6a86f7df @prod-safe"
+Error: element ("-ios predicate string:label == "ערבית" OR value == "ערבית" OR name == "ערבית"") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:43:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:71:7)
+[0-13] FAILED in iOS on iOS - file:///specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts
+[0-14] RUNNING in iOS on iOS - file:///specs/guided-prayer/gp-06-share-dialog-text.e2e.ts
+[0-14] Error in "Молитва по шагам.GP-06 Окно «שיתוף התפילה»: текст и ссылка, «ביטול» закрывает — מנחה ספרד и ערבית אשכנז #6a86f7df @prod-safe"
+Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-dialog-text.e2e.ts:43:12)
+[0-14] FAILED in iOS on iOS - file:///specs/guided-prayer/gp-06-share-dialog-text.e2e.ts
+[0-15] RUNNING in iOS on iOS - file:///specs/guided-prayer/gp-07-approved-source-line.e2e.ts
+[0-15] Error in "Молитва по шагам.GP-07 Утверждённые фрагменты: «מקור: … · אושר על ידי …»; неутверждённый — «הטקסט עדיין לא אושר…» #a5decf4a @prod-safe"
+Error: element ("-ios predicate string:label == "ערבית" OR value == "ערבית" OR name == "ערבית"") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-07-approved-source-line.e2e.ts:44:5)
+[0-15] FAILED in iOS on iOS - file:///specs/guided-prayer/gp-07-approved-source-line.e2e.ts
+[0-16] RUNNING in iOS on iOS - file:///specs/guided-prayer/gp-08-no-recording-listen-disabled.e2e.ts
+[0-16] Error in "Молитва по шагам.GP-08 Нет записи: «אין הקראה לקטע הזה», «השמע» неактивна — מנחה ספרד, שחרית אשכנז, ערבית אשכנז #a5decf4a @prod-safe"
+Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-08-no-recording-listen-disabled.e2e.ts:34:12)
+[0-16] FAILED in iOS on iOS - file:///specs/guided-prayer/gp-08-no-recording-listen-disabled.e2e.ts
+[0-17] RUNNING in iOS on iOS - file:///specs/home/hm-01-daily-home.e2e.ts
+[0-17] Error in "Главная.HM-01 Главная: приветствие с именем, дата, ближайшая молитва, счётчики, навигация из 5 табов #6a86f7ea @prod-safe"
+Error: Expect $(`-ios predicate string:label CONTAINS "תשפ״ז" OR value CONTAINS "תשפ״ז"`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/home/hm-01-daily-home.e2e.ts:41:43)
+[0-17] FAILED in iOS on iOS - file:///specs/home/hm-01-daily-home.e2e.ts
+[0-18] RUNNING in iOS on iOS - file:///specs/home/hm-02-recent-prayers.e2e.ts
+[0-18] PASSED in iOS on iOS - file:///specs/home/hm-02-recent-prayers.e2e.ts
+[0-19] RUNNING in iOS on iOS - file:///specs/home/hm-03-time-window-and-date-tags.e2e.ts
+[0-19] Error in "Главная.HM-03 Окно времени под датой (вверху слева); тег важной даты еврейский #6a86f7e5 @prod-safe"
+Error: Expect $(`-ios predicate string:label MATCHES "[א-ת״׳' ]+ תשפ״ז" OR value MATCHES "[א-ת״׳' ]+ תשפ״ז"`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/home/hm-03-time-window-and-date-tags.e2e.ts:24:26)
+[0-19] FAILED in iOS on iOS - file:///specs/home/hm-03-time-window-and-date-tags.e2e.ts
+[0-20] RUNNING in iOS on iOS - file:///specs/impact-map/im-01-invite-dialog-text.e2e.ts
+[0-20] Error in "«מפת השפעה» и приглашение.IM-01 «הזמנת אדם להתחזק» — утверждённый текст и одна ссылка в окне; «ביטול» закрывает без отправки #6a86f7e6 @prod-safe"
+Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 1
+Received: 6
+    at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/impact-map/im-01-invite-dialog-text.e2e.ts:30:40)
+[0-20] FAILED in iOS on iOS - file:///specs/impact-map/im-01-invite-dialog-text.e2e.ts
+[0-21] RUNNING in iOS on iOS - file:///specs/impact-map/im-02-map-me-two-branches-counter.e2e.ts
+[0-21] PASSED in iOS on iOS - file:///specs/impact-map/im-02-map-me-two-branches-counter.e2e.ts
+[0-22] RUNNING in iOS on iOS - file:///specs/impact-map/im-03-own-invite-link-message.e2e.ts
+[0-22] PASSED in iOS on iOS - file:///specs/impact-map/im-03-own-invite-link-message.e2e.ts
+[0-26] RUNNING in iOS on iOS - file:///specs/important-dates/id-04-calendar-month-year-picker.e2e.ts
+[0-26] Error in "Важные даты и אזכרות.ID-04 Календарь в окне даты — дни текущего месяца, двойной еврейский заголовок, выбор месяца/года, без ручного ввода #6a86f7e0 @prod-safe"
+Error: Expect $(`-ios predicate string:label == "ספטמבר 2026" OR value == "ספטמבר 2026" OR name == "ספטמבר 2026"`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:56:30)
+    at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/important-dates/id-04-calendar-month-year-picker.e2e.ts:57:11)
+[0-26] FAILED in iOS on iOS - file:///specs/important-dates/id-04-calendar-month-year-picker.e2e.ts
+[0-27] RUNNING in iOS on iOS - file:///specs/journey/jr-01-real-data.e2e.ts
+[0-27] Error in "«המסע שלי».JR-01 «המסע שלי» на реальных данных — уровень, счётчики = главная, פילוח, последние молитвы, מפת השפעה, достижения #6a86f7e8 @prod-safe"
+Error: Не найден текст после прокрутки: תפילות אחרונות
+    at scrollToText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:76:9)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/journey/jr-01-real-data.e2e.ts:78:5)
+[0-27] FAILED in iOS on iOS - file:///specs/journey/jr-01-real-data.e2e.ts
+[0-28] RUNNING in iOS on iOS - file:///specs/journey/jr-02-header-opens-profile.e2e.ts
+[0-28] Error in "«המסע שלי».JR-02 Клик по аватару или имени открывает «פרופיל אישי» #f6970bc6 @prod-safe"
+Error: element ("-ios predicate string:label == "אקדא טסט" OR value == "אקדא טסט" OR name == "אקדא טסט"") still not displayed after 15000ms
+    at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:46:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/journey/jr-02-header-opens-profile.e2e.ts:24:5)
+[0-28] FAILED in iOS on iOS - file:///specs/journey/jr-02-header-opens-profile.e2e.ts
+[0-30] RUNNING in iOS on iOS - file:///specs/journey/jr-06-rankup-window-not-repeated.e2e.ts
+[0-30] Error in "«המסע שלי».JR-06 Окно «עלית דרגה» не показывается повторно без повышения (user1, уровень 10) #22c9d541 @prod-safe"
+Error: Expect $(`-ios predicate string:label == "תזכורות מהירות" OR value == "תזכורות מהירות" OR name == "תזכורות ... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:56:30)
+    at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/journey/jr-06-rankup-window-not-repeated.e2e.ts:43:11)
+[0-30] FAILED in iOS on iOS - file:///specs/journey/jr-06-rankup-window-not-repeated.e2e.ts
+[0-31] RUNNING in iOS on iOS - file:///specs/nusach-switch/ns-01-menu.e2e.ts
+[0-31] Error in "Смена нусаха внутри молитвы.NS-01 Меню смены нусаха — только список, активный отмечен, карточка в пределах экрана #6a86f7d8 @prod-safe"
+Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/nusach-switch/ns-01-menu.e2e.ts:22:5)
+[0-31] FAILED in iOS on iOS - file:///specs/nusach-switch/ns-01-menu.e2e.ts
+[0-32] RUNNING in iOS on iOS - file:///specs/nusach-switch/ns-02-cancel-and-replace.e2e.ts
+[0-32] Error in "Смена нусаха внутри молитвы.NS-02 «ביטול» оставляет всё как было, «החלף» переносит в параллельный קטע #6a86f7fdaa68 @prod-safe"
+Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/nusach-switch/ns-02-cancel-and-replace.e2e.ts:14:5)
+[0-32] FAILED in iOS on iOS - file:///specs/nusach-switch/ns-02-cancel-and-replace.e2e.ts
+[0-33] RUNNING in iOS on iOS - file:///specs/nusach-switch/ns-02-missing-section-fallback.e2e.ts
+[0-33] Error in "Смена нусаха внутри молитвы.NS-02 Фрагмента нет в другом нусахе → переход к следующему с пояснением #6a86f7d8 @prod-safe"
+Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async openMinchaSfarad (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/nusach-switch/ns-02-missing-section-fallback.e2e.ts:14:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/nusach-switch/ns-02-missing-section-fallback.e2e.ts:35:5)
+[0-33] FAILED in iOS on iOS - file:///specs/nusach-switch/ns-02-missing-section-fallback.e2e.ts
+[0-34] RUNNING in iOS on iOS - file:///specs/nusach-switch/ns-02-profile-unchanged.e2e.ts
+[0-34] Error in "Смена нусаха внутри молитвы.NS-02 После смены нусаха в молитве профиль не меняется #6a86f7d8 @prod-safe"
+Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/nusach-switch/ns-02-profile-unchanged.e2e.ts:37:5)
+[0-34] FAILED in iOS on iOS - file:///specs/nusach-switch/ns-02-profile-unchanged.e2e.ts
+[0-35] RUNNING in iOS on iOS - file:///specs/nusach-switch/ns-02-same-nusach-no-dialog.e2e.ts
+
+
+Ending WebDriver sessions gracefully ...
+(press ctrl+c again to hard kill the runner)
+[0-35] FAILED in iOS on iOS - file:///specs/nusach-switch/ns-02-same-nusach-no-dialog.e2e.ts
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[iOS #0-0] Running: on iOS
+[iOS #0-0] Session ID: 74ba1c15-a0e9-47f2-8da6-381d4edf89e2
+[iOS #0-0]
+[iOS #0-0] » specs/achievements/ac-01-grid-six-achievements.e2e.ts
+[iOS #0-0] Достижения
+[iOS #0-0]    ✓ AC-01 Сетка 6 достижений — полученные и неполученные различимы, без дублей #6a86f7ed @prod-safe
+[iOS #0-0]
+[iOS #0-0] 1 passing (18.4s)
+------------------------------------------------------------------
+[iOS #0-1] Running: on iOS
+[iOS #0-1] Session ID: a4271c74-6c8f-45f4-99fb-92335c1a4197
+[iOS #0-1]
+[iOS #0-1] » specs/achievements/ac-02-achievement-dialog-share.e2e.ts
+[iOS #0-1] Достижения
+[iOS #0-1]    ✖ AC-02 Окно полученного достижения — строка ободрения, «חזרה למסך ראשי», предпросмотр шеринга с текстом #6a86f7d9 @prod-safe
+[iOS #0-1]
+[iOS #0-1] 1 failing (34.7s)
+[iOS #0-1]
+[iOS #0-1] 1) Достижения AC-02 Окно полученного достижения — строка ободрения, «חזרה למסך ראשי», предпросмотр шеринга с текстом #6a86f7d9 @prod-safe
+[iOS #0-1] Expect $(`-ios predicate string:label CONTAINS "זו ההודעה שתישלח, בלי שום פרט נוסף:" OR value CONTAINS "זו ... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[iOS #0-1] Error: Expect $(`-ios predicate string:label CONTAINS "זו ההודעה שתישלח, בלי שום פרט נוסף:" OR value CONTAINS "זו ... to be displayed
+[iOS #0-1]
+[iOS #0-1] Expected: "displayed"
+[iOS #0-1] Received: "not displayed"
+[iOS #0-1]     at expectTextContains (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:59:38)
+[iOS #0-1]     at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/achievements/ac-02-achievement-dialog-share.e2e.ts:33:11)
+------------------------------------------------------------------
+[iOS #0-2] Running: on iOS
+[iOS #0-2] Session ID: 5227680b-65a3-4641-90de-630b16a1903a
+[iOS #0-2]
+[iOS #0-2] » specs/auth-login/al-01-phone-login-otp.e2e.ts
+[iOS #0-2] Вход по мобильному
+[iOS #0-2]    ✖ "before all" hook for Вход по мобильному
+[iOS #0-2]
+[iOS #0-2] 1 failing (29.4s)
+[iOS #0-2]
+[iOS #0-2] 1) Вход по мобильному "before all" hook for Вход по мобильному
+[iOS #0-2] element ("-ios predicate string:label == "פרופיל אישי" OR value == "פרופיל אישי" OR name == "פרופיל אישי"") still not displayed after 20000ms
+[iOS #0-2] Error: element ("-ios predicate string:label == "פרופיל אישי" OR value == "פרופיל אישי" OR name == "פרופיל אישי"") still not displayed after 20000ms
+[iOS #0-2]     at async logout (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/auth-login/al-01-phone-login-otp.e2e.ts:13:3)
+[iOS #0-2]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/auth-login/al-01-phone-login-otp.e2e.ts:34:24)
+------------------------------------------------------------------
+[iOS #0-3] Running: on iOS
+[iOS #0-3] Session ID: 42d52cd9-7525-4cc6-93ba-7031c2204aa6
+[iOS #0-3]
+[iOS #0-3] » specs/auth-login/al-03-relogin-after-logout.e2e.ts
+[iOS #0-3] Вход по мобильному
+[iOS #0-3]    ✖ AL-03 Повторный вход после «התנתקות» — главная открывается, без ошибки #6aa268eb @prod-safe
+[iOS #0-3]
+[iOS #0-3] 1 failing (47.9s)
+[iOS #0-3]
+[iOS #0-3] 1) Вход по мобильному AL-03 Повторный вход после «התנתקות» — главная открывается, без ошибки #6aa268eb @prod-safe
+[iOS #0-3] Expect $(`-ios predicate string:label == "תזכורות מהירות" OR value == "תזכורות מהירות" OR name == "תזכורות ... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[iOS #0-3] Error: Expect $(`-ios predicate string:label == "תזכורות מהירות" OR value == "תזכורות מהירות" OR name == "תזכורות ... to be displayed
+[iOS #0-3]
+[iOS #0-3] Expected: "displayed"
+[iOS #0-3] Received: "not displayed"
+[iOS #0-3]     at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/auth-login/al-03-relogin-after-logout.e2e.ts:42:44)
+------------------------------------------------------------------
+[iOS #0-4] Running: on iOS
+[iOS #0-4] Session ID: 4a014181-e1c9-4ff8-a42f-6691c2bbefe2
+[iOS #0-4]
+[iOS #0-4] » specs/brachot/br-01-blessings-list-search-screen.e2e.ts
+[iOS #0-4] מדור ברכות
+[iOS #0-4]    ✖ BR-01 «ברכות» → список и строка נוסח, поиск «גפן», экран ברכה без элементов молитвы, «חזרה לברכות» #6a86f7ee5747 @prod-safe
+[iOS #0-4]
+[iOS #0-4] 1 failing (19.5s)
+[iOS #0-4]
+[iOS #0-4] 1) מדור ברכות BR-01 «ברכות» → список и строка נוסח, поиск «גפן», экран ברכה без элементов молитвы, «חזרה לברכות» #6a86f7ee5747 @prod-safe
+[iOS #0-4] Expect $(`-ios predicate string:label == "נטילת ידים והמוציא" OR value == "נטילת ידים והמוציא" OR name == "... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[iOS #0-4] Error: Expect $(`-ios predicate string:label == "נטילת ידים והמוציא" OR value == "נטילת ידים והמוציא" OR name == "... to be displayed
+[iOS #0-4]
+[iOS #0-4] Expected: "displayed"
+[iOS #0-4] Received: "not displayed"
+[iOS #0-4]     at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:56:30)
+[iOS #0-4]     at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/brachot/br-01-blessings-list-search-screen.e2e.ts:28:13)
+------------------------------------------------------------------
+[iOS #0-5] Running: on iOS
+[iOS #0-5] Session ID: c7394b9d-ae92-4ea5-ad74-e1d68b5c688a
+[iOS #0-5]
+[iOS #0-5] » specs/guided-prayer/gp-01-run-without-finish.e2e.ts
+[iOS #0-5] Молитва по шагам
+[iOS #0-5]    ✖ GP-01 Молитва: шапка, «X מתוך Y», המשך/קודם, выход и возврат на тот же חלק #6a86f7e9 @prod-safe
+[iOS #0-5]
+[iOS #0-5] 1 failing (23.3s)
+[iOS #0-5]
+[iOS #0-5] 1) Молитва по шагам GP-01 Молитва: шапка, «X מתוך Y», המשך/קודם, выход и возврат на тот же חלק #6a86f7e9 @prod-safe
+[iOS #0-5] element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-5] Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-5]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[iOS #0-5]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-01-run-without-finish.e2e.ts:41:7)
+------------------------------------------------------------------
+[iOS #0-6] Running: on iOS
+[iOS #0-6] Session ID: 7f657e96-2f98-4ea2-a1a4-100a34e743c4
+[iOS #0-6]
+[iOS #0-6] » specs/guided-prayer/gp-02-explanation-layer.e2e.ts
+[iOS #0-6] Молитва по шагам
+[iOS #0-6]    ✖ GP-02 Окно ⓘ «על התפילה» (не утверждено): «על תפילת מנחה», «💡 טיפ», «נוסח זמני…», без «סגירה והמשך בתפילה», ✕ → тот же קטע #6a86f7ff #6a86f7e16f63 @prod-safe
+[iOS #0-6]    ✖ GP-02 Окно ⓘ «על התפילה» (утверждено в админке): «על תפילת ערבית», «מקור: … · אושר על ידי …» вместо «נוסח זמני» #6a86f7e16f63 #a5decf4a @prod-safe
+[iOS #0-6]
+[iOS #0-6] 2 failing (37.8s)
+[iOS #0-6]
+[iOS #0-6] 1) Молитва по шагам GP-02 Окно ⓘ «על התפילה» (не утверждено): «על תפילת מנחה», «💡 טיפ», «נוסח זמני…», без «סגירה והמשך בתפילה», ✕ → тот же קטע #6a86f7ff #6a86f7e16f63 @prod-safe
+[iOS #0-6] element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-6] Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-6]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[iOS #0-6]     at async openInfo (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-02-explanation-layer.e2e.ts:15:3)
+[iOS #0-6]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-02-explanation-layer.e2e.ts:38:20)
+[iOS #0-6]
+[iOS #0-6] 2) Молитва по шагам GP-02 Окно ⓘ «על התפילה» (утверждено в админке): «על תפילת ערבית», «מקור: … · אושר על ידי …» вместо «נוסח זמני» #6a86f7e16f63 #a5decf4a @prod-safe
+[iOS #0-6] element ("-ios predicate string:label == "ערבית" OR value == "ערבית" OR name == "ערבית"") still not displayed after 15000ms
+[iOS #0-6] Error: element ("-ios predicate string:label == "ערבית" OR value == "ערבית" OR name == "ערבית"") still not displayed after 15000ms
+[iOS #0-6]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[iOS #0-6]     at async openInfo (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-02-explanation-layer.e2e.ts:15:3)
+[iOS #0-6]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-02-explanation-layer.e2e.ts:45:20)
+------------------------------------------------------------------
+[iOS #0-7] Running: on iOS
+[iOS #0-7] Session ID: 6e467724-a2e9-40f1-9c8a-0cbaf5636d69
+[iOS #0-7]
+[iOS #0-7] » specs/guided-prayer/gp-03-nusach-availability-switch.e2e.ts
+[iOS #0-7] Молитва по шагам
+[iOS #0-7]    ✖ GP-03 Нусах: עדות המזרח «בקרוב», смена на уровне всей молитвы с подтверждением и возвратом #ecda5d38 @prod-safe
+[iOS #0-7]
+[iOS #0-7] 1 failing (18.9s)
+[iOS #0-7]
+[iOS #0-7] 1) Молитва по шагам GP-03 Нусах: עדות המזרח «בקרוב», смена на уровне всей молитвы с подтверждением и возвратом #ecda5d38 @prod-safe
+[iOS #0-7] element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-7] Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-7]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[iOS #0-7]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-03-nusach-availability-switch.e2e.ts:21:5)
+------------------------------------------------------------------
+[iOS #0-8] Running: on iOS
+[iOS #0-8] Session ID: 6df9f803-ede0-477c-9e3a-b5d66dee1941
+[iOS #0-8]
+[iOS #0-8] » specs/guided-prayer/gp-05-explanation-and-source-additions.e2e.ts
+[iOS #0-8] Молитва по шагам
+[iOS #0-8]    ? GP-05 Строка источника во всех фрагментах дополнений, без «שיתוף התפילה» #6a86f7df #a5decf4a @prod-safe
+[iOS #0-8]    - GP-05 Строка источника во всех фрагментах дополнений, без «שיתוף התפילה» #6a86f7df #a5decf4a @prod-safe
+[iOS #0-8]
+[iOS #0-8] 1 skipped (2.4s)
+------------------------------------------------------------------
+[iOS #0-9] Running: on iOS
+[iOS #0-9] Session ID: eaca3bf5-8c3b-499e-b58f-46c4edf43d2d
+[iOS #0-9]
+[iOS #0-9] » specs/guided-prayer/gp-05-explanation-and-source-berachot.e2e.ts
+[iOS #0-9] Молитва по шагам
+[iOS #0-9]    ? GP-05 Строка источника во всех ברכות (beracha_*), без «שיתוף התפילה» #6a86f7df #a5decf4a @prod-safe
+[iOS #0-9]    - GP-05 Строка источника во всех ברכות (beracha_*), без «שיתוף התפילה» #6a86f7df #a5decf4a @prod-safe
+[iOS #0-9]
+[iOS #0-9] 1 skipped (2.5s)
+------------------------------------------------------------------
+[iOS #0-10] Running: on iOS
+[iOS #0-10] Session ID: f126886b-fb3b-47f6-b898-d76d73b16cc0
+[iOS #0-10]
+[iOS #0-10] » specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts
+[iOS #0-10] Молитва по шагам
+[iOS #0-10]    ✖ GP-05 Строка источника во всех фрагментах основных молитв — shacharit_ashkenaz #6a86f7df #a5decf4a @prod-safe
+[iOS #0-10]    ✖ GP-05 Строка источника во всех фрагментах основных молитв — shacharit_sfarad #6a86f7df #a5decf4a @prod-safe
+[iOS #0-10]    ✖ GP-05 Строка источника во всех фрагментах основных молитв — mincha_ashkenaz #6a86f7df #a5decf4a @prod-safe
+[iOS #0-10]    ✖ GP-05 Строка источника во всех фрагментах основных молитв — mincha_sfarad #6a86f7df #a5decf4a @prod-safe
+[iOS #0-10]    ✖ GP-05 Строка источника во всех фрагментах основных молитв — arvit_ashkenaz #6a86f7df #a5decf4a @prod-safe
+[iOS #0-10]    ✖ GP-05 Строка источника во всех фрагментах основных молитв — arvit_sfarad #6a86f7df #a5decf4a @prod-safe
+[iOS #0-10]
+[iOS #0-10] 6 failing (1m 53.3s)
+[iOS #0-10]
+[iOS #0-10] 1) Молитва по шагам GP-05 Строка источника во всех фрагментах основных молитв — shacharit_ashkenaz #6a86f7df #a5decf4a @prod-safe
+[iOS #0-10] element ("-ios predicate string:label == "שחרית" OR value == "שחרית" OR name == "שחרית"") still not displayed after 15000ms
+[iOS #0-10] Error: element ("-ios predicate string:label == "שחרית" OR value == "שחרית" OR name == "שחרית"") still not displayed after 15000ms
+[iOS #0-10]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[iOS #0-10]     at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:57:5)
+[iOS #0-10]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:85:7)
+[iOS #0-10]
+[iOS #0-10] 2) Молитва по шагам GP-05 Строка источника во всех фрагментах основных молитв — shacharit_sfarad #6a86f7df #a5decf4a @prod-safe
+[iOS #0-10] element ("-ios predicate string:label == "שחרית" OR value == "שחרית" OR name == "שחרית"") still not displayed after 15000ms
+[iOS #0-10] Error: element ("-ios predicate string:label == "שחרית" OR value == "שחרית" OR name == "שחרית"") still not displayed after 15000ms
+[iOS #0-10]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[iOS #0-10]     at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:57:5)
+[iOS #0-10]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:85:7)
+[iOS #0-10]
+[iOS #0-10] 3) Молитва по шагам GP-05 Строка источника во всех фрагментах основных молитв — mincha_ashkenaz #6a86f7df #a5decf4a @prod-safe
+[iOS #0-10] element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-10] Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-10]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[iOS #0-10]     at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:57:5)
+[iOS #0-10]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:85:7)
+[iOS #0-10]
+[iOS #0-10] 4) Молитва по шагам GP-05 Строка источника во всех фрагментах основных молитв — mincha_sfarad #6a86f7df #a5decf4a @prod-safe
+[iOS #0-10] element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-10] Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-10]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[iOS #0-10]     at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:57:5)
+[iOS #0-10]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:85:7)
+[iOS #0-10]
+[iOS #0-10] 5) Молитва по шагам GP-05 Строка источника во всех фрагментах основных молитв — arvit_ashkenaz #6a86f7df #a5decf4a @prod-safe
+[iOS #0-10] element ("-ios predicate string:label == "ערבית" OR value == "ערבית" OR name == "ערבית"") still not displayed after 15000ms
+[iOS #0-10] Error: element ("-ios predicate string:label == "ערבית" OR value == "ערבית" OR name == "ערבית"") still not displayed after 15000ms
+[iOS #0-10]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[iOS #0-10]     at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:57:5)
+[iOS #0-10]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:85:7)
+[iOS #0-10]
+[iOS #0-10] 6) Молитва по шагам GP-05 Строка источника во всех фрагментах основных молитв — arvit_sfarad #6a86f7df #a5decf4a @prod-safe
+[iOS #0-10] element ("-ios predicate string:label == "ערבית" OR value == "ערבית" OR name == "ערבית"") still not displayed after 15000ms
+[iOS #0-10] Error: element ("-ios predicate string:label == "ערבית" OR value == "ערבית" OR name == "ערבית"") still not displayed after 15000ms
+[iOS #0-10]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[iOS #0-10]     at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:57:5)
+[iOS #0-10]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:85:7)
+------------------------------------------------------------------
+[iOS #0-11] Running: on iOS
+[iOS #0-11] Session ID: 7da0b6ee-00ab-4e20-a3df-7d0d41f3cb5b
+[iOS #0-11]
+[iOS #0-11] » specs/guided-prayer/gp-05-explanation-example-mincha-sfarad-ashrei.e2e.ts
+[iOS #0-11] Молитва по шагам
+[iOS #0-11]    ✖ GP-05 Пример пояснения: מנחה ספרד «אשרי» — «תהילה לפני תפילת המנחה» #6a86f7df @prod-safe
+[iOS #0-11]
+[iOS #0-11] 1 failing (18.9s)
+[iOS #0-11]
+[iOS #0-11] 1) Молитва по шагам GP-05 Пример пояснения: מנחה ספרד «אשרי» — «תהילה לפני תפילת המנחה» #6a86f7df @prod-safe
+[iOS #0-11] element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-11] Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-11]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[iOS #0-11]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-example-mincha-sfarad-ashrei.e2e.ts:23:12)
+------------------------------------------------------------------
+[iOS #0-12] Running: on iOS
+[iOS #0-12] Session ID: 0a965f38-a4e7-4076-8496-3405edf3d4fd
+[iOS #0-12]
+[iOS #0-12] » specs/guided-prayer/gp-06-share-button-geometry-and-absence.e2e.ts
+[iOS #0-12] Молитва по шагам
+[iOS #0-12]    ✖ GP-06 «שיתוף התפילה»: под «קודם»/«סיים תפילה», над «האזן להקראה» (מנחה ספרד, 2 מתוך 11) #6a86f7df @prod-safe
+[iOS #0-12]    ? GP-06 «שיתוף התפילה» нет в дополнениях (ספירת העומר, מזמור ק״ל) и в ברכה #6a86f7df @prod-safe
+[iOS #0-12]    - GP-06 «שיתוף התפילה» нет в дополнениях (ספירת העומר, מזמור ק״ל) и в ברכה #6a86f7df @prod-safe
+[iOS #0-12]
+[iOS #0-12] 1 failing (21.8s)
+[iOS #0-12] 1 skipped
+[iOS #0-12]
+[iOS #0-12] 1) Молитва по шагам GP-06 «שיתוף התפילה»: под «קודם»/«סיים תפילה», над «האזן להקראה» (מנחה ספרד, 2 מתוך 11) #6a86f7df @prod-safe
+[iOS #0-12] element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-12] Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-12]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[iOS #0-12]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-geometry-and-absence.e2e.ts:41:12)
+------------------------------------------------------------------
+[iOS #0-13] Running: on iOS
+[iOS #0-13] Session ID: 22571fa6-a887-401a-b9e8-ffa4787406b6
+[iOS #0-13]
+[iOS #0-13] » specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts
+[iOS #0-13] Молитва по шагам
+[iOS #0-13]    ✖ GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — shacharit_ashkenaz #6a86f7df @prod-safe
+[iOS #0-13]    ✖ GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — shacharit_sfarad #6a86f7df @prod-safe
+[iOS #0-13]    ✖ GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — mincha_ashkenaz #6a86f7df @prod-safe
+[iOS #0-13]    ✖ GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — mincha_sfarad #6a86f7df @prod-safe
+[iOS #0-13]    ✖ GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — arvit_ashkenaz #6a86f7df @prod-safe
+[iOS #0-13]    ✖ GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — arvit_sfarad #6a86f7df @prod-safe
+[iOS #0-13]
+[iOS #0-13] 6 failing (1m 53.5s)
+[iOS #0-13]
+[iOS #0-13] 1) Молитва по шагам GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — shacharit_ashkenaz #6a86f7df @prod-safe
+[iOS #0-13] element ("-ios predicate string:label == "שחרית" OR value == "שחרית" OR name == "שחרית"") still not displayed after 15000ms
+[iOS #0-13] Error: element ("-ios predicate string:label == "שחרית" OR value == "שחרית" OR name == "שחרית"") still not displayed after 15000ms
+[iOS #0-13]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[iOS #0-13]     at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:43:5)
+[iOS #0-13]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:71:7)
+[iOS #0-13]
+[iOS #0-13] 2) Молитва по шагам GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — shacharit_sfarad #6a86f7df @prod-safe
+[iOS #0-13] element ("-ios predicate string:label == "שחרית" OR value == "שחרית" OR name == "שחרית"") still not displayed after 15000ms
+[iOS #0-13] Error: element ("-ios predicate string:label == "שחרית" OR value == "שחרית" OR name == "שחרית"") still not displayed after 15000ms
+[iOS #0-13]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[iOS #0-13]     at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:43:5)
+[iOS #0-13]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:71:7)
+[iOS #0-13]
+[iOS #0-13] 3) Молитва по шагам GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — mincha_ashkenaz #6a86f7df @prod-safe
+[iOS #0-13] element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-13] Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-13]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[iOS #0-13]     at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:43:5)
+[iOS #0-13]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:71:7)
+[iOS #0-13]
+[iOS #0-13] 4) Молитва по шагам GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — mincha_sfarad #6a86f7df @prod-safe
+[iOS #0-13] element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-13] Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-13]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[iOS #0-13]     at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:43:5)
+[iOS #0-13]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:71:7)
+[iOS #0-13]
+[iOS #0-13] 5) Молитва по шагам GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — arvit_ashkenaz #6a86f7df @prod-safe
+[iOS #0-13] element ("-ios predicate string:label == "ערבית" OR value == "ערבית" OR name == "ערבית"") still not displayed after 15000ms
+[iOS #0-13] Error: element ("-ios predicate string:label == "ערבית" OR value == "ערבית" OR name == "ערבית"") still not displayed after 15000ms
+[iOS #0-13]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[iOS #0-13]     at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:43:5)
+[iOS #0-13]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:71:7)
+[iOS #0-13]
+[iOS #0-13] 6) Молитва по шагам GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — arvit_sfarad #6a86f7df @prod-safe
+[iOS #0-13] element ("-ios predicate string:label == "ערבית" OR value == "ערבית" OR name == "ערבית"") still not displayed after 15000ms
+[iOS #0-13] Error: element ("-ios predicate string:label == "ערבית" OR value == "ערבית" OR name == "ערבית"") still not displayed after 15000ms
+[iOS #0-13]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[iOS #0-13]     at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:43:5)
+[iOS #0-13]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:71:7)
+------------------------------------------------------------------
+[iOS #0-14] Running: on iOS
+[iOS #0-14] Session ID: a005ac16-07de-42d2-8a42-1c83ec71df14
+[iOS #0-14]
+[iOS #0-14] » specs/guided-prayer/gp-06-share-dialog-text.e2e.ts
+[iOS #0-14] Молитва по шагам
+[iOS #0-14]    ✖ GP-06 Окно «שיתוף התפילה»: текст и ссылка, «ביטול» закрывает — מנחה ספרד и ערבית אשכנז #6a86f7df @prod-safe
+[iOS #0-14]
+[iOS #0-14] 1 failing (18.8s)
+[iOS #0-14]
+[iOS #0-14] 1) Молитва по шагам GP-06 Окно «שיתוף התפילה»: текст и ссылка, «ביטול» закрывает — מנחה ספרד и ערבית אשכנז #6a86f7df @prod-safe
+[iOS #0-14] element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-14] Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-14]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[iOS #0-14]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-dialog-text.e2e.ts:43:12)
+------------------------------------------------------------------
+[iOS #0-15] Running: on iOS
+[iOS #0-15] Session ID: 2a1e84a1-25ea-429e-82b0-433aedb2e388
+[iOS #0-15]
+[iOS #0-15] » specs/guided-prayer/gp-07-approved-source-line.e2e.ts
+[iOS #0-15] Молитва по шагам
+[iOS #0-15]    ✖ GP-07 Утверждённые фрагменты: «מקור: … · אושר על ידי …»; неутверждённый — «הטקסט עדיין לא אושר…» #a5decf4a @prod-safe
+[iOS #0-15]
+[iOS #0-15] 1 failing (18.9s)
+[iOS #0-15]
+[iOS #0-15] 1) Молитва по шагам GP-07 Утверждённые фрагменты: «מקור: … · אושר על ידי …»; неутверждённый — «הטקסט עדיין לא אושר…» #a5decf4a @prod-safe
+[iOS #0-15] element ("-ios predicate string:label == "ערבית" OR value == "ערבית" OR name == "ערבית"") still not displayed after 15000ms
+[iOS #0-15] Error: element ("-ios predicate string:label == "ערבית" OR value == "ערבית" OR name == "ערבית"") still not displayed after 15000ms
+[iOS #0-15]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[iOS #0-15]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-07-approved-source-line.e2e.ts:44:5)
+------------------------------------------------------------------
+[iOS #0-16] Running: on iOS
+[iOS #0-16] Session ID: 4f868ecb-121e-4a61-8594-5fa11fabc777
+[iOS #0-16]
+[iOS #0-16] » specs/guided-prayer/gp-08-no-recording-listen-disabled.e2e.ts
+[iOS #0-16] Молитва по шагам
+[iOS #0-16]    ✖ GP-08 Нет записи: «אין הקראה לקטע הזה», «השמע» неактивна — מנחה ספרד, שחרית אשכנז, ערבית אשכנז #a5decf4a @prod-safe
+[iOS #0-16]
+[iOS #0-16] 1 failing (18.9s)
+[iOS #0-16]
+[iOS #0-16] 1) Молитва по шагам GP-08 Нет записи: «אין הקראה לקטע הזה», «השמע» неактивна — מנחה ספרד, שחרית אשכנז, ערבית אשכנז #a5decf4a @prod-safe
+[iOS #0-16] element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-16] Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-16]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[iOS #0-16]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-08-no-recording-listen-disabled.e2e.ts:34:12)
+------------------------------------------------------------------
+[iOS #0-17] Running: on iOS
+[iOS #0-17] Session ID: c888ebe4-0239-4943-9e92-2a19ed41aaee
+[iOS #0-17]
+[iOS #0-17] » specs/home/hm-01-daily-home.e2e.ts
+[iOS #0-17] Главная
+[iOS #0-17]    ✖ HM-01 Главная: приветствие с именем, дата, ближайшая молитва, счётчики, навигация из 5 табов #6a86f7ea @prod-safe
+[iOS #0-17]
+[iOS #0-17] 1 failing (20.6s)
+[iOS #0-17]
+[iOS #0-17] 1) Главная HM-01 Главная: приветствие с именем, дата, ближайшая молитва, счётчики, навигация из 5 табов #6a86f7ea @prod-safe
+[iOS #0-17] Expect $(`-ios predicate string:label CONTAINS "תשפ״ז" OR value CONTAINS "תשפ״ז"`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[iOS #0-17] Error: Expect $(`-ios predicate string:label CONTAINS "תשפ״ז" OR value CONTAINS "תשפ״ז"`) to be displayed
+[iOS #0-17]
+[iOS #0-17] Expected: "displayed"
+[iOS #0-17] Received: "not displayed"
+[iOS #0-17]     at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/home/hm-01-daily-home.e2e.ts:41:43)
+------------------------------------------------------------------
+[iOS #0-18] Running: on iOS
+[iOS #0-18] Session ID: c5cbb475-724f-4b24-9468-9c21695578fe
+[iOS #0-18]
+[iOS #0-18] » specs/home/hm-02-recent-prayers.e2e.ts
+[iOS #0-18] Главная
+[iOS #0-18]    ✓ HM-02 «תפילות אחרונות»: время различимо, не больше 3 записей, «צפה בהכל» #6a86f7e5 @prod-safe
+[iOS #0-18]
+[iOS #0-18] 1 passing (30.9s)
+------------------------------------------------------------------
+[iOS #0-19] Running: on iOS
+[iOS #0-19] Session ID: 055a0cc7-e351-41a9-953b-bcb2880e2d54
+[iOS #0-19]
+[iOS #0-19] » specs/home/hm-03-time-window-and-date-tags.e2e.ts
+[iOS #0-19] Главная
+[iOS #0-19]    ✖ HM-03 Окно времени под датой (вверху слева); тег важной даты еврейский #6a86f7e5 @prod-safe
+[iOS #0-19]
+[iOS #0-19] 1 failing (18.1s)
+[iOS #0-19]
+[iOS #0-19] 1) Главная HM-03 Окно времени под датой (вверху слева); тег важной даты еврейский #6a86f7e5 @prod-safe
+[iOS #0-19] Expect $(`-ios predicate string:label MATCHES "[א-ת״׳' ]+ תשפ״ז" OR value MATCHES "[א-ת״׳' ]+ תשפ״ז"`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[iOS #0-19] Error: Expect $(`-ios predicate string:label MATCHES "[א-ת״׳' ]+ תשפ״ז" OR value MATCHES "[א-ת״׳' ]+ תשפ״ז"`) to be displayed
+[iOS #0-19]
+[iOS #0-19] Expected: "displayed"
+[iOS #0-19] Received: "not displayed"
+[iOS #0-19]     at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/home/hm-03-time-window-and-date-tags.e2e.ts:24:26)
+------------------------------------------------------------------
+[iOS #0-20] Running: on iOS
+[iOS #0-20] Session ID: 60c9eec5-7c52-4f43-ac39-9a8fc6138d35
+[iOS #0-20]
+[iOS #0-20] » specs/impact-map/im-01-invite-dialog-text.e2e.ts
+[iOS #0-20] «מפת השפעה» и приглашение
+[iOS #0-20]    ✖ IM-01 «הזמנת אדם להתחזק» — утверждённый текст и одна ссылка в окне; «ביטול» закрывает без отправки #6a86f7e6 @prod-safe
+[iOS #0-20]
+[iOS #0-20] 1 failing (16.9s)
+[iOS #0-20]
+[iOS #0-20] 1) «מפת השפעה» и приглашение IM-01 «הזמנת אדם להתחזק» — утверждённый текст и одна ссылка в окне; «ביטול» закрывает без отправки #6a86f7e6 @prod-safe
+[iOS #0-20] expect(received).toBe(expected) // Object.is equality
+
+Expected: 1
+Received: 6
+[iOS #0-20] Error: expect(received).toBe(expected) // Object.is equality
+[iOS #0-20]
+[iOS #0-20] Expected: 1
+[iOS #0-20] Received: 6
+[iOS #0-20]     at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/impact-map/im-01-invite-dialog-text.e2e.ts:30:40)
+------------------------------------------------------------------
+[iOS #0-21] Running: on iOS
+[iOS #0-21] Session ID: 0e2f2951-8eee-44cc-93ec-65c1c7a69aa1
+[iOS #0-21]
+[iOS #0-21] » specs/impact-map/im-02-map-me-two-branches-counter.e2e.ts
+[iOS #0-21] «מפת השפעה» и приглашение
+[iOS #0-21]    ✓ IM-02 Карта «מפת השפעה» — «אני», 2 ветки с именами, счётчик «2 אנשים» #6a86f7e6 @prod-safe
+[iOS #0-21]
+[iOS #0-21] 1 passing (14s)
+------------------------------------------------------------------
+[iOS #0-22] Running: on iOS
+[iOS #0-22] Session ID: c424dc39-6ce4-4cbd-8475-b793f55e488b
+[iOS #0-22]
+[iOS #0-22] » specs/impact-map/im-03-own-invite-link-message.e2e.ts
+[iOS #0-22] «מפת השפעה» и приглашение
+[iOS #0-22]    ? IM-03 Своя ссылка приглашения у вошедшего → «זה קישור ההזמנה שלך…» #6a86f7e6 @prod-safe
+[iOS #0-22]    - IM-03 Своя ссылка приглашения у вошедшего → «זה קישור ההזמנה שלך…» #6a86f7e6 @prod-safe
+[iOS #0-22]
+[iOS #0-22] 1 skipped (2.4s)
+------------------------------------------------------------------
+[iOS #0-26] Running: on iOS
+[iOS #0-26] Session ID: 920b4c12-cbbf-4a33-ba3a-bcd7d3dc744c
+[iOS #0-26]
+[iOS #0-26] » specs/important-dates/id-04-calendar-month-year-picker.e2e.ts
+[iOS #0-26] Важные даты и אזכרות
+[iOS #0-26]    ✖ ID-04 Календарь в окне даты — дни текущего месяца, двойной еврейский заголовок, выбор месяца/года, без ручного ввода #6a86f7e0 @prod-safe
+[iOS #0-26]
+[iOS #0-26] 1 failing (1m 24.8s)
+[iOS #0-26]
+[iOS #0-26] 1) Важные даты и אזכרות ID-04 Календарь в окне даты — дни текущего месяца, двойной еврейский заголовок, выбор месяца/года, без ручного ввода #6a86f7e0 @prod-safe
+[iOS #0-26] Expect $(`-ios predicate string:label == "ספטמבר 2026" OR value == "ספטמבר 2026" OR name == "ספטמבר 2026"`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[iOS #0-26] Error: Expect $(`-ios predicate string:label == "ספטמבר 2026" OR value == "ספטמבר 2026" OR name == "ספטמבר 2026"`) to be displayed
+[iOS #0-26]
+[iOS #0-26] Expected: "displayed"
+[iOS #0-26] Received: "not displayed"
+[iOS #0-26]     at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:56:30)
+[iOS #0-26]     at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/important-dates/id-04-calendar-month-year-picker.e2e.ts:57:11)
+------------------------------------------------------------------
+[iOS #0-27] Running: on iOS
+[iOS #0-27] Session ID: 6f1b7086-53b6-4e41-8cc5-3b776b48651d
+[iOS #0-27]
+[iOS #0-27] » specs/journey/jr-01-real-data.e2e.ts
+[iOS #0-27] «המסע שלי»
+[iOS #0-27]    ✖ JR-01 «המסע שלי» на реальных данных — уровень, счётчики = главная, פילוח, последние молитвы, מפת השפעה, достижения #6a86f7e8 @prod-safe
+[iOS #0-27]
+[iOS #0-27] 1 failing (53.8s)
+[iOS #0-27]
+[iOS #0-27] 1) «המסע שלי» JR-01 «המסע שלי» на реальных данных — уровень, счётчики = главная, פילוח, последние молитвы, מפת השפעה, достижения #6a86f7e8 @prod-safe
+[iOS #0-27] Не найден текст после прокрутки: תפילות אחרונות
+[iOS #0-27] Error: Не найден текст после прокрутки: תפילות אחרונות
+[iOS #0-27]     at scrollToText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:76:9)
+[iOS #0-27]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/journey/jr-01-real-data.e2e.ts:78:5)
+------------------------------------------------------------------
+[iOS #0-28] Running: on iOS
+[iOS #0-28] Session ID: 27a3ec5c-7130-430c-a572-c980aa214ba4
+[iOS #0-28]
+[iOS #0-28] » specs/journey/jr-02-header-opens-profile.e2e.ts
+[iOS #0-28] «המסע שלי»
+[iOS #0-28]    ✖ JR-02 Клик по аватару или имени открывает «פרופיל אישי» #f6970bc6 @prod-safe
+[iOS #0-28]
+[iOS #0-28] 1 failing (21.2s)
+[iOS #0-28]
+[iOS #0-28] 1) «המסע שלי» JR-02 Клик по аватару или имени открывает «פרופיל אישי» #f6970bc6 @prod-safe
+[iOS #0-28] element ("-ios predicate string:label == "אקדא טסט" OR value == "אקדא טסט" OR name == "אקדא טסט"") still not displayed after 15000ms
+[iOS #0-28] Error: element ("-ios predicate string:label == "אקדא טסט" OR value == "אקדא טסט" OR name == "אקדא טסט"") still not displayed after 15000ms
+[iOS #0-28]     at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:46:3)
+[iOS #0-28]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/journey/jr-02-header-opens-profile.e2e.ts:24:5)
+------------------------------------------------------------------
+[iOS #0-30] Running: on iOS
+[iOS #0-30] Session ID: 38e5d1fa-3693-420a-b15c-33bb0fabb050
+[iOS #0-30]
+[iOS #0-30] » specs/journey/jr-06-rankup-window-not-repeated.e2e.ts
+[iOS #0-30] «המסע שלי»
+[iOS #0-30]    ✖ JR-06 Окно «עלית דרגה» не показывается повторно без повышения (user1, уровень 10) #22c9d541 @prod-safe
+[iOS #0-30]
+[iOS #0-30] 1 failing (40.8s)
+[iOS #0-30]
+[iOS #0-30] 1) «המסע שלי» JR-06 Окно «עלית דרגה» не показывается повторно без повышения (user1, уровень 10) #22c9d541 @prod-safe
+[iOS #0-30] Expect $(`-ios predicate string:label == "תזכורות מהירות" OR value == "תזכורות מהירות" OR name == "תזכורות ... to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[iOS #0-30] Error: Expect $(`-ios predicate string:label == "תזכורות מהירות" OR value == "תזכורות מהירות" OR name == "תזכורות ... to be displayed
+[iOS #0-30]
+[iOS #0-30] Expected: "displayed"
+[iOS #0-30] Received: "not displayed"
+[iOS #0-30]     at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:56:30)
+[iOS #0-30]     at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/journey/jr-06-rankup-window-not-repeated.e2e.ts:43:11)
+------------------------------------------------------------------
+[iOS #0-31] Running: on iOS
+[iOS #0-31] Session ID: a5b85210-414b-4853-b3e1-61ae06024b41
+[iOS #0-31]
+[iOS #0-31] » specs/nusach-switch/ns-01-menu.e2e.ts
+[iOS #0-31] Смена нусаха внутри молитвы
+[iOS #0-31]    ✖ NS-01 Меню смены нусаха — только список, активный отмечен, карточка в пределах экрана #6a86f7d8 @prod-safe
+[iOS #0-31]
+[iOS #0-31] 1 failing (18.9s)
+[iOS #0-31]
+[iOS #0-31] 1) Смена нусаха внутри молитвы NS-01 Меню смены нусаха — только список, активный отмечен, карточка в пределах экрана #6a86f7d8 @prod-safe
+[iOS #0-31] element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-31] Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-31]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[iOS #0-31]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/nusach-switch/ns-01-menu.e2e.ts:22:5)
+------------------------------------------------------------------
+[iOS #0-32] Running: on iOS
+[iOS #0-32] Session ID: 52192ea8-333f-449e-ade3-aba93d26ade6
+[iOS #0-32]
+[iOS #0-32] » specs/nusach-switch/ns-02-cancel-and-replace.e2e.ts
+[iOS #0-32] Смена нусаха внутри молитвы
+[iOS #0-32]    ✖ NS-02 «ביטול» оставляет всё как было, «החלף» переносит в параллельный קטע #6a86f7fdaa68 @prod-safe
+[iOS #0-32]
+[iOS #0-32] 1 failing (18.9s)
+[iOS #0-32]
+[iOS #0-32] 1) Смена нусаха внутри молитвы NS-02 «ביטול» оставляет всё как было, «החלף» переносит в параллельный קטע #6a86f7fdaa68 @prod-safe
+[iOS #0-32] element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-32] Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-32]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[iOS #0-32]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/nusach-switch/ns-02-cancel-and-replace.e2e.ts:14:5)
+------------------------------------------------------------------
+[iOS #0-33] Running: on iOS
+[iOS #0-33] Session ID: a2b27eff-e6b8-4f2f-a701-c9a826837868
+[iOS #0-33]
+[iOS #0-33] » specs/nusach-switch/ns-02-missing-section-fallback.e2e.ts
+[iOS #0-33] Смена нусаха внутри молитвы
+[iOS #0-33]    ✖ NS-02 Фрагмента нет в другом нусахе → переход к следующему с пояснением #6a86f7d8 @prod-safe
+[iOS #0-33]
+[iOS #0-33] 1 failing (18.9s)
+[iOS #0-33]
+[iOS #0-33] 1) Смена нусаха внутри молитвы NS-02 Фрагмента нет в другом нусахе → переход к следующему с пояснением #6a86f7d8 @prod-safe
+[iOS #0-33] element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-33] Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-33]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[iOS #0-33]     at async openMinchaSfarad (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/nusach-switch/ns-02-missing-section-fallback.e2e.ts:14:5)
+[iOS #0-33]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/nusach-switch/ns-02-missing-section-fallback.e2e.ts:35:5)
+------------------------------------------------------------------
+[iOS #0-34] Running: on iOS
+[iOS #0-34] Session ID: 3cb70c0e-e8a9-4f69-a802-be1015db4bbd
+[iOS #0-34]
+[iOS #0-34] » specs/nusach-switch/ns-02-profile-unchanged.e2e.ts
+[iOS #0-34] Смена нусаха внутри молитвы
+[iOS #0-34]    ✖ NS-02 После смены нусаха в молитве профиль не меняется #6a86f7d8 @prod-safe
+[iOS #0-34]
+[iOS #0-34] 1 failing (18.9s)
+[iOS #0-34]
+[iOS #0-34] 1) Смена нусаха внутри молитвы NS-02 После смены нусаха в молитве профиль не меняется #6a86f7d8 @prod-safe
+[iOS #0-34] element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-34] Error: element ("-ios predicate string:label == "מנחה" OR value == "מנחה" OR name == "מנחה"") still not displayed after 15000ms
+[iOS #0-34]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[iOS #0-34]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/nusach-switch/ns-02-profile-unchanged.e2e.ts:37:5)
+
+
+Spec Files:	 6 passed, 26 failed, 4 skipped, 78 total (46% completed) in 00:22:25  
+

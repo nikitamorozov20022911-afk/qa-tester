@@ -1,0 +1,12 @@
+import { chromium } from '@playwright/test';
+const SS='/Users/avielshnaider/banci-moe/.qa/screenshots/recheck/';
+const ctx=await chromium.launchPersistentContext('/Users/avielshnaider/banci-moe/.qa/auth/profiles/devA',{headless:true,locale:'he-IL',viewport:{width:390,height:844}});
+const p=ctx.pages()[0]||await ctx.newPage(); const U='https://banci.expo.app/products/4a5e2065-de56-4d5e-82d4-3de290e877a1';
+const urls=new Set(); p.on('request',r=>{const u=r.url(); if(/supabase|rest|functions/.test(u)) urls.add(r.method()+' '+u.replace(/\?.*/,''));});
+await p.goto(U); await p.waitForTimeout(6000); console.log([...urls].join('\n'));
+await p.route(/supabase\.co\/(rest|functions)/, r=>r.abort()); 
+await p.goto('https://banci.expo.app/home'); await p.waitForTimeout(1500);
+await p.evaluate(u=>{history.pushState({},'',u); dispatchEvent(new PopStateEvent('popstate'));}, '/products/4a5e2065-de56-4d5e-82d4-3de290e877a1');
+await p.goto(U); await p.waitForTimeout(20000);
+console.log('ERROR STATE:', (await p.innerText('body')).replace(/\n/g,' | ').slice(0,250)); await p.screenshot({path:SS+'c48aff34-error.png'});
+await ctx.close();

@@ -1,0 +1,14 @@
+import { chromium } from 'playwright';
+const b = await chromium.launch();
+const c = await b.newContext({ storageState: '/Users/avielshnaider/magnet-moe/.qa/auth/new02.json', viewport:{width:390,height:844}, isMobile:true, hasTouch:true, deviceScaleFactor:2 });
+const p = await c.newPage();
+await p.goto('https://magnet.expo.app/chat/22cd6c5a-2446-492e-8ca6-295074aaf56b', {waitUntil:'networkidle'});
+await p.waitForTimeout(3000);
+await p.locator("[data-testid=gift-intro-skip]").click({force:true}).catch(()=>{});
+await p.waitForTimeout(800);
+const inp = p.locator('[data-testid=chat-composer]');
+await inp.click(); await inp.fill('QA-AUTO r12 reply 1');
+await p.getByRole("button",{name:"שליחה"}).click(); await p.waitForTimeout(2500); await p.screenshot({path:"screenshots/r12-99ff3d-ios17-web-new02-sent.png"});console.log((await p.evaluate(()=>document.body.innerText)).includes("r12 reply 1"));
+console.log(await p.locator('button').evaluateAll(bs=>bs.map(b=>b.getAttribute('aria-label')||b.innerText).filter(Boolean)));
+await c.storageState({path:'/Users/avielshnaider/magnet-moe/.qa/auth/new02.json'});
+await b.close();

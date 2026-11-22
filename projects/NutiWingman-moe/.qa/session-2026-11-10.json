@@ -1,0 +1,26 @@
+{
+ "date": "2026-11-10",
+ "board_access": "browser fallback: Playwright session .qa/auth/mifrat.json (mifrat MCP 401)",
+ "queue_file": ".qa/research/queue-2026-11-10.md",
+ "tickets_dump": ".qa/research/tickets/<hash>.md",
+ "comments_summary": ".qa/research/comments-2026-11-10.md",
+ "supabase": "https://siodtucasjpxpsfuvlfc.supabase.co",
+ "tickets": [],
+ "deferred_questions": [
+  {
+   "tickets": [
+    "61e60452",
+    "a653d73e",
+    "813ff72d"
+   ],
+   "q": "contribute_product (запись QA TEST в общий каталог) заблокирован правами Claude Code (Modify Shared Resources) у агента и у основной сессии. Пользователь: разрешить правило в настройках или выполнить сам."
+  }
+ ],
+ "test_data": [
+  {
+   "account": "noa",
+   "what": "feedback 08c089a0-7b23-478f-88e6-ae0f5220628c (note «QA TEST — בדיקת API משוב, להתעלם»)",
+   "removable": false
+  }
+ ]
+}

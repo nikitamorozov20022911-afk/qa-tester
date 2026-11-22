@@ -1,0 +1,138 @@
+{
+ "date": "2026-11-04",
+ "command": "/qa (iPhone 17)",
+ "device": "iPhone 17, 0.1.1 (20) + OTA",
+ "account": "04 (phone), 05/06 web",
+ "tickets": [
+  {
+   "hash": "#dd875c",
+   "status": "passed",
+   "note": "USD row split OK (home+payment details); offline pending P4",
+   "action": "pass",
+   "column": "הושלם (провёл пользователь 04.11)"
+  },
+  {
+   "hash": "#bbc929",
+   "status": "passed",
+   "note": "pass-candidate: colored tiles everywhere; large-font overflow attributed to #b7e109",
+   "action": "pass",
+   "column": "הושלם (провёл пользователь 04.11)"
+  },
+  {
+   "hash": "#ceb80d",
+   "status": "rejected",
+   "note": "'הכרטיסים שלי' card rows still linear one-color icon; rest OK",
+   "action": "reject",
+   "column": "לביצוע",
+   "rejection_id": "rej_2b65f7d0a7d33f94cee9cb11",
+   "time": "2026-11-04T16:59"
+  },
+  {
+   "hash": "#c70e75",
+   "status": "rejected",
+   "note": "https link, warm/cold open in app OK, old scheme OK; logged-out pending (after reinstall), no-app pending",
+   "action": "reject",
+   "column": "לביצוע",
+   "rejection_id": "rej_7fd7c6cea538aa027ca452a8"
+  },
+  {
+   "hash": "#edbc5c",
+   "status": "passed",
+   "note": "R1-R3 OK; reinstall -> Russian, logged out",
+   "action": "pass",
+   "column": "הושלם (провёл пользователь 04.11)"
+  },
+  {
+   "hash": "#8757b4",
+   "status": "passed",
+   "note": "new dispute: first approver sees הושלמה, not in במחלוקת filter, history המחלוקת הוכרעה",
+   "action": "pass",
+   "column": "הושלם (провёл пользователь 04.11)"
+  },
+  {
+   "hash": "#ecd872",
+   "status": "rejected",
+   "note": "manual+camera scan OK (sound/vibration confirmed by user), rejects OK, ₪1 moved, non-organizer no scan; ❌ list 'הכרטיסים שלי' has no ticket status (req 1)",
+   "action": "reject",
+   "column": "לביצוע",
+   "rejection_id": "rej_3df30b002397cc03a490618c",
+   "time": "2026-11-04T16:59"
+  },
+  {
+   "hash": "#b7e109",
+   "note": "reject-candidate: 5 old points fixed; new: home tile labels overflow/overlap, deal tabs overlap, amount sticks to title, stepper words broken (large text + Larger zoom)",
+   "status": "rejected",
+   "action": "reject",
+   "column": "לביצוע",
+   "rejection_id": "rej_0567543749a4d4b64bcbb8b5",
+   "time": "2026-11-04T16:59"
+  },
+  {
+   "hash": "#3ec77d",
+   "note": "pass-candidate: photo persists after restart, 05 sees it via public profile-images URL, remove works; AC1 code test not checkable",
+   "status": "passed",
+   "action": "pass",
+   "column": "הושלם (провёл пользователь 04.11)"
+  },
+  {
+   "hash": "#fad732",
+   "status": "passed",
+   "action": "pass",
+   "column": "הושלם (провёл пользователь 04.11)"
+  },
+  {
+   "hash": "#cbed2a",
+   "status": "passed",
+   "action": "pass",
+   "column": "הושלם (провёл пользователь 04.11)"
+  },
+  {
+   "hash": "#ee85c2",
+   "status": "passed",
+   "action": "pass",
+   "column": "הושלם (провёл пользователь 04.11)"
+  },
+  {
+   "hash": "#ea97f0",
+   "status": "passed",
+   "action": "pass",
+   "column": "הושלם (провёл пользователь 04.11)"
+  },
+  {
+   "hash": "#5c3eaa",
+   "status": "rejected",
+   "action": "reject",
+   "column": "לביצוע",
+   "rejection_id": "rej_0186159218b08814e4282282"
+  },
+  {
+   "hash": "#74d7ca",
+   "status": "passed",
+   "note": "Pixel 6, font 2.0 + display 540: onboarding buttons within screen (Back/Next, Let's get started), Card details checkbox texts wrap fully; 04 signed out on Pixel",
+   "action": "pass",
+   "column": "הושלם (провёл пользователь 04.11)"
+  }
+ ],
+ "skipped": [],
+ "test_data": [
+  "deal 'QA 0411 dispute' 02367ca3 (04->05 ₪1, dispute human arbiter ₪150, decision 0.5/0.5)",
+  "scanned ticket TMQR-FM2D-E5DF (05) of event 736faceb, ₪1 to 04",
+  "04 profile photo uploaded then removed",
+  "Open Finance sandbox: 1 ACSC top-up ₪1 (04), RJCT/CANC/PENDING попытки; pending item 'נדרשת הפקדת כסף ₪1' на главной 04"
+ ],
+ "findings": [
+  "after in-app language switch app reopens on last deep-linked event screen",
+  "'כל הכרטיסים' carousel shows no last 4 digits (L-20261008-P1)",
+  "AI mediation reportedly down (no credit) - from programmer comment"
+ ],
+ "pending_yes": [],
+ "questions_open": [
+  "q3 SPEC-STALE",
+  "q7 control icons",
+  "q8 Fluent Emoji",
+  "q10 no-app link on Mac",
+  "q11 b7e109 unfinished -> reject"
+ ],
+ "stopped": "user: стоп тесты (16:00). Not done: P4 (#fad732 #cbed2a #5c3eaa), #dd875c offline, #c70e75 logged-out/no-app, #edbc5c reinstall, #74d7ca. Nothing written to board. Bug-verifier reruns not done. iPhone: Larger Text + Display Zoom Larger still ON — user to revert.",
+ "closed": "2026-11-04 ~18:10, board: 15 selected (הושלם 10 | לביצוע 5)"
+}

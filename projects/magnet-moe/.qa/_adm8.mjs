@@ -1,0 +1,15 @@
+import { chromium } from 'playwright';
+const b = await chromium.launch();
+const c = await b.newContext({ storageState: '/Users/avielshnaider/magnet-moe/.qa/auth/admin-r11.json', viewport:{width:1440,height:900} });
+const p = await c.newPage();
+await p.goto('https://magnet-admin.vercel.app/users/09368ba8-1aa9-4233-9fae-d3a7ff587084', {waitUntil:'networkidle'});
+await p.waitForTimeout(2500);
+const t=async()=> (await p.evaluate(()=>document.body.innerText)).match(/רק למספרי[^]*?איפוס/)?.[0].replace(/\n+/g,' ');
+console.log('before', await t());
+await p.getByRole('button',{name:'הענקת תגמול רצף'}).first().click();
+await p.waitForTimeout(800);
+console.log(await p.locator('[role=dialog], dialog').allInnerTexts());
+console.log(await p.locator('button:visible').allInnerTexts());
+await p.getByRole("button",{name:"להעניק"}).click(); await p.waitForTimeout(3500); console.log("after", await t()); await p.screenshot({path:"screenshots/r12-99ff3d-ios17-adm-streak-after.png"});
+await c.storageState({path:'/Users/avielshnaider/magnet-moe/.qa/auth/admin-r11.json'});
+await b.close();

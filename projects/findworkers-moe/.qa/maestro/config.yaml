@@ -1,0 +1,6 @@
+# Maestro workspace: Find Workers (Android)
+flows:
+  - "flows/**"
+excludeTags:
+  - payments   # оплаты не тестируем (решение пользователя 2026-10-03)
+  - manual

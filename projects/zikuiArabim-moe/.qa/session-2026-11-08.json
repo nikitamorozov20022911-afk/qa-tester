@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-08",
+  "command": "/qa",
+  "board": "mifrat MCP (token expires 2026-11-10)",
+  "env": "web zichui-harabim.expo.app (entry-5bb073ba, with fix 2fbec33) user1 @195/390; Android Pixel 6 app 1.0.0 (6) + latest OTA, wm density 840 -> reset",
+  "queue": ["#63e34a", "#db5c46", "#d73fd4", "#76bc4c (deferred to 2026-11-09 evening)"],
+  "tickets": [
+    {"hash": "#63e34a", "status": "tested", "verdict_draft": "pass (AC 4 screens OK web+Android); close rej_1351cced", "time": "11:16"},
+    {"hash": "#db5c46", "status": "tested", "verdict_draft": "pass web+Android; clear cannot_reproduce", "time": "11:16"},
+    {"hash": "#d73fd4", "status": "verifying", "note": "web OK; Android active label 'תפילו/ת' 3/3 -> bug-verifier running"}
+  ],
+  "board_actions": [
+    {"time": "11:18", "action": "task_create", "id": "a1d3cc727e7ecdd64febcfa6", "hash": "#ebcfa6", "ticket": 27, "title": "Android - כותרת «היסטוריית התפילות שלי» נשברת באמצע מילה בזום 200%", "status": "todo", "by": "user request 'открой тикет'"},
+    {"time": "11:21", "action": "cannot_reproduce clear", "hash": "#db5c46"},
+    {"time": "11:21", "action": "cannot_reproduce clear", "hash": "#d73fd4"},
+    {"time": "11:22", "action": "task_add_rejection", "hash": "#d73fd4", "rejection_id": "rej_dc6620d02bf389b687dd45a2", "status": "todo"},
+    {"time": "11:21", "action": "task_resolve_rejection #63e34a rej_1351cced", "result": "DENIED by permission classifier — not done, needs explicit user OK"},
+    {"time": "11:25", "action": "task_create x6 (user 'открывай находки')", "tickets": ["#536fbb №28 home מנחה", "#422034 №29 zmanim חצות", "#43ca04 №30 profile values (medium)", "#67d710 №31 journey דרגה clipped", "#a4899f №32 chapter nav overlap", "#3be8ad №33 brachot row/search ellipsis"], "status": "todo"}
+  ],
+  "findings_not_filed": [
+    "time range '16:45 - 11:51' — correct RTL reading order, not a bug",
+    "tabs תהילים/ברכות — matches fixed #8060ad (Figma brahot > pirkey avot), not a bug",
+    "tehilim list sticky header leaves ~1 row at 200% — no screenshot, not filed"
+  ],
+  "findings_out_of_scope": [
+    "Android 200%: home 'מנח/ה', zmanim 'חצ/ות', profile row values hidden, journey 'דרגה 1 מתוך 10' clipped, chapter nav pill overlaps, brachot row/search placeholder ellipsis, tehilim list sticky header leaves ~1 row",
+    "Header time range shown reversed '16:45 - 11:51' (both scales)",
+    "Tabs תהילים/ברכות content swapped (known decision 2026-10-19)"
+  ],
+  "test_data": [],
+  "auth": "user1.json re-saved 11:14; user2.json missing (only user2.json.broken-2026-10-05)"
+}

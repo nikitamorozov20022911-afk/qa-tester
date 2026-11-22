@@ -1,0 +1,200 @@
+<title>אור הגאולה — готовность</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Hebrew:wght@400;500;600&display=swap">
+<style>
+/* Layout: one reading column; verdict band, then blockers, bugs, questions, verified matrix, not-covered, data cleanup */
+:root{
+  --bg:#f6f5f1; --surface:#ffffff; --fg:#1d2433; --muted:#5d6577; --line:#dfdcd2;
+  --accent:#b9893a; --accent-soft:#f3e9d6;
+  --crit:#b3261e; --crit-soft:#fbe9e7; --warn:#9a6700; --warn-soft:#fdf3d8; --ok:#1f7a4d; --ok-soft:#e3f3ea; --info:#3b5b8c; --info-soft:#e8eef8;
+  --display:"Frank Ruhl Libre", Georgia, serif;
+  --body:"IBM Plex Sans","IBM Plex Sans Hebrew",system-ui,-apple-system,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#14171e; --surface:#1c2029; --fg:#e8e6e1; --muted:#a3a9b6; --line:#2e3340;
+  --accent:#d9ac5f; --accent-soft:#3a3122;
+  --crit:#ff8a80; --crit-soft:#3d1f1d; --warn:#f2c35b; --warn-soft:#3a3018; --ok:#6fd3a0; --ok-soft:#183128; --info:#9dbcf0; --info-soft:#1d2a40; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#14171e; --surface:#1c2029; --fg:#e8e6e1; --muted:#a3a9b6; --line:#2e3340;
+  --accent:#d9ac5f; --accent-soft:#3a3122;
+  --crit:#ff8a80; --crit-soft:#3d1f1d; --warn:#f2c35b; --warn-soft:#3a3018; --ok:#6fd3a0; --ok-soft:#183128; --info:#9dbcf0; --info-soft:#1d2a40; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.6}
+.wrap{max-width:900px;margin:0 auto;padding-block:32px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:36px}
+h1,h2{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.2}
+h1{font-size:2.1rem}
+h2{font-size:1.45rem;padding-bottom:8px;border-bottom:1px solid var(--line)}
+p{margin:0}
+.he{font-family:"IBM Plex Sans Hebrew",var(--body);direction:rtl;unicode-bidi:isolate}
+.meta{color:var(--muted);font-size:.9rem;display:flex;flex-wrap:wrap;gap:4px 18px}
+.verdict{background:var(--crit-soft);border:1px solid var(--crit);border-radius:10px;padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.verdict strong{color:var(--crit);font-size:1.15rem}
+section{display:flex;flex-direction:column;gap:14px}
+.list{display:flex;flex-direction:column;gap:10px;margin:0;padding:0;list-style:none}
+.item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 14px;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;align-items:start}
+.item > div{min-width:0}
+.item .t{font-weight:600}
+.item .d{color:var(--muted);font-size:.92rem}
+.pill{font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:999px;white-space:nowrap;margin-top:3px}
+.p-crit{background:var(--crit-soft);color:var(--crit)}
+.p-warn{background:var(--warn-soft);color:var(--warn)}
+.p-info{background:var(--info-soft);color:var(--info)}
+.p-ok{background:var(--ok-soft);color:var(--ok)}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.92rem;min-width:560px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:600}
+tr:last-child td{border-bottom:0}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.stats{display:flex;flex-wrap:wrap;gap:10px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px 14px;display:flex;flex-direction:column;min-width:120px}
+.stat b{font-size:1.4rem;font-variant-numeric:tabular-nums}
+.stat span{color:var(--muted);font-size:.82rem}
+.note{color:var(--muted);font-size:.88rem}
+@media (max-width:520px){h1{font-size:1.7rem}}
+</style>
+
+<div class="wrap">
+  <header style="display:flex;flex-direction:column;gap:10px">
+    <h1>Готовность к выпуску — <span class="he">אור הגאולה</span></h1>
+    <div class="meta">
+      <span>Проверка 19.10.2026</span>
+      <span>iPhone 17 · iOS 26.6.1 · TestFlight 1.0.0 (20) + OTA</span>
+      <span>Эталон: документация «מפרט» + Figma «זיכוי הרבים אפליקציה 2»</span>
+    </div>
+  </header>
+
+  <div class="verdict">
+    <strong>Вердикт: пока не готово к выпуску</strong>
+    <p>Функциональность пользователя в приложении в основном работает и совпадает с документацией и Figma. Выпуск держат содержимое и внешние зависимости: литургические тексты почти не утверждены, в боевых данных остались тестовые утверждения QA, уроки Торы тестовые, записей озвучки нет, реальный OTP не подключён. Отдельно: 2 бага средней важности и 3 мелочи (список ниже).</p>
+  </div>
+
+  <section>
+    <h2>Заведено на доску 19.10</h2>
+    <div class="tbl"><table>
+      <thead><tr><th>#hash</th><th>Тикет</th><th>Важность</th></tr></thead>
+      <tbody>
+        <tr><td class="num">#b7295677</td><td>Нет удаления аккаунта в приложении (требование App Store 5.1.1(v))</td><td>важно</td></tr>
+        <tr><td class="num">#32e3cd9a</td><td>Нусахов должно быть только 2 — «<span class="he">נוסח אשכנז</span>» и «<span class="he">נוסח ספרד / עדות המזרח</span>» (онбординг, профиль, выпадающий список в молитве), как в Figma S-07</td><td>важно</td></tr>
+        <tr><td class="num">#be1e2077</td><td>Текст пустой карточки «<span class="he">התחל את המסע שלך</span>» на главной — как в Figma S-01</td><td>мелочь</td></tr>
+        <tr><td class="num">#db1dba97</td><td>«<span class="he">תזכורות מהירות</span>» продолжает показывать молитву, которую уже записали (должна исчезать). Повтор той же молитвы в тот же день — разрешён</td><td>важно</td></tr>
+        <tr><td class="num">#16933ca6</td><td>Админка: вставка קטע в выбранное место, перестановка и удаление קטעים (сейчас — только в конец). Нужно, чтобы клиент дополнил <span class="he">שחרית ספרד</span>: нет «<span class="he">מודה אני</span>», <span class="he">ציצית</span>, <span class="he">טלית</span>, <span class="he">תפילין</span>, «<span class="he">מה טובו</span>», «<span class="he">אדון עולם</span>», «<span class="he">יגדל</span>»</td><td>важно</td></tr>
+        <tr><td class="num">#4cfbf19e</td><td>Дизайн «<span class="he">ברכות</span>» и «<span class="he">תהילים</span>» перепутан между вкладками; нет фильтра по темам, «<span class="he">פרק השבוע</span>», навигации между главами (эталон Figma «New - Keren»)</td><td>важно</td></tr>
+        <tr><td class="num">#48c24d61</td><td>Без интернета приложением пользоваться нельзя: холодный старт блокируется, молитва и <span class="he">תהילים</span> не грузятся</td><td>важно</td></tr>
+        <tr><td class="num">#693450a9</td><td>Рассылка (מייל / SMS / WhatsApp) не отправляется даже при согласии</td><td>важно</td></tr>
+        <tr><td class="num">#414ae351</td><td>Экран брахи: заголовок не по центру</td><td>важно</td></tr>
+        <tr><td class="num">#9b0df2d0</td><td>«<span class="he">מפת ההשפעה</span>» на главной открывает «<span class="he">בפיתוח</span>»</td><td>важно</td></tr>
+        <tr><td class="num">#56d002bd</td><td>Ошибки написания: «<span class="he">תהילים קל</span>» → «<span class="he">ק״ל</span>», «<span class="he">מכות דף ט</span>» → «<span class="he">ט׳</span>», «<span class="he">יעלה ויבא</span>» / «<span class="he">ויבוא</span>» разнобой, «<span class="he">היסטוריית התפילות שלי</span>», «<span class="he">לידיתון [לידותון]</span>» в названии ל״ט</td><td>мелочь</td></tr>
+        <tr><td class="num">#00542c25</td><td>Тексты не как в Figma: S-08, S-29, S-22, переключатель профиля</td><td>мелочь</td></tr>
+        <tr><td class="num">#1108fa0d</td><td>Иконка восхода у <span class="he">מנחה</span> в шапке главной</td><td>мелочь</td></tr>
+        <tr><td class="num">#0f8f122d</td><td>Поиск без результатов не скрывает «<span class="he">שיעורי תורה</span>»</td><td>мелочь</td></tr>
+        <tr><td class="num">#9e970625</td><td>Шапка «<span class="he">היסטוריית תפילות שלי</span>» не как на других экранах</td><td>мелочь</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">Все в «<span class="he">לביצוע</span>», плюс комментарий в F-39 про строку тестового режима OTP. Оставлено как в приложении (решение 19.10): «<span class="he">דרגה 1 מתוך 10</span>», ползунок с делениями, выбор типа даты кнопками. Все, тип «<span class="he">באג</span>» (рассылка — «<span class="he">משימה</span>»), со скриншотами. Решения владельца 19.10: тексты без требования в документации — как в Figma; без интернета — баг; эталон <span class="he">תהילים</span>/<span class="he">ברכות</span> — Figma «New - Keren»; «<span class="he">בבית האבל</span>» и «<span class="he">קריאה לתענית ציבור</span>» только в <span class="he">נוסח ספרד</span> — так и должно быть.</p>
+  </section>
+
+  <section>
+    <h2>Блокеры выпуска</h2>
+    <ul class="list">
+      <li class="item"><span class="pill p-crit">Содержимое</span><div><div class="t">Литургические тексты почти не утверждены</div><div class="d">В админке приложения: <span class="he">שחרית אשכנז — 0 מתוך 66</span>, <span class="he">שחרית ספרד — 0 מתוך 57</span>, <span class="he">מנחה — 0 מתוך 8 / 11</span>, <span class="he">ערבית אשכנז — 1 מתוך 15</span>, у праздничных и дополнительных молитв — 0. Пользователь везде видит пометку «<span class="he">הטקסט עדיין לא אושר… ומוצג באופן זמני</span>». Утверждает клиент через админку (F-102, F-94; решение 06.10).</div></div></li>
+      <li class="item"><span class="pill p-crit">Содержимое</span><div><div class="t">В боевых данных остались тестовые утверждения QA</div><div class="d">Например, <span class="he">ערבית אשכנז קטע 3 «המעריב ערבים» — «מאושר · בודק QA, 7.10.2026»</span>, объяснение <span class="he">ערבית</span> — «<span class="he">אושר על ידי בודק QA, 6.10.2026</span>», под брахой <span class="he">בורא פרי העץ</span> — «<span class="he">אושר על ידי בודק QA, 7.10.2026</span>». Это утверждения из наших тестов 6–7.10. Статус «<span class="he">מאושר</span>» нельзя откатить, поэтому клиенту нужно утвердить эти тексты заново от своего имени.</div></div></li>
+      <li class="item"><span class="pill p-crit">Содержимое</span><div><div class="t">«<span class="he">שיעורי תורה</span>» — только тестовый урок</div><div class="d">Единственный урок: «<span class="he">שיעור בדיקה — לא תוכן מאושר</span>», в тексте сказано, что его уберут перед выпуском. В списке видна служебная строка «<span class="he">…כל עוד סדר ההצגה של המדור לא נקבע</span>». Нужны настоящие уроки или объяснённое пустое состояние (S-28, F-53).</div></div></li>
+      <li class="item"><span class="pill p-crit">Содержимое</span><div><div class="t">Записей озвучки нет нигде</div><div class="d">В молитвах, брахот и תהילים: «<span class="he">אין הקראה לקטע הזה</span>». Загрузка MP3 в приложении работает (проверено 19.10 на тестовой записи, потом удалена), файлы должен загрузить клиент (F-91, F-92).</div></div></li>
+      <li class="item"><span class="pill p-crit">Зависимость</span><div><div class="t">Реальный OTP не подключён, тестовый режим виден пользователю</div><div class="d">Вход только тестовым кодом. На экране кода (S-11) показана служебная строка «<span class="he">מצב בדיקה: אין שליחת SMS בפרויקט, ולכן קוד האימות הוא…</span>». F-39 в работе (<span class="he">לביצוע</span>). Строку нужно убрать вместе с подключением SMS.</div></div></li>
+      <li class="item"><span class="pill p-warn">Риск App Store</span><div><div class="t">Нет удаления аккаунта</div><div class="d">В профиле есть только «<span class="he">התנתקות</span>». В документации такого требования нет, но App Store требует удаление аккаунта у приложений с регистрацией (правило 5.1.1(v)) и может отклонить сборку на ревью.</div></div></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Критерии приёмки</h2>
+    <div class="stats">
+      <div class="stat"><b>166</b><span>AC в документации</span></div>
+      <div class="stat"><b style="color:var(--ok)">136</b><span>выполнены в приложении</span></div>
+      <div class="stat"><b style="color:var(--crit)">5</b><span>не выполнены</span></div>
+      <div class="stat"><b style="color:var(--warn)">1</b><span>под вопросом</span></div>
+      <div class="stat"><b>5</b><span>ещё не проверены</span></div>
+      <div class="stat"><b>19</b><span>вне проверки</span></div>
+    </div>
+    <p class="note">Не выполнены: F-40 AC4, F-99 AC2, F-53 AC2, F-93 AC2 (см. блокеры и баги). Под вопросом: F-54 AC1 (без интернета). Не проверены: утро/вечер (S-31, S-32, «הנחת תפילין» после заката, обнуление «תפילות היום»), 9.11 (push «יעלה ויבוא»), написание названий (D-33), пустое состояние «שיעורי תורה». Вне проверки: OTP, процессы клиента, решения с датой.</p>
+  </section>
+
+  <section>
+    <h2>Баги — заводить после «да»</h2>
+    <ul class="list">
+      <li class="item"><span class="pill p-warn">Заведён #693450a9</span><div><div class="t">Рассылка (מייל / SMS / WhatsApp) не работает</div><div class="d">В профиле можно дать согласие «<span class="he">אני מאשר לקבל התראות למייל / sms / whatsapp</span>», оно сохраняется, но в том же окне написано «<span class="he">הודעות במייל, ב־SMS וב־WhatsApp עדיין אינן נשלחות.</span>». Требование: F-89, D-48; какие каналы поддерживаются, ещё решает владелец продукта. Тикет #693450a9 заведён 19.10 в «לביצוע» со скриншотом.</div></div></li>
+      <li class="item"><span class="pill p-warn">Важно</span><div><div class="t">Экран брахи: заголовок не по центру</div><div class="d">«<span class="he">בורא פרי העץ (אשכנזי)</span>» сдвинут вправо: центр кнопки заголовка 223pt при центре экрана 201pt, заголовок в 2 строки. У молитв (<span class="he">שחרית</span>, <span class="he">מנחה</span>) центр ровно 201pt. Образец — Figma S-17 450:3687, похожее исправление было в #b398d352. Заметил пользователь, подтверждено замером.</div></div></li>
+      <li class="item"><span class="pill p-warn">Важно</span><div><div class="t">Кнопка «<span class="he">מפת ההשפעה</span>» на главной ведёт в тупик</div><div class="d">Открывает окно «<span class="he">מפת ההשפעה עדיין בפיתוח, ולכן אין לאן להמשיך מכאן כרגע.</span>», хотя карта уже есть в «<span class="he">המסע שלי</span>». Требование: F-99 AC2/AC5, Figma S-01 436:1292.</div></div></li>
+      <li class="item"><span class="pill p-info">Мелочь</span><div><div class="t">Иконка <span class="he">מנחה</span> на главной — восход вместо заката</div><div class="d">В шапке главной у окна <span class="he">מנחה</span> иконка восхода. В Figma S-01 и в списках самого приложения у <span class="he">מנחה</span> закат.</div></div></li>
+      <li class="item"><span class="pill p-info">Мелочь</span><div><div class="t">Поиск в каталоге без результатов не скрывает «<span class="he">שיעורי תורה</span>»</div><div class="d">Под «<span class="he">לא נמצאו תפילות שמתאימות ל״…״</span>» остаётся карточка «<span class="he">שיעורי תורה</span>» (F-40 AC4).</div></div></li>
+      <li class="item"><span class="pill p-info">Мелочь</span><div><div class="t">Шапка «<span class="he">היסטוריית תפילות שלי</span>» не как на других экранах</div><div class="d">Стрелка в белом круге, заголовок мелкий и нежирный, нет линии под шапкой. Образец — Figma S-26 454:5725.</div></div></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Вопросы владельцу продукта (не баги)</h2>
+    <ul class="list">
+      <li class="item"><span class="pill p-info">Вопрос</span><div><div class="t">Из каталога можно записать молитву вне её времени</div><div class="d">«<span class="he">מנחה</span>» засчиталась в 12:39 при начале в 12:54, «<span class="he">ערבית</span>» — днём. Кнопка на главной вне времени неактивна (согласовано). Прямого запрета для каталога в документации нет (F-40 AC1: «открыть для чтения или выполнения»).</div></div></li>
+      <li class="item"><span class="pill p-info">Вопрос</span><div><div class="t">Тексты расходятся с Figma, а в документации не заданы</div><div class="d">Кнопка окна завершения (S-22): «<span class="he">המשך</span>» вместо «<span class="he">חזרה למסך ראשי</span>»; лист S-29: «<span class="he">תאריך חשוב</span>» вместо «<span class="he">תאריך חדש</span>»; подзаголовки S-08/S-09; переключатель профиля «<span class="he">תזכורות במערכת</span>» вместо «<span class="he">תזכורות והתראות</span>».</div></div></li>
+      <li class="item"><span class="pill p-info">Вопрос</span><div><div class="t">Какой кадр Figma считать эталоном для <span class="he">תהילים</span></div><div class="d">Приложение повторяет кадры 632:1447 и 641:2633 из секции «New - Keren», а в документации указаны 454:5002 и 454:5200.</div></div></li>
+      <li class="item"><span class="pill p-warn">Вопрос · риск</span><div><div class="t">Без интернета приложением пользоваться нельзя</div><div class="d">Холодный старт без сети: заставка «<span class="he">בודקים אם כבר נכנסתם לחשבון…</span>», потом «<span class="he">בדיקת החשבון לא הסתיימה: אין תשובה מהשרת</span>» (3 из 3). Если сеть пропала у открытого приложения, работают «<span class="he">תזכורות מהירות</span>» и זמנים на уже открытый день. Молитва, תהילים, каталог и уроки не грузятся, но сообщения понятные, и есть «<span class="he">נסו שוב</span>», место в молитве сохраняется. На новую дату זמנים не показываются («<span class="he">לא הצלחנו לטעון את המיקום שנשמר</span>» — текст про место, а не про связь), еврейская дата висит на «<span class="he">טוען תאריך עברי…</span>». Офлайн-режим в документации не задан; F-54 AC1 говорит только о недоступности источника זמנים. Нужно решение: нужна ли молитва без сети (синагога, дорога).</div></div></li>
+      <li class="item"><span class="pill p-info">Вопрос</span><div><div class="t">Полярная ночь: «<span class="he">מנחה גדולה</span>» с предыдущего дня</div><div class="d">Для Longyearbyen 19.12.2026 почти все времена — «—» с «<span class="he">לא ניתן לחשב ביום זה</span>» (верно), но «<span class="he">מנחה גדולה (מג״א, 72 דקות)</span>» показывает «<span class="he">ביום הקודם 0:59</span>». Пограничный случай, к Израилю не относится.</div></div></li>
+      <li class="item"><span class="pill p-info">Вопрос</span><div><div class="t">Пустой «<span class="he">עמוד יומי במשנה ברורה</span>»</div><div class="d">На экране זמנים в блоке ежедневного учения вместо значения стоит «<span class="he">אין נתון כעת</span>» (<span class="he">דף יומי בבלי</span> и <span class="he">ירושלמי</span> показаны). Нужно решить, показывать ли эту строку без данных.</div></div></li>
+      <li class="item"><span class="pill p-info">Вопрос</span><div><div class="t">Молитвы только в одном нусахе</div><div class="d">В админке «<span class="he">בבית האבל</span>» и «<span class="he">קריאה לתענית ציבור</span>» есть только в <span class="he">נוסח ספרד</span>.</div></div></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Сверка с Figma</h2>
+    <div class="stats">
+      <div class="stat"><b>36</b><span>экранов сверено</span></div>
+      <div class="stat"><b style="color:var(--ok)">19</b><span>совпадают</span></div>
+      <div class="stat"><b style="color:var(--warn)">14</b><span>мелкие отличия</span></div>
+      <div class="stat"><b style="color:var(--crit)">3</b><span>расхождения</span></div>
+    </div>
+    <p class="note">Сверялись структура и тексты, без замеров в пикселях. Согласованные отличия (шрифт Discovery_Fs, галочка рассылки перенесена в профиль) не считаются. Где Figma противоречит критериям приёмки, решала документация: в приложении нет предвыбора города и нусаха, напоминания по умолчанию выключены, кнопок входа через провайдера нет — всё по AC. Расхождение S-10 («нет <span class="he">צפה בהכל</span>») снято перепроверкой: ссылка появляется на главной при 4 записях.</p>
+  </section>
+
+  <section>
+    <h2>Проверено в приложении и работает</h2>
+    <div class="tbl"><table>
+      <thead><tr><th>Раздел</th><th>Что проверено</th><th>Фичи / экраны</th></tr></thead>
+      <tbody>
+        <tr><td>Регистрация и онбординг</td><td>Новый аккаунт: «<span class="he">יש! יצרת חשבון</span>» сразу после «<span class="he">שלח</span>», 5 точек прогресса на всех шагах, «<span class="he">מיקום</span>» без предвыбора, сводка, переход на главную</td><td class="num">F-38, F-89, S-03…S-14</td></tr>
+        <tr><td>Главная</td><td>Пустое и заполненное состояние, счётчики, «<span class="he">תפילות אחרונות</span>» и «<span class="he">צפה בהכל</span>», «<span class="he">התחל תפילה</span>» включается ровно в начале окна (12:54), приветствие по времени дня</td><td class="num">F-98, S-01, S-10</td></tr>
+        <tr><td>Напоминания</td><td>«<span class="he">תזכורות מהירות</span>»: окно <span class="he">מנחה</span>, <span class="he">הנחת תפילין</span> до заката и исчезает после заката; включение в профиле</td><td class="num">F-47, F-48, S-19</td></tr>
+        <tr><td>Вечер</td><td>После заката: «<span class="he">ט׳ חשון</span>», окно <span class="he">ערבית</span> «18:04 - 05:35», луна, «<span class="he">ערב טוב</span>», ночной фон</td><td class="num">S-32, F-98</td></tr>
+        <tr><td>Озвучка</td><td>Две тестовые записи на соседние קטעים <span class="he">ערבית</span>: своя запись на каждой странице, остановка в конце קטע, при переходе на другую страницу запись останавливается, «<span class="he">הקראה: … · אושרה על ידי …</span>». Записи удалены</td><td class="num">F-91, F-92</td></tr>
+        <tr><td>Важные даты</td><td>Добавление <span class="he">אזכרה</span> с еврейской датой, «<span class="he">סדר אזכרה</span>» с <span class="he">תהילים</span>, форма «<span class="he">תאריך חשוב</span>»</td><td class="num">F-100, S-18, S-20, S-29</td></tr>
+        <tr><td>Молитва</td><td>Страницы «<span class="he">המשך / קודם</span>», «<span class="he">X מתוך N</span>», <span class="he">יחיד/מניין</span>, смена нусаха внутри молитвы с сохранением места, «<span class="he">הסבר על התפילה</span>», окно завершения, защита от повторной записи</td><td class="num">F-96, F-103, F-37, F-42, F-41, S-17, S-21, S-22, S-33</td></tr>
+        <tr><td>Нусахи по содержимому</td><td><span class="he">שחרית</span> 66/57, <span class="he">מנחה</span> 8/11, <span class="he">ערבית</span> 15/16 страниц (אשכנז/ספרד). Отличия на месте: «<span class="he">ויצמח פורקנה</span>» только в ספרד; קדושה «<span class="he">נקדש</span>» / «<span class="he">נקדישך ונעריצך</span>»; «<span class="he">שלום רב</span>» / «<span class="he">שים שלום</span>»; порядок «<span class="he">ברוך שאמר</span>» и «<span class="he">הודו</span>». Брахот — у каждого нусаха свой источник и текст. «<span class="he">בבית האבל</span>» и «<span class="he">קריאה לתענית ציבור</span>» — только у пользователя ספרד, открываются. Правильность каждого слова — сверка клиента</td><td class="num">F-37, F-46, F-102</td></tr>
+        <tr><td>Каталог</td><td>Список с нусахом, поиск, пустой результат с «<span class="he">ניקוי החיפוש</span>»</td><td class="num">F-40, S-27</td></tr>
+        <tr><td><span class="he">תהילים</span></td><td>Главы с огласовками, <span class="he">פרקי אבות</span>, фильтр по дням недели, поиск по номеру и словам, «<span class="he">סיים קריאה</span>»</td><td class="num">F-52, S-24, S-25</td></tr>
+        <tr><td><span class="he">ברכות</span></td><td>Список в нусахе профиля, экран брахи с источником (кроме заголовка — см. баг)</td><td class="num">F-93</td></tr>
+        <tr><td><span class="he">המסע שלי</span></td><td>Уровень и прогресс, счётчики, разбивка по молитвам, «<span class="he">מקבל על עצמי</span>», достижения, пустая карта влияния</td><td class="num">F-104, F-101, F-51, F-50, F-90, F-99, S-15, S-23</td></tr>
+        <tr><td>История</td><td>Группировка по дню, тип и время в каждой записи, поиск</td><td class="num">F-43, S-26</td></tr>
+        <tr><td><span class="he">זמנים</span></td><td>Время по городу профиля, переход по дням, каждая שיטה подписана. Все времена для <span class="he">רמת גן</span> и Тель-Авива на 19.10.2026 совпали с Hebcal минута в минуту, разница между городами учтена</td><td class="num">F-44, F-94 AC3, S-16</td></tr>
+        <tr><td>Еврейская дата</td><td>Переход месяца (10.11.2026 <span class="he">ל׳ חשון</span> → 11.11 <span class="he">א׳ כסלו</span>) и года (1.10.2027 <span class="he">כ״ט אלול תשפ״ז</span> → 2.10.2027 <span class="he">א׳ תשרי תשפ״ח</span>) совпадают с Hebcal</td><td class="num">F-94 AC2</td></tr>
+        <tr><td>Профиль</td><td>Все данные онбординга с изменением; смена нусаха меняет метки на всех экранах; согласие на рассылку включается и отзывается; город без расчёта (полярная ночь) — явное «<span class="he">לא ניתן לחשב ביום זה</span>»; «<span class="he">תזכורות במערכת</span>», выход</td><td class="num">F-46, F-36 AC3, F-44 AC6</td></tr>
+        <tr><td>Вход</td><td>Неверный код — ошибка на иврите, остаёмся на экране кода</td><td class="num">F-88 AC4</td></tr>
+        <tr><td>Прогресс</td><td>Продолжение молитвы с той же страницы; без «<span class="he">סיים</span>» запись не появляется; 10-я молитва — «<span class="he">עלית דרגה — המשך כך</span>», уровень «<span class="he">מתמיד</span>»; окно без нового достижения — одна кнопка возврата; «<span class="he">תפילה ראשונה</span>» не повторяется; изменение קבלה сохраняется</td><td class="num">F-96 AC2, F-43 AC5, F-101 AC4, F-41 AC4, F-90 AC1, F-50 AC3</td></tr>
+        <tr><td>Админка в приложении</td><td>Статус утверждения по каждому קטע, кто и когда утвердил, источник, издание, лицензия. На <span class="he">ערבית אשכנז קטע 3</span>: правка текста и «<span class="he">אישור ופרסום</span>» — пользователь сразу видит новый текст без новой версии; загрузка MP3 из «Файлов» iPhone, «<span class="he">מי הקליט</span>», утверждение; у пользователя «<span class="he">השמע</span>» и «<span class="he">הקראה: … · אושרה על ידי …</span>», запись играет и останавливается в конце קטע; после изменения текста запись «<span class="he">לא תואמת</span>» и пользователю не предлагается. Всё возвращено: текст посимвольно, запись удалена (осталась только дата утверждения 19.10 и строки истории)</td><td class="num">F-102 AC4/AC5, F-92 AC2/AC4, F-91</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <h2>Не проверено сейчас</h2>
+    <ul class="list">
+      <li class="item"><span class="pill p-info">Ждёт даты</span><div><div class="t">Доставка push</div><div class="d">Напоминание «<span class="he">יעלה ויבוא</span>» — проверка 09.11 вечером (#6a86f7fb). Доставку push-уведомлений вообще (F-36, исправлено 13.10) на этом прогоне не ждали.</div></div></li>
+      <li class="item"><span class="pill p-info">Вне объёма</span><div><div class="t">OTP</div><div class="d">F-39 и F-88 AC1 — по решению 11.10, пока не подключат SMS.</div></div></li>
+      <li class="item"><span class="pill p-info">Нужны данные</span><div><div class="t">Записи озвучки с настоящими файлами</div><div class="d">«<span class="he">לא תואמת</span>» после правки текста и «кто записал» (F-92 AC2/AC4) — пока клиент не загрузит MP3. В web это проверялось 07.10.</div></div></li>
+      <li class="item"><span class="pill p-info">Не трогали</span><div><div class="t">Системные окна «поделиться»</div><div class="d">«<span class="he">שיתוף</span>», «<span class="he">חזק את חברך</span>», «<span class="he">הזמנת אדם להתחזק</span>», «<span class="he">שיתוף ההישג</span>» открывают системный лист — на телефоне пользователя не нажимали, чтобы ничего не отправить. Проверялись 11.10 и 13.10.</div></div></li>
+      <li class="item"><span class="pill p-info">Платформа</span><div><div class="t">Android</div><div class="d">Проверка шла только на iPhone, по решению на эту проверку.</div></div></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Тестовые данные</h2>
+    <p class="note">Аккаунт 0501112077 «Qa reg 1910»: 4 молитвы (в том числе повторная <span class="he">שחרית</span>), <span class="he">תהילים ג׳</span> отмечен прочитанным, <span class="he">אזכרה</span> «QA בדיקה» (18.10), <span class="he">קבלה</span> «QA קבלה לבדיקה», «<span class="he">תזכורות במערכת</span>» включены. Аккаунт 0501112088 «Qg reg 1910b» (проверка формы регистрации и пустой истории). Удалить вместе с аккаунтами 18.10 (0501112044, 0501112055, 0501112066). В аккаунте клиента ничего не менялось.</p>
+  </section>
+</div>

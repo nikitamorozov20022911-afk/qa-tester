@@ -1,0 +1,212 @@
+<title>Banci QA 05.10</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: one reading column; fix order first, then status tables grouped by outcome */
+:root{
+  --bg:#f5f7f7; --surface:#ffffff; --fg:#14201f; --muted:#5a6b69; --line:#dbe3e2;
+  --accent:#0f7c84; --crit:#c2362b; --crit-bg:#fbe9e7; --warn:#a8650a; --warn-bg:#fdf1de;
+  --ok:#1d7a4a; --ok-bg:#e3f4ea; --info-bg:#e6f2f3;
+  --f-body:"Golos Text", "Segoe UI", system-ui, sans-serif;
+  --f-mono:"JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1716; --surface:#16211f; --fg:#e4eceb; --muted:#9aaba9; --line:#2a3a38;
+  --accent:#4cc2c9; --crit:#ff7b6e; --crit-bg:#3a1c19; --warn:#f0b45c; --warn-bg:#36290f;
+  --ok:#5fd394; --ok-bg:#16301f; --info-bg:#132c2e; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1716; --surface:#16211f; --fg:#e4eceb; --muted:#9aaba9; --line:#2a3a38;
+  --accent:#4cc2c9; --crit:#ff7b6e; --crit-bg:#3a1c19; --warn:#f0b45c; --warn-bg:#36290f;
+  --ok:#5fd394; --ok-bg:#16301f; --info-bg:#132c2e; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.55}
+.wrap{max-width:880px;margin:0 auto;padding-inline:20px;padding-block:28px 56px;display:flex;flex-direction:column;gap:36px}
+h1{font-size:28px;line-height:1.2;margin:0;text-wrap:balance}
+h2{font-size:19px;margin:0 0 12px;text-wrap:balance}
+h3{font-size:16px;margin:0;text-wrap:balance}
+p{margin:0}
+code{font-family:var(--f-mono);font-size:12.5px}
+.meta{color:var(--muted);font-size:13.5px;display:flex;flex-wrap:wrap;gap:4px 16px;margin-top:8px}
+.counts{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.chip{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:3px 11px;font-size:13px;font-weight:600;white-space:nowrap}
+.c-crit{background:var(--crit-bg);color:var(--crit)}
+.c-warn{background:var(--warn-bg);color:var(--warn)}
+.c-ok{background:var(--ok-bg);color:var(--ok)}
+.c-info{background:var(--info-bg);color:var(--accent)}
+.hash{font-family:var(--f-mono);font-size:12.5px;color:var(--accent);white-space:nowrap}
+.env{font-size:12.5px;color:var(--muted)}
+.env b{font-weight:600;color:var(--fg)}
+ol.fix{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;counter-reset:n}
+ol.fix>li{counter-increment:n;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px 14px 52px;position:relative;display:flex;flex-direction:column;gap:6px;min-width:0}
+ol.fix>li::before{content:counter(n);position:absolute;left:16px;top:14px;width:24px;height:24px;border-radius:50%;background:var(--fg);color:var(--bg);font-weight:700;font-size:13px;display:grid;place-items:center}
+ol.fix>li.crit::before{background:var(--crit)}
+.req{color:var(--muted);font-size:13.5px}
+.req q{color:var(--fg);font-style:normal}
+.tickets{display:flex;flex-wrap:wrap;gap:4px 12px}
+.board{font-size:12.5px}
+.tbl{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600}
+tr:last-child td{border-bottom:0}
+td.h{width:1%;white-space:nowrap}
+td.e{width:22%;font-size:13px;color:var(--muted)}
+.note{color:var(--muted);font-size:13.5px;margin-top:8px}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;font-size:13px;color:var(--muted);align-items:center}
+ul.plain{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+
+<div class="wrap">
+
+<header>
+  <h1>Banci · итоги QA за 5 октября</h1>
+  <div class="meta">
+    <span>Основная проверка: iPhone 17, Safari, по кабелю</span>
+    <span>Второе устройство: Mac, Chrome</span>
+    <span>Сборка сайта: entry-e12bd5c7</span>
+    <span>Аккаунт: user</span>
+  </div>
+  <div class="counts">
+    <span class="chip c-ok">13 прошли</span>
+    <span class="chip c-crit">11 реджектов</span>
+    <span class="chip c-info">4 работают в вебе, натив позже</span>
+    <span class="chip c-warn">2 новых бага</span>
+    <span class="chip c-warn">3 ещё проверяются</span>
+  </div>
+</header>
+
+<section>
+  <h2>Что исправить, по порядку</h2>
+  <div class="legend">
+    <span class="chip c-crit">реджект отправлен</span> уже на доске, тикет в «לביצוע»
+    <span class="chip c-warn">реджект предложен</span> ждёт решения QA
+  </div>
+  <ol class="fix">
+    <li class="crit">
+      <h3>Сирена тревоги и звук сбоя не звучат в Safari на iPhone</h3>
+      <p>Тревога «זוהתה סכנה בבריכה» и окно сбоя появляются, но звука нет. Safari блокирует <code>siren.wav</code> и <code>failure.wav</code> с ошибкой <code>NotAllowedError</code>, потому что звук стартует без действия пользователя. Касание экрана во время мониторинга не помогает. Тестовый сигнал «השמעה» играет, так как запускается сразу после касания. Беззвучный режим был выключен. Как исправить: разблокировать звук заранее, при нажатии «התחלת ניטור».</p>
+      <p class="req">Требование: <q>מוודא שכאשר ההתראה מופעלת היא קולית, בולטת ומורגשת גם ללא הסתכלות במסך</q></p>
+      <p class="env">Где проверено: <b>iPhone 17 · Safari</b>, <code>?mock=headUnder</code> и <code>?mock=moved</code>; телефон-камера и второй телефон</p>
+      <div class="tickets">
+        <span><span class="hash">#f658c865</span> <span class="chip c-crit board">реджект отправлен</span></span>
+        <span><span class="hash">#50a86b6e</span> <span class="chip c-warn board">реджект предложен</span></span>
+        <span><span class="hash">#620738da</span> <span class="chip c-warn board">реджект предложен</span></span>
+        <span><span class="hash">#3b546f53</span> <span class="chip c-warn board">реджект предложен</span></span>
+      </div>
+    </li>
+    <li>
+      <h3>При двух детях в сводке выводится «summary.who» вместо имён</h3>
+      <p>С одним ребёнком всё верно («בבריכה: QA בדיקה»). С двумя в сводке и в деталях истории стоит служебный ключ <code>summary.who</code>, а в списке истории имена выводятся правильно.</p>
+      <p class="req">Требование: сводка показывает детей, выбранных для мониторинга.</p>
+      <p class="env">Где проверено: <b>iPhone 17 · Safari</b>, <code>?mock=calm</code></p>
+      <div class="tickets"><span><span class="hash">#25e8f258</span> <span class="chip c-warn board">реджект предложен</span></span></div>
+    </li>
+    <li>
+      <h3>Шаг камеры: нет подсказки поставить телефон устойчиво, точка разметки тянет страницу</h3>
+      <p>1) На экране нет указания поставить телефон в устойчивое место, есть только рекламный баннер «מעמד יציב לטלפון». 2) В ручной разметке воды, когда тащишь угловую точку вверх или вниз, вместе с ней прокручивается страница, и точка уходит из-под пальца. По горизонтали перетаскивание работает.</p>
+      <p class="req">Требования: <q>1. מנחה את המשתמש להציב את המכשיר במקום יציב מול הבריכה</q>, <q>3. מזהה את שטח המים הרלוונטי לניטור</q></p>
+      <p class="env">Где проверено: <b>iPhone 17 · Safari</b>, перетаскивание пальцем</p>
+      <div class="tickets"><span><span class="hash">#7076cfab</span> <span class="chip c-warn board">реджект предложен</span></span></div>
+    </li>
+    <li>
+      <h3>Нет кнопки приложения или сайта МДА</h3>
+      <p>Кнопки нет ни в окне тревоги, ни на экране «עזרה דחופה», ни на страницах первой помощи. Звонок 101 и инструкции работают.</p>
+      <p class="req">Требование: <q>5. מציג כפתור משלים לפתיחת האפליקציה או האתר של מד"א</q></p>
+      <p class="env">Где проверено: <b>iPhone 17 · Safari</b></p>
+      <div class="tickets"><span><span class="hash">#e824b3d3</span> <span class="chip c-warn board">реджект предложен</span></span></div>
+    </li>
+    <li>
+      <h3>Нет рекламного баннера на шаге «מי בבריכה היום?»</h3>
+      <p>Баннер есть на проверке безопасности, на шаге камеры и в сводке. На последнем шаге подготовки его нет, хотя мониторинг ещё не начат.</p>
+      <p class="req">Требования: <q>מציג פרסומות לפני תחילת הניטור</q>, <q>נטען במסכי ההכנה, ההגדרה והסיכום</q></p>
+      <p class="env">Где проверено: <b>iPhone 17 · Safari</b>, вертикально и горизонтально</p>
+      <div class="tickets">
+        <span><span class="hash">#840d8543</span> <span class="chip c-crit board">реджект отправлен</span></span>
+        <span><span class="hash">#a5b844f5</span> <span class="chip c-crit board">реджект отправлен</span></span>
+      </div>
+    </li>
+    <li>
+      <h3>Главная не прокручивается до «ניטורים אחרונים»</h3>
+      <p>Страница не прокручивается: видна только первая запись, остальные спрятаны под нижним меню и панелью Safari.</p>
+      <p class="env">Где проверено: <b>iPhone 17 · Safari</b></p>
+      <div class="tickets"><span><span class="hash">#e9802dc6</span> <span class="chip c-warn board">новый баг, в «לביצוע»</span></span></div>
+    </li>
+    <li>
+      <h3>В «מכשירים» показаны отключённые устройства</h3>
+      <p>Сообщение говорит о лимите 2, а в списке 4 устройства, два из них «לא מחובר». Названия одинаковые, дат нет, непонятно, что удалять.</p>
+      <p class="req">Требование: <q>מציג רשימה של המכשירים המחוברים לאותו מנוי</q></p>
+      <p class="env">Где проверено: <b>iPhone 17 · Safari</b></p>
+      <div class="tickets"><span><span class="hash">#8b11bf53</span> <span class="chip c-warn board">новый баг, в «לביצוע»</span></span></div>
+    </li>
+    <li>
+      <h3>WhatsApp: у поставщиков нет номеров</h3>
+      <p>Кнопка «פנייה בוואטסאפ» неактивна у всех товаров («פרטי הקשר של הספק עוד לא הוגדרו»). Тестовый режим с окном предпросмотра работает правильно. Чтобы проверить открытие WhatsApp, нужен тестовый номер поставщика.</p>
+      <p class="env">Где проверено: <b>iPhone 17 · Safari</b>, <code>?mock=calm</code></p>
+      <div class="tickets"><span><span class="hash">#c48aff34</span> <span class="chip c-warn board">реджект предложен (нет ресурса)</span></span></div>
+    </li>
+  </ol>
+  <p class="note">Вопрос программисту, не реджект: сценарий <code>?mock=vertical</code> даёт тревогу на 0:18, а по коду ожидается около 0:32, как у <code>motionless</code>. Пороги помечены как временные.</p>
+</section>
+
+<section>
+  <h2>Прошли</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Тикет</th><th>Что проверено</th><th>Где проверено</th></tr></thead>
+    <tbody>
+      <tr><td class="h"><span class="hash">#28631b61</span></td><td>Экран подписки: дата конца пробного периода и остаток дней</td><td class="e">iPhone · Safari; Web (компьютер, Chrome) 04.10</td></tr>
+      <tr><td class="h"><span class="hash">#bff42af5</span></td><td>После онбординга прямые ссылки на онбординг ведут на главную</td><td class="e">iPhone · Safari; Web 04.10</td></tr>
+      <tr><td class="h"><span class="hash">#dd3533b4</span></td><td>Возраст ребёнка по дате рождения: ввод с цифровой клавиатуры, будущая дата, редактирование</td><td class="e">iPhone · Safari; Web 04.10</td></tr>
+      <tr><td class="h"><span class="hash">#4ddb3cef</span></td><td>Регистрация и вход по Figma: клавиатура e-mail, без увеличения при фокусе, «глаз», Google/Apple</td><td class="e">iPhone · Safari; Web 04.10</td></tr>
+      <tr><td class="h"><span class="hash">#76ac792d</span></td><td>Тексты входа во множественном числе, e-mail слева направо, код до 8 цифр, стрелка «назад»</td><td class="e">iPhone · Safari; Web 04.10</td></tr>
+      <tr><td class="h"><span class="hash">#fedff1f5</span></td><td>«סיסמה חדשה»: «назад» возвращает на «שחזור סיסמה» с почтой</td><td class="e">iPhone · Safari; Web 04.10</td></tr>
+      <tr><td class="h"><span class="hash">#8e6275a4</span></td><td>«/verify»: «назад» после настоящей регистрации возвращает с почтой и паролем</td><td class="e">iPhone · Safari; Web 04.10</td></tr>
+      <tr><td class="h"><span class="hash">#f71a2198</span></td><td>Раздел товаров: категории, страница товара, вход из «חשבון» и с баннера, корзины нет</td><td class="e">iPhone · Safari</td></tr>
+      <tr><td class="h"><span class="hash">#e42e3bd9</span></td><td>Звонок 101 из окна тревоги и с экрана помощи: подтверждение, затем системный запрос iOS, автозвонка нет. Вчерашний реджект был лишним</td><td class="e">iPhone · Safari, <code>?mock=headUnder</code></td></tr>
+      <tr><td class="h"><span class="hash">#c2f6ff67</span><br><span class="hash">#d02eab01</span><br><span class="hash">#b5dc0652</span><br><span class="hash">#aafbd136</span></td><td>Мокапы экранов</td><td class="e">Figma (компьютер) 04.10</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Отметка «עבר QA» на доске ещё не поставлена, ждёт подтверждения. #e42e3bd9 сначала нужно вернуть из «לביצוע» в «בבדיקות».</p>
+</section>
+
+<section>
+  <h2>Работают в вебе, нативная часть позже</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Тикет</th><th>В вебе</th><th>Только в приложении</th></tr></thead>
+    <tbody>
+      <tr><td class="h"><span class="hash">#e5d95b68</span></td><td>4 вида опасности; время тревоги зависит от возраста ребёнка (18 / 17 / 16 с). iPhone · Safari, <code>?mock</code></td><td>Живая модель распознавания, резкая остановка</td></tr>
+      <tr><td class="h"><span class="hash">#90a85082</span></td><td>Старт только после подготовки, «חזרה לניטור», полный экран, завершение, сбои, второй телефон. iPhone · Safari + Mac · Chrome</td><td>Живая камера, фон и блокировка экрана</td></tr>
+      <tr><td class="h"><span class="hash">#e41636dd</span></td><td>Состояния переключателей и радиокнопок доходят до VoiceOver и меняются при нажатии. iPhone · Safari</td><td>Нативные компоненты</td></tr>
+      <tr><td class="h"><span class="hash">#8ff79b80</span></td><td>Онбординг. Web 04.10</td><td>Разрешения ОС</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Предлагаемый статус: «לא ניתן לשחזר» с заметкой «ייבדק כשהאפליקציה תהיה בטלפון». У #e41636dd и #8ff79b80 пометка уже стоит.</p>
+</section>
+
+<section>
+  <h2>Ещё проверяются</h2>
+  <ul class="plain">
+    <li><span class="hash">#64586270</span> «בדיקת בטיחות טרם ניטור»: остался пункт «второго телефона нет», нужен аккаунт с одним устройством. Найдено: без интернета «המשך» уходит в бесконечную загрузку без сообщения (iPhone · Safari, авиарежим).</li>
+    <li><span class="hash">#f7167929</span> английский язык устройства: нужно переключить язык iPhone.</li>
+    <li><span class="hash">#96b3e065</span> мокап «בחירת ילדים»: ждёт ответа заказчика по порядку шагов.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Открытые вопросы к заказчику</h2>
+  <ul class="plain">
+    <li>Проверка безопасности: блокирует ли старт любое невыполненное условие или только критическое? Сейчас предупреждения («הטלפון יישאר דלוק», нет интернета) «המשך» не блокируют.</li>
+    <li>Порядок подготовки: у программиста «проверка → камера → дети», в сценарии FL-05 «дети → камера → проверка».</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Тестовые данные для чистки</h2>
+  <ul class="plain">
+    <li>Карточка ребёнка «QA קטן» (15/03/2024) на аккаунте user.</li>
+    <li>Около 25 сеансов мониторинга 05.10 (13:18–15:46) на аккаунте user.</li>
+    <li>Новый неподтверждённый аккаунт, созданный при проверке #8e6275a4 (почта у QA).</li>
+    <li>На user2 принят дисклеймер.</li>
+  </ul>
+</section>
+
+</div>

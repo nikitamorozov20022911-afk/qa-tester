@@ -1,0 +1,68 @@
+
+Execution of 46 workers started at 2026-10-11T11:44:27.893Z
+
+[0-4] RUNNING in iOS on iOS - file:///specs/onboarding/ob-01-registered-user-redirect.e2e.ts
+[0-4] PASSED in iOS on iOS - file:///specs/onboarding/ob-01-registered-user-redirect.e2e.ts
+[0-5] RUNNING in iOS on iOS - file:///specs/prayer-catalog/pc-01-catalog-search.e2e.ts
+[0-5] 2026-10-11T11:45:33.596Z WARN webdriver: WebDriverError: Could not proxy command to the remote server. Original error: socket hang up when running "screenshot" with method "GET"
+[0-5] 2026-10-11T11:45:34.661Z ERROR webdriver: WebDriverError: Could not proxy command to the remote server. Original error: socket hang up when running "screenshot" with method "GET"
+[0-5] 2026-10-11T11:45:34.664Z ERROR @wdio/utils:shim: unknown error: WebDriverError: Could not proxy command to the remote server. Original error: socket hang up when running "screenshot" with method "GET"
+[0-5]     at FetchRequest._request (file:///Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/webdriver/build/node.js:2316:19)
+[0-5]     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+[0-5]     at async Browser.wrapCommandFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1100:23)
+[0-5]     at async Browser.saveScreenshot (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/webdriverio/build/node.js:623:95)
+[0-5]     at async Browser.wrapCommandFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1100:23)
+[0-5]     at async Object.afterTest (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/wdio.conf.ts:98:7)
+[0-5]     at async Promise.all (index 0)
+[0-5]     at async executeHooksWithArgs (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1083:18)
+[0-5]     at async Context.testFrameworkFnWrapper (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1350:38)
+[0-5] Error in "AfterTest Hook"
+WebDriverError: Could not proxy command to the remote server. Original error: socket hang up when running "screenshot" with method "GET"
+[0-5] Error in "Каталог молитв.PC-01 «תפילות»: список с נוסח, поиск по синонимам и נוסח, пустое состояние, открытие #6a86f7ff @prod-safe"
+Error: Нет карточек каталога
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-catalog/pc-01-catalog-search.e2e.ts:50:5)
+
+
+Ending WebDriver sessions gracefully ...
+(press ctrl+c again to hard kill the runner)
+[0-5] 2026-10-11T11:45:45.404Z WARN webdriver: WebDriverError: A session is either terminated or not started when running "elements" with method "POST"
+[0-5] FAILED in iOS on iOS - file:///specs/prayer-catalog/pc-01-catalog-search.e2e.ts
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[iOS #0-4] Running: on iOS
+[iOS #0-4] Session ID: 075e00a9-f703-4af6-b1fd-4dd48d5a244c
+[iOS #0-4]
+[iOS #0-4] » specs/onboarding/ob-01-registered-user-redirect.e2e.ts
+[iOS #0-4] Onboarding — недоступен зарегистрированному
+[iOS #0-4]    ? OB-01 Зарегистрированный пользователь не попадает в onboarding по ссылке #6aa7f009 @prod-safe
+[iOS #0-4]    - OB-01 Зарегистрированный пользователь не попадает в onboarding по ссылке #6aa7f009 @prod-safe
+[iOS #0-4]
+[iOS #0-4] 1 skipped (1.5s)
+------------------------------------------------------------------
+[iOS #0-5] Running: on iOS
+[iOS #0-5] Session ID: 1ec61e10-8c0f-40f4-8a26-dee63d734085
+[iOS #0-5]
+[iOS #0-5] » specs/prayer-catalog/pc-01-catalog-search.e2e.ts
+[iOS #0-5] Каталог молитв
+[iOS #0-5]    ✖ PC-01 «תפילות»: список с נוסח, поиск по синонимам и נוסח, пустое состояние, открытие #6a86f7ff @prod-safe
+[iOS #0-5]    ✖ "after each" hook for Каталог молитв
+[iOS #0-5]
+[iOS #0-5] 2 failing (31.5s)
+[iOS #0-5]
+[iOS #0-5] 1) Каталог молитв PC-01 «תפילות»: список с נוסח, поиск по синонимам и נוסח, пустое состояние, открытие #6a86f7ff @prod-safe
+[iOS #0-5] Нет карточек каталога
+[iOS #0-5] Error: Нет карточек каталога
+[iOS #0-5]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-catalog/pc-01-catalog-search.e2e.ts:50:5)
+[iOS #0-5]
+[iOS #0-5] 2) Каталог молитв "after each" hook for Каталог молитв
+[iOS #0-5] waitUntil condition failed with the following reason: WebDriverError: Request failed with error code UND_ERR_CLOSED when running "elements" with method "POST"
+[iOS #0-5] Error: waitUntil condition failed with the following reason: WebDriverError: Request failed with error code UND_ERR_CLOSED when running "elements" with method "POST"
+[iOS #0-5]     at async Element.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/wdio.conf.ts:84:15)
+[iOS #0-5]     ---
+[iOS #0-5]     at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:52:3)
+[iOS #0-5]     at async toHome (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:86:3)
+
+
+Spec Files:	 1 passed, 1 failed, 4 skipped, 46 total (13% completed) in 00:01:17  
+

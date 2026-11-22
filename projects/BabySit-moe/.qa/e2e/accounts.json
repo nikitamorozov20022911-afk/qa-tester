@@ -1,0 +1,38 @@
+[
+  {
+    "id": "parent-verified",
+    "role": "הורה — טלפון מאומת (verified)",
+    "emailVar": "QA_USER_PARENT_VERIFIED_EMAIL",
+    "codeVar": "QA_USER_PARENT_VERIFIED_CODE"
+  },
+  {
+    "id": "parent-unverified",
+    "role": "הורה — טלפון לא מאומת (לא יכול ליצור בקשה)",
+    "emailVar": "QA_USER_PARENT_UNVERIFIED_EMAIL",
+    "codeVar": "QA_USER_PARENT_UNVERIFIED_CODE"
+  },
+  {
+    "id": "sitter-experienced",
+    "role": "בייביסיטר — מאושרת, ותיקה (approved, experienced)",
+    "emailVar": "QA_USER_SITTER_EXPERIENCED_EMAIL",
+    "codeVar": "QA_USER_SITTER_EXPERIENCED_CODE"
+  },
+  {
+    "id": "sitter-new",
+    "role": "בייביסיטר — מאושרת, חדשה ללא היסטוריה (approved, brand new)",
+    "emailVar": "QA_USER_SITTER_NEW_EMAIL",
+    "codeVar": "QA_USER_SITTER_NEW_CODE"
+  },
+  {
+    "id": "sitter-pending",
+    "role": "בייביסיטר — ממתינה לאישור (awaiting approval)",
+    "emailVar": "QA_USER_SITTER_PENDING_EMAIL",
+    "codeVar": "QA_USER_SITTER_PENDING_CODE"
+  },
+  {
+    "id": "admin",
+    "role": "מנהל המערכת",
+    "emailVar": "QA_USER_ADMIN_EMAIL",
+    "codeVar": "QA_USER_ADMIN_CODE"
+  }
+]

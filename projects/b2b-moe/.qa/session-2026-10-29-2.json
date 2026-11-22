@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-29",
+  "session": 2,
+  "queue": "בבדיקות",
+  "tickets": [
+    {
+      "hash": "#a6af81",
+      "title": "נציג מכירות: בחלון «לקוח חדש» אין מתג «יצירת קישור הצטרפות»",
+      "role": "rep+admin-2",
+      "batch": 1,
+      "state": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "devices": "1440",
+      "screenshots": "screenshots/a6af81-*",
+      "feature": "customers: rep «לקוח חדש» toggle «יצירת קישור הצטרפות» (on: customer+invite, copy marks sent; off: save only), auto sales_rep_id, RLS invites own customers only (403 foreign), no «השלמת פרטי הלקוח» for rep, /orders/new has no toggle for both roles",
+      "cases": "update cust-05, cust-08, rep-new-customer.spec.ts:52,145 (switch now present)"
+    },
+    {
+      "hash": "#5a2dbd",
+      "title": "לקוח שנוצר בלי קישור הצטרפות מוצג כ«ממתין להזמנה»",
+      "role": "admin-3+rep-2",
+      "batch": 1,
+      "state": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "devices": "1440",
+      "screenshots": "screenshots/5a2dbd-*",
+      "feature": "customers: status «ללא כניסה לקטלוג» for no-link customer (list, card neutral banner, admin filter), link created -> «ממתין להזמנה», all links cancelled -> back; rep sees only פעיל/מושבת (test = פעיל)",
+      "cases": "update cust-02, customer-no-link.spec.ts (status now checked), customer-lifecycle.spec.ts:106, cp-02 precondition"
+    }
+  ],
+  "log": [
+    {
+      "time": "2026-10-29",
+      "note": "session 2 start: MCP ok (token до 10.11), logins admin/rep/admin-2/rep-2 alive, backfill 239/239 no new; briefs a6af81, 5a2dbd; batch 1 testing"
+    },
+    {
+      "time": "2026-10-29",
+      "note": "#a6af81 pass: T1-T5, D1-D5, C1, C3 ok 1 run; C2 partial (REST 403, moshe not checked visually). /orders/new no toggle for rep AND admin -> same as admin, not reject. Findings: rep hint 'נשלח בכל עת מכרטיס הלקוח' but rep card has no link; 'נציג ותנאי תשלום נקבעים בכרטיס' for rep; status flash 'ללא כניסה לקטלוג' before invites load (2/5, sent to #5a2dbd agent). Test customers deleted."
+    },
+    {
+      "time": "2026-10-29",
+      "note": "#5a2dbd pass 12/12 (1 run). Findings: status flash «ללא כניסה לקטלוג» before customer_invites response (list 4-130ms, card up to ~0.9s, all linked/registered clients) - not in ticket scope, default finding; tag «ללא כניסה לקטלוג» wraps 2 lines 110x40; repeated «יצירת קישור» creates 2nd invite; rep-link customer פעיל at rep vs ממתין at admin (question). Test customers deleted."
+    },
+    {
+      "time": "2026-10-29",
+      "note": "new bug #08cb68 (ticket 46, low, לביצוע): status flash «ללא כניסה לקטלוג» before customer_invites; bug-verifier confirmed (list 2/3, card 3/3, held 1/1); 2 screenshots (url attach). change def14ca6a1ffcfee493d6921"
+    },
+    {
+      "time": "2026-10-29",
+      "note": "user: провёл #a6af81, #5a2dbd в הושלם; autotest-writer в фоне (оба + устаревшие rep-new-customer/customer-no-link/customer-lifecycle:106, cust-02/05/08, cp-02)"
+    },
+    {
+      "time": "2026-10-29",
+      "note": "session closed by user; handoff written"
+    },
+    {
+      "time": "2026-10-29",
+      "note": "user: удалить обоих лишних «test» — удалены (0584114874, 0535475175, без заказов); rep-new-customer.spec.ts 5/5"
+    }
+  ],
+  "test_data": [],
+  "status": "closed",
+  "new_tickets": [
+    "#08cb68"
+  ],
+  "summary": {
+    "tested": 2,
+    "passed": [
+      "#a6af81",
+      "#5a2dbd"
+    ],
+    "rejected": [],
+    "new_tickets": [
+      "#08cb68"
+    ],
+    "autotests": "autotest-writer running at close — check ledger for #a6af81/#5a2dbd"
+  }
+}

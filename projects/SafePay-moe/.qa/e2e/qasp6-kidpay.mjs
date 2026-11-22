@@ -1,0 +1,11 @@
+import { newBrowser, ctx, go, sleep, redBox } from './qasp6-lib.mjs';
+const b = await newBrowser(); const { p } = await ctx(b,'client2',320);
+await go(p,'/kid/pay',4000);
+const card = p.getByText('SafePay Card').locator('xpath=../..');
+const r = await p.evaluate(()=>{ const el=[...document.querySelectorAll('div')].find(e=>e.childElementCount===0&&e.textContent==='SafePay Card'); let c=el; for(let i=0;i<6;i++){ c=c.parentElement; const r=c.getBoundingClientRect(); if(r.width>250) return {l:r.left,r:r.right,w:r.width,sw:document.documentElement.scrollWidth}; } });
+console.log(JSON.stringify(r));
+await p.evaluate(()=>{ const el=[...document.querySelectorAll('div')].find(e=>e.childElementCount===0&&e.textContent==='SafePay Card'); let c=el; for(let i=0;i<6;i++){ c=c.parentElement; if(c.getBoundingClientRect().width>250){ c.style.outline='3px solid red'; c.style.outlineOffset='-3px'; return; } } });
+await p.screenshot({path:'/Users/avielshnaider/SafePay-moe/.qa/screenshots/6a86f7bc/ISSUE-kid-pay-overflow-320.png'});
+const { p: p2 } = await ctx(b,'client',320); await go(p2,'/wallet/shared/3bf0fc53-2b78-46d2-9f53-f824c57ceb39/pay',4000);
+console.log('shared pay 320', await p2.evaluate(()=>{ const el=[...document.querySelectorAll('div')].find(e=>e.childElementCount===0&&e.textContent==='SafePay Card'); let c=el; for(let i=0;i<6;i++){ c=c.parentElement; const r=c.getBoundingClientRect(); if(r.width>250) return {l:r.left,r:r.right,w:r.width,sw:document.documentElement.scrollWidth}; } }));
+await b.close();

@@ -1,0 +1,13 @@
+import { chromium } from 'playwright';
+const Q='/Users/avielshnaider/magnet-moe/.qa';
+const [role,lat,lng]=process.argv.slice(2);
+const b=await chromium.launch({headless:true});
+const ctx=await b.newContext({storageState:`${Q}/auth/${role}-r11map.json`,locale:'he-IL',viewport:{width:390,height:844},geolocation:{latitude:+lat,longitude:+lng,accuracy:10},permissions:['geolocation']});
+const p=await ctx.newPage();
+p.on('response',async r=>{ if(r.url().includes('/rpc/')||(r.request().method()!=='GET'&&r.url().includes('/rest/v1/'))){ let t=''; try{t=(await r.text()).slice(0,600);}catch{} console.log('RES',r.request().method(),r.url().split('/rest/v1/')[1]?.slice(0,80),r.status(),(r.request().postData()||'').slice(0,200),'=>',t);} });
+await p.goto('https://magnet.expo.app/map',{waitUntil:'networkidle'}).catch(()=>{});
+await p.waitForTimeout(4000);
+await p.screenshot({path:`m1-${role}.png`});
+console.log((await p.locator('body').innerText()).slice(0,800));
+await ctx.storageState({path:`${Q}/auth/${role}-r11map.json`});
+await b.close();

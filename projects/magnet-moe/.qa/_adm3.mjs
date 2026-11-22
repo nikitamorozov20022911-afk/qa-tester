@@ -1,0 +1,18 @@
+import { chromium } from 'playwright';
+const b = await chromium.launch();
+const c = await b.newContext({ storageState: '/Users/avielshnaider/magnet-moe/.qa/auth/admin-r11.json', viewport:{width:1440,height:900} });
+const p = await c.newPage();
+await p.goto('https://magnet-admin.vercel.app/users', {waitUntil:'networkidle'});
+await p.waitForTimeout(1500);
+const s = p.getByPlaceholder(/חיפוש|חפש/).first();
+await s.click(); await s.pressSequentially('רביעית',{delay:80}); await p.keyboard.press('Enter');
+await p.waitForTimeout(2500);
+let t = await p.evaluate(()=>document.body.innerText);
+console.log(t.includes('QA רביעית'), t.match(/מוצגים[^\n]*/g));
+await p.getByText('QA רביעית').first().click();
+await p.waitForTimeout(2500);
+console.log(p.url());
+console.log(await p.evaluate(()=>document.body.innerText.slice(0,3500)));
+await p.screenshot({path:'screenshots/r12-99ff3d-ios17-adm-user4.png', fullPage:true});
+await c.storageState({path:'/Users/avielshnaider/magnet-moe/.qa/auth/admin-r11.json'});
+await b.close();

@@ -1,0 +1,42 @@
+== page 1
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+StaticText   vis=t y=  77 x=  60 282x33 | תהילים
+Other        vis=t y= 150 x= 117 168x32 | תהילים או פרקי אבות
+Button       vis=t y= 152 x= 210 73x28 | תהילים
+Button       vis=t y= 152 x= 119 91x28 | פרקי אבות
+TextField    vis=t y= 207 x=  49 304x62 | חיפוש לפי מספר פרק או מילים
+StaticText   vis=t y= 286 x=  48 306x40 | פרקי אבות נאמרים בשבתות שאחרי פסח, פרק אחד בכל שבת, במחזור של שישה פרקים.
+Button       vis=t y= 342 x=  48 306x50 | פרקי אבות א׳ — משה קבל תורה
+Button       vis=t y= 406 x=  48 306x50 | פרקי אבות ב׳ — רבי אומר, איזוהי
+Button       vis=t y= 470 x=  48 306x50 | פרקי אבות ג׳ — עקביא בן מהללאל
+Button       vis=t y= 534 x=  48 306x50 | פרקי אבות ד׳ — בן זומא אומר,
+Button       vis=t y= 598 x=  48 306x50 | פרקי אבות ה׳ — בעשרה מאמרות נברא
+Button       vis=t y= 662 x=  48 306x50 | פרקי אבות ו׳ — שנו חכמים בלשון
+Other        vis=t y= 270 x=   3 30x490 | Vertical scroll bar, 1 page
+Other        vis=t y= 727 x=   0 402x30 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות
+== page 2
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+StaticText   vis=t y=  77 x=  60 282x33 | תהילים
+Other        vis=t y= 150 x= 117 168x32 | תהילים או פרקי אבות
+Button       vis=t y= 152 x= 210 73x28 | תהילים
+Button       vis=t y= 152 x= 119 91x28 | פרקי אבות
+TextField    vis=t y= 207 x=  49 304x62 | חיפוש לפי מספר פרק או מילים
+StaticText   vis=t y= 286 x=  48 306x40 | פרקי אבות נאמרים בשבתות שאחרי פסח, פרק אחד בכל שבת, במחזור של שישה פרקים.
+Button       vis=t y= 342 x=  48 306x50 | פרקי אבות א׳ — משה קבל תורה
+Button       vis=t y= 406 x=  48 306x50 | פרקי אבות ב׳ — רבי אומר, איזוהי
+Button       vis=t y= 470 x=  48 306x50 | פרקי אבות ג׳ — עקביא בן מהללאל
+Button       vis=t y= 534 x=  48 306x50 | פרקי אבות ד׳ — בן זומא אומר,
+Button       vis=t y= 598 x=  48 306x50 | פרקי אבות ה׳ — בעשרה מאמרות נברא
+Button       vis=t y= 662 x=  48 306x50 | פרקי אבות ו׳ — שנו חכמים בלשון
+Other        vis=t y= 270 x=   3 30x490 | Vertical scroll bar, 1 page
+Other        vis=t y= 727 x=   0 402x30 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות

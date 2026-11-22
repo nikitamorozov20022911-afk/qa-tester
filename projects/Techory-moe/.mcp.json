@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "playwright-test": {
+      "command": ".qa/e2e/node_modules/.bin/playwright",
+      "args": ["run-test-mcp-server", "--config", ".qa/e2e/playwright.config.ts"],
+      "env": { "PATH": "/Users/avielshnaider/.nvm/versions/node/v22.23.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin" }
+    }
+  }
+}

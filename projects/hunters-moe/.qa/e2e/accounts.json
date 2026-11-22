@@ -1,0 +1,83 @@
+[
+  {
+    "id": "admin",
+    "role": "Admin",
+    "emailVar": "QA_USER_ADMIN_EMAIL",
+    "passwordVar": "QA_USER_ADMIN_PASSWORD"
+  },
+  {
+    "id": "hunter_plus",
+    "role": "הד האנטר (PLUS = Premium §64)",
+    "emailVar": "QA_USER_HUNTER_PLUS_EMAIL",
+    "passwordVar": "QA_USER_HUNTER_PLUS_PASSWORD"
+  },
+  {
+    "id": "hunter_free",
+    "role": "הד האנטר (FREE)",
+    "emailVar": "QA_USER_HUNTER_FREE_EMAIL",
+    "passwordVar": "QA_USER_HUNTER_FREE_PASSWORD"
+  },
+  {
+    "id": "hunter_free_2",
+    "role": "הד האנטר (FREE) #2",
+    "emailVar": "QA_USER_HUNTER_FREE_2_EMAIL",
+    "passwordVar": "QA_USER_HUNTER_FREE_2_PASSWORD"
+  },
+  {
+    "id": "talent",
+    "role": "טאלנט (FREE)",
+    "emailVar": "QA_USER_TALENT_EMAIL",
+    "passwordVar": "QA_USER_TALENT_PASSWORD"
+  },
+  {
+    "id": "talent_2",
+    "role": "טאלנט (FREE) #2",
+    "emailVar": "QA_USER_TALENT_2_EMAIL",
+    "passwordVar": "QA_USER_TALENT_2_PASSWORD"
+  },
+  {
+    "id": "company",
+    "role": "חברה/ארגון",
+    "emailVar": "QA_USER_COMPANY_EMAIL",
+    "passwordVar": "QA_USER_COMPANY_PASSWORD"
+  },
+  {
+    "id": "company_2",
+    "role": "חברה/ארגון #2",
+    "emailVar": "QA_USER_COMPANY_2_EMAIL",
+    "passwordVar": "QA_USER_COMPANY_2_PASSWORD"
+  },
+  {
+    "id": "company_6",
+    "role": "חברה/ארגון #6",
+    "emailVar": "QA_USER_COMPANY_6_EMAIL",
+    "passwordVar": "QA_USER_COMPANY_6_PASSWORD"
+  },
+  {
+    "id": "hunter_pending",
+    "role": "הד האנטר Pending (licor78065@betshubs.com, ממתין לאישור Admin) — только ручной вход",
+    "emailVar": "QA_USER_HUNTER_PENDING_EMAIL",
+    "passwordVar": "QA_USER_HUNTER_PENDING_PASSWORD",
+    "loggedInUrl": "/onboarding/pending"
+  },
+  {
+    "id": "talent_new",
+    "role": "טאלנט חדש 22.10 для #1866ba (регистрирует пользователь) — только ручной вход",
+    "loginPath": "/register",
+    "loggedInUrl": "/onboarding"
+  },
+  {
+    "id": "hunter_new",
+    "email": "qa-hunternew-4674404c@fldubai.com",
+    "role": "הד-האנטר (новый, без NDA, для #c2bc5d)",
+    "tempmail": true
+  },
+  {
+    "id": "talent_li",
+    "role": "טאלנט (новый, для #8fc7be регистрация)",
+    "email": "qa-talentli-503897ce@fldubai.com",
+    "tempmail": true,
+    "createdBy": "qa-signup",
+    "created": "2026-11-15"
+  }
+]

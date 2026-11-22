@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>ZIXE — דוח Audit טכני ואבטחתי</title>
+<style>
+@page { size: A4; margin: 14mm 14mm; }
+body { font-family: "Arial Hebrew", -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 10.4pt; color: #1b2330; line-height: 1.5; }
+h1 { font-size: 21pt; color: #0f2a5a; border-bottom: 3px solid #2563eb; padding-bottom: 6px; margin-bottom: 4px; }
+.sub { color: #5b6677; margin: 0 0 12px; }
+h2 { font-size: 14.5pt; color: #0f2a5a; margin: 22px 0 8px; break-after: avoid; }
+h3 { font-size: 12pt; color: #1e3a8a; margin: 14px 0 6px; break-after: avoid; }
+ul, ol { padding-right: 22px; padding-left: 0; margin: 4px 0; } li { margin: 3px 0; }
+table { border-collapse: collapse; width: 100%; margin: 8px 0 10px; font-size: 9.8pt; }
+tr { break-inside: avoid; }
+th, td { border: 1px solid #cdd6e3; padding: 5px 8px; text-align: right; vertical-align: top; }
+th { background: #eef3fb; }
+.box { border-radius: 8px; padding: 10px 14px; margin: 10px 0; break-inside: avoid; }
+.box p { margin: 0 0 6px; }
+.concl { background: #eef3fb; border-right: 4px solid #2563eb; }
+.green { background: #e9f7ef; border-right: 4px solid #188038; }
+.gray { background: #f1f3f6; border-right: 4px solid #8a94a6; }
+.f { border: 1px solid #dde4ee; border-radius: 8px; padding: 8px 12px; margin: 7px 0; break-inside: avoid; }
+.f b.t { display: block; color: #0f2a5a; margin-bottom: 2px; }
+.f .m { font-size: 9pt; color: #5b6677; }
+.lbl { display: inline-block; font-size: 8.6pt; font-weight: bold; border-radius: 10px; padding: 0 8px; margin-left: 6px; }
+.c { background: #fdecec; color: #b3261e; } .i { background: #fff4e5; color: #b45309; } .d { background: #eef3fb; color: #1e40af; } .ok { background: #e9f7ef; color: #188038; }
+.ltr { direction: ltr; unicode-bidi: isolate; font-family: Menlo, monospace; font-size: 8.8pt; background: #eef2f7; padding: 0 4px; border-radius: 3px; }
+.small { font-size: 9pt; color: #5b6677; }
+</style>
+</head>
+<body>
+
+<h1>ZIXE — דוח Audit טכני ואבטחתי</h1>
+<p class="sub">שלב 1 לפי מסמך דרישות העבודה: בדיקה בלבד, ללא שינויים · נובמבר 2026<br>
+מקורות: קוד המקור שנמסר (<bdi dir="ltr">ZIXE_HANDOFF_20261102</bdi>), תיעוד המפתח הקודם, בדיקות במכשיר Android אמיתי, ובקשות קריאה בלבד לסביבת TEST. סביבת Production לא נבדקה ולא נגעו בה.</p>
+
+<h2>תקציר</h2>
+<div class="box concl">
+<p><b>הבסיס הטכני טוב יותר ממה שנראה מבחוץ:</b> בסיס הנתונים מוגן (RLS פעיל, אין גישה ישירה לטבלאות), הפרדת TEST/Production בקוד מוקפדת, החיבור נשמר מוצפן במכשיר, ומניעת כפל הזמנות אטומית.</p>
+<p><b>אבל המערכת אינה מוכנה ל-Production.</b> חסרים יסודות תפעוליים (ניהול גרסאות ב-Git, סכמת בסיס נתונים שניתן לשחזר, ניטור, גיבויים מוגדרים), המנוי ב-Google Play אינו עובד בפועל, יש פרצות XSS באפליקציה, ונתוני מכירות נשמרים רק על הטלפון.</p>
+</div>
+
+<h3>מצב לפי רכיב</h3>
+<table>
+<thead><tr><th>רכיב</th><th>מצב</th><th>עיקר</th></tr></thead>
+<tbody>
+<tr><td>בסיס נתונים (Supabase)</td><td><span class="lbl i">דורש תיקון</span></td><td>הגנות בסיס תקינות; חסרות הגבלות על פעולות ציבוריות; חבילה וגיבויים לא ידועים.</td></tr>
+<tr><td>אפליקציית Android (קוד לקוח)</td><td><span class="lbl c">מסוכן</span></td><td>XSS בשמות מוצרים וקטגוריות; גיבוי עם פרטי התחברות; <span class="ltr">allowBackup</span> פעיל.</td></tr>
+<tr><td>בנייה ופרסום Android</td><td><span class="lbl i">דורש תיקון</span></td><td>אין הקטנת קוד (R8), Capacitor 6, כפתור «חזור», שורת מצב, אין התחברות ממכשיר חדש.</td></tr>
+<tr><td>עמוד העסק הציבורי (Cloudflare)</td><td><span class="lbl i">דורש תיקון</span></td><td>אין כותרות אבטחה, אין מטמון, דף בדיקה פנימי פתוח לציבור.</td></tr>
+<tr><td>שרת היומן (Render)</td><td><span class="lbl i">דורש תיקון</span></td><td>קוד איכותי; חבילה חינמית, שרת אחד ל-TEST ול-Production.</td></tr>
+<tr><td>התראות Push</td><td><span class="lbl ok">כמעט מוכן</span></td><td>ארכיטקטורה טובה; גרסת Production לא מאומתת.</td></tr>
+<tr><td>מנוי Google Play</td><td><span class="lbl c">לא עובד</span></td><td>אין אימות רכישה בשרת — המנוי לא מופעל והרכישה מוחזרת אוטומטית.</td></tr>
+<tr><td>סליקה ואשראי</td><td><span class="lbl d">לא קיים</span></td><td>אין קוד סליקה (Cardcom וכד׳).</td></tr>
+<tr><td>iOS</td><td><span class="lbl d">לא קיים</span></td><td>אין פרויקט iOS; 5 תוספים טבעיים קיימים רק ל-Android.</td></tr>
+<tr><td>Meta Ads</td><td><span class="lbl d">תשתית בלבד</span></td><td>חיבור OAuth וחיפוש חשבונות בלבד; אין יצירת מודעות; App Review פתוח.</td></tr>
+<tr><td>סביבות, DevOps וניטור</td><td><span class="lbl c">לא מוכן</span></td><td>אין Git, אין CI/CD, אין ניטור, Production לא אומת.</td></tr>
+</tbody>
+</table>
+
+<h2>ממצאים קריטיים</h2>
+
+<div class="f"><b class="t"><span class="lbl c">קריטי</span>1. XSS באפליקציה — כולל קוד שלקוח אנונימי מזין בעמוד ההזמנה הציבורי</b>
+<b>אומת בפועל, בין משתמשים:</b> הזמנה מעמוד העסק הציבורי עם שם לקוח שמכיל קוד (ללא התחברות) התקבלה בשרת ללא בדיקה, הסתנכרנה לאפליקציה של בעל העסק, וכשבעל העסק פתח את הפגישה לעריכה — הקוד רץ (JavaScript הופעל בסיכום הפגישה, והשם פרץ את שדה הטופס). כלומר, כל מי שיש לו את הקישור הציבורי יכול להריץ קוד באפליקציה של בעל העסק. בנוסף: שם מוצר ושם קטגוריה מוצגים ללא סינון (<span class="ltr">customProdRow</span>, <span class="ltr">customProductsHtml</span>) — אומת שקוד בשם מוצר רץ בכל פתיחת רשימת המוצרים. גם בתצוגת סיכום הפגישה, בשדות טופס הפגישה וב«הוצאות אחרות» הנתונים נכנסים ל-HTML ללא סינון. ב-WebView יש גישה לתוספים הטבעיים (חיבור, אנשי קשר, SMS), ולכן ההשלכה חמורה מבאתר רגיל.
+<div class="m">המלצה: סינון בכל המקומות, כלל קוד שאוסר <span class="ltr">innerHTML</span> ללא סינון, ו-Content-Security-Policy.</div></div>
+
+<div class="f"><b class="t"><span class="lbl c">קריטי</span>2. מנוי Google Play אינו עובד</b>
+לא מוגדר אימות רכישה בשרת (<span class="ltr">store.validator</span>), ולכן <span class="ltr">hasVerifiedPremium()</span> מחזירה תמיד false: המנוי לעולם לא מופעל, והרכישה לא מאושרת מול Google (<span class="ltr">finish()</span> לא נקרא) — Google מחזיר את הכסף אוטומטית אחרי 3 ימים. סטטוס המנוי נשמר רק מקומית וניתן לשינוי.
+<div class="m">המלצה: אימות בשרת (Google Play Developer API או Iaptic), Webhook של RTDN, ושמירת הרשאות בשרת.</div></div>
+
+<div class="f"><b class="t"><span class="lbl c">קריטי</span>3. אין ניהול גרסאות ואין סכמה שניתן לשחזר</b>
+הפרויקט הראשי אינו ב-Git (לפי תיעוד המפתח הקודם), ולכן אין היסטוריית שינויים, ביקורת קוד או חזרה לאחור. קובצי ה-SQL הם היסטוריה ומועמדים, ולא בסיס נקי — אי אפשר להקים סביבה חדשה או לשחזר את Production מאפס.
+<div class="m">המלצה: מאגר Git פרטי כשלב ראשון; הוצאת סכמה עדכנית (<span class="ltr">supabase db dump --schema-only</span>) מ-TEST ומ-Production וניהול מיגרציות ב-Supabase CLI.</div></div>
+
+<div class="f"><b class="t"><span class="lbl c">קריטי</span>4. Production לא מוכן ולא אומת</b>
+גרסת ה-AAB האחרונה מצביעה על TEST; ה-Worker של Production במצב «מוכן בלבד»; מצב הסכמה ב-Production לא ידוע. מיגרציית Push 003 מכילה כתובת קבועה של Production — אם תופעל ב-TEST, TEST יפנה ל-Production כל דקה.</div>
+
+<div class="f"><b class="t"><span class="lbl c">קריטי</span>5. נתונים עסקיים רק על המכשיר, וגיבוי עם פרטי התחברות</b>
+מכירות והוצאות לא נשמרות בענן — אובדן טלפון הוא אובדן ההיסטוריה. הגיבוי הידני (JSON) כולל את כל ה-state, ולפי התיעוד גם שדות התחברות, ונשלח דרך חלון השיתוף לכל אפליקציה. בנוסף <span class="ltr">android:allowBackup="true"</span> מאפשר העתקת נתוני האפליקציה.
+<div class="m">המלצה: סנכרון מכירות לענן; גיבוי לפי רשימת שדות מותרים בלבד; <span class="ltr">allowBackup=false</span> או כללי Data Extraction.</div></div>
+
+<div class="f"><b class="t"><span class="lbl c">קריטי</span>6. אין התחברות ממכשיר חדש</b>
+בסביבת הבדיקות האפליקציה עובדת רק עם חיבור קיים במכשיר. בודקי Google Play ו-App Store, ובעל עסק שהחליף טלפון, לא יכולים להיכנס. זה חוסם את אישור החנויות.</div>
+
+<h2>ממצאים חשובים</h2>
+
+<h3>אבטחה ובסיס נתונים</h3>
+<div class="f"><b class="t"><span class="lbl i">חשוב</span>7. קביעת פגישות אנונימית ללא הגבלה</b>
+<span class="ltr">create_booking_request</span> פתוחה לכל אחד ללא הגבלת קצב, CAPTCHA או אורך שדות. אומת בבדיקת העומס: 214 פגישות נוצרו אנונימית ברצף ללא חסימה. סקריפט יכול לתפוס את כל השעות הפנויות של עסק ולהציף את בעל העסק בהתראות. בנוסף, הזמנה עם טלפון של לקוח קיים משנה את שמו בכרטיס הלקוח.
+<div class="m">המלצה: הגבלה לפי IP/טלפון/עסק, Cloudflare Turnstile, אורך מקסימלי ופורמט טלפון, אי-עדכון שם לקוח קיים.</div></div>
+<div class="f"><b class="t"><span class="lbl i">חשוב</span>8. חסימת שחזור חשבון על ידי צד שלישי</b>
+מונה הניסיונות הכושלים של קוד השחזור נספר לפי מזהה העסק, שהוא ציבורי (מופיע בקישור). כל אחד יכול לחסום שוב ושוב את בעל העסק משחזור החשבון (חסימה של 15 דקות שמתחדשת). <span class="m">המלצה: ספירה לפי משתמש ו-IP.</span></div>
+<div class="f"><b class="t"><span class="lbl i">חשוב</span>9. הרשאות הרצה רחבות ויצירת עסקים ללא הגבלה</b>
+כל הפונקציות, כולל <span class="ltr">owner_*</span>, פתוחות להרצה גם ל-anon (ההגנה רק בתוך הפונקציה). <span class="ltr">create_business</span> פתוחה לכל סשן ללא הגבלה; סנכרון העסק מוחק ויוצר מחדש את כל המוצרים בכל פעם וללא בדיקת גודל. <span class="m">המלצה: <span class="ltr">REVOKE EXECUTE FROM anon</span>, בדיקות גודל ופורמט.</span></div>
+<div class="f"><b class="t"><span class="lbl i">חשוב</span>10. חבילת Supabase, גיבויים ו-PITR לא ידועים</b>
+אין תיעוד של החבילה, גיבויים או שחזור לנקודת זמן. לפני לקוחות אמיתיים נדרשת לפחות חבילת Pro עם גיבוי יומי, ורצוי PITR.</div>
+
+<h3>עמוד העסק הציבורי (Cloudflare Worker)</h3>
+<div class="f"><b class="t"><span class="lbl i">חשוב</span>11. כותרות אבטחה, מטמון ודף בדיקה פתוח</b>
+<ul>
+<li>אין CSP, X-Frame-Options, HSTS או nosniff — ניתן להטמיע את עמוד ההזמנה בתוך אתר אחר (Clickjacking).</li>
+<li>העמוד (<bdi dir="ltr">1.37 MB</bdi>) נשלח עם <span class="ltr">no-store</span> — מורד מחדש בכל ביקור; תמונות נשמרות בבסיס הנתונים כ-base64 ונשלפות בכל צפייה.</li>
+<li>הדף <span class="ltr">/paid-ads-oauth-test</span> פתוח לציבור בסביבת TEST (אומת: HTTP 200) ומכיל פרטים אישיים של חשבון הבדיקה; הנתיב מוגדר בקוד המשותף גם ל-Production.</li>
+<li>אין הגבלת קצב; כל פתיחת עמוד מפעילה 1–4 קריאות לבסיס הנתונים.</li>
+</ul></div>
+
+<h3>שרתים ותשתית</h3>
+<div class="f"><b class="t"><span class="lbl i">חשוב</span>12. שרת היומן (Render)</b>
+חבילה חינמית שנרדמת (12.5 שניות בבקשה ראשונה); התזמון שאמור להפעיל סנכרון יומן כל דקה לא נכלל בחבילה, וכנראה לא פועל; שרת ובסיס נתונים אחדים לכל הסביבות — גרסאות TEST ו-Production פונות לאותו שרת; בדיקת תקינות לא בודקת את בסיס הנתונים.</div>
+<div class="f"><b class="t"><span class="lbl i">חשוב</span>13. אין ניטור, דיווח קריסות, התראות ו-CI/CD</b>
+אין Sentry/Crashlytics, אין בדיקות זמינות, אין צינור בנייה ופריסה — כל הפריסות ידניות ואין תיעוד של מה פרוס בכל סביבה.</div>
+<div class="f"><b class="t"><span class="lbl i">חשוב</span>14. ניהול סודות ותלות באדם אחד</b>
+קיימת רק רשימת שמות משתנים. חשבונות Render, Cloudflare, Meta, Firebase ומפתח החתימה של Google Play כנראה בשליטת אדם אחד. נדרשים מלאי גישה, העברת בעלות ללקוח ומנהל סיסמאות.</div>
+
+<h3>אפליקציית Android</h3>
+<div class="f"><b class="t"><span class="lbl i">חשוב</span>15. ממשק המערכת</b>
+אין טיפול בכפתור «חזור» (האפליקציה נסגרת); אין התאמה לשורת המצב (<span class="ltr">safe-area-inset-top</span> לא בשימוש); FileProvider חושף את כל האחסון החיצוני (<span class="ltr">external-path "."</span>); הרשאות מיקום שכנראה לא בשימוש.</div>
+<div class="f"><b class="t"><span class="lbl i">חשוב</span>16. בנייה ותחזוקה</b>
+<span class="ltr">minifyEnabled false</span> (אין הקטנה והסתרת קוד); Capacitor 6 (הגרסה הנוכחית 7 ומעלה); כל הקוד (כ-<bdi dir="ltr">1.3 MB</bdi>) כמחרוזת JSON בקובץ HTML אחד — קשה לתחזוקה ומאט את ההפעלה (כ-3.4 שניות); כמעט אין בדיקות אוטומטיות.</div>
+
+<h3>אינטגרציות</h3>
+<div class="f"><b class="t"><span class="lbl i">חשוב</span>17. Meta Ads</b>
+קיים חיבור OAuth (טוקן מוצפן ב-Vault), חיפוש דפים וחשבונות מודעות ובדיקת אמצעי תשלום — בסביבת TEST בלבד. <b>אין יצירת קמפיינים ומודעות</b>; אשף המודעות באפליקציה הוא הדמיה. חסימות App Review פתוחות. הלקוח מבקש לראות ביצועי מודעה — לשם כך נדרשת הרשאת קריאת נתונים (<span class="ltr">ads_read</span> / Insights), שהמפתח הקודם המליץ לא להוסיף ללא אישור. <b>נדרשת החלטה של הלקוח.</b> בנוסף: אין חידוש טוקן (תוקף כ-60 יום) ואין <span class="ltr">appsecret_proof</span>.</div>
+<div class="f"><b class="t"><span class="lbl i">חשוב</span>18. התראות Push</b>
+שתי גרסאות שונות של פונקציית השליחה (אחת עם הגנת סביבה ואחת בלי); לא ידוע מה פרוס ב-Production; חידוש טוקן ברקע לא הושלם; אין התראה על כשלי שליחה.</div>
+
+<h2>ממצאים רצויים</h2>
+<table>
+<thead><tr><th>תחום</th><th>ממצא</th></tr></thead>
+<tbody>
+<tr><td>בסיס נתונים</td><td>אינדקס חסר על <span class="ltr">bookings.customer_id</span>; מחיקת לקוח חסומה אם יש לו פגישות (בעיה לבקשות מחיקת מידע); חיפוש שעות פנויות ללא הגבלת טווח תאריכים; משיכת פגישות ממתינות ללא LIMIT.</td></tr>
+<tr><td>שרת היומן</td><td>מפתח הצפנה ללא גרסה (ניהול רוטציה קשה); JSON שגוי מחזיר 503 במקום 400; אין HSTS; אין הגבלת קצב.</td></tr>
+<tr><td>Worker</td><td>זמני המתנה של 2–2.5 שניות לכל קריאה ברצף (עד 7.5 שניות במקרה הגרוע); קוד TEST נכלל בחבילת Production; סביבת TEST לא ניתנת לשחזור מהחבילה.</td></tr>
+<tr><td>אפליקציה</td><td>שדות טלפון מקבלים אותיות; ספריית work-runtime ישנה; אין CSP.</td></tr>
+</tbody>
+</table>
+
+<h2>מה תקין ואינו דורש שינוי</h2>
+<div class="box green">
+<ul>
+<li><b>בסיס נתונים:</b> RLS פעיל בכל הטבלאות; גישה ישירה של anon לטבלאות נחסמת (אומת: HTTP 401); כל פונקציות <span class="ltr">SECURITY DEFINER</span> עם <span class="ltr">search_path</span> ריק; בדיקות בעלות (<span class="ltr">auth.uid()</span>) נכונות בכל פונקציות <span class="ltr">owner_*</span>; מניעת כפל הזמנות אטומית (אומת בעומס: אפס כפילויות).</li>
+<li><b>פונקציות ציבוריות</b> מחזירות רק מידע ציבורי של העסק — לא פרטי לקוחות ולא פרטי בעל העסק (אומת).</li>
+<li><b>חיבור המשתמש</b> נשמר מוצפן ב-Android Keystore; אין סודות שרת בקוד הלקוח; אין תעבורה לא מוצפנת; רכיבים פנימיים לא חשופים; SMS נשלח דרך אפליקציית ההודעות ללא הרשאת שליחה.</li>
+<li><b>שרת היומן:</b> OAuth עם PKCE ו-state חד-פעמי, טוקנים מוצפנים (AES-256-GCM), TLS מאומת לבסיס הנתונים, CORS מוגבל, לוגים ללא סודות.</li>
+<li><b>Push:</b> סוד ב-Vault, השוואה בזמן קבוע, תור שליחה עם ניסיונות חוזרים.</li>
+<li><b>הפרדת סביבות בקוד</b> ה-Worker: סירוב קשיח לחבר את TEST לבסיס הנתונים של Production.</li>
+<li><b>ביצועי ה-API</b> תחת עומס: עד 200 משתמשים בו-זמנית ללא שגיאות (ראו דוח העומס).</li>
+</ul>
+</div>
+
+<h2>הפרדת TEST ו-Production — המלצה למעבר</h2>
+<ol>
+<li>מאגר Git פרטי מהחבילה שנמסרה; סודות מחוץ לקוד.</li>
+<li>הוצאת סכמה עדכנית מ-TEST ומ-Production והשוואה ביניהן; מיגרציות דרך Supabase CLI.</li>
+<li>שרת יומן ו-Worker נפרדים לכל סביבה; כתובות מתוך קובץ הסביבה ולא קבועות בקוד.</li>
+<li>Supabase Pro + גיבויים + PITR; ניטור ודיווח קריסות.</li>
+<li>תיקון האבטחה הקריטי (XSS, גיבוי, הגבלת הזמנות) ואימות מנוי בשרת.</li>
+<li>התחברות ממכשיר חדש ומשתמש בודק לחנויות; בנייה חתומה ל-Production רק לאחר QA ואישור.</li>
+</ol>
+
+<h2>מה נדרש להשלמת ה-Audit</h2>
+<div class="box gray">
+<ul>
+<li>הוצאת סכמה מלאה ועדכנית מ-TEST ומ-Production (כולל כל הסכמות, הרשאות ומדיניות). הסכמה שנמסרה חלקית וישנה: 4 טבלאות ו-12 פונקציות בלבד.</li>
+<li>גוף הפונקציות <span class="ltr">create_booking_request</span> ו-<span class="ltr">eesek_customer_private.allowed()</span> כפי שהן פרוסות.</li>
+<li>פרטי החבילות וההגדרות ב-Supabase, Cloudflare, Render ו-Firebase (גישת צפייה).</li>
+<li>חשבון בדיקה עם התחברות לבדיקת תהליכי בעל העסק תחת עומס.</li>
+</ul>
+</div>
+
+<p class="small">רמות: <span class="lbl c">קריטי</span> חוסם Production או סיכון אבטחה ממשי · <span class="lbl i">חשוב</span> נדרש לפני לקוחות אמיתיים · <span class="lbl d">רצוי</span> שיפור. ממצאים שאומתו בפועל מסומנים «אומת»; השאר מבוססים על קריאת הקוד והתיעוד שנמסרו.</p>
+
+</body>
+</html>

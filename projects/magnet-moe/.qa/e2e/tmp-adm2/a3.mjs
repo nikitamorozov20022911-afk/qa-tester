@@ -1,0 +1,10 @@
+import {app,SS,outline} from './h.mjs';
+const A=await app(); const p=A.p;
+await p.goto('https://magnet.expo.app/discover',{waitUntil:'domcontentloaded'});
+await p.getByText('גילוי').first().waitFor({timeout:20000});
+const g=p.getByText('󰆥').first(); const bb=await g.boundingBox(); console.log('glyph',bb);
+await g.click(); await p.waitForURL(u=>!/discover$/.test(u.href),{timeout:5000}).catch(()=>{});
+await p.waitForFunction(()=>document.body.innerText.length>30);
+console.log(p.url(),(await p.locator('body').innerText()).replace(/\n+/g,' | ').slice(0,600));
+await p.screenshot({path:SS+'app-warn-headericon-mobile.png'});
+await A.close();

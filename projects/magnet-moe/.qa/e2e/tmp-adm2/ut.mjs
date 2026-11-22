@@ -1,0 +1,14 @@
+import {admin,SS,outline} from './h.mjs';
+const tab=process.argv[2], tag=process.argv[3];
+const A=await admin(); const p=A.p;
+await p.goto('https://magnet-admin.vercel.app/users',{waitUntil:'domcontentloaded'});
+await p.getByRole('tab').first().waitFor({timeout:20000});
+console.log('TABS',(await p.getByRole('tablist').first().innerText()).replace(/\n+/g,' '));
+await p.getByRole('tab',{name:new RegExp(tab)}).first().click();
+await p.waitForURL(/status=/,{timeout:10000}).catch(()=>{});
+await p.locator('main').getByText(/QA|אין/).first().waitFor({timeout:15000}).catch(()=>{});
+console.log(p.url());
+const row=p.locator('tr,li,a,article').filter({hasText:'QA חילונית'}).last();
+console.log('rows QA חילונית',await p.locator('tr').filter({hasText:'QA חילונית'}).count(),'\n',(await p.locator('main').innerText()).replace(/\n+/g,' | ').slice(0,900));
+await outline(p,row,`2c7c58-tab-${tag}-desktop.png`,true);
+await A.close();

@@ -1,0 +1,251 @@
+== page 1
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=t y=  74 x= 346 40x40 | חזרה
+StaticText   vis=t y=  82 x=  64 274x24 | עריכת קטע
+StaticText   vis=t y= 142 x=  40 322x40 | הטקסט שמוצג כעת למשתמשים אושר על ידי בודק QA, 7.10.2026, 19:44.
+StaticText   vis=t y= 210 x=  24 354x16 | כותרת הקטע
+TextField    vis=t y= 231 x=  25 352x42 | המעריב ערבים
+StaticText   vis=t y= 286 x=  24 354x16 | טקסט התפילה
+TextView     vis=t y= 307 x=  25 352x278 | בָּרוּךְ אַתָּה יְהֹוָה אֱלֹהֵֽינוּ מֶֽלֶךְ הָעוֹלָם אֲשֶׁר בִּדְבָרוֹ מַעֲרִיב עֲרָבִים בְּחָכְמָה פּוֹתֵֽחַ שְׁעָרִים וּבִתְבוּנָה מְשַׁנֶּה עִתִּים וּמַחֲלִיף אֶת־הַזְּ֒מַנִּים וּמְסַדֵּר אֶת־הַכּוֹכָבִים בְּמִשְׁמְ֒רוֹתֵיהֶם בָּרָקִֽיעַ כִּרְצוֹנוֹ: בּוֹרֵא יוֹם וָלָֽיְלָה גּוֹלֵל אוֹר מִפְּ֒נֵי חֽשֶׁךְ וְחֽשֶׁךְ מִפְּ֒נֵי אוֹר וּמַעֲבִיר יוֹם וּמֵבִיא לָֽיְלָה וּמַבְדִּיל בֵּין יוֹם וּבֵין לָֽיְלָה יְהֹוָה צְבָאוֹת שְׁמוֹ: אֵל חַי וְקַיָּם תָּמִיד יִמְלֹךְ עָלֵֽינוּ לְעוֹלָם וָעֶד: בָּרוּךְ אַתָּה יְהֹ
+Other        vis=t y= 307 x= 344 30x278 | Vertical scroll bar, 1 page
+Other        vis=t y= 552 x=  25 352x30 | Horizontal scroll bar, 1 page
+StaticText   vis=t y= 590 x=  24 354x16 | שורה ריקה מפרידה בין פסקאות. הניקוד והטעמים נשמרים בדיוק כפי שהוזנו.
+StaticText   vis=t y= 618 x=  24 354x16 | הערה לקטע (לא חובה)
+StaticText   vis=t y= 706 x=  24 354x28 | מקור הטקסט
+StaticText   vis=t y= 746 x=  24 354x16 | קרדיט למקור
+TextField    vis=t y= 767 x=  25 352x42 | Sefaria.org — Siddur Ashkenaz — The Metsudah siddur, 1981 (CC-BY) — https://www.nli.org.il/he/books/NNL_ALEPH002211687
+StaticText   vis=f y= 822 x=  24 354x16 | הפניה במקור
+TextField    vis=f y= 843 x=  25 352x42 | Siddur Ashkenaz, Weekday, Maariv, Blessings of the Shema, First Blessing before Shema
+StaticText   vis=f y= 898 x=  24 354x16 | מהדורה
+TextField    vis=f y= 919 x=  25 352x42 | The Metsudah siddur, 1981
+StaticText   vis=f y= 974 x=  24 354x16 | רישיון
+TextField    vis=f y= 995 x=  25 352x42 | CC-BY
+Button       vis=f y=1050 x=  24 354x44 | שמירת טיוטה
+StaticText   vis=f y=1123 x=  41 320x28 | אישור ופרסום
+StaticText   vis=f y=1159 x=  41 320x40 | הטקסט הזה כבר מאושר. כדי לאשר נוסח אחר, ערכו אותו ואשרו מחדש.
+StaticText   vis=f y=1245 x=  41 320x28 | הקראת הקטע (MP3)
+StaticText   vis=f y=1285 x=  41 320x40 | לקטע הזה אין עדיין הקראה. המשתמשים רואים «אין הקראה לקטע הזה».
+StaticText   vis=f y=1337 x=  41 320x16 | מי הקליט
+StaticText   vis=f y=1405 x=  41 320x16 | מוצג למשתמשים מתחת לכפתור «השמע», יחד עם שם המאשר.
+Button       vis=f y=1433 x=  41 320x44 | העלאת קובץ MP3
+Other        vis=t y= 126 x=   3 30x680 | Vertical scroll bar, 3 pages
+Other        vis=t y= 773 x=   0 402x30 | Horizontal scroll bar, 1 page
+== page 2
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=t y=  74 x= 346 40x40 | חזרה
+StaticText   vis=t y=  82 x=  64 274x24 | עריכת קטע
+StaticText   vis=f y=-444 x=  40 322x41 | הטקסט שמוצג כעת למשתמשים אושר על ידי בודק QA, 7.10.2026, 19:44.
+StaticText   vis=f y=-376 x=  24 354x17 | כותרת הקטע
+TextField    vis=f y=-355 x=  25 352x43 | המעריב ערבים
+StaticText   vis=f y=-300 x=  24 354x17 | טקסט התפילה
+TextView     vis=f y=   0 x=   0 0x0 | בָּרוּךְ אַתָּה יְהֹוָה אֱלֹהֵֽינוּ מֶֽלֶךְ הָעוֹלָם אֲשֶׁר בִּדְבָרוֹ מַעֲרִיב עֲרָבִים בְּחָכְמָה פּוֹתֵֽחַ שְׁעָרִים וּבִתְבוּנָה מְשַׁנֶּה עִתִּים וּמַחֲלִיף אֶת־הַזְּ֒מַנִּים וּמְסַדֵּר אֶת־הַכּוֹכָבִים בְּמִשְׁמְ֒רוֹתֵיהֶם בָּרָקִֽיעַ כִּרְצוֹנוֹ: בּוֹרֵא יוֹם וָלָֽיְלָה גּוֹלֵל אוֹר מִפְּ֒נֵי חֽשֶׁךְ וְחֽשֶׁךְ מִפְּ֒נֵי אוֹר וּמַעֲבִיר יוֹם וּמֵבִיא לָֽיְלָה וּמַבְדִּיל בֵּין יוֹם וּבֵין לָֽיְלָה יְהֹוָה צְבָאוֹת שְׁמוֹ: אֵל חַי וְקַיָּם תָּמִיד יִמְלֹךְ עָלֵֽינוּ לְעוֹלָם וָעֶד: בָּרוּךְ אַתָּה יְהֹ
+Other        vis=f y=-279 x= 344 30x279 | Vertical scroll bar, 1 page
+Other        vis=f y= -34 x=  25 352x31 | Horizontal scroll bar, 1 page
+StaticText   vis=f y=   4 x=  24 354x17 | שורה ריקה מפרידה בין פסקאות. הניקוד והטעמים נשמרים בדיוק כפי שהוזנו.
+StaticText   vis=f y=  32 x=  24 354x17 | הערה לקטע (לא חובה)
+StaticText   vis=t y= 120 x=  24 354x29 | מקור הטקסט
+StaticText   vis=t y= 160 x=  24 354x17 | קרדיט למקור
+TextField    vis=t y= 181 x=  25 352x43 | Sefaria.org — Siddur Ashkenaz — The Metsudah siddur, 1981 (CC-BY) — https://www.nli.org.il/he/books/NNL_ALEPH002211687
+StaticText   vis=t y= 236 x=  24 354x17 | הפניה במקור
+TextField    vis=t y= 257 x=  25 352x43 | Siddur Ashkenaz, Weekday, Maariv, Blessings of the Shema, First Blessing before Shema
+StaticText   vis=t y= 312 x=  24 354x17 | מהדורה
+TextField    vis=t y= 333 x=  25 352x43 | The Metsudah siddur, 1981
+StaticText   vis=t y= 388 x=  24 354x17 | רישיון
+TextField    vis=t y= 409 x=  25 352x43 | CC-BY
+Button       vis=t y= 464 x=  24 354x45 | שמירת טיוטה
+StaticText   vis=t y= 537 x=  41 320x29 | אישור ופרסום
+StaticText   vis=f y= 573 x=  41 320x41 | הטקסט הזה כבר מאושר. כדי לאשר נוסח אחר, ערכו אותו ואשרו מחדש.
+StaticText   vis=f y= 659 x=  41 320x29 | הקראת הקטע (MP3)
+StaticText   vis=f y= 699 x=  41 320x41 | לקטע הזה אין עדיין הקראה. המשתמשים רואים «אין הקראה לקטע הזה».
+StaticText   vis=f y= 751 x=  41 320x17 | מי הקליט
+StaticText   vis=f y= 819 x=  41 320x17 | מוצג למשתמשים מתחת לכפתור «השמע», יחד עם שם המאשר.
+Button       vis=f y= 847 x=  41 320x45 | העלאת קובץ MP3
+Other        vis=t y= 126 x=   3 30x502 | Vertical scroll bar, 3 pages
+Other        vis=f y= 594 x=   0 402x31 | Horizontal scroll bar, 1 page
+Key          vis=f y= 583 x=   0 0x0 | Padding-Left
+Key          vis=f y= 583 x=   0 0x0 | Padding-Right
+Key          vis=t y= 590 x=   4 37x54 | й
+Key          vis=t y= 590 x=  40 37x54 | ц
+Key          vis=t y= 590 x=  76 37x54 | у
+Key          vis=t y= 590 x= 112 36x54 | к
+Key          vis=t y= 590 x= 148 36x54 | е
+Key          vis=t y= 590 x= 184 36x54 | н
+Key          vis=t y= 590 x= 220 36x54 | г
+Key          vis=t y= 590 x= 256 36x54 | ш
+Key          vis=t y= 590 x= 291 37x54 | щ
+Key          vis=t y= 590 x= 327 37x54 | з
+Key          vis=t y= 590 x= 363 37x54 | х
+Key          vis=t y= 644 x=   4 37x54 | ф
+Key          vis=t y= 644 x=  40 37x54 | ы
+Key          vis=t y= 644 x=  76 37x54 | в
+Key          vis=t y= 644 x= 112 36x54 | а
+Key          vis=t y= 644 x= 148 36x54 | п
+Key          vis=t y= 644 x= 184 36x54 | р
+Key          vis=t y= 644 x= 220 36x54 | о
+Key          vis=t y= 644 x= 256 36x54 | л
+Key          vis=t y= 644 x= 291 37x54 | д
+Key          vis=t y= 644 x= 327 37x54 | ж
+Key          vis=t y= 644 x= 363 37x54 | э
+Button       vis=t y= 698 x=   4 37x54 | сдвиг
+Key          vis=t y= 698 x=  40 37x54 | я
+Key          vis=t y= 698 x=  76 37x54 | ч
+Key          vis=t y= 698 x= 112 36x54 | с
+Key          vis=t y= 698 x= 148 36x54 | м
+Key          vis=t y= 698 x= 184 36x54 | и
+Key          vis=t y= 698 x= 220 36x54 | т
+Key          vis=t y= 698 x= 256 36x54 | ь
+Key          vis=t y= 698 x= 291 37x54 | б
+Key          vis=t y= 698 x= 327 37x54 | ю
+Key          vis=t y= 698 x= 363 37x54 | Удалить
+Key          vis=t y= 752 x=   4 50x54 | цифры
+Button       vis=t y= 752 x=  53 51x54 | Эмодзи
+Key          vis=t y= 752 x= 103 198x54 |  
+Button       vis=t y= 752 x= 300 100x54 | Ввод
+Button       vis=t y= 805 x=   8 69x70 | Next keyboard
+Button       vis=t y= 805 x= 325 69x70 | Dictate
+== page 3
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=t y=  74 x= 346 40x40 | חזרה
+StaticText   vis=t y=  82 x=  64 274x24 | עריכת קטע
+StaticText   vis=f y=-756 x=  40 322x40 | הטקסט שמוצג כעת למשתמשים אושר על ידי בודק QA, 7.10.2026, 19:44.
+StaticText   vis=f y=-688 x=  24 354x16 | כותרת הקטע
+TextField    vis=f y=-667 x=  25 352x42 | המעריב ערבים
+StaticText   vis=f y=-612 x=  24 354x16 | טקסט התפילה
+TextView     vis=f y=   0 x=   0 0x0 | בָּרוּךְ אַתָּה יְהֹוָה אֱלֹהֵֽינוּ מֶֽלֶךְ הָעוֹלָם אֲשֶׁר בִּדְבָרוֹ מַעֲרִיב עֲרָבִים בְּחָכְמָה פּוֹתֵֽחַ שְׁעָרִים וּבִתְבוּנָה מְשַׁנֶּה עִתִּים וּמַחֲלִיף אֶת־הַזְּ֒מַנִּים וּמְסַדֵּר אֶת־הַכּוֹכָבִים בְּמִשְׁמְ֒רוֹתֵיהֶם בָּרָקִֽיעַ כִּרְצוֹנוֹ: בּוֹרֵא יוֹם וָלָֽיְלָה גּוֹלֵל אוֹר מִפְּ֒נֵי חֽשֶׁךְ וְחֽשֶׁךְ מִפְּ֒נֵי אוֹר וּמַעֲבִיר יוֹם וּמֵבִיא לָֽיְלָה וּמַבְדִּיל בֵּין יוֹם וּבֵין לָֽיְלָה יְהֹוָה צְבָאוֹת שְׁמוֹ: אֵל חַי וְקַיָּם תָּמִיד יִמְלֹךְ עָלֵֽינוּ לְעוֹלָם וָעֶד: בָּרוּךְ אַתָּה יְהֹ
+Other        vis=f y=-591 x= 344 30x278 | Vertical scroll bar, 1 page
+Other        vis=f y=-346 x=  25 352x30 | Horizontal scroll bar, 1 page
+StaticText   vis=f y=-308 x=  24 354x16 | שורה ריקה מפרידה בין פסקאות. הניקוד והטעמים נשמרים בדיוק כפי שהוזנו.
+StaticText   vis=f y=-280 x=  24 354x16 | הערה לקטע (לא חובה)
+StaticText   vis=f y=-192 x=  24 354x28 | מקור הטקסט
+StaticText   vis=f y=-152 x=  24 354x16 | קרדיט למקור
+TextField    vis=f y=-131 x=  25 352x42 | Sefaria.org — Siddur Ashkenaz — The Metsudah siddur, 1981 (CC-BY) — https://www.nli.org.il/he/books/NNL_ALEPH002211687
+StaticText   vis=f y= -76 x=  24 354x16 | הפניה במקור
+TextField    vis=f y= -55 x=  25 352x42 | Siddur Ashkenaz, Weekday, Maariv, Blessings of the Shema, First Blessing before Shema
+StaticText   vis=f y=   0 x=  24 354x16 | מהדורה
+TextField    vis=f y=  21 x=  25 352x42 | The Metsudah siddur, 1981
+StaticText   vis=f y=  76 x=  24 354x16 | רישיון
+TextField    vis=t y=  97 x=  25 352x42 | CC-BY
+Button       vis=t y= 152 x=  24 354x44 | שמירת טיוטה
+StaticText   vis=t y= 225 x=  41 320x28 | אישור ופרסום
+StaticText   vis=t y= 261 x=  41 320x40 | הטקסט הזה כבר מאושר. כדי לאשר נוסח אחר, ערכו אותו ואשרו מחדש.
+StaticText   vis=t y= 347 x=  41 320x28 | הקראת הקטע (MP3)
+StaticText   vis=t y= 387 x=  41 320x40 | לקטע הזה אין עדיין הקראה. המשתמשים רואים «אין הקראה לקטע הזה».
+StaticText   vis=t y= 439 x=  41 320x16 | מי הקליט
+StaticText   vis=t y= 507 x=  41 320x16 | מוצג למשתמשים מתחת לכפתור «השמע», יחד עם שם המאשר.
+Button       vis=t y= 535 x=  41 320x44 | העלאת קובץ MP3
+Other        vis=t y= 126 x=   3 30x502 | Vertical scroll bar, 3 pages
+Other        vis=f y= 595 x=   0 402x30 | Horizontal scroll bar, 1 page
+Key          vis=f y= 583 x=   0 0x0 | Padding-Left
+Key          vis=f y= 583 x=   0 0x0 | Padding-Right
+Key          vis=t y= 590 x=   4 37x54 | й
+Key          vis=t y= 590 x=  40 37x54 | ц
+Key          vis=t y= 590 x=  76 37x54 | у
+Key          vis=t y= 590 x= 112 36x54 | к
+Key          vis=t y= 590 x= 148 36x54 | е
+Key          vis=t y= 590 x= 184 36x54 | н
+Key          vis=t y= 590 x= 220 36x54 | г
+Key          vis=t y= 590 x= 256 36x54 | ш
+Key          vis=t y= 590 x= 291 37x54 | щ
+Key          vis=t y= 590 x= 327 37x54 | з
+Key          vis=t y= 590 x= 363 37x54 | х
+Key          vis=t y= 644 x=   4 37x54 | ф
+Key          vis=t y= 644 x=  40 37x54 | ы
+Key          vis=t y= 644 x=  76 37x54 | в
+Key          vis=t y= 644 x= 112 36x54 | а
+Key          vis=t y= 644 x= 148 36x54 | п
+Key          vis=t y= 644 x= 184 36x54 | р
+Key          vis=t y= 644 x= 220 36x54 | о
+Key          vis=t y= 644 x= 256 36x54 | л
+Key          vis=t y= 644 x= 291 37x54 | д
+Key          vis=t y= 644 x= 327 37x54 | ж
+Key          vis=t y= 644 x= 363 37x54 | э
+Button       vis=t y= 698 x=   4 37x54 | сдвиг
+Key          vis=t y= 698 x=  40 37x54 | я
+Key          vis=t y= 698 x=  76 37x54 | ч
+Key          vis=t y= 698 x= 112 36x54 | с
+Key          vis=t y= 698 x= 148 36x54 | м
+Key          vis=t y= 698 x= 184 36x54 | и
+Key          vis=t y= 698 x= 220 36x54 | т
+Key          vis=t y= 698 x= 256 36x54 | ь
+Key          vis=t y= 698 x= 291 37x54 | б
+Key          vis=t y= 698 x= 327 37x54 | ю
+Key          vis=t y= 698 x= 363 37x54 | Удалить
+Key          vis=t y= 752 x=   4 50x54 | цифры
+Button       vis=t y= 752 x=  53 51x54 | Эмодзи
+Key          vis=t y= 752 x= 103 198x54 |  
+Button       vis=t y= 752 x= 300 100x54 | Ввод
+Button       vis=t y= 805 x=   8 69x70 | Next keyboard
+Button       vis=t y= 805 x= 325 69x70 | Dictate
+== page 4
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=t y=  74 x= 346 40x40 | חזרה
+StaticText   vis=t y=  82 x=  64 274x24 | עריכת קטע
+StaticText   vis=f y=-756 x=  40 322x40 | הטקסט שמוצג כעת למשתמשים אושר על ידי בודק QA, 7.10.2026, 19:44.
+StaticText   vis=f y=-688 x=  24 354x16 | כותרת הקטע
+TextField    vis=f y=-667 x=  25 352x42 | המעריב ערבים
+StaticText   vis=f y=-612 x=  24 354x16 | טקסט התפילה
+TextView     vis=f y=   0 x=   0 0x0 | בָּרוּךְ אַתָּה יְהֹוָה אֱלֹהֵֽינוּ מֶֽלֶךְ הָעוֹלָם אֲשֶׁר בִּדְבָרוֹ מַעֲרִיב עֲרָבִים בְּחָכְמָה פּוֹתֵֽחַ שְׁעָרִים וּבִתְבוּנָה מְשַׁנֶּה עִתִּים וּמַחֲלִיף אֶת־הַזְּ֒מַנִּים וּמְסַדֵּר אֶת־הַכּוֹכָבִים בְּמִשְׁמְ֒רוֹתֵיהֶם בָּרָקִֽיעַ כִּרְצוֹנוֹ: בּוֹרֵא יוֹם וָלָֽיְלָה גּוֹלֵל אוֹר מִפְּ֒נֵי חֽשֶׁךְ וְחֽשֶׁךְ מִפְּ֒נֵי אוֹר וּמַעֲבִיר יוֹם וּמֵבִיא לָֽיְלָה וּמַבְדִּיל בֵּין יוֹם וּבֵין לָֽיְלָה יְהֹוָה צְבָאוֹת שְׁמוֹ: אֵל חַי וְקַיָּם תָּמִיד יִמְלֹךְ עָלֵֽינוּ לְעוֹלָם וָעֶד: בָּרוּךְ אַתָּה יְהֹ
+Other        vis=f y=-591 x= 344 30x278 | Vertical scroll bar, 1 page
+Other        vis=f y=-346 x=  25 352x30 | Horizontal scroll bar, 1 page
+StaticText   vis=f y=-308 x=  24 354x16 | שורה ריקה מפרידה בין פסקאות. הניקוד והטעמים נשמרים בדיוק כפי שהוזנו.
+StaticText   vis=f y=-280 x=  24 354x16 | הערה לקטע (לא חובה)
+StaticText   vis=f y=-192 x=  24 354x28 | מקור הטקסט
+StaticText   vis=f y=-152 x=  24 354x16 | קרדיט למקור
+TextField    vis=f y=-131 x=  25 352x42 | Sefaria.org — Siddur Ashkenaz — The Metsudah siddur, 1981 (CC-BY) — https://www.nli.org.il/he/books/NNL_ALEPH002211687
+StaticText   vis=f y= -76 x=  24 354x16 | הפניה במקור
+TextField    vis=f y= -55 x=  25 352x42 | Siddur Ashkenaz, Weekday, Maariv, Blessings of the Shema, First Blessing before Shema
+StaticText   vis=f y=   0 x=  24 354x16 | מהדורה
+TextField    vis=f y=  21 x=  25 352x42 | The Metsudah siddur, 1981
+StaticText   vis=f y=  76 x=  24 354x16 | רישיון
+TextField    vis=t y=  97 x=  25 352x42 | CC-BY
+Button       vis=t y= 152 x=  24 354x44 | שמירת טיוטה
+StaticText   vis=t y= 225 x=  41 320x28 | אישור ופרסום
+StaticText   vis=t y= 261 x=  41 320x40 | הטקסט הזה כבר מאושר. כדי לאשר נוסח אחר, ערכו אותו ואשרו מחדש.
+StaticText   vis=t y= 347 x=  41 320x28 | הקראת הקטע (MP3)
+StaticText   vis=t y= 387 x=  41 320x40 | לקטע הזה אין עדיין הקראה. המשתמשים רואים «אין הקראה לקטע הזה».
+StaticText   vis=t y= 439 x=  41 320x16 | מי הקליט
+StaticText   vis=t y= 507 x=  41 320x16 | מוצג למשתמשים מתחת לכפתור «השמע», יחד עם שם המאשר.
+Button       vis=t y= 535 x=  41 320x44 | העלאת קובץ MP3
+Other        vis=t y= 126 x=   3 30x502 | Vertical scroll bar, 3 pages
+Other        vis=f y= 595 x=   0 402x30 | Horizontal scroll bar, 1 page
+Key          vis=f y= 583 x=   0 0x0 | Padding-Left
+Key          vis=f y= 583 x=   0 0x0 | Padding-Right
+Key          vis=t y= 590 x=   4 37x54 | й
+Key          vis=t y= 590 x=  40 37x54 | ц
+Key          vis=t y= 590 x=  76 37x54 | у
+Key          vis=t y= 590 x= 112 36x54 | к
+Key          vis=t y= 590 x= 148 36x54 | е
+Key          vis=t y= 590 x= 184 36x54 | н
+Key          vis=t y= 590 x= 220 36x54 | г
+Key          vis=t y= 590 x= 256 36x54 | ш
+Key          vis=t y= 590 x= 291 37x54 | щ
+Key          vis=t y= 590 x= 327 37x54 | з
+Key          vis=t y= 590 x= 363 37x54 | х
+Key          vis=t y= 644 x=   4 37x54 | ф
+Key          vis=t y= 644 x=  40 37x54 | ы
+Key          vis=t y= 644 x=  76 37x54 | в
+Key          vis=t y= 644 x= 112 36x54 | а
+Key          vis=t y= 644 x= 148 36x54 | п
+Key          vis=t y= 644 x= 184 36x54 | р
+Key          vis=t y= 644 x= 220 36x54 | о
+Key          vis=t y= 644 x= 256 36x54 | л
+Key          vis=t y= 644 x= 291 37x54 | д
+Key          vis=t y= 644 x= 327 37x54 | ж
+Key          vis=t y= 644 x= 363 37x54 | э
+Button       vis=t y= 698 x=   4 37x54 | сдвиг
+Key          vis=t y= 698 x=  40 37x54 | я
+Key          vis=t y= 698 x=  76 37x54 | ч
+Key          vis=t y= 698 x= 112 36x54 | с
+Key          vis=t y= 698 x= 148 36x54 | м
+Key          vis=t y= 698 x= 184 36x54 | и
+Key          vis=t y= 698 x= 220 36x54 | т
+Key          vis=t y= 698 x= 256 36x54 | ь
+Key          vis=t y= 698 x= 291 37x54 | б
+Key          vis=t y= 698 x= 327 37x54 | ю
+Key          vis=t y= 698 x= 363 37x54 | Удалить
+Key          vis=t y= 752 x=   4 50x54 | цифры
+Button       vis=t y= 752 x=  53 51x54 | Эмодзи
+Key          vis=t y= 752 x= 103 198x54 |  
+Button       vis=t y= 752 x= 300 100x54 | Ввод
+Button       vis=t y= 805 x=   8 69x70 | Next keyboard
+Button       vis=t y= 805 x= 325 69x70 | Dictate

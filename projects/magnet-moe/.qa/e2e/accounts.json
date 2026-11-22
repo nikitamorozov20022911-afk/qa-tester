@@ -1,0 +1,131 @@
+[
+  {
+    "id": "free",
+    "role": "משתמש חינמי",
+    "emailVar": "QA_USER_FREE_PHONE",
+    "passwordVar": "QA_USER_FREE_SMS"
+  },
+  {
+    "id": "user2",
+    "role": "משתמש חינמי (שני)",
+    "emailVar": "QA_USER_USER2_PHONE",
+    "passwordVar": "QA_USER_USER2_SMS"
+  },
+  {
+    "id": "admin",
+    "role": "אדמין",
+    "emailVar": "QA_ADMIN_LOGIN",
+    "passwordVar": "QA_ADMIN_PASSWORD",
+    "urlVar": "QA_ADMIN_URL",
+    "loginPath": "https://magnet-admin.vercel.app/",
+    "anyAuth": true
+  },
+  {
+    "id": "user3",
+    "role": "משתמשת חינמית (שלישית)",
+    "emailVar": "QA_USER_USER3_PHONE",
+    "passwordVar": "QA_USER_USER3_SMS"
+  },
+  {
+    "id": "user4",
+    "role": "משתמשת חינמית (רביעית)",
+    "emailVar": "QA_USER_USER4_PHONE",
+    "passwordVar": "QA_USER_USER4_SMS"
+  },
+  {
+    "id": "reg6",
+    "role": "500000000 — уже существующий аккаунт «סיון» (сид программиста?), НЕ новый",
+    "emailVar": "REG6_PHONE",
+    "passwordVar": "REG6_SMS"
+  },
+  {
+    "id": "reg7",
+    "role": "500000007 — удалённый аккаунт, /blocked, не использовать",
+    "emailVar": "REG7_PHONE",
+    "passwordVar": "REG7_SMS"
+  },
+  {
+    "id": "new01",
+    "role": "050-000-0010 — новый номер 05.11 для регистрации (#4430db)",
+    "emailVar": "NEW01_PHONE",
+    "passwordVar": "NEW01_SMS"
+  },
+  {
+    "id": "new02",
+    "role": "050-000-0011 — новый номер 05.11 для регистрации (#4430db)",
+    "emailVar": "NEW02_PHONE",
+    "passwordVar": "NEW02_SMS"
+  },
+  {
+    "id": "new03",
+    "role": "050-000-0012 — новый номер 05.11 для регистрации (#4430db)",
+    "emailVar": "NEW03_PHONE",
+    "passwordVar": "NEW03_SMS"
+  },
+  {
+    "id": "new04",
+    "role": "050-000-0013 — новый номер 05.11 для регистрации (#4430db)",
+    "emailVar": "NEW04_PHONE",
+    "passwordVar": "NEW04_SMS"
+  },
+  {
+    "id": "new05",
+    "role": "050-000-0014 — новый номер 05.11 для регистрации (#4430db)",
+    "emailVar": "NEW05_PHONE",
+    "passwordVar": "NEW05_SMS"
+  },
+  {
+    "id": "new06",
+    "role": "050-000-0015 — новый номер 05.11 для регистрации (#4430db)",
+    "emailVar": "NEW06_PHONE",
+    "passwordVar": "NEW06_SMS"
+  },
+  {
+    "id": "new07",
+    "role": "050-000-0016 — новый номер 05.11 для регистрации (#4430db)",
+    "emailVar": "NEW07_PHONE",
+    "passwordVar": "NEW07_SMS"
+  },
+  {
+    "id": "new08",
+    "role": "050-000-0017 — новый номер 05.11 для регистрации (#4430db)",
+    "emailVar": "NEW08_PHONE",
+    "passwordVar": "NEW08_SMS"
+  },
+  {
+    "id": "new09",
+    "role": "050-000-0018 — новый номер 05.11 для регистрации (#4430db)",
+    "emailVar": "NEW09_PHONE",
+    "passwordVar": "NEW09_SMS"
+  },
+  {
+    "id": "new10",
+    "role": "050-000-0019 — новый номер 05.11 для регистрации (#4430db)",
+    "emailVar": "NEW10_PHONE",
+    "passwordVar": "NEW10_SMS"
+  },
+  {
+    "id": "new11",
+    "role": "050-000-0020 — новый номер 05.11 для регистрации (#4430db)",
+    "emailVar": "NEW11_PHONE",
+    "passwordVar": "NEW11_SMS"
+  },
+  {
+    "id": "reg6-relogin",
+    "role": "500000000 «סיון» — повторный вход существующего пользователя (#7693cb AC 9)",
+    "emailVar": "REG6_PHONE",
+    "passwordVar": "REG6_SMS"
+  },
+  {
+    "id": "reg1",
+    "role": "500000005 — reg1 «QA הרשמה» (вход протух 08.11)",
+    "emailVar": "REG1_PHONE",
+    "passwordVar": "REG1_SMS"
+  },
+  {
+    "id": "reg5",
+    "role": "500000009 — reg5 «QA לייק 2» (free)",
+    "emailVar": "REG5_PHONE",
+    "passwordVar": "REG5_SMS"
+  }
+]

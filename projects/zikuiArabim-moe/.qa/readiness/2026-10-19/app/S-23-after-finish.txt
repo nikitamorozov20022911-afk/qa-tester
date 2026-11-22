@@ -1,0 +1,72 @@
+== page 1
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=f y=  74 x= 341 45x44 | חזרה
+Button       vis=f y=  74 x= 110 182x44 | בחירת נוסח. הנוסח המוצג: אשכנזי
+Button       vis=f y=  74 x=  60 44x44 | הסבר על התפילה
+Button       vis=f y=  74 x=  16 44x44 | רשימת התפילות
+StaticText   vis=f y=-429 x=  24 354x16 | 1 מתוך 66
+Other        vis=f y=-379 x= 202 63x29 | יחיד
+Other        vis=f y=-379 x= 137 63x29 | מניין
+Other        vis=f y=-381 x= 135 132x33 | מצב תפילה
+StaticText   vis=f y=-302 x=  40 322x21 | תוספות בתפילה
+StaticText   vis=f y=-278 x=  40 322x21 | משיב הרוח ומוריד הגשם — ימות הגשמים
+StaticText   vis=f y=-254 x=  40 322x21 | ותן טל ומטר לברכה — ימות הגשמים
+StaticText   vis=f y=-162 x= 178 46x17 | מודה אני
+StaticText   vis=f y=-119 x=  48 306x254 | מוֹדֶה אֲנִי לְפָנֶֽיךָ מֶֽלֶךְ חַי וְקַיָּם שֶׁהֶחֱזַֽרְתָּ בִּי נִשְׁמָתִי בְּחֶמְלָה, רַבָּה אֱמוּנָתֶֽךָ:&#10;&#10;רֵאשִׁית חָכְמָה יִרְאַת יְהֹוָה, שֵֽׂכֶל טוֹב לְכָל־עֹשֵׂיהֶם, תְּהִלָּתוֹ עוֹמֶֽדֶת לָעַד: בָּרוּךְ שֵׁם כְּבוֹד מַלְכוּתוֹ לְעוֹלָם וָעֶד:
+StaticText   vis=f y= 173 x=  64 250x21 | הודיה על החזרת הנשמה, מיד עם הקימה
+StaticText   vis=f y= 217 x=  48 306x65 | הטקסט עדיין לא אושר על ידי גורם הלכתי ומוצג באופן זמני. מקור: Sefaria.org — Siddur Ashkenaz — The Metsudah siddur, 1981 (CC-BY) — https://www.nli.org.il/he/books/NNL_ALEPH002211687
+Button       vis=f y= 336 x=  92 218x57 | המשך
+Button       vis=f y= 422 x= 213 160x56 | קודם
+Button       vis=f y= 422 x=  29 160x56 | סיים תפילה
+Button       vis=f y= 538 x= 177 48x49 | שיתוף התפילה
+Button       vis=f y= 631 x=  40 77x45 | השמע
+StaticText   vis=f y= 641 x= 274 88x25 | האזן להקראה
+StaticText   vis=f y= 679 x=  40 322x17 | אין הקראה לקטע הזה
+Other        vis=f y= 134 x=   3 30x626 | Vertical scroll bar, 2 pages
+Other        vis=f y= 726 x=   0 402x31 | Horizontal scroll bar, 1 page
+Other        vis=f y= 772 x= 321 81x68 | תהילים
+Other        vis=f y= 772 x= 241 81x68 | תפילות
+Other        vis=f y= 772 x= 160 82x68 | בית
+Other        vis=f y= 772 x=  80 81x68 | המסע שלי
+Other        vis=f y= 772 x=   0 81x68 | ברכות
+Button       vis=t y= 253 x= 329 45x45 | סגירה
+StaticText   vis=t y= 389 x= 147 108x25 | תפילה ראשונה
+StaticText   vis=t y= 429 x= 104 194x25 | אתה כבר מתחזק ובדרך הנכונה
+Button       vis=t y= 469 x=  92 219x57 | חזרה למסך ראשי
+Button       vis=t y= 556 x= 177 49x49 | שיתוף ההישג
+== page 2
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=f y=  74 x= 341 45x44 | חזרה
+Button       vis=f y=  74 x= 110 182x44 | בחירת נוסח. הנוסח המוצג: אשכנזי
+Button       vis=f y=  74 x=  60 44x44 | הסבר על התפילה
+Button       vis=f y=  74 x=  16 44x44 | רשימת התפילות
+StaticText   vis=f y=-429 x=  24 354x16 | 1 מתוך 66
+Other        vis=f y=-379 x= 202 63x29 | יחיד
+Other        vis=f y=-379 x= 137 63x29 | מניין
+Other        vis=f y=-381 x= 135 132x33 | מצב תפילה
+StaticText   vis=f y=-302 x=  40 322x21 | תוספות בתפילה
+StaticText   vis=f y=-278 x=  40 322x21 | משיב הרוח ומוריד הגשם — ימות הגשמים
+StaticText   vis=f y=-254 x=  40 322x21 | ותן טל ומטר לברכה — ימות הגשמים
+StaticText   vis=f y=-162 x= 178 46x17 | מודה אני
+StaticText   vis=f y=-119 x=  48 306x254 | מוֹדֶה אֲנִי לְפָנֶֽיךָ מֶֽלֶךְ חַי וְקַיָּם שֶׁהֶחֱזַֽרְתָּ בִּי נִשְׁמָתִי בְּחֶמְלָה, רַבָּה אֱמוּנָתֶֽךָ:&#10;&#10;רֵאשִׁית חָכְמָה יִרְאַת יְהֹוָה, שֵֽׂכֶל טוֹב לְכָל־עֹשֵׂיהֶם, תְּהִלָּתוֹ עוֹמֶֽדֶת לָעַד: בָּרוּךְ שֵׁם כְּבוֹד מַלְכוּתוֹ לְעוֹלָם וָעֶד:
+StaticText   vis=f y= 173 x=  64 250x21 | הודיה על החזרת הנשמה, מיד עם הקימה
+StaticText   vis=f y= 217 x=  48 306x65 | הטקסט עדיין לא אושר על ידי גורם הלכתי ומוצג באופן זמני. מקור: Sefaria.org — Siddur Ashkenaz — The Metsudah siddur, 1981 (CC-BY) — https://www.nli.org.il/he/books/NNL_ALEPH002211687
+Button       vis=f y= 336 x=  92 218x57 | המשך
+Button       vis=f y= 422 x= 213 160x56 | קודם
+Button       vis=f y= 422 x=  29 160x56 | סיים תפילה
+Button       vis=f y= 538 x= 177 48x49 | שיתוף התפילה
+Button       vis=f y= 631 x=  40 77x45 | השמע
+StaticText   vis=f y= 641 x= 274 88x25 | האזן להקראה
+StaticText   vis=f y= 679 x=  40 322x17 | אין הקראה לקטע הזה
+Other        vis=f y= 134 x=   3 30x626 | Vertical scroll bar, 2 pages
+Other        vis=f y= 726 x=   0 402x31 | Horizontal scroll bar, 1 page
+Other        vis=f y= 772 x= 321 81x68 | תהילים
+Other        vis=f y= 772 x= 241 81x68 | תפילות
+Other        vis=f y= 772 x= 160 82x68 | בית
+Other        vis=f y= 772 x=  80 81x68 | המסע שלי
+Other        vis=f y= 772 x=   0 81x68 | ברכות
+Button       vis=t y= 253 x= 329 45x45 | סגירה
+StaticText   vis=t y= 389 x= 147 108x25 | תפילה ראשונה
+StaticText   vis=t y= 429 x= 104 194x25 | אתה כבר מתחזק ובדרך הנכונה
+Button       vis=t y= 469 x=  92 219x57 | חזרה למסך ראשי
+Button       vis=t y= 556 x= 177 49x49 | שיתוף ההישג

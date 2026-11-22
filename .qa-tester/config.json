@@ -1,0 +1,27 @@
+{
+  "plugin_source": "/Users/avielshnaider/Documents/moe/qa-tester",
+  "marketplace": "moe-qa",
+  "tools": "/Users/avielshnaider/Documents/moe/tools",
+  "projects": [
+    "/Users/avielshnaider/BabySit-moe",
+    "/Users/avielshnaider/Documents/Dalia-moe",
+    "/Users/avielshnaider/Documents/biz4sale-moe",
+    "/Users/avielshnaider/Erez-moe",
+    "/Users/avielshnaider/NutiWingman-moe",
+    "/Users/avielshnaider/Projects/NutiWingman-moe",
+    "/Users/avielshnaider/SafePay-moe",
+    "/Users/avielshnaider/Techory-moe",
+    "/Users/avielshnaider/b2b-moe",
+    "/Users/avielshnaider/banci-moe",
+    "/Users/avielshnaider/benjico-moe",
+    "/Users/avielshnaider/elion-moe",
+    "/Users/avielshnaider/findworkers-moe",
+    "/Users/avielshnaider/findworkers-moe/findme-moe",
+    "/Users/avielshnaider/hunters-moe",
+    "/Users/avielshnaider/kfirdadon-moe",
+    "/Users/avielshnaider/magnet-moe",
+    "/Users/avielshnaider/solya-moe",
+    "/Users/avielshnaider/tenderflow - moe",
+    "/Users/avielshnaider/zikuiArabim-moe"
+  ]
+}

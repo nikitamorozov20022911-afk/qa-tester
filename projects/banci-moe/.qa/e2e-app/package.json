@@ -1,0 +1,17 @@
+{
+  "name": "banci-e2e-app",
+  "private": true,
+  "type": "module",
+  "description": "Нативные автотесты Banci (iOS, реальный iPhone по кабелю, Appium XCUITest через REST). Без зависимостей, Node 22.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node run.mjs",
+    "test:list": "node run.mjs --list",
+    "test:ticket": "node run.mjs --grep",
+    "test:android": "node run-android.mjs",
+    "test:android:list": "node run-android.mjs --list",
+    "test:android:ticket": "node run-android.mjs --grep"
+  }
+}

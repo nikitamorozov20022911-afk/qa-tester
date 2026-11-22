@@ -1,0 +1,305 @@
+{
+  "project": "biz4sale",
+  "date": "2026-10-28",
+  "environment": "https://www.biz4sale.co.il/ (prod)",
+  "scope": "בבדיקות кроме «לא ניתן לשחזר» (#fe3470, #bd3aff, #4dae81, #a47bd6)",
+  "queue": [
+    "#1d8184",
+    "#1d84d2",
+    "#e8bbad",
+    "#565d74",
+    "#dab8a7",
+    "#cada05",
+    "#a88c1c",
+    "#3f0a85",
+    "#c5ed06"
+  ],
+  "tickets": [
+    {
+      "hash": "#e8bbad",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "строка перед ссылкой «לצפייה במודעה» = 13 кодпоинтов иврит+пробел, без 👇/FFFD/FE0F/ZWJ; главная 12/12, /search 306/306, объявление /b/5832e079 (через функцию сборки без клика), vercel.app 306/306; приветствие и ссылка на 3-й строке ок; дискретные без WhatsApp. Не проверено: вид в WhatsApp на телефоне, избранное/שיחות вживую (пусто у user). Находка: эмодзи в заголовках 11 объявлений попадают в сообщение (в т.ч. 👇‼️)",
+      "evidence": "screenshots/1027/e8bbad-*",
+      "feature": "WhatsApp למוכר",
+      "role": "user",
+      "devices": [
+        "desktop",
+        "android-emu"
+      ],
+      "at": "2026-10-27"
+    },
+    {
+      "hash": "#1d84d2",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "vercel.app гость: кнопка объявления 4d62fda8 → https://www.biz4sale.co.il/b/4d62fda8 3/3; карточки vercel главная 12/12, /search 306/306 на www; www/без www под chat десктоп+Pixel ок, שיחות → /b/c676c730; ссылка открывает объявление; приветствие, строка, дискретные без WhatsApp ок. Код: CU() константа www, self только preprod. 301 vercel→www НЕТ (/ 200, /b 302 на vercel) — рекомендация. Не проверено: избранное (пусто), вид в WhatsApp. Находка: у гостя в карточках wa.me с номерами продавцов",
+      "evidence": "screenshots/1027/1d84d2-*",
+      "feature": "WhatsApp למוכר",
+      "role": "guest+chat",
+      "devices": [
+        "desktop",
+        "android-emu"
+      ],
+      "at": "2026-10-27"
+    },
+    {
+      "hash": "#1d8184",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "Р1 с SW 3/3 desktop+Pixel (8 кодов), sw.js denylist ^/b/; /b/00000000,/b/zzz → главная; без www ок; краулер 200+og; короткая ссылка без GUID. /b/ пустой → 404 сайта (как /nonexistent) ПОДТВЕРЖДЕНО 6/6 — по умолчанию находка. Не проверено: старый SW, вид в WhatsApp",
+      "evidence": "screenshots/1027/1d8184-*",
+      "feature": "WhatsApp למוכר",
+      "role": "guest",
+      "devices": [
+        "desktop",
+        "android-emu"
+      ],
+      "at": "2026-10-27"
+    },
+    {
+      "hash": "#565d74",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "текст попапа посимвольно = эталон (95 симв.) на объявлении (телефон 3/3 Pixel, WhatsApp) и /search карточки, Pixel/iPhone/desktop; «ותוכלו לנהל» 0 в бандле; заголовок/кнопки на месте; попап в экране 412×839, 375×667, 375×629; крестик/«המשך בלי הרשמה» ок; «שלח הודעה למוכר»/«השארת פרטים» — другая форма. Находка: iPhone /search попап через 7–12 с (эмуляция?)",
+      "evidence": "screenshots/1027/565d74-*",
+      "feature": "יצירת קשר / התחברות מפופאפ",
+      "role": "guest",
+      "devices": [
+        "android-emu",
+        "iphone-emu",
+        "desktop"
+      ],
+      "at": "2026-10-27"
+    },
+    {
+      "hash": "#dab8a7",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "иконка מחזור שנתי = ₪ (span, orange-500, 24×24), $ и dollar svg 0; 3 объявления Pixel 3/3 + iPhone + desktop; сумма ок; без מחזור плитки нет; блок и «הצג פרטים מתקדמים» ок, $ нет. Находки: ₪ — сплошной символ шрифта, соседи контурные svg (мельче/ниже на ~4.6px); пустые поля показывают ₪0",
+      "evidence": "screenshots/1027/dab8a7-*",
+      "feature": "עמוד מודעה",
+      "role": "guest",
+      "devices": [
+        "android-emu",
+        "iphone-emu",
+        "desktop"
+      ],
+      "at": "2026-10-27"
+    },
+    {
+      "hash": "#c5ed06",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "иконка чата и колокольчик→«הודעות» с /home и объявления: список в первом экране (строка 226/839, меню 892) Pixel 3/3, iPhone 1/1; прямой /messages, гамбургер, «שיחות» с другой страницы ок; меню под списком, пункты работают; #bb6e6d регресс ок; десктоп ок; одна копия вёрстки. Находка: «שיחות» в меню, когда уже на /messages и долистал вниз — не прокручивает к списку 0/5 (вне объёма). Побочно: на iPhone (WebKit) блок не-GET не сработал — ушли PATCH conversation (прочитано) и pwa_app_last_opened под chat",
+      "evidence": "screenshots/1027/c5ed06-*",
+      "feature": "צ'אט / שיחות",
+      "role": "chat",
+      "devices": [
+        "android-emu",
+        "iphone-emu",
+        "desktop"
+      ],
+      "at": "2026-10-27"
+    },
+    {
+      "hash": "#cada05",
+      "action": "reject",
+      "column": "הושלם",
+      "notes": "supabase 261/327 уменьшены (max 441KB); media.base44.com 65/327 оригинал 1024×1024 без width/height, f83b50ea 1.6MB и c28de0fb 1.4MB PNG >600KB — ПОДТВЕРЖДЕНО 3/3. Данные research/cada05/v/scan.jsonl | rej_fa21c2431086c2265791cab8 (28.10) | превью в WhatsApp: телефон ок; WhatsApp Web — ок после ожидания 3–5 с",
+      "evidence": "research/cada05/v/",
+      "at": "2026-10-27"
+    },
+    {
+      "hash": "#3f0a85",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "гость: черновик, 0 не-GET, /auth с возвратом 3/3; имитация входа: форма открывается сама, сообщение из черновика, имя/email из профиля, кнопка активна 3/3+1; карточка /search ок; >30 мин и чужой id не открывается; X/Escape удаляют черновик. «ביטול» НЕ удаляет черновик → форма открывается снова 30 мин ПОДТВЕРЖДЕНО 4/4 (требование только в комментарии программиста) → предложен новый тикет. Не проверено: реальный вход SMS/Google, регистрация",
+      "evidence": "screenshots/1027/3f0a85-*",
+      "feature": "יצירת קשר / התחברות מפופאפ",
+      "role": "guest+user",
+      "devices": [
+        "android-emu",
+        "desktop"
+      ],
+      "at": "2026-10-27"
+    },
+    {
+      "hash": "#a88c1c",
+      "action": "pass (провёл пользователь 28.10, находку Google-отказа принял)",
+      "column": "הושלם",
+      "notes": "Т1,Т3,Т4,Т6,Т7,Т8, регресс 083d10 ✅. ❌ Google начат и брошен в течение 60 с (b4s_oauth_started_at, r$=60с, не удаляется) → redirectAfterLogin и текст «להתעניין בעסקים» живут до закрытия вкладки, ПОДТВЕРЖДЕНО 3/3 Pixel + 1/1 desktop. Вторично: reload на /auth?mode=sms стирает redirectAfterLogin 3/3. Находки: /addbusiness→/auth петля «назад»; на /auth нет лого",
+      "evidence": "screenshots/1027/a88c1c-*",
+      "at": "2026-10-27",
+      "feature": "יצירת קשר / התחברות מפופאפ",
+      "role": "guest",
+      "devices": [
+        "android-emu",
+        "desktop"
+      ]
+    },
+    {
+      "hash": "#cada05",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "ретест после реджекта (base44): 330/330 объявлений из sitemap через /b/<8> с UA WhatsApp — og:image JPEG 1200×630, 200, max 195KB, og:image:type/width/height верные; 7 объявлений из тикета/реджекта 76–134KB. Не проверено: реальное превью в WhatsApp на телефоне | превью в WhatsApp: телефон ок; WhatsApp Web — ок после ожидания 3–5 с",
+      "evidence": "research/1028/cada05-run1.json",
+      "feature": "seo-technical (og:image)",
+      "role": "guest",
+      "devices": [
+        "curl"
+      ],
+      "at": "2026-10-28"
+    },
+    {
+      "hash": "#02706d",
+      "id": "bae71c1e2a36472e5602706d",
+      "title": "בקשת לקוח: «עסקים נוספים שעשויים לעניין אותך» למשתמש לא מחובר",
+      "date": "2026-10-28",
+      "action": "pass",
+      "column": "הושלם",
+      "feature": "recommendations-similar-businesses",
+      "roles": [
+        "guest",
+        "user"
+      ],
+      "devices": [
+        "desktop",
+        "android-emulation"
+      ],
+      "facts": "localStorage b4s_viewed_categories; порядок: та же категория → недавние категории → тот же город → остальные; гость = user",
+      "screens": ".qa/screenshots/02706d-*",
+      "confirmed_by_user": "2026-10-28"
+    },
+    {
+      "hash": "#c18c9e",
+      "id": "52dfe7bfd81af6023ec18c9e",
+      "title": "בקשת לקוח: להסיר את הבלוק «תמונות גנריות לפי קטגוריה»",
+      "date": "2026-10-28",
+      "action": "pass",
+      "column": "הושלם",
+      "feature": "addbusiness-photos-step",
+      "roles": [
+        "user",
+        "admin"
+      ],
+      "devices": [
+        "desktop",
+        "mobile-390"
+      ],
+      "screens": ".qa/screenshots/c18c9e-*",
+      "finding": "PATCH черновика 400 22P02 пустые числовые поля шага 2",
+      "confirmed_by_user": "2026-10-28"
+    },
+    {
+      "hash": "#357a06",
+      "id": "05619a5f082620983d357a06",
+      "title": "בקשת לקוח: כפתור «שמור שינויים» בעריכת מודעה",
+      "date": "2026-10-28",
+      "action": "pass",
+      "column": "הושלם",
+      "note": "T1–T7, C1–C2, T6b (одобренное: статус פעיל сохраняется) ✅",
+      "screens": ".qa/screenshots/357a06-*",
+      "feature": "edit-listing-save-changes",
+      "roles": [
+        "user",
+        "admin",
+        "guest"
+      ],
+      "devices": [
+        "desktop",
+        "mobile-390"
+      ],
+      "confirmed_by_user": "2026-10-28"
+    }
+  ],
+  "test_data": [
+    {
+      "what": "объявление QA-TEST v3 под user (#357a06)",
+      "where": "/mybusinesses user",
+      "id": "bf23befe-57ec-43e2-91f6-288c2be1b338",
+      "status": "удалено 2026-10-28 (было публичным ~16:54–17:01 UTC)",
+      "date": "2026-10-28"
+    },
+    {
+      "what": "черновик business «QA בדיקה לא לפרסם» (#c18c9e, десктоп)",
+      "where": "user e2e-user",
+      "id": "6db89e58-7aa1-4f3f-b0a2-650bfa631950",
+      "status": "удалено 2026-10-28 (DELETE 204)"
+    },
+    {
+      "what": "черновик business «QA בדיקה לא לפרסם» (#c18c9e, мобайл)",
+      "where": "user e2e-user",
+      "id": "9967d4d2-5380-4cce-900b-f4760cac4c52",
+      "status": "удалено 2026-10-28 (DELETE 204)"
+    },
+    {
+      "what": "файл PNG в storage uploads",
+      "where": "supabase storage",
+      "id": "1a4a7c38-2d9e-4fbb-b3a0-0ea506b15537-qa-test.png",
+      "status": "удалить (если есть доступ)"
+    },
+    {
+      "what": "фото qa-test-1/2.png в storage uploads (#357a06)",
+      "id": "dcbc6382-…-qa-test-2.png, ae65b7e0-…-qa-test-1.png, 399d25af-…-qa-test-1.png",
+      "status": "удалить с объявлением"
+    },
+    {
+      "what": "локальная папка .qa/tmp-upload",
+      "status": "удалено"
+    },
+    {
+      "what": "business_approval approved для bf23befe",
+      "id": "efdf0e74-8355-4694-868b-d93d7d34f028",
+      "status": "мог остаться после удаления объявления"
+    }
+  ],
+  "side_effects": [
+    "iPhone #c5ed06 под chat: ушли PATCH conversation (прочитано) и pwa_app_last_opened — WebKit route не перехватывает через SW"
+  ],
+  "date_closed_partial": "2026-10-28",
+  "closed": "2026-10-28",
+  "new_bugs": [
+    {
+      "hash": "#0c6087",
+      "ticket": 41,
+      "id": "25aae5b8e4032193fe0c6087",
+      "title": "פרסום עסק: שמירת הטיוטה נכשלת בשקט (שגיאה 400)",
+      "status": "todo",
+      "date": "2026-10-28"
+    },
+    {
+      "hash": "#917a7d",
+      "ticket": 42,
+      "id": "39d4ab6506c943cd3f917a7d",
+      "title": "нет toast после «שמור שינויים»",
+      "status": "todo",
+      "date": "2026-10-28"
+    },
+    {
+      "hash": "#e8d9a7",
+      "ticket": 43,
+      "id": "4e70674e9cdee8e854e8d9a7",
+      "title": "нет доступного имени у кнопки-корзины /mybusinesses",
+      "status": "удалён пользователем — решение клиента",
+      "date": "2026-10-28"
+    },
+    {
+      "hash": "#faeea4",
+      "ticket": 44,
+      "id": "006a0abdd5d21880abfaeea4",
+      "title": "updated_date не меняется",
+      "status": "todo",
+      "date": "2026-10-28"
+    },
+    {
+      "hash": "#243006",
+      "ticket": 45,
+      "id": "16cadf0ddf48bdd3d8243006",
+      "title": "/publishconfirmation «פורסם» при בהמתנה",
+      "status": "todo",
+      "date": "2026-10-28"
+    }
+  ],
+  "status": "завершено"
+}

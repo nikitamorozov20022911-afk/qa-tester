@@ -1,0 +1,299 @@
+
+> test:android:safe
+> PLATFORM=android wdio run ./wdio.conf.ts --mochaOpts.grep @prod-safe
+
+
+Execution of 154 workers started at 2026-11-15T14:03:27.031Z
+
+[0-0] RUNNING in Android on Android - file:///specs/achievements/ac-01-grid-six-achievements.e2e.ts
+[0-0] Error in "Достижения.AC-01 Сетка 6 достижений — полученные и неполученные различимы, без дублей #6a86f7ed @prod-safe"
+Error: Expect $(`~תפילה ראשונה: הושג`) to be existing
+
+Expected: "existing"
+Received: "not existing"
+    at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/achievements/ac-01-grid-six-achievements.e2e.ts:39:24)
+[0-0] FAILED in Android on Android - file:///specs/achievements/ac-01-grid-six-achievements.e2e.ts
+[0-1] RUNNING in Android on Android - file:///specs/achievements/ac-02-achievement-dialog-share.e2e.ts
+[0-1] Error in "Достижения.AC-02 Окно полученного достижения — строка ободрения, «חזרה למסך ראשי», предпросмотр шеринга с текстом #6a86f7d9 @prod-safe"
+Error: element ("~30 תפילות: הושג") still not displayed after 15000ms
+    at async tapLabel (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:57:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/achievements/ac-02-achievement-dialog-share.e2e.ts:41:5)
+[0-1] Error in "Достижения.AC-02b «שיתוף ההישג» → «המשך לשיתוף» → системное окно (закрыто без отправки) → «סגירה» → вкладки работают; «מפת השפעה» без изменений #403c0b3d #6a86f7e8 @prod-safe"
+Error: Не найден текст (regex) после прокрутки: .*\d+ אנשים.*
+    at scrollToMatch (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/admin.ts:60:9)
+    at async impactMapCount (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-1310.ts:151:14)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/achievements/ac-02-achievement-dialog-share.e2e.ts:71:20)
+[0-1] Error in "Достижения.AC-02c «שיתוף ההישג» → «ביטול»: окно достижения остаётся → «סגירה» → вкладки работают; карта без изменений #403c0b3d @prod-safe"
+Error: Не найден текст (regex) после прокрутки: .*\d+ אנשים.*
+    at scrollToMatch (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/admin.ts:60:9)
+    at async impactMapCount (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-1310.ts:151:14)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/achievements/ac-02-achievement-dialog-share.e2e.ts:86:20)
+[0-1] FAILED in Android on Android - file:///specs/achievements/ac-02-achievement-dialog-share.e2e.ts
+[0-2] RUNNING in Android on Android - file:///specs/admin/ad-01-02-admin-access-and-entry.e2e.ts
+[0-2] 2026-11-15T14:05:55.681Z WARN webdriver: Request encountered a stale element - terminating request
+[0-2] 2026-11-15T14:05:56.869Z WARN webdriver: Request encountered a stale element - terminating request
+[0-2] [admin] не удалось вернуть USER1: Error: element ("android=new UiSelector().text("פרופיל אישי")") still not displayed after 20000ms
+[0-2]     at <anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/webdriverio/build/node.js:6474:15)
+[0-2]     at async Element.wrapCommandFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1100:23)
+[0-2]     at async Element.elementErrorHandlerCallbackFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/webdriverio/build/node.js:10494:24)
+[0-2]     at async Element.wrapCommandFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1100:23)
+[0-2]     at async Element.wrapCommandFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1100:23)
+[0-2]     at async Element.elementErrorHandlerCallbackFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/webdriverio/build/node.js:10494:24)
+[0-2]     at async Element.wrapCommandFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1100:23)
+[0-2]     at async logout (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:103:3)
+[0-2]     at async switchAccount (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:115:3)
+[0-2]     at async backToUser1 (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/admin.ts:48:9)
+[0-2] Error in "Админка в приложении: доступ.AD-01/AD-02 USER1 не видит «ממשק ניהול התוכן»; ADMIN видит «ניהול» и открывает «ניהול תכני תפילה» #a5decf4a @prod-safe"
+Error: element ("android=new UiSelector().text("פרופיל אישי")") still not displayed after 20000ms
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/admin/ad-01-02-admin-access-and-entry.e2e.ts:19:7)
+[0-2] FAILED in Android on Android - file:///specs/admin/ad-01-02-admin-access-and-entry.e2e.ts
+[0-3] RUNNING in Android on Android - file:///specs/admin/ad-04-prayer-admin-screen-cards.e2e.ts
+[0-3] 2026-11-15T14:06:31.368Z WARN webdriver: Request encountered a stale element - terminating request
+[0-3] 2026-11-15T14:06:31.534Z WARN webdriver: Request encountered a stale element - terminating request
+[0-3] [app-e2e] Войдите вручную под аккаунтом клиента (админ) — тест ждёт главный экран…
+[0-3] Error in "Админка в приложении: экран молитвы.AD-04 «ערבית · נוסח אשכנז»: карточки, статусы קטעים «מאושר · …»/«טקסט זמני, טרם אושר», сводка «הקראות הקטעים», история #a5decf4a #6a86f7ed9d38 @prod-safe"
+Error: Timeout of 300000ms exceeded. The execution in the test "Админка в приложении: экран молитвы AD-04 «ערבית · נוסח אשכנז»: карточки, статусы קטעים «מאושר · …»/«טקסט זמני, טרם אושר», сводка «הקראות הקטעים», история #a5decf4a #6a86f7ed9d38 @prod-safe" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/admin/ad-04-prayer-admin-screen-cards.e2e.ts)
+    at createTimeoutError (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/mocha/lib/errors.js:498:15)
+    at Runnable._timeoutError (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/mocha/lib/runnable.js:429:10)
+    at Timeout.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/mocha/lib/runnable.js:244:24)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+[0-3] 2026-11-15T14:11:53.337Z WARN webdriver: WebDriverError: Could not proxy command to the remote server. Original error: socket hang up when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.347Z ERROR webdriver: WebDriverError: Could not proxy command to the remote server. Original error: socket hang up when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.360Z WARN webdriver: WebDriverError: Could not proxy command to the remote server. Original error: socket hang up when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.365Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.370Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.375Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.380Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.383Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.388Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.392Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.397Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.399Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.404Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.410Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.416Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.419Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.424Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.428Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.432Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.435Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.442Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.446Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.450Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.453Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.457Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.460Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.464Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.467Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.471Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.474Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.479Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.482Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.486Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.489Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.492Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.495Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.499Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.503Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.508Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.513Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.518Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.521Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.525Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.528Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.532Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.535Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.541Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.545Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.550Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.553Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.558Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.563Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.567Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.569Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.574Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.579Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.584Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.587Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.592Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.595Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.600Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.602Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.605Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.608Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.615Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.618Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.623Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.627Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.631Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.635Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.640Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.644Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.649Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.652Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.657Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.659Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.664Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.666Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.671Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.675Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.681Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.684Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.689Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.692Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.696Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.699Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.701Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.704Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.709Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.713Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.717Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.720Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.725Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.728Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.732Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.735Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.739Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.743Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.748Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.751Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.755Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.758Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.764Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.766Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.770Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.774Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.779Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.782Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.786Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.789Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.795Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.798Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.800Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.803Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.808Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.812Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.816Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.819Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.824Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.827Z ERROR webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.832Z WARN webdriver: WebDriverError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"
+[0-3] 2026-11-15T14:11:53.841Z ERROR webdriver: WebDriverError: A session is either terminated or not started when running "element" with method "POST"
+[0-3] [admin] не удалось вернуть USER1: Error: waitUntil condition failed with the following reason: WebDriverError: A session is either terminated or not started when running "element" with method "POST"
+[0-3]     at FetchRequest._request (file:///Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/webdriver/build/node.js:2316:19)
+[0-3]     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+[0-3]     ---
+[0-3]     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+[0-3]     at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:52:3)
+[0-3]     at async toHome (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:95:3)
+[0-3] FAILED in Android on Android - file:///specs/admin/ad-04-prayer-admin-screen-cards.e2e.ts
+
+
+Ended WebDriver sessions gracefully after a SIGINT signal was received!
+[0-7] 2026-11-15T14:12:00.878Z ERROR @wdio/local-runner: Failed launching test session: TypeError: Cannot read properties of undefined (reading 'sessionId')
+[0-7]     at Runner.endSession (file:///Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/runner/build/index.js:981:46)
+[0-7]     at process.<anonymous> (file:///Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/local-runner/build/run.js:35:20)
+[0-7]     at process.emit (node:events:531:35)
+[0-7]     at process.emit (node:domain:489:12)
+[0-7]     at emit (node:internal/child_process:949:14)
+[0-7]     at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[0-7] RUNNING in Android on Android - file:///specs/admin/ad-08-broken-mp3-c66fac12.e2e.ts
+[0-7] FAILED in Android on Android - file:///specs/admin/ad-08-broken-mp3-c66fac12.e2e.ts
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[Android #0-0] Running: on Android
+[Android #0-0] Session ID: 2bfade27-bbd6-4093-a3ce-ed9b9d962e3b
+[Android #0-0]
+[Android #0-0] » specs/achievements/ac-01-grid-six-achievements.e2e.ts
+[Android #0-0] Достижения
+[Android #0-0]    ✖ AC-01 Сетка 6 достижений — полученные и неполученные различимы, без дублей #6a86f7ed @prod-safe
+[Android #0-0]
+[Android #0-0] 1 failing (35.1s)
+[Android #0-0]
+[Android #0-0] 1) Достижения AC-01 Сетка 6 достижений — полученные и неполученные различимы, без дублей #6a86f7ed @prod-safe
+[Android #0-0] Expect $(`~תפילה ראשונה: הושג`) to be existing
+
+Expected: "existing"
+Received: "not existing"
+[Android #0-0] Error: Expect $(`~תפילה ראשונה: הושג`) to be existing
+[Android #0-0]
+[Android #0-0] Expected: "existing"
+[Android #0-0] Received: "not existing"
+[Android #0-0]     at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/achievements/ac-01-grid-six-achievements.e2e.ts:39:24)
+------------------------------------------------------------------
+[Android #0-1] Running: on Android
+[Android #0-1] Session ID: bb45cab7-0b19-4538-a1f4-078827e20077
+[Android #0-1]
+[Android #0-1] » specs/achievements/ac-02-achievement-dialog-share.e2e.ts
+[Android #0-1] Достижения
+[Android #0-1]    ✖ AC-02 Окно полученного достижения — строка ободрения, «חזרה למסך ראשי», предпросмотр шеринга с текстом #6a86f7d9 @prod-safe
+[Android #0-1]    ✖ AC-02b «שיתוף ההישג» → «המשך לשיתוף» → системное окно (закрыто без отправки) → «סגירה» → вкладки работают; «מפת השפעה» без изменений #403c0b3d #6a86f7e8 @prod-safe
+[Android #0-1]    ✖ AC-02c «שיתוף ההישג» → «ביטול»: окно достижения остаётся → «סגירה» → вкладки работают; карта без изменений #403c0b3d @prod-safe
+[Android #0-1]
+[Android #0-1] 3 failing (54.3s)
+[Android #0-1]
+[Android #0-1] 1) Достижения AC-02 Окно полученного достижения — строка ободрения, «חזרה למסך ראשי», предпросмотр шеринга с текстом #6a86f7d9 @prod-safe
+[Android #0-1] element ("~30 תפילות: הושג") still not displayed after 15000ms
+[Android #0-1] Error: element ("~30 תפילות: הושג") still not displayed after 15000ms
+[Android #0-1]     at async tapLabel (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:57:3)
+[Android #0-1]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/achievements/ac-02-achievement-dialog-share.e2e.ts:41:5)
+[Android #0-1]
+[Android #0-1] 2) Достижения AC-02b «שיתוף ההישג» → «המשך לשיתוף» → системное окно (закрыто без отправки) → «סגירה» → вкладки работают; «מפת השפעה» без изменений #403c0b3d #6a86f7e8 @prod-safe
+[Android #0-1] Не найден текст (regex) после прокрутки: .*\d+ אנשים.*
+[Android #0-1] Error: Не найден текст (regex) после прокрутки: .*\d+ אנשים.*
+[Android #0-1]     at scrollToMatch (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/admin.ts:60:9)
+[Android #0-1]     at async impactMapCount (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-1310.ts:151:14)
+[Android #0-1]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/achievements/ac-02-achievement-dialog-share.e2e.ts:71:20)
+[Android #0-1]
+[Android #0-1] 3) Достижения AC-02c «שיתוף ההישג» → «ביטול»: окно достижения остаётся → «סגירה» → вкладки работают; карта без изменений #403c0b3d @prod-safe
+[Android #0-1] Не найден текст (regex) после прокрутки: .*\d+ אנשים.*
+[Android #0-1] Error: Не найден текст (regex) после прокрутки: .*\d+ אנשים.*
+[Android #0-1]     at scrollToMatch (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/admin.ts:60:9)
+[Android #0-1]     at async impactMapCount (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-1310.ts:151:14)
+[Android #0-1]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/achievements/ac-02-achievement-dialog-share.e2e.ts:86:20)
+------------------------------------------------------------------
+[Android #0-2] Running: on Android
+[Android #0-2] Session ID: 356ae1d0-75df-457f-9efb-d77381b5908a
+[Android #0-2]
+[Android #0-2] » specs/admin/ad-01-02-admin-access-and-entry.e2e.ts
+[Android #0-2] Админка в приложении: доступ
+[Android #0-2]    ✖ AD-01/AD-02 USER1 не видит «ממשק ניהול התוכן»; ADMIN видит «ניהול» и открывает «ניהול תכני תפילה» #a5decf4a @prod-safe
+[Android #0-2]
+[Android #0-2] 1 failing (47.5s)
+[Android #0-2]
+[Android #0-2] 1) Админка в приложении: доступ AD-01/AD-02 USER1 не видит «ממשק ניהול התוכן»; ADMIN видит «ניהול» и открывает «ניהול תכני תפילה» #a5decf4a @prod-safe
+[Android #0-2] element ("android=new UiSelector().text("פרופיל אישי")") still not displayed after 20000ms
+[Android #0-2] Error: element ("android=new UiSelector().text("פרופיל אישי")") still not displayed after 20000ms
+[Android #0-2]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/admin/ad-01-02-admin-access-and-entry.e2e.ts:19:7)
+------------------------------------------------------------------
+[Android #0-3] Running: on Android
+[Android #0-3] Session ID: e0dea46c-49fe-4726-b241-39c67d0f568b
+[Android #0-3]
+[Android #0-3] » specs/admin/ad-04-prayer-admin-screen-cards.e2e.ts
+[Android #0-3] Админка в приложении: экран молитвы
+[Android #0-3]    ✖ AD-04 «ערבית · נוסח אשכנז»: карточки, статусы קטעים «מאושר · …»/«טקסט זמני, טרם אושר», сводка «הקראות הקטעים», история #a5decf4a #6a86f7ed9d38 @prod-safe
+[Android #0-3]    ✖ "after each" hook for Админка в приложении: экран молитвы
+[Android #0-3]
+[Android #0-3] 2 failing (5m 23.7s)
+[Android #0-3]
+[Android #0-3] 1) Админка в приложении: экран молитвы AD-04 «ערבית · נוסח אשכנז»: карточки, статусы קטעים «מאושר · …»/«טקסט זמני, טרם אושר», сводка «הקראות הקטעים», история #a5decf4a #6a86f7ed9d38 @prod-safe
+[Android #0-3] Timeout of 300000ms exceeded. The execution in the test "Админка в приложении: экран молитвы AD-04 «ערבית · נוסח אשכנז»: карточки, статусы קטעים «מאושר · …»/«טקסט זמני, טרם אושר», сводка «הקראות הקטעים», история #a5decf4a #6a86f7ed9d38 @prod-safe" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/admin/ad-04-prayer-admin-screen-cards.e2e.ts)
+[Android #0-3] Error: Timeout of 300000ms exceeded. The execution in the test "Админка в приложении: экран молитвы AD-04 «ערבית · נוסח אשכנז»: карточки, статусы קטעים «מאושר · …»/«טקסט זמני, טרם אושר», сводка «הקראות הקטעים», история #a5decf4a #6a86f7ed9d38 @prod-safe" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/admin/ad-04-prayer-admin-screen-cards.e2e.ts)
+[Android #0-3]     at createTimeoutError (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/mocha/lib/errors.js:498:15)
+[Android #0-3]     at Runnable._timeoutError (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/mocha/lib/runnable.js:429:10)
+[Android #0-3]     at Timeout.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/mocha/lib/runnable.js:244:24)
+[Android #0-3]     at listOnTimeout (node:internal/timers:585:17)
+[Android #0-3]     at process.processTimers (node:internal/timers:521:7)
+[Android #0-3]
+[Android #0-3] 2) Админка в приложении: экран молитвы "after each" hook for Админка в приложении: экран молитвы
+[Android #0-3] element ("android=new UiSelector().text("בית")") still not displayed after 15000ms
+[Android #0-3] Error: element ("android=new UiSelector().text("בית")") still not displayed after 15000ms
+[Android #0-3]     at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:52:3)
+[Android #0-3]     at async toHome (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:95:3)
+[Android #0-3]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/admin/ad-04-prayer-admin-screen-cards.e2e.ts:13:27)
+
+
+Spec Files:	 0 passed, 5 failed, 3 skipped, 154 total (5% completed) in 00:08:34  
+

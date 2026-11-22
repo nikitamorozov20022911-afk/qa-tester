@@ -1,0 +1,13 @@
+import { chromium, devices } from 'playwright';
+const st='/Users/avielshnaider/magnet-moe/.qa/auth/reg6-r11chk.json', SS='/Users/avielshnaider/magnet-moe/.qa/e2e/tmp-r11/';
+const b=await chromium.launch({headless:true});
+const ctx=await b.newContext({...devices['iPhone 13'],storageState:st,locale:'he-IL'});
+const p=await ctx.newPage(); const log=[];
+p.on('response',async r=>{ if(/rpc\//.test(r.url())){ let t='';try{t=(await r.text())}catch{}; log.push(r.url().split('rpc/')[1]+' '+r.status()+' body='+(r.request().postData()||'').replace(/-?\d{1,3}\.\d{3,}/g,'<n>')+' items='+(t.startsWith('[')?JSON.parse(t).length:'-')+' '+t.replace(/-?\d{1,3}\.\d{3,}/g,'<n>').slice(0,300));} });
+await p.goto('https://magnet.expo.app/discover',{waitUntil:'domcontentloaded'}); await p.waitForTimeout(6000);
+await p.getByText('מיקום',{exact:true}).last().click().catch(e=>console.log('no tab'));
+await p.waitForTimeout(8000);
+console.log(p.url()); console.log((await p.locator('body').innerText()).replace(/\s+/g,' ').slice(0,600));
+await p.screenshot({path:SS+'sivan-map.png'});
+console.log(log.join('\n'));
+await ctx.storageState({path:st}); await b.close();

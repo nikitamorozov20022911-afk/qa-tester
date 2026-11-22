@@ -1,0 +1,132 @@
+{
+  "date": "2026-11-04",
+  "project": "biz4sale",
+  "session": "2026-11-04 (2)",
+  "queue": [
+    "#0a2499",
+    "#4abcf4",
+    "#13f060"
+  ],
+  "packets": [
+    [
+      "#0a2499",
+      "#4abcf4",
+      "#13f060"
+    ]
+  ],
+  "notes": [
+    "mifrat token expires 2026-11-10 — warned user",
+    "PR #196: home c0443813…, publish 4d81aa0a…, area fcd64e54… re-recorded; signup/search unchanged",
+    "PR #197: card images uncropped (#0a2499)",
+    "Offered backfill for 9 done tickets without autotests: #4b9350 #1a3a08 #839121 #076449 #f67768 #faeea4 #917a7d #243006 #0c6087",
+    "User: after ticket tests — write autotests for the 9 done tickets (qa-backfill «Новые»), do NOT run them",
+    "#13f060: user conducted עבר QA — area 1:58.75 tap ahead of voice = finding, not reject",
+    "Pending new bugs after bug-verifier: publish.mp4 subtitles cover fields; PWA popup over /guides player",
+    "Board multi-select done for 5 (3 done + 2 new); tab then closed by user — #04a6d8, #631293 not selected"
+  ],
+  "tickets": [
+    {
+      "hash": "#0a2499",
+      "status": "testing",
+      "research": "research/0a2499.md",
+      "title": "בקשת לקוח: תמונות בכרטיסי העסקים יוצגו במלואן (עם שוליים) בלי חיתוך",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "evidence": "PR#197: contain + card2.webp пропорции оригинала (301/301), 374 карточки /search без cover; תפאורות 480×600 поля 68px, כינרת 573×600; окно 341×256 (375); фон stone-50; видео cover; значки admin в углах окна (сердце 13/13, share 58/15, просмотры 10/10)",
+      "not_checked": "Т11 новые загрузки (нужно создать объявление на проде)",
+      "screens": "screenshots/2026-11-04/0a2499-*.png",
+      "feature": "business-cards",
+      "role": "guest+admin",
+      "devices": [
+        "mobile 375 webkit",
+        "desktop 1440"
+      ],
+      "findings": [
+        "og:image вертикального постера обрезан cover 1200×630",
+        "старые *.card.webp отдают 400",
+        "карусель מודעות מומלצות фон stone-100 vs stone-50",
+        "у 5 карточек нет бейджа просмотров (вероятно 0)"
+      ],
+      "confirmed_by_user": "2026-11-04",
+      "autotests": "written, not run"
+    },
+    {
+      "hash": "#4abcf4",
+      "status": "testing",
+      "research": "research/4abcf4.md",
+      "title": "בסרטוני ההסבר הכתוביות מסתירות את הכפתורים שהקריינות מדברת עליהם",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "evidence": "home 0:41–0:47 кнопки над плашкой ≈122px; home 1:19 субтитр наверху, התחבר виден; area 1:59–2:02 פרסום עסק למכירה виден, синхрон 0,11–0,36с; 375+1440 с/без пульта; низ плашки ≈483 <пульт 510",
+      "screens": "screenshots/2026-11-04/4abcf4-*.png",
+      "feature": "guides-videos",
+      "role": "guest",
+      "devices": [
+        "mobile 375 webkit",
+        "desktop 1440"
+      ],
+      "findings": [
+        "home 1:20 субтитр закрывает ברוכים הבאים",
+        "publish 0:42 и 1:14 плашка закрывает поля/AI",
+        "signup 0:06 плашка закрывает пароль/התחבר",
+        "area 1:58.75 нажатие опережает голос 0,6–0,9с (#13f060)"
+      ],
+      "confirmed_by_user": "2026-11-04",
+      "autotests": "writing (not run)"
+    },
+    {
+      "hash": "#13f060",
+      "status": "testing (retest)",
+      "research": "research/13f060.md",
+      "title": "בסרטוני ההסבר הקריינות מקדימה את הכתוביות",
+      "verdict": "pass",
+      "column": "הושלם",
+      "evidence": "PR#196: publish переходы ≤0,1с, конец 0,2–0,3с; home המודעות שלי с 1-го нажатия, описание через 1,4с после экрана; home 14 фраз ≤0,09с; area 13 фраз ≤0,08с; signup/search etag не менялись",
+      "question": "area 1:58.75 нажатие опережает голос/смену субтитра на 0,6–0,9с при старом субтитре — по умолчанию находка",
+      "screens": "screenshots/2026-11-04/13f060-r2-*.png",
+      "feature": "guides-videos",
+      "role": "guest",
+      "devices": [
+        "mobile 375",
+        "desktop 1440"
+      ],
+      "findings": [
+        "на 375 попап установки закрывает плеер /guides",
+        "cookie-баннер закрывает низ плеера на 1440"
+      ],
+      "action": "pass",
+      "confirmed_by_user": "2026-11-04",
+      "autotests": "queued after #4abcf4 writer (same files), not run"
+    }
+  ],
+  "test_data": [],
+  "new_bugs": [
+    {
+      "hash": "#9c4736",
+      "ticket": 81,
+      "title": "בתגית html של האתר אין dir=\"rtl\" — כיוון הדף מוגדר LTR",
+      "column": "לביצוע",
+      "note": "lang уже he"
+    },
+    {
+      "hash": "#2f6eef",
+      "ticket": 82,
+      "title": "לכפתור התפריט במובייל אין שם נגיש (aria-label)",
+      "column": "לביצוע"
+    },
+    {
+      "hash": "#04a6d8",
+      "ticket": 83,
+      "title": "בסרטון «פרסום עסק למכירה» הכתוביות מסתירות שדות וכפתורים שממלאים באותו רגע",
+      "column": "לביצוע"
+    },
+    {
+      "hash": "#631293",
+      "ticket": 84,
+      "title": "בעמוד /guides באייפון חלון התקנת האפליקציה קופץ מעל הסרטון בזמן הצפייה",
+      "column": "לביצוע"
+    }
+  ]
+}

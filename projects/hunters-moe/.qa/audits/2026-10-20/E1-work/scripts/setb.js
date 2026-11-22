@@ -1,0 +1,1 @@
+async page => { globalThis.__c='QA-AUTO 1020 E1 Bravo'; globalThis.__job='d7220429-9b52-4224-92a7-59df07b34af1'; globalThis.__s='screenshots/run-1020/E1/E1A-37-submit-bravo-done-desktop.png'; return 'ok'; }

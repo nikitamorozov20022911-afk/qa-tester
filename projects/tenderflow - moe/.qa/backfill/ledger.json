@@ -1,0 +1,324 @@
+{
+ "#4805fb": {
+  "class": "qa-passed",
+  "feature": "manual-tender-upload",
+  "tests": [
+   "tests/manual-tender-upload/manual-upload-warning.spec.ts"
+  ],
+  "reason": "AC1–AC4 автоматизированы; приём по ссылке после возврата (AC4, конец) заблокирован #d1b3d3; создание тендера не автоматизировано (нет удаления тендеров). Перепроверено 10.11.2026 (бандл DKXW8ERT, стиль по дизайн-системе), проведён повторно.",
+  "date": "2026-11-10",
+  "source": "qa"
+ },
+ "#59019b": {
+  "class": "qa-passed",
+  "feature": "onboarding-matching-info",
+  "tests": [
+   "tests/onboarding-matching-info/matching-info-step.spec.ts",
+   "tests/upload-component/upload-component-profile.spec.ts"
+  ],
+  "reason": "Без автотеста: пустое состояние (нужна новая компания), состояние загрузки, 390 px. USER-тест требует .qa/auth/user.json.",
+  "date": "2026-10-25",
+  "source": "qa"
+ },
+ "#0532cb": {
+  "class": "qa-passed",
+  "source": "qa",
+  "feature": "onboarding-professionals",
+  "tests": [
+   "tests/onboarding-professionals/professionals-profile.spec.ts",
+   "tests/onboarding-professionals/professionals-wizard.spec.ts"
+  ],
+  "reason": "Баннер 1137:2544, «הוסף גורם מקצועי נוסף», своя категория, «•••»→«הסרה» с подтверждением (вкл. iPhone WebKit), email на 390, тексты шага 3 по 1141:1764. 18.11.2026, עבר QA 18.11.2026. Тесты 5–6 @data, serial (профиль перезаписывается целиком, #318805). Старый professionals-step.spec.ts удалён."
+ },
+ "#81a5e9": {
+  "class": "qa-passed",
+  "feature": "upload-component",
+  "tests": [
+   "tests/upload-component/upload-component-tender.spec.ts",
+   "tests/upload-component/upload-component-profile.spec.ts",
+   "tests/onboarding-matching-info/matching-info-step.spec.ts",
+   "tests/onboarding-company-documents/company-documents-step.spec.ts"
+  ],
+  "reason": "Системный диалог и настоящий drag&drop из ОС — только вручную (UPL-M1); в автотесте синтетический drop. Перепроверено 10.11.2026 (DKXW8ERT): стиль, изоляция файлов A/B (REST/Storage), компонент на S-09 (лимит 50MB vs 10MB в мастере — вопрос Q-25). Проведён повторно.",
+  "date": "2026-11-10",
+  "source": "qa"
+ },
+ "#62038e": {
+  "class": "qa-passed",
+  "source": "qa",
+  "feature": "onboarding-company-documents",
+  "tests": [
+   "tests/onboarding-company-documents/company-documents-vault.spec.ts"
+  ],
+  "reason": "Подсказка загрузки, «רשימת המסמכים המותאמת לחברה», группы א׳/ב׳, 9 типов, «X מתוך 9», 21MB отклоняется, 390; профиль и шаг 4 (мок). 18.11.2026, עבר QA 18.11.2026. В company-documents-step.spec.ts два старых теста помечены fixme — переписать под TAQO."
+ },
+ "#43e90c": {
+  "class": "qa-passed",
+  "feature": "access-messages",
+  "tests": [
+   "tests/access-messages/forbidden-messages.spec.ts"
+  ],
+  "reason": "ACM-01..02 автоматизированы целиком (admin на /admin*, user на /users, /users/invite, /onboarding); только просмотр, @prod-safe.",
+  "date": "2026-10-25",
+  "source": "qa"
+ },
+ "#1ccd9e": {
+  "class": "qa-passed",
+  "feature": "permissions-isolation",
+  "tests": [
+   "tests/permissions-isolation/user-access-ui.spec.ts",
+   "tests/permissions-isolation/tenders-visibility.spec.ts",
+   "tests/permissions-isolation/server-rls.spec.ts"
+  ],
+  "reason": "PI-01..06 автоматизированы: меню USER, прямые адреса /users, /users/invite, /onboarding, /admin*, тендеры компании у USER/ADMIN, сервер (своя роль 0 строк, приглашение 403). Вручную (PI-M1): последний админ (AC5 להחלטה), понижение админа/изменение другого участника, RPC списка.",
+  "date": "2026-10-25",
+  "source": "qa"
+ },
+ "#55dc54": {
+  "class": "qa-passed",
+  "feature": "permissions-isolation",
+  "tests": [
+   "tests/permissions-isolation/tenders-visibility.spec.ts",
+   "tests/permissions-isolation/server-rls.spec.ts"
+  ],
+  "reason": "PI-07..12 автоматизированы: лента и прямой URL тендеров A из B; сервер: PATCH companies/tenders A → 0 строк, INSERT company_members/company_invitations в A → 403. Вручную (PI-M1): профиль/документы/Storage A из B, приглашение email другой компании (Q-31).",
+  "date": "2026-10-25",
+  "source": "qa"
+ },
+ "#af0ff2": {
+  "class": "qa-passed",
+  "feature": "invitations",
+  "tests": [
+   "tests/invitations/cancelled-invite-link.spec.ts"
+  ],
+  "reason": "INV-01..INV-04 автоматизированы (отменённая ссылка, старая ссылка после повторного приглашения, контроль активной ссылки, испорченный токен; RPC invitation_is_valid и отсутствие auth/v1/signup). Без автотеста: гонка «форма открыта → отмена → отправка пароля» и полное принятие приглашения (ввод пароля, signUp, письмо, лимит Supabase). Проверено 10.11.2026 (бандл DKXW8ERT, компания B), проведён пользователем.",
+  "date": "2026-11-10",
+  "source": "qa",
+  "updated": "2026-11-15: ссылка из баннера только ?token= (#83bf5b), отмена/очистка через окно «ביטול ההזמנה» (#db7e39)."
+ },
+ "#2a8411": {
+  "class": "qa-passed",
+  "feature": "company-users",
+  "tests": [
+   "tests/company-users/users-list.spec.ts",
+   "tests/company-users/user-access.spec.ts",
+   "tests/company-users/isolation.spec.ts"
+  ],
+  "reason": "Автоматизированы (только чтение) CU-01–CU-07: загрузка «טוען משתמשים…», пустое состояние у ADMIN2 (B), колонки и email, роль/статус, переход на /users/invite и возврат, USER без доступа и без пунктов меню, изоляция A↔B. CU-M1 вручную: редактирование данных и смена роли не автоматизированы — единственный подходящий участник «QA Member 2» является основным USER, отдельного участника нет. Также вручную: отмена приглашения, pending → פעיל, ошибка сети, 390 px (#3608cf). Перепроверено 10.11.2026 (бандл DKXW8ERT), проведён пользователем.",
+  "date": "2026-11-10",
+  "source": "qa"
+ },
+ "#bb57bd": {
+  "class": "qa-passed",
+  "feature": "onboarding-wizard",
+  "tests": [
+   "tests/onboarding-wizard/wizard.spec.ts"
+  ],
+  "reason": "Порядок шагов, aria-current/✓, вперёд/назад без потери, «שמירה והמשך מאוחר יותר» и продолжение, «שומר…», завершение → / — автоматизированы с перехватом всех POST company_profiles (профиль ADMIN A не меняется). Сквозной мастер на новой компании с реальной записью и повторным входом, AC3 и стиль — вручную (OW-M1). Перепроверено 10.11.2026 (бандл DKXW8ERT), проведён.",
+  "date": "2026-11-10",
+  "source": "qa",
+  "updated": "2026-11-15: OW-04 переписан под TAQO (черновик → лента с карточкой «הגדרת החשבון»); остальные тесты wizard.spec.ts — под мастер до TAQO, нужна перегенерация."
+ },
+ "#5cdc5b": {
+  "class": "qa-passed",
+  "feature": "signup",
+  "tests": [
+   "tests/signup/signup.spec.ts"
+  ],
+  "reason": "Ссылка «התחבר» внизу карточки → /login, поля, клиентская валидация, 429 (подмена) и /login — автоматизированы, все auth/v1/signup перехватываются. Реальная регистрация, сверка с Figma 498:85/498:263 и commit Preview — вручную (SU-M1); экран приглашения — tests/invitations/. Перепроверено 10.11.2026 (бандл DKXW8ERT), проведён.",
+  "date": "2026-11-10",
+  "source": "qa"
+ },
+ "#b24fab": {
+  "class": "qa-passed",
+  "feature": "org-account",
+  "tests": [
+   "tests/org-account/org-account.spec.ts"
+  ],
+  "reason": "Имя NEWADMIN «test test» в /users и inviter в ссылке-приглашении (@data, приглашение отменяется) — автоматизированы под newadmin (.qa/auth/newadmin.json, логина в accounts.env нет). Новая регистрация и принятие приглашения — вручную (OA-M1); AC3–5 — tests/permissions-isolation/ (#55dc54). Проверено 10.11.2026, проведён.",
+  "date": "2026-11-10",
+  "source": "qa",
+  "updated": "2026-11-15: OA-02 обновлён — ссылка только ?token= (#83bf5b), отмена через окно «ביטול ההזמנה» (#db7e39)."
+ },
+ "#add75b": {
+  "class": "qa-passed",
+  "feature": "signup",
+  "tests": [
+   "tests/signup/after-confirm.spec.ts"
+  ],
+  "reason": "Автоматизировано для существующей сессии SIGNUP14: /setup → /onboarding или /, нет «הקמת חשבון חברה», ровно одна компания (company_members); шаг 1 «שם החברה» = имя из регистрации. Без автотеста (SU-M2): свежая регистрация, повтор ссылки подтверждения, первый вход паролем — создание аккаунта и почта. Проверено 14.11.2026, проведён 15.11.2026.",
+  "date": "2026-11-15",
+  "source": "qa"
+ },
+ "#40d912": {
+  "class": "qa-passed",
+  "feature": "company-users",
+  "tests": [
+   "tests/company-users/invite-banner.spec.ts"
+  ],
+  "reason": "Баннер ссылки: есть после «שמירה והזמנה», нет после F5, нет после подтверждённой отмены, остаётся при «חזרה»/Esc (ADMIN2, компания B, qa-auto-banner-*, отмена в конце). Без автотеста: 390 px (тесты @data идут только на десктопе), отмена в другой вкладке / другого приглашения (информативно). Проверено 14.11.2026, проведён 15.11.2026.",
+  "date": "2026-11-15",
+  "source": "qa"
+ },
+ "#824dde": {
+  "class": "qa-passed",
+  "feature": "user-invite",
+  "tests": [
+   "tests/user-invite/invite-form.spec.ts"
+  ],
+  "reason": "Автоматизировано: неверный email (..com, @., com., точки в local-part), пустые поля, email участника компании, сохранение → /users «הזמנה ממתינה», USER — «אין לך הרשאה». Без автотеста: выбор роли «מנהל חשבון», 390 px, регресс валидатора в /signup и «גורם מקצועי», изоляция (есть в company-users/isolation). Проверено 14.11.2026, проведён 15.11.2026.",
+  "date": "2026-11-15",
+  "source": "qa"
+ },
+ "#80e710": {
+  "class": "qa-passed",
+  "feature": "navigation",
+  "tests": [
+   "tests/navigation/mobile-menu.spec.ts"
+  ],
+  "reason": "390/375 (iPhone и Android): «תפריט ראשי» со всеми пунктами, раздел «החברה» только у admin, меню аватара, scrollWidth == innerWidth на /, /onboarding, /users; граница 900/901 (десктоп). Находки 14.11 (тап вне меню, Esc без фокуса, два меню сразу, нет «תמיכה») в автотест не входят. Проверено 14.11.2026, проведён 15.11.2026.",
+  "date": "2026-11-15",
+  "source": "qa"
+ },
+ "#7ca434": {
+  "class": "qa-passed",
+  "feature": "design-tokens",
+  "tests": [
+   "tests/design-tokens/taqo-tokens.spec.ts"
+  ],
+  "reason": "AC4: Heebo, --ink #0f172a, --accent #4f46e5, --radius-card 14 / --radius-control 8 и фактические радиусы карточки/поля на /login, /signup, /, /onboarding, /users, /users/invite. Пп. 1–11, AC1–AC3 — документы и Figma, только вручную. Проверено 14.11.2026, проведён 15.11.2026.",
+  "date": "2026-11-15",
+  "source": "qa"
+ },
+ "#83bf5b": {
+  "class": "qa-passed",
+  "feature": "invitations",
+  "tests": [
+   "tests/invitations/accept-from-server.spec.ts"
+  ],
+  "reason": "INV-05..08 автоматизированы: ссылка только ?token=, подмена email/name/company/inviter не меняет экран (email readonly из приглашения), email в signUp из приглашения (запрос прерывается route.abort, регистрации нет), без token — «קישור ההזמנה אינו זמין», отменённый/случайный token с параметрами — «ההזמנה אינה תקפה». Только вручную (INV-M1): DOM-подмена email с настоящей отправкой и серверная защита accept_invitation 403.",
+  "date": "2026-11-15",
+  "source": "qa"
+ },
+ "#db7e39": {
+  "class": "qa-passed",
+  "feature": "confirm-dialogs",
+  "tests": [
+   "tests/confirm-dialogs/users-dialogs.spec.ts",
+   "tests/confirm-dialogs/profile-dialogs.spec.ts"
+  ],
+  "reason": "Окна подтверждения (ADMIN2, компания B): «ביטול הזמנה» (текст, «חזרה»/«ביטול ההזמנה», фокус на «חזרה», отмена «חזרה»/Esc/клик вне окна без запросов записи, подтверждение + F5); «הסרת מסמך» и «הסרת גורם מקצועי» во вкладках профиля /onboarding на своих qa-auto-confirm-*/QA-AUTO-confirm-* с уборкой; «שינוי הרשאה» у QA Inv14 Member («חזרה»/Esc не меняют, подтверждение + F5, обратно с окном, роль משתמש רגיל возвращается в finally). Без автотеста: 390 px (@data только десктоп), окна в мастере (шаги 3–4 мастера TAQO), стиль окна по TAQO; находки 15.11 («החלפה» документа и «הסרה» в компоненте загрузки без окна) — вне перечня тикета. Проверено 14–15.11.2026, проведён 15.11.2026.",
+  "date": "2026-11-15",
+  "source": "qa"
+ },
+ "#3e5463": {
+  "class": "qa-passed",
+  "feature": "auth-login",
+  "tests": [
+   "tests/auth-login/login-footer.spec.ts"
+  ],
+  "reason": "Футер /login = «TAQO» (решение владельца 14.11; AC1 «Tenderflow IL» устарел), позиция, RTL, нет футера на /signup, /accept, /reset-password и в «שכחת סיסמה?», «הירשם» → /signup, консоль. Без автотеста: режим входа по приглашению (LF-M1). Проверено на staging 17.11.2026 (бандл index-bSBPyi05.js), проведён עבר QA 17.11.2026. Тесты записаны, не прогонялись.",
+  "date": "2026-11-17",
+  "source": "qa"
+ },
+ "#3f693e": {
+  "class": "qa-passed",
+  "feature": "permissions-isolation",
+  "tests": [
+   "tests/permissions-isolation/member-onboarding-readonly.spec.ts",
+   "tests/permissions-isolation/member-company-profiles-rls.spec.ts"
+  ],
+  "reason": "member на /onboarding: заглушка при заходе/reload/SPA, 0 полей, нет записи в company_profiles, 390 без горизонтального скролла, ADMIN-контроль (PI-13..15); сервер: update 0 строк, insert/upsert 403/42501, строка не изменилась (PI-16, @data). Без автотеста: наличие unit-теста web/test/onboarding-member-access.test.tsx в репозитории (нет доступа к репо). Проведён עבר QA 17.11.2026. Тесты записаны, не прогонялись.",
+  "date": "2026-11-17",
+  "source": "qa"
+ },
+ "#3608cf": {
+  "class": "qa-passed",
+  "feature": "mobile-tables",
+  "tests": [
+   "tests/mobile-tables/users-mobile.spec.ts",
+   "tests/mobile-tables/admin-mobile.spec.ts"
+  ],
+  "reason": "390 px: /users (ADMIN) и /admin, /admin/sources, /admin/tenders, /admin/faults (platform): scrollWidth=innerWidth, таблица внутри .table-wrap, кнопки достижимы, окна «עריכה»/«חסימה» помещаются (открыть и отменить). Без автотеста: реальное устройство, подтверждение блокировки/сохранение, «הפעלה» в источниках. Вход platform один — тесты serial. Проведён עבר QA 17.11.2026.",
+  "date": "2026-11-17",
+  "source": "qa"
+ },
+ "#a48e8c": {
+  "class": "qa-passed",
+  "feature": "onboarding-wizard",
+  "tests": [
+   "tests/onboarding-wizard/completed-marks.spec.ts"
+  ],
+  "reason": "OW-08..OW-14: отметка «הושלם» только после «המשך» с валидными данными — «הקודם», «דלג» (только шаг 3), «שמור והמשך מאוחר יותר» не отмечают; черновик шага 1 без ח.פ./תחומי → completedSteps []; шаг 2: пробелы не ✓, одно значение ✓; шаг 3 имя без email → «יש להזין אימייל»; «סיום» после загрузки → [0,1,2,3], completed true; карточка «N / 4». completedSteps читаются из company_profiles. @data/manual-account: нужен аккаунт с непройденным мастером (QA_FRESH_WIZARD_AUTH=<id сессии>), тест расходует аккаунт, при пройденном мастере skip. Без автотеста: 390 px (мобильный степпер; карточка на 390 скрыта — находка), старый SIGNUP14. Проверено на staging 17.11.2026 (бандл index-bSBPyi05.js, прогоны signup17/signup17b), проведён עבר QA 17.11.2026. Тесты записаны, не прогонялись.",
+  "date": "2026-11-17",
+  "source": "qa"
+ },
+ "#05b294": {
+  "class": "qa-passed",
+  "feature": "admin-companies-users",
+  "tests": [
+   "tests/admin-companies-users/admin-readonly.spec.ts",
+   "tests/admin-companies-users/admin-access.spec.ts",
+   "tests/admin-companies-users/admin-block-flow.spec.ts",
+   "tests/admin-companies-users/new-user-setup.spec.ts"
+  ],
+  "reason": "Экран S-25: списки, загрузка/пусто/ошибка (route-мок), поиск, диалог подтверждения, бейджи, блок/разблок, доступ гостя. Проверено на staging 17.11.2026 (бандл index-bSBPyi05.js, 2 прогона), проведён עבר QA 17.11.2026. Тесты записаны 17.11.2026, не прогонялись. Вход platform один — serial, --workers=1; @data (блок/разблок SIGNUP14A-компании и INV14, снятие в начале и в afterAll) идёт только в проекте data. Нет автотеста: реальное создание компании/«עריכה» с сохранением (нет удаления), пустое состояние на живых данных (только route-мок), 390 px для сообщения блокировки (вручную; /admin на 390 — #3608cf).",
+  "date": "2026-11-17",
+  "source": "qa"
+ },
+ "#0fc9cd": {
+  "class": "qa-passed",
+  "feature": "admin-companies-users",
+  "tests": [
+   "tests/admin-companies-users/admin-readonly.spec.ts",
+   "tests/admin-companies-users/admin-access.spec.ts",
+   "tests/admin-companies-users/admin-block-flow.spec.ts",
+   "tests/admin-companies-users/new-user-setup.spec.ts"
+  ],
+  "reason": "Фича F-61: список компаний/пользователей и совпадение с RPC, блокировка пользователя и компании, права только для platform (UI USER/ADMIN, RPC 403/42501), «פתיחה», формы создания/редактирования (без сохранения). Проверено на staging 17.11.2026 (бандл index-bSBPyi05.js, 2 прогона), проведён עבר QA 17.11.2026. Тесты записаны 17.11.2026, не прогонялись. Вход platform один — serial, --workers=1; @data (блок/разблок SIGNUP14A-компании и INV14, снятие в начале и в afterAll) идёт только в проекте data. Нет автотеста: реальное создание компании/«עריכה» с сохранением (нет удаления), пустое состояние на живых данных (только route-мок), 390 px для сообщения блокировки (вручную; /admin на 390 — #3608cf).",
+  "date": "2026-11-17",
+  "source": "qa"
+ },
+ "#db2075": {
+  "class": "qa-passed",
+  "feature": "admin-companies-users",
+  "tests": [
+   "tests/admin-companies-users/admin-readonly.spec.ts",
+   "tests/admin-companies-users/admin-access.spec.ts",
+   "tests/admin-companies-users/admin-block-flow.spec.ts",
+   "tests/admin-companies-users/new-user-setup.spec.ts"
+  ],
+  "reason": "Заблокированный пользователь и пользователь заблокированной компании видят сообщение с адресатом, /setup не показывается; прямые заходы без петли; снятие блокировки; контроль SPOOF14 → /setup. Проверено на staging 17.11.2026 (бандл index-bSBPyi05.js, 2 прогона), проведён עבר QA 17.11.2026. Тесты записаны 17.11.2026, не прогонялись. Вход platform один — serial, --workers=1; @data (блок/разблок SIGNUP14A-компании и INV14, снятие в начале и в afterAll) идёт только в проекте data. Нет автотеста: реальное создание компании/«עריכה» с сохранением (нет удаления), пустое состояние на живых данных (только route-мок), 390 px для сообщения блокировки (вручную; /admin на 390 — #3608cf).",
+  "date": "2026-11-17",
+  "source": "qa"
+ },
+ "#5622b5": {
+  "class": "qa-passed",
+  "source": "qa",
+  "feature": "company-details",
+  "tests": [
+   "tests/company-details/company-details.spec.ts"
+  ],
+  "reason": "Блок «למה הפרטים האלה חשובים?» по Figma 1140:1937/1938, проверки имени/ח.פ./даты, отрасли и регионы, контакт 2×2, 390. Проверено 18.11.2026 (index-lp1EzSMf.js), עבר QA 18.11.2026. Запись подменена заглушкой (details-mock.ts)."
+ },
+ "#343d8d": {
+  "class": "qa-passed",
+  "source": "qa",
+  "feature": "preview-demo",
+  "tests": [
+   "tests/preview-demo/preview-demo.spec.ts"
+  ],
+  "reason": "Preview (PREVIEW_URL, по умолчанию obpygl1k7): нет «Tenderflow IL», TAQO, демо-вход, плашки «נתוני הדגמה», сохранность, на основном staging нет демо-кнопки, 390. 18.11.2026, עבר QA 18.11.2026."
+ },
+ "#662546": {
+  "class": "qa-passed",
+  "source": "qa",
+  "feature": "admin-tenders",
+  "tests": [
+   "tests/admin-tenders/admin-tenders-view.spec.ts",
+   "tests/admin-tenders/admin-tenders-access.spec.ts",
+   "tests/admin-tenders/admin-tenders-mobile.spec.ts"
+  ],
+  "reason": "Список, фильтр, поиск, «פרטי מכרז» → /admin/tenders/<id>, F5, прямой /tenders/<id>/analysis, права ADMIN/USER/гость, 390. 18.11.2026, עבר QA 18.11.2026. Platform-тесты --workers=1; тест «לטיפול» skip, пока QA-T2/T3 не вернут в сбой."
+ }
+}

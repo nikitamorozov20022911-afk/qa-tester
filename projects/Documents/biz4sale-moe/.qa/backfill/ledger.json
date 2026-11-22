@@ -1,0 +1,1292 @@
+{
+ "entries": [
+  {
+   "hash": "#0a2499",
+   "id": "1ccb9380b5c8e51f990a2499",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "business-cards-images",
+   "tests": [
+    ".qa/tests/business-cards-images/CARDIMG-01.md",
+    ".qa/tests/business-cards-images/CARDIMG-02.md",
+    ".qa/tests/business-cards-images/CARDIMG-03.md",
+    ".qa/tests/business-cards-images/CARDIMG-04.md",
+    ".qa/tests/business-cards-images/CARDIMG-05.md",
+    ".qa/tests/business-cards-images/CARDIMG-06.md",
+    ".qa/tests/business-cards-images/CARDIMG-07.md",
+    ".qa/e2e/specs/business-cards-images.md",
+    ".qa/e2e/tests/business-cards-images/cards.helpers.ts",
+    ".qa/e2e/tests/business-cards-images/card-images-uncropped.spec.ts",
+    ".qa/e2e/tests/business-cards-images/card-badges-position.spec.ts"
+   ],
+   "note": "тикет 79; בקשת לקוח, PR #197: картинки карточек главной и /search целиком — object-fit contain, файл *.card2.webp в пропорциях оригинала (±2 %), поля по нужной оси, окно 4:3 во всю ширину, фон stone-50 (карусель מודעות מומלצות — нейтральный, stone-100 находка), видео cover (#464adb); значки admin: сердце 13/13, share 58/15, просмотры 10/10; гость — share по наведению. Без привязки к объявлениям. desktop + android, @prod-safe. CARDIMG-07 (новая загрузка) — ручной. Не запускались (--list: 19 тестов business-cards-images)",
+   "date": "2026-11-04"
+  },
+  {
+   "hash": "#839121",
+   "class": "automatable",
+   "feature": "search-header-cta",
+   "tests": [
+    "tests/search-header-cta/guest-more-listings.spec.ts",
+    "tests/search-header-cta/publish-button-header.spec.ts",
+    "tests/search-header-cta/user-header-strip-more.spec.ts"
+   ],
+   "reason": "android, guest+user, prod-safe",
+   "date": "2026-11-04",
+   "source": "backfill"
+  },
+  {
+   "hash": "#1a3a08",
+   "class": "automatable",
+   "feature": "search-header-cta",
+   "tests": [
+    "tests/search-header-cta/guest-home-strip-opens-filters.spec.ts",
+    "tests/search-header-cta/guest-category-strip-keeps-category.spec.ts",
+    "tests/search-header-cta/user-header-strip-more.spec.ts"
+   ],
+   "reason": "android, guest+user, prod-safe",
+   "date": "2026-11-04",
+   "source": "backfill"
+  },
+  {
+   "hash": "#4b9350",
+   "class": "manual-only",
+   "feature": "auth-google-branding",
+   "tests": [],
+   "reason": "сторонний экран Google; redirect_uri всё ещё supabase.co, экран показывает Biz4Sale",
+   "date": "2026-11-04",
+   "source": "backfill"
+  },
+  {
+   "hash": "#f67768",
+   "class": "automatable",
+   "feature": "admin-business-package-label",
+   "tests": [
+    "tests/admin-business-package-label/free-package-label.spec.ts"
+   ],
+   "reason": "admin, только чтение",
+   "date": "2026-11-04",
+   "source": "backfill"
+  },
+  {
+   "hash": "#243006",
+   "class": "automatable",
+   "feature": "publish-confirmation",
+   "tests": [
+    "tests/publish-confirmation/pending-status-text.spec.ts",
+    "tests/publish-confirmation/active-status-text.spec.ts"
+   ],
+   "reason": "гость, подмена status",
+   "date": "2026-11-04",
+   "source": "backfill"
+  },
+  {
+   "hash": "#faeea4",
+   "class": "manual-only",
+   "feature": "business-updated-date",
+   "tests": [],
+   "reason": "нужна реальная запись в БД на проде",
+   "date": "2026-11-04",
+   "source": "backfill"
+  },
+  {
+   "hash": "#0c6087",
+   "class": "automatable",
+   "feature": "addbusiness-draft-save",
+   "tests": [
+    "tests/addbusiness-draft-save/empty-numeric-fields-draft.spec.ts",
+    "tests/addbusiness-draft-save/draft-save-error-message.spec.ts"
+   ],
+   "reason": "моки, prod-safe; сверка не выполнена (user просрочен)",
+   "date": "2026-11-04",
+   "source": "backfill"
+  },
+  {
+   "hash": "#917a7d",
+   "class": "automatable",
+   "feature": "edit-listing-save-changes",
+   "tests": [
+    "tests/edit-listing-save-changes/save-success-toast.spec.ts"
+   ],
+   "reason": "нужен QA_EDIT_LISTING_ID",
+   "date": "2026-11-04",
+   "source": "backfill"
+  },
+  {
+   "hash": "#076449",
+   "class": "automatable",
+   "feature": "edit-listing-save-changes",
+   "tests": [
+    "tests/edit-listing-save-changes/repeated-save-error-single-toast.spec.ts"
+   ],
+   "reason": "нужен QA_EDIT_LISTING_ID",
+   "date": "2026-11-04",
+   "source": "backfill"
+  },
+  {
+   "hash": "#13f060",
+   "id": "011b15c913bb37d17913f060",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "guides-videos",
+   "tests": [
+    ".qa/tests/guides-videos/GUIDES-17.md",
+    ".qa/tests/guides-videos/GUIDES-18.md",
+    ".qa/tests/guides-videos/GUIDES-19.md",
+    ".qa/tests/guides-videos/GUIDES-20.md",
+    ".qa/tests/guides-videos/GUIDES-07.md",
+    ".qa/tests/guides-videos/GUIDES-13.md",
+    ".qa/e2e/specs/guides-videos.md",
+    ".qa/e2e/tests/guides-videos/guides-subtitles-sync-screen.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-video-versions.spec.ts"
+   ],
+   "note": "тикет 75; субтитры вместе с экраном и голосом (≤0,5 с): publish переходы 1→2…4→5 — плашка прошлого шага уходит до смены экрана, новая ≤0,5 с от голоса; конец — «המודעה נשלחה» с экраном успеха (0,2–0,3 с); home ~1:31 — кабинет с одного нажатия «המודעות שלי», описание после экрана. Кадры (canvas), desktop 1440 + android 375, @prod-safe. Голос↔субтитр — ручной GUIDES-20 (опорные таймкоды). Файлы PR #196 (etag как у #4abcf4). Не запускались (--list: 55 тестов guides-videos)",
+   "date": "2026-11-04"
+  },
+  {
+   "hash": "#4abcf4",
+   "id": "287cc7e897feacbaff4abcf4",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "guides-videos",
+   "tests": [
+    ".qa/tests/guides-videos/GUIDES-14.md",
+    ".qa/tests/guides-videos/GUIDES-15.md",
+    ".qa/tests/guides-videos/GUIDES-16.md",
+    ".qa/tests/guides-videos/GUIDES-04.md",
+    ".qa/tests/guides-videos/GUIDES-12.md",
+    ".qa/tests/guides-videos/GUIDES-13.md",
+    ".qa/e2e/specs/guides-videos.md",
+    ".qa/e2e/tests/guides-videos/guides-subtitles-above-controls.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-video-versions.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-files.spec.ts"
+   ],
+   "note": "тикет 80; кнопки, о которых говорит диктор, не закрыты плашкой: home 0:41–0:47 (WhatsApp/הצגת טלפון/השארת פרטים), home 1:19–1:24 (התחבר, субтитр наверху), area 1:59–2:02 (פרסום עסק למכירה); desktop 1440 + android 375, кадр и снимок с пультом. Эталон etag/размер home/area/publish и длительности publish 126/area 123 — файлы PR #196; моменты publish в 1.8 → 13/63/74/124. @prod-safe, не запускались (--list: 43 теста guides-videos)",
+   "date": "2026-11-04"
+  },
+  {
+   "hash": "#8deb3e",
+   "id": "e75ff2c106ce95a7bc8deb3e",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "messages-single-instance",
+   "tests": [
+    ".qa/tests/messages-single-instance/",
+    ".qa/e2e/specs/messages-single-instance.md"
+   ],
+   "date": "2026-10-18"
+  },
+  {
+   "hash": "#fbeedf",
+   "id": "06e9741f83a0c27e3ffbeedf",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "listing-jsonld",
+   "tests": [
+    ".qa/tests/listing-jsonld/",
+    ".qa/e2e/specs/listing-jsonld.md"
+   ],
+   "date": "2026-10-18"
+  },
+  {
+   "hash": "#26657c",
+   "id": "90f6c7686b72c0519b26657c",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "geo-deploy",
+   "tests": [
+    ".qa/tests/geo-deploy/",
+    ".qa/e2e/specs/geo-deploy.md"
+   ],
+   "date": "2026-10-18"
+  },
+  {
+   "hash": "#9b8e31",
+   "id": "39810a034562b93a099b8e31",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "geo-deploy",
+   "tests": [],
+   "date": "2026-10-21",
+   "note": "автотесты не писались (генератор playwright-test не работает, см. handoff 2026-10-18)"
+  },
+  {
+   "hash": "#500d1d",
+   "id": "31f303348ff69035fa500d1d",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "geo-deploy",
+   "tests": [],
+   "date": "2026-10-21",
+   "note": "автотесты не писались (генератор playwright-test не работает, см. handoff 2026-10-18)"
+  },
+  {
+   "hash": "#154394",
+   "id": "e25ddc996d8a77388d154394",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "listing-gallery",
+   "tests": [],
+   "date": "2026-10-21",
+   "note": "автотесты не писались (генератор не работает); скрипты проверки в research/retest-1021b"
+  },
+  {
+   "hash": "#00a4d7",
+   "id": "3fdc5662527eebfefc00a4d7",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "messages-mobile",
+   "tests": [],
+   "date": "2026-10-21",
+   "note": "автотесты не писались (генератор не работает); скрипты проверки в research/retest-1021b"
+  },
+  {
+   "hash": "#7bcd98",
+   "id": "807836dc3961e63a807bcd98",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "messages-mobile",
+   "tests": [],
+   "date": "2026-10-21",
+   "note": "автотесты не писались (генератор не работает); скрипты проверки в research/retest-1021b"
+  },
+  {
+   "hash": "#9f2c12",
+   "id": "3e5c185f95fc0e87359f2c12",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "seo-technical",
+   "tests": [
+    ".qa/tests/seo-technical/SEO-OG-01.md",
+    ".qa/e2e/specs/seo-technical.md",
+    ".qa/e2e/tests/seo-technical/faq-og-twitter-raw-html.spec.ts"
+   ],
+   "date": "2026-10-25"
+  },
+  {
+   "hash": "#1da60a",
+   "id": "e2e4742efa29adc4f81da60a",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "chat-conversations",
+   "tests": [
+    ".qa/tests/chat-conversations/CHAT-ENTER-01.md",
+    ".qa/e2e/specs/chat-conversations.md",
+    ".qa/e2e/tests/chat-conversations/enter-adds-newline-not-send.spec.ts"
+   ],
+   "date": "2026-10-25"
+  },
+  {
+   "hash": "#bb6e6d",
+   "id": "1cc4e54a55cbe14e77bb6e6d",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "chat-conversations",
+   "tests": [
+    ".qa/tests/chat-conversations/CHAT-OPEN-01.md",
+    ".qa/tests/chat-conversations/CHAT-OPEN-02.md",
+    ".qa/tests/chat-conversations/CHAT-OPEN-03.md",
+    ".qa/tests/chat-conversations/CHAT-OPEN-04.md",
+    ".qa/e2e/specs/chat-conversations.md",
+    ".qa/e2e/tests/chat-conversations/direct-link-opens-conversation-mobile.spec.ts",
+    ".qa/e2e/tests/chat-conversations/tap-in-list-opens-conversation-mobile.spec.ts",
+    ".qa/e2e/tests/chat-conversations/back-to-conversations-mobile.spec.ts",
+    ".qa/e2e/tests/chat-conversations/desktop-menu-beside-conversation.spec.ts",
+    ".qa/e2e/tests/chat-conversations/open-conversation.helpers.ts"
+   ],
+   "date": "2026-10-25"
+  },
+  {
+   "hash": "#083d10",
+   "id": "2e3b1cf91037759812083d10",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "contact-login-return",
+   "tests": [
+    ".qa/tests/contact-login-return/CONTACT-AUTH-01.md",
+    ".qa/tests/contact-login-return/CONTACT-AUTH-02.md",
+    ".qa/tests/contact-login-return/CONTACT-AUTH-03.md",
+    ".qa/tests/contact-login-return/CONTACT-AUTH-04.md",
+    ".qa/tests/contact-login-return/CONTACT-AUTH-05.md",
+    ".qa/e2e/specs/contact-login-return.md",
+    ".qa/e2e/tests/contact-login-return/listing-phone-sms-saves-return.spec.ts",
+    ".qa/e2e/tests/contact-login-return/search-card-phone-sms-saves-return.spec.ts",
+    ".qa/e2e/tests/contact-login-return/popup-close-stays-on-listing.spec.ts",
+    ".qa/e2e/tests/contact-login-return/popup-fits-mobile-screen.spec.ts",
+    ".qa/e2e/tests/contact-login-return/contact-1-keeps-contact-in-view-mobile.spec.ts",
+    ".qa/e2e/tests/contact-login-return/contact-popup.helpers.ts"
+   ],
+   "date": "2026-10-25",
+   "note": "реальный вход SMS/Google в автотесты не входит (проверен пользователем вручную)"
+  },
+  {
+   "hash": "#1d8184",
+   "id": "e92513ee032c155e751d8184",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "whatsapp-seller",
+   "tests": [
+    ".qa/tests/whatsapp-seller/WA-DISC-01.md",
+    ".qa/tests/whatsapp-seller/WA-LINK-01.md",
+    ".qa/tests/whatsapp-seller/WA-LINK-02.md",
+    ".qa/tests/whatsapp-seller/WA-LINK-03.md",
+    ".qa/tests/whatsapp-seller/WA-LINK-04.md",
+    ".qa/tests/whatsapp-seller/WA-LINK-05.md",
+    ".qa/tests/whatsapp-seller/WA-MAN-01.md",
+    ".qa/tests/whatsapp-seller/WA-MSG-01.md",
+    ".qa/tests/whatsapp-seller/WA-MSG-02.md",
+    ".qa/e2e/specs/whatsapp-seller.md",
+    ".qa/e2e/tests/whatsapp-seller/card-message-format-www.spec.ts",
+    ".qa/e2e/tests/whatsapp-seller/card-message-from-vercel.spec.ts",
+    ".qa/e2e/tests/whatsapp-seller/discrete-listing-no-whatsapp.spec.ts",
+    ".qa/e2e/tests/whatsapp-seller/short-link-server-redirect-and-preview.spec.ts",
+    ".qa/e2e/tests/whatsapp-seller/short-link-with-service-worker.spec.ts",
+    ".qa/e2e/tests/whatsapp-seller/short-link-without-service-worker.spec.ts",
+    ".qa/e2e/tests/whatsapp-seller/whatsapp.helpers.ts"
+   ],
+   "at": "2026-10-28"
+  },
+  {
+   "hash": "#1d84d2",
+   "id": "12981c71d259c131091d84d2",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "whatsapp-seller",
+   "tests": [
+    ".qa/tests/whatsapp-seller/WA-DISC-01.md",
+    ".qa/tests/whatsapp-seller/WA-LINK-01.md",
+    ".qa/tests/whatsapp-seller/WA-LINK-02.md",
+    ".qa/tests/whatsapp-seller/WA-LINK-03.md",
+    ".qa/tests/whatsapp-seller/WA-LINK-04.md",
+    ".qa/tests/whatsapp-seller/WA-LINK-05.md",
+    ".qa/tests/whatsapp-seller/WA-MAN-01.md",
+    ".qa/tests/whatsapp-seller/WA-MSG-01.md",
+    ".qa/tests/whatsapp-seller/WA-MSG-02.md",
+    ".qa/e2e/specs/whatsapp-seller.md",
+    ".qa/e2e/tests/whatsapp-seller/card-message-format-www.spec.ts",
+    ".qa/e2e/tests/whatsapp-seller/card-message-from-vercel.spec.ts",
+    ".qa/e2e/tests/whatsapp-seller/discrete-listing-no-whatsapp.spec.ts",
+    ".qa/e2e/tests/whatsapp-seller/short-link-server-redirect-and-preview.spec.ts",
+    ".qa/e2e/tests/whatsapp-seller/short-link-with-service-worker.spec.ts",
+    ".qa/e2e/tests/whatsapp-seller/short-link-without-service-worker.spec.ts",
+    ".qa/e2e/tests/whatsapp-seller/whatsapp.helpers.ts"
+   ],
+   "at": "2026-10-28"
+  },
+  {
+   "hash": "#e8bbad",
+   "id": "43fad38331aa1eed54e8bbad",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "whatsapp-seller",
+   "tests": [
+    ".qa/tests/whatsapp-seller/WA-DISC-01.md",
+    ".qa/tests/whatsapp-seller/WA-LINK-01.md",
+    ".qa/tests/whatsapp-seller/WA-LINK-02.md",
+    ".qa/tests/whatsapp-seller/WA-LINK-03.md",
+    ".qa/tests/whatsapp-seller/WA-LINK-04.md",
+    ".qa/tests/whatsapp-seller/WA-LINK-05.md",
+    ".qa/tests/whatsapp-seller/WA-MAN-01.md",
+    ".qa/tests/whatsapp-seller/WA-MSG-01.md",
+    ".qa/tests/whatsapp-seller/WA-MSG-02.md",
+    ".qa/e2e/specs/whatsapp-seller.md",
+    ".qa/e2e/tests/whatsapp-seller/card-message-format-www.spec.ts",
+    ".qa/e2e/tests/whatsapp-seller/card-message-from-vercel.spec.ts",
+    ".qa/e2e/tests/whatsapp-seller/discrete-listing-no-whatsapp.spec.ts",
+    ".qa/e2e/tests/whatsapp-seller/short-link-server-redirect-and-preview.spec.ts",
+    ".qa/e2e/tests/whatsapp-seller/short-link-with-service-worker.spec.ts",
+    ".qa/e2e/tests/whatsapp-seller/short-link-without-service-worker.spec.ts",
+    ".qa/e2e/tests/whatsapp-seller/whatsapp.helpers.ts"
+   ],
+   "at": "2026-10-28"
+  },
+  {
+   "hash": "#565d74",
+   "id": "b85fee764d759eebd8565d74",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "contact-login-return",
+   "tests": [
+    ".qa/tests/contact-login-return/CONTACT-AUTH-06.md",
+    ".qa/tests/contact-login-return/CONTACT-AUTH-07.md",
+    ".qa/e2e/tests/contact-login-return/popup-text-all-entry-points.spec.ts",
+    ".qa/e2e/tests/contact-login-return/popup-continue-without-signup.spec.ts",
+    ".qa/e2e/specs/contact-login-return.md",
+    ".qa/e2e/tests/contact-login-return/contact-draft.helpers.ts"
+   ],
+   "at": "2026-10-28"
+  },
+  {
+   "hash": "#3f0a85",
+   "id": "dda11979612b9a0bce3f0a85",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "contact-login-return",
+   "tests": [
+    ".qa/tests/contact-login-return/CONTACT-AUTH-08.md",
+    ".qa/tests/contact-login-return/CONTACT-AUTH-09.md",
+    ".qa/tests/contact-login-return/CONTACT-AUTH-10.md",
+    ".qa/tests/contact-login-return/CONTACT-AUTH-11.md",
+    ".qa/e2e/tests/contact-login-return/discreet-guest-submit-saves-draft.spec.ts",
+    ".qa/e2e/tests/contact-login-return/discreet-after-login-form-resumes.spec.ts",
+    ".qa/e2e/specs/contact-login-return.md",
+    ".qa/e2e/tests/contact-login-return/contact-draft.helpers.ts"
+   ],
+   "at": "2026-10-28"
+  },
+  {
+   "hash": "#dab8a7",
+   "id": "2c352a6e4ac0b3d7addab8a7",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "listing-page",
+   "tests": [
+    ".qa/tests/listing-page/LISTING-TURNOVER-01.md",
+    ".qa/tests/listing-page/LISTING-TURNOVER-02.md",
+    ".qa/e2e/specs/listing-page.md",
+    ".qa/e2e/tests/listing-page/turnover-icon-shekel.spec.ts"
+   ],
+   "at": "2026-10-28"
+  },
+  {
+   "hash": "#c5ed06",
+   "id": "bbd563c9272714c556c5ed06",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "chat-conversations",
+   "tests": [
+    ".qa/tests/chat-conversations/CHAT-OPEN-05.md",
+    ".qa/tests/chat-conversations/CHAT-OPEN-06.md",
+    ".qa/tests/chat-conversations/CHAT-OPEN-07.md",
+    ".qa/tests/chat-conversations/CHAT-OPEN-03.md",
+    ".qa/e2e/specs/chat-conversations.md",
+    ".qa/e2e/tests/chat-conversations/entry-points-show-list-mobile.spec.ts",
+    ".qa/e2e/tests/chat-conversations/menu-below-list-mobile.spec.ts",
+    ".qa/e2e/tests/chat-conversations/back-to-conversations-mobile.spec.ts"
+   ],
+   "at": "2026-10-28"
+  },
+  {
+   "hash": "#a88c1c",
+   "id": "07cf39ced70a5a4c02a88c1c",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "contact-login-return",
+   "tests": [
+    ".qa/tests/contact-login-return/CONTACT-AUTH-12.md",
+    ".qa/tests/contact-login-return/CONTACT-AUTH-13.md",
+    ".qa/tests/contact-login-return/CONTACT-AUTH-14.md",
+    ".qa/tests/contact-login-return/CONTACT-AUTH-15.md",
+    ".qa/tests/contact-login-return/CONTACT-AUTH-16.md",
+    ".qa/e2e/specs/contact-login-return.md",
+    ".qa/e2e/tests/contact-login-return/contact-popup.helpers.ts",
+    ".qa/e2e/tests/contact-login-return/abandon-auth-clears-return.spec.ts",
+    ".qa/e2e/tests/contact-login-return/popup-refuse-then-plain-auth.spec.ts",
+    ".qa/e2e/tests/contact-login-return/auth-internal-steps-keep-return.spec.ts"
+   ],
+   "at": "2026-10-28"
+  },
+  {
+   "hash": "#cada05",
+   "id": "b9d6bf02eb602f7857cada05",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "seo-technical",
+   "tests": [
+    ".qa/tests/seo-technical/SEO-OG-02.md",
+    ".qa/e2e/specs/seo-technical.md",
+    ".qa/e2e/tests/seo-technical/listing-og-image-weight.spec.ts"
+   ],
+   "date": "2026-10-28"
+  },
+  {
+   "hash": "#02706d",
+   "id": "bae71c1e2a36472e5602706d",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "recommendations-similar-businesses",
+   "tests": [
+    ".qa/tests/recommendations-similar-businesses/SIMILAR-01.md",
+    ".qa/tests/recommendations-similar-businesses/SIMILAR-02.md",
+    ".qa/tests/recommendations-similar-businesses/SIMILAR-03.md",
+    ".qa/tests/recommendations-similar-businesses/SIMILAR-04.md",
+    ".qa/tests/recommendations-similar-businesses/SIMILAR-05.md",
+    ".qa/e2e/specs/recommendations-similar-businesses.md",
+    ".qa/e2e/tests/recommendations-similar-businesses/similar.helpers.ts",
+    ".qa/e2e/tests/recommendations-similar-businesses/guest-history-order.spec.ts",
+    ".qa/e2e/tests/recommendations-similar-businesses/guest-equals-user.spec.ts",
+    ".qa/e2e/tests/recommendations-similar-businesses/block-on-long-and-short-listing.spec.ts"
+   ],
+   "date": "2026-10-28"
+  },
+  {
+   "hash": "#c18c9e",
+   "id": "52dfe7bfd81af6023ec18c9e",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "addbusiness-photos-step",
+   "tests": [
+    ".qa/tests/addbusiness-photos-step/",
+    ".qa/e2e/specs/addbusiness-photos-step.md",
+    ".qa/e2e/tests/addbusiness-photos-step/"
+   ],
+   "date": "2026-10-28"
+  },
+  {
+   "hash": "#357a06",
+   "id": "05619a5f082620983d357a06",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "edit-listing-save-changes",
+   "tests": [
+    ".qa/tests/edit-listing-save-changes/",
+    ".qa/e2e/specs/edit-listing-save-changes.md",
+    ".qa/e2e/tests/edit-listing-save-changes/"
+   ],
+   "note": "2 @prod-safe теста; 6 тестов редактирования — skip без QA_EDIT_LISTING_ID (своих объявлений на проде нет)",
+   "date": "2026-10-28"
+  },
+  {
+   "hash": "#3bb8cb",
+   "id": "14e241af1a2073c1ba3bb8cb",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "edit-listing-save-changes",
+   "tests": [
+    ".qa/tests/edit-listing-save-changes/",
+    ".qa/e2e/specs/edit-listing-save-changes.md",
+    ".qa/e2e/tests/edit-listing-save-changes/save-toast.spec.ts"
+   ],
+   "note": "группа 3 плана; skip без QA_EDIT_LISTING_ID",
+   "date": "2026-10-29"
+  },
+  {
+   "hash": "#775eeb",
+   "id": "0c1d01a917fc0f1cd7775eeb",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "edit-listing-save-changes",
+   "tests": [
+    ".qa/tests/edit-listing-save-changes/",
+    ".qa/e2e/specs/edit-listing-save-changes.md",
+    ".qa/e2e/tests/edit-listing-save-changes/save-toast.spec.ts"
+   ],
+   "note": "группа 3 плана; skip без QA_EDIT_LISTING_ID",
+   "date": "2026-10-29"
+  },
+  {
+   "hash": "#c5d7e2",
+   "id": "71c8a66b6c80655e44c5d7e2",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "listing-share-short-link",
+   "tests": [
+    ".qa/tests/listing-share-short-link/",
+    ".qa/e2e/specs/listing-share-short-link.md"
+   ],
+   "note": "план готов, spec-файлы не сгенерированы (генератор ждёт фикса .mcp.json)",
+   "date": "2026-11-01"
+  },
+  {
+   "hash": "#def18b",
+   "id": "591ca279a0b22598c6def18b",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "addbusiness-photos-step",
+   "tests": [
+    ".qa/tests/addbusiness-photos-step/",
+    ".qa/e2e/specs/addbusiness-photos-step.md",
+    ".qa/e2e/tests/addbusiness-photos-step/ai-block-order-no-templates.spec.ts",
+    ".qa/e2e/tests/addbusiness-photos-step/ai-image-gallery-toggle.spec.ts"
+   ],
+   "note": "написаны вручную, не запускались; @data, skip без QA_REAL_WRITE=1; GenerateImage мокается",
+   "date": "2026-11-01"
+  },
+  {
+   "hash": "#3e4835",
+   "id": "5ce4bd8f96eb2ba60d3e4835",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "calculator",
+   "tests": [
+    ".qa/tests/calculator/",
+    ".qa/e2e/specs/calculator.md",
+    ".qa/e2e/tests/calculator/"
+   ],
+   "note": "24 теста (desktop+android), @prod-safe, не запускались",
+   "date": "2026-11-01"
+  },
+  {
+   "hash": "#80ff63",
+   "id": "1539d318bdaad24b2b80ff63",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "calculator",
+   "tests": [
+    ".qa/tests/calculator/",
+    ".qa/e2e/specs/calculator.md",
+    ".qa/e2e/tests/calculator/"
+   ],
+   "note": "24 теста (desktop+android), @prod-safe, не запускались",
+   "date": "2026-11-01"
+  },
+  {
+   "hash": "#22ce3e",
+   "id": "2c0b8f0cbc8deaec4322ce3e",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "calculator",
+   "tests": [
+    ".qa/tests/calculator/",
+    ".qa/e2e/specs/calculator.md",
+    ".qa/e2e/tests/calculator/"
+   ],
+   "note": "24 теста (desktop+android), @prod-safe, не запускались",
+   "date": "2026-11-01"
+  },
+  {
+   "hash": "#d4f37b",
+   "id": "95aebb6cf15ae359dcd4f37b",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "calculator",
+   "tests": [
+    ".qa/tests/calculator/",
+    ".qa/e2e/specs/calculator.md",
+    ".qa/e2e/tests/calculator/"
+   ],
+   "note": "24 теста (desktop+android), @prod-safe, не запускались",
+   "date": "2026-11-01"
+  },
+  {
+   "hash": "#d45b2a",
+   "id": "e495f80f3ef3c7ab14d45b2a",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "calculator",
+   "tests": [
+    ".qa/tests/calculator/",
+    ".qa/e2e/specs/calculator.md",
+    ".qa/e2e/tests/calculator/"
+   ],
+   "note": "--grep #d45b2a; огромные числа не тестируются (решение пользователя); не запускались",
+   "date": "2026-11-01"
+  },
+  {
+   "hash": "#be4863",
+   "id": "1447555772487d67b0be4863",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "ssr-infra",
+   "tests": [
+    ".qa/tests/ssr-infra/",
+    ".qa/e2e/specs/ssr-infra.md",
+    ".qa/e2e/tests/ssr-infra/"
+   ],
+   "note": "desktop, prod-safe, не запускались",
+   "date": "2026-11-01"
+  },
+  {
+   "hash": "#b3dc2e",
+   "id": "f127a4ef7e9bffaf05b3dc2e",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "ssr-seo-public",
+   "tests": [
+    ".qa/tests/ssr-seo-public/",
+    ".qa/e2e/specs/ssr-seo-public.md",
+    ".qa/e2e/tests/ssr-seo-public/"
+   ],
+   "note": "15 тестов desktop prod-safe, не запускались",
+   "date": "2026-11-01"
+  },
+  {
+   "hash": "#b489db",
+   "id": "a1c3180cdc61dc98ffb489db",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "ssr-seo-public",
+   "tests": [
+    ".qa/tests/ssr-seo-public/",
+    ".qa/e2e/specs/ssr-seo-public.md",
+    ".qa/e2e/tests/ssr-seo-public/"
+   ],
+   "note": "15 тестов desktop prod-safe, не запускались",
+   "date": "2026-11-01"
+  },
+  {
+   "hash": "#d777c9",
+   "id": "d2ce2ee72f5202a0d6d777c9",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "seo-robots-sitemap",
+   "tests": [
+    ".qa/tests/seo-robots-sitemap/",
+    ".qa/e2e/specs/seo-robots-sitemap.md",
+    ".qa/e2e/tests/seo-robots-sitemap/"
+   ],
+   "note": "7 тестов desktop prod-safe (только GET; 1 браузерный с блокировкой не-GET), --grep #d777c9; не запускались. Обновлены ссылки в SSR-INFRA-02/03, SSR-07, GEO-REG-01, specs/ssr-infra.md",
+   "date": "2026-11-02"
+  },
+  {
+   "hash": "#b4b8c9",
+   "id": "2e270c0edceb06c1b4b4b8c9",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "search-filters",
+   "tests": [
+    ".qa/tests/search-filters/",
+    ".qa/e2e/specs/search-filters.md",
+    ".qa/e2e/tests/search-filters/"
+   ],
+   "note": "33 теста (desktop + android), @prod-safe, только чтение; --grep #b4b8c9; не запускались. Уведомления сохранённых поисков (>10M) не автоматизированы — по времени",
+   "date": "2026-11-02"
+  },
+  {
+   "hash": "#8bea2a",
+   "id": "a90dc64cbeed79b1648bea2a",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "addbusiness-step5-invoice-name",
+   "tests": [
+    ".qa/tests/addbusiness-step5-invoice-name/",
+    ".qa/e2e/specs/addbusiness-step5-invoice-name.md",
+    ".qa/e2e/tests/addbusiness-step5-invoice-name/"
+   ],
+   "note": "10 тестов (desktop + android), написаны вручную, не запускались; @data, skip без QA_REAL_WRITE=1; черновик удаляется в afterEach; POST /api/payments всегда перехватывается и обрывается. Имя в счёте Morning — только вручную (оплата); подпись поля изменена #2e5dd0 (2026-11-04) → «שם לחשבונית», тесты 1.1–1.2 обновлены",
+   "date": "2026-11-02"
+  },
+  {
+   "hash": "#8790d6",
+   "id": "656a9fa01aed315f008790d6",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "guides-videos",
+   "tests": [
+    ".qa/tests/guides-videos/",
+    ".qa/e2e/specs/guides-videos.md",
+    ".qa/e2e/tests/guides-videos/guides-cards.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-no-autoplay.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-play.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-play-iphone.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-audio-decoded.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-files.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides.helpers.ts"
+   ],
+   "note": "GUIDES-01…07; автотесты 1.1–1.6 (карточки, нет автозапуска, play/muted, звук декодируется, mp4 200/206, длительность ±3, дорожка soun/mp4a), @prod-safe, desktop + iphone; 1.1–1.6 записаны вручную (запасной путь: генератор — «seed test not found»), десктоп-запуск видео — фокус + «Пробел»; не запускались. Ручные: старт с главной (GUIDES-06), речь = субтитры (GUIDES-07)",
+   "date": "2026-11-03"
+  },
+  {
+   "hash": "#d012a3",
+   "id": "f73b4e12e49832bcfad012a3",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "guides-videos",
+   "tests": [
+    ".qa/tests/guides-videos/",
+    ".qa/e2e/specs/guides-videos.md",
+    ".qa/e2e/tests/guides-videos/guides-cards.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-files.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides.helpers.ts"
+   ],
+   "note": "GUIDES-01 (описание и шаги карточки signup), GUIDES-04 (signup.mp4); --grep #d012a3; не запускались. Ручной: экраны SMS-кода ~0:51 и Google ~0:21, нет сценария почта/пароль (GUIDES-08)",
+   "date": "2026-11-03"
+  },
+  {
+   "hash": "#92bc03",
+   "id": "acaa96b27d312e566792bc03",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "guides-videos",
+   "tests": [
+    ".qa/tests/guides-videos/",
+    ".qa/e2e/specs/guides-videos.md",
+    ".qa/e2e/tests/guides-videos/guides-cards.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-files.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides.helpers.ts"
+   ],
+   "note": "GUIDES-01 (шаг «סוג מכירה: פרטי / תיווך»), GUIDES-04 (search.mp4); --grep #92bc03; не запускались. Ручной: «סוג מכירה» раскрыт ~0:42, выбор תיווך (GUIDES-09)",
+   "date": "2026-11-03"
+  },
+  {
+   "hash": "#2e5dd0",
+   "id": "b801092050a454ae3f2e5dd0",
+   "class": "automatable",
+   "source": "backfill",
+   "feature": "addbusiness-step5-invoice-name",
+   "tests": [
+    ".qa/tests/addbusiness-step5-invoice-name/ADDBIZ-INV-01.md",
+    ".qa/tests/addbusiness-step5-invoice-name/ADDBIZ-INV-06.md",
+    ".qa/e2e/specs/addbusiness-step5-invoice-name.md",
+    ".qa/e2e/tests/addbusiness-step5-invoice-name/field-visibility-by-package.spec.ts",
+    ".qa/e2e/tests/addbusiness-step5-invoice-name/label-text-bundle.spec.ts",
+    ".qa/e2e/tests/addbusiness-step5-invoice-name/invoice-name.helpers.ts"
+   ],
+   "reason": "меняет подпись поля из #8bea2a («שם לחשבונית מס (לא חובה)» → «שם לחשבונית»): обновлён существующий тест (expectFieldShown, 1.1–1.2, @data) + новый 4.1 @prod-safe по коду релиза. Сверено по бандлу прода (index-C2E9SDjL.js), живой шаг 5 не открывался (нужен черновик). Не запускались",
+   "date": "2026-11-04"
+  },
+  {
+   "hash": "#da55b1",
+   "id": "1ae7453d0cdb56112fda55b1",
+   "class": "automatable",
+   "source": "backfill",
+   "feature": "buyer-request-guest",
+   "tests": [
+    ".qa/tests/buyer-request-guest/",
+    ".qa/e2e/specs/buyer-request-guest.md",
+    ".qa/e2e/tests/buyer-request-guest/guest-form-open.spec.ts",
+    ".qa/e2e/tests/buyer-request-guest/guest-submit-mocked.spec.ts",
+    ".qa/e2e/tests/buyer-request-guest/buyer-request-guest.helpers.ts"
+   ],
+   "reason": "гость: форма /postbuyerrequest без входа, валидация, отправка с подменённым ответом POST rest/v1/demanded_business (тело: e-mail владельца null, status פעיל; успех → /buyerlistings), 403 → «שגיאה בפרסום הבקשה». 7 тестов desktop+android, @prod-safe, не запускались. Сверено гостем 04.11 (desktop + Pixel 7, ответ подменён). Только вручную: реальная публикация гостем (создаёт данные), запрет правки чужих заявок",
+   "date": "2026-11-04"
+  },
+  {
+   "hash": "#72d304",
+   "id": "34a15577ca05c117e172d304",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "guides-videos",
+   "tests": [
+    ".qa/tests/guides-videos/GUIDES-10.md",
+    ".qa/tests/guides-videos/GUIDES-13.md",
+    ".qa/e2e/specs/guides-videos.md",
+    ".qa/e2e/tests/guides-videos/guides-video-versions.spec.ts"
+   ],
+   "note": "содержимое area.mp4 («סוג חשבון: מוכר») — ручной GUIDES-10; автотест — версия файла (etag d17e52b3…, 5 057 406 Б). @prod-safe, не запускались",
+   "date": "2026-11-04"
+  },
+  {
+   "hash": "#66ad36",
+   "id": "a2ffbf37d28b74c49166ad36",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "guides-videos",
+   "tests": [
+    ".qa/tests/guides-videos/GUIDES-01.md",
+    ".qa/tests/guides-videos/GUIDES-10.md",
+    ".qa/tests/guides-videos/GUIDES-13.md",
+    ".qa/e2e/specs/guides-videos.md",
+    ".qa/e2e/tests/guides-videos/guides-cards.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-files.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-video-versions.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides.helpers.ts"
+   ],
+   "note": "карточка area 6 шагов (מועדפים ושיחות, הוספה למסך הבית) + описание — автотест; שיחות/«הוספה למסך הבית» в видео — ручной GUIDES-10. @prod-safe, не запускались",
+   "date": "2026-11-04"
+  },
+  {
+   "hash": "#94553b",
+   "id": "ba8241eda3ed28a7b694553b",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "guides-videos",
+   "tests": [
+    ".qa/tests/guides-videos/GUIDES-01.md",
+    ".qa/tests/guides-videos/GUIDES-06.md",
+    ".qa/tests/guides-videos/GUIDES-13.md",
+    ".qa/e2e/specs/guides-videos.md",
+    ".qa/e2e/tests/guides-videos/guides-cards.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-files.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-video-versions.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides.helpers.ts"
+   ],
+   "note": "карточка home 6 шагов (האזור האישי) + описание — автотест; путь вход → меню → המודעות שלי → אזור אישי — ручной GUIDES-06. @prod-safe, не запускались",
+   "date": "2026-11-04"
+  },
+  {
+   "hash": "#d152dd",
+   "id": "3f3c6d037a48c59bddd152dd",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "guides-videos",
+   "tests": [
+    ".qa/tests/guides-videos/GUIDES-01.md",
+    ".qa/tests/guides-videos/GUIDES-11.md",
+    ".qa/tests/guides-videos/GUIDES-13.md",
+    ".qa/e2e/specs/guides-videos.md",
+    ".qa/e2e/tests/guides-videos/guides-cards.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-files.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-video-versions.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides.helpers.ts"
+   ],
+   "note": "карточка search (шаг «חפש עסק»: חיפוש וסינון מכל מקום בעמוד) + описание — автотест; нажатие «חפש עסק» → «חיפוש וסינון» в видео — ручной GUIDES-11; удаление демо-объявления (админка) — только вручную. @prod-safe, не запускались",
+   "date": "2026-11-04"
+  },
+  {
+   "hash": "#dc52b7",
+   "id": "11a1168d23a3d550fddc52b7",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "guides-videos",
+   "tests": [
+    ".qa/tests/guides-videos/GUIDES-12.md",
+    ".qa/tests/guides-videos/GUIDES-13.md",
+    ".qa/e2e/specs/guides-videos.md",
+    ".qa/e2e/tests/guides-videos/guides-subtitles-above-controls.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-video-versions.spec.ts"
+   ],
+   "note": "геометрия: плеер 260×563, низ плашки ≤490 (≈483), зазор до значков пульта ≥15 (принято 25); 5 видео × desktop 1440 + android 375. @prod-safe, не запускались",
+   "date": "2026-11-04"
+  },
+  {
+   "hash": "#aeae17",
+   "id": "e8c87d592f73984503aeae17",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "calculator",
+   "tests": [
+    ".qa/tests/calculator/CALC-SCREEN-01.md",
+    ".qa/tests/calculator/CALC-SCREEN-05.md",
+    ".qa/e2e/specs/calculator.md",
+    ".qa/e2e/tests/calculator/nav-calculator-label.spec.ts",
+    ".qa/e2e/tests/calculator/entry-links.spec.ts"
+   ],
+   "note": "тикет 78; меню (4-й пункт, @mobile) и шапка (@desktop) на /, /search, /calculator → /calculator, старого «מחשבון כדאיות» нет, футер «מחשבון רכישת עסק», H1 без изменений; entry-links.spec.ts (#3e4835) обновлён на новые подписи. @prod-safe, не запускались",
+   "date": "2026-11-04"
+  },
+  {
+   "hash": "#2f6eef",
+   "id": "ab3cc1815cae7059a22f6eef",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "nav-menu-a11y",
+   "tests": [
+    ".qa/tests/nav-menu-a11y/NAV-A11Y-01.md",
+    ".qa/tests/nav-menu-a11y/NAV-A11Y-02.md",
+    ".qa/e2e/specs/nav-menu-a11y.md",
+    ".qa/e2e/tests/nav-menu-a11y/menu-button-accessible-name.spec.ts",
+    ".qa/e2e/tests/html-rtl-dir/rtl-dir.helpers.ts",
+    ".qa/e2e/tests/calculator/nav-calculator-label.spec.ts"
+   ],
+   "note": "тикет 82, PR #198; кнопка ☰ в banner — имя «תפריט» (exact; есть «פתח תפריט נגישות»), svg aria-hidden, aria-expanded false→true, dialog «תפריט» на /, /search, категории, businessdetail, /calculator, /guides (@mobile); nav-calculator-label: локатор на exact-имя, комментарий обновлён. @prod-safe, не запускались",
+   "date": "2026-11-05"
+  },
+  {
+   "hash": "#9c4736",
+   "id": "c77217838b5ea88b569c4736",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "html-rtl-dir",
+   "tests": [
+    ".qa/tests/html-rtl-dir/RTL-DIR-01.md",
+    ".qa/tests/html-rtl-dir/RTL-DIR-02.md",
+    ".qa/tests/html-rtl-dir/RTL-DIR-03.md",
+    ".qa/tests/html-rtl-dir/RTL-DIR-04.md",
+    ".qa/tests/html-rtl-dir/RTL-DIR-05.md",
+    ".qa/e2e/specs/html-rtl-dir.md",
+    ".qa/e2e/tests/html-rtl-dir/rtl-dir.helpers.ts",
+    ".qa/e2e/tests/html-rtl-dir/dom-dir-rtl.spec.ts",
+    ".qa/e2e/tests/html-rtl-dir/dom-dir-rtl-addbusiness-user.spec.ts",
+    ".qa/e2e/tests/html-rtl-dir/ssr-html-dir-rtl.spec.ts",
+    ".qa/e2e/tests/html-rtl-dir/spa-navigation-keeps-rtl.spec.ts",
+    ".qa/e2e/tests/html-rtl-dir/no-horizontal-scroll.spec.ts",
+    ".qa/e2e/tests/html-rtl-dir/price-slider-rtl.spec.ts"
+   ],
+   "note": "тикет 81, PR #198; живой DOM dir=rtl/lang=he + body rtl на 8 гостевых страницах + /addbusiness (user, только шаг 1), сырой SSR-HTML обычный UA и Googlebot (9 адресов), SPA-навигация — @desktop; нет горизонтальной прокрутки — @mobile и @desktop; слайдер цены Min справа/Max слева — @desktop. Вручную только: мобильное меню/toast/стрелки/LTR-поля (С4–С9). @prod-safe, не запускались",
+   "date": "2026-11-05"
+  },
+  {
+   "hash": "#04a6d8",
+   "id": "d943ec4bbaa11306b204a6d8",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "guides-videos",
+   "tests": [
+    ".qa/tests/guides-videos/GUIDES-21.md",
+    ".qa/tests/guides-videos/GUIDES-12.md",
+    ".qa/tests/guides-videos/GUIDES-13.md",
+    ".qa/tests/guides-videos/GUIDES-17.md",
+    ".qa/tests/guides-videos/GUIDES-18.md",
+    ".qa/tests/guides-videos/GUIDES-20.md",
+    ".qa/e2e/specs/guides-videos.md",
+    ".qa/e2e/tests/guides-videos/guides-video-versions.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-subtitles-sync-screen.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-subtitles-above-controls.spec.ts"
+   ],
+   "note": "тикет 83, publish.mp4 PR #199 (etag 0203f8f1…, 3 709 295 Б, 126,37 с): эталон в guides-video-versions; таймкоды publish в sync-screen (переходы/конец) и above-controls (13/70/74/124) сняты заново по кадрам 30 fps; видимость полей/кнопок в 6 моментах — ручной GUIDES-21; синхрон голос↔субтитр 16 фраз ≤0,17 с — ручной GUIDES-20. @prod-safe, не запускались",
+   "date": "2026-11-05"
+  },
+  {
+   "hash": "#631293",
+   "id": "6f73d6252ddf5165bb631293",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "pwa-install-prompt",
+   "tests": [
+    ".qa/tests/pwa-install-prompt/PWA-01.md",
+    ".qa/tests/pwa-install-prompt/PWA-02.md",
+    ".qa/tests/pwa-install-prompt/PWA-03.md",
+    ".qa/tests/pwa-install-prompt/PWA-04.md",
+    ".qa/tests/pwa-install-prompt/PWA-05.md",
+    ".qa/e2e/specs/pwa-install-prompt.md",
+    ".qa/e2e/tests/pwa-install-prompt/guides-no-prompt-while-playing.spec.ts",
+    ".qa/e2e/tests/pwa-install-prompt/later-snooze.spec.ts",
+    ".qa/e2e/tests/pwa-install-prompt/user-menu-opens-prompt.spec.ts",
+    ".qa/e2e/tests/pwa-install-prompt/pwa.helpers.ts"
+   ],
+   "note": "тикет 84, PR #198: /guides — окна нет при играющем видео + контроль / (окно ~3 с), снуз «אולי מאוחר יותר», user — открытие из «הוספה למסך הבית»; @iphone (WebKit), page.clock вместо 15 с, RPC pwa_app_last_opened не мокается; PWA-05 (SPA /guides→/) — ручной, решение пользователя. @prod-safe, не запускались",
+   "date": "2026-11-05"
+  },
+  {
+   "hash": "#0651d2",
+   "id": "edc2cd4ac077f1ed500651d2",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "nav-menu-a11y",
+   "tests": [
+    ".qa/tests/nav-menu-a11y/NAV-A11Y-03.md",
+    ".qa/tests/nav-menu-a11y/NAV-A11Y-04.md",
+    ".qa/tests/nav-menu-a11y/NAV-A11Y-05.md",
+    ".qa/tests/nav-menu-a11y/NAV-A11Y-06.md",
+    ".qa/e2e/specs/nav-menu-a11y.md",
+    ".qa/e2e/tests/nav-menu-a11y/floating.helpers.ts",
+    ".qa/e2e/tests/nav-menu-a11y/floating-buttons-menu-open.spec.ts",
+    ".qa/e2e/tests/nav-menu-a11y/floating-buttons-after-close.spec.ts"
+   ],
+   "note": "тикет 85, PR #200; при открытом мобильном меню плавающие WhatsApp (a[aria-label*=\"שירות הלקוחות\"]) и נגישות скрыты, hit-test левого края и центра «התחברות»/«פרסום עסק למכירה» = сама кнопка (/, /search; 375 и 390); после закрытия (✕, фон, Esc, пункт меню) — видны 44×44, WhatsApp над נגישות, касание доходит; 3 цикла; виджет נגישות открыт → WhatsApp скрыт (регресс #062b41). @mobile @prod-safe, запасной путь, не запускались",
+   "date": "2026-11-05"
+  },
+  {
+   "hash": "#c49537",
+   "id": "c4fae18952a118bd4dc49537",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "businessdetail-gallery",
+   "tests": [
+    ".qa/tests/businessdetail-gallery/GALLERY-01.md",
+    ".qa/tests/businessdetail-gallery/GALLERY-02.md",
+    ".qa/tests/businessdetail-gallery/GALLERY-03.md",
+    ".qa/tests/businessdetail-gallery/GALLERY-04.md",
+    ".qa/tests/businessdetail-gallery/GALLERY-05.md",
+    ".qa/tests/businessdetail-gallery/GALLERY-06.md",
+    ".qa/e2e/specs/businessdetail-gallery.md",
+    ".qa/e2e/tests/businessdetail-gallery/gallery.helpers.ts",
+    ".qa/e2e/tests/businessdetail-gallery/gallery-aspect-ratio.spec.ts"
+   ],
+   "note": "тикет 86; בקשת לקוח, PR #200: галерея /businessdetail — окно по пропорции картинки (inline aspect-ratio, ±2 %), contain без серых полей, ≤70vh; תפאורות 504×630 / 343×429, מינימרקט 630×630 / 343×343, משתלה 4 картинки — высота меняется; видео — прежняя широкая рамка; регресс #154394 scrollY 0/320. desktop + iphone, @prod-safe. GALLERY-06 (карточки) — ссылка на CARDIMG-01…06. Не запускались (--list: 9 тестов businessdetail-gallery)",
+   "date": "2026-11-05"
+  },
+  {
+   "hash": "#a6abaf",
+   "id": "135b2d690294f1da13a6abaf",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "businessdetail-gallery",
+   "tests": [
+    ".qa/tests/businessdetail-gallery/GALLERY-07.md",
+    ".qa/tests/businessdetail-gallery/GALLERY-08.md",
+    ".qa/tests/businessdetail-gallery/GALLERY-09.md",
+    ".qa/tests/businessdetail-gallery/GALLERY-10.md",
+    ".qa/e2e/specs/businessdetail-gallery.md",
+    ".qa/e2e/tests/businessdetail-gallery/gallery.helpers.ts",
+    ".qa/e2e/tests/businessdetail-gallery/gallery-no-gray-on-switch.spec.ts"
+   ],
+   "note": "тикет 87, баг, PR #201: листание галереи без серой зоны (старая держится до загрузки новой, соседи предзагружаются). Хелперы обновлены под новую вёрстку (img без .biz-gallery-media); PWA-окно снузится addInitScript. Прогоны tests+iphone: 19/19 ×3. Видео→картинка не проверяется (решение пользователя). Android/все 4 проекта не прогонялись.",
+   "date": "2026-11-05"
+  },
+  {
+   "hash": "#6dd27f",
+   "id": "6405b109587ef685336dd27f",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "admin-mobile",
+   "tests": [
+    ".qa/tests/admin-mobile/ADMIN-MOB-01.md",
+    ".qa/e2e/specs/admin-mobile.md",
+    ".qa/e2e/tests/admin-mobile/admin-entry-no-white-screen.spec.ts"
+   ],
+   "note": "тикет 89, בקשת לקוח, баг, PR #203: белый экран /admin на мобильном (пагинация «ניהול משתמשים» растягивала страницу до 1156px, scrollX −743). Кейс/автотест — только симптом (урок L-20261110-1): меню → «מסוף ניהול» → заголовок «ניהול - פאנל מנהל» до 15 с, scrollWidth ≤ innerWidth, scrollX = 0. @mobile @prod-safe. Ручная проверка: Pixel 6 — 411 = 411. Один прогон 10.11: android ✓; iphone — тело теста прошло (скрин: панель по ширине), упал на закрытии контекста ENOENT trace-файла (окружение), не перезапускался.",
+   "date": "2026-11-10"
+  },
+  {
+   "hash": "#d31f3b",
+   "id": "86241f87e16a27315ad31f3b",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "businessdetail-gallery",
+   "tests": [
+    ".qa/tests/businessdetail-gallery/GALLERY-01.md",
+    ".qa/tests/businessdetail-gallery/GALLERY-02.md",
+    ".qa/tests/businessdetail-gallery/GALLERY-03.md",
+    ".qa/tests/businessdetail-gallery/GALLERY-04.md",
+    ".qa/tests/businessdetail-gallery/GALLERY-05.md",
+    ".qa/tests/businessdetail-gallery/GALLERY-11.md",
+    ".qa/tests/businessdetail-gallery/GALLERY-12.md",
+    ".qa/tests/businessdetail-gallery/GALLERY-13.md",
+    ".qa/tests/businessdetail-gallery/GALLERY-14.md",
+    ".qa/tests/businessdetail-gallery/GALLERY-15.md",
+    ".qa/tests/businessdetail-gallery/GALLERY-16.md",
+    ".qa/e2e/specs/businessdetail-gallery.md",
+    ".qa/e2e/tests/businessdetail-gallery/gallery.helpers.ts",
+    ".qa/e2e/tests/businessdetail-gallery/gallery-aspect-ratio.spec.ts",
+    ".qa/e2e/tests/businessdetail-gallery/gallery-lightbox.spec.ts",
+    ".qa/e2e/tests/businessdetail-gallery/gallery-no-gray-on-switch.spec.ts"
+   ],
+   "note": "тикет 90, בקשת לקוח, PR #204 (заменяет #c49537): окно галереи фиксированное aspect-video max-h 400 (десктоп 800×400, телефон 16:9), img cover 50% 50%; лайтбокс role=dialog на чёрном, contain, стрелки по кругу (RTL), счётчик N/M, X, Esc, свайп (android, CDP), видео не в лайтбоксе (df45628f: 1/1 без стрелок), после закрытия — последняя просмотренная. GALLERY-01…05 переписаны (contain/пропорция → cover/фиксированное окно), 11–16 новые; хелперы: settledImage без ratio, expectCovered/expectFixedFrame вместо expectFitted, блок лайтбокса. Проекты tests+iphone+android; прогон tests/businessdetail-gallery (tests+iphone+android, 4 workers, retries 0) 2026-11-10: 37/37. Cookie-баннер теперь снимается заранее (cookie-consent-v2 в addInitScript) — на WebKit под нагрузкой клик обработчика зависал.",
+   "date": "2026-11-10"
+  },
+  {
+   "hash": "#359741",
+   "id": "c43ef60c039b7f9958359741",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "guides-videos",
+   "tests": [
+    ".qa/tests/guides-videos/GUIDES-01.md",
+    ".qa/tests/guides-videos/GUIDES-02.md",
+    ".qa/tests/guides-videos/GUIDES-03.md",
+    ".qa/tests/guides-videos/GUIDES-04.md",
+    ".qa/tests/guides-videos/GUIDES-05.md",
+    ".qa/tests/guides-videos/GUIDES-06.md",
+    ".qa/tests/guides-videos/GUIDES-07.md",
+    ".qa/tests/guides-videos/GUIDES-08.md",
+    ".qa/tests/guides-videos/GUIDES-09.md",
+    ".qa/tests/guides-videos/GUIDES-10.md",
+    ".qa/tests/guides-videos/GUIDES-11.md",
+    ".qa/tests/guides-videos/GUIDES-12.md",
+    ".qa/tests/guides-videos/GUIDES-13.md",
+    ".qa/tests/guides-videos/GUIDES-14.md",
+    ".qa/tests/guides-videos/GUIDES-15.md",
+    ".qa/tests/guides-videos/GUIDES-16.md",
+    ".qa/tests/guides-videos/GUIDES-17.md",
+    ".qa/tests/guides-videos/GUIDES-18.md",
+    ".qa/tests/guides-videos/GUIDES-19.md",
+    ".qa/tests/guides-videos/GUIDES-20.md",
+    ".qa/tests/guides-videos/GUIDES-21.md",
+    ".qa/tests/guides-videos/GUIDES-22.md",
+    ".qa/tests/guides-videos/GUIDES-23.md",
+    ".qa/tests/guides-videos/GUIDES-24.md",
+    ".qa/tests/guides-videos/GUIDES-25.md",
+    ".qa/tests/pwa-install-prompt/PWA-01.md",
+    ".qa/tests/pwa-install-prompt/PWA-04.md",
+    ".qa/tests/pwa-install-prompt/PWA-05.md",
+    ".qa/tests/calculator/CALC-SCREEN-05.md",
+    ".qa/tests/nav-menu-a11y/NAV-A11Y-01.md",
+    ".qa/tests/html-rtl-dir/RTL-DIR-01.md",
+    ".qa/tests/html-rtl-dir/RTL-DIR-04.md",
+    ".qa/tests/seo-robots-sitemap/ROBOTS-03.md",
+    ".qa/e2e/specs/guides-videos.md",
+    ".qa/e2e/specs/pwa-install-prompt.md",
+    ".qa/e2e/specs/calculator.md",
+    ".qa/e2e/specs/nav-menu-a11y.md",
+    ".qa/e2e/specs/html-rtl-dir.md",
+    ".qa/e2e/specs/seo-robots-sitemap.md",
+    ".qa/e2e/tests/guides-videos/guides-hidden-guest.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-hidden-user.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-admin-access.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides.helpers.ts",
+    ".qa/e2e/tests/guides-videos/guides-cards.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-no-autoplay.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-play.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-play-iphone.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-audio-decoded.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-subtitles-above-controls.spec.ts",
+    ".qa/e2e/tests/guides-videos/guides-subtitles-sync-screen.spec.ts",
+    ".qa/e2e/tests/pwa-install-prompt/guides-no-prompt-while-playing.spec.ts",
+    ".qa/e2e/tests/html-rtl-dir/rtl-dir.helpers.ts",
+    ".qa/e2e/tests/html-rtl-dir/dom-dir-rtl.spec.ts",
+    ".qa/e2e/tests/html-rtl-dir/no-horizontal-scroll.spec.ts",
+    ".qa/e2e/tests/html-rtl-dir/ssr-html-dir-rtl.spec.ts",
+    ".qa/e2e/tests/nav-menu-a11y/menu-button-accessible-name.spec.ts",
+    ".qa/e2e/tests/calculator/nav-calculator-label.spec.ts",
+    ".qa/e2e/tests/seo-robots-sitemap/robots-txt.spec.ts"
+   ],
+   "note": "тикет 88, בקשת לקוח, PR #203: гайды скрыты от всех, кроме админа. Новые кейсы GUIDES-22..25 и тесты guides-hidden-guest/user, guides-admin-access (@desktop/@mobile @prod-safe). Гостевые тесты /guides (GUIDES-01..21, PWA-01, RTL /guides) переведены на admin.json; nav-menu-a11y без /guides; CALC-SCREEN-05 — порядок без «מדריכים»; ROBOTS-03 — Disallow: /guides и нет в sitemap. mp4 /guides/* не утверждаются (кроме прежних guides-files). PWA-05 неприменим, пока гайды скрыты.",
+   "date": "2026-11-10"
+  },
+  {
+   "hash": "#75ae6c",
+   "id": "91f8eccce4a363129d75ae6c",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "addbusiness-overseas-location",
+   "tests": [
+    ".qa/tests/addbusiness-overseas-location/ADDBIZ-ABROAD-01.md",
+    ".qa/tests/addbusiness-overseas-location/ADDBIZ-ABROAD-02.md",
+    ".qa/tests/addbusiness-overseas-location/ADDBIZ-ABROAD-03.md",
+    ".qa/tests/addbusiness-overseas-location/ADDBIZ-ABROAD-04.md",
+    ".qa/tests/addbusiness-overseas-location/ADDBIZ-ABROAD-05.md",
+    ".qa/e2e/specs/addbusiness-overseas-location.md",
+    ".qa/e2e/tests/addbusiness-overseas-location/overseas.helpers.ts",
+    ".qa/e2e/tests/addbusiness-overseas-location/overseas-location-field.spec.ts",
+    ".qa/e2e/tests/addbusiness-overseas-location/overseas-location-required.spec.ts"
+   ],
+   "note": "тикет 92, בקשת לקוח: тип «עסקים בחו\"ל» — textarea «מיקום העסק בחו\"ל*» вместо города/адреса/района, обязательно (тост «אנא מלא את כל השדות החובה»), смена типа туда-обратно (текст сохраняется), регресс категории חו\"ל (#9899c0). @desktop @prod-safe, user.json; на шаг 2 не переходит, все не-GET (кроме auth/v1/token) обрываются и проверяются пустыми; локальный черновик biz4sale:addBusinessDraft:* очищается. Прогон 2026-11-12 (retries 0): 4/4. Не покрыто: место в опубликованном объявлении/карточке; баг «черновик теряет post_type/overseas_location_details» (не заведён).",
+   "date": "2026-11-12"
+  },
+  {
+   "hash": "#4f5e3a",
+   "id": "612a1251b2d86e81cb4f5e3a",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "stale-chunk-reload",
+   "tests": [
+    ".qa/tests/stale-chunk-reload/STALE-CHUNK-01.md",
+    ".qa/tests/stale-chunk-reload/STALE-CHUNK-02.md",
+    ".qa/tests/stale-chunk-reload/STALE-CHUNK-03.md",
+    ".qa/e2e/specs/stale-chunk-reload.md",
+    ".qa/e2e/tests/stale-chunk-reload/stale-chunk.helpers.ts",
+    ".qa/e2e/tests/stale-chunk-reload/stale-chunk-auto-reload.spec.ts",
+    ".qa/e2e/tests/stale-chunk-reload/stale-chunk-reload-loop-guard.spec.ts"
+   ],
+   "note": "тикет 91, בקשת לקוח: чанк /assets/Calculator-*.js (хэш не фиксирован) 404 один раз / 200 text/html → «טוענים את הגרסה החדשה של האתר» (MutationObserver → sessionStorage qa:saw-*), без «משהו השתבש», ровно 1 навигация документа, h1 калькулятора; постоянный 404 → 1 перезагрузка, «משהו השתבש» + «טען מחדש», 15 с без навигаций. Гость, serviceWorkers block, @desktop/@android @prod-safe (Chromium; на WebKit skip). Прогон 2026-11-12 (retries 0): 6/6. Не покрыто: реальный деплой, активация нового SW (SKIP_WAITING/update), Android PWA, вариант с SW (~5 с ожидания).",
+   "date": "2026-11-12"
+  },
+  {
+   "hash": "#b93c54",
+   "id": "a5df360439b015d1e6b93c54",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "addbusiness-draft-save",
+   "tests": [
+    ".qa/tests/addbusiness-draft-save/ADDBIZ-DRAFT-03.md",
+    ".qa/tests/addbusiness-draft-save/ADDBIZ-DRAFT-04.md",
+    ".qa/tests/addbusiness-draft-save/ADDBIZ-DRAFT-05.md",
+    ".qa/tests/addbusiness-draft-save/ADDBIZ-DRAFT-06.md",
+    ".qa/e2e/specs/addbusiness-draft-save.md",
+    ".qa/e2e/tests/addbusiness-draft-save/draft-reopen.helpers.ts",
+    ".qa/e2e/tests/addbusiness-draft-save/draft-reopen-fields.spec.ts"
+   ],
+   "note": "тикет 93: черновик хранит post_type и overseas_location_details (meta:business_fields) на сервере. 4 теста @desktop @data (пишут на прод, запуск только с QA_REAL_WRITE=1, без @prod-safe): создание «עסקים בחו\"ל» (POST city/location/address \"\", meta; GET lat/lng null) + повторное открытие ?id= без localStorage; /mybusinesses → עריכה; шаги 2→3→4 (PATCH 200, sale_reason/annual_revenue) + повторное открытие; обычный тип זכיינות/אור יהודה/מרכז. Черновики «QA-TEST QA-AUTO b93c54 …» удаляются в afterEach через корзину (запасной путь — API DELETE) с проверкой GET = пусто; user_activity/Google Places обрываются. Прогон 2026-11-12 (retries 0, workers 1): 4/4, повтор 4/4. test.fixme: шаги 2–4 у повторно открытого черновика — открытый баг #b30e4c. Не покрыто: шаг 4 пакет/оплата, изображения/AI.",
+   "date": "2026-11-12"
+  },
+  {
+   "hash": "#b30e4c",
+   "id": "d78db6f75307da7faab30e4c",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "addbusiness-draft-save",
+   "tests": [
+    ".qa/tests/addbusiness-draft-save/ADDBIZ-DRAFT-07.md",
+    ".qa/tests/addbusiness-draft-save/ADDBIZ-DRAFT-08.md",
+    ".qa/tests/addbusiness-draft-save/ADDBIZ-DRAFT-09.md",
+    ".qa/e2e/specs/addbusiness-draft-save.md",
+    ".qa/e2e/tests/addbusiness-draft-save/draft-reopen.helpers.ts",
+    ".qa/e2e/tests/addbusiness-draft-save/draft-reopen-fields.spec.ts"
+   ],
+   "note": "тикет 94: повторно открытый черновик (עריכה / ?id=) сохраняет шаги на сервере. 3 теста @desktop @data (пишут на прод, только QA_REAL_WRITE=1, --workers 1), заменили test.fixme: עריכה → шаги 2→3→4 PATCH 200 с sale_reason/annual_revenue/annual_profit, GET + status טיוטה + updated_date изменился, UI после свежей загрузки; ?id= → клик по вкладкам 1→2→3 PATCH 200, новое название и מחזור שנתי сохраняются; זכיינות/אור יהודה — post_type, city/address/location не теряются. Черновики «QA-TEST QA-AUTO b30e4c …» удаляются в afterEach (корзина, GET пусто). Прогон 2026-11-12 (retries 0, workers 1): 3/3, повтор всего файла 7/7; итоговый GET QA-AUTO = []. Наблюдение: вкладка назад (2→1) PATCH не шлёт — не покрыто. Не покрыто: фото, платный пакет, активное объявление, ממתין לתשלום.",
+   "date": "2026-11-12"
+  },
+  {
+   "hash": "#494e0b",
+   "class": "qa-passed",
+   "source": "qa",
+   "feature": "business-cards-images",
+   "tests": [
+    ".qa/tests/business-cards-images/CARDIMG-08.md",
+    ".qa/tests/business-cards-images/CARDIMG-09.md",
+    ".qa/tests/business-cards-images/CARDIMG-10.md",
+    ".qa/tests/businessdetail-gallery/GALLERY-17.md",
+    ".qa/e2e/specs/business-cards-images.md",
+    ".qa/e2e/tests/business-cards-images/trim.helpers.ts",
+    ".qa/e2e/tests/business-cards-images/card-trim-margins.spec.ts",
+    ".qa/e2e/tests/business-cards-images/card-trim-upload.helpers.ts",
+    ".qa/e2e/tests/business-cards-images/card-trim-upload.spec.ts",
+    ".qa/e2e/tests/businessdetail-gallery/gallery-poster-no-black.spec.ts"
+   ],
+   "note": "тикет 96: автоматическая обрезка однотонных полей картинки карточки (card3, PR #217). Записан только план (раздел 2-3 specs/business-cards-images.md): 2.1 карточка e8204967 @mobile @prod-safe, 2.2 /search без полей >10% @desktop @prod-safe, 2.3 новая загрузка @desktop @data (QA_REAL_WRITE=1), 3.1 галерея cover @mobile @prod-safe. Тесты написаны 2026-11-19 (запасной путь, генератор сломан): 2.1 прошёл на android и iphone, 2.2 на desktop (60 картинок из 485 окон, 45 — .card3.webp, полей >10% нет), 3.1 на android и iphone (мин. яркость строки видимой области 12.6 — близко к порогу 12); 2.3 не запускался (только --list, QA_REAL_WRITE=1). Внимание: тесты 1.1/1.2 (#0a2499) ждут .card2.webp, прод отдаёт .card3.webp.",
+   "date": "2026-11-19"
+  }
+ ]
+}

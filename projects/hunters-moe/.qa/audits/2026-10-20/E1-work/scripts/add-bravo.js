@@ -1,0 +1,33 @@
+async page => {
+  const N='Bravo', PH='050-102-0002', EM='qa-auto-1020-e1-bravo@example.com';
+  const out=[];
+  if (!page.url().includes('/my-candidates/new')) await page.goto('https://hunters-sooty.vercel.app/my-candidates/new');
+  const d = page.getByRole('dialog', { name: 'הוספת מועמד' });
+  await d.waitFor({ timeout: 15000 });
+  await d.getByRole('radio', { name: /פרופיל אנונימי/ }).check();
+  await d.getByRole('textbox', { name: 'שם פרטי (שדה חובה)' }).fill('QA-AUTO 1020 E1');
+  await d.getByRole('textbox', { name: 'שם משפחה (שדה חובה)' }).fill(N);
+  await d.getByRole('textbox', { name: 'טלפון (שדה חובה)' }).fill(PH);
+  await d.getByRole('textbox', { name: 'אימייל' }).fill(EM);
+  await d.getByRole('textbox', { name: 'תפקיד נוכחי / כותרת' }).fill('QA Automation Engineer');
+  await d.getByRole('textbox', { name: 'כמה מילים על המועמד' }).fill('בודק/ת תוכנה עם 5 שנות ניסיון באוטומציה, Playwright ו-CI. מחפש/ת תפקיד בכיר בצוות QA.');
+  await d.getByRole('button', { name: 'תחומי התמחות (שדה חובה)' }).click();
+  const opt = page.getByRole('option').or(page.getByRole('checkbox')).or(page.getByRole('menuitemcheckbox'));
+  await opt.first().waitFor({ timeout: 10000 });
+  await opt.filter({ hasText: 'טכנולוגיה' }).first().click();
+  await page.keyboard.press('Escape');
+  await d.getByRole('textbox', { name: 'שכר מבוקש מ- (₪)' }).fill('18000');
+  await d.getByRole('textbox', { name: 'שכר מבוקש עד (₪)' }).fill('22000');
+  await d.getByRole('textbox', { name: 'LinkedIn' }).fill('https://www.linkedin.com/in/qa-auto-1020-e1-' + N.toLowerCase());
+  await d.getByRole('textbox', { name: 'מקום עבודה נוכחי' }).fill('QA-AUTO 1020 E1 ' + N + ' Workplace');
+  const respP = page.waitForResponse(r => r.request().method()==='POST', { timeout: 20000 }).catch(()=>null);
+  await d.getByRole('button', { name: 'המשך', exact: true }).click();
+  const r = await respP; out.push('POST1 ' + (r ? r.status()+' '+r.url() : 'none'));
+  await page.waitForLoadState('networkidle').catch(()=>{});
+  await page.waitForTimeout(1500);
+  out.push('URL ' + page.url());
+  const dt = await page.getByRole('dialog').first().innerText().catch(()=> 'no dialog');
+  out.push('STEP2: ' + dt.slice(0, 1500));
+  await page.screenshot({ path: 'screenshots/run-1020/E1/E1A-24-add-' + N + '-step2-desktop.png' });
+  return out.join('\n');
+}

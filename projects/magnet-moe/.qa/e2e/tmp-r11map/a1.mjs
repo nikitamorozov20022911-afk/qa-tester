@@ -1,0 +1,15 @@
+import { chromium } from 'playwright';
+import fs from 'fs';
+const Q='/Users/avielshnaider/magnet-moe/.qa';
+const b=await chromium.launch({headless:true});
+const ctx=await b.newContext({storageState:Q+'/auth/admin-r11b.json',viewport:{width:1440,height:900},locale:'he-IL'});
+const p=await ctx.newPage();
+let api=null;
+p.on('request',q=>{const h=q.headers(); if(!api && q.url().includes('/rest/v1/') && h.authorization && h.apikey && h.authorization!=='Bearer '+h.apikey){api={base:q.url().split('/rest/v1/')[0],apikey:h.apikey,auth:h.authorization};}});
+await p.goto('https://magnet-admin.vercel.app/users/ea5d7f41-6a81-41d5-b107-ce0314ed5bd6',{waitUntil:'networkidle'});
+console.log('url',p.url(), !!api);
+fs.writeFileSync('api.json',JSON.stringify(api));
+const H={apikey:api.apikey,Authorization:api.auth};
+const r=await p.request.get(api.base+'/rest/v1/profiles?id=eq.ea5d7f41-6a81-41d5-b107-ce0314ed5bd6&select=*',{headers:H});
+console.log(r.status(), await r.text());
+await ctx.storageState({path:Q+'/auth/admin-r11b.json'}); await b.close();

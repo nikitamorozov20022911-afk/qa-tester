@@ -1,0 +1,30 @@
+async page => {
+  const out=[]; const B='https://hunters-sooty.vercel.app';
+  await page.goto(B+'/tenders/37fb9213-5e5e-4b84-9c84-a7330da7b302?from=mine'); await page.waitForLoadState('networkidle').catch(()=>{});
+  await page.getByText('טוען…').first().waitFor({state:'detached',timeout:15000}).catch(()=>{});
+  const d = page.locator('[role=dialog]').first(); await d.waitFor({timeout:15000});
+  const rows = d.getByText('מיכל לוי',{exact:true}); if ((await rows.count())!==1) return 'rows!=1';
+  await rows.click();
+  await d.getByText('QA-AUTO 1020 E1 הצעה HR').waitFor({timeout:8000});
+  if (!(await d.getByText('₪1,000 לפרויקט').count())) return 'no 1000';
+  const rb = d.getByRole('button',{name:'דחיית ההצעה'}); if ((await rb.count())!==1) return 'rb='+(await rb.count());
+  await rb.evaluate(e=>{e.style.outline='4px solid red';e.style.outlineOffset='2px';});
+  await page.screenshot({path:'screenshots/run-1020/E1/verify-F2-before-reject-HR-row-desktop.png'});
+  await rb.evaluate(e=>{e.style.outline='';});
+  await page.evaluate(()=>{ window.__mut=[]; new MutationObserver(ms=>{for(const m of ms) for(const n of m.addedNodes){ if(n.nodeType===1){const t=(n.innerText||'').trim(); if(t) window.__mut.push(Math.round(performance.now())+' '+(n.getAttribute&&n.getAttribute('role')||n.tagName)+': '+t.slice(0,200).replace(/\n/g,' / '));}}}).observe(document.body,{childList:true,subtree:true}); });
+  const reqs=[]; page.on('request', r=>{ if(r.method()==='POST') reqs.push(r.url().slice(0,80)+' '+(r.postData()||'').slice(0,200)); });
+  const resps=[]; page.on('response', async r=>{ if(r.request().method()==='POST'){ resps.push(r.status()+' '+r.url().slice(0,60)); } });
+  const t0=Date.now();
+  await rb.click();
+  await page.waitForTimeout(400);
+  await page.screenshot({path:'screenshots/run-1020/E1/verify-F2-right-after-reject-click-desktop.png'});
+  const dialogs1 = await page.locator('[role=dialog],[role=alertdialog]').count();
+  await page.waitForLoadState('networkidle').catch(()=>{});
+  await page.waitForTimeout(1500);
+  out.push('dialogs after click: '+dialogs1+' now '+(await page.locator('[role=dialog],[role=alertdialog]').count()));
+  out.push('MUT: '+(await page.evaluate(()=>window.__mut.join('\n  '))));
+  out.push('POST: '+reqs.join(' || ')); out.push('RESP: '+resps.join(' | '));
+  out.push('AFTER ROW: '+(await d.innerText()).replace(/\n+/g,' / ').slice(-300));
+  out.push('BTNS '+(await page.evaluate(()=>[...document.querySelectorAll('[role=dialog] button,[role=alertdialog] button')].filter(e=>e.offsetParent).map(e=>(e.innerText||e.getAttribute('aria-label')||'?').trim().replace(/\n/g,' ')).join(' | '))));
+  return out.join('\n');
+}

@@ -1,0 +1,840 @@
+{
+ "project": "Benjico.Ai",
+ "tickets": [
+  {
+   "hash": "#c121d3",
+   "id": "ad94b42c2ac3f04412c121d3",
+   "title": "Sprint 2 — תוצאות שיבוץ ושתי רמות נפרדות",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-10-29",
+   "feature": "placement-results",
+   "cases": ".qa/tests/placement-results.md",
+   "plan": ".qa/e2e/specs/placement-results.md",
+   "tests": [
+    "tests/placement-results/confident-placement.spec.ts",
+    "tests/placement-results/unsure-placement.spec.ts",
+    "tests/placement-results/parent-levels-confident-profile.spec.ts",
+    "tests/placement-results/parent-levels-uncertain-profile.spec.ts"
+   ]
+  },
+  {
+   "hash": "#a0f00f",
+   "id": "36941e8dd2da0ef452a0f00f",
+   "title": "Sprint 2 — הערכת פתיחה בכתיבה",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-10-29",
+   "feature": "placement-writing",
+   "cases": ".qa/tests/placement-writing.md",
+   "plan": ".qa/e2e/specs/placement-writing.md",
+   "tests": [
+    "tests/placement-writing/placement-writing.spec.ts"
+   ]
+  },
+  {
+   "hash": "#8bf5a8",
+   "id": "a30040f35dcd4402168bf5a8",
+   "title": "Sprint 2 — שלד מבחן פתיחה ושמירת התקדמות",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-01",
+   "feature": "placement-reading",
+   "cases": ".qa/tests/placement-reading.md",
+   "plan": ".qa/e2e/specs/placement-reading.md",
+   "tests": [
+    "tests/placement-reading/intro-reading-only.spec.ts",
+    "tests/placement-reading/mic-failure-full-pass-results.spec.ts",
+    "tests/placement-reading/one-attempt-writing-pending.spec.ts",
+    "tests/placement-reading/pause-and-resume.spec.ts",
+    "tests/placement-reading/passages-empty-and-error.spec.ts",
+    "tests/placement-reading/mobile-390-no-horizontal-scroll.spec.ts"
+   ],
+   "note": "8 тестов написаны, не запускались (проверка — /qa-regress)"
+  },
+  {
+   "hash": "#d7fe2c",
+   "id": "a1cfd00ac6dfad2807d7fe2c",
+   "title": "אחרי כניסה אי אפשר לקרוא את תנאי השימוש",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-02",
+   "feature": "legal-docs",
+   "cases": ".qa/tests/legal-docs.md",
+   "plan": ".qa/e2e/specs/legal-docs.md",
+   "tests": [
+    "tests/legal-docs/back-button.spec.ts",
+    "tests/legal-docs/guest-sign-up-docs.spec.ts",
+    "tests/legal-docs/iphone-390-rtl.spec.ts",
+    "tests/legal-docs/privacy-logged-in-reload.spec.ts",
+    "tests/legal-docs/session-kept-after-doc.spec.ts",
+    "tests/legal-docs/settings-privacy-terms-path.spec.ts",
+    "tests/legal-docs/terms-logged-in-reload.spec.ts"
+   ]
+  },
+  {
+   "hash": "#a337fd",
+   "id": "9a6c4259b48a5f71d5a337fd",
+   "title": "Sprint 6 — זהות, הרשאות והתאוששות session",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-02",
+   "feature": "session-auth",
+   "cases": ".qa/tests/session-auth.md",
+   "plan": ".qa/e2e/specs/session-auth.md",
+   "tests": [
+    "tests/session-auth/anon-denied.spec.ts",
+    "tests/session-auth/child-mode-parent-gate.spec.ts",
+    "tests/session-auth/cross-family-same-as-nonexistent.spec.ts",
+    "tests/session-auth/iphone-390.spec.ts",
+    "tests/session-auth/sso-disabled.spec.ts"
+   ]
+  },
+  {
+   "hash": "#c3aa39",
+   "id": "0b0540a7cf23074b42c3aa39",
+   "title": "בקשת מחיקת נתוני ילד נשלחת בלי «אימות זהות»; אין דרך לפנות לתמיכה",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-02",
+   "feature": "data-requests-reauth",
+   "cases": ".qa/tests/data-requests-reauth.md",
+   "plan": ".qa/e2e/specs/data-requests-reauth.md",
+   "tests": [
+    "tests/data-requests-reauth/delete-child-reauth.spec.ts",
+    "tests/data-requests-reauth/delete-family-reauth.spec.ts",
+    "tests/data-requests-reauth/iphone-390.spec.ts",
+    "tests/data-requests-reauth/server-rejects-stale-login.spec.ts",
+    "tests/data-requests-reauth/support-contact.spec.ts",
+    "tests/data-requests-reauth/view-request-no-password.spec.ts"
+   ]
+  },
+  {
+   "hash": "#37cdff",
+   "title": "בקשת בדיקה של הילד מוצגת להורה כ«בבדיקה» בלי בקשה אמיתית",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-02",
+   "feature": "review-request-marking",
+   "cases": ".qa/tests/review-request-marking.md",
+   "plan": ".qa/e2e/specs/review-request-marking.md",
+   "tests": [
+    "tests/review-request-marking/child-mark-to-parent-review.spec.ts",
+    "tests/review-request-marking/iphone-390-marks-in-card.spec.ts"
+   ],
+   "tests_status": "написаны, не запускались"
+  },
+  {
+   "hash": "#493b35",
+   "title": "במשימות כתיבה ברמה 1 אין אפשרות הקלדה",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-02",
+   "feature": "writing-typing-level1",
+   "cases": ".qa/tests/writing-typing-level1.md",
+   "plan": ".qa/e2e/specs/writing-typing-level1.md",
+   "tests": [
+    "tests/writing-typing-level1/iphone-390-switch-above-notebook.spec.ts"
+   ],
+   "tests_status": "написаны, не запускались; ждут генератора: tests/writing-typing-level1/level1-typing-switch-new-child.spec.ts"
+  },
+  {
+   "hash": "#be58fd",
+   "title": "בקשת לקוח: ביטול מבחן הפתיחה בכתיבה — רמת הכתיבה ההתחלתית נקבעת על ידי ההורה",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-02",
+   "feature": "writing-start-level",
+   "cases": ".qa/tests/writing-start-level.md",
+   "plan": ".qa/e2e/specs/writing-start-level.md",
+   "tests": [
+    "tests/writing-start-level/age-default-level.spec.ts"
+   ],
+   "tests_status": "написаны, не запускались; ждут генератора: tests/writing-start-level/profile-field-four-options.spec.ts, tests/writing-start-level/chosen-level-and-parent-edit.spec.ts"
+  },
+  {
+   "hash": "#b39e08",
+   "title": "Sprint 4 — שליחה ועיבוד כתיבה לאחר הגשה",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-02",
+   "feature": "writing-submit",
+   "cases": ".qa/tests/writing-submit.md",
+   "plan": ".qa/e2e/specs/writing-submit.md",
+   "tests": [
+    "tests/writing-submit/submit-confirm-once-handwriting.spec.ts",
+    "tests/writing-submit/submit-retry-offline-500.spec.ts"
+   ],
+   "tests_status": "написаны, не запускались"
+  },
+  {
+   "hash": "#976cbc",
+   "title": "מבחן הפתיחה בקריאה לא מסתגל: תמיד קטעים ברמות 1→3→5; הערכה עצמית נותנת רמה ודאית",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-02",
+   "feature": "placement-reading-adaptive",
+   "cases": ".qa/tests/placement-reading-adaptive.md",
+   "plan": ".qa/e2e/specs/placement-reading-adaptive.md",
+   "tests": [
+    "tests/placement-reading-adaptive/adaptive-start-and-steps.spec.ts"
+   ],
+   "tests_status": "написаны, не запускались"
+  },
+  {
+   "hash": "#eee921",
+   "title": "Sprint 3 — משוב קריאה עם אי־ודאות גלויה",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-02",
+   "feature": "reading-feedback",
+   "cases": ".qa/tests/reading-feedback.md",
+   "plan": ".qa/e2e/specs/reading-feedback.md",
+   "tests": [
+    "tests/reading-feedback/iphone-390-appeal-buttons.spec.ts"
+   ],
+   "tests_status": "написаны, не запускались; ждут генератора: tests/reading-feedback/parent-observations-sections.spec.ts, tests/reading-feedback/appeal-cancel-back-desktop.spec.ts"
+  },
+  {
+   "hash": "#2cb76f",
+   "id": "b2b6279950b27255f52cb76f",
+   "title": "«המסלול שלי» בבית הילד לא עושה כלום",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-05",
+   "feature": "my-path",
+   "cases": ".qa/tests/my-path.md",
+   "plan": ".qa/e2e/specs/my-path.md",
+   "tests": [
+    "tests/my-path/tab-opens-path.spec.ts",
+    "tests/my-path/tab-keyboard.spec.ts",
+    "tests/my-path/stations-by-level.spec.ts",
+    "tests/my-path/first-level-stations.spec.ts",
+    "tests/my-path/home-and-library-tabs.spec.ts",
+    "tests/my-path/iphone-path-layout.spec.ts"
+   ],
+   "tests_status": "ждут playwright-test-generator (основная сессия), не запускались: 6 тестов (1.1–1.5, 2.1); 1.3, 1.4, 2.1 дополнены по #064914",
+   "note": "не закреплять временные названия этапов чтения 5–10; «אנחנו כאן» закреплена после #064914"
+  },
+  {
+   "hash": "#14e9a4",
+   "id": "ba2ec501730ac0906414e9a4",
+   "title": "בחירת ילד והעברת שליטה לתרגול מוגן",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-05",
+   "feature": "child-handover",
+   "cases": ".qa/tests/child-handover.md",
+   "plan": ".qa/e2e/specs/child-handover.md",
+   "tests": [],
+   "tests_status": "ждут playwright-test-generator (основная сессия), не запускались: 9 тестов (1.1–1.4, 2.1–2.3, 3.1–3.2)",
+   "note": "PIN не вводится; новый ребёнок QA-AUTO-<6 букв> — чистка вручную (annotations cleanup)"
+  },
+  {
+   "hash": "#f8756c",
+   "id": "27b9cd21f7dfe216f8f8756c",
+   "title": "הרשמה, כניסה והתאוששות בטוחה להורה",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-05",
+   "feature": "parent-settings-header",
+   "also_feature": "session-auth",
+   "cases": ".qa/tests/parent-settings-header.md",
+   "also_cases": ".qa/tests/session-auth.md (SA-08…SA-10)",
+   "plan": ".qa/e2e/specs/parent-settings-header.md",
+   "also_plan": ".qa/e2e/specs/session-auth.md (раздел 4)",
+   "tests": [],
+   "tests_status": "ждут playwright-test-generator (основная сессия), не запускались: 7 тестов parent-settings-header (1.1–1.6, 2.1) + 3 теста session-auth (4.1–4.3)",
+   "note": "без паролей; выход не подтверждается (страховка abort /auth/v1/logout)"
+  },
+  {
+   "hash": "#25b101",
+   "id": "a450b4f2fb4c458a9d25b101",
+   "title": "הרשאה לפי תפקיד, משפחה והקשר פעיל",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-05",
+   "feature": "authz-isolation",
+   "cases": ".qa/tests/authz-isolation.md",
+   "plan": ".qa/e2e/specs/authz-isolation.md",
+   "tests": [
+    "tests/authz-isolation/start-child-session-denied-audit.spec.ts",
+    "tests/authz-isolation/cross-family-rest.spec.ts"
+   ],
+   "tests_status": "2 теста (две роли) записаны autotest-writer, не запускались; ждут playwright-test-generator (основная сессия), не запускались: 2.1, 2.2",
+   "note": "снятие/возврат роли оператора и бан — только вручную с программистом (план, раздел 3)"
+  },
+  {
+   "hash": "#eb3106",
+   "id": "9e2648c1615a230ea2eb3106",
+   "title": "מספרי רמה והערות הורה מגיעים לדפדפן במצב ילד",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-05",
+   "feature": "child-mode-no-levels",
+   "cases": ".qa/tests/child-mode-no-levels.md",
+   "plan": ".qa/e2e/specs/child-mode-no-levels.md",
+   "tests": [
+    "tests/child-mode-no-levels/handover-current-levels-after-session.spec.ts",
+    "tests/child-mode-no-levels/reload-current-levels-null.spec.ts",
+    "tests/child-mode-no-levels/new-child-path-no-levels-or-notes.spec.ts",
+    "tests/child-mode-no-levels/direct-requests-child-session.spec.ts",
+    "tests/child-mode-no-levels/parent-mode-levels-visible.spec.ts"
+   ],
+   "tests_status": "ждут playwright-test-generator (основная сессия), не запускались: 5 тестов (1.1–1.5)",
+   "note": "iPhone в R3 не проверен — не автоматизирован; новый ребёнок QA-AUTO-<6 букв> (1.3) — чистка вручную"
+  },
+  {
+   "hash": "#f23704",
+   "id": "510425c623ba8b96f2f23704",
+   "title": "יצירה, עריכה ושמירה של פרופיל ילד",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-05",
+   "feature": "child-profile",
+   "cases": ".qa/tests/child-profile.md",
+   "plan": ".qa/e2e/specs/child-profile.md",
+   "tests": [
+    "tests/child-profile/create-edit-persist-delete-gate.spec.ts",
+    "tests/child-profile/birth-year-range.spec.ts",
+    "tests/child-profile/empty-submit-banner.spec.ts",
+    "tests/child-profile/continue-inside-left-page.spec.ts",
+    "tests/child-profile/benji-not-blocking-fields.spec.ts",
+    "tests/child-profile/writing-level-radiogroup.spec.ts",
+    "tests/child-profile/mobile-year-error-no-hscroll.spec.ts"
+   ],
+   "tests_status": "ждут playwright-test-generator (основная сессия), не запускались: 7 тестов (1.1–1.6, 2.1)",
+   "note": "раскладка вне A5 — не реджект (решение пользователя 05.11), координаты полей/отступы A5 не проверяются; удаление не выполняется (пароль); QA-AUTO — чистка вручную"
+  },
+  {
+   "hash": "#0bf757",
+   "id": "dcf99a5d38860c6a990bf757",
+   "title": "אחרי עליית רמת כתיבה הקטלוג לא מתעדכן עד רענון; בתובנות «יציב» למרות עלייה",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-05",
+   "feature": "writing-catalog-refresh",
+   "cases": ".qa/tests/writing-catalog-refresh.md",
+   "plan": ".qa/e2e/specs/writing-catalog-refresh.md",
+   "tests": [
+    "tests/writing-catalog-refresh/five-works-promote-catalog-trend.spec.ts",
+    "tests/writing-catalog-refresh/iphone-one-work-recommendation.spec.ts"
+   ],
+   "tests_status": "ждут playwright-test-generator (основная сессия), не запускались: 2 теста (1.1, 2.1)",
+   "note": "P7 (медленная сеть) — находка, не автотестируется (решение пользователя 05.11); P8 не проверено; новый QA-AUTO на каждый тест — чистка вручную"
+  },
+  {
+   "hash": "#613a14",
+   "id": "bee7d742c0e430c482613a14",
+   "title": "בקשת לקוח: קול של בנג׳י — קול גברי לפי דגימת הלקוח",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-05",
+   "feature": "benji-voice",
+   "cases": ".qa/tests/benji-voice.md",
+   "plan": ".qa/e2e/specs/benji-voice.md",
+   "tests": [
+    "tests/benji-voice/tts-voice-by-companion.spec.ts"
+   ],
+   "tests_status": "ждёт playwright-test-generator (основная сессия), не запускался: 1 тест (1.1)",
+   "note": "на слух (сходство, тон, темп) — только вручную, пользователь подтвердил 05.11; F5/прямой адрес → NotAllowedError — находка, не автотест"
+  },
+  {
+   "hash": "#064914",
+   "id": "f5e582c82df5393dec064914",
+   "title": "«המסלול שלי»: «אנחנו כאן» לפי הרמה הנוכחית של הילד ולא לפי פעילות פתוחה",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-05",
+   "feature": "my-path",
+   "cases": ".qa/tests/my-path.md",
+   "plan": ".qa/e2e/specs/my-path.md",
+   "tests": [
+    "tests/my-path/stations-by-level.spec.ts",
+    "tests/my-path/first-level-stations.spec.ts",
+    "tests/my-path/iphone-path-layout.spec.ts",
+    "tests/my-path/station-click-same-stage.spec.ts",
+    "tests/my-path/level-change-moves-marker.spec.ts",
+    "tests/my-path/station-double-click.spec.ts",
+    "tests/my-path/reading-station-click.spec.ts"
+   ],
+   "tests_status": "ждут playwright-test-generator (основная сессия), не запускались: 4 новых (3.1–3.4) + дополнены 1.3, 1.4, 2.1",
+   "note": "раунд 3 после rej_dcda1644; MP-10…MP-16; раздел 3 — новые дети QA-AUTO-<6 букв> (@data), чистка вручную; смена уровня чтения и попытка чтения другого этапа — не автоматизированы"
+  },
+  {
+   "hash": "#aed9e0",
+   "id": "cd43d3510ceafef3a9aed9e0",
+   "title": "אחרי בחירת «הארנבת» כחבר מלווה — במסכי הילד עדיין מוצג בנג׳י (הקול כבר של הארנבת)",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-05",
+   "feature": "companion",
+   "cases": ".qa/tests/companion.md",
+   "plan": ".qa/e2e/specs/companion.md",
+   "tests": [
+    "tests/companion/choose-rabbit-image-loads.spec.ts",
+    "tests/companion/rabbit-child-screens.spec.ts",
+    "tests/companion/rabbit-reading-voice.spec.ts",
+    "tests/companion/rabbit-writing.spec.ts",
+    "tests/companion/benji-child-screens.spec.ts",
+    "tests/companion/switch-companion-no-reload.spec.ts",
+    "tests/companion/rabbit-placement.spec.ts",
+    "tests/companion/iphone-rabbit-home-path.spec.ts"
+   ],
+   "tests_status": "ждут playwright-test-generator (основная сессия), не запускались: 8 тестов (1.1–1.7, 2.1)",
+   "note": "QA-R2-V 26592b73… — спутник rabbit, тест 1.6 возвращает rabbit; новые дети QA-AUTO-<6 букв> (1.5, 1.7) — чистка вручную; Parent Gate с PIN, «בעיבוד»/отзыв, итог C3 — не автоматизированы"
+  },
+  {
+   "hash": "#b3210e",
+   "id": "4a58062cbf101aaabdb3210e",
+   "title": "כשנבחרה «הארנבת» כחבר מלווה — הטקסטים במסכי הילד עדיין קוראים לה «בנג׳י» ומדברים בלשון זכר",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-08",
+   "feature": "companion",
+   "cases": ".qa/tests/companion.md",
+   "plan": ".qa/e2e/specs/companion.md",
+   "tests": [
+    "tests/companion/b3210e-placement-rabbit-texts.spec.ts",
+    "tests/companion/b3210e-rabbit-plan-catalog-texts.spec.ts",
+    "tests/companion/b3210e-rabbit-reading-texts.spec.ts",
+    "tests/companion/b3210e-rabbit-writing-send-texts.spec.ts",
+    "tests/companion/b3210e-benji-control-texts.spec.ts",
+    "tests/companion/b3210e-switch-companion-texts.spec.ts"
+   ],
+   "tests_status": "записаны 3.2, 3.3, 3.4 (не запускались); ждут генератора 3.1, 3.5, 3.6",
+   "note": "CP-09…CP-14 → план раздел 3; QA-R2-V спутника не меняет (предусловие rabbit), письмо QA-AUTO-… только у QA-R2-V (3.4, @data); QA-R2-1 — контроль Бенджи; новые дети QA-AUTO-<6 букв> (3.1, 3.6) — чистка вручную; итог C3, отзыв чтения D6, timeout D4, mic-состояния C2, «…משימת כתיבה» в תכנית — не автоматизированы"
+  },
+  {
+   "hash": "#8ca267",
+   "id": "edd0b09ead47b4a2568ca267",
+   "title": "במצב ילד אפשר לצאת לאזור ההורים בלי סיסמה — מספיק למחוק את child-context מה-localStorage",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-08",
+   "feature": "child-handover",
+   "cases": ".qa/tests/child-handover.md",
+   "plan": ".qa/e2e/specs/child-handover.md",
+   "tests": [],
+   "tests_status": "ждут playwright-test-generator (основная сессия), не запускались: 6 тестов (4.1–4.5, 5.1); нужны слоты parent-auto / parent-b-auto (qa-login:manual)",
+   "note": "CH-10…CH-16 → план разделы 4–5 (@desktop @data); каждый тест оставляет слот в режиме ребёнка навсегда — только отдельные слоты; выход по паролю/PIN (CH-17/CH-18), неверный пароль/PIN, Auth API, старый режим ребёнка — не автоматизированы; приём «удалить benjico\\child-context» больше не выводит из режима ребёнка — затронуты планы с передачей ребёнку"
+  },
+  {
+   "hash": "#a1f2c1",
+   "id": "8cd7440d5f3d37d1bda1f2c1",
+   "title": "במצב ילד הטוקן של ההורה נשאר בדפדפן — אפשר לשנות את סיסמת החשבון דרך Auth API ולקרוא נתוני הסכמות של ההורה",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-08",
+   "feature": "child-handover",
+   "cases": ".qa/tests/child-handover.md",
+   "plan": ".qa/e2e/specs/child-handover.md",
+   "tests": [
+    "tests/child-handover/child-mode-consents-family-members-empty.spec.ts",
+    "tests/child-handover/child-mode-mfa-factor-not-created.spec.ts",
+    "tests/child-handover/child-mode-refresh-no-extra-rights.spec.ts",
+    "tests/child-handover/parent-mode-consents-control.spec.ts"
+   ],
+   "tests_status": "записаны генератором 08.11 р3 (план §6–7), не запускались; --list 101 тест без ошибок",
+   "note": "CH-20…CH-23"
+  },
+  {
+   "hash": "#c9d038",
+   "id": "e5cd4313fd12e86b14c9d038",
+   "title": "מצב ילד שנפתח לפני העדכון של 08.11 עדיין נפתח לאזור ההורים אחרי מחיקת child-context",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-08",
+   "feature": "child-handover",
+   "cases": ".qa/tests/child-handover.md",
+   "plan": ".qa/e2e/specs/child-handover.md",
+   "tests": [
+    "tests/child-handover/key-removed-other-child-profile-gated.spec.ts"
+   ],
+   "tests_status": "записаны генератором 08.11 р3 (план §6–7), не запускались; --list 101 тест без ошибок",
+   "note": "CH-24"
+  },
+  {
+   "hash": "#ee2f5b",
+   "id": "6aade7f821ccf1fcb0ee2f5b",
+   "title": "«אימות זהות» ביציאה ממצב ילד: הודעת השגיאה מזכירה אימייל, אבל בחלון יש רק שדה סיסמה",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-08",
+   "feature": "child-handover",
+   "cases": ".qa/tests/child-handover.md",
+   "plan": ".qa/e2e/specs/child-handover.md",
+   "tests": [
+    "tests/child-handover/exit-reauth-no-form-saved-line.spec.ts",
+    "tests/child-handover/settings-reauth-form-saved-line.spec.ts"
+   ],
+   "tests_status": "записаны генератором 08.11 р3 (план §6–7), не запускались; --list 101 тест без ошибок",
+   "note": "CH-25…CH-27"
+  },
+  {
+   "hash": "#151ef2",
+   "id": "3f699a01cc421c3494151ef2",
+   "title": "«תרגול קריאה»: «השתק» в пузыре Бенджи перекрыт на десктопе — клик не глушит голос",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-17",
+   "feature": "benji-voice",
+   "cases": ".qa/research/151ef2.md (брифы; кейсов в .qa/tests/ нет)",
+   "plan": ".qa/e2e/specs/benji-voice.md",
+   "tests": [],
+   "tests_planned": [
+    "tests/benji-voice/mute-not-covered-1280.spec.ts",
+    "tests/benji-voice/mute-not-covered-1440.spec.ts",
+    "tests/benji-voice/mute-not-covered-1194.spec.ts",
+    "tests/benji-voice/mute-390-control.spec.ts",
+    "tests/benji-voice/mute-keyboard-toggle.spec.ts",
+    "tests/benji-voice/mute-toggle-back-and-listen.spec.ts"
+   ],
+   "tests_status": "план записан 17.11, ждёт записи тестов (основная сессия), не запускались: 6 тестов (план §3, parent-auto, @data)",
+   "note": "веб; iPad build 7 и слух — вручную (пользователь)"
+  },
+  {
+   "hash": "#07b141",
+   "id": "6263ae2ce9df87027307b141",
+   "title": "iPad build 6: «הורים» (и любое модальное окно) в режиме ребёнка поворачивает экран в portrait",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-17",
+   "feature": "writing-surface-undo",
+   "cases": ".qa/research/07b141.md (брифы; кейсов в .qa/tests/ нет)",
+   "plan": ".qa/e2e/specs/writing-surface-undo.md",
+   "tests": [],
+   "tests_planned": [],
+   "tests_status": "не автоматизируется (iPad): ориентация нативного Modal; 0 тестов",
+   "note": "пометка в плане, раздел «Не автоматизируется»"
+  },
+  {
+   "hash": "#c1b1ff",
+   "id": "2b76ffc50f9e4dd0d6c1b1ff",
+   "title": "iPad: после возврата на поверхность письма «ביטול פעולה» недоступен — история отмены теряется",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-17",
+   "feature": "writing-surface-undo",
+   "cases": ".qa/research/c1b1ff.md (брифы; кейсов в .qa/tests/ нет)",
+   "plan": ".qa/e2e/specs/writing-surface-undo.md",
+   "tests": [],
+   "tests_planned": [
+    "tests/writing-surface-undo/undo-after-return-two-strokes.spec.ts",
+    "tests/writing-surface-undo/undo-after-return-1194.spec.ts",
+    "tests/writing-surface-undo/undo-after-return-four-strokes.spec.ts"
+   ],
+   "tests_status": "план записан 17.11, ждёт записи тестов (основная сессия), не запускались: 3 теста (план §1, parent-auto, @data)",
+   "note": "веб (синтетические штрихи мышью); палец на iPad — вручную"
+  },
+  {
+   "hash": "#364916",
+   "id": "16b1e0781079a39d08364916",
+   "title": "iPad: аккуратный почерк «אבא אמא» распознан как «אבא אלא» и показан родителю как уверенное чтение («ודאות: בינונית»)",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-17",
+   "feature": "writing-surface-undo",
+   "cases": ".qa/research/364916.md (брифы; кейсов в .qa/tests/ нет)",
+   "plan": ".qa/e2e/specs/writing-surface-undo.md",
+   "tests": [],
+   "tests_planned": [],
+   "tests_status": "не автоматизируется (iPad): рукописный ввод пальцем; часть родителя — нет стабильных данных (только новые попытки, id попытки 17.11 неизвестен); 0 тестов",
+   "note": "пометка в плане, раздел «Не автоматизируется»"
+  },
+  {
+   "hash": "#0f3aa5",
+   "id": "9f618d61d4742303200f3aa5",
+   "title": "iPad-приложение: сообщение о доступе к микрофону отсылает к «настройкам браузера»",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-17",
+   "feature": "reading-practice",
+   "cases": ".qa/research/0f3aa5.md (брифы; кейсов в .qa/tests/ нет)",
+   "plan": ".qa/e2e/specs/reading-practice.md",
+   "tests": [],
+   "tests_planned": [
+    "tests/reading-practice/mic-denied-browser-text.spec.ts",
+    "tests/reading-practice/placement-mic-check-denied.spec.ts",
+    "tests/reading-practice/mic-allowed-no-message.spec.ts"
+   ],
+   "tests_status": "план записан 17.11, ждёт записи тестов (основная сессия), не запускались: 3 теста (план §2, parent-auto, @data; 2.2 условный — стартовый тест QA-R2-V)",
+   "note": "веб: текст про браузер без «פתיחת ההגדרות»; нативная часть (iPad) — вручную"
+  },
+  {
+   "hash": "#be8521",
+   "id": "6fd0c6e748940b1906be8521",
+   "title": "תרגול קריאה: שגיאת סיום לא מוכרזת (role=alert), «נסה שוב» כפול, «מקשיבה…» מתחת להפסקה, «לא מצאתי», טקסט ארוך",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-17",
+   "feature": "reading-practice",
+   "cases": ".qa/research/be8521.md (брифы; кейсов в .qa/tests/ нет)",
+   "plan": ".qa/e2e/specs/reading-practice.md",
+   "tests": [],
+   "tests_planned": [
+    "tests/reading-practice/finish-error-role-alert.spec.ts",
+    "tests/reading-practice/finish-retry-single-request.spec.ts",
+    "tests/reading-practice/pause-no-listening-background.spec.ts",
+    "tests/reading-practice/pause-save-error-no-listening.spec.ts",
+    "tests/reading-practice/story-not-found-home-only.spec.ts",
+    "tests/reading-practice/long-text-start-visible.spec.ts"
+   ],
+   "tests_status": "план записан 17.11, ждёт записи тестов (основная сессия), не запускались: 6 тестов (план §1, parent-auto, @data, мок SpeechRecognition + route)",
+   "note": "веб; фокус на «נסה שוב» и Figma D5 не проверялись"
+  },
+  {
+   "hash": "#27b7b9",
+   "id": "55a4c89e5f921b71a727b7b9",
+   "title": "משוב כתיבה: «עוד אין דפוס…» при 4 тренировках; на 390 текст ребёнка в отзыве обрезан до 3 строк",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-17",
+   "feature": "writing-submit",
+   "cases": ".qa/research/27b7b9.md (брифы; кейсов в .qa/tests/ нет)",
+   "plan": ".qa/e2e/specs/writing-submit.md",
+   "tests": [],
+   "tests_planned": [
+    "tests/writing-submit/pattern-text-matches-practice-count.spec.ts",
+    "tests/writing-submit/feedback-d6-full-text-390.spec.ts",
+    "tests/writing-submit/feedback-d6-full-text-1194.spec.ts",
+    "tests/writing-submit/feedback-d6-short-text-390.spec.ts"
+   ],
+   "tests_status": "план записан 17.11, ждёт записи тестов (основная сессия), не запускались: 4 теста (план §3: 3.1 parent, 3.2–3.4 parent-auto @data)",
+   "note": "ветка 1–2 тренировок не проверялась; iPad — вручную"
+  },
+  {
+   "hash": "#a0d04e",
+   "id": "3562d72ed5963edb61a0d04e",
+   "title": "מבחן פתיחה בקריאה, טלפון 390: «השהיה» ו«עזרה» почти за экраном; выделенное слово в последней строке обрезано",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-17",
+   "feature": "placement-reading",
+   "cases": ".qa/research/a0d04e.md (брифы; кейсов в .qa/tests/ нет)",
+   "plan": ".qa/e2e/specs/placement-reading.md",
+   "tests": [],
+   "tests_planned": [
+    "tests/placement-reading/phone-390-buttons-first-screen.spec.ts",
+    "tests/placement-reading/phone-390-help-and-pause-work.spec.ts",
+    "tests/placement-reading/phone-390-last-word-visible.spec.ts",
+    "tests/placement-reading/phone-and-tablet-widths-regression.spec.ts"
+   ],
+   "tests_status": "план записан 17.11, ждёт записи тестов (основная сессия), не запускались: 4 теста (план §3, parent-auto, @data, мок SpeechRecognition); условие — стартовый тест QA-R2-V доступен, иначе test.skip (решение 08.11)",
+   "note": "живое чтение голосом и 360×640 — не автоматизируются"
+  },
+  {
+   "hash": "#12abdb",
+   "id": "d0aa6de69fde9facc712abdb",
+   "title": "נגישות חלונות וטפסים: מוקד ראשוני על כפתור בלתי הפיך, מוקד ל-BODY אחרי «הסרה», «גיל עד» לא מסומן כשגיאה",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-17",
+   "feature": "operator-passages-a11y",
+   "cases": ".qa/research/12abdb.md (брифы; кейсов в .qa/tests/ нет)",
+   "plan": ".qa/e2e/specs/operator-passages-a11y.md",
+   "tests": [],
+   "tests_planned": [
+    "tests/operator-passages-a11y/remove-dialog-initial-focus-1280.spec.ts",
+    "tests/operator-passages-a11y/remove-dialog-initial-focus-390.spec.ts",
+    "tests/operator-passages-a11y/after-remove-focus-restore-1280.spec.ts",
+    "tests/operator-passages-a11y/after-remove-focus-restore-390.spec.ts",
+    "tests/operator-passages-a11y/new-passage-age-aria-invalid-1280.spec.ts",
+    "tests/operator-passages-a11y/new-passage-age-aria-invalid-390.spec.ts",
+    "tests/operator-passages-a11y/logout-dialog-initial-focus.spec.ts"
+   ],
+   "tests_status": "план записан 17.11, ждёт записи тестов (основная сессия), не запускались: 7 тестов (план §1, parent-оператор, @data, serial; свой текст QA-AUTO-12abdb-…)",
+   "note": "находка 17.11: клик мышью по «שחזור» не работает (в тест не включён)"
+  },
+  {
+   "hash": "#a78c78",
+   "id": "91c2970c06465e6581a78c78",
+   "title": "Sprint 6 — פרטיות, שימוש במידע וזכויות הורה (R3: легенда статусов на 390)",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-17",
+   "feature": "data-requests-reauth",
+   "cases": ".qa/research/a78c78.md (брифы; кейсов в .qa/tests/ нет)",
+   "plan": ".qa/e2e/specs/data-requests-reauth.md",
+   "tests": [],
+   "tests_planned": [
+    "tests/data-requests-reauth/legend-phone-widths-chrome.spec.ts",
+    "tests/data-requests-reauth/legend-phone-webkit.spec.ts",
+    "tests/data-requests-reauth/legend-desktop-one-line.spec.ts"
+   ],
+   "tests_status": "план записан 17.11, ждёт записи тестов (основная сессия), не запускались: 3 теста (план §4, parent-b, только просмотр)",
+   "note": "покрыт только реджект R3 (легенда); остальные AC приняты 02.11/12.11, iPad — необязательно"
+  },
+  {
+   "hash": "#fa0336",
+   "id": "1d12b971d6f38a1ed6fa0336",
+   "title": "Sprint 5 — בית הילד ותכנית התרגול להיום (R3: сбой next_activity не стирает контекст)",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-17",
+   "feature": "child-home-plan",
+   "cases": ".qa/research/fa0336.md (брифы; кейсов в .qa/tests/ нет)",
+   "plan": ".qa/e2e/specs/child-home-plan.md",
+   "tests": [],
+   "tests_planned": [
+    "tests/child-home-plan/recommendation-failure-500.spec.ts",
+    "tests/child-home-plan/recommendation-failure-network-abort.spec.ts",
+    "tests/child-home-plan/recommendation-failure-retry-recovers.spec.ts",
+    "tests/child-home-plan/recommendation-ok-explain-link-visible.spec.ts"
+   ],
+   "tests_status": "план записан 17.11, ждёт записи тестов (основная сессия), не запускались: 4 теста (план §1, parent-auto, @data, serial, route на rpc/next_activity)",
+   "note": "покрыт реджект R3; iPad build 7 — необязательно"
+  },
+  {
+   "hash": "#e67041",
+   "id": "3f5ae828dc2ea5832ce67041",
+   "title": "תובנות הורה: «דיוק בקריאה: עוד אין נתון» ליד גרף, «היסטוריית רמות» — «ללא שינוי» כשורות כפולות",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-17",
+   "feature": "parent-insights",
+   "cases": ".qa/research/e67041.md (брифы; кейсов в .qa/tests/ нет)",
+   "plan": ".qa/e2e/specs/parent-insights.md",
+   "tests": [],
+   "tests_planned": [
+    "tests/parent-insights/progress-not-enough-data-text.spec.ts",
+    "tests/parent-insights/level-history-no-change-merged.spec.ts"
+   ],
+   "tests_status": "план записан 17.11, ждёт записи тестов (основная сессия), не запускались: 2 теста (план §1, parent, QA-R2-1)",
+   "note": "веб; iPad — не подтверждено, что 15769de в build 7"
+  },
+  {
+   "hash": "#6ef7c9",
+   "id": "b200da5b5f68b3a8da6ef7c9",
+   "title": "תובנות הורה: פסי התקדמות בלי aria, ב-390 הילד הנבחר לא נראה, ילד זר ב-URL — «משהו השתבש»",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-17",
+   "feature": "parent-insights",
+   "cases": ".qa/research/6ef7c9.md (брифы; кейсов в .qa/tests/ нет)",
+   "plan": ".qa/e2e/specs/parent-insights.md",
+   "tests": [],
+   "tests_planned": [
+    "tests/parent-insights/progressbar-aria-values.spec.ts",
+    "tests/parent-insights/children-chips-390.spec.ts",
+    "tests/parent-insights/foreign-child-url-parent.spec.ts",
+    "tests/parent-insights/foreign-child-url-parent-b.spec.ts",
+    "tests/parent-insights/trend-line-no-leading-separator.spec.ts",
+    "tests/parent-insights/touch-target-why-changed.spec.ts"
+   ],
+   "tests_status": "план записан 17.11, ждёт записи тестов (основная сессия), не запускались: 6 тестов (план §2, parent / parent-b)",
+   "note": "не проверено руками: чужой ребёнок на 390, iPad; 2.4 (parent-b) — не из прогона 17.11"
+  },
+  {
+   "hash": "#c3ba8a",
+   "id": "543a87be2924c27dbdc3ba8a",
+   "title": "תובנות הורה: «נקודה לחיזוק: כדאי לחזק את הקריאה» בלי סימון אי-ודאות כשאין מספיק נתוני קריאה",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-17",
+   "feature": "parent-insights",
+   "cases": ".qa/research/c3ba8a.md (брифы; кейсов в .qa/tests/ нет)",
+   "plan": ".qa/e2e/specs/parent-insights.md",
+   "tests": [],
+   "tests_planned": [
+    "tests/parent-insights/summary-low-certainty-reading.spec.ts",
+    "tests/parent-insights/summary-progress-consistent.spec.ts"
+   ],
+   "tests_status": "план записан 17.11, ждёт записи тестов (основная сессия), не запускались: 2 теста (план §3, parent, QA-R2-1, «חודש»)",
+   "note": "нет ребёнка с ≥4 уверенными чтениями — «нормальная» ветка не покрыта"
+  },
+  {
+   "hash": "#0e3868",
+   "id": "c84faf1c13022685220e3868",
+   "title": "Sprint 4 — משטח כתיבה וטיוטה נשמרת",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-19",
+   "feature": "writing-surface-undo",
+   "cases": ".qa/research/0e3868.md (брифы; кейсов в .qa/tests/ нет)",
+   "plan": ".qa/e2e/specs/writing-surface-undo.md",
+   "tests": [
+    "e2e/tests/writing-surface-undo/typing-lines-align-and-restore.spec.ts",
+    "e2e/tests/writing-surface-undo/typing-lines-align-and-restore-1194.spec.ts",
+    "e2e/tests/writing-surface-undo/clear-confirm-dialog.spec.ts",
+    "e2e/tests/writing-surface-undo/clear-confirm-dialog-handwriting.spec.ts",
+    "e2e/tests/writing-surface-undo/finish-confirm-not-yet.spec.ts",
+    "e2e/tests/writing-surface-undo/stroke-right-to-left-stays-drawing.spec.ts",
+    "e2e/tests/writing-surface-undo/notebook-lines-full-width-1440.spec.ts",
+    "e2e/tests/writing-surface-undo/notebook-lines-full-width-1194.spec.ts"
+   ],
+   "tests_planned": [
+    "tests/writing-surface-undo/typing-lines-align-and-restore.spec.ts",
+    "tests/writing-surface-undo/typing-lines-align-and-restore-1194.spec.ts",
+    "tests/writing-surface-undo/clear-confirm-dialog.spec.ts",
+    "tests/writing-surface-undo/clear-confirm-dialog-handwriting.spec.ts",
+    "tests/writing-surface-undo/finish-confirm-not-yet.spec.ts",
+    "tests/writing-surface-undo/stroke-right-to-left-stays-drawing.spec.ts",
+    "tests/writing-surface-undo/notebook-lines-full-width-1440.spec.ts",
+    "tests/writing-surface-undo/notebook-lines-full-width-1194.spec.ts"
+   ],
+   "tests_status": "generated 2026-11-19, not run (проверить /qa-regress); 1194-версии и штрихи мышью не проверены вживую",
+   "note": "ручные (iPad build 8): клавиатура над кнопками, Larger Text, поворот, edge-back пальцем; веб-часть автоматизирована; «לשלוח» в тестах не нажимается"
+  },
+  {
+   "hash": "#789f1a",
+   "id": "19f797a48a26bc74b8789f1a",
+   "title": "iPad build 8: иконка динамика в пузыре Бенджи показывает обратное состояние",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-19",
+   "feature": "benji-voice",
+   "cases": ".qa/research/789f1a.md (брифы; кейсов в .qa/tests/ нет)",
+   "plan": ".qa/e2e/specs/benji-voice.md",
+   "tests": [],
+   "tests_planned": [
+    "tests/benji-voice/mute-icon-matches-state-home.spec.ts",
+    "tests/benji-voice/mute-icon-matches-state-reading.spec.ts",
+    "tests/benji-voice/mute-icon-matches-state-390.spec.ts"
+   ],
+   "tests_status": "план записан 19.11 (раунд 2), ждёт записи тестов (основная сессия), не запускались",
+   "note": "3 теста (план §4, parent-auto, @data); нативный iPad build 9 (вид иконки, VoiceOver), слух, Android — вручную/не покрыто"
+  },
+  {
+   "hash": "#6a0cbc",
+   "id": "dad2f54c28ed3af6db6a0cbc",
+   "title": "iPad build 8: в «הקלדה» текст и placeholder «כותבים כאן…» сидят на линии тетради",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-19",
+   "feature": "writing-surface-undo",
+   "cases": ".qa/research/6a0cbc.md (брифы; кейсов в .qa/tests/ нет)",
+   "plan": ".qa/e2e/specs/writing-surface-undo.md",
+   "tests": [],
+   "tests_planned": [
+    "tests/writing-surface-undo/typing-placeholder-above-line-1194.spec.ts",
+    "tests/writing-surface-undo/typing-text-above-lines-1194.spec.ts",
+    "tests/writing-surface-undo/typing-text-above-lines-390.spec.ts"
+   ],
+   "tests_status": "план записан 19.11 (раунд 2), ждёт записи тестов (основная сессия), не запускались",
+   "note": "3 теста (план §5, parent-3, @data); ВНИМАНИЕ: тесты #0e3868 typing-lines-align-and-restore*.spec.ts (baseline = линия ±3px) конфликтуют с новым требованием «текст выше линии» — обновить; нативный iPad (Larger Text, клавиатура) — вручную"
+  },
+  {
+   "hash": "#8bfc3c",
+   "id": "2a93af84889162d19c8bfc3c",
+   "title": "אתר: כשקובץ הקול לא נטען או חסום — בנג׳י מדבר בקול רובוטי (speechSynthesis)",
+   "class": "qa-passed",
+   "source": "qa",
+   "passed_at": "2026-11-19",
+   "feature": "benji-voice",
+   "cases": ".qa/research/8bfc3c.md; .qa/tests/benji-voice.md (BV-01/BV-02)",
+   "plan": ".qa/e2e/specs/benji-voice.md",
+   "tests": [],
+   "tests_planned": [
+    "tests/benji-voice/fallback-normal-path-no-speech.spec.ts",
+    "tests/benji-voice/fallback-mp3-abort-no-speech.spec.ts",
+    "tests/benji-voice/fallback-mp3-404-no-speech.spec.ts",
+    "tests/benji-voice/fallback-play-rejected-no-speech.spec.ts",
+    "tests/benji-voice/fallback-mute-unmute-replays.spec.ts",
+    "tests/benji-voice/fallback-390-no-speech.spec.ts"
+   ],
+   "tests_status": "план записан 19.11 (раунд 2), ждёт записи тестов (основная сессия), не запускались",
+   "note": "6 тестов (план §5, parent-auto, @data); только веб, нативное и слух не покрыты"
+  }
+ ]
+}

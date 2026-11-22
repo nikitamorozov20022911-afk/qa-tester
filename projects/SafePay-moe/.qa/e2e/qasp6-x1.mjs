@@ -1,0 +1,13 @@
+import { newBrowser, ctx, go, txt, shot, sleep } from './qasp6-lib.mjs';
+const b = await newBrowser();
+const { p } = await ctx(b, 'client', 375);
+await go(p, '/wallet');
+console.log((await txt(p)).slice(0, 300));
+await go(p, '/wallet/shared');
+await p.getByText('V-M2 ארנק בדיקה').click(); await sleep(3500);
+console.log('URL', p.url()); console.log(await txt(p));
+await shot(p, 'tmp/vm2-mgr', true);
+await p.getByText('פעולות אחרונות').first().click().catch(e=>console.log('tab fail')); await sleep(2000);
+console.log('URL', p.url()); console.log(await txt(p));
+console.log(p._console);
+await b.close();

@@ -1,0 +1,35 @@
+import { newBrowser, ctx, go, txt, shot, sleep, redBox } from './q0310-lib.mjs';
+import { btns } from './q0310-btns.mjs';
+const ID='3b41206f-d7dc-4893-9355-90aea8f39374', D='6a86f7c3d81dc311e455cf6d', RUN=process.env.RUN||'r1', WD=+(process.env.W||375), DEV=WD<768?'mobile':'desktop', ROLE=process.env.R||'client';
+const b = await newBrowser();
+const { p } = await ctx(b, ROLE, WD, WD<768?812:900); p.setDefaultTimeout(12000);
+const openViaMenu = async () => { await go(p, '/deals/' + ID); await p.getByRole('button', { name: 'פעולות נוספות' }).click(); await sleep(1200); await p.getByText('פתיחת מחלוקת', { exact: true }).last().click(); await sleep(2000); };
+await openViaMenu();
+const t = await txt(p); const i = t.lastIndexOf('בחרו איך'); console.log('SHEET TEXT', JSON.stringify(t.slice(i-60, i+500)));
+console.log(await btns(p));
+const probe = await p.evaluate(() => { const all=[...document.querySelectorAll('div,span')].filter(e=>e.offsetParent && e.childElementCount===0); return { chip150: all.filter(e=>/150/.test(e.innerText)).map(e=>e.innerText), paidChip: all.filter(e=>/^בתשלום/.test(e.innerText.trim())).map(e=>e.innerText) }; });
+console.log('probe chip', probe);
+const opts = ['פתיחת מחלוקת בעזרת AI','פתיחת מחלוקת בעזרת בורר אנושי'];
+for (const o of opts) { const el = p.getByText(o, { exact: true }).last(); console.log(o, await el.evaluate(e => { let n=e; for(let k=0;k<4;k++) n=n.parentElement; const r=n.getBoundingClientRect(); return { box: [Math.round(r.x),Math.round(r.y),Math.round(r.width),Math.round(r.height)], text: n.innerText.replace(/\n/g,' / '), bg: getComputedStyle(n).backgroundColor, color: getComputedStyle(e).color, dir: getComputedStyle(e).direction, align: getComputedStyle(e).textAlign }; })); }
+const sheetBox = await p.getByText('בחרו איך תרצו לנסות לפתור את המחלוקת.').last().evaluate(e => { let n=e; while (n && n.getBoundingClientRect().width < innerWidth*0.9 && n.parentElement) n=n.parentElement; const r=n.getBoundingClientRect(); return [Math.round(r.x),Math.round(r.y),Math.round(r.width),Math.round(r.height), innerWidth, document.documentElement.scrollWidth]; });
+console.log('sheet box/innerWidth/scrollWidth', sheetBox);
+await redBox(p, p.getByText('פתיחת מחלוקת בעזרת בורר אנושי', { exact: true }).last(), D, `${RUN}-01-${ROLE}-sheet-human-option-${DEV}`);
+await shot(p, D, `${RUN}-02-${ROLE}-sheet-${DEV}`);
+p._req.length = 0;
+await p.getByText('פתיחת מחלוקת בעזרת בורר אנושי', { exact: true }).last().click(); await sleep(2500);
+console.log('HUMAN NEXT', p.url(), (await txt(p)).split('\n').slice(0,30).join(' | '));
+const cost = p.getByText(/עלות שירות בורר אנושי/).first();
+await redBox(p, cost, D, `${RUN}-03-${ROLE}-human-next-cost-${DEV}`);
+console.log('posts after human click', p._req);
+await openViaMenu();
+await p.getByText('פתיחת מחלוקת בעזרת AI', { exact: true }).last().click(); await sleep(2500);
+console.log('AI NEXT', p.url(), (await txt(p)).split('\n').slice(0,20).join(' | '));
+await shot(p, D, `${RUN}-04-${ROLE}-ai-next-${DEV}`);
+// bottom button path + close
+await go(p, '/deals/' + ID); await p.getByRole('button', { name: 'פתיחת מחלוקת' }).last().click(); await sleep(2000);
+console.log('bottom button opens sheet?', (await txt(p)).includes('בחרו איך תרצו לנסות לפתור את המחלוקת.'));
+await p.getByRole('button', { name: 'סגירה' }).last().click().catch(()=>p.keyboard.press('Escape')); await sleep(1200);
+console.log('closed?', !(await txt(p)).includes('בחרו איך תרצו לנסות לפתור את המחלוקת.'), 'posts', p._req);
+await go(p, '/deals/' + ID); console.log('deal still', (await txt(p)).split('\n').slice(2,4));
+console.log('console', p._console);
+await b.close();

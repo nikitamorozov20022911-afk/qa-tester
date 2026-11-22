@@ -1,0 +1,72 @@
+[
+  {
+    "id": "admin",
+    "role": "מנהל חשבון — QA Test בע\"מ (компания A)",
+    "emailVar": "ADMIN_EMAIL",
+    "passwordVar": "ADMIN_PASSWORD"
+  },
+  {
+    "id": "user",
+    "role": "משתמש רגיל — QA Test בע\"מ",
+    "emailVar": "USER_EMAIL",
+    "passwordVar": "USER_PASSWORD"
+  },
+  {
+    "id": "admin2",
+    "role": "מנהל חשבון — QA Company B (компания B, для изоляции)",
+    "emailVar": "ADMIN2_EMAIL",
+    "passwordVar": "ADMIN2_PASSWORD"
+  },
+  {
+    "id": "newadmin",
+    "role": "מנהל חשבון — компания «test» (NEWADMIN, зарегистрирован пользователем 10.11.2026; full_name «test test»)",
+    "emailVar": "NEWADMIN_EMAIL",
+    "passwordVar": "NEWADMIN_PASSWORD"
+  },
+  {
+    "id": "signup14",
+    "role": "מנהל חשבון — компания «QA add75b בע\"מ» (свежая регистрация 14.11.2026, #add75b; мастер на шаге 1 — не продвигать)",
+    "emailVar": "SIGNUP14_EMAIL",
+    "passwordVar": "SIGNUP14_PASSWORD"
+  },
+  {
+    "id": "platform",
+    "role": "מנהל מערכת (platform admin) — qa-tester-platform@example.com, создан программистом 10.11.2026",
+    "emailVar": "PLATFORM_EMAIL",
+    "passwordVar": "PLATFORM_PASSWORD"
+  },
+  {
+    "id": "signup17",
+    "role": "admin",
+    "email": "qa-signup17-fe406b50@euploading.com",
+    "tempmail": true,
+    "createdBy": "qa-signup",
+    "created": "2026-11-17"
+  },
+  {
+    "id": "signup17b",
+    "role": "admin",
+    "email": "qa-signup17b-de80f6a2@euploading.com",
+    "tempmail": true,
+    "createdBy": "qa-signup",
+    "created": "2026-11-17"
+  },
+  {
+    "id": "signup14a",
+    "role": "מנהל חשבון — QA add75b (SIGNUP14A, дубль для #db2075)",
+    "emailVar": "SIGNUP14A_EMAIL",
+    "passwordVar": "SIGNUP14A_PASSWORD"
+  },
+  {
+    "id": "inv14login",
+    "role": "INV14 (QA Inv14 Member) — свежий вход для #db2075",
+    "emailVar": "INV14_EMAIL",
+    "passwordVar": "INV14_PASSWORD"
+  },
+  {
+    "id": "spoof14",
+    "role": "SPOOF14 — новый пользователь без компании (контроль /setup, #db2075 AC4)",
+    "emailVar": "SPOOF14_EMAIL",
+    "passwordVar": "SPOOF14_PASSWORD"
+  }
+]

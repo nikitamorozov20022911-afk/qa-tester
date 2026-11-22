@@ -1,0 +1,14 @@
+import { newBrowser, ctx, go, txt, shot, sleep } from './qasp6-lib.mjs';
+const b = await newBrowser();
+const { p } = await ctx(b, 'client', 375);
+await go(p, '/wallet/shared');
+await p.getByText('יצירת ארנק משותף').click(); await sleep(3000);
+console.log('URL', p.url()); console.log(await txt(p));
+console.log(await p.locator('body').ariaSnapshot());
+await shot(p, 'tmp/sh-new', true);
+await p.getByText('הזמנה מאנשי הקשר').click(); await sleep(2000);
+console.log('---AFTER invite'); console.log(await txt(p));
+console.log(await p.locator('body').ariaSnapshot());
+await shot(p, 'tmp/sh-new-invite', true);
+console.log(p._console);
+await b.close();

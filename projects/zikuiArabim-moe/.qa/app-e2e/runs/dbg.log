@@ -1,0 +1,26 @@
+
+Execution of 1 workers started at 2026-11-15T16:57:46.644Z
+
+[0-0] RUNNING in Android on Android - file:///specs/_debug/dbg.e2e.ts
+[0-0] DBG single android=new UiSelector().textMatches("\d{2}:\d{2} - \d{2}:\d{2}") true
+[0-0] DBG double android=new UiSelector().textMatches("\\d{2}:\\d{2} - \\d{2}:\\d{2}") false
+[0-0] DBG cls android=new UiSelector().textMatches("[0-9]{2}:[0-9]{2} - [0-9]{2}:[0-9]{2}") true
+[0-0] DBG dotstar android=new UiSelector().textMatches(".*:.* - .*:.*") true
+[0-0] DBG contains android=new UiSelector().textContains(" - ") true
+[0-0] DBG greet android=new UiSelector().textMatches("ערב.*") true
+[0-0] PASSED in Android on Android - file:///specs/_debug/dbg.e2e.ts
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[Android #0-0] Running: on Android
+[Android #0-0] Session ID: 94aa986d-2245-4e6e-8247-8db040229bed
+[Android #0-0]
+[Android #0-0] » specs/_debug/dbg.e2e.ts
+[Android #0-0] dbg
+[Android #0-0]    ✓ dbg
+[Android #0-0]
+[Android #0-0] 1 passing (2.9s)
+
+
+Spec Files:	 1 passed, 1 total (100% completed) in 00:00:12  
+

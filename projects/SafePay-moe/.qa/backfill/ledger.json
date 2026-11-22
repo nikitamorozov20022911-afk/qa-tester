@@ -1,0 +1,993 @@
+{
+  "tickets": [
+    {
+      "id": "1846ecd8bbe90de4c58d0f23",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-10-08",
+      "files": [
+        "tests/deals/new-deal-from-provider-arrow-back.spec.ts",
+        "tests/deals/new-deal-from-provider-browser-back.spec.ts",
+        "tests/deals/new-deal-from-deals-tab.spec.ts",
+        "tests/deals/new-deal-from-home-browser-back.spec.ts",
+        "tests/notifications/new-deal-notification.spec.ts"
+      ]
+    },
+    {
+      "id": "85e617057ab4e924158df2e1",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-10-08",
+      "files": [
+        "tests/home/recent-show-all.spec.ts",
+        "tests/home/pending-show-all.spec.ts"
+      ]
+    },
+    {
+      "id": "ccd9d865bc2f2ee955f517d1",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-10-08",
+      "files": [
+        "tests/notifications/client-deal-notification-opens-deal.spec.ts",
+        "tests/notifications/wallet-notification-only-marks-read.spec.ts",
+        "tests/notifications/new-deal-notification.spec.ts"
+      ]
+    },
+    {
+      "id": "6a86f7bc48089a4ec77d2be2",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-10-08",
+      "files": [
+        "tests/events/purchase-layout-buy-button-at-end.spec.ts",
+        "tests/events/purchase-quantity-and-total.spec.ts",
+        "tests/events/purchase-buyer-details-email-validation.spec.ts",
+        "tests/events/purchase-insufficient-balance.spec.ts",
+        "tests/events/purchase-event-not-found.spec.ts",
+        "tests/events/purchase-network-error-retry.spec.ts"
+      ]
+    },
+    {
+      "id": "6a9e9592f020cfee7fb9cb5e",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-10-08",
+      "files": [
+        "tests/security/revoke.spec.ts"
+      ]
+    },
+    {
+      "id": "6aabdaf745fcf2c9f2a7f36d",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-10-12",
+      "files": [
+        "tests/wallets/WAL-008.md",
+        "e2e/specs/wallets.md#4 (план; генератор не запускался — MCP playwright-test не подключён)"
+      ]
+    },
+    {
+      "id": "6aabdaf745fcf2c9f2a7f36f",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-10-12",
+      "files": [
+        "tests/web/WEB-001.md",
+        "e2e/specs/web.md#1.1 (план; генератор не запускался — MCP playwright-test не подключён)"
+      ]
+    },
+    {
+      "id": "6aabdaf745fcf2c9f2a7f370",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-10-12",
+      "files": [
+        "tests/web/WEB-002.md",
+        "e2e/specs/web.md#1.2 (план; генератор не запускался — MCP playwright-test не подключён)"
+      ]
+    },
+    {
+      "id": "094049fcdc8c65e4599ce9d2",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-10-12",
+      "files": [
+        "tests/web/WEB-003.md",
+        "e2e/specs/web.md#1.3 (план; генератор не запускался — MCP playwright-test не подключён)"
+      ]
+    },
+    {
+      "id": "6aac0ca4d90ef2688cee85c0",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-10-12",
+      "files": [
+        "tests/web/WEB-004.md",
+        "e2e/specs/web.md#1.4 (план; генератор не запускался — MCP playwright-test не подключён)"
+      ]
+    },
+    {
+      "id": "25cd5bd027aa981b6bfa2eb2",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-10-12",
+      "files": [
+        "tests/web/WEB-005.md",
+        "e2e/specs/web.md#1.5 (план; генератор не запускался — MCP playwright-test не подключён)"
+      ]
+    },
+    {
+      "hash": "#d7c3cf",
+      "class": "qa-passed",
+      "source": "qa",
+      "tests": [
+        ".qa/tests/wallets/WAL-012.md"
+      ],
+      "date": "2026-10-21",
+      "note": "native iPhone, manual regression"
+    },
+    {
+      "id": "3ca44c17785ec7d807f7fb17",
+      "hash": "#f7fb17",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-10-26",
+      "files": [
+        "tests/home/HOME-005.md",
+        "e2e/specs/home.md#3.1",
+        "e2e/specs/home.md#3.2",
+        "e2e/specs/home.md#3.3",
+        "tests/home/pending-latest-five.spec.ts",
+        "tests/home/pending-show-all-opens-deals-revisit.spec.ts",
+        "tests/home/pending-item-opens-deal.spec.ts"
+      ],
+      "note": "QA на нативном iPhone 17 build 16, עבר QA пользователем 26.10; spec-файлы — план для playwright-test-generator (ещё не сгенерированы); шаги @ios-native — только ручной регресс по кейсу"
+    },
+    {
+      "id": "2c241471cfc5099a1b9808ed",
+      "hash": "#9808ed",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-10-26",
+      "files": [
+        "tests/deals/DEAL-008.md",
+        "e2e/specs/deals.md#3.1",
+        "e2e/specs/deals.md#3.2",
+        "e2e/specs/deals.md#3.3",
+        "tests/deals/deals-tab-first-load-content.spec.ts",
+        "tests/deals/deals-tab-revisit-not-empty.spec.ts",
+        "tests/deals/deals-load-error-retry.spec.ts"
+      ],
+      "note": "QA на нативном iPhone 17 build 16, עבר QA пользователем 26.10; spec-файлы — план для playwright-test-generator (ещё не сгенерированы); шаги @ios-native — только ручной регресс по кейсу"
+    },
+    {
+      "id": "4ffb06371978a60856a932ef",
+      "hash": "#a932ef",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-10-26",
+      "files": [
+        "tests/profile/PRF-002.md",
+        "e2e/specs/profile.md#1.1",
+        "e2e/specs/profile.md#1.2",
+        "e2e/specs/profile.md#1.3",
+        "tests/profile/profile-after-wallet-scroll.spec.ts",
+        "tests/profile/five-tabs-roundtrip-not-empty.spec.ts",
+        "tests/profile/profile-after-new-deal-back.spec.ts"
+      ],
+      "note": "QA на нативном iPhone 17 build 16, עבר QA пользователем 26.10; spec-файлы — план для playwright-test-generator (ещё не сгенерированы); шаги @ios-native — только ручной регресс по кейсу"
+    },
+    {
+      "id": "3413934a7b7ba8b560d64ac3",
+      "hash": "#d64ac3",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-10-26",
+      "files": [
+        "tests/wallets/WAL-013.md",
+        "e2e/specs/wallets.md#5.1",
+        "e2e/specs/wallets.md#5.2",
+        "tests/wallets/card-details-checkboxes-above-button.spec.ts",
+        "tests/wallets/card-details-back-to-load-amount.spec.ts"
+      ],
+      "note": "QA на нативном iPhone 17 build 16, עבר QA пользователем 26.10; spec-файлы — план для playwright-test-generator (ещё не сгенерированы); шаги @ios-native — только ручной регресс по кейсу"
+    },
+    {
+      "id": "9cd48b98f359b5a148f3a917",
+      "hash": "#f3a917",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-10-26",
+      "files": [
+        "tests/auth/AUTH-004.md",
+        "e2e/specs/auth.md#1.1",
+        "tests/auth/splash-vault-center.spec.ts (только если в веб-сборке есть заставка; иначе ручной @ios-native)"
+      ],
+      "note": "QA на нативном iPhone 17 build 16, עבר QA пользователем 26.10; spec-файлы — план для playwright-test-generator (ещё не сгенерированы); шаги @ios-native — только ручной регресс по кейсу"
+    },
+    {
+      "id": "e9e411b4a8bfb3cdb07564a2",
+      "hash": "#7564a2",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-10-26",
+      "files": [
+        "tests/auth/AUTH-005.md",
+        "tests/wallets/WAL-014.md",
+        "e2e/specs/auth.md#2.1",
+        "e2e/specs/wallets.md#6.1",
+        "e2e/specs/wallets.md#6.2"
+      ],
+      "note": "QA на нативном iPhone 17 build 16, עבר QA пользователем 26.10; автотестов веб нет — вид сейфа и число монет только @ios-native (ручной регресс по AUTH-005, WAL-014); зеркальная дверь принята"
+    },
+    {
+      "id": "92e2cb61bdd23c09bea2c99a",
+      "hash": "#a2c99a",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-10-26",
+      "files": [
+        "tests/events/EVT-012.md",
+        "tests/events/EVT-013.md",
+        "e2e/specs/events.md#3.1",
+        "e2e/specs/events.md#3.2",
+        "e2e/specs/events.md#3.3",
+        "tests/events/events-tab-my-events-opens-event.spec.ts",
+        "tests/events/my-tickets-opens-event.spec.ts",
+        "tests/events/events-url-not-redirect-home.spec.ts"
+      ],
+      "note": "QA на нативном iPhone 17 build 16, עבר QA пользователем 26.10; spec-файлы — план для playwright-test-generator (ещё не сгенерированы); шаги @ios-native — только ручной регресс по кейсу"
+    },
+    {
+      "id": "13bd4ffea1e3b7adcba316a1",
+      "hash": "#a316a1",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-10-26",
+      "files": [
+        "tests/deals/DEAL-009.md",
+        "tests/deals/DEAL-010.md",
+        "e2e/specs/deals.md#4.1",
+        "e2e/specs/deals.md#4.2",
+        "e2e/specs/deals.md#4.3",
+        "tests/deals/client-rating-flow.spec.ts"
+      ],
+      "note": "QA на iPhone 17 build 16 + веб, עבר QA пользователем 26.10; многоролевой тест записан autotest-writer (asUser, @data, QA_ALLOW_DEPOSIT=1 или QA_RATING_ESCROW_DEAL_ID), не прогонялся; «לקוח חדש» — вручную; release-flow.spec.ts (1.4 «у поставщика меню нет») устарел — ждёт решения"
+    },
+    {
+      "id": "f52f9cfa7d8335c04487ee9a",
+      "hash": "#87ee9a",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-10-26",
+      "files": [
+        "tests/deals/DEAL-011.md",
+        "tests/deals/DEAL-012.md",
+        "e2e/specs/deals.md#5.1",
+        "e2e/specs/deals.md#5.2",
+        "tests/deals/new-deal-end-before-start-red-error.spec.ts"
+      ],
+      "note": "QA на нативном iPhone 17 build 16, עבר QA пользователем 26.10; spec-файлы — план для playwright-test-generator (ещё не сгенерированы); шаги @ios-native — только ручной регресс по кейсу; AC1–5, AC7 (шит, отклик, skeleton, count-up, фильтры, reduce motion) проверены 22.10 вручную — анимации/тайминги не автоматизируем"
+    },
+    {
+      "id": "a3c1f140d448d924509732f5",
+      "hash": "#9732f5",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-02",
+      "files": [
+        "tests/events/EVT-014.md",
+        "tests/events/EVT-012.md",
+        "tests/events/EVT-013.md",
+        "tests/profile/PRF-002.md",
+        "e2e/specs/events.md#4.1",
+        "e2e/specs/events.md#4.2",
+        "e2e/specs/events.md#4.3"
+      ],
+      "note": "QA 02.11.2026 (iPhone 17 0.1.1 (19) / веб), עבר QA пользователем 02.11; spec-пункты — план для playwright-test-generator (ещё не сгенерированы); @ios-native/@manual — только ручной регресс по кейсу; 4.3 (покупка второй ролью, потянуть вниз) — @ios-native @manual"
+    },
+    {
+      "id": "5e655e9b4919d54558453717",
+      "hash": "#453717",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-02",
+      "files": [
+        "tests/deals/DEAL-013.md",
+        "e2e/specs/deals.md#8.1"
+      ],
+      "note": "только нативное (контакты устройства) — @ios-native @manual; QA 02.11.2026 (iPhone 17 0.1.1 (19) / веб), עבר QA пользователем 02.11; spec-пункты — план для playwright-test-generator (ещё не сгенерированы); @ios-native/@manual — только ручной регресс по кейсу"
+    },
+    {
+      "id": "6a86f7ce80791059fd280c0a",
+      "hash": "#280c0a",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-02",
+      "files": [
+        "tests/wallets/WAL-015.md",
+        "tests/wallets/WAL-004.md",
+        "tests/wallets/WAL-010.md",
+        "e2e/specs/wallets.md#7.1",
+        "e2e/specs/wallets.md#7.2"
+      ],
+      "note": "QA 02.11.2026 (iPhone 17 0.1.1 (19) / веб), עבר QA пользователем 02.11; spec-пункты — план для playwright-test-generator (ещё не сгенерированы); @ios-native/@manual — только ручной регресс по кейсу; 7.1 требует свежей client.json (истекла 02.11); 7.2 добавление карты — @manual"
+    },
+    {
+      "id": "9b71d804b68d30722f005602",
+      "hash": "#005602",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-02",
+      "files": [
+        "tests/auth/AUTH-006.md",
+        "e2e/specs/auth.md#3.1",
+        "e2e/specs/auth.md#3.2"
+      ],
+      "note": "QA 02.11.2026 (iPhone 17 0.1.1 (19) / веб), עבר QA пользователем 02.11; spec-пункты — план для playwright-test-generator (ещё не сгенерированы); @ios-native/@manual — только ручной регресс по кейсу; автозаполнение из SMS (3.2) — @ios-native @manual"
+    },
+    {
+      "id": "7b30ece37064bd9326edb378",
+      "hash": "#edb378",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-02",
+      "files": [
+        "tests/auth/AUTH-007.md",
+        "tests/auth/AUTH-005.md",
+        "tests/auth/AUTH-004.md",
+        "e2e/specs/auth.md#4.1",
+        "e2e/specs/auth.md#4.2"
+      ],
+      "note": "только ручной регресс (@ios-native @manual): анимация нативной заставки, Reduce Motion"
+    },
+    {
+      "id": "3a4ac8a54fd75382b7f45918",
+      "hash": "#f45918",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-02",
+      "files": [
+        "tests/wallets/WAL-017.md",
+        "tests/auth/AUTH-005.md",
+        "tests/wallets/WAL-014.md",
+        "e2e/specs/auth.md#5.1",
+        "e2e/specs/wallets.md#6.4"
+      ],
+      "note": "только ручной регресс (@ios-native @manual): раскладка монет; повторяемый разброс принят"
+    },
+    {
+      "id": "577c3ef212c74db5b79a140d",
+      "hash": "#9a140d",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-02",
+      "files": [
+        "tests/home/HOME-006.md",
+        "tests/home/HOME-001.md",
+        "tests/deals/DEAL-002.md",
+        "e2e/specs/home.md#4.1",
+        "e2e/specs/deals.md#6.1"
+      ],
+      "note": "QA 02.11.2026 (iPhone 17 0.1.1 (19) / веб), עבר QA пользователем 02.11; spec-пункты — план для playwright-test-generator (ещё не сгенерированы); @ios-native/@manual — только ручной регресс по кейсу"
+    },
+    {
+      "id": "22c974766bed9d676eed59d3",
+      "hash": "#ed59d3",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-02",
+      "files": [
+        "tests/home/HOME-007.md",
+        "tests/deals/DEAL-014.md",
+        "tests/home/HOME-001.md",
+        "e2e/specs/home.md#5.1",
+        "e2e/specs/home.md#5.2",
+        "e2e/specs/home.md#5.3",
+        "e2e/specs/deals.md#7.1",
+        "e2e/specs/deals.md#7.2"
+      ],
+      "note": "QA 02.11.2026 (iPhone 17 0.1.1 (19) / веб), עבר QA пользователем 02.11; spec-пункты — план для playwright-test-generator (ещё не сгенерированы); @ios-native/@manual — только ручной регресс по кейсу; 5.3/7.2 (нет курса) — генератор пишет, только если найдёт запрос курса"
+    },
+    {
+      "id": "829c1ab2141b80150326ed72",
+      "hash": "#26ed72",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-02",
+      "files": [
+        "tests/wallets/WAL-016.md",
+        "tests/wallets/WAL-014.md",
+        "e2e/specs/wallets.md#6.3"
+      ],
+      "note": "только ручной регресс (@ios-native @manual @data): анимации сейфа на экранах успеха, звук монет; реджект 26.10 исправлен"
+    },
+    {
+      "id": "ee95909b02a2aaa9f7907ebd",
+      "hash": "#907ebd",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-02",
+      "files": [
+        "tests/security/SEC-004.md",
+        "e2e/specs/profile.md#2.1",
+        "e2e/specs/profile.md#2.2"
+      ],
+      "note": "QA 02.11.2026 (iPhone 17 0.1.1 (19) / веб), עבר QA пользователем 02.11; spec-пункты — план для playwright-test-generator (ещё не сгенерированы); @ios-native/@manual — только ручной регресс по кейсу; Face ID целиком (2.2) — @ios-native @manual"
+    },
+    {
+      "id": "1ca44817f8a0904c3fe2eb7e",
+      "hash": "#e2eb7e",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-02",
+      "files": [
+        "tests/wallets/WAL-018.md",
+        "tests/wallets/WAL-014.md",
+        "e2e/specs/wallets.md#6.5"
+      ],
+      "note": "только ручной регресс (@manual @ios-native): звуки по операциям; вывод не проверен (нет эквайринга)"
+    },
+    {
+      "id": "71e7be8ea99c0c724ae928c2",
+      "hash": "#e928c2",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-02",
+      "files": [
+        "tests/disputes/DSP-010.md",
+        "tests/disputes/DSP-007.md",
+        "e2e/specs/disputes.md#4.1",
+        "e2e/specs/disputes.md#4.2",
+        "e2e/specs/disputes.md#4.3",
+        "e2e/specs/disputes.md#4.4",
+        "e2e/specs/disputes.md#4.5",
+        "e2e/specs/disputes.md#5.1",
+        "e2e/tests/seed.arbitrator.spec.ts",
+        "e2e/tests/disputes/arbitration-decision-flow.spec.ts"
+      ],
+      "note": "QA 02.11.2026 (iPhone 17 0.1.1 (19) / веб), עבר QA пользователем 02.11; spec-пункты — план для playwright-test-generator (ещё не сгенерированы); @ios-native/@manual — только ручной регресс по кейсу; многоролевой тест 5.1 записан autotest-writer (asUser client/provider/arbitrator, @data, QA_ALLOW_ARBITER_FEE=1 + QA_ALLOW_DEPOSIT=1/QA_DISPUTE_DEAL_ARBITER), не прогонялся"
+    },
+    {
+      "id": "6a86f7c59e8192055ec6538a",
+      "hash": "#c6538a",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-02",
+      "files": [
+        "tests/disputes/DSP-011.md",
+        "e2e/specs/disputes.md#5.1",
+        "e2e/specs/disputes.md#5.2",
+        "e2e/tests/disputes/arbitration-decision-flow.spec.ts"
+      ],
+      "note": "QA 02.11.2026 (iPhone 17 0.1.1 (19) / веб), עבר QA пользователем 02.11; spec-пункты — план для playwright-test-generator (ещё не сгенерированы); @ios-native/@manual — только ручной регресс по кейсу; сверка с Figma 6072-12796 (5.2) — @manual"
+    },
+    {
+      "id": "6aabdaf745fcf2c9f2a7f36e",
+      "hash": "#a7f36e",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-02",
+      "files": [
+        "tests/wallets/WAL-019.md",
+        "e2e/specs/wallets.md#8.1"
+      ],
+      "note": "עבר QA пользователем 02.11 по доказательствам программиста 28.10; spec 8.1 — план для playwright-test-generator (веб, provider)"
+    },
+    {
+      "id": "6a8f01577dbd0fbe66d2121b",
+      "hash": "#d2121b",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-02",
+      "files": [
+        "tests/profile/PRF-003.md",
+        "tests/profile/PRF-001.md",
+        "e2e/specs/profile.md#3.1"
+      ],
+      "note": "עבר QA пользователем 02.11 по доказательствам программиста 28.10; spec 3.1 — план для playwright-test-generator (веб, provider, @data)"
+    },
+    {
+      "id": "6aabdaf745fcf2c9f2a7f36a",
+      "hash": "#a7f36a",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-02",
+      "files": [],
+      "note": "עבר QA пользователем 02.11 по доказательствам программиста (проверка кодом/БД); автотестов нет"
+    },
+    {
+      "id": "6a9e8991395376a3a63d0b44",
+      "hash": "#3d0b44",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-02",
+      "files": [],
+      "note": "עבר QA пользователем 02.11 по доказательствам программиста (проверка кодом/БД); автотестов нет"
+    },
+    {
+      "id": "7ea4225d7d391039cf30f39e",
+      "hash": "#30f39e",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-02",
+      "files": [],
+      "note": "עבר QA пользователем 02.11 по доказательствам программиста (проверка кодом/БД); автотестов нет"
+    },
+    {
+      "id": "d6a3d5e2408318e8c42dc757",
+      "hash": "#2dc757",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-02",
+      "files": [],
+      "note": "עבר QA пользователем 02.11 по доказательствам программиста (проверка кодом/БД); автотестов нет"
+    },
+    {
+      "id": "eb5c4f393ba690c3628757b4",
+      "hash": "#8757b4",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-04",
+      "files": [
+        "tests/disputes/arbitration-resolved-deal-completed.spec.ts"
+      ],
+      "note": "עבר QA пользователем 04.11 (iPhone 17 0.1.1 (20), 04 + веб 05/06); кейс DSP-012; план disputes.md 6.1 (многоролевой, записан autotest-writer, не прогонялся)"
+    },
+    {
+      "id": "677a646db7f9e6c7283ec77d",
+      "hash": "#3ec77d",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-04",
+      "files": [
+        "tests/profile/profile-photo-visible-to-counterparty.spec.ts",
+        "tests/profile/profile-photo-persists-after-reload.spec.ts",
+        "tests/profile/profile-photo-remove-restores-default-icon.spec.ts"
+      ],
+      "note": "עבר QA пользователем 04.11; кейсы PRF-004..006; план profile.md 4.1–4.3 (4.2 записан autotest-writer; 4.1, 4.3 — ждут playwright-test-generator); AC1 (тест в коде) — по слову программиста"
+    },
+    {
+      "id": "8361dab8c9f8e0fad1bbc929",
+      "hash": "#bbc929",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-04",
+      "files": [
+        "tests/home/wallet-balance-card-two-color.spec.ts",
+        "tests/home/wallet-action-tiles-style.spec.ts",
+        "tests/home/recent-actions-status-chips.spec.ts",
+        "tests/wallets/shared-wallet-action-tiles-style.spec.ts",
+        "tests/wallets/kid-wallet-action-tiles-style.spec.ts"
+      ],
+      "note": "עבר QA пользователем 04.11 (iPhone 17 0.1.1 (20)); кейсы HOME-008, HOME-009, WAL-020; план home.md 6.1–6.3, wallets.md 9.1–9.2 — ждут playwright-test-generator; цветность иконок/₪ — ручной регресс home.md 6.4"
+    },
+    {
+      "id": "880ccd9556fbd3783ec70e75",
+      "hash": "#c70e75",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-12",
+      "files": [
+        "tests/events/share-link.md",
+        "e2e/specs/events.md#5.1",
+        "e2e/specs/events.md#5.2",
+        "e2e/specs/events.md#5.3",
+        "e2e/specs/events.md#5.4",
+        "e2e/specs/events.md#5.5",
+        "e2e/tests/events/share-link-guest-expo-event-page.spec.ts",
+        "e2e/tests/events/share-link-guest-buy-goes-to-onboarding.spec.ts",
+        "e2e/tests/events/share-link-guest-orgil-public-page.spec.ts"
+      ],
+      "note": "עבר QA пользователем 12.11 (iPhone 11 build 23 + браузер гостем); 5.1–5.3 — веб-исключение (гостевая страница события), план для playwright-test-generator, spec-файлы ещё не сгенерированы, не прогонялись; 5.4–5.5 — ручной регресс; событие 736faceb прошедшее после 20.11.2026"
+    },
+    {
+      "id": "454afd8844d4a2645f831ee9",
+      "hash": "#831ee9",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-12",
+      "files": [
+        "tests/profile/language-after-deeplink.md",
+        "e2e/specs/profile.md#5.4",
+        "e2e/specs/profile.md#5.5"
+      ],
+      "note": "עבר QA пользователем 12.11 (iPhone 11 «Kirill Test»); только ручной регресс (@ios-native/@android-native @manual) — по уроку проекта веб-тестов нет; генератору не передаётся"
+    },
+    {
+      "hash": "#b76e64",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-08",
+      "files": [
+        "tests/wallets/transfer-unknown-number.md",
+        "e2e/specs/wallets.md#10.1",
+        "e2e/specs/wallets.md#10.2",
+        "e2e/specs/wallets.md#10.3"
+      ],
+      "note": "עבר QA пользователем 08.11 (iPhone 11 build 22 + Pixel 6 vc16); только ручной регресс (@ios-native/@android-native @manual) — по уроку проекта веб-тестов нет; генератору не передаётся; полный id не записан в .qa"
+    },
+    {
+      "hash": "#f910b7",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-08",
+      "files": [
+        "tests/auth/phone-placeholder-and-delete-text.md",
+        "e2e/specs/auth.md#6.1",
+        "e2e/specs/profile.md#6.1"
+      ],
+      "note": "עבר QA пользователем 08.11; только ручной регресс (@ios-native/@android-native @manual) — по уроку проекта веб-тестов нет; генератору не передаётся; AC3–5 — решения владельца (комментарий), правка Figma не проверена; полный id не записан в .qa"
+    },
+    {
+      "id": "9aa63fa71c5e2b25e9106730",
+      "hash": "#106730",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-08",
+      "files": [
+        "tests/deals/visit-fee-geofence.md",
+        "e2e/specs/deals.md#9.1",
+        "e2e/specs/deals.md#9.2",
+        "e2e/specs/deals.md#9.5"
+      ],
+      "note": "עבר QA пользователем 08.11 (iPhone 11 + Pixel 6); только ручной регресс (@ios-native/@android-native @manual) — по уроку проекта веб-тестов нет; генератору не передаётся; @data"
+    },
+    {
+      "id": "f953403e6c0d2949027eac1c",
+      "hash": "#7eac1c",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-08",
+      "files": [
+        "tests/deals/visit-fee-geofence.md",
+        "e2e/specs/deals.md#9.1",
+        "e2e/specs/deals.md#9.3"
+      ],
+      "note": "עבר QA пользователем 08.11 (iPhone 11 + Pixel 6, мок-GPS); только ручной регресс (@ios-native/@android-native @manual) — по уроку проекта веб-тестов нет; генератору не передаётся"
+    },
+    {
+      "id": "96d32fdaf4239862d53010dc",
+      "hash": "#3010dc",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-08",
+      "files": [
+        "tests/deals/visit-fee-geofence.md",
+        "e2e/specs/deals.md#9.2",
+        "e2e/specs/deals.md#9.3",
+        "e2e/specs/deals.md#9.4"
+      ],
+      "note": "עבר QA пользователем 08.11 (Pixel 6 мок-GPS + iPhone 11); только ручной регресс (@ios-native/@android-native @manual) — по уроку проекта веб-тестов нет; генератору не передаётся; @data"
+    },
+    {
+      "id": "2f3db428dc7ae02a9afad732",
+      "hash": "#fad732",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-04",
+      "files": [
+        "tests/wallets/open-finance-bank-payment.md",
+        "e2e/specs/wallets.md#11.1",
+        "e2e/specs/wallets.md#11.2",
+        "e2e/specs/wallets.md#11.3"
+      ],
+      "note": "עבר QA пользователем 04.11 (iPhone 17 build 20); только ручной регресс (@ios-native/@android-native @manual) — по уроку проекта веб-тестов нет; генератору не передаётся; не проверено: шит без суммы, переводы en/ru/ar"
+    },
+    {
+      "id": "399831b949c30941cdcbed2a",
+      "hash": "#cbed2a",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-04",
+      "files": [
+        "tests/home/offline-last-data.md",
+        "e2e/specs/home.md#7.1"
+      ],
+      "note": "עבר QA пользователем 04.11 (iPhone 17 build 20); только ручной регресс (@ios-native/@android-native @manual) — по уроку проекта веб-тестов нет; генератору не передаётся; не проверено нажатие «נסו שוב»"
+    },
+    {
+      "id": "6319fbb9212344702cdd875c",
+      "hash": "#dd875c",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-04",
+      "files": [
+        "tests/home/usd-row-rate-caption.md",
+        "e2e/specs/home.md#8.1",
+        "e2e/specs/home.md#5.1",
+        "e2e/specs/deals.md#7.1"
+      ],
+      "note": "עבר QA пользователем 04.11 (iPhone 17 build 20); ручной регресс home.md 8.1; веб-ожидания #ed59d3 (home 5.1, deals 7.1) обновлены под новый формат $ — не генерировать без разрешения веб-тестов"
+    },
+    {
+      "id": "6aac0ca4d90ef2688cee85c2",
+      "hash": "#ee85c2",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-04",
+      "files": [
+        "tests/providers/spec-stale-marketplace-decisions.md",
+        "e2e/specs/providers.md#2.1",
+        "e2e/specs/providers.md#2.2"
+      ],
+      "note": "עבר QA пользователем 04.11; только ручной регресс (@ios-native/@android-native @manual) — по уроку проекта веб-тестов нет; генератору не передаётся; проверены D01, D06; D02–D05 не проверялись"
+    },
+    {
+      "id": "6aabdb709fe6f32201ea97f0",
+      "hash": "#ea97f0",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-04",
+      "files": [
+        "tests/wallets/spec-stale-qa-decisions.md",
+        "e2e/specs/wallets.md#12.1",
+        "e2e/specs/wallets.md#12.2",
+        "e2e/specs/deals.md#10.1"
+      ],
+      "note": "עבר QA пользователем 04.11; только ручной регресс (@ios-native/@android-native @manual) — по уроку проекта веб-тестов нет; генератору не передаётся; проверены D02, D03, D06; D04, D07 не проверялись"
+    },
+    {
+      "id": "f30d4caded821e5824edbc5c",
+      "hash": "#edbc5c",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-04",
+      "files": [
+        "tests/profile/app-language-default.md",
+        "e2e/specs/profile.md#5.1",
+        "e2e/specs/profile.md#5.2",
+        "e2e/specs/profile.md#5.3"
+      ],
+      "note": "עבר QA пользователем 04.11 (iPhone 17 build 20); реджект 02.11 закрыт; только ручной регресс (@ios-native/@android-native @manual) — по уроку проекта веб-тестов нет; генератору не передаётся"
+    },
+    {
+      "hash": "#74d7ca",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-04",
+      "files": [
+        "tests/auth/android-large-font-onboarding.md",
+        "e2e/specs/auth.md#7.1",
+        "e2e/specs/auth.md#7.2"
+      ],
+      "note": "עבר QA пользователем 04.11 (Pixel 6 vc14, шрифт 2.0, экран 540); только ручной регресс (@ios-native/@android-native @manual) — по уроку проекта веб-тестов нет; генератору не передаётся; полный id не записан в .qa"
+    },
+    {
+      "id": "a442cb670a8ee1c1a77fc9a3",
+      "hash": "#7fc9a3",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-12",
+      "files": [
+        "tests/profile/app-feedback.md",
+        "e2e/specs/profile.md#7.1",
+        "e2e/specs/profile.md#7.2",
+        "e2e/specs/profile.md#7.3",
+        "e2e/specs/profile.md#7.4",
+        "e2e/specs/profile.md#7.5",
+        "e2e/specs/profile.md#7.6"
+      ],
+      "note": "עבר QA пользователем 12.11 (iPhone 11 «Kirill Test» build 23); реджект (письмо) закрыт, письмо от 05 проверено; только ручной регресс (@ios-native @manual) — по уроку проекта веб-тестов нет; генератору не передаётся; не проверено окно App Store/Google Play (этап 2); отзывы QA-AUTO от 07 и 05 — в чистку"
+    },
+    {
+      "id": "98903c645003951702b7e109",
+      "hash": "#b7e109",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-12",
+      "files": [
+        "tests/a11y/ios-large-text.md",
+        "e2e/specs/a11y.md#1.1",
+        "e2e/specs/a11y.md#1.2",
+        "e2e/specs/a11y.md#1.3",
+        "e2e/specs/a11y.md#1.4",
+        "e2e/specs/a11y.md#1.5",
+        "e2e/specs/a11y.md#1.6",
+        "e2e/specs/a11y.md#1.7"
+      ],
+      "note": "עבר QA пользователем 12.11 (iPhone 11 «Kirill Test» build 23, макс. «Увеличенный текст» + Display Zoom «Крупнее»); реджекты Р1/Р2 закрыты; только ручной регресс (@ios-native @manual) — по уроку проекта веб-тестов нет; генератору не передаётся; VoiceOver/TalkBack и Android в этот регресс не входят"
+    },
+    {
+      "id": "cb6315e219a0d50280ecd872",
+      "hash": "#ecd872",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-12",
+      "files": [
+        "tests/events/my-tickets-status.md",
+        "tests/events/ticket-scan-approval.md",
+        "tests/events/EVT-013.md",
+        "e2e/specs/events.md#6.1",
+        "e2e/specs/events.md#6.2",
+        "e2e/specs/events.md#6.3",
+        "e2e/specs/events.md#6.4"
+      ],
+      "note": "עבר QA пользователем 12.11 (iPhone 11 «Kirill Test» build 23; 05 — организатор/покупатель, 07 — покупатель на втором телефоне; сканер на «QA 2610 אירוע»); реджект rej_3df30b… (нет статуса в списке) закрыт; только ручной регресс (@ios-native @manual) — по уроку проекта веб-тестов нет; генератору не передаётся; «ממתין לאישור תשלום» в списке видел пользователь (без скриншота); Android и смешанный статус многобилетной покупки не проверены"
+    },
+    {
+      "id": "6a86f7bf62b30e3dfd88acb5",
+      "hash": "#88acb5",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-17",
+      "files": [
+        "tests/cards/all-cards-screen.spec.ts",
+        "e2e/specs/cards.md#1.1",
+        "e2e/specs/cards.md#1.2"
+      ],
+      "note": "עבר QA пользователем 17.11; цифры временные (Wallet.cardLast4, решение 16.11) — сверяются формат и совпадение экранов; веб-автотесты не прогонялись (сессия client истекла на момент записи — нужен qa-login)"
+    },
+    {
+      "id": "97f19806c54426b65e1388e0",
+      "hash": "#1388e0",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-17",
+      "files": [
+        "tests/cards/all-cards-screen.spec.ts",
+        "e2e/specs/cards.md#1.1",
+        "e2e/specs/cards.md#1.2"
+      ],
+      "note": "עבר QA пользователем 17.11; цифры временные (Wallet.cardLast4, решение 16.11) — сверяются формат и совпадение экранов; веб-автотесты не прогонялись (сессия client истекла на момент записи — нужен qa-login)"
+    },
+    {
+      "id": "9b5c21da901d26833dd9877d",
+      "hash": "#d9877d",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-17",
+      "files": [
+        "tests/cards/all-cards-last4-consistency.spec.ts",
+        "e2e/specs/cards.md#2.1"
+      ],
+      "note": "עבר QA пользователем 17.11; цифры временные (Wallet.cardLast4, решение 16.11) — сверяются формат и совпадение экранов; веб-автотесты не прогонялись (сессия client истекла на момент записи — нужен qa-login)"
+    },
+    {
+      "id": "6a86f7bccff49e8c0a36b4d7",
+      "hash": "#36b4d7",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-17",
+      "files": [
+        "tests/cards/kid-pay-card.spec.ts",
+        "e2e/specs/cards.md#3.1"
+      ],
+      "note": "עבר QA пользователем 17.11; цифры временные (Wallet.cardLast4, решение 16.11) — сверяются формат и совпадение экранов; веб-автотесты не прогонялись (сессия client истекла на момент записи — нужен qa-login)"
+    },
+    {
+      "id": "6a86f7c73c31566855c70f72",
+      "hash": "#c70f72",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-17",
+      "files": [
+        "tests/cards/shared-wallet-pay-card.spec.ts",
+        "e2e/specs/cards.md#4.1"
+      ],
+      "note": "עבר QA пользователем 17.11; цифры временные (Wallet.cardLast4, решение 16.11) — сверяются формат и совпадение экранов; веб-автотесты не прогонялись (сессия client истекла на момент записи — нужен qa-login)"
+    },
+    {
+      "id": "9c9d628913ba71dc45ceb80d",
+      "hash": "#ceb80d",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-17",
+      "files": [
+        "tests/home/more-wallets-tiles-icons.spec.ts",
+        "tests/cards/all-cards-light-style.spec.ts",
+        "e2e/specs/ui-style.md#1.1",
+        "e2e/specs/ui-style.md#2.1"
+      ],
+      "note": "עבר QA пользователем 17.11; только веб-проверки стиля (иконки плиток «ארנקים נוספים», светлый «כל הכרטיסים»); не прогонялись (сессия client могла истечь — нужен qa-login); нативный крупный шрифт и остальной проход по стилю — вручную"
+    },
+    {
+      "id": "6a86f7c3d81dc311e455cf6d",
+      "hash": "#55cf6d",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-17",
+      "files": [
+        "e2e/specs/disputes.md#7.1",
+        "e2e/specs/disputes.md#7.2"
+      ],
+      "note": "עבר QA пользователем 17.11; read-only план для playwright-test-generator (шторка и форма без отправки, @prod-safe, QA_ESCROW_DEAL_ID), тесты ещё не сгенерированы и не прогонялись; доля ₪75 по demand 4 от 16.11 заменяет прежнее ожидание 1.1/1.2"
+    },
+    {
+      "id": "6a86f7c59e8192055ec6538a",
+      "hash": "#c6538a",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-17",
+      "files": [
+        "e2e/specs/disputes.md#8.1",
+        "e2e/specs/disputes.md#8.2",
+        "e2e/specs/disputes.md#8.3"
+      ],
+      "note": "עבר QA пользователем 17.11 (повторно после 16.11); read-only: 8.1 ожидание (нужен QA_ARBITER_PROPOSAL_DEAL_ID), 8.2 финальное состояние на закрытой «QA 2110 escrow» (provider); 8.3 ערעור→финал — @manual; тесты не сгенерированы и не прогонялись"
+    },
+    {
+      "id": "1f50c7e6fd040f902bb3171a",
+      "hash": "#b3171a",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-17",
+      "files": [
+        "e2e/specs/account-deletion.md#1.1",
+        "e2e/specs/account-deletion.md#1.2"
+      ],
+      "note": "עבר QA пользователем 17.11 вместе с #152172 (demands 4–10); тесты @data @destructive, одноразовые 0500000017–99 (не 98), пропуск без QA_ALLOW_ACCOUNT_DELETE=1; тесты не сгенерированы и не прогонялись; ממתין למחיקה — правильное поведение (L-20261117-P3)"
+    },
+    {
+      "id": "7477e8e2d28d5949096377bf",
+      "hash": "#6377bf",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-18",
+      "files": [
+        "e2e/specs/deals.md#11.1",
+        "e2e/specs/deals.md#11.2",
+        "e2e/specs/deals.md#11.3",
+        "e2e/specs/deals.md#11.4",
+        "e2e/specs/deals.md#11.5"
+      ],
+      "note": "עבר QA пользователем 18.11; read-only по готовым отменённым сделкам «QA 1711 ביטול A–D» (11.1–11.3), 11.4 нужен QA_CANCELLED_NODEPOSIT_DEAL_ID, 11.5 @manual (деньги); тесты не сгенерированы и не прогонялись"
+    },
+    {
+      "id": "8d031366ade61fdd6f8cf47e",
+      "hash": "#8cf47e",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-18",
+      "files": [
+        "e2e/specs/deals.md#12.1",
+        "e2e/specs/deals.md#12.2"
+      ],
+      "note": "עבר QA пользователем 18.11; 12.1 нужен QA_TERMS_PENDING_DEAL_ID, «אישור התנאים» не нажимается; 12.2 (visit-fee) @manual — QA не проверял; тесты не сгенерированы и не прогонялись"
+    },
+    {
+      "id": "f959aecdbd0c2713b3119ad8",
+      "hash": "#119ad8",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-18",
+      "files": [
+        "e2e/specs/events.md#7.1",
+        "e2e/specs/events.md#7.2"
+      ],
+      "note": "עבר QA пользователем 18.11; 7.1 ручной ввод уже отсканированного билета (QA_SCANNED_TICKET_CODE, read-only), 7.2 повторный QR @manual (камера); тесты не сгенерированы и не прогонялись"
+    },
+    {
+      "hash": "#5068e1",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-18",
+      "files": [
+        "e2e/specs/proxy-access.md#1.1",
+        "e2e/specs/proxy-access.md#1.2",
+        "e2e/specs/proxy-access.md#1.3",
+        "e2e/specs/proxy-access.md#1.4",
+        "e2e/specs/proxy-access.md#1.5",
+        "tests/proxy/proxy-link-both-sides.spec.ts"
+      ],
+      "note": "עבר QA пользователем 18.11 по объёму реджекта; 30 дней/биометрия/SMS/журнал не проверены — не автоматизируются; 1.3 @data (восстанавливает права); 1.4 записан (селекторы не проверены в браузере); 1.5 @manual; полный id тикета в брифе не указан; тесты не прогонялись",
+      "id": "b6a4b26209e5f46de25068e1"
+    },
+    {
+      "hash": "#152172",
+      "class": "qa-passed",
+      "source": "qa",
+      "date": "2026-11-18",
+      "files": [
+        "e2e/specs/account-deletion.md#2.1",
+        "e2e/specs/account-deletion.md#2.2",
+        "e2e/specs/account-deletion.md#2.3",
+        "e2e/specs/account-deletion.md#2.4",
+        "e2e/specs/account-deletion.md#2.5"
+      ],
+      "note": "עבר QA пользователем 18.11 (режим «ממתין למחיקה» 050-0000016: пополнение/событие/перевод блокируются окном, вывод открыт); read-only, «ביטול בקשת המחיקה» не нажимать; нужна сессия pending16 (qa-login); 2.5 @manual; блок 1 тех же demands (b3171a) уже в ledger; тесты не сгенерированы и не прогонялись",
+      "id": "6a86f7bf1644378059152172"
+    }
+  ]
+}

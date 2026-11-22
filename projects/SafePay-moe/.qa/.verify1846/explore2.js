@@ -1,0 +1,25 @@
+const { chromium } = require('../e2e/node_modules/playwright');
+(async () => {
+  const b = await chromium.launch({channel:'chrome'});
+  const ctx = await b.newContext({ storageState: '../auth/client.json', viewport: {width:375,height:812}, deviceScaleFactor:2, isMobile:true, hasTouch:true, locale:'he-IL' });
+  const p = await ctx.newPage();
+  await p.goto('https://safepay.expo.app/providers', {waitUntil:'networkidle'});
+  await p.waitForTimeout(2000);
+  await p.screenshot({path:'e1.png'});
+  const t = p.getByText('שירה כהן', {exact:false});
+  console.log('count', await t.count());
+  for (let i=0;i<await t.count();i++) console.log(i, await t.nth(i).isVisible(), (await t.nth(i).innerText()).slice(0,80));
+  const vis = t.filter({visible:true}).first();
+  await vis.click();
+  await p.waitForTimeout(3000);
+  console.log('URL', p.url());
+  await p.screenshot({path:'e2.png'});
+  const btn = p.getByText('פתיחת עסקה בטוחה').filter({visible:true});
+  console.log('btns', await btn.count());
+  await btn.last().click();
+  await p.waitForTimeout(3000);
+  console.log('URL', p.url());
+  await p.screenshot({path:'e3.png', fullPage:false});
+  console.log(await p.locator('body').ariaSnapshot());
+  await b.close();
+})();

@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-26",
+  "project": "Dalia",
+  "build": "index-DZ3JuWzX.js",
+  "env": "Chrome пользователя (Claude in Chrome), десктоп",
+  "queue": [
+    "69d6c18de739425b70fef16c"
+  ],
+  "tickets": [
+    {
+      "id": "69d6c18de739425b70fef16c",
+      "hash": "#fef16c",
+      "title": "בקשת לקוח: טופס פרטי בסיס — לא ברור שממלאים את פרטי המטופל ולא של המשתמש שנרשם",
+      "verdict": "pass",
+      "action": "pass — проведён пользователем",
+      "column": "הושלם",
+      "checked": [
+        "he/en/de шаг 1: заголовок, вступление, пояснение, заголовки блоков, поле телефона",
+        "входы: баннер на главной, /registration, /registration?mode=add-patient",
+        "эмуляция телефона DevTools 440px: he/en/de — без обрезки, без горизонтальной прокрутки"
+      ],
+      "evidence": [
+        "screenshots/fef16c-he-step1.jpg",
+        "screenshots/fef16c-de-step1.jpg",
+        "screenshots/fef16c-he-mobile440.png"
+      ],
+      "time": "2026-10-26"
+    }
+  ],
+  "test_data": [
+    "язык переключался he→en→de→he в селекторе шага 1 — возвращён he (проверено)"
+  ]
+}

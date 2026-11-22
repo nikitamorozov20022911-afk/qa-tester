@@ -1,0 +1,15 @@
+import { chromium } from '/Users/avielshnaider/tenderflow - moe/.qa/e2e/node_modules/@playwright/test/index.mjs';
+const P='https://tenderflow-web-staging-obpygl1k7-aviels-projects.vercel.app';
+const b=await chromium.launch();
+const ctx=await b.newContext({viewport:{width:1440,height:900},serviceWorkers:'block'});
+const p=await ctx.newPage();
+await p.goto(P+'/login');await p.getByText('כניסה לסביבת ההדגמה').first().click();
+await p.waitForFunction(()=>/פיד מכרזים/.test(document.body.innerText));await p.waitForLoadState('networkidle');
+console.log('links',JSON.stringify(await p.$$eval('a',a=>a.map(x=>x.innerText.trim().slice(0,30)+'→'+x.getAttribute('href')).slice(0,40))));
+console.log('buttons',JSON.stringify(await p.$$eval('button',a=>a.map(x=>x.innerText.trim().slice(0,30)).filter(Boolean).slice(0,40))));
+await p.getByText('תחזוקת מערכות קירור בקמפוס הטכניון').first().click();
+await p.waitForLoadState('networkidle');await p.waitForTimeout(1000);
+console.log(p.url());
+console.log('tabs',JSON.stringify(await p.$$eval('[role=tab],button',a=>a.map(x=>x.innerText.trim().slice(0,30)).filter(Boolean))));
+console.log((await p.innerText('body')).replace(/\n+/g,' | ').slice(0,1200));
+await b.close();

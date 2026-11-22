@@ -1,0 +1,54 @@
+לוח בקרה -> /dashboard
+משתמשים -> /users
+דיווחים45 -> /reports
+אימותים1 -> /verifications
+תוכן7 -> /content
+חדרים -> /rooms
+מנויים ורכישות -> /subscriptions
+בקשות שדכנית2 -> /matchmaker
+קטלוג מתנות -> /gifts
+הכול56 -> /users
+מאומתים8 -> /users?tab=verified
+Premium2 -> /users?tab=premium
+מושעים0 -> /users?tab=suspended
+חסומים0 -> /users?tab=blocked
+פעילות אחרונה -> /users?sort=active
+QA -> /users/e2979c36-4296-44ac-b78d-fca3c09a99b5
+QA r10 0017, 36 -> /users/e2979c36-4296-44ac-b78d-fca3c09a99b5
+ -> /users/d578adf2-9bc6-477e-8cc2-02820967cdad
+בדיקה גאו, 31 -> /users/d578adf2-9bc6-477e-8cc2-02820967cdad
+ -> /users/73119fa1-0588-40ac-a896-e32d2dc43705
+בדיקה דתי, 31 -> /users/73119fa1-0588-40ac-a896-e32d2dc43705
+ -> /users/4350fad2-d822-46d3-a6eb-cae8fe7860a9
+בדיקה כללי, 31 -> /users/4350fad2-d822-46d3-a6eb-cae8fe7860a9
+2 -> /reports?user=4350fad2-d822-46d3-a6eb-cae8fe7860a9
+ -> /users/805bbb93-4d0a-42a1-b8ef-581a788e9400
+QA בדיקה, 31 -> /users/805bbb93-4d0a-42a1-b8ef-581a788e9400
+QA -> /users/4fa1f988-fd5c-48f7-a3f1-946cf92f112c
+QA r10 0016, 34 -> /users/4fa1f988-fd5c-48f7-a3f1-946cf92f112c
+ -> /users/7e1d2c3a-7e06-4b27-830a-c212ffc96b21
+QA П5 0014, 32 -> /users/7e1d2c3a-7e06-4b27-830a-c212ffc96b21
+QA -> /users/ad5d1f7e-3d87-482f-85a5-ac4b2aea4d53
+QA П4 0013, 34 -> /users/ad5d1f7e-3d87-482f-85a5-ac4b2aea4d53
+ -> /users/1ca43f5f-6154-4bc2-88dc-3d88f715fea3
+QA П3 0012, 33 -> /users/1ca43f5f-6154-4bc2-88dc-3d88f715fea3
+3 -> /reports?user=1ca43f5f-6154-4bc2-88dc-3d88f715fea3
+ -> /users/b7c63481-4107-4919-a52b-a905141af557
+QA П2 0011, 36 -> /users/b7c63481-4107-4919-a52b-a905141af557
+4 -> /reports?user=b7c63481-4107-4919-a52b-a905141af557
+ -> /users/8a399465-2efe-4902-a748-0b6536edeebd
+QA П1 0010, 31 -> /users/8a399465-2efe-4902-a748-0b6536edeebd
+1 -> /reports?user=8a399465-2efe-4902-a748-0b6536edeebd
+QA -> /users/00000000-0000-4000-8000-0000000a6003
+QA מגדר-דת 03, 37 -> /users/00000000-0000-4000-8000-0000000a6003
+QA -> /users/00000000-0000-4000-8000-0000000a6007
+QA מגדר-דת 07, 36 -> /users/00000000-0000-4000-8000-0000000a6007
+QA -> /users/00000000-0000-4000-8000-0000000a6002
+QA מגדר-דת 02, 38 -> /users/00000000-0000-4000-8000-0000000a6002
+1 -> /users
+2 -> /users?page=2
+4 -> /users?page=4
+ -> /users?page=2
+14 בעמוד -> /users
+25 בעמוד -> /users?size=25
+50 בעמוד -> /users?size=50

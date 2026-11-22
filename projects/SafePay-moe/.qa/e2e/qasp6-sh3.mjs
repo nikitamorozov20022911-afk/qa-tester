@@ -1,0 +1,23 @@
+import { newBrowser, ctx, go, txt, shot, sleep } from './qasp6-lib.mjs';
+const D='6a86f7b6/';
+const b = await newBrowser();
+const { p } = await ctx(b, 'client', 375);
+const log=(...a)=>console.log(...a);
+await go(p, '/wallet/shared/new');
+await p.getByRole('textbox',{name:'שם הארנק'}).fill('QA-ארנק משותף 03.10'); await sleep(500);
+log('name only -> disabled:', await p.getByRole('button',{name:'אישור ופתיחת ארנק'}).isDisabled());
+await p.getByRole('button',{name:'הזמנה מאנשי הקשר'}).click(); await sleep(1000);
+await p.getByRole('textbox',{name:'מספר הטלפון של המשתתף'}).fill('0500000005'); await sleep(2500);
+await p.getByRole('button',{name:'הוספה'}).click(); await sleep(1500);
+log('name kept:', await p.getByRole('textbox',{name:'שם הארנק'}).inputValue());
+log('full -> disabled:', await p.getByRole('button',{name:'אישור ופתיחת ארנק'}).isDisabled());
+// measurements of rows
+const m = await p.evaluate(()=>{const out={};for(const s of ['יונתן לוי','שירה כהן','מנהל','משתתף','אישור ופתיחת ארנק','שם הארנק']){const el=[...document.querySelectorAll('div,span')].find(e=>e.childElementCount===0&&e.textContent.trim()===s); if(el){const r=el.getBoundingClientRect(); const cs=getComputedStyle(el); out[s]={x:Math.round(r.x),y:Math.round(r.y),w:Math.round(r.width),h:Math.round(r.height),fs:cs.fontSize,fw:cs.fontWeight,c:cs.color,bg:getComputedStyle(el.parentElement).backgroundColor};}} return out;});
+log(JSON.stringify(m));
+await shot(p, D+'r1-10-form-filled-375', true);
+await p.getByRole('button',{name:'אישור ופתיחת ארנק'}).click(); await sleep(4500);
+log('URL after create', p.url());
+log(await txt(p));
+await shot(p, D+'r1-11-after-create-375', true);
+log('CONSOLE', p._console, 'REQ', p._req);
+await b.close();

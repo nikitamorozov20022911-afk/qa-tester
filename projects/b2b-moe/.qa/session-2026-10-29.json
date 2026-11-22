@@ -1,0 +1,124 @@
+{
+  "date": "2026-10-29",
+  "queue": "בבדיקות",
+  "tickets": [
+    {
+      "hash": "#dc1afa",
+      "title": "ייבוא מאקסל: מק\"ט עם ספרת ביקורת שגויה נשמר בלי אזהרה",
+      "role": "admin-2",
+      "batch": 1,
+      "state": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "feature": "catalog import: SKU check digit (EAN-8/UPC-A/EAN-13) in preview + confirm dialog",
+      "devices": "1440",
+      "cases": "new case needed: catalog import check digit (T1-T6, F1, C1, C2, C4)",
+      "screenshots": "screenshots/dc1afa-*"
+    },
+    {
+      "hash": "#6ac0be",
+      "title": "ייבוא מאקסל: אי אפשר לשייך עמודה שלא זוהתה לשדה",
+      "role": "admin-3",
+      "batch": 1,
+      "state": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "feature": "catalog import: manual column mapping (column chip -> field menu), AI mock empty/balance/timeout/500/late 5s",
+      "devices": "1440",
+      "cases": "new case needed: import manual mapping T1-T4, D1, F1-F3, R1, C3; extra: manual map to SKU triggers check-digit mark",
+      "screenshots": "screenshots/6ac0be-*"
+    },
+    {
+      "hash": "#1c5a6c",
+      "title": "בקשת לקוח: נציג מכירות יכול להוסיף לקוחות חדשים",
+      "role": "rep+admin",
+      "batch": 2,
+      "state": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "devices": "1440",
+      "screenshots": "screenshots/cust-1c5a6c-*",
+      "feature": "customers: rep «לקוח חדש» (list + הזמנה מהודעה), auto sales_rep_id, RLS insert other rep 403, moshe cannot see"
+    },
+    {
+      "hash": "#ea0fde",
+      "title": "בקשת לקוח: יצירת לקוח ללא קישור הזמנה וללא הרשמה",
+      "role": "admin+rep",
+      "batch": 2,
+      "state": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "devices": "1440",
+      "screenshots": "screenshots/cust-ea0fde-*",
+      "feature": "customers: create without join link (toggle «יצירת קישור הצטרפות»), order/payment/delivery/price on it, link later from ⋮"
+    }
+  ],
+  "log": [
+    {
+      "time": "2026-10-29",
+      "note": "start: MCP ok, all logins alive, backfill 235/235 no new; briefs ready for 4 tickets; batch 1 (#dc1afa, #6ac0be) testing"
+    },
+    {
+      "time": "2026-10-29",
+      "note": "#dc1afa pass (all items ok, 1 run each); test products QA-AUTO-dc1afa-4513-* deleted; QA-AUTO-impsku-1028 already gone from catalog"
+    },
+    {
+      "time": "2026-10-29",
+      "note": "#6ac0be pass; finding: import-map called for new category even when all columns recognized (AC1 #7c5052 wording), customers import button disabled"
+    },
+    {
+      "time": "2026-10-29",
+      "note": "#ea0fde, #1c5a6c pass. Findings: admin edit form drops sales rep (flaky 4/7), delete dialog says no orders, card stats 0 with order, rep dialog text promises edit/link, no-link customer status ממתין להזמנה"
+    },
+    {
+      "time": "2026-10-29",
+      "note": "user: no-link customer status «ממתין להזמנה» — finding, not reject (#ea0fde stays pass); recorded in context.md"
+    },
+    {
+      "time": "2026-10-29",
+      "note": "user: провёл все 4 в הושלם; autotest-writer x2 в фоне (импорт; клиенты + устаревшие customers-access/rep-direct/cp-07)"
+    },
+    {
+      "time": "2026-10-29",
+      "note": "new bug #5a2dbd (ticket 44, low, לביצוע): no-link customer shown «ממתין להזמנה» + «שלחו ללקוח את קישור ההצטרפות»; bug-verifier admin 3/3, rep status 3/3 (no text at rep); 3 screenshots"
+    },
+    {
+      "time": "2026-10-29",
+      "note": "new bug #a6af81 (ticket 45, medium, לביצוע): rep «לקוח חדש» has no «יצירת קישור הצטרפות» toggle (user screenshot). Autotests import: import-sku-check-digit 5/5, import-manual-column-mapping 7/7, ai-balance-error §9.3 ok; cat-29..31; ledger 239"
+    }
+  ],
+  "test_data": [
+    {
+      "what": "QA-AUTO-impsku-1028",
+      "status": "already removed (not found in catalog 29.10)"
+    },
+    {
+      "what": "order #679 (QA-AUTO-ea0fde-1058-order, ₪1 paid, אושרה · ממתינה לליקוט)",
+      "status": "cannot delete/reject"
+    },
+    {
+      "what": "customer QA-AUTO-ea0fde-1058-nolink",
+      "status": "archived (has order)"
+    },
+    {
+      "what": "product QA-AUTO-ea0fde-1058-P",
+      "status": "archived"
+    }
+  ],
+  "status": "closed",
+  "summary": {
+    "tested": 4,
+    "passed": [
+      "#dc1afa",
+      "#6ac0be",
+      "#ea0fde",
+      "#1c5a6c"
+    ],
+    "rejected": [],
+    "new_tickets": [
+      "#5a2dbd",
+      "#a6af81"
+    ],
+    "ledger": 239
+  }
+}

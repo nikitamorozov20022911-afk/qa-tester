@@ -1,0 +1,62 @@
+{"table": "deals", "id": "320390d0-811a-41e1-8711-6b856eed5bdd", "title": "QA-AUTO-1846 ספק חץ 08.10 16:15", "at": "2026-10-08", "source": "playwright-test-generator (запись теста #1846ecd8)"}
+{"table": "deals", "id": "0e520c03-27b1-40d6-a886-f551d3685b73", "title": "QA-AUTO-1846 ספק דפדפן 08.10 16:16", "at": "2026-10-08", "source": "playwright-test-generator (запись теста #1846ecd8)"}
+{"table": "deals", "id": "0b4cddce-983c-40af-bbf0-4460a0e2ab66", "title": "QA-AUTO-1846 עסקאות 08.10 16:18", "at": "2026-10-08", "source": "playwright-test-generator (запись теста #1846ecd8)"}
+{"table": "deals", "id": "b4f233ac-62e4-4df2-9813-833a51e588b1", "title": "QA-AUTO-1846 בית 08.10 16:19", "at": "2026-10-08", "source": "playwright-test-generator (запись теста #1846ecd8)"}
+{"date":"2026-10-11","type":"shared_wallet","id":"dfb5be3e-c47a-4752-b64a-7a5cc81c08b4","name":"QA-AUTO-shared-1011","by":"client 0500000004","member":"0500000005","source":"regress android manual WAL-004"}
+{"date":"2026-10-11","type":"deal","name":"QA-AUTO-REG-1011-wallet","id":"1d664e88-1f7e-40f2-90d8-a15596ecb5ea","amount":5,"source":"regress android DEAL-003"}
+{"date":"2026-10-11","type":"deal","name":"QA-AUTO-REG-1011-deals","id":"b51b18cd-cc90-4140-87a8-76ba350587e6","amount":5,"source":"regress android DEAL-002"}
+{"date":"2026-10-11","type":"deal","name":"QA-AUTO-REG-1011-provider","id":"4a20ad24-81f0-4f46-9cbc-afa933614bd1","amount":5,"source":"regress android DEAL-001"}
+{"date":"2026-10-11","type":"money","deal":"b146f8e1-8fbc-437a-9320-48a3a22b9940","note":"client confirmed payment ₪5 → provider (REL-004)","source":"regress android"}
+{"date":"2026-10-11","type":"deal_state","deal":"fb7b1ac0-c8ac-4eb9-a034-f112d00dd873","note":"provider requested release ₪1 (REL-002), waiting client","source":"regress android"}
+{"date":"2026-10-11","type":"dispute","deal":"fb7b1ac0-c8ac-4eb9-a034-f112d00dd873","track":"human_arbitration","note":"client opened, provider to decline (DSP-007)","source":"regress android"}
+{"t":"2026-10-11","kind":"deal","id":"6876d488-e1a3-4cc3-b94b-9ff1ae1c7007","title":"QA 11.10 טלפון 23b5","by":"client 04 → שירה כהן","amount":5}
+{"t":"2026-10-11","kind":"deal","id":"186b8bfe-32b4-4542-9014-3d78500ef48e","title":"QA 11.10 טלפון זר 14c8","by":"client 04 → רות ברק","amount":5}
+{"t":"2026-10-11","kind":"deal","id":"17b05739-b732-4e95-b072-6c358ffea5d0","title":"QA 11.10 כותרת ארוכה…","by":"client 04 → שירה כהן","amount":5}
+{"t":"2026-10-11","kind":"p2p","by":"provider 05 → client 04","amount":1,"note":"23b56120 balance refresh"}
+{"t":"2026-10-11","kind":"deal","id":"b5438321-002b-4423-962c-dc6e0d4af3e8","title":"QA 11.10 טלפון X","by":"client 04 → שירה כהן","amount":5}
+{"t":"2026-10-11","kind":"deal","id":"853a3c0f-25ae-440d-8722-5e7ec0f8725a","title":"QA 11.10 טלפון Y","by":"client 04 → שירה כהן","amount":5}
+{"t":"2026-10-11","kind":"deal","id":"2a9648c9-83b5-43ba-8eed-a7c6697d1332","title":"QA 11.10 rerun cyc","by":"client 04 → שירה כהן","amount":5,"note":"rerun 112c/c290/8bf8 cycle"}
+{"t":"2026-10-11","kind":"deal","id":"fff06fff-17ba-4694-991a-fa7409774539","title":"QA 11.10 rerun bg","by":"client 04 → שירה כהן","amount":5,"note":"rerun 23b56120 background refresh"}
+{"at":"2026-10-12T10:46","kind":"card-load","account":"0500000004","amount":1,"note":"#6aab..36d с сетью — успех, тестовая карта"}
+{"at":"2026-10-12T10:50","kind":"card-load","account":"0500000004","amount":1,"note":"#6aab..36d с сетью (случайное нажатие) — успех"}
+{"at":"2026-10-12T11:11","kind":"payment-card","account":"0500000004","last4":"7727","note":"#e8e5b851 п.2 добавлена через הוספת כרטיס"}
+{"at":"2026-10-12T11:13","kind":"payment-card","account":"0500000004","last4":"9608","note":"#e8e5b851 п.2 Visa"}
+{"date":"2026-10-18","type":"deal","name":"QA 1810 escrow","amount":1,"by":"client 0500000004","provider":"0500000005","source":"qa android 18.10 — сделка для шитов/споров"}
+{"date":"2026-10-18","type":"wallet_load","amount":1,"by":"client 0500000004","method":"card (вводил пользователь)","source":"qa android 18.10 — попытка вызвать отказ #12e4aab6, карта прошла"}
+{"date":"2026-10-18","type":"deal_deposit","name":"QA 1810 escrow","amount":1,"by":"client 0500000004","source":"qa android 18.10 — деньги в נאמנות из кошелька"}
+{"date":"2026-10-18","type":"release_request","name":"QA 1810 escrow","amount":1,"by":"provider 0500000005","source":"qa android 18.10 — для шита אישור תשלום"}
+{"date":"2026-10-18","type":"dispute","name":"QA 1810 escrow","route":"AI","by":"client 0500000004","source":"qa android 18.10 — вопрос AI у второй стороны #90a02a90"}
+{"date":"2026-10-18","type":"p2p_transfer","amount":1,"from":"0500000005","to":"0500000004","source":"qa android 18.10 #13cadd — путь «השלמה»"}
+{"date":"2026-10-18","type":"p2p_transfer","amount":1,"from":"0500000005","to":"0500000004","source":"qa android 18.10 #13cadd — путь «ביטול» (вернётся)"}
+{"date":"2026-10-18","type":"shared_wallet_load","wallet":"QA-AUTO-shared-1011","amount":1,"by":"0500000004","source":"#9d2e51"}
+{"date":"2026-10-18","type":"shared_wallet_withdraw","wallet":"QA-AUTO-shared-1011","amount":1,"by":"0500000004","source":"#9d2e51"}
+{"date":"2026-10-19","type":"user","phone":"0500000011","name":"QA kid2","source":"#85ea58 יצירת פרופיל + будущий ребёнок #9d438c (разрешение пользователя 19.10)"}
+{"date":"2026-10-19","type":"user","phone":"0500000012","name":"QA user12","source":"#85ea58 повтор регистрации (разрешение пользователя 19.10)"}
+{"date":"2026-10-19","type":"kid_wallet","name":"QA kid2","phone":"0500000011","parent":"0500000004","limits":"30/10","source":"#9d438c (необратимо, разрешение пользователя 19.10)"}
+{"date":"2026-10-19","type":"kid_load","wallet":"QA kid2","amount":1,"by":"0500000004","source":"#9d438c"}
+{"date":"2026-10-19","type":"deal","name":"QA 1910 double","amount":1,"by":"client 0500000004","provider":"0500000005","source":"#93e65d двойное нажатие"}
+{"date":"2026-10-19","type":"wallet_load","amount":1,"by":"client 0500000004","method":"card + save (вводил пользователь)","source":"#68c31d"}
+{"date":"2026-10-19","type":"wallet_load_bank_pending","amount":2,"by":"client 0500000004","source":"#94c8a6 — запись «בטיפול»"}
+{"date":"2026-10-19","type":"kid_limit_change","wallet":"QA kid2","daily":"30→35","by":"0500000004","source":"#9d438c"}
+{"date":"2026-10-19","type":"ai_mediation_approved","deal":"QA 1810 escrow","by":"provider 0500000005","source":"#ee0cea — новое предложение AI"}
+{"date":"2026-10-19","type":"deal_deposit","name":"QA 1910 double","amount":1,"by":"client 0500000004","source":"#a48ce6"}
+{"date":"2026-10-19","type":"release_request","name":"QA 1910 double","amount":1,"by":"provider 0500000005","source":"#a48ce6"}
+{"date":"2026-10-19","type":"release_confirmed","name":"QA 1910 double","amount":1,"by":"client 0500000004","source":"#a48ce6 — сделка завершена"}
+{"date":"2026-10-19","type":"user","email":"jiponet965@backyr.com (temp-mail)","name":"QA email1910","source":"#afa241 регистрация по email"}
+{"date":"2026-10-19","type":"user_phone_added","user":"QA email1910","phone":"0500000013","source":"#afa241"}
+{"date":"2026-10-19","type":"deal","name":"QA 1910 cancel","amount":1,"by":"client 0500000004","provider":"0500000005","source":"#924eac"}
+{"date":"2026-10-19","type":"ai_proposal_accepted","deal":"QA 1810 escrow","by":"client 0500000004","source":"#94c8a6/#2ac257 раздел спора"}
+{"date":"2026-10-19","type":"ai_proposal_accepted","deal":"QA 1810 escrow","by":"provider 0500000005","source":"раздел ₪0.50/₪0.50 — спор закрыт"}
+{"date":"2026-10-19","type":"event","name":"QA 1910 event","by":"provider 0500000005","tickets":"QA basic ₪1, QA2 ₪5.50","source":"#d0f598"}
+{"date":"2026-10-19","type":"ticket_purchase","event":"QA 1910 event","qty":1,"amount":1,"by":"0500000004","email":"qa1910@example.comabc","source":"#d0f598"}
+{"date":"2026-10-19","type":"deal_terms_approved_by_mistake","name":"QA-AUTO-REG-1011-provider","by":"provider 0500000005","source":"ошибочное нажатие при #924eac; деньги не двигались"}
+{"date":"2026-10-19","type":"deal_deposit","name":"QA 1910 cancel","amount":1,"by":"client 0500000004","source":"#924eac"}
+{"date":"2026-10-19","type":"cancel_request","name":"QA 1910 cancel","by":"client 0500000004","source":"#924eac (1-й, будет отклонён)"}
+{"date":"2026-10-19","type":"cancel_rejected","name":"QA 1910 cancel","by":"provider 0500000005","source":"#924eac"}
+{"date":"2026-10-19","type":"cancel_request","name":"QA 1910 cancel","by":"client 0500000004","source":"#924eac (2-й)"}
+{"date":"2026-10-19","type":"cancel_approved","name":"QA 1910 cancel","by":"provider 0500000005","source":"#924eac — отменена, ₪1 возвращён 04"}
+{"date":"2026-10-19","type":"passkey","account":"0500000005","where":"Google Password Manager пользователя","source":"#afa241 — удалить после теста (в приложении корзина или в Google)"}
+{"date":"2026-10-19","type":"wallet_load","amount":1,"by":"client 0500000004","method":"card «имитация отказа» (вводил пользователь) — прошла","source":"#752785"}
+{"date":"2026-10-21","what":"deal QA 2110 escrow ₪1 04->שירה כהן (05)","by":"qa","clean":true}
+{"type":"card","last4":"4242","holder":"Qa holder 2210","account":"0500000004","date":"2026-10-22","ticket":"d66404"}
+{"type":"user","phone":"0500000014","name":"QA Reg 2210","date":"2026-10-22","ticket":"85ea58/4d2091"}

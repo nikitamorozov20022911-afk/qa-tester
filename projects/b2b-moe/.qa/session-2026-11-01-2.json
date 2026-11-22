@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-01",
+  "session": 2,
+  "queue": "בבדיקות",
+  "tickets": [
+    {
+      "hash": "#7f32dc",
+      "title": "לקוחות: מחיקת לקוח לפני שההזמנות נטענו — החלון כותב «ללקוח אין הזמנות… יימחק לצמיתות» גם ללקוח עם הזמנות וחוב פתוח",
+      "role": "admin",
+      "batch": 1,
+      "state": "pass",
+      "action": "pass",
+      "column": "ждёт-подтверждения",
+      "devices": "1440",
+      "screenshots": "screenshots/7f32dc-*",
+      "feature": "customers: delete waits for orders (disabled «בודק הזמנות…», error «ההזמנות לא נטענו…» + «—»), dialog by real orders + debt warning, all-rejected → archive text, server delete_customer decides deleted/archived by DB",
+      "cases": "new cust-15; regression cust-14, cp-02, cp-04 (glance)"
+    }
+  ],
+  "log": [
+    {
+      "time": "2026-11-01",
+      "note": "session 2 start: handoff завершено; MCP ok (token до 10.11); queue 1 ticket #7f32dc (our N1, programmer fix 3456e10); admin login alive; backfill ledger 242, no new done; researcher started"
+    },
+    {
+      "time": "2026-11-01",
+      "note": "#7f32dc pass: T1-T4, D1-D5 ok (temporal 3/3), R1-R3 glance ok; no ❌ → no verifier; 0 open rejections → no board actions. Test data: archived QA-AUTO-7f32dc-1646-B×2/C, orders #680-#683 נדחתה (2 extra from agent double-run). Findings H1 card KPI 0/₪0.00 on orders error; H2 all-rejected list 0 vs dialog 1 (as 84/182)."
+    },
+    {
+      "time": "2026-11-01",
+      "note": "H1 verified 12/12 (bug-verifier: abort+500, direct+list) → created #ab1b2e (ticket 48, bug medium, todo, 2 screenshots via public url) per user «заводи / создавай сразу». No dup (#33bee1 done — /orders counters, related)."
+    },
+    {
+      "time": "2026-11-01",
+      "note": "session closed: handoff saved, context updated. Waiting user «прошли» for #7f32dc."
+    }
+  ]
+}

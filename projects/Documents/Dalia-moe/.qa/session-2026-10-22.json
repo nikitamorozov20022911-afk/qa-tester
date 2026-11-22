@@ -1,0 +1,662 @@
+{
+ "project": "אפליקציית Dalia",
+ "date": "2026-10-13",
+ "environment": "https://dalia-fe-git-develop-aviels-projects.vercel.app/ (build index-BiXmC0GJ.js)",
+ "device": "iPhone 17 (Safari) по кабелю",
+ "queue": [
+  {
+   "hash": "#99b954f4",
+   "id": "99b954f475915a6952bedc29"
+  },
+  {
+   "hash": "#da3e8e39",
+   "id": "da3e8e39b2fe963b5f19adb5"
+  },
+  {
+   "hash": "#b7d11188",
+   "id": "b7d11188bbe2d9dfbff38bab"
+  }
+ ],
+ "tickets": [
+  {
+   "hash": "#99b954f4",
+   "action": "pass",
+   "column": "הושלם",
+   "notes": "aria-label he/en/de: הרחבת/כיווץ לוח השנה · Expand/Collapse calendar · Kalender auf/zuklappen; стрелки месяца переведены; 2 прогона he",
+   "screens": [
+    ".qa/screenshots/99b954f4-he-after.png",
+    ".qa/screenshots/99b954f4-en-before.png",
+    ".qa/screenshots/99b954f4-de-before.png"
+   ],
+   "at": "2026-10-13T11:00",
+   "confirmed_by_user": "2026-10-13"
+  },
+  {
+   "hash": "#da3e8e39",
+   "action": "pass",
+   "column": "הושלם",
+   "notes": "4 карандаша на /emergency: עריכה / Edit / Bearbeiten; /bureaucracy (категория QA-קטגוריה): עריכה+מחיקה / Edit+Delete / Bearbeiten+Löschen; 2 прогона he",
+   "screens": [
+    ".qa/screenshots/da3e8e39-he.png",
+    ".qa/screenshots/da3e8e39-de.png",
+    ".qa/screenshots/da3e8e39-bureaucracy-he.png",
+    ".qa/screenshots/da3e8e39-bureaucracy-en.png",
+    ".qa/screenshots/da3e8e39-bureaucracy-de.png"
+   ],
+   "at": "2026-10-13T11:00",
+   "confirmed_by_user": "2026-10-13"
+  },
+  {
+   "hash": "#b7d11188",
+   "action": "pass",
+   "column": "הושלם",
+   "notes": "de (вопрос из тикета): 0 '*', 13 <strong>, 7 li; he: 0 '*', 8 <strong>, 17 li",
+   "screens": [
+    ".qa/screenshots/b7d11188-de-1.png",
+    ".qa/screenshots/b7d11188-he.png"
+   ],
+   "at": "2026-10-13T11:02",
+   "confirmed_by_user": "2026-10-13"
+  },
+  {
+   "hash": "#30dd58",
+   "id": "0e684243b60e80fa5b30dd58",
+   "action": "pass",
+   "notes": "24/24 строк реджекта исправлены в бандле, на экранах выборочно ок; nav.settings «Optionen» оставлен (Einstellungen 63.6px > 62px в табе на 402px) — ждём решения; _one бабла только по бандлу",
+   "at": "2026-10-13T16:20",
+   "column": "הושלם",
+   "board": "реджект rej_1791807300692 закрыт 13.10",
+   "confirmed_by_user": "2026-10-13"
+  },
+  {
+   "hash": "#05a064",
+   "id": "a30488f73edae30b7005a064",
+   "action": "pass",
+   "notes": "de 0/1/2/3 → 0,0/0,2/0,4/0,6 (Messwerte, 2 прогона) + шаг 6 мастера; he/en точка",
+   "screens": [
+    ".qa/screenshots/05a064-de-3glasses.png",
+    ".qa/screenshots/30dd58-step6-de.png"
+   ],
+   "at": "2026-10-13T16:20",
+   "column": "הושלם",
+   "confirmed_by_user": "2026-10-13"
+  },
+  {
+   "hash": "#054696",
+   "id": "8900d545f033e3c382054696",
+   "action": "pass",
+   "notes": "✕ BottomSheet: bureaucracy/nursing/family/чат — סגור/Close/Schließen, 2 прогона de; finance — ביטול/Cancel/Abbrechen; в бандле нет жёсткого 'Close'; просмотр документа на экране не проверен (нет документов); вопрос סגור vs סגירה",
+   "at": "2026-10-13T16:20",
+   "column": "הושלם",
+   "confirmed_by_user": "2026-10-13"
+  },
+  {
+   "hash": "#7e4ebf",
+   "id": "a9bfac8539a4da17047e4ebf",
+   "action": "reject",
+   "notes": "старый реджект (Dalia) исправлен: he/en/de + he прогон 2, reload, דילוג, מדריך עמוד ок. Новое: нижнее меню внутри подсветки закрывает кнопку — шаг 10 (he/en/de), шаг 12 и 14 (de)",
+   "screens": [
+    ".qa/screenshots/tour-he-10.png",
+    ".qa/screenshots/tour-de-10.png",
+    ".qa/screenshots/tour-de-12.png",
+    ".qa/screenshots/tour-de-14.png",
+    ".qa/screenshots/tour-he-6.png"
+   ],
+   "at": "2026-10-13T16:45",
+   "column": "לביצוע",
+   "board": "старый rej закрыт; новый rej_4061efe1fd88808410c6e066 + 4 скрина"
+  },
+  {
+   "hash": "#f94428",
+   "id": "22c36c05f4ee1d7560f94428",
+   "action": "reject",
+   "notes": "то же, что #7e4ebf",
+   "at": "2026-10-13T16:45",
+   "column": "לביצוע",
+   "board": "старый rej закрыт; новый rej_d9fc72af4a28001d7cd3893a + 4 скрина"
+  },
+  {
+   "hash": "#5c9a4b",
+   "id": "84311511b349c6b2635c9a4b",
+   "action": "pass",
+   "notes": "UI: тур 17 шагов x3 языка, мадрихи 8 экранов, data-tour-id, пропуск шага без якоря + лог [guide] — ок. AC док/health-check только по комментарию (репо приватный)",
+   "at": "2026-10-13T16:50",
+   "column": "הושלם",
+   "confirmed_by_user": "2026-10-13",
+   "board": "реджект закрыт 13.10 (ответ программиста принят)"
+  },
+  {
+   "hash": "#fe6ed7",
+   "id": "7094cd1dfc94d3f65ffe6ed7",
+   "action": "pass",
+   "notes": "то же, что #5c9a4b",
+   "at": "2026-10-13T16:50",
+   "column": "הושלם",
+   "confirmed_by_user": "2026-10-13",
+   "board": "реджект закрыт 13.10 (ответ программиста принят)"
+  },
+  {
+   "hash": "#92684e",
+   "id": "9c724b2f266585091992684e",
+   "action": "pass",
+   "column": "הושלם",
+   "notes": "сборка index-SnOenzYY.js; /measurements he/en/de 0/1/2/3: 0 כוסות/1 כוס/2 כוסות/3 כוסות · 0 cups/1 cup/2 cups · 0 Gläser/1 Glas/2 Gläser (запятая); шаг 6 мастера (QA-Wizard Test) he/en/de то же; he прогон 2 на /measurements; счётчик возвращён в 0",
+   "screens": [
+    ".qa/screenshots/92684e-he-1cup-run1.png",
+    ".qa/screenshots/92684e-en-1cup-run1.png",
+    ".qa/screenshots/92684e-de-1cup-run1.png",
+    ".qa/screenshots/92684e-wizard-de-1cup.png",
+    ".qa/screenshots/92684e-wizard-en-1cup.png",
+    ".qa/screenshots/92684e-wizard-he-1cup.png"
+   ],
+   "at": "2026-10-13T19:25",
+   "confirmed_by_user": "2026-10-13"
+  },
+  {
+   "hash": "#7e4ebf",
+   "id": "a9bfac8539a4da17047e4ebf",
+   "action": "pass",
+   "column": "הושלם",
+   "board": "реджект rej_4061efe1fd88808410c6e066 закрыт 13.10",
+   "notes": "сборка index-SnOenzYY.js; тур 17 шагов he/en/de: шаги 10/12/14 целиком в подсветке над меню (nav top 634); Dalia скрыта, возвращается после סיום и после דילוג на шаге 10; he прогон 2",
+   "screens": [
+    ".qa/screenshots/tour-he-10.png",
+    ".qa/screenshots/tour-en-10.png",
+    ".qa/screenshots/tour-de-10.png",
+    ".qa/screenshots/tour-de-12.png",
+    ".qa/screenshots/tour-de-14.png",
+    ".qa/screenshots/tour-he-run2-10.png",
+    ".qa/screenshots/tour-he-run2-after-skip.png"
+   ],
+   "at": "2026-10-13T19:40",
+   "confirmed_by_user": "2026-10-13"
+  },
+  {
+   "hash": "#f94428",
+   "id": "22c36c05f4ee1d7560f94428",
+   "action": "pass",
+   "column": "הושלם",
+   "board": "реджект rej_d9fc72af4a28001d7cd3893a закрыт 13.10",
+   "notes": "сборка index-SnOenzYY.js; тур 17 шагов he/en/de: шаги 10/12/14 целиком в подсветке над меню (nav top 634); Dalia скрыта, возвращается после סיום и после דילוג на шаге 10; he прогон 2",
+   "screens": [
+    ".qa/screenshots/tour-he-10.png",
+    ".qa/screenshots/tour-en-10.png",
+    ".qa/screenshots/tour-de-10.png",
+    ".qa/screenshots/tour-de-12.png",
+    ".qa/screenshots/tour-de-14.png",
+    ".qa/screenshots/tour-he-run2-10.png",
+    ".qa/screenshots/tour-he-run2-after-skip.png"
+   ],
+   "at": "2026-10-13T19:40",
+   "confirmed_by_user": "2026-10-13"
+  }
+ ],
+ "test_data": [
+  {
+   "what": "Язык интерфейса he→en→de→he",
+   "where": "הגדרות › ממשק › שפה",
+   "original": "he",
+   "restored": true
+  },
+  {
+   "what": "2 сообщения в чате Dalia (de + he, 190/130)",
+   "where": "צ'אט דליה"
+  },
+  {
+   "what": "Своя категория документов «QA-קטגוריה» (без документов)",
+   "where": "/bureaucracy › הוסף מסמך › הוסף קטגוריה",
+   "created_at": "2026-10-13T11:10"
+  },
+  {
+   "what": "Пациент «QA-Wizard Test» (мастер добавления пациента сохранил после шага 1)",
+   "where": "/registration?mode=add-patient",
+   "created_at": "2026-10-13T16:07"
+  },
+  {
+   "what": "Язык интерфейса he→de/en (переключения)",
+   "where": "הגדרות",
+   "original": "he",
+   "restored": true
+  },
+  {
+   "what": "Тур: прогнан до конца (status completed), мадрихи страниц",
+   "where": "/help",
+   "restored": true
+  },
+  "QA-Test Patient: записи «נוזלים יומיים» 0/1/2/3 за 13.10 в ленте (счётчик возвращён в 0)",
+  {
+   "what": "смена QA-משמרת ללא סיכום 1 (21.10 08:00–14:00) на moshe cohen",
+   "status": "осталась"
+  },
+  {
+   "what": "смена QA-משמרת ללא סיכום 2 (20.10 10:00–12:00) на moshe cohen",
+   "status": "осталась"
+  },
+  {
+   "what": "контакт QA-Contact מוסמך",
+   "status": "удалён"
+  },
+  {
+   "what": "QA-סיכום «QA-בדיקה» на 2 QA-сменах",
+   "status": "осталось"
+  },
+  {
+   "what": "документ QA-מסמך בדיקה 0c3f0f",
+   "status": "удалён (файл в Storage остался)"
+  },
+  {
+   "what": "QA-задачи и QA-אלרגיה #048762",
+   "status": "удалены"
+  }
+ ],
+ "findings": [
+  {
+   "text": "de: «Gläser (~0.0 Liter)» — точка вместо запятой (/measurements)",
+   "screenshot": ".qa/screenshots/finding-de-liter-decimal.png",
+   "status": "ticket-created",
+   "ticket": "#a30488f7"
+  },
+  {
+   "text": "aria-label «Call QA-Test Patient» / «Call QA Kontakt» на /emergency — по-английски во всех языках",
+   "screenshot": "",
+   "status": "skipped (решение пользователя 13.10)"
+  },
+  {
+   "text": "aria-label плавающей кнопки доступности «Accessibility» — по-английски во всех языках",
+   "screenshot": "",
+   "status": "skipped (решение пользователя 13.10)"
+  },
+  {
+   "text": "Dalia в de обращается на «du», интерфейс — на «Sie»",
+   "screenshot": ".qa/screenshots/b7d11188-de-1.png",
+   "status": "skipped (решение пользователя 13.10)"
+  },
+  {
+   "text": "aria-label «Close» у крестика формы «העלאת מסמך» (/bureaucracy) — по-английски во всех языках",
+   "screenshot": ".qa/screenshots/finding-upload-close-aria.png",
+   "status": "ticket-created",
+   "ticket": "#8900d545"
+  },
+  {
+   "text": "Счётчик стаканов: «1 Gläser» / «1 cups» / «1 כוסות» — нет единственного числа (все языки)",
+   "screenshot": ".qa/screenshots/finding-1glass-he.png, finding-1glass-de.png",
+   "status": "ticket-created",
+   "ticket": "#92684e (9c724b2f)"
+  }
+ ],
+ "status": "завершено (сессия 2026-10-21, /qa-client)",
+ "summary": {
+  "checked": 3,
+  "passed": 3,
+  "returned": 0,
+  "new_tickets": 2,
+  "saved_at": "2026-10-13T11:35"
+ },
+ "queue2": [
+  "#30dd58 (0e684243)",
+  "#05a064 (a30488f7)",
+  "#054696 (8900d545)",
+  "#7e4ebf (a9bfac85)",
+  "#f94428 (22c36c05)",
+  "#5c9a4b (84311511)",
+  "#fe6ed7 (7094cd1d)"
+ ],
+ "summary2": {
+  "checked": 7,
+  "passed": 5,
+  "returned": 2,
+  "new_tickets": 1,
+  "saved_at": "2026-10-13T17:10"
+ },
+ "sessions_extra": [
+  {
+   "date": "2026-10-21",
+   "command": "/qa-client",
+   "account": "moshe cohen (сессия в Safari на iPhone)",
+   "build": "index-SnOenzYY.js",
+   "created_tickets": [
+    {
+     "hash": "#41bc8b",
+     "id": "8f9f75ea5038d4ed7c41bc8b",
+     "title": "בקשת לקוח: התחלה מודרכת — \"את מי אנחנו מלווים?\"",
+     "column": "לביצוע",
+     "screens": [
+      ".qa/screenshots/2026-10-21_41bc8b_first-entry-tour.png"
+     ]
+    },
+    {
+     "hash": "#048762",
+     "id": "de936fd4432642a8b3048762",
+     "title": "בקשת לקוח: מסך הבית — 3 פעולות התחלה",
+     "column": "לביצוע",
+     "screens": [
+      ".qa/screenshots/2026-10-21_048762_home-no-starter-actions.png"
+     ]
+    },
+    {
+     "hash": "#c2337d",
+     "id": "b4b1d55e67222de041c2337d",
+     "title": "בקשת לקוח: הסבר קצר בכל מסך + \"הראי לי איך\"",
+     "column": "לביצוע",
+     "screens": [
+      ".qa/screenshots/2026-10-21_c2337d_medical-no-intro.png"
+     ]
+    },
+    {
+     "hash": "#2f6463",
+     "id": "202506dcff66e2dba02f6463",
+     "title": "בקשת לקוח: כפתור קבוע \"עזרה מדליה\" עם חיפוש",
+     "column": "לביצוע",
+     "screens": [
+      ".qa/screenshots/2026-10-21_2f6463_help-center.png"
+     ]
+    },
+    {
+     "hash": "#769a32",
+     "id": "3fef767a5065b36ee8769a32",
+     "title": "בקשת לקוח: \"קטגוריות\" → \"מה תרצו לעשות?\"",
+     "column": "לביצוע",
+     "screens": [
+      ".qa/screenshots/2026-10-21_769a32_categories-title.png"
+     ]
+    },
+    {
+     "hash": "#d871a4",
+     "id": "df2f0e78564ab7a462d871a4",
+     "title": "בקשת לקוח: ניסוח הודעת דליה על סיכום משמרת + כפתור",
+     "column": "לביצוע",
+     "screens": [
+      ".qa/screenshots/2026-10-21_d871a4_shifts-dalia-suggestion.png"
+     ]
+    },
+    {
+     "hash": "#a3bf6e",
+     "id": "d4d33ab72ca8448c2da3bf6e",
+     "title": "בקשת לקוח: כרטיס חירום — משפט פתיחה",
+     "column": "לביצוע",
+     "screens": [
+      ".qa/screenshots/2026-10-21_a3bf6e_emergency-card-top.png"
+     ]
+    },
+    {
+     "hash": "#9611bf",
+     "id": "785b2fe9417c0a8d409611bf",
+     "title": "בקשת לקוח: כפתור החירום האדום מול כרטיס החירום",
+     "column": "לביצוע",
+     "screens": [
+      ".qa/screenshots/2026-10-21_9611bf_red-emergency-button.png"
+     ]
+    },
+    {
+     "hash": "#0c3f0f",
+     "id": "a07f14c006fca2726d0c3f0f",
+     "title": "בקשת לקוח: אזור מסמכים משפטיים ורפואיים לפי מדינה",
+     "column": "לביצוע",
+     "screens": [
+      ".qa/screenshots/2026-10-21_0c3f0f_bureaucracy-documents.png"
+     ]
+    }
+   ],
+   "board_other": [
+    "#0c3f0f — описание «מה קיים» исправлено по скриншоту (task_update)"
+   ],
+   "test_data": [
+    "Гид-тур в аккаунте moshe cohen перезапущен из «מרכז עזרה» и закрыт «דילוג על הסיור» — статус тура мог смениться с «הושלם» на «דולג»"
+   ],
+   "notes": [
+    "upload_path по-прежнему не принимается (upload_not_complete) — вложения передавались как {url} публичной ссылки"
+   ]
+  },
+  {
+   "date": "2026-10-21",
+   "command": "/qa",
+   "build": "index-W6cuezMK.js",
+   "queue": [
+    "#41bc8b",
+    "#048762",
+    "#c2337d",
+    "#2f6463",
+    "#769a32",
+    "#d871a4",
+    "#a3bf6e",
+    "#9611bf",
+    "#0c3f0f",
+    "#79fdbd",
+    "#64aee4",
+    "#38ec2c"
+   ],
+   "tickets": [
+    {
+     "hash": "#769a32",
+     "status": "tested",
+     "verdict": "pending-question",
+     "notes": "заголовок he/en/de ✅ 2 прогона; вкладка осталась «קטגוריות» без согласования с клиентом"
+    },
+    {
+     "hash": "#9611bf",
+     "status": "tested",
+     "verdict": "pending-question",
+     "notes": "подпись כרטיס חירום/Emergency card/Notfallkarte ✅, открывает карту; согласование с клиентом нет; без пациента — не проверено"
+    },
+    {
+     "hash": "#a3bf6e",
+     "status": "tested",
+     "verdict": "pending-question",
+     "notes": "фраза he/en/de побуквенно ✅, но под красным баннером, выше данных"
+    },
+    {
+     "hash": "#79fdbd",
+     "status": "blocked",
+     "notes": "код не смёржен в develop (только превью bo5uig9v5, другая БД)"
+    },
+    {
+     "hash": "#64aee4",
+     "status": "blocked",
+     "notes": "код не смёржен в develop (превью e3bep1eq6)"
+    },
+    {
+     "hash": "#38ec2c",
+     "status": "blocked",
+     "notes": "код не смёржен в develop (превью e3bep1eq6)"
+    },
+    {
+     "hash": "#d871a4",
+     "status": "tested",
+     "verdict": "candidate-pass",
+     "notes": "текст he побуквенно, en/de, кнопка → העברת משמרת последней ожидающей смены, 20 с; С1 (סיכום сохранить) не проверен"
+    },
+    {
+     "hash": "#0c3f0f",
+     "status": "tested",
+     "verdict": "pending-question",
+     "notes": "типы IL/DE/OTHER, ביטוח לאומי только IL, контакты → карта, плашка, тип выбран заранее ✅; сама загрузка файла не проверена; немецкие типы — подтверждение клиента"
+    },
+    {
+     "hash": "#c2337d",
+     "status": "tested",
+     "verdict": "candidate-reject",
+     "notes": "пояснение на 8 из 18 экранов; de «Zeig mir, wie» (du) при Sie; гиды ✅, ✕ ✅ (возвращено)"
+    },
+    {
+     "hash": "#2f6463",
+     "status": "tested",
+     "verdict": "pending-question",
+     "notes": "«?» на всех экранах, без видимой подписи; поиск/синонимы/מעבר למסך/הראי לי איך ✅; чат-префилл закрыт согласием AI"
+    },
+    {
+     "hash": "#048762",
+     "status": "tested",
+     "verdict": "candidate-pass",
+     "notes": "блок, счётчик, הושלם по данным, переходы, все 3 → исчез, возврат, ✕ ✅; не проверено: участник без прав (нужен tijiti5421)"
+    },
+    {
+     "hash": "#d871a4",
+     "status": "tested",
+     "verdict": "candidate-pass",
+     "notes": "+ סיכום на обеих QA-сменах → сообщение пропало, ציר זמן ✅"
+    },
+    {
+     "hash": "#0c3f0f",
+     "status": "tested",
+     "verdict": "pending-question",
+     "notes": "+ загрузка с iPhone ✅, открытие ✅, удаление ✅ (файл в Storage остался)"
+    }
+   ],
+   "deferred_questions": [
+    "#769a32 вкладка",
+    "#9611bf согласование",
+    "#a3bf6e фраза под баннером",
+    "#c2337d не все экраны",
+    "#2f6463 иконка ? без подписи",
+    "#41bc8b אחר כך навсегда",
+    "триал: где тестировать / 7 vs 14 дней",
+    "новый аккаунт QA-менеджера для #41bc8b/#048762"
+   ],
+   "board_actions": [
+    {
+     "hash": "#c2337d",
+     "action": "reject",
+     "rejection_id": "rej_2adf4b65ffbb9909881f8318",
+     "column": "לביצוע",
+     "at": "2026-10-21T20:07"
+    },
+    {
+     "hash": "#79fdbd",
+     "action": "reject",
+     "rejection_id": "rej_40ba82b446b55a0c30902831",
+     "column": "לביצוע",
+     "note": "не смёржено в develop"
+    },
+    {
+     "hash": "#64aee4",
+     "action": "reject",
+     "rejection_id": "rej_5b434424e326a2b03157046a",
+     "column": "לביצוע",
+     "note": "не смёржено + вопрос 7/14 дней"
+    },
+    {
+     "hash": "#38ec2c",
+     "action": "reject",
+     "rejection_id": "rej_9569ed3623500428d1ce9847",
+     "column": "לביצוע",
+     "note": "не смёржено + 7/14 дней, дата окончания"
+    },
+    {
+     "hash": "#769a32",
+     "action": "reject",
+     "rejection_id": "rej_3ae7fe62fc123c9049cbb124",
+     "column": "לביצוע",
+     "note": "заголовок не по центру (замечание пользователя)"
+    }
+   ],
+   "user_decisions": {
+    "#9611bf": "прошёл (пользователь)",
+    "#2f6463": "иконка ? принята пользователем — прошёл",
+    "#0c3f0f": "типы проверяю сам, клиент поправит потом",
+    "#769a32": "пользователь: заголовок смещён вправо, не по центру"
+   },
+   "user_confirmed_pass": [
+    "#0c3f0f",
+    "#9611bf",
+    "#2f6463",
+    "#d871a4",
+    "#a3bf6e",
+    "#048762"
+   ],
+   "pending": {
+    "#048762": "проведён; доп. проверка tijiti5421 (блок не виден) — завтра, не блокирует",
+    "#9611bf": "С1 без пациента — завтра (уже проведён)",
+    "#41bc8b": "новый аккаунт — завтра"
+   },
+   "passed_awaiting_user": [],
+   "status": "paused-until-tomorrow"
+  },
+  {
+   "date": "2026-10-22",
+   "command": "/qa продолжение",
+   "build": "index-W6cuezMK.js",
+   "account": "новый Hshsd (family_manager)",
+   "tickets": [
+    {
+     "hash": "#41bc8b",
+     "status": "tested",
+     "verdict": "candidate-pass",
+     "notes": "окно само, 3 шага, данные в карте/תיק רפואי, тур не стартует, окно не возвращается, he/en/de ✅; не проверено: אחר כך/דילוג/✕ (нужен ещё аккаунт); אחר כך = навсегда (по коду), вопрос владельцу"
+    },
+    {
+     "hash": "#048762",
+     "status": "tested",
+     "notes": "без пациента блока нет ✅; после мастера блок есть 1/3"
+    },
+    {
+     "hash": "#9611bf",
+     "status": "tested",
+     "notes": "/emergency без пациента — без ошибки, пустое состояние ✅"
+    }
+   ],
+   "test_data": [
+    {
+     "what": "аккаунт Hshsd: пациент QA-מטופל 41bc8b, контакт QA-איש קשר 0500000000, лекарство QA-תרופה 5 מ\"ג",
+     "status": "осталось (тестовый аккаунт)"
+    },
+    {
+     "what": "аккаунт Tsushs: мастер skipped, пациента нет",
+     "status": "осталось"
+    }
+   ],
+   "user_confirmed_pass": [
+    "#41bc8b"
+   ],
+   "next": null,
+   "status": "done"
+  },
+  {
+   "date": "2026-10-22",
+   "device": "Android Pixel 6 Chrome 155 (CDP), iPhone WDA Code 41",
+   "build": "index-1eoSQGb6.js",
+   "account": "moshe cohen",
+   "tickets": {
+    "#4c5364": {
+     "status": "tested partially",
+     "note": "no is_paying family on preview (Cardcom); moshe is_paying=false -> no button; no-plan -> purchase mode ok",
+     "action": "waiting user decision"
+    },
+    "#769a32": {
+     "status": "tested he/en/de",
+     "result": "title centered 205.7/205.5 all 17 screens; en 2 lines centered; tab still 'קטגוריות' -> question",
+     "action": "pass (user did עבר QA)",
+     "column": "הושלם",
+     "note": "tab \"קטגוריות\" accepted by user 22.10"
+    },
+    "#c2337d": {
+     "status": "tested he/en/de",
+     "result": "14 intros + guides full in he/en/de; settings guide via help; de Sie ok; finding: de mood-report step1 'mit einem Tipp'; /,/shifts,/settings intros hidden by ✕ (guide_state.introsDismissed) not visible; red-flags 2->5",
+     "action": "reject rej_e36a8cd7 (de mood-report \"mit einem Tipp\"), old rej resolved",
+     "column": "לביצוע",
+     "retest": "2026-10-22 build index-j-_yiPc7.js: de mood-report + tour step5 Fingertipp fixed; de 14 guides + tour 17 steps ok; he intros same as before",
+     "verdict": "pass (pending user)"
+    },
+    "#da620a": {
+     "status": "tested partially",
+     "action": "moved to backlog (client decision, #a5a58e)",
+     "bug": "tour Next without activation -> /subscription-expired 3/3",
+     "column": "backlog"
+    },
+    "#64aee4": {
+     "status": "tested partially",
+     "action": "moved to backlog (client decision, #a5a58e)",
+     "bug": "tour Next without activation -> /subscription-expired 3/3",
+     "column": "backlog"
+    },
+    "#a5a58e": {
+     "action": "created client request, todo, screenshot attached"
+    }
+   },
+   "test_data": [
+    "moshe cohen: guides seen marks (he/en/de), language toggled he->en->de->he",
+    "accounts by user: uhfhiuffgh qwqwqwqwqw@gmail.com (paid), Ususd (trial active till 05.11.2026), 3rd new account (not activated, on welcome screen)"
+   ]
+  }
+ ],
+ "test_data_decision": "2026-10-13: пользователь разрешил оставить тестовые данные (записи נוזלים יומיים у QA-Test Patient, пациент QA-Wizard Test) — не чистить"
+}

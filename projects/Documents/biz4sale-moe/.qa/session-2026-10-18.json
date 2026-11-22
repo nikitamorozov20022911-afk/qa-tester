@@ -1,0 +1,143 @@
+{
+  "project": "biz4sale",
+  "date": "2026-10-18",
+  "environment": "https://www.biz4sale.co.il/ (prod)",
+  "scope": "בבדיקות кроме тикетов с пометкой «לא ניתן לשחזר» (#fe3470, #bd3aff, #a47bd6, #4dae81)",
+  "queue": [
+    "#8deb3e",
+    "#c03bf4",
+    "#fbeedf",
+    "#469d67",
+    "#26657c",
+    "#500d1d",
+    "#9b8e31"
+  ],
+  "tickets": [
+    {
+      "hash": "#469d67",
+      "id": "f82352be11910e2740469d67",
+      "title": "Return 301 instead of 307/308 on production canonical redirects",
+      "type": "task",
+      "action": "reject",
+      "notes": "http→https 308 (3/3 + Googlebot, bug-verifier ПОДТВЕРЖДЕНО); http апекс 308→301→200. https апекс→www 301 OK. AC5 не проверяемо (нет доступа к Vercel). Вопрос 7: 308 платформы — ждём решения пользователя, по умолчанию реджект. | rej_bac35c3b1d4a3c46b6454ca6",
+      "at": "2026-10-18T15:15",
+      "column": "לביצוע"
+    },
+    {
+      "hash": "#c03bf4",
+      "id": "081371483f6c058077c03bf4",
+      "title": "הטמעת canonical ומדיניות robots/noindex לכל סוגי העמודים",
+      "action": "reject",
+      "notes": "AC1/AC3/AC5 ✅ (321 URL sitemap). Варианты регистра/слэша → 200 без 301 и без canonical в сыром HTML (bug-verifier ПОДТВЕРЖДЕНО 3/3), основание — фича demand 7,8. AC2 просроченное — не проверено. AC4 → #469d67. | rej_df6ab2b9e4e301427b55754c",
+      "column": "לביצוע"
+    },
+    {
+      "hash": "#fbeedf",
+      "id": "06e9741f83a0c27e3ffbeedf",
+      "title": "הטמעת JSON-LD לעמוד מודעת עסק",
+      "action": "pass",
+      "notes": "Т1–Т7, С1 ✅ на 279 объявлениях. Rich Results Test — вопрос 8. Телефон в тексте сдержанного 24395352 — находка.",
+      "column": "הושלם",
+      "feature": "S-07 JSON-LD",
+      "role": "guest",
+      "devices": [
+        "curl",
+        "desktop"
+      ],
+      "tests": ".qa/tests/listing-jsonld/",
+      "confirmed_by_user": "2026-10-18"
+    },
+    {
+      "hash": "#8deb3e",
+      "id": "e75ff2c106ce95a7bc8deb3e",
+      "title": "עמוד ההודעות טוען כל שיחה ורשימת שיחות פעמיים",
+      "action": "pass",
+      "notes": "AC1,AC3 ✅; AC2 — двух экземпляров нет (React tree), повторы внутри одного экземпляра — находка. Отправка сообщения — вопрос 1.",
+      "column": "הושלם",
+      "feature": "F-18 /messages",
+      "role": "chat",
+      "devices": [
+        "desktop",
+        "android"
+      ],
+      "tests": ".qa/tests/messages-single-instance/",
+      "confirmed_by_user": "2026-10-18"
+    },
+    {
+      "hash": "#500d1d",
+      "id": "31f303348ff69035fa500d1d",
+      "title": "הטמעת שכבת GEO",
+      "action": "waiting",
+      "notes": "FAQ/llms/robots ✅. AC4/AC5 — нет доступа к docs/geo (вопрос 12), RRT faq — вопрос 8. | RRT faq.html: No items detected (FAQ rich results Google ограничил), ошибок нет"
+    },
+    {
+      "hash": "#26657c",
+      "id": "90f6c7686b72c0519b26657c",
+      "title": "Merge the GEO/SEO branch to production and run post-deploy regression",
+      "action": "pass",
+      "notes": "Признаки PR #141 ✅, регресс поиск/категория/объявление десктоп+Android 3/3 ✅. /login — soft 404 (не в AC, вход = /auth) — находка. AC1/AC4 — без доступа к репо.",
+      "column": "הושלם",
+      "feature": "GEO deploy regression",
+      "role": "guest",
+      "devices": [
+        "desktop",
+        "android"
+      ],
+      "tests": ".qa/tests/geo-deploy/",
+      "confirmed_by_user": "2026-10-18"
+    },
+    {
+      "hash": "#9b8e31",
+      "id": "39810a034562b93a099b8e31",
+      "title": "Unblock and record the first AI-engine mention baseline",
+      "action": "reject",
+      "notes": "всё в файлах PR #142 — вопрос 12 | rej_91e8316a881d92985d5b4b1d: просьба приложить docs/geo/* (по указанию пользователя)",
+      "column": "לביצוע"
+    }
+  ],
+  "test_data": [],
+  "findings": [
+    {
+      "text": "Несуществующие адреса (/login, /faq, /listing-validation, любые) → 200, пустой main, noindex только после JS (soft 404)",
+      "status": "new"
+    },
+    {
+      "text": "/messages: один экземпляр повторяет conversation?id при пометке прочитано; список чатов грузится 2–3 раза; app_user собеседника запрашивают и список и шапка",
+      "status": "new"
+    },
+    {
+      "text": "Сдержанное объявление 24395352: телефон в тексте описания (виден на странице и в schema description)",
+      "status": "new"
+    },
+    {
+      "text": "Объявления «נמכר!!» в заголовке со статусом активно (c62aea61, 5832e079) — в sitemap, index, schema Offer",
+      "status": "new"
+    },
+    {
+      "text": "«פתח ב-Google Maps» на объявлениях без места → query=Israel",
+      "status": "new"
+    },
+    {
+      "text": "Кнопка «הצג את כל השיחות» на мобиле поверх левого края карточки чата",
+      "status": "new"
+    },
+    {
+      "text": "Возврат назад с объявления в категорию 4.3–4.7 с",
+      "status": "new"
+    },
+    {
+      "text": "При 404 старого чанка ~0.15–0.5 с мелькает «משהו השתבש» перед автоперезагрузкой",
+      "status": "new"
+    },
+    {
+      "text": "Несуществующее объявление: нет X-Robots-Tag, только meta",
+      "status": "new"
+    }
+  ],
+  "autotests": {
+    "written": [
+      "e2e/tests/listing-jsonld/valid-jsonld-all-sitemap-listings.spec.ts"
+    ],
+    "status": "остальные отменены пользователем"
+  }
+}

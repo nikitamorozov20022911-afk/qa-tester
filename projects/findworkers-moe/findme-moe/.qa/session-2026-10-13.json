@@ -1,0 +1,596 @@
+{
+  "date": "2026-10-13",
+  "project": "FindMe v2 (TrivoLN)",
+  "device": "Android Pixel 6, app com.trivoln.app 1.1.0 (16)",
+  "tickets": [
+    {
+      "hash": "19aa1fac",
+      "id": "19aa1fac567c303c0d12e016",
+      "title": "RTL is not applied on registration, login and onboarding screens (Hebrew UI, Android)",
+      "status": "pass",
+      "checked": {
+        "login_he": "placeholder/labels/password right OK; back right OK only after logout; NO back after cold start (welcome -> התחברות), system back exits app (he + en)",
+        "signup_email_he": "OK (placeholders/typed right, eye left + toggles, back right)",
+        "signup_phone_he": "OK",
+        "en_ltr": "login/signup/phone LTR OK; login has no Back after cold start"
+      },
+      "not_checked_yet": [
+        "typed Hebrew characters (only Latin via adb)"
+      ],
+      "findings_out_of_scope": [
+        "eye button accessibility label in English ('Show password') in Hebrew UI"
+      ],
+      "action": "pass",
+      "column": "הושלם",
+      "rejection_resolved": "23f2ce97 (change 63515dc693d55f657ae119bf)",
+      "note": "login back button not required (user decision L-20261012-1); Hebrew typing confirmed by user",
+      "for_autotests": {
+        "feature": "F-02 / F-06 / S-01 auth+onboarding RTL",
+        "role": "user (new account)",
+        "device": "Android app",
+        "evidence": ".qa/screenshots/19aa1fac/"
+      },
+      "confirmed_by_user": "2026-10-12",
+      "autotests": "skipped (user: no autotests for now; native Android)"
+    },
+    {
+      "hash": "6aa90d07",
+      "id": "6aa90d072368ca1fade3264e",
+      "status": "rejected",
+      "title": "תיקון inputs ו-layout להתאמת RTL בכל המערכת",
+      "checked": {
+        "create_post_he": "RTL ok; BUG counter shows '2200/ 10' (en shows '10 /2200')",
+        "edit_profile": "ok",
+        "review": "ok",
+        "add_asset_sheets": "ok (contacts/payment/links)",
+        "search x4": "ok",
+        "chat_message": "ok",
+        "chat_menu": "ok under ⋯",
+        "phones": "+972 ok (edit, privacy items)",
+        "en_regression": "ok"
+      },
+      "not_checked": [
+        "OTP screen phone format (needs phone signup)",
+        "statistics per-item phone (no data)"
+      ],
+      "findings_out_of_scope": [
+        "remove friend without confirmation -> bug #cc51c34b"
+      ],
+      "withdrawn_findings": [
+        "gear הגדרות logs out — not reproduced (session probably expired earlier)",
+        "chats search 'Kq' — matched ID KQ5862, filter works ('zzzq' -> לא נמצאו צ'אטים)",
+        "own profile in search — not confirmed: card 'Nikita Morozov' has no ID and does not open; search by PA5401 finds nothing"
+      ],
+      "action": "reject",
+      "column": "לביצוע",
+      "old_rejection_resolved": "rej_1790847996114 (change 95cbfa512493dfa31d09ff9b)",
+      "new_rejection": "מונה התווים במסך «יצירת פוסט» מוצג הפוך בעברית (12.10.2026)",
+      "attachments": [
+        "BUG-he-post-counter-2200-slash-10.png",
+        "en-post-counter-ok.png"
+      ]
+    },
+    {
+      "hash": "6a16cf42",
+      "id": "6a16cf4222292602fe6b5fb4",
+      "status": "rejected",
+      "column": "לביצוע",
+      "action": "reject (FB connect app inactive + unclear media errors + no video thumbnails)",
+      "old_rejection_resolved": "rej_1790854705094 (change 02919d6a958b1fd2d87e06d8)",
+      "attachments": 5
+    },
+    {
+      "hash": "6a16cf41",
+      "id": "6a16cf419fc929fd4aa94ccd",
+      "status": "לא ניתן לשחזר",
+      "note": "blocked by #6a16cf42 reject 12.10; old mark (TC-163) removed",
+      "column": "בבדיקות"
+    },
+    {
+      "hash": "6a16cf3d",
+      "id": "6a16cf3dd35328f4dac36ce2",
+      "status": "rejected",
+      "notes": [
+        "post1 partial: X+LinkedIn ok, FB not connected (clear msg), IG rejected JPG 1080x2400 'הרשת דחתה את הפוסט'",
+        "post2 TikTok rejected 5s static video, vague msg",
+        "user rule: IG only JPEG -> publish button must be disabled for other formats"
+      ],
+      "column": "לביצוע",
+      "action": "reject 2-in-1 (IG non-JPEG, IG aspect, TikTok all fails); old rej_1791818091811 resolved",
+      "attachments": 4,
+      "open_questions": [
+        "TikTok rejected 5s test video (vague msg)",
+        "draft שמירה no feedback/no drafts screen (#dc2c9a12?)",
+        "logo AC8, audit log AC7, scheduled post delivery"
+      ]
+    },
+    {
+      "hash": "6a16cf3a",
+      "id": "6a16cf3a87c4f33d65f673c6",
+      "status": "rejected",
+      "column": "לביצוע",
+      "action": "reject: username/URL mismatch; history labels/phone+/arrow; X no connect button. Old FB rejection 01.10 kept open (user)",
+      "attachments": 4,
+      "questions": [
+        "contacts section pinned first?",
+        "TikTok asset connect not checked",
+        "friend/guest view not checked (2nd account)"
+      ]
+    },
+    {
+      "hash": "6a16cf3d7904",
+      "id": "6a16cf3d7904ea7e7bd416b3",
+      "title": "פיתוח: דירוגי אמינות וביקורות",
+      "status": "rejected",
+      "device": "Android 1.1.0 (16)",
+      "checked": {
+        "hints_disabled_button": "OK",
+        "49/50 boundary": "OK",
+        "emoji=1": "OK",
+        "keyboard": "button reachable by scroll with keyboard open",
+        "p1_spam": "OK - toast נשלחה לבדיקה",
+        "p2_unverified": "OK - visible, not in avg",
+        "p4_filters_sort": "OK (1 review)",
+        "p6_photos": "OK - max 3, upload hint, shown in card",
+        "p8_edit_label": "OK",
+        "p9_loading": "FAIL - 'אין עדיין ביקורות' in rating card while list loads (reproduced 2x, cold start)",
+        "p3_report": "OK - 5 reasons, toast הדיווח נשלח, תודה (owner DQ3331 reported xofayes review)",
+        "p7_push": "OK - push 'Nikita Morozov כתב/ה עליך ביקורת ★★★★★', opens כל הביקורות",
+        "p7_bell": "Android 16: bell התראות opens חברים→בקשות (notification center = #dc2c9a12, web only)",
+        "AC4_owner_reply": "OK - visible on phone and to author on web",
+        "verified_friendship": "OK after re-save (verified:true, avg 5.0, מאומתות filter); friendship alone does not re-verify existing review",
+        "AC8_en": "OK",
+        "freemium_publish": "OK",
+        "admin moderation (for return)": "report visible, review stays published after 1 report, Hide -> removed from profile, reason in Hebrew ביקורת מזויפת, filters; no restore (by D-11)"
+      },
+      "not_checked_yet": [
+        "p5 out-of-range categories via API (auto-mode denied token reuse)",
+        "admin moderation (postponed by user)",
+        "p7 in-app notification center on native (comes with #dc2c9a12 next store build)"
+      ],
+      "test_data": [
+        "DU7528 review: deleted",
+        "friendship xofayes-DQ3331: removed",
+        "KEEP: xofayes review on DQ3331 (5*, verified) + owner reply + report 'ביקורת מזויפת' — for admin moderation check, delete after"
+      ],
+      "evidence": ".qa/screenshots/6a16cf3d7904/",
+      "action": "reject p9 only (bell + friendship-reverify excluded by user)",
+      "column": "לביצוע",
+      "rejections_resolved": [
+        "rej_1790849821021",
+        "rej_1790849405726"
+      ],
+      "attachments": [
+        "05-loading-shows-no-reviews-android.png",
+        "05b-loading-shows-no-reviews-repeat-android.png",
+        "06-all-reviews-loaded-android.png"
+      ],
+      "time": "2026-10-13"
+    },
+    {
+      "hash": "6a7c8dc3",
+      "id": "6a7c8dc36076099644cfa2b8",
+      "title": "פיתוח: מפה מוטמעת בפרופיל העסקי",
+      "status": "pass",
+      "device": "Android 1.1.0 (16) (account sheyly DQ3331 business) + web",
+      "checked": {
+        "nonexistent street 'Prohgo 3, Petah Tikva'": "no map, address only (android+web, server not_found)",
+        "Herzl 999": "no map",
+        "city only": "no map",
+        "Herzl 10": "map with pin on Herzl",
+        "tap map": "Waze/Google Maps/הצגה במפה/העתקת הכתובת",
+        "api key": "image is data:image/png from edge fn static-map, no key in URL",
+        "guest web": "address only, no map",
+        "console": "no map-related errors (unrelated: 404 /u/ SSR, React #418, guest 401 friend_count/review_histogram)"
+      },
+      "not_checked_yet": [
+        "iOS",
+        "Hebrew-typed address (adb cannot type Hebrew; English equivalents used)"
+      ],
+      "test_data": [
+        "location asset 'QA test' on DQ3331 — added and deleted (restored)"
+      ],
+      "evidence": ".qa/screenshots/6a7c8dc3/",
+      "action": "pass",
+      "column": "הושלם",
+      "rejection_resolved": "rej_1790851556869 (change 3d656b9300a7bff7e7fcd904)",
+      "for_autotests": {
+        "feature": "F-16/F-18 embedded map business profile",
+        "role": "business user + guest",
+        "device": "Android app + web",
+        "evidence": ".qa/screenshots/6a7c8dc3/"
+      },
+      "confirmed_by_user": "2026-10-13",
+      "autotests": "skipped (user: no autotests for now)"
+    },
+    {
+      "hash": "dc2c9a12",
+      "id": "dc2c9a12c23325603de5eb99",
+      "title": "פיד פוסטים (MVP)",
+      "related": "6aa90e40 (tags)",
+      "status": "rejected",
+      "device": "web (user Chrome KQ5862 he/dark + CLI xofayes en)",
+      "checked": {
+        "AC1 tab middle": "OK",
+        "AC2 friends only/newest/block both ways": "OK (block hides posts both ways, cancels friendship, profile not found)",
+        "AC4 no networks, no Also on": "OK",
+        "AC5 scheduled": "OK badge מתוזמן, time subline, עריכה; published 11:10 on time to friend feed; badge removed",
+        "AC6 like/unlike": "OK no double count",
+        "AC7 tags": "@ suggests only friends; tag is link to profile; in-app notif תייג/ה אותך",
+        "AC8 menu": "own: עריכה(scheduled)/מחיקת הפוסט with confirm; friend: דיווח (4 reasons, toast) + חסימה with explanation",
+        "AC9 share": "navigator.share with /u/PA5401",
+        "AC10 bell": "notifications screen, dot disappears after view",
+        "AC11 empty state": "OK matches Figma, buttons -> /explore, /cross-post",
+        "AC12": "he RTL dark + en light OK",
+        "D1": "+N, fullscreen viewer, 6 lines + Show more OK",
+        "D3 retroactive": "old posts in feed",
+        "AC3 partial failure": "OK X posted + Facebook failed (not connected) -> 'Partly posted 1 of 2', Also on: X only",
+        "AC7 external name without @": "OK in X preview ('hi חיי')",
+        "AC7 push": "OK push on phone (build 16, sheyly): 'Nikita Morozov תייג/ה אותך בפוסט'",
+        "AC13 GDPR": "OK KQ5862 like removed (1->0); dialog text doesn't list likes/tags/reports",
+        "AC8 admin": "report from LU1042 -> admin Reports/Feed posts (reason, Hide/Dismiss) -> Hide -> post gone from feed incl. author My posts",
+        "AC13 reports": "KQ5862 report removed after GDPR erase (no feed reports in any status)",
+        "skeleton": "3 skeleton cards while loading (API slowed)"
+      },
+      "not_checked_yet": [
+        "AC8 report -> admin דיווחים + hide (admin postponed)",
+        "AC13 reports removal (admin)",
+        "skeleton loading"
+      ],
+      "test_data": [
+        "KEEP: xofayes post 'QA feed test post...@יעעי יכני' + report from KQ5862 (for admin)",
+        "deleted: KQ scheduled post, xofayes media post",
+        "friendship KQ5862-xofayes: ended by block; block removed",
+        "xofayes theme restored Dark",
+        "X post on @NikitaM16788099 'QA cross-post tag test - delete me' — USER must delete",
+        "TrivoLN post 'QA cross-post tag test' by xofayes",
+        "friendship xofayes-DQ3331 (re-added for tag push)",
+        "KQ5862: all data deleted (GDPR test)",
+        "/sdcard/Movies/qa_rec6s.mp4 on phone"
+      ],
+      "not_checked": [],
+      "action": "reject: @-mention filter ignores Hebrew letters (web); rest passed ; native feed missing in Android 16 -> check next store build",
+      "column": "לביצוע",
+      "attachments": [
+        "mention-hebrew-filter-web.png",
+        "android-16-tabbar-no-feed.png"
+      ]
+    },
+    {
+      "hash": "6aa90b9f",
+      "id": "6aa90b9f1b0eb9476ccac854",
+      "title": "זיהוי אוטומטי של רשת חברתית בשלב 2",
+      "status": "rejected",
+      "action": "reject (user request): Facebook login 'האפליקציה לא פעילה' blocks step 2",
+      "column": "לביצוע",
+      "device": "Android 1.1.0 (16)",
+      "attachments": [
+        "01-facebook-app-not-active-android.png"
+      ],
+      "time": "2026-10-13"
+    },
+    {
+      "hash": "b0782a15",
+      "id": "b0782a15e3962866d5106f1e",
+      "title": "NEW BUG: יצירת פוסט — אינסטגרם ופייסבוק מסומנים כברירת מחדל",
+      "status": "created",
+      "column": "לביצוע"
+    },
+    {
+      "hash": "6aa90e40",
+      "id": "6aa90e40755d34a5650f31a7",
+      "status": "rejected",
+      "note": "all post-tag checks OK (web+push); open question: tags in comments (client asked), app has no comments (D-18). User: leave for now. @-filter by typing not checked (only 1 friend).",
+      "action": "reject: @-mention filter ignores Hebrew letters (web); rest passed",
+      "column": "לביצוע",
+      "attachments": [
+        "mention-hebrew-filter-web.png"
+      ]
+    },
+    {
+      "hash": "6a8fffb3",
+      "id": "6a8fffb365d0eb1f17b54307",
+      "status": "pass",
+      "action": "pass (user decision: Active on link-open accepted)",
+      "column": "ждёт-подтверждения",
+      "rejection_resolved": "rej_1788962587516",
+      "checked": {
+        "invite email": "arrives he+en, noreply@shnaider.pro, link -> /reset-password",
+        "status before link": "Invite sent",
+        "status after link opened": "Active (accepted by user)"
+      },
+      "test_data": [
+        "invited user QA Invite Test hapabox561@leafflip.com"
+      ]
+    },
+    {
+      "hash": "6a8ffaeb",
+      "id": "6a8ffaeb9ee5a7da68ca5bc7",
+      "status": "pass",
+      "open_rejection": "rej_1788963196488",
+      "checked": {
+        "support reset email": "arrives he+en, link -> /reset-password",
+        "login with new password": "OK (user)",
+        "old password": "refused (user)",
+        "SA issue code": "one-time 24h code",
+        "redeem-code": "OK -> set password -> login, audit user.password_code_redeemed"
+      },
+      "action": "pass",
+      "column": "הושלם",
+      "rejection_resolved": "rej_1788963196488",
+      "confirmed_by_user": "2026-10-13",
+      "autotests": "skipped (user: no autotests for now)"
+    },
+    {
+      "hash": "6a8a96c8-dd",
+      "id": "6a8a96c821e5a64ca7a411dd",
+      "status": "pass",
+      "checked": {
+        "invite Admin": "OK email+status",
+        "reset Support": "OK",
+        "code SA": "OK",
+        "AC4 reset disabled for OTP": "phone-only John Doe disabled; Google/Apple accounts not available",
+        "AC6 audit": "invite/password_reset/password_code_issued with actor",
+        "Support no Add user": "OK",
+        "regress #6a8ffb0e": "OK",
+        "regress #6a8ffe4b dropdown": "OK"
+      },
+      "not_checked": [
+        "AC5 direct 403 (API)",
+        "AC4 Google/Apple accounts"
+      ],
+      "action": "pass",
+      "column": "ждёт-подтверждения (user presses עבר QA)"
+    },
+    {
+      "hash": "6a8a96c8-dc",
+      "id": "6a8a96c821e5a64ca7a411dc",
+      "status": "rejected",
+      "checked": {
+        "AC1": "OK",
+        "AC2": "OK",
+        "matrix": "OK",
+        "D-10": "OK",
+        "AC5 audit": "OK",
+        "support direct URLs": "server denies",
+        "D-08": "suspend keeps sign-in hides profile; block ends session",
+        "AC3": "Pixel 7 UA 404; desktop narrowed to 375 opens",
+        "AC7": "he/en RTL OK",
+        "AC8": "focus visible",
+        "AC9": "tablet OK",
+        "AC3 native": "OK Android 16 as Admin: trivoln://admin and /admin/users -> 404 'פאנל הניהול הוא כלי לדפדפן במחשב'"
+      },
+      "not_checked": [
+        "AC4-5 RLS directly in DB (needs apikey)",
+        "blocked user login message (needs KQ password)"
+      ],
+      "test_data": [
+        "KQ5862 suspended->blocked->active (restored)",
+        "invited user QA Invite Test hapabox561@leafflip.com (#LU1042), password changed 3x, onboarding not finished"
+      ],
+      "action": "reject: only RLS-in-DB proof requested (AC4-5); everything else passed — on return just check attached proof",
+      "column": "לביצוע",
+      "attachments": [
+        "support-audit-denied-web.png",
+        "native-admin-404-android.png"
+      ]
+    },
+    {
+      "hash": "6915227e",
+      "id": "6915227e6beff22ede2c39a8",
+      "title": "NEW BUG: MFA code accepted but page stays on /mfa",
+      "status": "created",
+      "column": "לביצוע",
+      "attachments": [
+        "mfa-stuck-after-valid-code-web.png"
+      ]
+    },
+    {
+      "hash": "636f6a7d",
+      "id": "636f6a7d0ecdb108f60d17fb",
+      "title": "מסך «ה-TrivoLN ID שלך» — להסיר כפתור חזרה",
+      "status": "pass",
+      "action": "pass by user decision: no back arrow (seen on web /create-id, only 'Continue')",
+      "column": "הושלם",
+      "not_checked": [
+        "Android 1.1.0 (19) not installed: arrow + system Back on step 3, step 2 back kept"
+      ],
+      "date": "2026-10-13",
+      "confirmed_by_user": "2026-10-13"
+    },
+    {
+      "hash": "cc51c34b",
+      "id": "cc51c34ba398f709a2063423",
+      "title": "«הסרת חבר» ללא חלון אישור",
+      "status": "rejected",
+      "action": "reject: web still removes without confirmation; Android 1.1.0 (19) unavailable to test",
+      "column": "לביצוע",
+      "attachments": [
+        "01-menu-web.png",
+        "02-after-remove-click-web.png"
+      ],
+      "date": "2026-10-13"
+    }
+  ],
+  "test_data": [
+    {
+      "what": "theme",
+      "original": "כהה (dark)",
+      "now": "כהה (dark) restored",
+      "restored": true
+    },
+    {
+      "what": "language",
+      "original": "עברית",
+      "now": "English",
+      "restored": false
+    },
+    {
+      "what": "session",
+      "original": "logged in as xofayes535@aahzz.com",
+      "now": "logged out",
+      "restored": false
+    },
+    {
+      "what": "new test account (created by user for #19aa1fac)",
+      "email": "dedol29162@aahzz.com",
+      "TrivoLN ID": "DU7528",
+      "cleanup": "delete account / leave as test account"
+    },
+    {
+      "what": "2nd test account (created by user for #19aa1fac, Hebrew)",
+      "email": "sokata3273@17lover.com",
+      "TrivoLN ID": "KQ5862",
+      "state": "stopped on ID screen, onboarding not finished"
+    },
+    {
+      "what": "app data cleared (pm clear) to log out",
+      "restored": "language he + theme dark set"
+    },
+    {
+      "what": "friend request xofayes535 (PA5401) -> sokata3273 (KQ5862) for #6aa90d07 chat checks",
+      "cleanup": "friendship removed",
+      "restored": true
+    },
+    {
+      "what": "generated test media on phone (no personal content)",
+      "files": [
+        "/sdcard/Movies/qa_base_5s.mp4",
+        "/sdcard/Movies/qa_video_29.5MB.mp4",
+        "/sdcard/Movies/qa_video_30.5MB.mp4",
+        "/sdcard/Pictures/QA_TEST/ (qa_pattern.png, qa_photo.jpg, qa_anim.gif)",
+        "/sdcard/Movies/QA_TEST/ and more in /sdcard/Pictures/QA_TEST/ (boundary files)"
+      ],
+      "cleanup": "KEEP for now (user 2026-10-12: пока не надо); delete later"
+    },
+    {
+      "what": "media uploads for #6a16cf41/#6a16cf42 (5s mp4, 30.1M mp4, 5.1M png, gif, mov)",
+      "cleanup": "all deleted from המדיה שלי",
+      "incident": "one ORIGINAL user image (astronaut) deleted by mistake during cleanup — order reshuffled; user informed",
+      "restored": true
+    },
+    {
+      "what": "REAL cross-post #1 (6a16cf3d) 18:02",
+      "published_to": [
+        "X @NikitaM16788099",
+        "LinkedIn Eran Natan"
+      ],
+      "failed": [
+        "Facebook (not connected)",
+        "Instagram (network rejected, JPG 1080x2400)"
+      ],
+      "cleanup": "user deletes in X and LinkedIn"
+    },
+    {
+      "what": "TikTok post attempt 18:04",
+      "result": "rejected, nothing published"
+    },
+    {
+      "what": "REAL post #3 Instagram only 18:12",
+      "cleanup": "user deleted"
+    },
+    {
+      "what": "TikTok post with user's camera video PXL_20261012_151606287.TS.mp4 18:19",
+      "result": "rejected, nothing published"
+    },
+    {
+      "what": "#6a16cf3a test asset Instagram @qa_trivoln_test (title QA)",
+      "cleanup": "deleted",
+      "restored": true
+    },
+    {
+      "what": "#6a16cf3a test location QA · Rothschild 1, Tel Aviv",
+      "cleanup": "deleted",
+      "restored": true
+    },
+    {
+      "what": "#6a16cf3a test asset X @NikitaM16788099",
+      "cleanup": "deleted",
+      "restored": true
+    },
+    {
+      "what": "main Instagram asset @nikita._.morozov: was NOT verified, now verified (אימות) during #6a16cf3a test; URL change test",
+      "original": "https://instagram.com/nikita._.morozov, not verified"
+    }
+  ],
+  "new_bugs": [
+    {
+      "id": "636f6a7d0ecdb108f60d17fb",
+      "hash": "636f6a7d",
+      "title": "מסך «ה-TrivoLN ID שלך» — יש להסיר את כפתור החזרה",
+      "status": "todo",
+      "priority": "high",
+      "change_id": "aed48f7805320e287b1971b9",
+      "screenshots_to_attach": [
+        ".qa/screenshots/19aa1fac/he-your-id.png",
+        ".qa/screenshots/19aa1fac/en-your-id.png"
+      ],
+      "note": "supersedes #6a3d5d69 for step 3 only (user decision)"
+    },
+    {
+      "id": "cc51c34ba398f709a2063423",
+      "hash": "cc51c34b",
+      "title": "«הסרת חבר» מסירה את החבר מיד, ללא חלון אישור",
+      "status": "todo",
+      "attachments": 2,
+      "change_id": "a92a7e10d4da16719e1575c7"
+    }
+  ],
+  "sessions": [],
+  "findings": [
+    {
+      "where": "web /friends",
+      "what": "Remove friend removes immediately without confirmation (cf. #cc51c34b)",
+      "date": "2026-10-13"
+    },
+    {
+      "where": "web /u/<ID>",
+      "what": "console: 404 on page load, React #418 hydration; guest: 401 rpc friend_count/review_histogram",
+      "date": "2026-10-13"
+    },
+    {
+      "where": "web /cross-post",
+      "what": "Instagram+Facebook preselected by default for every new post, even when not connected (KQ5862) — risk of unintended external publishing",
+      "date": "2026-10-13"
+    },
+    {
+      "where": "web /cross-post TikTok",
+      "what": "6-second MP4 (adb screenrecord, H.264) -> 'The video is longer than the 600 seconds your TikTok account allows', Publish disabled",
+      "date": "2026-10-13",
+      "evidence": "screenshots/dc2c9a12/tiktok-6s-video-600s-error-web.png"
+    },
+    {
+      "what": "MFA code accepted (verify 200) but page stays on /mfa on sign-in; must open /admin manually",
+      "date": "2026-10-13"
+    },
+    {
+      "what": "Suspend without confirmation; unsuspend button labelled 'Lift the block'",
+      "date": "2026-10-13"
+    }
+  ],
+  "closed": "2026-10-13",
+  "summary": {
+    "passed": [
+      "6a7c8dc3",
+      "6a8fffb3",
+      "6a8ffaeb",
+      "6a8a96c8-dd",
+      "636f6a7d"
+    ],
+    "rejected": [
+      "6a16cf3d7904",
+      "6aa90b9f",
+      "6a8a96c8-dc",
+      "dc2c9a12",
+      "6aa90e40",
+      "cc51c34b"
+    ],
+    "new_bugs": [
+      "b0782a15",
+      "6915227e"
+    ],
+    "remaining_testing": [
+      "6a16cf41"
+    ]
+  }
+}

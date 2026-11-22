@@ -1,0 +1,183 @@
+{
+ "date": "2026-10-22",
+ "device": "iPhone 17, il.co.safepay.app 0.1.1 build 13 (Appium XCUITest)",
+ "account": "0500000004 (вошёл 16:05)",
+ "tickets": {
+  "2ac257": {
+   "state": "pass",
+   "note": "все клетки 1–5 обе стороны ✅ (a-05-*, e-04-*, e-05-*)",
+   "action": "pass",
+   "column": "הושלם",
+   "by": "user"
+  },
+  "94c8a6": {
+   "state": "pass",
+   "note": "05 +₪0.50, 04 -₪1/+₪0.50 ✅",
+   "action": "pass",
+   "column": "הושלם",
+   "by": "user"
+  },
+  "c70f72": {
+   "state": "reject-4digits",
+   "note": "остальное ✅ (05 и 04)",
+   "action": "reject",
+   "rejection_id": "rej_26d59d7f029ab43e92e35285",
+   "column": "לביצוע",
+   "at": "2026-10-22 18:44"
+  },
+  "d117ed": {
+   "state": "pass",
+   "note": "п.1 профиль низ ✅ r-01, п.2 чат ✅",
+   "action": "pass",
+   "column": "הושלם",
+   "by": "user"
+  },
+  "7b0d5a": {
+   "state": "pass",
+   "note": "монета ✅, кошелёк принят, reduce motion без вращения ✅ rm-cold",
+   "action": "pass",
+   "column": "הושלם",
+   "by": "user"
+  },
+  "9808ed": {
+   "state": "reject",
+   "note": "холодный старт ✅, офлайн ✅; 'הצג/י הכל' из ממתין לפעולה → белый экран 3/3",
+   "action": "reject",
+   "rejection_id": "rej_bfdd748c6a3b2fbd1d334e90",
+   "column": "לביצוע",
+   "at": "2026-10-22 18:44"
+  },
+  "f7fb17": {
+   "state": "reject",
+   "note": "5 ✅; Т3 'הצג/י הכל' → белый экран 3/3",
+   "action": "reject",
+   "rejection_id": "rej_f577779774690ae877629d5a",
+   "column": "לביצוע",
+   "at": "2026-10-22 18:44"
+  },
+  "1388e0": {
+   "state": "reject-4digits",
+   "note": "остальное ✅",
+   "action": "reject",
+   "rejection_id": "rej_0f97c7f6eacf968d84d748e1",
+   "column": "לביצוע",
+   "at": "2026-10-22 18:44"
+  },
+  "88acb5": {
+   "state": "reject-4digits",
+   "note": "остальное ✅",
+   "action": "reject",
+   "rejection_id": "rej_266c27bcfe5248ec84937aee",
+   "column": "לביצוע",
+   "at": "2026-10-22 18:44"
+  },
+  "0d60ab": {
+   "state": "pass",
+   "note": "✅ sheet-open-1, t-0x",
+   "action": "pass",
+   "column": "הושלם",
+   "by": "user"
+  },
+  "d64ac3": {
+   "state": "reject",
+   "note": "фокус имя/номер — кнопка закрывает галочки; перетаскивание формы не закрывает клавиатуру 3/3",
+   "action": "reject",
+   "rejection_id": "rej_47c75e9e87f61ba870d6da97",
+   "column": "לביצוע",
+   "at": "2026-10-22 18:44"
+  },
+  "752785": {
+   "state": "hold-android",
+   "note": "отказ 0002: красное справа, без успеха, баланс не изменился ✅; 0002 был сохранён ещё 19.10 — п.'не сохраняется' не определить"
+  },
+  "14ba27": {
+   "state": "pass",
+   "note": "все пункты ✅ incl. ошибка короткого телефона (w-06), Figma 3102",
+   "action": "pass",
+   "column": "הושלם",
+   "by": "user"
+  },
+  "8107c6": {
+   "state": "pass",
+   "note": "9 шагов ✅, голос иврит ✅, обрыв ✅ (пользователь); голос 'как ИИ' → улучшение",
+   "action": "pass",
+   "column": "הושלם",
+   "by": "user"
+  },
+  "d66404": {
+   "state": "pass",
+   "note": "Qa holder 2210 ✅ после перезапуска (h-03)",
+   "action": "pass",
+   "column": "הושלם",
+   "by": "user"
+  },
+  "85ea58": {
+   "state": "pass",
+   "note": "рег 14: הכל מוכן! → главная ✅ reg-14.mp4",
+   "action": "pass",
+   "column": "הושלם",
+   "by": "user"
+  },
+  "4d2091": {
+   "state": "pass",
+   "note": "13 и 14 — отдельные пользователи ✅",
+   "action": "pass",
+   "column": "הושלם",
+   "by": "user"
+  },
+  "7dcff3": {
+   "state": "pass-but-negative",
+   "note": "add/login/used/cancel/delete ✅; не проверен вход удалённым ключом"
+  },
+  "1b37ae": {
+   "state": "hold-android",
+   "note": "кнопки над индикатором и прокрутка ✅; находки крупный текст: дом ребёнка, 'שינוי מספר טלפון' за краем"
+  },
+  "bdda88": {
+   "state": "pass-except-3",
+   "note": "1,2,4,5,6,7,8,9,10,11,12 ✅; п.3 email — нет email у 04"
+  },
+  "87ee9a": {
+   "state": "partial",
+   "note": "skeleton, count-up, шит, отклик, haptic ✅ (польз.), reduce motion ✅, вкладки crossfade ✅; не проверены Т6 переход шага, Т8.2 дрожание поля"
+  },
+  "36b4d7": {
+   "state": "reject-4digits",
+   "note": "остальное ✅ (k3-*)",
+   "action": "reject",
+   "rejection_id": "rej_26d07793b111886969515c1d",
+   "column": "לביצוע",
+   "at": "2026-10-22 18:44"
+  }
+ },
+ "findings": [
+  "'אני מאשר עמלת סליקה' делает 'אישור טעינה' активной при пустых полях карты (d-03-check-on)",
+  "чипы 'הושלם'/'הושלמה' вперемешку в פעולות אחרונות (05)",
+  "QA-AUTO-shared-10117 — склейка имени в строке перевода (c-05-03-actions)",
+  "'הוספת כרטיס' активна при пустых полях (h-01)",
+  "крупный текст: дом ребёнка — имя под карточкой баланса, текст по слогам; код OTP — 'שינוי מספר טלפון' за левым краем",
+  "чип сделки 'הושלם' (м.р.) у עסקה",
+  "профиль иногда пустой белый при возврате из 'עסקה חדשה' (1/3, pw-2)",
+  "голос гида — синтетический, просьба 'человечнее' (пользователь)"
+ ],
+ "decisions": "см. context.md 22.10",
+ "new_tasks": [
+  {
+   "hash": "#a932ef",
+   "ticket": 23,
+   "title": "iOS - פרופיל מסך לבן אחרי גלילה בהארנק שלי"
+  },
+  {
+   "hash": "#5c3eaa",
+   "ticket": 24,
+   "title": "הדרכה קולית: קול אנושי"
+  }
+ ],
+ "resolved_old_rejections": [
+  "d66404",
+  "36b4d7",
+  "c70f72",
+  "88acb5",
+  "1388e0 x2"
+ ]
+}

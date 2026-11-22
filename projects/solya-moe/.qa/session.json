@@ -1,0 +1,264 @@
+{
+  "project": "solya v4",
+  "updated": "2026-11-18 13:20",
+  "environment": "https://solya-silk.vercel.app (prod) + WhatsApp bot +972527994691",
+  "accounts": {
+    "admin": "stepovoyas@gmail.com",
+    "owner_whatsapp": "+972537240114 (client oren@solya.test, system 32 / SolarEdge site 3033498)"
+  },
+  "board_actions": [
+    {
+      "date": "2026-11-16",
+      "hash": "#489232,#6740b5,#21552e,#994870,#de2ae3,#16926b,#a69d9f,#f489ca,#e28f8f",
+      "action": "created client-request tickets"
+    },
+    {
+      "date": "2026-11-16",
+      "hash": "#16926b",
+      "action": "reject (rewritten once)"
+    },
+    {
+      "date": "2026-11-16",
+      "hash": "#de2ae3",
+      "action": "reject"
+    },
+    {
+      "date": "2026-11-16",
+      "hash": "#e28f8f",
+      "action": "reject"
+    },
+    {
+      "date": "2026-11-16",
+      "hash": "#489232",
+      "action": "reject (dynamic sunset time)"
+    },
+    {
+      "date": "2026-11-16",
+      "hash": "#6740b5",
+      "action": "reject (RAY 100 with 0 kWh) + comment with doc quotes"
+    },
+    {
+      "date": "2026-11-16",
+      "hash": "#2d5880",
+      "action": "new bug: SolarEdge API quota"
+    },
+    {
+      "date": "2026-11-17",
+      "hash": "#e28f8f",
+      "action": "reject: no SolarEdge guidance on /join/thanks, welcome msg off (InfoRU), send to testing only when complete"
+    },
+    {
+      "date": "2026-11-17",
+      "hash": "#6740b5",
+      "action": "reject: RAY 20 with 'תקלה - חייב טיפול' on cloudy day, inconsistent data"
+    },
+    {
+      "date": "2026-11-17",
+      "hash": "#a69d9f",
+      "action": "reject: bot can't explain its own card, expected differs 277/282"
+    },
+    {
+      "date": "2026-11-17",
+      "hash": "#5dc895",
+      "action": "new bug: admin system card data; verified fixed"
+    },
+    {
+      "date": "2026-11-17",
+      "hash": "#16926b",
+      "action": "marked cannot reproduce (no optimizer problem to verify)"
+    },
+    {
+      "date": "2026-11-17",
+      "hash": "#a69d9f,#6740b5",
+      "action": "marked cannot reproduce: wait for 18.11 summary (half hour after sunset); change_ids fb354ac175863e8350d882ee, 3aeb59547a6edeebaa418ca4"
+    },
+    {
+      "time": "2026-11-18 17:32",
+      "actions": [
+        {
+          "ticket": "#6740b5",
+          "action": "reject",
+          "rejection_id": "rej_a633e3771311e30ad74d8d24",
+          "change_id": "9f3a58b2baf4e8b0fa5720a8",
+          "status": "todo"
+        },
+        {
+          "ticket": "#a69d9f",
+          "action": "reject",
+          "rejection_id": "rej_89c12c0943e751e58fbc7fba",
+          "change_id": "1bac8447ee32cd2efa6f15c0",
+          "status": "todo"
+        },
+        {
+          "ticket": "#f0535a",
+          "action": "create",
+          "title": "בקשת לקוח: סיכום יומי קצר וחד – שורה אחת לכל מערכת",
+          "change_id": "da4bd19a1bf2887ac09a11f2",
+          "status": "todo"
+        },
+        {
+          "ticket": "#02298f",
+          "action": "create",
+          "title": "בקשת לקוח: הצגת פער נתונים בסיכום ובכרטיס (הפסקת חשמל/תקשורת)",
+          "change_id": "8c770bba4a334c6d26429ca1",
+          "status": "todo"
+        }
+      ]
+    },
+    {
+      "time": "2026-11-19 14:47",
+      "actions": [
+        {
+          "ticket": "#02298f",
+          "action": "reject",
+          "rejection_id": "rej_bbad46586ff179953cc9ed91",
+          "change_id": "b3dee778c99872cf8f1aeb09",
+          "status": "todo"
+        },
+        {
+          "ticket": "#201c17",
+          "action": "create bug",
+          "title": "סול מצרפת לתשובה משפט זר",
+          "change_id": "4f87033108ee4a90c60fd857"
+        },
+        {
+          "ticket": "#24f82a",
+          "action": "create bug",
+          "title": "תווית דורש תשומת לב סותרת 'טוב'",
+          "change_id": "390fd9a724c7852dd3371590"
+        }
+      ]
+    },
+    {
+      "ticket": "#6740b5",
+      "action": "pass-by-user",
+      "note": "19.11 RAY 81 одинаковый в сводке/карточке/админке/Sol; пользователь провёл עבר QA",
+      "time": "2026-11-19T17:25"
+    },
+    {
+      "ticket": "#f0535a",
+      "action": "reject",
+      "rejection_id": "rej_ce897ea755609c4b1c293d2f",
+      "change_id": "94f09fb8669eb4ed3ffe8400",
+      "note": "2 сообщения вместо одного; нет имени системы",
+      "time": "2026-11-19T17:24"
+    },
+    {
+      "ticket": "#a69d9f",
+      "action": "resolve-old-reject",
+      "rejection_id": "rej_e1211d7e58a4d2294e2c8db7",
+      "change_id": "b289bb542dc69f612c0e3302",
+      "time": "2026-11-19T17:24"
+    },
+    {
+      "ticket": "#a69d9f",
+      "action": "reject",
+      "rejection_id": "rej_a45ddcedb34c42bdc4ae7316",
+      "change_id": "504139b1126fb26610e657f8",
+      "note": "нет баллов по причинам; время 14:45 vs 17:15; прогноз 304 противоречит",
+      "time": "2026-11-19T17:24"
+    },
+    {
+      "ticket": "#fc84a5",
+      "action": "cannot-reproduce",
+      "change_id": "a93c83c098f31f77f22279b8",
+      "note": "по указанию пользователя: нужна реальная новая тревога в открытом чате",
+      "time": "2026-11-19T17:34"
+    },
+    {
+      "ticket": "#24f82a",
+      "action": "pass-by-user",
+      "note": "пользователь провёл עבר QA; открытых реджектов нет",
+      "time": "2026-11-19T17:40"
+    },
+    {
+      "ticket": "#02298f",
+      "action": "pass-by-user",
+      "note": "пользователь провёл עבר QA; открытых реджектов нет",
+      "time": "2026-11-19T17:40"
+    },
+    {
+      "ticket": "#201c17",
+      "action": "pass-by-user",
+      "note": "пользователь провёл עבר QA; открытых реджектов нет",
+      "time": "2026-11-19T17:40"
+    },
+    {
+      "ticket": "#e28f8f",
+      "action": "reject",
+      "rejection_id": "rej_3a67888087b4f4aa0ecc7690",
+      "change_id": "1c2fb02afc33513a30b63b9d",
+      "note": "письмо подтверждения не пришло (QA7, 7 мин), нет повторной отправки; WhatsApp-верификация не проверена",
+      "time": "2026-11-19T17:43"
+    }
+  ],
+  "passed_by_user": [
+    "#f489ca",
+    "#de2ae3",
+    "#2d5880",
+    "#5dc895",
+    "#489232"
+  ],
+  "test_data_cleanup": [
+    "registration QA בדיקה · tyynbmyp@sharklasers.com · 0542514132",
+    "registration QA בדיקה שתיים · mrgkcmqt@sharklasers.com · 0542514132",
+    "client אורן סופר summary time set to 'חצי שעה אחרי השקיעה' (was 19:00 before tests)",
+    "registration QA בדיקה שלוש · oqhckckh@sharklasers.com · 0542514132 (18.11, #e28f8f)",
+    "registration QA בדיקה ארבע · zxqzjkpu@guerrillamailblock.com · 0542514132 (19.11, #e28f8f)",
+    "registration QA בדיקה חמש · uzsskmgv@guerrillamailblock.com · 0524606684 (номер пользователя, 19.11, #e28f8f)",
+    "registration QA בדיקה שש · qiusnsfa@guerrillamailblock.com · 0524606684 (19.11, #e28f8f; QA חמש — письмо не пришло)",
+    {
+      "what": "аккаунт QA בדיקה שבע",
+      "email": "tqzxrcdu@guerrillamailblock.com",
+      "phone": "0524606684",
+      "ticket": "#e28f8f",
+      "date": "2026-11-19"
+    }
+  ],
+  "retest_2026_11_17_evening": {
+    "fix_live": "f366841+087eba9 at 2026-11-17 18:07 (IL) per board",
+    "#a69d9f": "partial: RAY card in chat explained with same numbers (60/289, as of 19:00) x3 OK; label explained without screenshot. Summary 17:10 (pre-fix): 19:06 bot said 'שהעתקת' + asked screenshot of summary card label (screenshots/a69d9f-r2-summary-card-unknown.png); 19:09 explained numbers but said label doesn't match its data. Wait for 18.11 ~17:09 summary and re-ask.",
+    "#6740b5": "partial: chat RAY card 21 label 'ייצור נמוך מהצפוי' (no fault) OK; text 'clouds dont explain' OK; forecast 289 consistent OK; admin daily 59.749 kWh = bot 59.7/60 OK. Summary card 17:10 pre-fix still 'תקלה - חייב טיפול'. Wait for 18.11 summary (label + text). Light-cloud 98-99 and no-data case not observable today.",
+    "#e28f8f": "status todo (programmer held): InfoRU templates not submitted, no SolarEdge account. /join/thanks opened directly shows short fallback text; numbered steps only after real registration (needs new test account)."
+  },
+  "next_step": "ждём фикса #6740b5, #a69d9f; #e28f8f ждёт шаблоны Meta; чистка тестовых данных",
+  "retest_2026_11_18": {
+    "#e28f8f": "after real /join submit: /join/thanks shows OAuth-only guide: 4 numbered steps + 'אישור ב-SolarEdge'; collapsible 'אין לי כניסה/שכחתי סיסמה/לא בטוח' with installer WhatsApp button (prefilled msg asking owner invite to mySolarEdge), forgot-password, wrong-account; error hint. OK. Still blocked: Meta approval of solya_welcome/solya_how_it_works; no SolarEdge owner login for E2E. Ticket remains todo by programmer — no board action.",
+    "#a69d9f_midday": "13:07-13:14 RAY 62 Q&A: ok on label/health90 (FAN_ALERT_1)/formula 62.08/weather 18%; FAIL: said 227 is whole-day forecast, then corrected to cumulative-to-13:00 only when challenged; 153.4 kWh given without time. First reply ignored question (offered service call). Screens a69d9f-r3-*.png",
+    "#6740b5_midday": "Open-Meteo site clouds 0-37%, mostly clear; RAY 62 'דורש תשומת לב' (no תקלה) with FAN alert H=0.10 — consistent. Light-cloud 98-99 case not testable today.",
+    "evening_summary": {
+      "time": "17:10",
+      "ray": 56,
+      "kwh": 211,
+      "profit": 94.81,
+      "card_label": "תקלה - חייב טיפול",
+      "text": "ההפקה נמוכה מהצפוי בלי סיבה במזג האוויר + הצעה לטכנאי",
+      "clouds_openmeteo": "0-41% (ясно)",
+      "calc": "211/364=0.58; 100*0.58*(1-0.03)=56",
+      "6740b5": "метка по правилу: <60 + подтверждённая FAN_ALERT_1 (здоровье 90) -> תקלה допустима; RAY логичен для ясного дня -> проходит",
+      "a69d9f": "211 до 17:00 (время есть); 364: в 17:12 'צפי עד שעת החישוב', в 17:13 'לא ברור אם ליום שלם' -> противоречие (как днём с 227); метки 62/56 объяснила как 'разные формулировки' вместо порога 60; 'не может подтвердить 62' -> реджект",
+      "screens": [
+        "6740b5-r3-summary-1811-ray56-label-takala.png",
+        "a69d9f-r3-evening-364-contradiction.png"
+      ]
+    }
+  },
+  "status": "завершено",
+  "closed_at": "2026-11-19T17:50",
+  "summary": {
+    "done": [
+      "#6740b5",
+      "#24f82a",
+      "#201c17",
+      "#02298f"
+    ],
+    "todo": [
+      "#f0535a",
+      "#a69d9f",
+      "#e28f8f"
+    ],
+    "cannot_reproduce": [
+      "#fc84a5"
+    ]
+  }
+}

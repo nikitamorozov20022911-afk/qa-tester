@@ -1,0 +1,130 @@
+Hunters - Miro
+Accessibility guidance
+Press the "Skip to first object on the board" button to move into the board contents
+Press the "Enhance accessibility support" button to enable a read-only outline of the board contents
+Accessibility controls
+Skip to first object on the board
+Accessibility help
+Accessible Board Overview
+Activate the following "Enhance accessibility support" button to enable a read-only outline of the board contents
+To move from a board object to the accessible board overview object, press ⌥ + O
+Enhance accessibility support
+Skip to end of board overview
+Candidacy Flow
+Send candidacy full profile
+No
+Message to talent that the position owner doesn't want to sign NDA. If wants continue with following options:
+Send candidacy without NDA (same flow before)
+Candidacy Company flow
+Work representation (anonymous questions) Extras questions.
+Button send candidacy
+Send profile anonymous
+Talent pay for this. Will create the 3 questions, and the AI Resume to send, questions from the business
+Talent Want NDA?
+Yes
+Company sign the NDA and tell the reason (customer will send list)
+Yes
+No
+Position Owner receive the AI Resume from user without private data + Questions
+Company approves the AI Resume
+No
+Message to user reproved (from list from customer). User can send the full profile anyway
+Send to user message to send full profile.
+User accept to sent full profile with all data
+Yes
+Yes
+No
+END of scenario
+Message to talent that the position owner doesn't want to sign NDA. If wants continue with following options:
+Send profile anonymous
+No
+Send candidacy without NDA (same flow before)
+Yes
+User sign company NDA
+Yes
+The talent pays
+Company sign the NDA and tell the reason (customer will send list)
+Send full profile
+Company has NDA?
+No
+Talent Want NDA?
+Yes
+No
+Position Owner receive all the user data
+Company proceed with the process
+Frame 1
+Work Representation Flow: Only related for anonymous requests: Only one time after
+The company receive the questions and answer them (eveyrthing private)
+Im not feeling safe to identify, ask for help
+Goes for admin portal and they will talk with the candidate
+The user requests work representation:
+Open popup with free text to ask questions to the position owner (amount of 3 questions)
+Candidate receive the questions ans see them
+Go for apply
+Something wrong happend
+Open Feedback for admin
+מותנה בהרשמה מלאה 1. מענה לשת"פים - לא ניתן 2. פרסום שת"פים ללא הגבלה 3. מכרזים - צופה בלבד ללא גישה לפרטי מפרסם – מקבל חלון קופץ לשדרוג מנוי או לרכישה חד פעמית של פרטי המכרז) 4. שירותי קידום - בתשלום מלא 5. שירותי הפצה – בתשלום מלא 6. נכנס לפול הפצות (יקבל הפצות של אחרים לפי הגדרה בפרופיל) 7. לא מקבל סוכן חכם של המערכת: להמלצות לשת"פ בהתאם להגדרות - התראות בפוש על משרות חדשות שעלו 8. אפשרות לדירוג ולהיות מדורג
+Admin: Option to give questions our give discount
+מנוי הד האנטרים - מותנה בהרשמה + כ. אשראי מענה לשת"פים ללא הגבלה פרסום שת"פים ללא הגבלה מכרזים – חינם שירותי קידום –2 חינם בחודש שירותי הפצה– 5 חינם בחודש נכנס לפול הפצות (יקבל הפצות של אחרים לפי הגדרה בפרופיל) סוכן חכם של המערכת: להמלצות לשת"פ בהתאם להגדרות - התראות בפוש על משרות חדשות שעלו אפשרות לדירוג ולהיות מדורג
+Freemium: -He can publish job position without limitation -Cannot upload talent in the system -Cannot see the bids -Cannot apply candidate for a job position -Not receiving pushing -Dont have job recommendation -Dont have chat
+Can send candidacy for bid published by a company - Flow above (option to send anonymous or full profile)
+Can publish a job position for headhunters, talent.
+Premium: Full Access
+HeadHunters
+Send candidates for other head hunters and company job positions
+Chat with other head hunters
+Can receive candidacy from Talents
+Can look for talents in a bank of users
+מנוי טאלנט Pro הפופולרית ביותר שלושה חודשים מתחדש מותנה בהרשמה + כ. אשראי צופה בכל המשרות כולל פרטי מפרסם (הד האנטר או ארגון מגייס) סוכן חכם של המערכת: להמלצות למשרות בהתאם להגדרות - התראות בפוש על משרות חדשות שעלו יכול לקבל שירותי דיסקרטיות, לפי משרה, בעלות של – 85 ₪ יכול לרכוש NDA לאותה משרה (חד פעמית) בתוספת עלות של – 15 ₪ עלות: 185 ₪ שת"פים (משרות) – פתוח : יוכל להגיש בקשה לפרטים לכל שת"פ סוכן חכם – גישה מלאה התאמות AI – פתוח, מלא, עפ"י הגדרה ושליטה של המנוי רכישת תוספות: קידומים + הפצות - פתוח
+Promotion: -Extra service that headhunter can show a job position in the top of the list and the searching. Two options: Two weeks: Price and will be two weeks in the top. After this time, the post will be normal. Four weeks: Price and will be four weeks in top. -Extra service: "Unique position". The head hunter will be able to choose a position and show with the bade "unique" with turquoise color. Send emails to head hunter weekly that the position is updated (reminder)
+מנוי טאלנט Talent Freemium מנוי חינם אין צורך בכרטיס אשראי יכול לפתוח פרופיל צופה בכל המשרות ללא יכולת לחשוף פרטי מפרסם (הד האנטר או ארגון מגייס) יכול לשלם על הגשת מועמדות חד פעמית – 150 ש"ח יכול לקבל שירותי דיסקרטיות לאותה משרה (חד פעמית) בתוספת עלות של – 200 ₪ יכול לרכוש NDA לאותה משרה (חד פעמית) בתוספת עלות של – 35 ₪ עלות: חינם שת"פים + משרות - צופה בלבד לא יוכל להגיש – פופ אפ: תשלום חד פעמי על דיסקרטיות או מנוי 2. התאמות AI – סגור 3. רכישת תוספות: קידומים + הפצות - סגור
+Extra service: Can propagate talent for other head hunters. Default: Will share for all the users (headhunters) from the talent area of expertise (cat)
+Freemium: -Can see all the positions but cannot see all details. -Can send one time candicacy for specific time one time by month. -If want to use discret job position, will pay extra amount -NDA
+Talent
+Premium: -Can see all the poisitons -Can send candidacy without limitation. -If want to use the discret need to pay X amount.
+Send Candidacy for job positions from other head hunters, companies
+Extra service: Can propagate his profile for other head hunters. Will share for all the users (headhunters / companies) that fits with his area of expertise
+Extra service: Promote his profile in the talent's page to appear in the top.
+Company
+Can see details of other job positions or bids but dont have any action
+No plans, only payment by post:
+Publish job position: Will appear for talent, head hunters
+Publish Bid: Headhunters and HR users
+Can chat with talent, head hunters
+Choose if want to publish מכרז or משרה
+Have access to headhunter bank of users
+Choose a category price for it:
+Normal post
+Can propagate position / bid by push for other users: Default: Will share for all the users (talents, headhunters if is position / headhunters HR users if is bid) from the position area of expertise (cat)
+Promoted post
+Premium Post
+The first time that is published will share notification for all relevant based in the category. The Post will be updated to the top once in a week. Two options: Two weeks: Specific price and after the period will send to the post creator message in email and notification if want to renew. If no, the post will be inactive and will not be displayed for others. Four weeks: Specific price and after the period will send to the post creator message in email and notification if want to renew. If no, the post will be inactive and will not be displayed for others.
+The first time that is published will share notification for all relevant based in the category. The Post will be updated to the top daily. Two options: Two weeks: Specific price and after the period will send to the post creator message in email and notification if want to renew. If no, the post will be inactive and will not be displayed for others. Four weeks: Specific price and after the period will send to the post creator message in email and notification if want to renew. If no, the post will be inactive and will not be displayed for others.
+The first time that is published will share notification for all relevant and after 7 days will share new notification based in the category. The Post will be updated to the top daily. Two options: Two weeks: Specific price and after the period will send to the post creator message in email and notification if want to renew. If no, the post will be inactive and will not be displayed for others. Four weeks: Specific price and after the period will send to the post creator message in email and notification if want to renew. If no, the post will be inactive and will not be displayed for others.
+Promotion: -Extra service that company can show a job position or bid in the top of the list and the searching. Two options: Two weeks: Price and will be two weeks in the top. Four weeks: Price and will be four weeks in top.
+No monthly plans
+HR Users
+Send candidacy for bids
+Pay per post:
+Add new user role, when user sign up, choose a option. HR Providers
+Option to apply anonymous
+He can only see the "bids" tab
+Goes for onboarding with data: (SAME AS HEADHUNTER USER) - First name Last Name username Phone extra phone Step 2: Profile pic Description about user Company name ID number are of expertise website linkedin facebook instragram Step 3: תעודת עוסק מורשה/חברה בע"מ (נדרש) רישיון עסק (נדרש) רישיון ניהול לשכה (אופציונלי) Step 4: 3 checkbox and signature
+Need to receive permission from admin
+HR will have profile only with their data like head hunter in top (no need for other data.
+Admin
+Manage all users: See all details, accept, remove users
+Option to change the list of area of expertise
+Change price
+Option to give the extra questions for users/ give extra weeks of promotion, extra הפצה
+Skip to start of board overview
+Miro
+Hunters
+Hunters
+Continue collaborating using your real name.
+Sign up for free
+View only
+7%
+Drop to add 🎯
+Supported file types
+The board overview is now available

@@ -1,0 +1,93 @@
+== page 1
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=t y=  74 x= 342 45x44 | חזרה
+Button       vis=t y=  74 x= 113 176x44 | בחירת נוסח. הנוסח המוצג: אשכנזי
+Button       vis=t y=  74 x=  60 44x44 | הסבר על התפילה
+Button       vis=t y=  74 x=  16 44x44 | רשימת התפילות
+StaticText   vis=t y= 153 x=  24 354x15 | 3 מתוך 15
+Other        vis=t y= 203 x= 202 63x29 | יחיד
+Other        vis=t y= 203 x= 137 63x29 | מניין
+Other        vis=t y= 201 x= 135 132x33 | מצב תפילה
+StaticText   vis=t y= 279 x=  40 322x21 | תוספות בתפילה
+StaticText   vis=t y= 303 x=  40 322x21 | משיב הרוח ומוריד הגשם — ימות הגשמים
+StaticText   vis=t y= 327 x=  40 322x21 | ותן טל ומטר לברכה — ימות הגשמים
+StaticText   vis=t y= 420 x= 164 75x17 | המעריב ערבים
+StaticText   vis=t y= 463 x=  48 306x397 | בָּרוּךְ אַתָּה יְהֹוָה אֱלֹהֵֽינוּ מֶֽלֶךְ הָעוֹלָם אֲשֶׁר בִּדְבָרוֹ מַעֲרִיב עֲרָבִים בְּחָכְמָה פּוֹתֵֽחַ שְׁעָרִים וּבִתְבוּנָה מְשַׁנֶּה עִתִּים וּמַחֲלִיף אֶת־הַזְּ֒מַנִּים וּמְסַדֵּר אֶת־הַכּוֹכָבִים בְּמִשְׁמְ֒רוֹתֵיהֶם בָּרָקִֽיעַ כִּרְצוֹנוֹ: בּוֹרֵא יוֹם וָלָֽיְלָה גּוֹלֵל אוֹר מִפְּ֒נֵי חֽשֶׁךְ וְחֽשֶׁךְ מִפְּ֒נֵי אוֹר וּמַעֲבִיר יוֹם וּמֵבִיא לָֽיְלָה וּמַבְדִּיל בֵּין יוֹם וּבֵין לָֽיְלָה יְהֹוָה צְבָאוֹת שְׁמוֹ: אֵל חַי וְקַיָּם תָּמִיד יִמְלֹךְ עָלֵֽינוּ לְעוֹלָם וָעֶד: בָּרוּךְ אַתָּה יְהֹוָה הַמַּעֲרִיב עֲרָבִים:
+StaticText   vis=f y= 899 x=  64 250x21 | ברכת ״המעריב ערבים״ על חילופי היום והלילה
+StaticText   vis=f y= 943 x=  48 306x49 | מקור: Sefaria.org — Siddur Ashkenaz — The Metsudah siddur, 1981 (CC-BY) — https://www.nli.org.il/he/books/NNL_ALEPH002211687 · אושר על ידי בודק QA, 19.10.2026
+Button       vis=f y=1045 x=  92 218x57 | המשך
+Button       vis=f y=1131 x= 213 160x57 | קודם
+Button       vis=f y=1131 x=  29 160x57 | סיים תפילה
+Button       vis=f y=1247 x= 177 48x49 | שיתוף התפילה
+Button       vis=f y=1341 x=  40 77x45 | השמע
+StaticText   vis=f y=1351 x= 274 88x25 | האזן להקראה
+StaticText   vis=f y=1389 x=  40 322x17 | אין הקראה לקטע הזה
+Other        vis=t y= 134 x=   3 30x626 | Vertical scroll bar, 3 pages
+Other        vis=t y= 727 x=   0 402x30 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות
+== page 2
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=t y=  74 x= 342 45x44 | חזרה
+Button       vis=t y=  74 x= 113 176x44 | בחירת נוסח. הנוסח המוצג: אשכנזי
+Button       vis=t y=  74 x=  60 44x44 | הסבר על התפילה
+Button       vis=t y=  74 x=  16 44x44 | רשימת התפילות
+StaticText   vis=f y=-433 x=  24 354x16 | 3 מתוך 15
+Other        vis=f y=-383 x= 202 63x29 | יחיד
+Other        vis=f y=-383 x= 137 63x29 | מניין
+Other        vis=f y=-385 x= 135 132x33 | מצב תפילה
+StaticText   vis=f y=-306 x=  40 322x21 | תוספות בתפילה
+StaticText   vis=f y=-282 x=  40 322x21 | משיב הרוח ומוריד הגשם — ימות הגשמים
+StaticText   vis=f y=-258 x=  40 322x21 | ותן טל ומטר לברכה — ימות הגשמים
+StaticText   vis=f y=-166 x= 164 75x17 | המעריב ערבים
+StaticText   vis=t y=-123 x=  48 306x398 | בָּרוּךְ אַתָּה יְהֹוָה אֱלֹהֵֽינוּ מֶֽלֶךְ הָעוֹלָם אֲשֶׁר בִּדְבָרוֹ מַעֲרִיב עֲרָבִים בְּחָכְמָה פּוֹתֵֽחַ שְׁעָרִים וּבִתְבוּנָה מְשַׁנֶּה עִתִּים וּמַחֲלִיף אֶת־הַזְּ֒מַנִּים וּמְסַדֵּר אֶת־הַכּוֹכָבִים בְּמִשְׁמְ֒רוֹתֵיהֶם בָּרָקִֽיעַ כִּרְצוֹנוֹ: בּוֹרֵא יוֹם וָלָֽיְלָה גּוֹלֵל אוֹר מִפְּ֒נֵי חֽשֶׁךְ וְחֽשֶׁךְ מִפְּ֒נֵי אוֹר וּמַעֲבִיר יוֹם וּמֵבִיא לָֽיְלָה וּמַבְדִּיל בֵּין יוֹם וּבֵין לָֽיְלָה יְהֹוָה צְבָאוֹת שְׁמוֹ: אֵל חַי וְקַיָּם תָּמִיד יִמְלֹךְ עָלֵֽינוּ לְעוֹלָם וָעֶד: בָּרוּךְ אַתָּה יְהֹוָה הַמַּעֲרִיב עֲרָבִים:
+StaticText   vis=t y= 313 x=  64 250x21 | ברכת ״המעריב ערבים״ על חילופי היום והלילה
+StaticText   vis=t y= 357 x=  48 306x49 | מקור: Sefaria.org — Siddur Ashkenaz — The Metsudah siddur, 1981 (CC-BY) — https://www.nli.org.il/he/books/NNL_ALEPH002211687 · אושר על ידי בודק QA, 19.10.2026
+Button       vis=t y= 460 x=  92 218x57 | המשך
+Button       vis=t y= 546 x= 213 160x57 | קודם
+Button       vis=t y= 546 x=  29 160x57 | סיים תפילה
+Button       vis=t y= 661 x= 177 48x49 | שיתוף התפילה
+Button       vis=t y= 755 x=  40 77x45 | השמע
+StaticText   vis=f y= 765 x= 274 88x25 | האזן להקראה
+StaticText   vis=f y= 803 x=  40 322x17 | אין הקראה לקטע הזה
+Other        vis=t y= 134 x=   3 30x626 | Vertical scroll bar, 3 pages
+Other        vis=t y= 726 x=   0 402x31 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות
+== page 3
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=t y=  74 x= 342 45x44 | חזרה
+Button       vis=t y=  74 x= 113 176x44 | בחירת נוסח. הנוסח המוצג: אשכנזי
+Button       vis=t y=  74 x=  60 44x44 | הסבר על התפילה
+Button       vis=t y=  74 x=  16 44x44 | רשימת התפילות
+StaticText   vis=f y=-557 x=  24 354x16 | 3 מתוך 15
+Other        vis=f y=-507 x= 202 63x29 | יחיד
+Other        vis=f y=-507 x= 137 63x29 | מניין
+Other        vis=f y=-509 x= 135 132x33 | מצב תפילה
+StaticText   vis=f y=-430 x=  40 322x21 | תוספות בתפילה
+StaticText   vis=f y=-406 x=  40 322x21 | משיב הרוח ומוריד הגשם — ימות הגשמים
+StaticText   vis=f y=-382 x=  40 322x21 | ותן טל ומטר לברכה — ימות הגשמים
+StaticText   vis=f y=-290 x= 164 75x17 | המעריב ערבים
+StaticText   vis=t y=-247 x=  48 306x398 | בָּרוּךְ אַתָּה יְהֹוָה אֱלֹהֵֽינוּ מֶֽלֶךְ הָעוֹלָם אֲשֶׁר בִּדְבָרוֹ מַעֲרִיב עֲרָבִים בְּחָכְמָה פּוֹתֵֽחַ שְׁעָרִים וּבִתְבוּנָה מְשַׁנֶּה עִתִּים וּמַחֲלִיף אֶת־הַזְּ֒מַנִּים וּמְסַדֵּר אֶת־הַכּוֹכָבִים בְּמִשְׁמְ֒רוֹתֵיהֶם בָּרָקִֽיעַ כִּרְצוֹנוֹ: בּוֹרֵא יוֹם וָלָֽיְלָה גּוֹלֵל אוֹר מִפְּ֒נֵי חֽשֶׁךְ וְחֽשֶׁךְ מִפְּ֒נֵי אוֹר וּמַעֲבִיר יוֹם וּמֵבִיא לָֽיְלָה וּמַבְדִּיל בֵּין יוֹם וּבֵין לָֽיְלָה יְהֹוָה צְבָאוֹת שְׁמוֹ: אֵל חַי וְקַיָּם תָּמִיד יִמְלֹךְ עָלֵֽינוּ לְעוֹלָם וָעֶד: בָּרוּךְ אַתָּה יְהֹוָה הַמַּעֲרִיב עֲרָבִים:
+StaticText   vis=t y= 189 x=  64 250x21 | ברכת ״המעריב ערבים״ על חילופי היום והלילה
+StaticText   vis=t y= 233 x=  48 306x49 | מקור: Sefaria.org — Siddur Ashkenaz — The Metsudah siddur, 1981 (CC-BY) — https://www.nli.org.il/he/books/NNL_ALEPH002211687 · אושר על ידי בודק QA, 19.10.2026
+Button       vis=t y= 336 x=  92 218x57 | המשך
+Button       vis=t y= 422 x= 213 160x57 | קודם
+Button       vis=t y= 422 x=  29 160x57 | סיים תפילה
+Button       vis=t y= 537 x= 177 48x49 | שיתוף התפילה
+Button       vis=t y= 631 x=  40 77x45 | השמע
+StaticText   vis=t y= 641 x= 274 88x25 | האזן להקראה
+StaticText   vis=t y= 679 x=  40 322x17 | אין הקראה לקטע הזה
+Other        vis=t y= 134 x=   3 30x626 | Vertical scroll bar, 3 pages
+Other        vis=t y= 726 x=   0 402x31 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות

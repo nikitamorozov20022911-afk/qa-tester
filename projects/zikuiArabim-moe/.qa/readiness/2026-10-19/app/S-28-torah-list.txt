@@ -1,0 +1,26 @@
+== page 1
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=t y=  75 x= 342 36x37 | חזרה
+StaticText   vis=t y=  77 x=  60 282x33 | שיעורי תורה
+StaticText   vis=t y= 150 x=  48 306x40 | השיעורים מוצגים לפי סדר האלף־בית של שמם, כל עוד סדר ההצגה של המדור לא נקבע.
+Button       vis=t y= 206 x=  48 306x66 | שיעור בדיקה — לא תוכן מאושר — שיעור בדיקה לצורכי QA — אינו תוכן מאושר
+Other        vis=t y= 126 x=   3 30x634 | Vertical scroll bar, 1 page
+Other        vis=t y= 727 x=   0 402x30 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות
+== page 2
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=t y=  75 x= 342 36x37 | חזרה
+StaticText   vis=t y=  77 x=  60 282x33 | שיעורי תורה
+StaticText   vis=t y= 150 x=  48 306x40 | השיעורים מוצגים לפי סדר האלף־בית של שמם, כל עוד סדר ההצגה של המדור לא נקבע.
+Button       vis=t y= 206 x=  48 306x66 | שיעור בדיקה — לא תוכן מאושר — שיעור בדיקה לצורכי QA — אינו תוכן מאושר
+Other        vis=t y= 126 x=   3 30x634 | Vertical scroll bar, 1 page
+Other        vis=t y= 727 x=   0 402x30 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות

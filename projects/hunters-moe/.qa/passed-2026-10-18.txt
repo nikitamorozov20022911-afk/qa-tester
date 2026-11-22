@@ -1,0 +1,57 @@
+1. "הוספת מועמד" form shows the raw key "onboarding.errors.Too big" when the name or "כמה מילים על המועמד" is too long
+   поиск: onboarding.errors.Too big
+
+2. Submitting a candidate to a job: no validation of summary, screening answers and salary, and no success message
+   поиск: Submitting a candidate to a job
+
+3. "הוספת מועמד" form: anonymous candidate saved without title and summary, second phone not validated, anonymous hint shown for an open profile
+   поиск: anonymous candidate saved without title
+
+4. "פרופיל אנונימי" text in the Add Candidate form addresses the candidate
+   поиск: text in the Add Candidate form addresses the candidate
+
+5. טקסט שגוי בטופס "הוספת מועמד" ותצוגה לא תקינה של קידומת הטלפון בעברית
+   поиск: ותצוגה לא תקינה של קידומת הטלפון
+
+6. NDA payment shows the raw key "checkout.products.application_nda" instead of the product name
+   поиск: checkout.products.application_nda
+
+7. Payment window: typo "להזמנות עתידות", unclear "כרטיס אשראי/דיירקט", no coupon error for headhunter
+   поиск: Payment window: typo
+
+8. Small texts after actions: tender offer success, report reasons, renew/archive, discreet submission
+   поиск: Small texts after actions
+
+9. Mobile: footer in Russian/English doesn't wrap and pushes the page sideways
+   поиск: Mobile: footer in Russian/English
+
+10. Mobile: admin burger menu opens empty, admin sections can't be reached
+   поиск: Mobile: admin burger menu
+
+11. Mobile: tables hide columns without any scroll hint (admin tables, agreements, invoices, candidate activity)
+   поиск: Mobile: tables hide columns
+
+12. Mobile: profile and edit-profile tab rows are cut without scroll hint, active tab out of view
+   поиск: Mobile: profile and edit-profile tab rows
+
+13. Mobile: "+ פרסום" (publish job/tender) and the plan badge are missing for company and headhunter
+   поиск: and the plan badge are missing
+
+14. טיוטת משרה של חברה (לפני בחירת סוג הפרסום) מוצגת ב"המשרות שלי" כמשרה רגילה, ללא סימון טיוטה
+   поиск: מוצגת ב"המשרות שלי" כמשרה רגילה
+
+15. כותרת הטופס "פרסום שת”פ" מוצגת גם לחברה בפרסום משרה
+   поиск: מוצגת גם לחברה בפרסום משרה
+
+16. Publish Tender wizard: the NDA question contradicts the options, and "Remote" is not translated
+   поиск: Publish Tender wizard
+
+17. "בקש ייצוג" button is shown to companies and headhunters on a headhunter profile
+   поиск: button is shown to companies and headhunters
+
+18. Tenders: budget filter while the budget is not shown, and the selected sort is not shown
+   поиск: Tenders: budget filter
+
+19. Admin: PLUS and PREMIUM plans are described as "להד האנטרים ולמשתמשי HR"
+   поиск: Admin: PLUS and PREMIUM plans
+

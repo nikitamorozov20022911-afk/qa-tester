@@ -1,0 +1,50 @@
+== page 1
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=t y=  74 x= 346 40x40 | חזרה
+StaticText   vis=t y=  82 x=  64 274x24 | היסטוריית תפילות שלי
+TextField    vis=t y= 127 x=  33 336x42 | חיפוש
+StaticText   vis=t y= 194 x=  32 338x16 | ח׳ חשון · 19 באוק׳
+Other        vis=t y= 218 x=  32 338x64 | שחרית, ח׳ חשון · 19 באוק׳, 12:45
+StaticText   vis=t y= 238 x= 269 45x24 | שחרית
+StaticText   vis=t y= 240 x=  44 29x20 | 12:45
+Other        vis=t y= 290 x=  32 338x64 | מנחה, ח׳ חשון · 19 באוק׳, 12:39
+StaticText   vis=t y= 310 x= 278 37x24 | מנחה
+StaticText   vis=t y= 312 x=  44 29x20 | 12:39
+Other        vis=t y= 362 x=  32 338x64 | ערבית, ח׳ חשון · 19 באוק׳, 12:37
+StaticText   vis=t y= 382 x= 273 42x24 | ערבית
+StaticText   vis=t y= 384 x=  44 29x20 | 12:37
+Other        vis=t y= 434 x=  32 338x64 | שחרית, ח׳ חשון · 19 באוק׳, 12:20
+StaticText   vis=t y= 454 x= 269 45x24 | שחרית
+StaticText   vis=t y= 456 x=  44 30x20 | 12:20
+Other        vis=t y= 170 x=   3 30x590 | Vertical scroll bar, 1 page
+Other        vis=t y= 727 x=   0 402x30 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות
+== page 2
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=t y=  74 x= 346 40x40 | חזרה
+StaticText   vis=t y=  82 x=  64 274x24 | היסטוריית תפילות שלי
+TextField    vis=t y= 127 x=  33 336x42 | חיפוש
+StaticText   vis=t y= 194 x=  32 338x16 | ח׳ חשון · 19 באוק׳
+Other        vis=t y= 218 x=  32 338x64 | שחרית, ח׳ חשון · 19 באוק׳, 12:45
+StaticText   vis=t y= 238 x= 269 45x24 | שחרית
+StaticText   vis=t y= 240 x=  44 29x20 | 12:45
+Other        vis=t y= 290 x=  32 338x64 | מנחה, ח׳ חשון · 19 באוק׳, 12:39
+StaticText   vis=t y= 310 x= 278 37x24 | מנחה
+StaticText   vis=t y= 312 x=  44 29x20 | 12:39
+Other        vis=t y= 362 x=  32 338x64 | ערבית, ח׳ חשון · 19 באוק׳, 12:37
+StaticText   vis=t y= 382 x= 273 42x24 | ערבית
+StaticText   vis=t y= 384 x=  44 29x20 | 12:37
+Other        vis=t y= 434 x=  32 338x64 | שחרית, ח׳ חשון · 19 באוק׳, 12:20
+StaticText   vis=t y= 454 x= 269 45x24 | שחרית
+StaticText   vis=t y= 456 x=  44 30x20 | 12:20
+Other        vis=t y= 170 x=   3 30x590 | Vertical scroll bar, 1 page
+Other        vis=t y= 727 x=   0 402x30 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות

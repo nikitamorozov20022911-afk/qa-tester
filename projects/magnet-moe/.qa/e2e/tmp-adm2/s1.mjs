@@ -1,0 +1,20 @@
+import {admin,SS,outline} from './h.mjs';
+const A=await admin(); const p=A.p;
+await p.goto('https://magnet-admin.vercel.app/reports',{waitUntil:'domcontentloaded'});
+await p.getByText('QA-AUTO סטורי לדיווח').waitFor({timeout:20000});
+console.log(await p.locator('textarea,input').evaluateAll(a=>a.map(i=>[i.tagName,i.type,i.name,i.placeholder,i.offsetParent?'vis':'hid'].join('|'))).then(x=>[...new Set(x)]));
+const qa=p.locator('article').filter({has:p.locator('a',{hasText:/^QA /})});
+console.log('QA cards',await qa.count());
+for(const c of await qa.all()) await c.evaluate(e=>{e.style.outline='3px solid red'});
+await p.screenshot({path:SS+'06e5ab-list-qa7-desktop.png',fullPage:true});
+for(const c of await qa.all()) await c.evaluate(e=>{e.style.outline=''});
+// filter story
+await p.getByRole('tab',{name:'סטורי'}).click();
+await p.waitForURL(/type=story/,{timeout:10000}).catch(()=>console.log('url unchanged'));
+await p.waitForLoadState('domcontentloaded');
+await p.getByText('QA-AUTO סטורי לדיווח').waitFor({timeout:15000}).catch(()=>console.log('story card missing'));
+console.log(p.url(),'cards',await p.locator('article').count());
+console.log((await p.locator('article').allInnerTexts()).map(t=>t.slice(0,120).replace(/\n/g,' | ')));
+await outline(p,p.locator('article').first(),'06e5ab-filter-story-J4-desktop.png',true);
+console.log(JSON.stringify(A.net));
+await A.close();

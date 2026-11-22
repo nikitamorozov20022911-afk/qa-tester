@@ -1,0 +1,2126 @@
+[
+  {
+    "id": "c937f5ca1b172513b5ce1e2d",
+    "title": "באג: מסך הספקים כותב שהגרסה הקודמת נשמרה כבר בגרסה הראשונה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-05",
+    "files": [
+      ".qa/tests/ai-providers/AIP-001-first-config-no-previous-message.md",
+      ".qa/tests/ai-providers/AIP-002-resave-previous-version-message.md",
+      ".qa/tests/ai-providers/AIP-003-access-denied-business-user.md",
+      ".qa/e2e/specs/ai-providers.md",
+      ".qa/e2e/tests/ai-providers/first-config-message.spec.ts",
+      ".qa/e2e/tests/ai-providers/access-denied.spec.ts"
+    ]
+  },
+  {
+    "id": "ce0c4c2aa2fc0dbfcddfcb74",
+    "title": "באג: תוויות הזמנה שגויות בכרטיס העסק של Super Admin",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-05",
+    "files": [
+      ".qa/tests/business-lifecycle/BIZ-INV-001-pending-send-failed-label.md",
+      ".qa/tests/business-lifecycle/BIZ-INV-002-accepted-cancelled-no-label.md",
+      ".qa/tests/business-lifecycle/BIZ-INV-003-expired-resend.md",
+      ".qa/e2e/specs/business-lifecycle.md",
+      ".qa/e2e/tests/business-lifecycle/invitation-labels.spec.ts"
+    ]
+  },
+  {
+    "id": "d1389638e94bd1fb2467199d",
+    "title": "באג: מנהל חשבון יכול לבסס סימולציה על תבנית רק כשאין לעסק סימולציות",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-05",
+    "files": [
+      ".qa/tests/simulation-templates/TPL-001-template-when-business-has-simulations.md",
+      ".qa/tests/simulation-templates/TPL-002-disabled-template-not-offered.md",
+      ".qa/tests/simulation-templates/TPL-003-user-no-access.md",
+      ".qa/e2e/specs/simulation-templates.md",
+      ".qa/e2e/tests/simulation-templates/template-for-any-new-simulation.spec.ts"
+    ]
+  },
+  {
+    "id": "b950c1450cef01f561ab010f",
+    "title": "באג: אפשר לשייך מועמדים לסימולציה בטיוטה, בהמתנה לאישור או בגרסה קודמת",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-05",
+    "files": [
+      ".qa/tests/candidates/CAND-001-select-only-active-versions.md",
+      ".qa/tests/candidates/CAND-002-server-guard-assignment.md",
+      ".qa/e2e/specs/candidates.md",
+      ".qa/e2e/tests/candidates/assign-only-active-simulation.spec.ts"
+    ]
+  },
+  {
+    "id": "4cfd0ae49bece5d24e46d903",
+    "title": "באג: טוקן גישה ממשיך לקרוא נתונים עד שעה אחרי התנתקות",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-05",
+    "files": [
+      ".qa/tests/user-access/UA-001-logout-old-token-rejected.md",
+      ".qa/tests/user-access/UA-002-block-remove-member-old-token.md",
+      ".qa/tests/user-access/UA-003-blocked-business-manager-token.md",
+      ".qa/e2e/specs/user-access.md",
+      ".qa/e2e/tests/user-access/logout-old-token.spec.ts",
+      ".qa/e2e/tests/user-access/blocked-business-token.spec.ts",
+      ".qa/e2e/tests/user-access/open-tab-role-change.spec.ts"
+    ]
+  },
+  {
+    "id": "f6e816402bc7433839ec2a6f",
+    "title": "באג: לשונית פתוחה של משתמש שהורד בהרשאה או נחסם מציגה את התפקיד הישן",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-05",
+    "files": [
+      ".qa/tests/user-access/UA-004-demote-promote-open-tab.md",
+      ".qa/tests/user-access/UA-005-blocked-open-tab-signed-out.md",
+      ".qa/e2e/specs/user-access.md",
+      ".qa/e2e/tests/user-access/open-tab-role-change.spec.ts"
+    ]
+  },
+  {
+    "id": "01649c9c8c436e2d1a46f007",
+    "title": "באג: ההתחברות לא מחזירה לדף המבוקש ולדף 404 אין כותרת",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-05",
+    "files": [
+      ".qa/tests/auth-routing/AUTH-RT-001-guest-redirect-keeps-from.md",
+      ".qa/tests/auth-routing/AUTH-RT-002-login-returns-to-allowed-page.md",
+      ".qa/tests/auth-routing/AUTH-RT-003-login-forbidden-from-goes-home.md",
+      ".qa/tests/auth-routing/AUTH-RT-004-login-page-when-signed-in.md",
+      ".qa/tests/auth-routing/AUTH-RT-005-open-redirect-blocked.md",
+      ".qa/tests/auth-routing/AUTH-RT-006-404-has-h1.md",
+      ".qa/e2e/specs/auth-routing.md",
+      ".qa/e2e/tests/auth-routing/login-return.spec.ts",
+      ".qa/e2e/tests/auth-routing/guest-redirect-keeps-from.spec.ts",
+      ".qa/e2e/tests/auth-routing/guest-404-to-login.spec.ts",
+      ".qa/e2e/tests/auth-routing/not-found-admin.spec.ts",
+      ".qa/e2e/tests/auth-routing/not-found-business.spec.ts",
+      ".qa/e2e/tests/auth-routing/not-found-user.spec.ts"
+    ]
+  },
+  {
+    "id": "b0a2952d03da5f3e0446c91a",
+    "title": "באג: פעולות לא מדויקות ברישום הגישה (הסרה ושחרור חסימה)",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-05",
+    "files": [
+      ".qa/tests/access-log/ACL-001-member-actions-logged-separately.md",
+      ".qa/e2e/specs/access-log.md",
+      ".qa/e2e/tests/access-log/member-actions-log.spec.ts"
+    ]
+  },
+  {
+    "id": "1f2eaae83231d71a353ee5d2",
+    "title": "באג: התראת כשל ההפקה נשארת על המסך אחרי שמירה מוצלחת של טיוטה ידנית",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-13",
+    "files": [
+      ".qa/e2e/specs/scenario-draft.md",
+      ".qa/e2e/tests/scenario-draft/manual-save-clears-generation-error.spec.ts",
+      ".qa/tests/scenario-draft/DRAFT-001-manual-save-clears-generation-error.md"
+    ]
+  },
+  {
+    "id": "132e12a27c52a9d24f10208d",
+    "title": "באג: רישום הגישה מציג מפתחות גולמיים לפעולות החדשות של הסימולציות",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-13",
+    "files": [
+      ".qa/e2e/specs/access-log.md",
+      ".qa/e2e/tests/access-log/no-raw-action-keys.spec.ts",
+      ".qa/tests/access-log/ACL-002-no-raw-action-keys.md"
+    ]
+  },
+  {
+    "id": "03f662e4191d3e3c2a3382fd",
+    "title": "באג: טבלת המועמדים חורגת מהפאנל ברוחב 1440 ועמודת הפעולות נחתכת",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-13",
+    "files": [
+      ".qa/e2e/specs/candidates.md",
+      ".qa/e2e/tests/candidates/table-fits-panel.spec.ts",
+      ".qa/tests/candidates/CAND-003-table-fits-panel.md"
+    ]
+  },
+  {
+    "id": "8140c180a9bf2e83d1a17783",
+    "title": "באג: בטבלת סטטוס התמיכה ברוחב 1440 שמות שמתחילים באותיות לטיניות נחתכים מתחילתם",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-13",
+    "files": [
+      ".qa/e2e/specs/support.md",
+      ".qa/e2e/tests/admin-support/latin-name-truncation.spec.ts",
+      ".qa/e2e/tests/admin-support/row-menu-after-resize.spec.ts",
+      ".qa/tests/support/SUP-001-latin-name-truncated-at-end.md",
+      ".qa/tests/support/SUP-002-rowmenu-width-after-resize.md"
+    ]
+  },
+  {
+    "id": "ecc64c3ab613e945688cddaf",
+    "title": "באג: כרטיס ההעלאה של חלק הקלטה עובר בכתובת הבקשה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-13",
+    "files": [
+      ".qa/e2e/specs/recording.md",
+      ".qa/e2e/tests/recording/upload-ticket-in-header.spec.ts",
+      ".qa/tests/recording/REC-001-upload-ticket-in-header.md"
+    ]
+  },
+  {
+    "id": "6a993d78df85add81c766e3c",
+    "title": "פיתוח: רישום גישה והגבלת חשיפה של Super Admin למידע מועמדים",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-13",
+    "files": [
+      ".qa/tests/access-log/ACL-002-no-raw-action-keys.md",
+      ".qa/tests/access-log/ACL-003-report-url-requires-reason.md",
+      ".qa/tests/access-log/ACL-004-reason-dialog-closed-list.md",
+      ".qa/tests/access-log/ACL-005-reason-opens-content-and-logs.md",
+      ".qa/tests/access-log/ACL-006-technical-status-without-reason.md",
+      ".qa/tests/access-log/ACL-007-log-filters.md",
+      ".qa/tests/access-log/ACL-008-log-immutable.md",
+      ".qa/tests/access-log/ACL-009-business-no-reason-user-scope.md",
+      ".qa/tests/access-log/ACL-010-business-user-no-log-access.md",
+      ".qa/e2e/specs/access-log.md",
+      ".qa/e2e/tests/access-log/no-raw-action-keys.spec.ts",
+      ".qa/e2e/tests/access-log/log-immutable.spec.ts",
+      ".qa/e2e/tests/access-log/business-report-without-reason.spec.ts",
+      ".qa/e2e/tests/access-log/log-hidden-from-business-user.spec.ts"
+    ],
+    "pending": "план specs/access-log.md группа 3 (3.1–3.5) → playwright-test-generator: tests/access-log/{report-url-requires-reason,reason-dialog-closed-list,reason-opens-content-and-logs,technical-status-without-reason,log-filters}.spec.ts"
+  },
+  {
+    "id": "1a311effdd4a2d2ba5fe9c67",
+    "title": "באג: כשל בבקשת התחלת התרגול או השיחה הרשמית אינו מציג למועמד שום משוב",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-13",
+    "files": [
+      ".qa/tests/candidate-call/CALL-001-practice-start-offline-feedback.md",
+      ".qa/tests/candidate-call/CALL-002-practice-retry-starts-once-with-hint.md",
+      ".qa/tests/candidate-call/CALL-003-official-start-offline-not-consumed.md",
+      ".qa/tests/candidate-call/CALL-004-official-retry-starts-once-with-hint.md",
+      ".qa/tests/candidate-call/CALL-005-start-failure-layout-1440.md",
+      ".qa/e2e/specs/candidate-call.md",
+      ".qa/e2e/tests/candidate-call/support.ts",
+      ".qa/e2e/tests/candidate-call/practice-start-network-failure.spec.ts",
+      ".qa/e2e/tests/candidate-call/official-start-network-failure.spec.ts",
+      ".qa/e2e/tests/candidate-call/start-failure-layout-1440.spec.ts"
+    ]
+  },
+  {
+    "id": "0ce894493185e3148625643a",
+    "title": "באג: קישור הזמנה של עסק חסום או מחוק מציג טופס הצטרפות",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-13",
+    "files": [
+      ".qa/tests/business-lifecycle/BIZ-INV-004-invite-active-and-unblocked-form.md",
+      ".qa/tests/business-lifecycle/BIZ-INV-005-invite-blocked-business-sa-invite.md",
+      ".qa/tests/business-lifecycle/BIZ-INV-006-invite-blocked-business-manager-card.md",
+      ".qa/tests/business-lifecycle/BIZ-INV-007-invite-deleted-business.md",
+      ".qa/e2e/specs/business-lifecycle.md",
+      ".qa/e2e/tests/business-lifecycle/invite-inactive-business.spec.ts"
+    ],
+    "manual_only": "BIZ-INV-006 настоящий путь (приглашение от вступившего менеджера — нужен пароль); в автотесте — подмена ответа"
+  },
+  {
+    "id": "3257d0efcc42561f5bc1ef6c",
+    "title": "באג: איחוד חלקי ההקלטה בסוף שיחה ארוכה מוריד אותם אחד אחרי השני ותופס כמחצית מתקציב 300 השניות",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-13",
+    "files": [
+      ".qa/tests/recording/REC-002-long-call-20min-stitch-transcript.md",
+      ".qa/tests/recording/REC-003-short-call-stitch-transcript.md",
+      ".qa/e2e/specs/recording.md",
+      ".qa/e2e/tests/recording/support.ts",
+      ".qa/e2e/tests/recording/long-call-20min-stitch-transcript.spec.ts",
+      ".qa/e2e/tests/recording/short-call-stitch-transcript.spec.ts",
+      ".qa/e2e/tests/candidate-call/support.ts"
+    ],
+    "manual_only": "параллельность скачивания частей (≤16) — только серверный лог; «дыры» в файле записи (самая длинная тишина) — вручную; 20-мин тест @slow — не в обычном регрессе"
+  },
+  {
+    "id": "d9aa30282ea83831ce4afdeb",
+    "title": "באג: הודעות שגויות או מיושנות למועמד ולעסק: כשל התחלה, חוסר תרחיש, והתראת קונפליקט מדרג",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-13",
+    "files": [
+      ".qa/tests/candidate-call/CALL-006-official-start-server-failure-not-internet.md",
+      ".qa/tests/candidate-call/CALL-007-official-server-failure-retry-same-attempt.md",
+      ".qa/tests/candidates/CAND-004-no-scenario-marker.md",
+      ".qa/tests/scenario-draft/DRAFT-002-tier-conflict-alert-while-conflict.md",
+      ".qa/e2e/specs/candidate-call.md",
+      ".qa/e2e/specs/candidates.md",
+      ".qa/e2e/specs/scenario-draft.md",
+      ".qa/e2e/tests/candidate-call/official-start-server-failure.spec.ts",
+      ".qa/e2e/tests/candidates/no-scenario-marker.spec.ts"
+    ],
+    "pending_generator": [
+      ".qa/e2e/tests/scenario-draft/tier-conflict-alert.spec.ts"
+    ],
+    "manual_only": "настоящий отказ провайдера — только вручную с «да» пользователя (после #da072b это technical_failure, см. CALL-031); отказ сервера на старте ПРАКТИКИ не проверялся; «нет голосовой конфигурации» вживую не воспроизводился",
+    "updated": "2026-10-22",
+    "note": "22.10.2026 (решение пользователя «делай»): official-start-server-failure.spec.ts, раздел 4.1–4.3 candidate-call.md и CALL-006/007 переписаны под #da072b. Ожидание «503 provider_unavailable → «בגלל תקלה בצד שלנו…» + «נסו שוב» на той же попытке, «בתהליך»» удалено (устарело; 503 теперь technical_failure без «נסו שוב» — покрыто provider-refusal-da072b.spec.ts / CALL-031). Оставлена уникальная часть #d9aa30: сетевой обрыв start-voice-session после настоящего candidate_start_attempt → «כנראה בגלל תקלה בחיבור לאינטרנט» + «נסו שוב» → повтор на том же attempt_id, нового старта нет, у business «בתהליך»; после снятия обрыва звонок на той же попытке (@slow, тратит AI). Не запускались; повтор после сетевого сбоя после #da072b вживую не перепроверялся — проверка при первом /qa-regress."
+  },
+  {
+    "id": "6a993d711bef8ed807d9d257",
+    "title": "פיתוח: תרגול טכני קצר חד-פעמי שאינו מוערך",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-14",
+    "files": [
+      ".qa/tests/candidate-call/CALL-008-practice-intro-not-evaluated.md",
+      ".qa/tests/candidate-call/CALL-009-official-one-time-confirm-required.md",
+      ".qa/tests/candidate-call/CALL-010-practice-full-run.md",
+      ".qa/tests/candidate-call/CALL-011-practice-not-reopened.md",
+      ".qa/tests/candidate-call/CALL-012-practice-drop-back-to-techcheck.md",
+      ".qa/tests/candidate-call/CALL-013-practice-not-counted-for-business.md",
+      ".qa/e2e/specs/candidate-call.md",
+      ".qa/e2e/tests/candidate-call/support.ts",
+      ".qa/e2e/tests/candidate-call/practice-one-time-screens.spec.ts",
+      ".qa/e2e/tests/candidate-call/practice-after-states.spec.ts",
+      ".qa/e2e/tests/candidate-call/practice-full-run.spec.ts",
+      ".qa/e2e/tests/candidate-call/practice-drop-returns-to-techcheck.spec.ts"
+    ],
+    "call_tests": [
+      "practice-full-run.spec.ts",
+      "practice-drop-returns-to-techcheck.spec.ts — @call, тратят OpenAI; регресс без них: --grep-invert @call"
+    ],
+    "manual_only": "«практика не в отчёте официальной» (нужна официальная попытка, проверено 13.10); сверка с Figma 669:76/669:115 (не требование тикета); находка 1 — текст «להמשיך לתרגול» на повторной тех. проверке после практики (на решение пользователя); экран 6.3 без звонка — по подменённому ответу candidate_open_link, вживую при открытии ссылки не сверялся"
+  },
+  {
+    "id": "2a9013ec8a72cee5dc3c0de5",
+    "title": "באג: הערך \"עברית\" נשבר לשתי שורות בעמודת השפה ברשימת העסקים ברוחב 1440",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-14",
+    "files": [
+      ".qa/tests/businesses-list/BIZ-LIST-001-language-one-line.md",
+      ".qa/e2e/specs/businesses-list.md",
+      ".qa/e2e/tests/admin-businesses/language-one-line.spec.ts"
+    ]
+  },
+  {
+    "id": "9fd7c0e365af109a3e7787c2",
+    "title": "באג: במסנן העסקים במסך התמיכה שם לטיני ארוך נחתך בתחילתו",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-14",
+    "files": [
+      ".qa/tests/support/SUP-003-business-filter-latin-name-start-visible.md",
+      ".qa/e2e/specs/support.md",
+      ".qa/e2e/tests/admin-support/business-filter-latin-name.spec.ts"
+    ]
+  },
+  {
+    "id": "c2b35c90e4261ea3fa9b3bd0",
+    "title": "באג: החץ של תיבת העסק במסנן התמיכה עובר לימין כשנבחר שם לטיני",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-14",
+    "files": [
+      ".qa/tests/support/SUP-004-business-filter-arrow-side.md",
+      ".qa/e2e/specs/support.md",
+      ".qa/e2e/tests/admin-support/business-filter-arrow-side.spec.ts"
+    ]
+  },
+  {
+    "id": "6a993d795019333734edc22d",
+    "title": "פיתוח: ניהול מחזור חיי חשבון עסקי",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-14",
+    "files": [
+      ".qa/tests/business-lifecycle/BIZ-LC-001-create-all-fields-invite-link.md",
+      ".qa/tests/business-lifecycle/BIZ-LC-002-required-fields-validation.md",
+      ".qa/tests/business-lifecycle/BIZ-LC-003-resend-cancels-old-link.md",
+      ".qa/tests/business-lifecycle/BIZ-LC-004-access-log-view.md",
+      ".qa/tests/business-lifecycle/BIZ-LC-005-block-unblock-status.md",
+      ".qa/tests/business-lifecycle/BIZ-LC-006-deleted-not-in-list.md",
+      ".qa/tests/business-lifecycle/BIZ-LC-007-non-sa-denied.md",
+      ".qa/tests/business-lifecycle/BIZ-LC-008-no-self-registration.md",
+      ".qa/tests/business-lifecycle/BIZ-LC-009-blocked-business-users-candidates-manual.md",
+      ".qa/tests/business-lifecycle/BIZ-LC-010-deleted-business-old-sessions-manual.md",
+      ".qa/e2e/specs/business-lifecycle.md",
+      ".qa/e2e/tests/business-lifecycle/business-lifecycle-sa.spec.ts",
+      ".qa/e2e/tests/business-lifecycle/non-sa-denied.spec.ts",
+      ".qa/e2e/tests/business-lifecycle/required-fields-blocked.spec.ts",
+      ".qa/e2e/tests/business-lifecycle/required-contact-role.spec.ts",
+      ".qa/e2e/tests/business-lifecycle/no-self-registration.spec.ts"
+    ],
+    "manual": [
+      "BIZ-LC-009",
+      "BIZ-LC-010"
+    ]
+  },
+  {
+    "id": "a8e7e24c31c0c182cdc6043e",
+    "title": "באג: הקישור «לכל הדוחות המוכנים» בדשבורד פותח גם דוחות שכבר הוחלט עליהם",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-14",
+    "files": [
+      ".qa/tests/dashboard/DASH-001-ready-link-opens-panel-set.md",
+      ".qa/tests/dashboard/DASH-002-decided-report-not-in-link-set.md",
+      ".qa/e2e/specs/dashboard.md",
+      ".qa/e2e/tests/dashboard/ready-link-opens-panel-set.spec.ts",
+      ".qa/e2e/tests/dashboard/decided-report-not-in-link-set.spec.ts"
+    ]
+  },
+  {
+    "id": "dbea28b76137e3b7198da386",
+    "title": "באג: רקע העמודים בצד העסק שונה מהרקע הכחול של המסגרות המאושרות",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-14",
+    "files": [
+      ".qa/tests/layout/BG-001-business-pages-blue-gradient.md",
+      ".qa/tests/layout/BG-002-long-page-bottom-same-gradient.md",
+      ".qa/e2e/specs/layout.md",
+      ".qa/e2e/tests/layout/business-background-gradient.spec.ts"
+    ],
+    "manual_only": "визуальная склейка Figma|сайт (screenshots/2026-10-14/v14d-8da386-*); автотест сверяет 4 точки фона ±12 и computed style"
+  },
+  {
+    "id": "6a993d791a95398b11e1fb6e",
+    "title": "פיתוח: ספריית תבניות סימולציה וסיוע להקמת התרחיש הראשון",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-14",
+    "files": [
+      ".qa/tests/simulation-templates/TPL-004-saved-as-template-not-simulation.md",
+      ".qa/tests/simulation-templates/TPL-005-admin-assist-apply-to-business.md",
+      ".qa/tests/simulation-templates/TPL-006-business-new-from-template-editable.md",
+      ".qa/tests/simulation-templates/TPL-007-template-change-not-retroactive.md",
+      ".qa/tests/simulation-templates/TPL-008-duplicate-disable-not-offered.md",
+      ".qa/tests/simulation-templates/TPL-009-objection-library-or-free-text.md",
+      ".qa/tests/simulation-templates/TPL-010-business-cannot-edit-system-template.md",
+      ".qa/e2e/specs/simulation-templates.md",
+      ".qa/e2e/tests/simulation-templates/template-library-assist.spec.ts",
+      ".qa/e2e/tests/simulation-templates/objection-library-or-free-text.spec.ts"
+    ],
+    "manual_only": "полная форма «תבנית חדשה» в UI (4 шага, AC1 — автотест создаёт шаблон через API); сверка модалки с Figma 774:2522 и 403 с 734:1441; 375 (модалка, 403); запись журнала «יצירת סימולציה מתבנית» (/admin/access-log); роль מגייס (D-14)"
+  },
+  {
+    "id": "6a993d666cd36172db6e5ece",
+    "title": "פיתוח: תאימות פלטפורמה, רספונסיביות ונגישות",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-14",
+    "files": [
+      ".qa/tests/candidate-call/CALL-014-a11y-layout-targets-rtl.md",
+      ".qa/tests/candidate-call/CALL-015-a11y-keyboard-to-consent.md",
+      ".qa/tests/candidate-call/CALL-016-a11y-contrast.md",
+      ".qa/tests/candidate-call/CALL-017-unsupported-browser-message.md",
+      ".qa/tests/candidate-call/CALL-018-call-end-keyboard.md",
+      ".qa/tests/candidate-call/CALL-019-manual-real-devices.md",
+      ".qa/tests/layout/ADM-001-admin-responsive-1440-390.md",
+      ".qa/e2e/specs/candidate-call.md",
+      ".qa/e2e/specs/layout.md",
+      ".qa/e2e/tests/candidate-call/a11y-support.ts",
+      ".qa/e2e/tests/candidate-call/a11y-candidate-screens.spec.ts",
+      ".qa/e2e/tests/candidate-call/a11y-call-end-keyboard.spec.ts",
+      ".qa/e2e/tests/layout/admin-responsive.spec.ts"
+    ],
+    "manual_only": "настоящий iPhone Safari и Android Chrome (системный запрос микрофона, звук в обе стороны, запись, ▶ в тех. проверке); VoiceOver/TalkBack (таймер, статус «הלקוח מדבר», экран окончания); блокировка экрана/фон/входящий звонок во время звонка; Firefox и Edge (две последние версии); экранная клавиатура на листе «צריכים עזרה?»; размытие листа помощи в настоящем Safari; 200% текста на экране звонка; 1920 и 768 у экранов кандидата (автотест: 360/390/1440 + iPhone 13 Mini/Pixel 7)"
+  },
+  {
+    "id": "6a993d6ab2e4b167537ea9a3",
+    "title": "פיתוח: עדכון סטטוס המועמד והוספת הערות פנימיות",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-14",
+    "files": [
+      ".qa/tests/candidates/CAND-005-hiring-decision-list-who-when.md",
+      ".qa/tests/candidates/CAND-006-internal-note-team-only.md",
+      ".qa/tests/candidates/CAND-007-decision-panel-failure-keeps-state.md",
+      ".qa/tests/candidates/CAND-008-recruiter-own-candidate-can-decide.md",
+      ".qa/tests/candidates/CAND-009-recruiter-foreign-candidate-blocked.md",
+      ".qa/e2e/specs/candidates.md",
+      ".qa/e2e/tests/candidates/hiring-support.ts",
+      ".qa/e2e/tests/candidates/hiring-decision-notes.spec.ts",
+      ".qa/e2e/tests/candidates/hiring-decision-failure.spec.ts",
+      ".qa/e2e/tests/candidates/hiring-decision-foreign-recruiter.spec.ts"
+    ],
+    "manual_only": "нажатие кнопок решения и «הוספת הערה» с реальным сохранением в UI (панель есть только у кандидата с попыткой — звонки в автотестах не запускаем; автотест ставит решение/заметку тем же запросом на QA-AUTO-кандидате, а UI-панель проверяет с моком 500); Super Admin и заметки (AC3); Figma 678:654 и SPEC-STALE #027719 п.17/21 — решение владельца; менеджер остаётся в отчёте после решения (FL-47) — норма"
+  },
+  {
+    "task": "6a993d794918a5e83bc3231b",
+    "hash": "#c3231b",
+    "title": "פיתוח: התחברות מאובטחת, שחזור סיסמה וניהול סשן",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-14",
+    "files": [
+      ".qa/tests/auth-login/AUTH-LG-001-login-rtl-focus.md",
+      ".qa/tests/auth-login/AUTH-LG-002-wrong-credentials-uniform-error.md",
+      ".qa/tests/auth-login/AUTH-LG-003-lockout-5-attempts.md",
+      ".qa/tests/auth-login/AUTH-LG-004-forgot-password-same-message.md",
+      ".qa/tests/auth-login/AUTH-LG-005-reset-link-email.md",
+      ".qa/tests/auth-login/AUTH-LG-006-correct-login-role-dashboard.md",
+      ".qa/tests/auth-login/AUTH-LG-007-blocked-business-support.md",
+      ".qa/tests/auth-login/AUTH-LG-008-logout-requires-login.md",
+      ".qa/tests/auth-login/AUTH-LG-009-session-expired.md",
+      ".qa/e2e/specs/auth-login.md",
+      ".qa/e2e/tests/support/auth-mocks.ts",
+      ".qa/e2e/tests/auth-login/login-screen-rtl-focus.spec.ts",
+      ".qa/e2e/tests/auth-login/wrong-credentials-uniform-error.spec.ts",
+      ".qa/e2e/tests/auth-login/lockout-5-attempts.spec.ts",
+      ".qa/e2e/tests/auth-login/forgot-password-same-message.spec.ts",
+      ".qa/e2e/tests/auth-login/blocked-business-support.spec.ts",
+      ".qa/e2e/tests/auth-login/logout-requires-login.spec.ts",
+      ".qa/e2e/tests/auth-login/session-expired.spec.ts"
+    ]
+  },
+  {
+    "task": "b28a22ed6a85bb764151da2a",
+    "hash": "#51da2a",
+    "title": "באג: השהיית הלוך-חזור מעל 400 מ״ש מסמנת כל הקלטה כירודה ומשאירה את התרעת החיבור מוצגת",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-14",
+    "files": [
+      ".qa/tests/call-quality/CQ-001-normal-call-no-warning-sufficient.md",
+      ".qa/tests/call-quality/CQ-002-rtt-450-no-warning.md",
+      ".qa/tests/call-quality/CQ-003-loss-or-delay-warning-call-continues.md",
+      ".qa/tests/call-quality/CQ-004-manual-real-network.md",
+      ".qa/e2e/specs/call-quality.md",
+      ".qa/e2e/tests/call-quality/support.ts",
+      ".qa/e2e/tests/call-quality/warning-logic-mocked.spec.ts",
+      ".qa/e2e/tests/call-quality/normal-call-no-warning-sufficient.spec.ts"
+    ]
+  },
+  {
+    "task": "dfdd3c0c15aba4564b146331",
+    "hash": "#146331",
+    "title": "candidate_start_attempt החזיר 500 (statement timeout) תחת עומס בענף התצוגה המקדימה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "files": [
+      ".qa/tests/candidate-call/CALL-020-start-attempt-under-load.md",
+      ".qa/e2e/specs/candidate-call.md",
+      ".qa/e2e/tests/candidate-call/start-attempt-under-load.spec.ts"
+    ],
+    "notes": "@load — вне обычного регресса, запуск npm run test:load"
+  },
+  {
+    "id": "a267e2d2a28f85ea9d73717d",
+    "hash": "#73717d",
+    "title": "באג: מסך משתמשי העסק מציג כשל שליחה והעתקת קישור על הזמנה שפג תוקפה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "files": [
+      ".qa/tests/business-lifecycle/BIZ-INV-008-expired-invitation-settings-users-and-sa-card.md",
+      ".qa/e2e/specs/business-lifecycle.md",
+      ".qa/e2e/tests/business-lifecycle/expired-invitation-labels.spec.ts"
+    ],
+    "tests": [
+      ".qa/e2e/tests/business-lifecycle/expired-invitation-labels.spec.ts"
+    ]
+  },
+  {
+    "id": "193a63d7d3f3e0502e59e715",
+    "hash": "#59e715",
+    "title": "התפריט הצדדי של מנהל המערכת: חסרים הפריט «בקשות מידע» וסמל היציאה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "files": [
+      ".qa/tests/layout/ADM-002-sa-sidebar-data-requests-logout-icon.md",
+      ".qa/e2e/specs/layout.md",
+      ".qa/e2e/tests/layout/admin-sidebar-data-requests.spec.ts"
+    ],
+    "tests": [
+      ".qa/e2e/tests/layout/admin-sidebar-data-requests.spec.ts"
+    ]
+  },
+  {
+    "id": "08ef33ad7c5ff1b2945f2fdf",
+    "hash": "#5f2fdf",
+    "title": "באג: תיבת ההערה הפנימית קוטעת טקסט מודבק ב-4000 תווים בלי הודעה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "files": [
+      ".qa/tests/candidates/CAND-010-internal-note-length-limit.md",
+      ".qa/e2e/specs/candidates.md",
+      ".qa/e2e/tests/candidates/internal-note-length-limit.spec.ts"
+    ],
+    "tests": [
+      ".qa/e2e/tests/candidates/internal-note-length-limit.spec.ts"
+    ]
+  },
+  {
+    "id": "2056988a22bde8cc1b1d2635",
+    "hash": "#1d2635",
+    "title": "באג: אחרי שינוי החלטת הגיוס במקלדת המיקוד הולך לאיבוד",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "files": [
+      ".qa/tests/candidates/CAND-011-hiring-decision-keyboard-focus.md",
+      ".qa/e2e/specs/candidates.md",
+      ".qa/e2e/tests/candidates/hiring-decision-keyboard.spec.ts"
+    ],
+    "tests": [
+      ".qa/e2e/tests/candidates/hiring-decision-keyboard.spec.ts"
+    ]
+  },
+  {
+    "id": "38c0a78f545c8aeac8487826",
+    "hash": "#487826",
+    "title": "באג: העזרה מתוך כשל הבדיקה הטכנית לא נפתחת עם «תקלה טכנית» מסומן",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "files": [
+      ".qa/tests/candidate-call/CALL-021-help-prefill-from-tech-check-failure.md",
+      ".qa/e2e/specs/candidate-call.md",
+      ".qa/e2e/tests/candidate-call/help-prefill-tech-check-failure.spec.ts"
+    ],
+    "tests": [
+      ".qa/e2e/tests/candidate-call/help-prefill-tech-check-failure.spec.ts"
+    ]
+  },
+  {
+    "id": "5e9c55c71c45aaa00f83178a",
+    "hash": "#83178a",
+    "title": "באג: ההסבר «השיחה נקטעה בשניות הראשונות» מוצג גם לשיחה באורך מלא",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "files": [
+      ".qa/tests/report-analysis/REP-001-short-call-cut-off-everywhere.md",
+      ".qa/tests/report-analysis/REP-002-silent-candidate-almost-no-speech.md",
+      ".qa/e2e/specs/report-analysis.md",
+      ".qa/e2e/tests/report-analysis/short-and-silent-call-reasons.spec.ts",
+      ".qa/e2e/tests/report-analysis/support.ts"
+    ],
+    "tests": [
+      ".qa/e2e/tests/report-analysis/short-and-silent-call-reasons.spec.ts"
+    ]
+  },
+  {
+    "id": "6a993d6b51347e00464b397a",
+    "hash": "#4b397a",
+    "title": "פיתוח: ניתוח ההתמודדות עם ההתנגדות",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "files": [
+      ".qa/tests/report-analysis/REP-003-objection-discount-observation.md",
+      ".qa/tests/report-analysis/REP-004-objection-not-raised-insufficient.md",
+      ".qa/e2e/specs/report-analysis.md",
+      ".qa/e2e/tests/report-analysis/objection-domain.spec.ts",
+      ".qa/e2e/tests/report-analysis/support.ts"
+    ],
+    "tests": [
+      ".qa/e2e/tests/report-analysis/objection-domain.spec.ts"
+    ]
+  },
+  {
+    "id": "41e8f523871eb04c38d533fb",
+    "hash": "#d533fb",
+    "title": "באג: כלי בדיקות הקבלה מפעילים כמה דפדפנים כשדפים נפתחים במקביל",
+    "class": "qa-passed",
+    "source": "evidence",
+    "date": "2026-10-21",
+    "tests": [],
+    "files": [],
+    "note": "только код, автотест QA невозможен"
+  },
+  {
+    "id": "4c677378fc12889f6a2ed0f0",
+    "hash": "#2ed0f0",
+    "title": "באג: בדיקת הקבלה BUG-STALEROLE מחפשת קישור שכבר לא קיים בתפריט",
+    "class": "qa-passed",
+    "source": "evidence",
+    "date": "2026-10-21",
+    "tests": [],
+    "files": [],
+    "note": "только код, автотест QA невозможен"
+  },
+  {
+    "id": "e40c074a4250ea95b92687c5",
+    "hash": "#2687c5",
+    "title": "באג: שאריות קוד מספרינט 6: הערות מטעות וייצוא טיפוסים שאינו בשימוש",
+    "class": "qa-passed",
+    "source": "evidence",
+    "date": "2026-10-21",
+    "tests": [],
+    "files": [],
+    "note": "только код, автотест QA невозможен"
+  },
+  {
+    "id": "3282ea1ed955919d60c441cb",
+    "hash": "#c441cb",
+    "title": "באג: בדיקת ההפרדה בין המודולים אינה רואה ייבוא יחסי",
+    "class": "qa-passed",
+    "source": "evidence",
+    "date": "2026-10-21",
+    "tests": [],
+    "files": [],
+    "note": "только код, автотест QA невозможен"
+  },
+  {
+    "id": "2c7728d52baddff809409c80",
+    "hash": "#409c80",
+    "title": "באג: ברשימת המועמדים שינוי חיפוש או סינון יכול ללכת לאיבוד כששלושה שינויים מגיעים בקצב מכונה",
+    "class": "qa-passed",
+    "source": "evidence",
+    "date": "2026-10-21",
+    "tests": [],
+    "files": [],
+    "note": "только код, автотест QA невозможен"
+  },
+  {
+    "id": "12072f2e42a670d1a407791b",
+    "hash": "#07791b",
+    "title": "באג: טקסט התמלול השמור מכיל תווי בקרה של כיווניות (U+202B)",
+    "class": "qa-passed",
+    "source": "evidence",
+    "date": "2026-10-21",
+    "tests": [],
+    "files": [],
+    "note": "только код, автотест QA невозможен"
+  },
+  {
+    "id": "1dc7893f364debcb413aa86d",
+    "hash": "#3aa86d",
+    "title": "באג: התו U+061C (ARABIC LETTER MARK) אינו מוסר מטקסט התמלול",
+    "class": "qa-passed",
+    "source": "evidence",
+    "date": "2026-10-21",
+    "tests": [],
+    "files": [],
+    "note": "только код, автотест QA невозможен"
+  },
+  {
+    "id": "0832d1890b5855927263c6fe",
+    "hash": "#63c6fe",
+    "title": "באג: ניתוח נשלח למודל גם כשאין בתמלול אף קטע של המועמד",
+    "class": "qa-passed",
+    "source": "evidence",
+    "date": "2026-10-21",
+    "tests": [],
+    "files": [],
+    "note": "только код, автотест QA невозможен"
+  },
+  {
+    "id": "13fa7f766247b70c7fd16a52",
+    "hash": "#d16a52",
+    "title": "באג: יומן הקריאות של המשימות המתוזמנות גדל בלי הגבלה",
+    "class": "qa-passed",
+    "source": "evidence",
+    "date": "2026-10-21",
+    "tests": [],
+    "files": [],
+    "note": "только код, автотест QA невозможен"
+  },
+  {
+    "id": "1a95a4efbc6c1555c087668e",
+    "hash": "#87668e",
+    "title": "באג: מילים שהתמלול החלופי שמע נעלמות כשהקטע המקורי מסתיים מוקדם",
+    "class": "qa-passed",
+    "source": "evidence",
+    "date": "2026-10-21",
+    "tests": [],
+    "files": [],
+    "note": "только код, автотест QA невозможен"
+  },
+  {
+    "id": "7d88665cfac26f4b8131f179",
+    "hash": "#31f179",
+    "title": "באג: בדיקות הקבלה החתומות משאירות דפדפן פתוח, בודקות רק את השיחה האחרונה ולא מזהות מילה כפולה",
+    "class": "qa-passed",
+    "source": "evidence",
+    "date": "2026-10-21",
+    "tests": [],
+    "files": [],
+    "note": "только код, автотест QA невозможен"
+  },
+  {
+    "id": "db8e21554d07967352d22c79",
+    "hash": "#d22c79",
+    "title": "באג: בדיקות הקבלה משאירות את תצורת ספק הקול היחידה לא פעילה",
+    "class": "qa-passed",
+    "source": "evidence",
+    "date": "2026-10-21",
+    "tests": [],
+    "files": [],
+    "note": "только код, автотест QA невозможен"
+  },
+  {
+    "id": "c99eb276d2d9317f787e3811",
+    "hash": "#7e3811",
+    "title": "מסך הדוח ב-390: הודעת השגיאה ו«פנייה לתמיכה» מתחילות 1593 פיקסלים מתחת לראש הדף",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/layout/report-390-skip-link.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/layout/RPT390-001-skip-link-ready-report.md",
+      ".qa/tests/layout/RPT390-002-skip-link-generation-error.md",
+      ".qa/tests/layout/RPT390-003-1440-unchanged.md",
+      ".qa/e2e/specs/layout.md",
+      ".qa/e2e/tests/layout/report-390-skip-link.spec.ts"
+    ]
+  },
+  {
+    "id": "23d6b008f36e77a547781d1e",
+    "hash": "#781d1e",
+    "title": "באג: כפתור החזרה בגיליון ההסכמה של המועמד אינו מגיב",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/candidate-call/consent-back-button.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/candidate-call/CALL-022-consent-back-touch.md",
+      ".qa/tests/candidate-call/CALL-023-consent-back-mouse-keyboard.md",
+      ".qa/tests/candidate-call/CALL-024-consent-background-inert.md",
+      ".qa/e2e/specs/candidate-call.md",
+      ".qa/e2e/tests/candidate-call/consent-back-button.spec.ts"
+    ]
+  },
+  {
+    "id": "6a993d67948609c2b98951bb",
+    "hash": "#8951bb",
+    "title": "פיתוח: מדידת יעדי הפיילוט — נאספת מחוץ למערכת",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/pilot-metrics/no-pilot-metrics-in-system.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/pilot-metrics/PIL-001-no-report-feedback.md",
+      ".qa/tests/pilot-metrics/PIL-002-no-metrics-screen.md",
+      ".qa/tests/pilot-metrics/PIL-003-no-percent-vs-targets.md",
+      ".qa/e2e/specs/pilot-metrics.md",
+      ".qa/e2e/tests/pilot-metrics/no-pilot-metrics-in-system.spec.ts"
+    ],
+    "note": "организационная часть (AC1/4/5 — сбор метрик в разговорах, итог пилота вне системы) не автоматизируется"
+  },
+  {
+    "id": "172fd7d688f4438bdadda900",
+    "hash": "#dda900",
+    "title": "מסך הכניסה: מיקוד בשדה המייל וטקסט «הכניסה בהזמנה בלבד…»",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/auth-login/login-screen-rtl-focus.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/auth-login/AUTH-LG-001-login-rtl-focus.md",
+      ".qa/e2e/specs/auth-login.md",
+      ".qa/e2e/tests/auth-login/login-screen-rtl-focus.spec.ts"
+    ],
+    "note": "покрыт существующим тестом #c3231b (фокус в «מייל» + текст) — в название добавлен #172fd7d688f4438bdadda900, нового файла нет"
+  },
+  {
+    "id": "84a6c7b9b86bbe3ff8e17f2c",
+    "hash": "#e17f2c",
+    "title": "באג: בלוק «בית העסק נוצר» מציג קישור מבוטל אחרי «שליחה מחדש»",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/business-lifecycle/created-block-resent-link.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/business-lifecycle/BIZ-LC-011-created-block-shows-resent-link.md",
+      ".qa/tests/business-lifecycle/BIZ-LC-003-resend-cancels-old-link.md",
+      ".qa/e2e/specs/business-lifecycle.md",
+      ".qa/e2e/tests/business-lifecycle/created-block-resent-link.spec.ts"
+    ],
+    "note": "@data: бизнес QA-AUTO-e17f2c-<stamp>, удаляется в afterAll"
+  },
+  {
+    "id": "ab5503740f14ca6865210385",
+    "hash": "#210385",
+    "title": "באג: רשימת העסקים ב-/admin/businesses שונה מהמסגרת 812:448",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/admin-businesses/figma-812-448.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/businesses-list/BIZ-LIST-002-figma-812-448.md",
+      ".qa/e2e/specs/businesses-list.md",
+      ".qa/e2e/tests/admin-businesses/figma-812-448.spec.ts"
+    ]
+  },
+  {
+    "id": "e4e484a00eca59f5dd60d15f",
+    "hash": "#60d15f",
+    "title": "באג: /admin/support מציג «בדיקה טכנית החלה» אחרי בדיקה טכנית שעברה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/admin-support/link-after-tech-check.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/support/SUP-005-link-after-tech-check-passed.md",
+      ".qa/e2e/specs/support.md",
+      ".qa/e2e/tests/admin-support/link-after-tech-check.spec.ts"
+    ],
+    "note": "3 роли (business, кандидат с фальшивым микрофоном, admin); @data: кандидат QA-AUTO-60d15f-<stamp> не удаляется; звонок не начинается (OpenAI не тратится); доп. состояние из комментария (не AC) не автоматизировано"
+  },
+  {
+    "id": "db84adc6ceaedbdac00eafd1",
+    "hash": "#0eafd1",
+    "title": "Улучшение: текст ошибки отчёта по состоянию транскрипта/записи (тикет 22, 14.10)",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/report-analysis/generation-error-text-variants.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/report-analysis/REP-005-generation-error-text-by-transcript-recording.md",
+      ".qa/e2e/specs/report-analysis.md",
+      ".qa/e2e/tests/report-analysis/generation-error-text-variants.spec.ts"
+    ],
+    "note": "4 варианта подменой get_candidate_report; @prod-safe"
+  },
+  {
+    "id": "81c0182b234c10aeac190a63",
+    "hash": "#190a63",
+    "title": "Баг: «לQA-…» без дефиса в сообщениях продления/новой ссылки (тикет 27, 14.10)",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/candidates/link-messages-le-prefix.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/candidates/CAND-012-link-messages-le-prefix-latin-digit.md",
+      ".qa/e2e/specs/candidates.md",
+      ".qa/e2e/tests/candidates/link-messages-le-prefix.spec.ts"
+    ],
+    "note": "@data: кандидаты QA-AUTO-190a63 / «2110 QA-AUTO-190a63» / «בדיקה QA-AUTO-190a63» (link_only) создаются один раз и переиспользуются; business + admin; сброс — подмена"
+  },
+  {
+    "id": "a3f8b6a65b89524a4da9a3cd",
+    "hash": "#a9a3cd",
+    "title": "Баг: меню ⋮ приглашения в /settings/users за экраном на 1440 (тикет 24, 14.10)",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/business-lifecycle/invite-row-menu-in-viewport.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/business-lifecycle/BIZ-INV-009-invite-row-menu-in-viewport.md",
+      ".qa/e2e/specs/business-lifecycle.md",
+      ".qa/e2e/tests/business-lifecycle/invite-row-menu-in-viewport.spec.ts"
+    ],
+    "note": "10 ширин 1920…390; @prod-safe"
+  },
+  {
+    "id": "6a993d77a00f8f2a4a0d5e8a",
+    "hash": "#0d5e8a",
+    "title": "פיתוח: הגדרת הפרטים הכלליים של הסימולציה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/simulation-editor/general-details-step.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/simulation-editor/SIM-001-step1-fields-hints-defaults.md",
+      ".qa/tests/simulation-editor/SIM-002-required-missing-blocks-step2.md",
+      ".qa/tests/simulation-editor/SIM-003-next-saves-draft.md",
+      ".qa/tests/simulation-editor/SIM-004-language-en-rejected.md",
+      ".qa/tests/simulation-editor/SIM-005-edit-active-creates-version.md",
+      ".qa/tests/simulation-editor/SIM-006-previous-version-label.md",
+      ".qa/e2e/specs/simulation-editor.md",
+      ".qa/e2e/tests/simulation-editor/general-details-step.spec.ts",
+      ".qa/e2e/tests/support/simulation-editor.ts"
+    ],
+    "note": "не запускались (решение пользователя 21.10); @data: черновик QA-AUTO-0d5e8a-<stamp>; AC4 — черновая версия N+1 активной QA-симуляции без утверждения (или открытие существующей); 1.1/1.2/1.6 @prod-safe"
+  },
+  {
+    "id": "6a993d767a46a91b6fdf30ff",
+    "hash": "#df30ff",
+    "title": "פיתוח: הגדרת מידע הלקוח המדומה ומדרג החשיפה שלו",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/simulation-editor/customer-disclosure-step.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/simulation-editor/SIM-101-no-upfront-warning.md",
+      ".qa/tests/simulation-editor/SIM-102-tiers-condition-preview.md",
+      ".qa/tests/simulation-editor/SIM-103-hidden-not-in-candidate-view.md",
+      ".qa/tests/simulation-editor/SIM-104-approval-blocked-missing-customer.md",
+      ".qa/e2e/specs/simulation-editor.md",
+      ".qa/e2e/tests/simulation-editor/customer-disclosure-step.spec.ts",
+      ".qa/e2e/tests/support/simulation-editor.ts"
+    ],
+    "note": "не запускались (решение пользователя 21.10); @data: черновики QA-AUTO-df30ff-<stamp>(-ריק); генерация AI подменена 422; экраны кандидата/candidate_open_link не автоматизированы (нужна активация)"
+  },
+  {
+    "id": "30024c6427c460c2480e9f9a",
+    "hash": "#0e9f9a",
+    "title": "באג: בתמלול שיחה ארוכה חלק מהקטעים יוצאים בתעתיק לטיני ומילה בגבול מקטע נעלמת, והאיכות עדיין נמדדת כמספקת",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/recording/long-transcript-hebrew-boundaries.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/recording/REC-004-long-transcript-hebrew-only.md",
+      ".qa/tests/recording/REC-005-long-transcript-chunk-boundaries.md",
+      ".qa/tests/recording/REC-006-degraded-transcript-marked-partial.md",
+      ".qa/e2e/specs/recording.md",
+      ".qa/e2e/tests/recording/long-transcript-hebrew-boundaries.spec.ts"
+    ],
+    "note": "по данным API готовой 20-мин попытки QA-0e9f9a-2110 (без нового звонка); @prod-safe; не запускались; сверка слов на границах со звуком — вручную"
+  },
+  {
+    "id": "6a993d694473aff41cb98032",
+    "hash": "#b98032",
+    "title": "פיתוח: מודל סטטוסים ומעברים בארבעה צירים",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/candidates/status-in-progress-label.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/candidates/CAND-013-status-in-progress-label.md",
+      ".qa/tests/dashboard/DASH-003-activity-in-progress-label.md",
+      ".qa/e2e/specs/candidates.md",
+      ".qa/e2e/specs/dashboard.md",
+      ".qa/e2e/tests/candidates/status-in-progress-label.spec.ts"
+    ],
+    "note": "не запускались (решение пользователя 21.10); @prod-safe; строка/событие simulation_started подменяются в ответах list_candidates/get_business_dashboard; AC4 (PATCH 403) не автоматизирован"
+  },
+  {
+    "id": "aeb6b4a4d630df5aa3f0f6e2",
+    "hash": "#f0f6e2",
+    "title": "באג: תפריט הפעולות של שורה נשאר מחוץ למסך אחרי שינוי רוחב החלון",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/layout/row-menu-closes-on-narrow-resize.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/layout/ROWMENU-001-row-menu-closes-on-resize-invite.md",
+      ".qa/tests/layout/ROWMENU-002-row-menu-closes-on-resize-user.md",
+      ".qa/tests/layout/ROWMENU-003-row-menu-closes-on-resize-support.md",
+      ".qa/e2e/specs/layout.md",
+      ".qa/e2e/tests/layout/row-menu-closes-on-narrow-resize.spec.ts"
+    ],
+    "note": "не запускались (решение пользователя 21.10); @prod-safe; 1440×700→250×700, business (/settings/users ×2) + admin (/admin/support)"
+  },
+  {
+    "id": "d7d5078e6b85ee996fc9d61e",
+    "hash": "#c9d61e",
+    "title": "באג: מצבי הניסיון והדוח אחרי איפוס, תרגול וסגירת ניסיון נטוש",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/attempt-states/reset-practice-abandoned.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/attempt-states/ATT-001-reset-report-cancelled-support.md",
+      ".qa/tests/attempt-states/ATT-002-reset-business-report-cancelled.md",
+      ".qa/tests/attempt-states/ATT-003-practice-transcription-not-applicable.md",
+      ".qa/tests/attempt-states/ATT-004-abandoned-attempt-duration.md",
+      ".qa/e2e/specs/attempt-states.md",
+      ".qa/e2e/tests/attempt-states/reset-practice-abandoned.spec.ts"
+    ],
+    "note": "не запускались (решение пользователя 21.10); @prod-safe; только чтение существующих данных (сброс QA-r100b-K3-1645 21.10, QA-G4b-K1-1357, брошенная QA-r100a-AB-1642), новых сбросов нет; ATT-002 «נדרש ניסיון חדש» до 23.10.2026, потом «פג תוקף»"
+  },
+  {
+    "id": "6a993d6c479a31c9ebacbc41",
+    "hash": "#acbc41",
+    "title": "פיתוח: ניתוח הובלת השיחה לצעד הבא",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/report-analysis/next-step-domain.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/report-analysis/REP-006-next-step-early-end-insufficient.md",
+      ".qa/tests/report-analysis/REP-007-next-step-customer-refusal.md",
+      ".qa/e2e/specs/report-analysis.md",
+      ".qa/e2e/tests/report-analysis/next-step-domain.spec.ts"
+    ],
+    "note": "не запускались (решение пользователя 21.10); @prod-safe; готовые отчёты QA-bf7c47-2110 и QA-4b397a-DISC-2110"
+  },
+  {
+    "id": "6a993d6f2695665e8e0d245d",
+    "hash": "#0d245d",
+    "title": "פיתוח: ניתוח פתיחת השיחה והצגת המטרה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/report-analysis/opening-domain.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/report-analysis/REP-008-opening-domain-look.md",
+      ".qa/tests/report-analysis/REP-009-opening-domain-cut-off.md",
+      ".qa/e2e/specs/report-analysis.md",
+      ".qa/e2e/tests/report-analysis/opening-domain.spec.ts"
+    ],
+    "note": "не запускались (решение пользователя 21.10); @prod-safe; готовые отчёты QA-bf7c47-2110 и QA-57977a-27s-2110; вид статуса/цитаты — по computed style"
+  },
+  {
+    "id": "6a993d6ab96217a9f48d9668",
+    "hash": "#8d9668",
+    "title": "פיתוח: צפייה בדוח עם נגן הקלטה מסונכרן לתמלול",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/recording/report-player-sync.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/recording/REC-007-player-time-format-speakers.md",
+      ".qa/tests/recording/REC-008-click-seeks-and-highlights.md",
+      ".qa/tests/recording/REC-009-recommended-clip-plays-from-start.md",
+      ".qa/tests/recording/REC-010-recording-url-failure-retry.md",
+      ".qa/tests/recording/REC-011-recording-url-anon-401.md",
+      ".qa/e2e/specs/recording.md",
+      ".qa/e2e/tests/recording/report-player-sync.spec.ts"
+    ],
+    "note": "не запускались (решение пользователя 21.10); @prod-safe; готовый отчёт QA-bf7c47-2110; сбой записи — подмена get-recording-url 500; у симуляции без имени персоны клиент — «לקוח»"
+  },
+  {
+    "id": "d990205ec6451251316de0ce",
+    "hash": "#6de0ce",
+    "title": "באג: ניגודיות וטיפוגרפיה במסכי המועמד חורגות מ-AA ומהמסגרת",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/candidate-call/contrast-aa-6de0ce.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/candidate-call/CALL-025-contrast-aa-every-text-6de0ce.md",
+      ".qa/tests/candidate-call/CALL-026-practice-note-white-15-24.md",
+      ".qa/e2e/specs/candidate-call.md",
+      ".qa/e2e/tests/candidate-call/contrast-aa-6de0ce.spec.ts",
+      ".qa/e2e/tests/candidate-call/contrast-aa-support.ts"
+    ],
+    "note": "не запускались (решение пользователя 21.10); @desktop @data: кандидаты QA-AUTO-6de0ce-<C|N>-<stamp> (согласие + тех. проверка, практика не начата, не удаляются); эталон — текущий Figma; текст под модальным листом исключён (решение 15.10)"
+  },
+  {
+    "id": "8d9759413c3e03a5762b7f11",
+    "hash": "#2b7f11",
+    "title": "באג: פרופיל ההתנהגות מחזיק שתי התנגדויות מרכזיות שונות אחרי עריכת ההתנגדות במקור",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/scenario-draft/objection-edit-behavior-profile-2b7f11.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/scenario-draft/DRAFT-003-objection-edit-single-in-behavior-profile.md",
+      ".qa/e2e/specs/scenario-draft.md",
+      ".qa/e2e/tests/scenario-draft/objection-edit-behavior-profile-2b7f11.spec.ts"
+    ],
+    "note": "не запускались (решение пользователя 21.10); @desktop @data: симуляция QA-AUTO-2b7f11-<stamp> (טיוטה, не активируется, не удаляется); черновик ручной через save_scenario_draft без AI (QA_2B7F11_AI=1 — через генерацию, кредит); 21.10 проверено на AI-черновике — ручной путь в прогоне не подтверждён"
+  },
+  {
+    "id": "6a993d709f3da75a35e94412",
+    "hash": "#e94412",
+    "title": "פיתוח: מסך סיום ואישור השלמה למועמד",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/candidate-call/end-screen-e94412.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/candidate-call/CALL-027-end-screen-success.md",
+      ".qa/tests/candidate-call/CALL-028-end-screen-reopen-only-s17.md",
+      ".qa/tests/candidate-call/CALL-029-end-screen-technical-failure.md",
+      ".qa/tests/candidate-call/CALL-030-attempt-status-in-list.md",
+      ".qa/e2e/specs/candidate-call.md",
+      ".qa/e2e/tests/candidate-call/end-screen-e94412.spec.ts"
+    ],
+    "note": "не запускались (решение пользователя 21.10); без звонков, @prod-safe: повторное открытие ссылок готовых попыток QA-C4-2110-D2 / QA-DIAG-2110 (старт заблокирован); экран сбоя и «תקלה טכנית» — нужен кандидат с текущей technical_failure (QA-C6-2110-D2 сброшен) → иначе падение «нет данных» (QA_E94412_FAILURE_CANDIDATE)"
+  },
+  {
+    "id": "6a993d6e89df7f29e9e0da25",
+    "hash": "#e0da25",
+    "title": "פיתוח: הקלטת השיחה ואחסונה המאובטח",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/recording/recording-storage-e0da25.spec.ts",
+      "tests/recording/http-drop-reupload-e0da25.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/recording/REC-012-full-recording-linked-not-partial.md",
+      ".qa/tests/recording/REC-013-partial-recording-after-failure.md",
+      ".qa/tests/recording/REC-014-transcript-click-seeks-recording.md",
+      ".qa/tests/recording/REC-015-recording-access-auth.md",
+      ".qa/e2e/specs/recording.md",
+      ".qa/e2e/tests/recording/recording-storage-e0da25.spec.ts",
+      ".qa/tests/recording/REC-030-http-drop-20s-parts-reuploaded.md",
+      ".qa/tests/recording/REC-031-full-drop-partial-recording-manual.md",
+      ".qa/e2e/tests/recording/http-drop-reupload-e0da25.spec.ts"
+    ],
+    "note": "не запускались (решение пользователя 21.10); @desktop @prod-safe, только чтение: QA-C4-2110-D2 (045d7b08, 315 с, is_partial=false, 01:41→~102 с, anon 401); частичная запись — нужен кандидат с текущей technical_failure и is_partial=true (QA-C6 сброшен) → иначе «нет данных» (QA_E0DA25_PARTIAL_CANDIDATE); AC5/AC6 и разрыв HTTP — вручную; 22.10 добавлено (не запускались, решение пользователя 22.10): REC-030 — обрыв HTTP 20 с посреди официального звонка (@desktop @data, ЗВОНОК, кандидат QA-AUTO-HB-<stamp>): куски догружены, failed:[], is_partial=false, файл ≈ звонку, без «ההקלטה חלקית»; полный обрыв → is_partial=true — вручную REC-031 (звонок C6, drop.js), итог по данным — REC-013",
+    "manual_only": [
+      "REC-031"
+    ]
+  },
+  {
+    "id": "6a993d74959b605c0b534912",
+    "hash": "#534912",
+    "title": "פיתוח: מסלול ביקורת של חותמות זמן לכל ניסיון",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/admin-support/audit-trail-534912.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/support/SUP-006-audit-trail-unopened-link-empty.md",
+      ".qa/tests/support/SUP-007-audit-trail-no-manual-edit.md",
+      ".qa/tests/support/SUP-008-audit-trail-completed-attempt.md",
+      ".qa/tests/support/SUP-009-audit-trail-reset-two-attempts.md",
+      ".qa/e2e/specs/support.md",
+      ".qa/e2e/tests/admin-support/audit-trail-534912.spec.ts"
+    ],
+    "note": "не запускались (решение пользователя 21.10: без браузера и прогона, записано вручную); @desktop, без звонков, по готовым данным: QA-534912-2110-AC2 (неоткрытая ссылка, PATCH no-op → 403 только на его приглашение), QA-C4-2110-D2 (завершённая), QA-C6-2110-D2 (сброс); 3 теста @prod-safe, PATCH-тест без @prod-safe; фильтр «כל התאריכים»; замена данных — QA_534912_*_CANDIDATE; открытие трассы пишет запись в журнал доступа SA"
+  },
+  {
+    "id": "6a993d6e55d3513b306204cf",
+    "hash": "#6204cf",
+    "title": "פיתוח: תמלול מלא של השיחה בעברית עם חותמות זמן",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/recording/transcript-speakers-6204cf.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/recording/REC-016-whisper1-transcript-speakers-timestamps.md",
+      ".qa/tests/recording/REC-017-transcript-speakers-ui-rtl.md",
+      ".qa/tests/recording/REC-018-current-provider-no-null-speakers.md",
+      ".qa/e2e/specs/recording.md",
+      ".qa/e2e/tests/recording/transcript-speakers-6204cf.spec.ts"
+    ],
+    "note": "не запускались (решение пользователя 21.10: без браузера, звонков и смены провайдера; записано вручную); @desktop @prod-safe, только чтение: QA-6204cf-2110 (whisper-1, 973667ea, 12 сегментов, ready 8.5 с), QA-C4-2110-D2 / QA-DIAG-2110 (soniox) — 0 null speakers; AC4 (сбой), смена провайдера, p95 — вручную/пилот"
+  },
+  {
+    "id": "fe219494b9b5f50edd16dea8",
+    "hash": "#16dea8",
+    "title": "באג: זיהוי הדובר בתמלול נשען על אירועי תור שהדפדפן של המועמד כותב",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/recording/speaker-trust-16dea8.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/recording/REC-019-forged-turn-not-in-transcript.md",
+      ".qa/tests/recording/REC-020-evidence-quotes-candidate-segments.md",
+      ".qa/tests/recording/REC-021-forged-turn-event-rejected.md",
+      ".qa/e2e/specs/recording.md",
+      ".qa/e2e/tests/recording/speaker-trust-16dea8.spec.ts"
+    ],
+    "note": "не запускались (решение пользователя 21.10); @desktop @prod-safe, только чтение QA-5f7c10-2110 (cd0c1a09): нет QA-FORGED/burst, роли = эталону, 28/28 цитат из сегментов кандидата; REC-021 (запрос-подделка 'turn' → 400 invalid_event) — вручную: нужна активная попытка (звонок)"
+  },
+  {
+    "id": "b086024193665fbc0b8eb9d8",
+    "hash": "#8eb9d8",
+    "title": "באג: הקלטה שנמחקה נשארת נגישה עד כ-60 שניות דרך כתובת שהופקה לפני המחיקה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-21",
+    "tests": [
+      "tests/recording/purged-recording-8eb9d8.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/recording/REC-022-purged-recording-unavailable.md",
+      ".qa/tests/recording/REC-023-purge-in-access-log.md",
+      ".qa/tests/recording/REC-024-signed-url-not-cached.md",
+      ".qa/tests/recording/REC-025-purge-old-signed-url-404-manual.md",
+      ".qa/e2e/specs/recording.md",
+      ".qa/e2e/tests/recording/purged-recording-8eb9d8.spec.ts"
+    ],
+    "note": "не запускались (решение пользователя 21.10: без браузера, только запись файлов); @desktop @prod-safe, только чтение: QA-8eb9d8-2110 (5dc4bdba, запись 230865a0) после «ניקוי 90 יום» — тексты удаления, get-recording-url 404 not_found, журнал «מחיקה בניקוי 90 יום»; QA-C4-2110-D2 — signed URL private, no-store, не CDN HIT. REC-025 (очистка + опрос старой ссылки +5…+65 с → 404) — только вручную: необратимо, нужен звонок и временный флаг «עסק בדיקה» (иначе 400 purge_not_allowed_real_business). Селектор поля «מזהה מועמד» в журнале не проверен в браузере."
+  },
+  {
+    "id": "6a993d743e771e2d8145f435",
+    "hash": "#45f435",
+    "title": "פיתוח: ניהול מחזור חיי קישור המועמד",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-22",
+    "tests": [
+      "tests/candidate-links/business-link-lifecycle-45f435.spec.ts",
+      "tests/candidate-links/super-admin-link-actions-45f435.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/candidate-links/LINK-001-business-cancel-link.md",
+      ".qa/tests/candidate-links/LINK-002-business-extend-after-cancel.md",
+      ".qa/tests/candidate-links/LINK-003-business-reissue-active.md",
+      ".qa/tests/candidate-links/LINK-004-tampered-token-not-found.md",
+      ".qa/tests/candidate-links/LINK-005-expired-after-2-days-manual.md",
+      ".qa/tests/candidate-links/LINK-006-super-admin-link-actions-logged.md",
+      ".qa/tests/candidate-links/LINK-007-reopen-after-official-started-manual.md",
+      ".qa/e2e/specs/candidate-links.md",
+      ".qa/e2e/tests/candidate-links/support.ts",
+      ".qa/e2e/tests/candidate-links/business-link-lifecycle-45f435.spec.ts",
+      ".qa/e2e/tests/candidate-links/super-admin-link-actions-45f435.spec.ts"
+    ],
+    "note": "не запускались (решение пользователя 22.10: без браузера, только запись файлов); селекторы из ручной проверки 21.10 (tmp/45f435-2110, 45f435-R11, бандл сайта), в браузере не пройдены. Каждый тест создаёт своего кандидата QA-AUTO-45f435-<C|E|R|SA>-<stamp>, ничего не удаляет; тест подделанного токена @prod-safe. Вручную: LINK-005 (истечение 2 дня — по времени), LINK-007 (попытка уже начата — нужен звонок), AC5 сброс (звонок)."
+  },
+  {
+    "id": "74207659c68b798b1a5f7c10",
+    "hash": "#5f7c10",
+    "title": "באג: אין מגבלת גודל או קצב על העלאת ההקלטה ועל רישום אירועי השיחה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-22",
+    "tests": [],
+    "files": [
+      ".qa/tests/recording/REC-026-upload-part-too-large-413.md",
+      ".qa/tests/recording/REC-027-upload-part-number-over-300.md",
+      ".qa/tests/recording/REC-028-event-payload-and-rate-limit.md",
+      ".qa/tests/recording/REC-029-normal-call-not-affected-by-limits.md",
+      ".qa/e2e/specs/recording.md"
+    ],
+    "note": "только ручные кейсы: все проверки требуют активной официальной попытки (звонок) — решение пользователя 22.10 без звонков; автотест без попытки не доказывает лимит. Факты 21.10 (attempt ff4e016b): 413 part_too_large max_bytes 1048576 (POST и PUT) < 1 с; part>300 → 400 validation_failed; payload ≈20 КБ → 400 event_payload_too_large; 28×200, далее 400 event_rate_limited; обычный звонок не задет."
+  },
+  {
+    "id": "9a1674ab22f6ba3f7dda072b",
+    "hash": "#da072b",
+    "title": "באג: כשספק הקול מסרב (מכסה, 429) המועמד שוב רואה «כנראה בגלל תקלה בחיבור לאינטרנט»",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-22",
+    "tests": [
+      "tests/candidate-call/provider-refusal-da072b.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/candidate-call/CALL-031-provider-refusal-503-technical-failure.md",
+      ".qa/tests/candidate-call/CALL-032-provider-429-insufficient-quota.md",
+      ".qa/tests/candidate-call/CALL-033-real-network-failure-still-internet.md",
+      ".qa/e2e/specs/candidate-call.md",
+      ".qa/e2e/tests/candidate-call/provider-refusal-da072b.spec.ts"
+    ],
+    "note": "не запускались (решение пользователя 22.10); @desktop @data: каждый тест создаёт QA-AUTO-da072b-M1/M2/M3-<stamp> и тратит его официальную попытку (candidate_start_attempt настоящий), голосовой сессии нет (route-mocks, api.openai.com перехвачен). Конфликт с #d9aa30 снят 22.10: official-start-server-failure.spec.ts / раздел 4 / CALL-006/007 переписаны на сетевой обрыв и повтор на той же попытке, 503-ожидание удалено."
+  },
+  {
+    "id": "6a993d73690eb2387da2c2d9",
+    "hash": "#a2c2d9",
+    "title": "פיתוח: אכיפת קריטריוני הסף והאחידות של תרחיש הפיילוט",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-22",
+    "tests": [
+      "tests/approval-threshold/threshold-checklist-a2c2d9.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/approval-threshold/THR-001-checklist-7-items-unchecked.md",
+      ".qa/tests/approval-threshold/THR-002-unchecked-item-blocks-approval.md",
+      ".qa/tests/approval-threshold/THR-003-checklist-saved-on-simulation.md",
+      ".qa/tests/approval-threshold/THR-004-second-activation-pilot-alert-cancel.md",
+      ".qa/tests/approval-threshold/THR-005-reactivate-pilot-alert.md",
+      ".qa/tests/approval-threshold/THR-006-no-difficulty-levels.md",
+      ".qa/tests/approval-threshold/THR-007-same-version-new-candidates.md",
+      ".qa/tests/approval-threshold/THR-008-first-scenario-pilot-note.md",
+      ".qa/e2e/specs/approval-threshold.md",
+      ".qa/e2e/tests/approval-threshold/threshold-checklist-a2c2d9.spec.ts"
+    ],
+    "manual_only": [
+      "THR-003",
+      "THR-005",
+      "THR-007",
+      "THR-008"
+    ],
+    "note": "не запускались (решение пользователя 22.10); @desktop @data: каждый тест создаёт свою «QA-AUTO-a2c2d9-<stamp>» в testim (ממתינה לאישור), ничего не активирует, не удаляет; 7 пунктов порога — решение пользователя 22.10. Ручной черновик для «העברה לאישור» в прогоне не подтверждён (QA_A2C2D9_AI=1 — AI)."
+  },
+  {
+    "id": "3a666c3dd8f5b45f7892bd0e",
+    "hash": "#92bd0e",
+    "title": "שיפור: משתמש של בית עסק שנמחק מקבל את אותה הודעה כמו בחסימה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-22",
+    "tests": [
+      "tests/auth-login/account-notice-reasons.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/auth-login/AUTH-LG-010-deleted-business-notice-text.md",
+      ".qa/tests/auth-login/AUTH-LG-011-deleted-business-real-manual.md",
+      ".qa/e2e/specs/auth-login.md",
+      ".qa/e2e/tests/auth-login/account-notice-reasons.spec.ts"
+    ],
+    "manual_only": [
+      "AUTH-LG-011"
+    ],
+    "note": "не запускались (решение пользователя 22.10: тесты не запускать, браузер не открывать). @desktop @prod-safe, гость: /login?notice=blocked&reason=deleted|business (параметры из бандла index-BT4tmDRk.js, компонент account-blocked). Реальные блокировка/удаление бизнеса с вступившим менеджером D (temp-mail, пароль) — вручную AUTH-LG-011 (22.10 QA-CHAIN-2210)."
+  },
+  {
+    "id": "5121408da9c3e79d47922c63",
+    "hash": "#922c63",
+    "title": "באג: משתמש שהוסר מהעסק רואה «המשתמש שלכם חסום»",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-22",
+    "tests": [
+      "tests/auth-login/account-notice-reasons.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/auth-login/AUTH-LG-012-removed-user-notice-text.md",
+      ".qa/tests/auth-login/AUTH-LG-013-removed-user-real-manual.md",
+      ".qa/e2e/specs/auth-login.md",
+      ".qa/e2e/tests/auth-login/account-notice-reasons.spec.ts"
+    ],
+    "manual_only": [
+      "AUTH-LG-013"
+    ],
+    "note": "не запускались (решение пользователя 22.10: тесты не запускать, браузер не открывать). @desktop @prod-safe, гость: reason=removed|user и без reason (контроль). Реальные блокировка/удаление участника R1 (temp-mail, пароль) — вручную AUTH-LG-013 (22.10 QA-PILOT-a2c2d9)."
+  },
+  {
+    "id": "6a993d7b083193c466c31690",
+    "hash": "#c31690",
+    "title": "פיתוח: הזמנת משתמש נוסף לחשבון העסקי",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-22",
+    "tests": [
+      "tests/business-lifecycle/invite-user-pending-c31690.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/business-lifecycle/BIZ-INV-010-invite-user-form-pending.md",
+      ".qa/tests/business-lifecycle/BIZ-INV-011-invite-accept-email-active-manual.md",
+      ".qa/e2e/specs/business-lifecycle.md",
+      ".qa/e2e/tests/business-lifecycle/invite-user-pending-c31690.spec.ts"
+    ],
+    "manual_only": [
+      "BIZ-INV-011"
+    ],
+    "note": "не запускались (решение пользователя 22.10: тесты не запускать, браузер не открывать). @desktop @data: business (testim) создаёт приглашение QA-AUTO-c31690-<stamp> на delivered+…@resend.dev (тестовый приёмник Resend, delivery_status=sent; @example.com даёт send_failed) и отменяет его в конце. Письмо, вступление (пароль) и «פעיל» — вручную BIZ-INV-011."
+  },
+  {
+    "id": "6a993d7725c79eed60ef15fd",
+    "hash": "#ef15fd",
+    "title": "פיתוח: בקרת גישה מבוססת תפקיד ובידוד נתונים בין בתי עסק",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-22",
+    "tests": [],
+    "files": [
+      ".qa/tests/user-access/UA-006-recruiter-no-assignments-empty-manual.md",
+      ".qa/tests/user-access/UA-007-block-business-logs-out-users-manual.md",
+      ".qa/e2e/specs/user-access.md"
+    ],
+    "manual_only": [
+      "UA-006",
+      "UA-007"
+    ],
+    "note": "не запускались (решение пользователя 22.10: тесты не запускать, браузер не открывать). новых автотестов нет: слота рекрутёра без назначений в .qa/auth нет (user/user-2/user-3 с назначениями), блокировка бизнеса с вступившим пользователем — одноразовая и с паролем. Частично покрыто существующими: tests/user-access/blocked-business-token.spec.ts, tests/auth-login/blocked-business-support.spec.ts, текст «החשבון העסקי אינו פעיל» — tests/auth-login/account-notice-reasons.spec.ts."
+  },
+  {
+    "id": "6a993d7ae4562a7e48cea3ed",
+    "hash": "#cea3ed",
+    "title": "פיתוח: ניהול הזמנות ומשתמשים קיימים בעסק",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-22",
+    "tests": [
+      "tests/business-lifecycle/pending-invite-actions-cea3ed.spec.ts",
+      "tests/user-access/member-row-menu-dialogs-cea3ed.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/business-lifecycle/BIZ-INV-012-pending-invite-copy-resend-cancel.md",
+      ".qa/tests/user-access/UA-008-member-row-menu-dialogs.md",
+      ".qa/tests/user-access/UA-009-block-unblock-remove-member-manual.md",
+      ".qa/tests/user-access/UA-010-last-manager-protected-manual.md",
+      ".qa/e2e/specs/business-lifecycle.md",
+      ".qa/e2e/specs/user-access.md",
+      ".qa/e2e/tests/business-lifecycle/pending-invite-actions-cea3ed.spec.ts",
+      ".qa/e2e/tests/user-access/member-row-menu-dialogs-cea3ed.spec.ts"
+    ],
+    "manual_only": [
+      "UA-009",
+      "UA-010"
+    ],
+    "note": "не запускались (решение пользователя 22.10: тесты не запускать, браузер не открывать). BIZ-INV-012 @desktop @data: business (testim) создаёт приглашение QA-AUTO-cea3ed-<stamp> на delivered+…@resend.dev, проверяет меню/копию ссылки/повтор (прежняя ссылка «ההזמנה בוטלה»)/окно отмены и отменяет его. UA-008 @desktop @prod-safe: меню вступившего מנהל/ת מגייס/ת (4 пункта) и тексты окон блокировки/удаления/разблокировки, закрытие Esc, записи к rest/functions обрываются — сохранённые аккаунты не блокируются. Блок→выброс→отказ входа→разблок→удаление (пароль) — UA-009 (тот же прогон, что AUTH-LG-013); последний менеджер — UA-010. Смена роли AC4 — уже в user-access 2.1. Старые тесты user-access 2.1/2.2 и access-log/member-actions-log ищут прежние кнопки строки — вероятно устарели."
+  },
+  {
+    "id": "6a993d7890d7492f45ebdb2f",
+    "hash": "#ebdb2f",
+    "title": "פיתוח: ניהול פרטי העסק והעדפותיו על ידי מנהל החשבון",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-22",
+    "tests": [
+      "tests/business-settings/settings-business-ebdb2f.spec.ts",
+      "tests/business-settings/recruiter-denied-ebdb2f.spec.ts",
+      "tests/business-settings/pilot-language-locked-ebdb2f.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/business-settings/BSET-001-screen-fields-language-quota.md",
+      ".qa/tests/business-settings/BSET-002-required-field-blocks-save.md",
+      ".qa/tests/business-settings/BSET-003-isolation-other-business.md",
+      ".qa/tests/business-settings/BSET-004-default-language-new-simulation.md",
+      ".qa/tests/business-settings/BSET-005-pilot-language-locked-manual.md",
+      ".qa/tests/business-settings/BSET-006-recruiter-denied.md",
+      ".qa/e2e/specs/business-settings.md",
+      ".qa/e2e/tests/business-settings/settings-business-ebdb2f.spec.ts",
+      ".qa/e2e/tests/business-settings/recruiter-denied-ebdb2f.spec.ts",
+      ".qa/e2e/tests/business-settings/pilot-language-locked-ebdb2f.spec.ts"
+    ],
+    "manual_only": [
+      "BSET-005"
+    ],
+    "note": "не запускались (решение пользователя 22.10: тесты не запускать, браузер не открывать); записаны вручную, селекторы сверены со сборкой index-BT4tmDRk.js. BSET-001/002/006 @prod-safe; BSET-003 — GET/PATCH чужого QA-PILOT-1410 (b0d2a797) телом с его же именем, ожидается 0 строк; BSET-004 @data — язык testim he→en, возврат в finally (PATCH своего бизнеса); BSET-005 пилот — skip без QA_PILOT=1 (слот pilotmgr ручной, is_pilot сейчас выключен). AC1 (имя на экранах кандидата/в письме) не автоматизирован."
+  },
+  {
+    "id": "6a993d7ada81dff9be145887",
+    "hash": "#145887",
+    "title": "פיתוח: מסלול קבלת הזמנה והצטרפות לחשבון העסק",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-10-22",
+    "tests": [
+      "tests/business-lifecycle/invite-join-steps-145887.spec.ts",
+      "tests/business-lifecycle/invite-used-link-145887.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/business-lifecycle/BIZ-INV-013-invite-join-steps-without-joining.md",
+      ".qa/tests/business-lifecycle/BIZ-INV-014-invite-used-link-screen.md",
+      ".qa/tests/business-lifecycle/BIZ-INV-015-invite-full-join-dashboard-manual.md",
+      ".qa/e2e/specs/business-lifecycle.md",
+      ".qa/e2e/tests/business-lifecycle/invite-join-steps-145887.spec.ts",
+      ".qa/e2e/tests/business-lifecycle/invite-used-link-145887.spec.ts"
+    ],
+    "manual_only": [
+      "BIZ-INV-015"
+    ],
+    "note": "не запускались (решение пользователя 22.10: тесты не запускать, браузер не открывать); `npx playwright test --list` — 2 теста видны. Записаны вручную, селекторы сверены со сборкой index-BT4tmDRk.js. BIZ-INV-013 @desktop @data: business (testim) создаёт приглашение QA-AUTO-145887-<stamp> на delivered+…@resend.dev, гость проходит шаги 1–4 (чек-лист пароля на случайной строке из рантайма, блок слабого пароля, блок без галочек; подпись юр. текста допускает «טרם פורסם» и «גרסה X · בתוקף מתאריך»), accept-invitation обрывается (аккаунт не создаётся), затем отмена → «ההזמנה בוטלה» (AC4). BIZ-INV-014 @desktop @prod-safe: экран «כבר נעשה שימוש בהזמנה» через подмену get_invitation_by_token. Полное вступление и дашборд рекрутёра — вручную BIZ-INV-015 (создание аккаунта). Старые проверки формы «הצטרפות לחשבון העסק + סיסמה» в business-lifecycle (1.3, 2.1, 2.4, 4.1, 4.2, 7.1, 10.1) устарели после #145887 — ожидать «ошибка теста»."
+  },
+  {
+    "id": "6edba0ceef980e18a08f268d",
+    "hash": "#8f268d",
+    "title": "באג: משימות ה-cron של מחיקת ההקלטות ושל סגירת ניסיונות נטושים אינן רצות",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-04",
+    "tests": [
+      "tests/scheduled-jobs/jobs-health-8f268d.spec.ts"
+    ],
+    "files": [
+      ".qa/e2e/specs/scheduled-jobs.md",
+      ".qa/e2e/tests/scheduled-jobs/jobs-health-8f268d.spec.ts"
+    ],
+    "note": "не запускались (решение пользователя 04.11: тесты только записать, запуск — по /qa-regress); записаны вручную. @desktop @prod-safe: RPC admin_scheduled_jobs_health под admin — purge-expired-recordings «15 * * * *», active, secrets_configured; close-abandoned-attempts active, secrets_configured; успех/свежесть последнего запуска — мягко. Не автоматизировано: реальное удаление записи >90 дней, документация секретов, закрытие брошенной попытки по таймеру."
+  },
+  {
+    "id": "17b180ffa7055a7916af074d",
+    "hash": "#af074d",
+    "title": "משתמש חסום רואה את טופס הכניסה עם באנר במקום מסך «הכניסה לחשבון חסומה»",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-04",
+    "tests": [
+      "tests/auth-login/blocked-screen-af074d.spec.ts",
+      "tests/auth-login/account-notice-reasons.spec.ts",
+      "tests/auth-login/blocked-business-support.spec.ts"
+    ],
+    "files": [
+      ".qa/e2e/specs/auth-login.md",
+      ".qa/e2e/tests/auth-login/blocked-screen-af074d.spec.ts",
+      ".qa/e2e/tests/auth-login/account-notice-reasons.spec.ts",
+      ".qa/e2e/tests/auth-login/blocked-business-support.spec.ts"
+    ],
+    "manual_only": [
+      "AUTH-LG-007"
+    ],
+    "note": "не запускались (решение пользователя 04.11: тесты только записать, запуск — по /qa-regress); записаны вручную. Гость, /login?notice=blocked&reason=user|business|removed|deleted, 1440 и окно 390 (@desktop @prod-safe): экран без полей, «צוות התמיכה», mailto:simulator@shnaider.pro, «חזרה לכניסה» → форма. Обновлены устаревшие ожидания (старые тексты «הגישה לחשבון חסומה»/«החשבון העסקי אינו פעיל») в account-notice-reasons.spec.ts (user/business/без причины) и blocked-business-support.spec.ts. Вход паролем заблокированного пользователя и вход после разблокировки — вручную (пароль)."
+  },
+  {
+    "id": "045c8f36802b8c7e6179f484",
+    "hash": "#79f484",
+    "title": "באג: «ניקוי 90 יום» לא נרשם במסלול הביקורת של הניסיון, וביומן הגישה המחיקה מיוחסת ל«משתמש לא ידוע»",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-04",
+    "tests": [
+      "tests/access-log/purge-actor-79f484.spec.ts"
+    ],
+    "files": [
+      ".qa/e2e/specs/access-log.md",
+      ".qa/e2e/tests/access-log/purge-actor-79f484.spec.ts"
+    ],
+    "note": "не запускались (решение пользователя 04.11: тесты только записать, запуск — по /qa-regress); записаны вручную. @desktop @prod-safe, только чтение /admin/access-log: строки «מחיקה בניקוי 90 יום» с 04.11.2026 не «משתמש לא ידוע», за 04.11 — «מנהל מערכת». Сама «ניקוי 90 יום» не запускается (необратимое удаление); AC1 (причина в «מסלול ביקורת» попытки) — только вручную; строки до фикса — история."
+  },
+  {
+    "id": "54840cc5dcebcee4ede4f6e6",
+    "hash": "#e4f6e6",
+    "title": "באג: שלב התמלול בעיבוד הדוח אינו מוגבל במועד האחרון, וקריאות למודל אינן מבוטלות בזמן",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-04",
+    "tests": [],
+    "files": [],
+    "note": "по доказательствам программиста / требует пароля — без автотестов (тикет «только программист», проведён пользователем 04.11)"
+  },
+  {
+    "id": "c6ac04e2e70d7194ef4020ea",
+    "hash": "#4020ea",
+    "title": "באג: לא ברור אילו כשלים של משימת תמלול ב-Soniox הם קבועים",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-04",
+    "tests": [],
+    "files": [],
+    "note": "по доказательствам программиста / требует пароля — без автотестов (тикет «только программист», проведён пользователем 04.11)"
+  },
+  {
+    "id": "382fe516658a81e071dc50b5",
+    "hash": "#dc50b5",
+    "title": "בדיקה חסרה: אין הגנה מפני החזרת overscroll-behavior: contain לעמודה הצדדית של הדוח",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-04",
+    "tests": [],
+    "files": [],
+    "note": "по доказательствам программиста / требует пароля — без автотестов (тикет «только программист», проведён пользователем 04.11)"
+  },
+  {
+    "id": "1f91d86ba366204571f29930",
+    "hash": "#f29930",
+    "title": "בדיקה חסרה: Super Admin לא יכול לשנות את החלטת הגיוס",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-04",
+    "tests": [],
+    "files": [],
+    "note": "по доказательствам программиста / требует пароля — без автотестов (тикет «только программист», проведён пользователем 04.11)"
+  },
+  {
+    "id": "942f56edcd630265401b7452",
+    "hash": "#1b7452",
+    "title": "מסך הדוח: נגישות הציטוט, קפיצה במצב כשל ותיעוד הטוקנים",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-04",
+    "tests": [],
+    "files": [],
+    "note": "по доказательствам программиста / требует пароля — без автотестов (тикет «только программист», проведён пользователем 04.11)"
+  },
+  {
+    "id": "a8383e9014467922af57977a",
+    "hash": "#57977a",
+    "title": "הקביעה ששיחה נקטעה מוקדם מתבססת על משך בלבד ולא על סיבת הסיום",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-04",
+    "tests": [],
+    "files": [],
+    "note": "по доказательствам программиста / требует пароля — без автотестов (тикет «только программист», проведён пользователем 04.11)"
+  },
+  {
+    "id": "7dd8fde9bc5de0af9c484c82",
+    "hash": "#484c82",
+    "title": "בדיקת ההפרדה בין המודולים אינה מכסה את analysis_reporting, candidate_invitation ו-candidate_experience",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-04",
+    "tests": [],
+    "files": [],
+    "note": "по доказательствам программиста / требует пароля — без автотестов (тикет «только программист», проведён пользователем 04.11)"
+  },
+  {
+    "id": "dd4a1da9522b1035d9338cbb",
+    "hash": "#338cbb",
+    "title": "סגירת שני קריטריונים מספרינט 3 שנדחו עד הדוח: RECORDING-AC2 ו-ENDCALL-AC5",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-04",
+    "tests": [],
+    "files": [],
+    "note": "по доказательствам программиста / требует пароля — без автотестов (тикет «только программист», проведён пользователем 04.11)"
+  },
+  {
+    "id": "3adf8c7791bd73d95dea955e",
+    "hash": "#ea955e",
+    "title": "באג: כתיבה לעמודה candidates.internal_note יוצרת הערה פנימית בלי רשומת ביקורת",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-04",
+    "tests": [],
+    "files": [],
+    "note": "по доказательствам программиста / требует пароля — без автотестов (тикет «только программист», проведён пользователем 04.11)"
+  },
+  {
+    "id": "b84f3f9bac2182550dba2581",
+    "hash": "#ba2581",
+    "title": "חסר אייקון ⓘ לפני הודעת השגיאה בתיבות האישור בשלב «תנאים» בהצטרפות לצוות",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-04",
+    "tests": [],
+    "files": [],
+    "note": "по доказательствам программиста / требует пароля — без автотестов (вступление с паролем)"
+  },
+  {
+    "id": "6a993d7271c8db743d8a2399",
+    "title": "פיתוח: הגדרת משך הסימולציה ותנאי הסיום המוקדם",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-04",
+    "files": [
+      ".qa/e2e/specs/report-analysis.md",
+      ".qa/e2e/tests/report-analysis/end-reason-next-to-duration-8a2399.spec.ts"
+    ]
+  },
+  {
+    "id": "6a993d6db539691958e8e2be",
+    "title": "פיתוח: שכבת תצורה להחלפת ספקי AI, קול ותמלול",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-04",
+    "files": [
+      ".qa/e2e/specs/ai-providers.md",
+      ".qa/e2e/tests/ai-providers/executor-and-unknown-model-e8e2be.spec.ts"
+    ]
+  },
+  {
+    "id": "c36332c5df5b97b7e9561052",
+    "title": "באג: שלב «פרטים כלליים» — שדות טקסט מורחבים וחסרים קווי הפרדה בין הקבוצות",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-04",
+    "files": [
+      ".qa/e2e/specs/simulation-editor.md",
+      ".qa/e2e/tests/simulation-editor/step1-fields-and-dividers-561052.spec.ts"
+    ]
+  },
+  {
+    "id": "9f3336dd127bdb2d7530dabb",
+    "title": "בכל מסכי המערכת, ברוחב מעל 1440 התוכן המרכזי צר ונצמד לסרגל הצד",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-04",
+    "files": [
+      ".qa/e2e/specs/layout.md",
+      ".qa/e2e/tests/layout/simulations-wide-30dabb.spec.ts"
+    ]
+  },
+  {
+    "id": "d8da91f5c6ca5f64163eaa00",
+    "title": "מסך התמיכה: חסרים מסנן «טווח תאריכים» ושורת הספירה ליד המסננים",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-04",
+    "files": [
+      ".qa/e2e/specs/support.md",
+      ".qa/e2e/tests/admin-support/filters-fixed-positions-3eaa00.spec.ts"
+    ]
+  },
+  {
+    "id": "6a993d68bfba343d96358c8d",
+    "title": "פיתוח: נוסחים משפטיים בהגדרות העסק",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-04",
+    "files": [
+      ".qa/e2e/specs/business-settings.md",
+      ".qa/e2e/tests/business-settings/legal-text-alert-358c8d.spec.ts"
+    ]
+  },
+  {
+    "id": "6a993d701197515dfc162455",
+    "hash": "#162455",
+    "title": "פיתוח: מסך פתיחה והנחיות למועמד",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-04",
+    "tests": [
+      "tests/candidate-call/welcome-ai-disclosure-162455.spec.ts"
+    ],
+    "files": [
+      ".qa/e2e/tests/candidate-call/welcome-ai-disclosure-162455.spec.ts",
+      ".qa/e2e/specs/candidate-call.md",
+      ".qa/e2e/tests/candidate-call/help-1104-support.ts"
+    ],
+    "note": "Звонок не нужен; реальные телефоны (Pixel 6) — вручную."
+  },
+  {
+    "id": "67983c2cf6fb3e0dfbf7124a",
+    "hash": "#f7124a",
+    "title": "באג: חלון העזרה למועמד אינו תואם את המסגרת המאושרת 827:2940",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-04",
+    "tests": [
+      "tests/candidate-call/help-sheet-chips-contacts-f7124a.spec.ts"
+    ],
+    "files": [
+      ".qa/e2e/tests/candidate-call/help-sheet-chips-contacts-f7124a.spec.ts",
+      ".qa/e2e/specs/candidate-call.md",
+      ".qa/e2e/tests/candidate-call/help-1104-support.ts"
+    ],
+    "note": "Цвет выбранного чипа (сверка с Figma 827:2940) и WebKit на настоящем iPhone — вручную."
+  },
+  {
+    "id": "6a993d72c6f011ffb0e946b4",
+    "hash": "#e946b4",
+    "title": "פיתוח: נתיב פנייה לגורם אנושי ובקשת התאמה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-04",
+    "tests": [
+      "tests/candidate-call/human-help-path-e946b4.spec.ts"
+    ],
+    "files": [
+      ".qa/e2e/tests/candidate-call/human-help-path-e946b4.spec.ts",
+      ".qa/e2e/specs/candidate-call.md",
+      ".qa/e2e/tests/candidate-call/help-1104-support.ts"
+    ],
+    "note": "Не автоматизировано: реальная отправка обращения и показ у рекрутера/в окне сброса (создаёт обращения бизнесу), ссылка во время звонка (звонки не автоматизируются), прокрутка после закрытия листа (артефакт Playwright), /privacy."
+  },
+  {
+    "id": "6a993d723354c77b66e676bd",
+    "hash": "#e676bd",
+    "title": "פיתוח: בדיקה טכנית של מיקרופון ושמע",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-04",
+    "tests": [
+      "tests/candidate-call/tech-check-errors-e676bd.spec.ts"
+    ],
+    "files": [
+      ".qa/e2e/tests/candidate-call/tech-check-errors-e676bd.spec.ts",
+      ".qa/e2e/specs/candidate-call.md",
+      ".qa/e2e/tests/candidate-call/help-1104-support.ts"
+    ],
+    "note": "Не автоматизировано: треб.5 на настоящих телефонах (системное разрешение микрофона)."
+  },
+  {
+    "id": "fd1450c92289332773b97be8",
+    "hash": "#b97be8",
+    "title": "משתמש בית העסק מופנה לאפס ניסיון מרשימת המועמדים, אך אין לו אפשרות איפוס",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-04",
+    "tests": [
+      "tests/attempt-states/reset-permission-user-b97be8.spec.ts"
+    ],
+    "files": [
+      ".qa/e2e/tests/attempt-states/reset-permission-user-b97be8.spec.ts",
+      ".qa/e2e/specs/attempt-states.md",
+      ".qa/e2e/tests/attempt-states/reset-support.ts"
+    ],
+    "note": "Только чтение (reset_attempt оборван). «דורש תשומת לב» и «ניהול הקישור» у user — вручную."
+  },
+  {
+    "id": "6a993d6e847b25e5b0031940",
+    "hash": "#031940",
+    "title": "פיתוח: טיפול בתקלה טכנית ואיפוס ניסיון",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-04",
+    "tests": [
+      "tests/attempt-states/reset-dialog-validation-031940.spec.ts"
+    ],
+    "files": [
+      ".qa/e2e/tests/attempt-states/reset-dialog-validation-031940.spec.ts",
+      ".qa/e2e/specs/attempt-states.md",
+      ".qa/e2e/tests/attempt-states/reset-support.ts"
+    ],
+    "note": "Реальный сброс не выполняется. Не автоматизировано: AC1 (обрыв звонка), AC3/AC4 с выполнением сброса и отметка в трассе SA (необратимо)."
+  },
+  {
+    "id": "6a993d67608817ae234a3af4",
+    "hash": "#4a3af4",
+    "title": "פיתוח: שמירת מידע, מחיקה וטיפול בבקשות מועמד",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-17",
+    "tests": [
+      "tests/data-requests/figma-states-4a3af4.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/data-requests/DREQ-001-icon-left-intake-and-empty-state.md",
+      ".qa/tests/data-requests/DREQ-002-error-state-retry-icon-left.md",
+      ".qa/tests/data-requests/DREQ-003-loading-state-no-counters.md",
+      ".qa/tests/data-requests/DREQ-004-delete-dialog-eyebrow-disabled-button-empty-note.md",
+      ".qa/tests/data-requests/DREQ-005-intake-panel-closes-creates-nothing.md",
+      ".qa/e2e/specs/data-requests.md",
+      ".qa/e2e/tests/data-requests/figma-states-4a3af4.spec.ts"
+    ],
+    "note": "Записано 17.11, не запускалось. Список заявок подменяется моком, записывающие RPC блокируются. Не автоматизировано: завершение удаления (необратимо), AC1 авто-удаление 90 дней (только программист)."
+  },
+  {
+    "id": "7e5e16903a1b3d1d88799398",
+    "hash": "#799398",
+    "title": "מסך הדוח: העמודה הצדדית אצל Super Admin, גלילת העמוד מעל העמודה, וניקיון בקוד",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-17",
+    "tests": [
+      "tests/layout/report-aside-support-799398.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/layout/RPTASIDE-001-transcript-min-height-160-aside-fits.md",
+      ".qa/tests/layout/RPTASIDE-002-wheel-over-transcript-then-page.md",
+      ".qa/e2e/specs/report-aside.md",
+      ".qa/e2e/tests/layout/report-aside-support-799398.spec.ts"
+    ],
+    "note": "Записано 17.11, не запускалось. Не автоматизировано: AC3 (фокус с клавиатуры, проверено вручную 21.10), AC4/AC6 и отсутствие токена --transcript-min-height (только код, доказательства программиста). Кандидат QA-C2-2110-D2 зашит в тесте."
+  },
+  {
+    "id": "8b8e87257b19adf541e6d959",
+    "hash": "#e6d959",
+    "title": "ניקיון במנוע הניתוח: בדיקת קלט שטחית, קוד מת ותשובת applied:false שמתעלמים ממנה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-17",
+    "tests": [],
+    "files": [],
+    "note": "Только код (code review cleanup), доказательства программиста (PDF 17.11: DB-тест sprint7-report-fields, 8/8). Автотест QA невозможен; на сайте только косвенный регресс отчётов."
+  },
+  {
+    "id": "57c300302aee19a1865983f7",
+    "hash": "#5983f7",
+    "title": "באג: אחרי השלמת בקשת מחיקה קישור המועמד נשאר פעיל, ותוכן שנכתב במקביל למחיקה יכול לשרוד אותה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-17",
+    "tests": [],
+    "files": [],
+    "note": "Часть 2 (параллельная запись/удаление) — только программист, измеренный вывод в PDF 17.11. Часть 1 на сайте проверена вручную 04.11 (кандидат QA-5983f7-0411, запрос 88a26b41: «הקישור לא פעיל», у бизнеса нет продления/нового кода, «נתוני המועמד נמחקו לבקשתו»). Автотеста от 04.11 в .qa/e2e/tests не найдено (grep по candidate_erased и «נמחקו לבקשתו» пуст); tests/recording/REC-022 лишь упоминает #57c30030 как связанный. Автотест не записан: нужна необратимая операция удаления."
+  },
+  {
+    "id": "6a993d6920b26e2d36cddab4",
+    "title": "פיתוח: רשימת מועמדים עם חיפוש, סינון ופעולות מהירות",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-17",
+    "files": [
+      ".qa/tests/candidates/CAND-014-list-filters-search-recruiter.md",
+      ".qa/tests/candidates/CAND-015-list-filters-search-business.md",
+      ".qa/tests/candidates/CAND-016-list-columns-status-report-390.md",
+      ".qa/tests/candidates/CAND-017-list-quick-actions-by-status-business.md",
+      ".qa/e2e/specs/candidates.md",
+      ".qa/e2e/tests/candidates/list-filters-actions-cddab4.spec.ts",
+      ".qa/e2e/tests/candidates/list-support.ts"
+    ]
+  },
+  {
+    "id": "6a993d6cdaed11dfc1bf7c47",
+    "hash": "#bf7c47",
+    "title": "פיתוח: טיפול בכשל בהפקת דוח והרצה חוזרת של העיבוד",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-17",
+    "tests": [
+      "tests/admin-support/rerun-log-dialog-bf7c47.spec.ts",
+      "tests/admin-support/rerun-permissions-bf7c47.spec.ts",
+      "tests/report-analysis/generation-error-manager-bf7c47.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/support/SUP-010-rerun-log-dialog-readonly.md",
+      ".qa/tests/support/SUP-011-rerun-log-line-500x20-ltr.md",
+      ".qa/tests/support/SUP-012-rerun-log-buttons-sizes.md",
+      ".qa/tests/support/SUP-013-rerun-log-close-x-40.md",
+      ".qa/tests/support/SUP-014-rerun-rpc-403-non-admin.md",
+      ".qa/tests/report-analysis/REP-010-manager-error-report-support-no-rerun.md",
+      ".qa/tests/report-analysis/REP-011-manager-list-generation-error-filter-actions.md",
+      ".qa/e2e/specs/report-error-rerun.md",
+      ".qa/e2e/tests/admin-support/rerun-log-dialog-bf7c47.spec.ts",
+      ".qa/e2e/tests/admin-support/rerun-permissions-bf7c47.spec.ts",
+      ".qa/e2e/tests/report-analysis/generation-error-manager-bf7c47.spec.ts",
+      ".qa/e2e/tests/admin-support/support-helpers.ts",
+      ".qa/e2e/tests/report-analysis/report-view-helpers.ts"
+    ],
+    "note": "Записано 17.11, не запускалось (только --list). Read-only: перезапуск не нажимается, RPC с нулевым UUID. Не автоматизировано: иконка «!», регресс × в других окнах, копирование лога, успешный перезапуск/AC5 и «attempt 2 of 2» на свежем сбое (нужен реальный перезапуск). Окно лога ищется среди строк «לטיפול ידני» QA-PHONE-17fdd9-0411-A / QA-C10-2110-D3 / QA-CALL1-0411."
+  },
+  {
+    "id": "6a993d6d5fdc2434e9ece93f",
+    "hash": "#ece93f",
+    "title": "פיתוח: שמירת דמות הלקוח המדומה ומעקות תוכן",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-17",
+    "tests": [
+      "tests/report-analysis/content-flags-banner-ece93f.spec.ts",
+      "tests/admin-support/content-flags-ece93f.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/content-flags/FLG-001-business-report-banner-flagged.md",
+      ".qa/tests/content-flags/FLG-002-business-report-no-banner-clean.md",
+      ".qa/tests/content-flags/FLG-003-admin-audit-drawer-flags.md",
+      ".qa/tests/content-flags/FLG-004-admin-audit-drawer-no-flags.md",
+      ".qa/tests/content-flags/FLG-005-admin-report-api-reason-required.md",
+      ".qa/tests/content-flags/FLG-006-admin-content-dialog-reason-required.md",
+      ".qa/e2e/specs/content-flags.md",
+      ".qa/e2e/tests/report-analysis/content-flags-banner-ece93f.spec.ts",
+      ".qa/e2e/tests/admin-support/content-flags-ece93f.spec.ts"
+    ],
+    "note": "Записано 17.11, не запускалось. Сверка с API (content_flags); допустимая причина доступа SA не отправляется. Не автоматизировано: AC1–AC4 и R7 (живой звонок, проверено 13.10/21.10), R13 (решение пользователя)."
+  },
+  {
+    "id": "6a993d6fbd1469e36cd65b5b",
+    "hash": "#d65b5b",
+    "title": "פיתוח: סיום השיחה לפי תנאי התרחיש",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-17",
+    "tests": [
+      "tests/report-analysis/end-reason-duration-d65b5b.spec.ts",
+      "tests/admin-support/end-reason-audit-d65b5b.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/report-analysis/END-001-business-report-end-reason-duration.md",
+      ".qa/tests/report-analysis/END-002-admin-audit-drawer-end-reason-duration.md",
+      ".qa/tests/report-analysis/END-003-admin-audit-drawer-no-attempt-dash.md",
+      ".qa/e2e/specs/end-reason.md",
+      ".qa/e2e/tests/report-analysis/end-reason-duration-d65b5b.spec.ts",
+      ".qa/e2e/tests/admin-support/end-reason-audit-d65b5b.spec.ts"
+    ],
+    "note": "Записано 17.11, не запускалось. Значения сверяются с API (end_reason, duration_seconds); коды/длительности пяти QA-кандидатов — как «данные не менялись». Не автоматизировано: AC1–AC4 (поведение клиента в звонке, проверено 21.10/04.11)."
+  },
+  {
+    "id": "6a993d6887e898ed58bdd327",
+    "hash": "#bdd327",
+    "title": "פיתוח: מכסת סימולציות ומעקב צריכה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-17",
+    "tests": [
+      "tests/quota-usage/quota-live-bdd327.spec.ts",
+      "tests/quota-usage/quota-mocked-bdd327.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/quota-usage/QUOTA-001-settings-quota-card-equals-api.md",
+      ".qa/tests/quota-usage/QUOTA-002-dashboard-quota-line-equals-api.md",
+      ".qa/tests/quota-usage/QUOTA-003-drawer-footer-manager-equals-api.md",
+      ".qa/tests/quota-usage/QUOTA-004-drawer-footer-recruiter-equals-api.md",
+      ".qa/tests/quota-usage/QUOTA-005-threshold-banner-mocked.md",
+      ".qa/tests/quota-usage/QUOTA-006-no-warning-below-threshold-mocked.md",
+      ".qa/tests/quota-usage/QUOTA-007-exhausted-overage-modal-manager-mocked.md",
+      ".qa/tests/quota-usage/QUOTA-008-exhausted-overage-modal-recruiter-mocked.md",
+      ".qa/tests/quota-usage/QUOTA-009-set-quota-forbidden-non-admin.md",
+      ".qa/tests/quota-usage/QUOTA-010-usage-foreign-business-forbidden.md",
+      ".qa/e2e/specs/quota-usage.md",
+      ".qa/e2e/tests/quota-usage/support.ts",
+      ".qa/e2e/tests/quota-usage/quota-live-bdd327.spec.ts",
+      ".qa/e2e/tests/quota-usage/quota-mocked-bdd327.spec.ts"
+    ],
+    "note": "Записано 17.11, не запускалось (проверен только --list). Только чтение: квота testim не меняется, кандидаты не создаются; состояния порога/исчерпания — подмена get_business_usage; 403 для admin_set_business_quota (несуществующий бизнес) и usage чужого бизнеса. Не автоматизировано: задание квоты админом (AC1), подсчёт только завершённых попыток (AC2, звонки), реальное подтверждение превышения/запись для биллинга (AC4)."
+  },
+  {
+    "id": "6a993d738eac0db9d694c3ab",
+    "hash": "#94c3ab",
+    "title": "פיתוח: ניהול גרסאות וסטטוסים של סימולציה",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-17",
+    "tests": [
+      "tests/simulation-status/statuses-mocked-94c3ab.spec.ts",
+      "tests/simulation-status/statuses-live-94c3ab.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/simulation-status/STAT-001-list-locked-row-mocked.md",
+      ".qa/tests/simulation-status/STAT-002-editor-locked-mocked.md",
+      ".qa/tests/simulation-status/STAT-003-invite-drawer-only-locked-mocked.md",
+      ".qa/tests/simulation-status/STAT-004-invite-drawer-recruiter-no-active-mocked.md",
+      ".qa/tests/simulation-status/STAT-005-empty-list-sizes-mocked.md",
+      ".qa/tests/simulation-status/STAT-006-report-header-simulation-version.md",
+      ".qa/tests/simulation-status/STAT-007-server-create-candidate-fake-simulation.md",
+      ".qa/tests/simulation-status/STAT-008-server-save-simulation-fake-id.md",
+      ".qa/e2e/specs/simulation-status.md",
+      ".qa/e2e/tests/simulation-status/support.ts",
+      ".qa/e2e/tests/simulation-status/statuses-mocked-94c3ab.spec.ts",
+      ".qa/e2e/tests/simulation-status/statuses-live-94c3ab.spec.ts"
+    ],
+    "note": "Записано 17.11, не запускалось (проверен только --list). Без звонков и смены статусов: «נעולה», пустое состояние и «אין סימולציה פעילה» — подмена GET simulations; шапка отчёта — чтение; create_candidate/save_simulation — на несуществующий id (400). Не автоматизировано: переходы active↔locked при официальном звонке, simulation_locked/hint locked на настоящем id, дашборд."
+  },
+  {
+    "id": "6a993d7161f5faec9e17fdd9",
+    "hash": "#17fdd9",
+    "title": "פיתוח: ביצוע הסימולציה הרשמית",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-17",
+    "tests": [
+      "tests/candidate-call/official-call-17fdd9.spec.ts",
+      "tests/candidate-call/official-call-17fdd9-realphone.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/candidate-call/CALL-034-official-one-time-notice-live-end-screen.md",
+      ".qa/tests/candidate-call/CALL-035-mic-loss-card-and-recovery-mocked.md",
+      ".qa/tests/candidate-call/CALL-036-quiet-room-no-false-alarm.md",
+      ".qa/tests/candidate-call/CALL-037-mic-loss-over-30s-technical-failure-mocked.md",
+      ".qa/tests/candidate-call/CALL-038-reopen-failed-link-no-start.md",
+      ".qa/tests/candidate-call/CALL-039-real-android-mic-switch-off-on.md",
+      ".qa/tests/candidate-call/CALL-040-real-android-mic-off-over-30s-failure.md",
+      ".qa/e2e/specs/candidate-call.md",
+      ".qa/e2e/tests/candidate-call/mic-loss-support.ts",
+      ".qa/e2e/tests/candidate-call/official-call-17fdd9.spec.ts",
+      ".qa/e2e/tests/candidate-call/official-call-17fdd9-realphone.spec.ts"
+    ],
+    "note": "Записано 17.11, не запускалось (проверен только --list: 10 тестов). Без AI-кредитов: 4 теста на подменённом бэкенде (mockCallBackend+fakePeer) с синтетическим микрофоном (цифровой ноль → карточка ≤5,5 с, возврат, тихая комната, >30 с → «השיחה לא הושלמה»), 1 только-чтение по ссылке QA-PH-1711-2 (@mobile @prod-safe). Настоящий Pixel 6 (sensor_privacy) — 2 теста @android @call @manual, только при QA_REAL_PHONE=1 (тратят кредиты). Не автоматизировано: гарнитуры с noise gate/BT call mode, Chrome-вариант R17 (отзыв разрешения сайта). Риск подмен: формат ответа end-candidate-attempt, candidate_call_signal не подменён — первый прогон это проверит."
+  },
+  {
+    "id": "bda08b8d4fb6c3dcfb597ccf",
+    "hash": "#597ccf",
+    "title": "באג: «קליטת בקשה» של Super Admin דוחה את תאריך היום אחרי חצות כ«בעתיד»",
+    "class": "qa-passed",
+    "source": "qa",
+    "date": "2026-11-18",
+    "tests": [
+      "tests/data-requests/intake-date-il-597ccf.spec.ts"
+    ],
+    "files": [
+      ".qa/tests/data-requests/DREQ-006-intake-today-il-after-midnight-accepted.md",
+      ".qa/tests/data-requests/DREQ-007-intake-tomorrow-il-rejected.md",
+      ".qa/tests/data-requests/DREQ-008-intake-yesterday-il-accepted.md",
+      ".qa/tests/data-requests/DREQ-009-api-create-request-tomorrow-il-400.md",
+      ".qa/e2e/specs/data-requests.md",
+      ".qa/e2e/tests/data-requests/intake-date-il-597ccf.spec.ts"
+    ],
+    "note": "Записано 18.11, не запускалось (только --list: 4 теста). Часы браузера = 00:30 IL (page.clock) — клиент в «окне» воспроизводится в любое время; сервер в окне проверен только вручную 18.11 00:30 IST. DREQ-006 создаёт одну заявку QA-597ccf-<дата> (@data, удаления нет); DREQ-008 — подмена RPC; DREQ-009 — API 400 на пустых id, @prod-safe. Селекторы формы взяты из старого bundle (label «תאריך קבלה», «קליטת הבקשה», «תיאור הבקשה») — первый прогон это проверит."
+  }
+]

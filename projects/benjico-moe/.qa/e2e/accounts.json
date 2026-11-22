@@ -1,0 +1,38 @@
+[
+  {
+    "id": "parent",
+    "role": "הורה",
+    "emailVar": "QA_USER_PARENT_EMAIL",
+    "passwordVar": "QA_USER_PARENT_PASSWORD"
+  },
+  {
+    "id": "parent-2",
+    "role": "הורה (слот входа)",
+    "emailVar": "QA_USER_PARENT_EMAIL",
+    "passwordVar": "QA_USER_PARENT_SLOT_PASSWORD_UNUSED"
+  },
+  {
+    "id": "parent-3",
+    "role": "הורה (слот входа)",
+    "emailVar": "QA_USER_PARENT_EMAIL",
+    "passwordVar": "QA_USER_PARENT_SLOT_PASSWORD_UNUSED"
+  },
+  {
+    "id": "parent-b",
+    "role": "הורה — משפחה ב (изоляция семей)",
+    "emailVar": "QA_USER_PARENT_B_EMAIL",
+    "passwordVar": "QA_USER_PARENT_B_PASSWORD"
+  },
+  {
+    "id": "parent-auto",
+    "role": "הורה (слот автотестов #8ca267 — постоянно в режиме ребёнка QA-R2-V; вход вручную)",
+    "emailVar": "QA_USER_PARENT_EMAIL",
+    "passwordVar": "QA_USER_PARENT_SLOT_PASSWORD_UNUSED"
+  },
+  {
+    "id": "parent-r21-auto",
+    "role": "הורה (слот автотестов #8ca267 — постоянно в режиме ребёнка QA-R2-1; вход вручную)",
+    "emailVar": "QA_USER_PARENT_EMAIL",
+    "passwordVar": "QA_USER_PARENT_SLOT_PASSWORD_UNUSED"
+  }
+]

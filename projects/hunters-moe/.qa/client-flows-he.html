@@ -1,0 +1,179 @@
+<title>תהליכי העבודה ב-Hunters</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Frank+Ruhl+Libre:wght@500;700&display=swap">
+<style>
+/* Layout: single reading column, scenario sections with numbered role-to-role steps */
+:root {
+  --bg: #f6f8f8;
+  --surface: #ffffff;
+  --fg: #16232a;
+  --muted: #5b6b72;
+  --line: #dbe4e6;
+  --accent: #00838f;
+  --accent-soft: #e0f3f4;
+  --hunter: #1d5fa8;
+  --company: #8a4b0f;
+  --talent: #6b3fa0;
+  --admin: #3d5a3a;
+  --display: "Frank Ruhl Libre", "David", Georgia, serif;
+  --body: "Assistant", "Arial Hebrew", "Segoe UI", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1719; --surface: #172226; --fg: #e5eef0; --muted: #9db0b6; --line: #2a3a3f;
+    --accent: #4fc6d0; --accent-soft: #163a3e; --hunter: #7fb1ec; --company: #e3a868; --talent: #c3a2ee; --admin: #9fcf98;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1719; --surface: #172226; --fg: #e5eef0; --muted: #9db0b6; --line: #2a3a3f;
+  --accent: #4fc6d0; --accent-soft: #163a3e; --hunter: #7fb1ec; --company: #e3a868; --talent: #c3a2ee; --admin: #9fcf98;
+  color-scheme: dark;
+}
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.65; }
+.wrap { max-width: 860px; margin: 0 auto; padding-block: 40px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+header { display: grid; gap: 10px; padding-bottom: 24px; border-bottom: 1px solid var(--line); margin-bottom: 28px; }
+.kicker { color: var(--accent); font-weight: 700; letter-spacing: .04em; font-size: 14px; }
+h1 { font-family: var(--display); font-weight: 700; font-size: clamp(30px, 5vw, 42px); line-height: 1.15; margin: 0; text-wrap: balance; }
+.lead { color: var(--muted); margin: 0; max-width: 62ch; }
+.roles { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.role { font-size: 14px; font-weight: 600; padding: 3px 12px; border-radius: 999px; border: 1px solid currentColor; }
+.r-hunter { color: var(--hunter); } .r-company { color: var(--company); } .r-talent { color: var(--talent); } .r-admin { color: var(--admin); }
+nav.toc { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 20px; margin-bottom: 32px; }
+nav.toc h2 { font-size: 15px; margin: 0 0 8px; color: var(--muted); font-weight: 600; }
+nav.toc ol { margin: 0; padding-inline-start: 22px; display: grid; gap: 2px; }
+nav.toc a { color: var(--fg); text-decoration: none; border-bottom: 1px solid var(--line); }
+nav.toc a:hover, nav.toc a:focus-visible { color: var(--accent); border-color: var(--accent); outline: none; }
+section.sc { padding-block: 26px; border-bottom: 1px solid var(--line); scroll-margin-top: 16px; }
+section.sc:last-of-type { border-bottom: 0; }
+.sc-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; margin-bottom: 6px; }
+.sc-num { font-family: var(--display); color: var(--accent); font-size: 22px; font-weight: 700; }
+h2.sc-title { font-family: var(--display); font-weight: 700; font-size: 24px; margin: 0; text-wrap: balance; }
+.who { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 14px; }
+.why { margin: 0 0 14px; color: var(--muted); max-width: 64ch; }
+ol.steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; counter-reset: s; }
+ol.steps li { counter-increment: s; display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: start; }
+ol.steps li::before { content: counter(s); font-variant-numeric: tabular-nums; font-weight: 700; font-size: 14px; color: var(--accent); background: var(--accent-soft); width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; margin-top: 1px; }
+.step { min-width: 0; }
+.actor { font-weight: 700; }
+.a-hunter { color: var(--hunter); } .a-company { color: var(--company); } .a-talent { color: var(--talent); } .a-admin { color: var(--admin); }
+.ui { background: var(--accent-soft); color: var(--fg); padding: 0 6px; border-radius: 4px; white-space: nowrap; font-weight: 600; font-size: 15px; }
+.note { margin-top: 14px; padding: 12px 16px; background: var(--surface); border-inline-start: 3px solid var(--accent); border-radius: 6px; max-width: 64ch; }
+.note b { color: var(--accent); }
+footer { margin-top: 36px; color: var(--muted); font-size: 14px; }
+@media (max-width: 480px) { body { font-size: 16px; } .ui { white-space: normal; } }
+</style>
+
+<div class="wrap" dir="rtl" lang="he">
+  <header>
+    <div class="kicker">Hunters · מדריך הדגמה</div>
+    <h1>תהליכי העבודה ב-Hunters</h1>
+    <p class="lead">שבעה תרחישים מקצה לקצה שמראים איך המשתמשים במערכת עובדים זה מול זה: מהעלאת מועמד ועד קבלה לעבודה, הגשה אנונימית עם NDA, מכרזים וניהול מערכת. כל תרחיש כתוב לפי הסדר שבו מציגים אותו.</p>
+    <div class="roles" aria-label="סוגי משתמשים">
+      <span class="role r-hunter">הד-האנטר</span>
+      <span class="role r-company">חברה</span>
+      <span class="role r-talent">מועמד/ת (טאלנט)</span>
+      <span class="role r-admin">Admin</span>
+    </div>
+  </header>
+
+  <nav class="toc" aria-label="תוכן">
+    <h2>התרחישים</h2>
+    <ol>
+      <li><a href="#s1">הד-האנטר מגיש מועמד לחברה – פרופיל מלא</a></li>
+      <li><a href="#s2">הגשה אנונימית, שאלות, NDA וחשיפת פרופיל</a></li>
+      <li><a href="#s3">מועמד/ת מגיש/ה מועמדות בעצמו/ה</a></li>
+      <li><a href="#s4">שיתוף פעולה בין הד-האנטרים (עמלת שת״פ)</a></li>
+      <li><a href="#s5">מכרז: פרסום, הגשות והפצה</a></li>
+      <li><a href="#s6">ניהול המערכת (Admin)</a></li>
+      <li><a href="#s7">מסלולים: FREE מול PLUS / PRO</a></li>
+    </ol>
+  </nav>
+
+  <section class="sc" id="s1">
+    <div class="sc-head"><span class="sc-num">1</span><h2 class="sc-title">הד-האנטר מגיש מועמד לחברה – פרופיל מלא</h2></div>
+    <div class="who"><span class="role r-hunter">הד-האנטר</span><span class="role r-company">חברה</span></div>
+    <ol class="steps">
+      <li><div class="step"><span class="actor a-company">החברה</span> מפרסמת משרה: <span class="ui">+ פרסום</span> ← משרה ← פרטי המשרה ← סוג פרסום (רגיל / מקודם / פרימיום).</div></li>
+      <li><div class="step"><span class="actor a-hunter">ההד-האנטר</span> מוסיף מועמד ב<span class="ui">הוספת מועמד</span>: מעלה קורות חיים, וה-AI ממלא את הפרטים, התקציר והחוזקות.</div></li>
+      <li><div class="step"><span class="actor a-hunter">ההד-האנטר</span> מוצא את המשרה ב<span class="ui">שיתופים</span> (סינון לפי תחום, שכר ואזור) ומגיש את המועמד עם <span class="ui">פרופיל מלא</span>.</div></li>
+      <li><div class="step"><span class="actor a-company">החברה</span> מקבלת התראה ופותחת את המועמד, והסטטוס מתעדכן ל<span class="ui">נצפה/תה</span> אצל שני הצדדים.</div></li>
+      <li><div class="step"><span class="actor a-company">החברה</span> רואה את כל פרטי המועמד: פרטי קשר, מקום עבודה נוכחי, ניסיון, תקציר AI, תשובות לשאלות הסינון, ציפיות שכר, הערות ההד-האנטר וקורות חיים להורדה.</div></li>
+      <li><div class="step"><span class="actor a-company">החברה</span> מחליטה: <span class="ui">מתאים/ה</span>, <span class="ui">לא מתאים/ה</span> עם סיבה מתוך רשימה, או סטטוס סופי (<span class="ui">התקבל/ה לעבודה</span> / <span class="ui">נדחה/תה</span> / <span class="ui">סגור</span>), עם אישור לפני השמירה.</div></li>
+      <li><div class="step"><span class="actor a-hunter">ההד-האנטר</span> מקבל התראה נפרדת על כל שינוי, וההיסטוריה של המועמדות מוצגת לשני הצדדים.</div></li>
+    </ol>
+  </section>
+
+  <section class="sc" id="s2">
+    <div class="sc-head"><span class="sc-num">2</span><h2 class="sc-title">הגשה אנונימית, שאלות, NDA וחשיפת פרופיל</h2></div>
+    <div class="who"><span class="role r-hunter">הד-האנטר</span><span class="role r-talent">מועמד/ת</span><span class="role r-company">חברה</span></div>
+    <p class="why">התרחיש שמבדיל את Hunters: המועמד מוגן עד ששני הצדדים מסכימים לחשיפה.</p>
+    <ol class="steps">
+      <li><div class="step"><span class="actor a-hunter">ההד-האנטר</span> (או <span class="actor a-talent">המועמד/ת</span> בעצמו/ה) מגיש/ה <span class="ui">פרופיל אנונימי</span>, ואפשר לחייב את מנהל/ת המשרה לחתום על <span class="ui">NDA</span> לפני הצפייה.</div></li>
+      <li><div class="step"><span class="actor a-company">החברה</span> רואה תקציר AI, תחום, רמת ניסיון, ציפיות שכר, שפות ותשובות, בלי שם, טלפון, אימייל, מקום עבודה וקורות חיים.</div></li>
+      <li><div class="step"><span class="actor a-company">החברה</span> בוחרת: <span class="ui">מתאים/ה</span> / <span class="ui">לא מתאים/ה</span> / <span class="ui">שאלות נוספות</span> / <span class="ui">בקשת NDA</span> / <span class="ui">בקשת פרופיל מלא</span>.</div></li>
+      <li><div class="step">השולח/ת עונה על השאלות מתוך <span class="ui">ממתינים</span>, חותם/ת על NDA אם נדרש, ומאשר/ת או דוחה את בקשת החשיפה.</div></li>
+      <li><div class="step">אחרי אישור החשיפה <span class="actor a-company">החברה</span> רואה את הפרופיל המלא, כולל מקום העבודה וקורות החיים.</div></li>
+    </ol>
+    <div class="note"><b>כשהחברה מסרבת לחתום על ה-NDA של המועמד/ת:</b> היא בוחרת סיבה מתוך רשימה, והמועמד/ת מקבל/ת הודעה עם הסיבה ואפשרויות להמשך: לשלוח פרופיל מלא, לשלוח ללא NDA, או <b>לשאול את מנהל/ת המשרה עד 3 שאלות</b> (ייצוג עבודה, פעם אחת). החברה עונה בפרטיות, ואחרי התשובות המועמד/ת ממשיך/ה במועמדות או פונה לצוות Hunters לעזרה.</div>
+  </section>
+
+  <section class="sc" id="s3">
+    <div class="sc-head"><span class="sc-num">3</span><h2 class="sc-title">מועמד/ת מגיש/ה מועמדות בעצמו/ה</h2></div>
+    <div class="who"><span class="role r-talent">מועמד/ת</span><span class="role r-company">חברה</span></div>
+    <ol class="steps">
+      <li><div class="step"><span class="actor a-talent">המועמד/ת</span> נרשם/ת: סוג פרופיל (אנונימי / גלוי) ← פרטים ← העלאת קורות חיים, וה-AI ממלא ניסיון, השכלה, תפקיד, שפות ותחומי התמחות ויוצר תקציר מקצועי.</div></li>
+      <li><div class="step"><span class="actor a-talent">המועמד/ת</span> פותח/ת משרה ב<span class="ui">משרות</span> ומגיש/ה מועמדות, עם פרופיל מלא או אנונימי ועם NDA לפי הבחירה.</div></li>
+      <li><div class="step"><span class="actor a-company">החברה</span> מקבלת התראה, צופה במועמד/ת ומחליטה.</div></li>
+      <li><div class="step"><span class="actor a-talent">המועמד/ת</span> רואה את הסטטוס ב<span class="ui">המועמדויות שלי</span> ובהתראות.</div></li>
+    </ol>
+    <div class="note"><b>במסלול FREE</b> אפשר להגיש מועמדות אחת כל 30 יום ולרכוש הגשה חד פעמית נוספת למשרה מסוימת. ב-PRO ההגשות ללא הגבלה.</div>
+  </section>
+
+  <section class="sc" id="s4">
+    <div class="sc-head"><span class="sc-num">4</span><h2 class="sc-title">שיתוף פעולה בין הד-האנטרים (עמלת שת״פ)</h2></div>
+    <div class="who"><span class="role r-hunter">הד-האנטר א׳</span><span class="role r-hunter">הד-האנטר ב׳</span></div>
+    <ol class="steps">
+      <li><div class="step"><span class="actor a-hunter">הד-האנטר א׳</span> מפרסם משרה של לקוח שלו עם <span class="ui">עמלת שת״פ (%)</span> למי שיביא מועמד.</div></li>
+      <li><div class="step"><span class="actor a-hunter">הד-האנטר ב׳</span> רואה את המשרה ב<span class="ui">שיתופים</span> ומגיש מועמד משלו.</div></li>
+      <li><div class="step"><span class="actor a-hunter">הד-האנטר א׳</span> רואה את המועמד ב<span class="ui">המשרות שלי</span> ומנהל את הסטטוס.</div></li>
+      <li><div class="step">ההד-האנטרים יכולים לפתוח צ׳אט זה עם זה מתוך עמוד <span class="ui">הד האנטרים</span>.</div></li>
+    </ol>
+  </section>
+
+  <section class="sc" id="s5">
+    <div class="sc-head"><span class="sc-num">5</span><h2 class="sc-title">מכרז: פרסום, הגשות והפצה</h2></div>
+    <div class="who"><span class="role r-company">חברה</span><span class="role r-hunter">הד-האנטר / HR</span><span class="role r-admin">Admin</span></div>
+    <ol class="steps">
+      <li><div class="step"><span class="actor a-company">החברה</span> מפרסמת מכרז: <span class="ui">+ פרסום</span> ← מכרז (רגיל או מקודם, עם או בלי NDA).</div></li>
+      <li><div class="step">בשלב האחרון אפשר להוסיף <span class="ui">שירותי הפצה</span> ולבחור למי לשלוח: לכל המערכת, לפי תחום התמחות או למשתמשים מסוימים, להד-האנטרים ו/או למשתמשי HR.</div></li>
+      <li><div class="step"><span class="actor a-admin">ה-Admin</span> מאשר את ההפצה, והנמענים מקבלים התראה <span class="ui">איתרנו מכרז בדיוק בשבילכם!</span></div></li>
+      <li><div class="step"><span class="actor a-hunter">הד-האנטרים</span> ומשתמשי HR מגישים מועמדים למכרז, באופן אנונימי או עם פרופיל מלא. מועמדים לא מגישים ישירות.</div></li>
+      <li><div class="step"><span class="actor a-company">החברה</span> בוחנת את ההגשות כמו במשרה: מתאים/ה, שאלות, NDA, בקשת פרופיל מלא. בהחלטה על הצעה כספית יש חלון ביטול של 5 דקות לפני שהמציע מקבל עדכון.</div></li>
+    </ol>
+  </section>
+
+  <section class="sc" id="s6">
+    <div class="sc-head"><span class="sc-num">6</span><h2 class="sc-title">ניהול המערכת (Admin)</h2></div>
+    <div class="who"><span class="role r-admin">Admin</span></div>
+    <ol class="steps">
+      <li><div class="step"><span class="ui">משתמשים</span>: חיפוש לפי שם, אימייל או מספר, צפייה במסמכים ובתשלומים, אישור הד-האנטרים ומשתמשי HR חדשים, השעיה ומתן מסלול ידני.</div></li>
+      <li><div class="step"><span class="ui">משרות</span>, <span class="ui">מכרזים</span> ו<span class="ui">מועמדויות</span>: כל הפעילות במערכת, כולל סטטוס NDA, ואישור בקשות להפצת מכרזים.</div></li>
+      <li><div class="step"><span class="ui">מחירים וקופונים</span>: כל המחירים באתר מגיעים מכאן, כולל מנויים חודשיים, ל-3 חודשים ושנתיים, קידומים, הפצות ושירותים חד פעמיים.</div></li>
+      <li><div class="step"><span class="ui">דיווחים ופניות</span>, <span class="ui">שאלות נפוצות</span>, <span class="ui">רשימות מערכת</span> (כולל רשימות הסיבות) ו<span class="ui">יומן פעולות</span>.</div></li>
+    </ol>
+  </section>
+
+  <section class="sc" id="s7">
+    <div class="sc-head"><span class="sc-num">7</span><h2 class="sc-title">מסלולים: FREE מול PLUS / PRO</h2></div>
+    <div class="who"><span class="role r-hunter">הד-האנטר</span><span class="role r-talent">מועמד/ת</span></div>
+    <ol class="steps">
+      <li><div class="step"><span class="actor a-hunter">הד-האנטר FREE</span>: עד 4 הגשות בחודש. המגבלה מוצגת מראש בכל משרה, יחד עם תאריך החידוש וכפתור <span class="ui">שדרוג ל-PLUS</span>.</div></li>
+      <li><div class="step"><span class="actor a-hunter">הד-האנטר PLUS / PREMIUM</span>: הגשות ללא הגבלה, קידומים והפצות חינם בכל חודש, מאגר טאלנטים וצ׳אט. אפשר לשלם חודשי או שנתי (חיסכון של 10%).</div></li>
+      <li><div class="step"><span class="actor a-talent">מועמד/ת PRO</span>: מנוי ל-3 חודשים או לשנה, עם הגשות ללא הגבלה, קידום פרופיל לראש מאגר הטאלנטים ושירותים בהנחה.</div></li>
+      <li><div class="step">כל רכישה מופיעה ב<span class="ui">חשבוניות</span> של המשתמש, ואפשר לבטל חידוש אוטומטי ב<span class="ui">המנוי שלי</span>.</div></li>
+    </ol>
+  </section>
+
+  <footer>מעודכן ל-25.10.2026, לפי סביבת הבדיקות של Hunters.</footer>
+</div>

@@ -1,0 +1,13 @@
+import { chromium, devices } from 'playwright';
+import fs from 'fs';
+const st='/Users/avielshnaider/magnet-moe/.qa/auth/reg6-r11chk.json', SS='/Users/avielshnaider/magnet-moe/.qa/e2e/tmp-r11/';
+const b=await chromium.launch({headless:true});
+const ctx=await b.newContext({...devices['iPhone 13'],storageState:st,locale:'he-IL'});
+const p=await ctx.newPage(); const log=[];
+p.on('response',async r=>{ if(/supabase\.co\/(rest|functions)/.test(r.url())){ let t='';try{t=(await r.text()).slice(0,1500)}catch{}; log.push(r.request().method()+' '+r.status()+' '+r.url().slice(0,300)+'\n  BODY:'+(r.request().postData()||'').slice(0,400)+'\n  RESP:'+t);} });
+await p.goto('https://magnet.expo.app/discover',{waitUntil:'domcontentloaded'}); await p.waitForTimeout(10000);
+await p.screenshot({path:SS+'sivan-discover.png'});
+fs.writeFileSync(SS+'sivan-net.txt',log.join('\n'));
+const btns=await p.locator('[role=button],button,a').evaluateAll(x=>x.map(e=>(e.getAttribute('aria-label')||e.textContent||'').trim()).filter(Boolean));
+console.log(btns.join(' | '));
+await ctx.storageState({path:st}); await b.close();

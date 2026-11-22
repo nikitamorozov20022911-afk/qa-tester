@@ -1,0 +1,1260 @@
+
+Execution of 154 workers started at 2026-11-15T16:59:15.796Z
+
+[0-0] RUNNING in Android on Android - file:///specs/achievements/ac-01-grid-six-achievements.e2e.ts
+[0-0] PASSED in Android on Android - file:///specs/achievements/ac-01-grid-six-achievements.e2e.ts
+[0-1] RUNNING in Android on Android - file:///specs/achievements/ac-02-achievement-dialog-share.e2e.ts
+[0-1] Error in "Достижения.AC-02 Окно полученного достижения — строка ободрения, «חזרה למסך ראשי», предпросмотр шеринга с текстом #6a86f7d9 @prod-safe"
+Error: Expect $(`android=new UiSelector().text("שיתוף ההישג")`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:64:30)
+    at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/achievements/ac-02-achievement-dialog-share.e2e.ts:46:11)
+[0-1] Error in "Достижения.AC-02b «שיתוף ההישג» → «המשך לשיתוף» → системное окно (закрыто без отправки) → «סגירה» → вкладки работают; «מפת השפעה» без изменений #403c0b3d #6a86f7e8 @prod-safe"
+Error: Expect $(`android=new UiSelector().text("שיתוף ההישג")`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:64:30)
+    at openAchievement30 (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/achievements/ac-02-achievement-dialog-share.e2e.ts:27:9)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/achievements/ac-02-achievement-dialog-share.e2e.ts:72:5)
+[0-1] Error in "Достижения.AC-02c «שיתוף ההישג» → «ביטול»: окно достижения остаётся → «סגירה» → вкладки работают; карта без изменений #403c0b3d @prod-safe"
+Error: Expect $(`android=new UiSelector().text("שיתוף ההישג")`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:64:30)
+    at openAchievement30 (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/achievements/ac-02-achievement-dialog-share.e2e.ts:27:9)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/achievements/ac-02-achievement-dialog-share.e2e.ts:87:5)
+[0-1] FAILED in Android on Android - file:///specs/achievements/ac-02-achievement-dialog-share.e2e.ts
+[0-2] RUNNING in Android on Android - file:///specs/admin/ad-01-02-admin-access-and-entry.e2e.ts
+[0-2] [admin] не удалось вернуть USER1: Error: element ("android=new UiSelector().text("פרופיל אישי")") still not displayed after 20000ms
+[0-2]     at <anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/webdriverio/build/node.js:6474:15)
+[0-2]     at async Element.wrapCommandFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1100:23)
+[0-2]     at async Element.elementErrorHandlerCallbackFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/webdriverio/build/node.js:10494:24)
+[0-2]     at async Element.wrapCommandFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1100:23)
+[0-2]     at async Element.wrapCommandFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1100:23)
+[0-2]     at async Element.elementErrorHandlerCallbackFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/webdriverio/build/node.js:10494:24)
+[0-2]     at async Element.wrapCommandFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1100:23)
+[0-2]     at async logout (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:103:3)
+[0-2]     at async switchAccount (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:115:3)
+[0-2]     at async backToUser1 (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/admin.ts:48:9)
+[0-2] Error in "Админка в приложении: доступ.AD-01/AD-02 USER1 не видит «ממשק ניהול התוכן»; ADMIN видит «ניהול» и открывает «ניהול תכני תפילה» #a5decf4a @prod-safe"
+Error: element ("android=new UiSelector().text("פרופיל אישי")") still not displayed after 20000ms
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/admin/ad-01-02-admin-access-and-entry.e2e.ts:19:7)
+[0-2] FAILED in Android on Android - file:///specs/admin/ad-01-02-admin-access-and-entry.e2e.ts
+[0-3] RUNNING in Android on Android - file:///specs/admin/ad-04-prayer-admin-screen-cards.e2e.ts
+[0-3] [admin] не удалось вернуть USER1: Error: element ("android=new UiSelector().text("פרופיל אישי")") still not displayed after 20000ms
+[0-3]     at <anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/webdriverio/build/node.js:6474:15)
+[0-3]     at async Element.wrapCommandFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1100:23)
+[0-3]     at async Element.elementErrorHandlerCallbackFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/webdriverio/build/node.js:10494:24)
+[0-3]     at async Element.wrapCommandFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1100:23)
+[0-3]     at async Element.wrapCommandFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1100:23)
+[0-3]     at async Element.elementErrorHandlerCallbackFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/webdriverio/build/node.js:10494:24)
+[0-3]     at async Element.wrapCommandFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1100:23)
+[0-3]     at async logout (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:103:3)
+[0-3]     at async switchAccount (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:115:3)
+[0-3]     at async backToUser1 (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/admin.ts:48:9)
+[0-3] Error in "Админка в приложении: экран молитвы.AD-04 «ערבית · נוסח אשכנז»: карточки, статусы קטעים «מאושר · …»/«טקסט זמני, טרם אושר», сводка «הקראות הקטעים», история #a5decf4a #6a86f7ed9d38 @prod-safe"
+Error: element ("android=new UiSelector().text("פרופיל אישי")") still not displayed after 20000ms
+    at async logout (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:103:3)
+    at async switchAccount (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:115:3)
+    at async asAdmin (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/admin.ts:44:35)
+[0-3] FAILED in Android on Android - file:///specs/admin/ad-04-prayer-admin-screen-cards.e2e.ts
+[0-7] RUNNING in Android on Android - file:///specs/admin/ad-08-broken-mp3-c66fac12.e2e.ts
+[0-7] 2026-11-15T17:03:43.030Z WARN webdriver: Request encountered a stale element - terminating request
+[0-7] 2026-11-15T17:03:43.197Z WARN webdriver: Request encountered a stale element - terminating request
+[0-7] [app-e2e] Войдите вручную под аккаунтом клиента (админ) — тест ждёт главный экран…
+[0-7] Error in "Админка в приложении: битый MP3.AD-08 битый qa-broken.mp3 → «הקובץ שנבחר אינו קובץ שמע תקין…», записи нет #c66fac12 @prod-safe @manual-check"
+Error: Timeout of 300000ms exceeded. The execution in the test "Админка в приложении: битый MP3 AD-08 битый qa-broken.mp3 → «הקובץ שנבחר אינו קובץ שמע תקין…», записи нет #c66fac12 @prod-safe @manual-check" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/admin/ad-08-broken-mp3-c66fac12.e2e.ts)
+    at createTimeoutError (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/mocha/lib/errors.js:498:15)
+    at Runnable._timeoutError (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/mocha/lib/runnable.js:429:10)
+    at Timeout.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/mocha/lib/runnable.js:244:24)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+[0-7] FAILED in Android on Android - file:///specs/admin/ad-08-broken-mp3-c66fac12.e2e.ts
+[0-8] RUNNING in Android on Android - file:///specs/admin/ad-09-edit-section-rtl-4063a39b.e2e.ts
+[0-8] [app-e2e] OTP в accounts.env (4 цифр) ≠ 6 клеток — введите код из SMS вручную, тест ждёт главный экран…
+[0-8] Error in "Админка в приложении: ввод справа налево.AD-09 «עריכת קטע» «בורא פרי העץ»: «כותרת הקטע»/«טקסט התפילה» — значение, очистка, «בדיקה», дописывание; выход без сохранения → «כל הקטעים מאושרים…» #4063a39b @prod-safe @manual-check"
+Error: element ("android=new UiSelector().text("פרופיל אישי")") still not displayed after 20000ms
+    at async logout (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:103:3)
+    at async switchAccount (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:115:3)
+    at async asAdmin (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/admin.ts:44:35)
+[0-8] FAILED in Android on Android - file:///specs/admin/ad-09-edit-section-rtl-4063a39b.e2e.ts
+[0-10] RUNNING in Android on Android - file:///specs/admin/gp-07-admin-user-approval-consistency.e2e.ts
+[0-10] [admin] не удалось вернуть USER1: Error: element ("android=new UiSelector().text("פרופיל אישי")") still not displayed after 20000ms
+[0-10]     at <anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/webdriverio/build/node.js:6474:15)
+[0-10]     at async Element.wrapCommandFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1100:23)
+[0-10]     at async Element.elementErrorHandlerCallbackFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/webdriverio/build/node.js:10494:24)
+[0-10]     at async Element.wrapCommandFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1100:23)
+[0-10]     at async Element.wrapCommandFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1100:23)
+[0-10]     at async Element.elementErrorHandlerCallbackFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/webdriverio/build/node.js:10494:24)
+[0-10]     at async Element.wrapCommandFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1100:23)
+[0-10]     at async logout (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:103:3)
+[0-10]     at async switchAccount (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:115:3)
+[0-10]     at async backToUser1 (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/admin.ts:48:9)
+[0-10] Error in "Админка в приложении: согласованность с экраном пользователя.GP-07 Имя и дата утверждения «המעריב ערבים» в админке = строке «אושר על ידי» у USER1 (ערבית אשכנז 3/15) #a5decf4a @prod-safe"
+Error: element ("android=new UiSelector().text("פרופיל אישי")") still not displayed after 20000ms
+    at async logout (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:103:3)
+    at async switchAccount (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:115:3)
+    at async asAdmin (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/admin.ts:44:35)
+[0-10] FAILED in Android on Android - file:///specs/admin/gp-07-admin-user-approval-consistency.e2e.ts
+[0-11] RUNNING in Android on Android - file:///specs/auth-login/al-01-phone-login-otp.e2e.ts
+[0-11] 2026-11-15T17:12:31.849Z WARN webdriver: Request encountered a stale element - terminating request
+[0-11] 2026-11-15T17:12:32.085Z WARN webdriver: Request encountered a stale element - terminating request
+[0-11] Error in "Вход по мобильному.AL-01 Splash → «בואו נתחיל» → экран номера (мокап, две ссылки на документы) → код → главная #6a86f7ec @prod-safe"
+Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "0501112233"
+Received string:    "050-000-0000"
+    at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/auth-login/al-01-phone-login-otp.e2e.ts:48:35)
+[0-11] Error in "Вход по мобильному."after all" hook: wrappedHook for "AL-01 Splash → «בואו נתחיל» → экран номера (мокап, две ссылки на документы) → код → главная #6a86f7ec @prod-safe""
+Error: element ("android=new UiSelector().className("android.widget.EditText")") still not displayed after 15000ms
+    at async login (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:31:3)
+    at async ensureAppReady (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:89:30)
+    at async restoreLogin (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/auth-login/al-01-phone-login-otp.e2e.ts:31:3)
+[0-11] FAILED in Android on Android - file:///specs/auth-login/al-01-phone-login-otp.e2e.ts
+[0-12] RUNNING in Android on Android - file:///specs/auth-login/al-03-relogin-after-logout.e2e.ts
+[0-12] [app-e2e] OTP в accounts.env (4 цифр) ≠ 6 клеток — введите код из SMS вручную, тест ждёт главный экран…
+[0-12] Error in "Вход по мобильному.AL-03 Повторный вход после «התנתקות» — главная открывается, без ошибки #6aa268eb @prod-safe"
+Error: element ("android=new UiSelector().text("פרופיל אישי")") still not displayed after 20000ms
+    at async logout (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/auth-login/al-03-relogin-after-logout.e2e.ts:13:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/auth-login/al-03-relogin-after-logout.e2e.ts:38:5)
+[0-12] FAILED in Android on Android - file:///specs/auth-login/al-03-relogin-after-logout.e2e.ts
+[0-13] RUNNING in Android on Android - file:///specs/auth-login/al-04-no-external-provider-6a86f7e8.e2e.ts
+[0-13] Error in "Вход."before all" hook: wrappedHook for "AL-04 Экран входа: только «כניסה דרך מספר נייד», без внешних провайдеров и без «ההצטרפות מתחילה בדיוק כאן» #6a86f7e8 @prod-safe""
+Error: element ("android=new UiSelector().text("פרופיל אישי")") still not displayed after 20000ms
+    at async logout (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:103:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/auth-login/al-04-no-external-provider-6a86f7e8.e2e.ts:26:24)
+[0-13] FAILED in Android on Android - file:///specs/auth-login/al-04-no-external-provider-6a86f7e8.e2e.ts
+[0-14] RUNNING in Android on Android - file:///specs/brachot/br-01-blessings-list-search-screen.e2e.ts
+[0-14] Error in "מדור ברכות.BR-01 «ברכות» → список и строка נוסח, поиск «גפן», экран ברכה без элементов молитвы, «חזרה לברכות» #6a86f7ee5747 @prod-safe"
+Error: Expect $(`android=new UiSelector().textMatches("הברכות מוצגות בנוסח (אשכנז|ספרד) שנשמר בפרופיל\.?")`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/brachot/br-01-blessings-list-search-screen.e2e.ts:26:46)
+[0-14] FAILED in Android on Android - file:///specs/brachot/br-01-blessings-list-search-screen.e2e.ts
+[0-15] RUNNING in Android on Android - file:///specs/guided-prayer/gp-01-run-without-finish.e2e.ts
+[0-15] Error in "Молитва по шагам.GP-01 Молитва: шапка, «X מתוך Y», המשך/קודם, выход и возврат на тот же חלק #6a86f7e9 @prod-safe"
+Error: element ("android=new UiSelector().text("מנחה")") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-01-run-without-finish.e2e.ts:41:7)
+[0-15] FAILED in Android on Android - file:///specs/guided-prayer/gp-01-run-without-finish.e2e.ts
+[0-16] RUNNING in Android on Android - file:///specs/guided-prayer/gp-02-explanation-layer.e2e.ts
+[0-16] PASSED in Android on Android - file:///specs/guided-prayer/gp-02-explanation-layer.e2e.ts
+[0-17] RUNNING in Android on Android - file:///specs/guided-prayer/gp-03-nusach-availability-switch.e2e.ts
+[0-17] Error in "Молитва по шагам.GP-03 Нусах: в меню 2 пункта (без «עדות המזרח · בקרוב»), смена на уровне всей молитвы с подтверждением и возвратом #ecda5d38 #32e3cd9a @prod-safe"
+Error: element ("android=new UiSelector().text("המשך")") still not displayed after 15000ms
+    at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+    at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-03-nusach-availability-switch.e2e.ts:23:5)
+[0-17] FAILED in Android on Android - file:///specs/guided-prayer/gp-03-nusach-availability-switch.e2e.ts
+[0-18] RUNNING in Android on Android - file:///specs/guided-prayer/gp-05-explanation-and-source-additions.e2e.ts
+[0-18] PASSED in Android on Android - file:///specs/guided-prayer/gp-05-explanation-and-source-additions.e2e.ts
+[0-19] RUNNING in Android on Android - file:///specs/guided-prayer/gp-05-explanation-and-source-berachot.e2e.ts
+[0-19] PASSED in Android on Android - file:///specs/guided-prayer/gp-05-explanation-and-source-berachot.e2e.ts
+[0-20] RUNNING in Android on Android - file:///specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts
+[0-20] Error in "Молитва по шагам.GP-05 Строка источника во всех фрагментах основных молитв — shacharit_ashkenaz #6a86f7df #a5decf4a @prod-safe"
+Error: Timeout of 300000ms exceeded. The execution in the test "Молитва по шагам GP-05 Строка источника во всех фрагментах основных молитв — shacharit_ashkenaz #6a86f7df #a5decf4a @prod-safe" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts)
+    at createTimeoutError (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/mocha/lib/errors.js:498:15)
+    at Runnable._timeoutError (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/mocha/lib/runnable.js:429:10)
+    at Timeout.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/mocha/lib/runnable.js:244:24)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7)
+[0-20] Error in "Молитва по шагам.GP-05 Строка источника во всех фрагментах основных молитв — shacharit_sfarad #6a86f7df #a5decf4a @prod-safe"
+Error: Expect $(`android=new UiSelector().text("שחרית (ספרדי)")`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:64:30)
+    at open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:65:9)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:85:7)
+[0-20] 2026-11-15T17:24:14.657Z WARN webdriver: Request encountered a stale element - terminating request
+[0-20] Error in "Молитва по шагам.GP-05 Строка источника во всех фрагментах основных молитв — mincha_ashkenaz #6a86f7df #a5decf4a @prod-safe"
+Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 1
+Received: 0
+    at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:94:30)
+[0-20] Error in "Молитва по шагам.GP-05 Строка источника во всех фрагментах основных молитв — mincha_sfarad #6a86f7df #a5decf4a @prod-safe"
+Error: Expect $(`android=new UiSelector().text("מנחה (ספרדי)")`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:64:30)
+    at open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:65:9)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:85:7)
+[0-20] Error in "Молитва по шагам.GP-05 Строка источника во всех фрагментах основных молитв — arvit_ashkenaz #6a86f7df #a5decf4a @prod-safe"
+Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 1
+Received: 0
+    at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:94:30)
+[0-20] Error in "Молитва по шагам.GP-05 Строка источника во всех фрагментах основных молитв — arvit_sfarad #6a86f7df #a5decf4a @prod-safe"
+Error: element ("android=new UiSelector().textMatches("\d+ מתוך \d+")") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:36:3)
+    at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:57:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:85:7)
+[0-20] FAILED in Android on Android - file:///specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts
+[0-21] RUNNING in Android on Android - file:///specs/guided-prayer/gp-05-explanation-example-mincha-sfarad-ashrei.e2e.ts
+[0-21] Error in "Молитва по шагам.GP-05 Пример пояснения: מנחה ספרד «אשרי» — «תהילה לפני תפילת המנחה» #6a86f7df @prod-safe"
+Error: element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+    at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+    at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-example-mincha-sfarad-ashrei.e2e.ts:27:5)
+[0-21] FAILED in Android on Android - file:///specs/guided-prayer/gp-05-explanation-example-mincha-sfarad-ashrei.e2e.ts
+[0-22] RUNNING in Android on Android - file:///specs/guided-prayer/gp-06-share-button-geometry-and-absence.e2e.ts
+[0-22] Error in "Молитва по шагам.GP-06 «שיתוף התפילה»: под «קודם»/«סיים תפילה», над «האזן להקראה» (מנחה ספרד, 2 מתוך 11) #6a86f7df @prod-safe"
+Error: element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+    at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+    at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-geometry-and-absence.e2e.ts:43:5)
+[0-22] FAILED in Android on Android - file:///specs/guided-prayer/gp-06-share-button-geometry-and-absence.e2e.ts
+[0-23] RUNNING in Android on Android - file:///specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts
+[0-23] Error in "Молитва по шагам.GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — shacharit_ashkenaz #6a86f7df @prod-safe"
+Error: element ("android=new UiSelector().textMatches("\d+ מתוך \d+")") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:36:3)
+    at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:43:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:71:7)
+[0-23] Error in "Молитва по шагам.GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — shacharit_sfarad #6a86f7df @prod-safe"
+Error: element ("android=new UiSelector().text("שחרית")") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+    at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:43:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:71:7)
+[0-23] Error in "Молитва по шагам.GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — mincha_ashkenaz #6a86f7df @prod-safe"
+Error: element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+    at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+    at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:73:7)
+[0-23] Error in "Молитва по шагам.GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — mincha_sfarad #6a86f7df @prod-safe"
+Error: element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+    at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+    at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:73:7)
+[0-23] Error in "Молитва по шагам.GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — arvit_ashkenaz #6a86f7df @prod-safe"
+Error: element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+    at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+    at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:73:7)
+[0-23] Error in "Молитва по шагам.GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — arvit_sfarad #6a86f7df @prod-safe"
+Error: element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+    at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+    at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:73:7)
+[0-23] FAILED in Android on Android - file:///specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts
+[0-24] RUNNING in Android on Android - file:///specs/guided-prayer/gp-06-share-dialog-text.e2e.ts
+[0-24] Error in "Молитва по шагам.GP-06 Окно «שיתוף התפילה»: текст и ссылка, «ביטול» закрывает — מנחה ספרד и ערבית אשכנז #6a86f7df @prod-safe"
+Error: element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+    at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+    at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-dialog-text.e2e.ts:45:5)
+[0-24] FAILED in Android on Android - file:///specs/guided-prayer/gp-06-share-dialog-text.e2e.ts
+[0-25] RUNNING in Android on Android - file:///specs/guided-prayer/gp-07-approved-source-line.e2e.ts
+[0-25] Error in "Молитва по шагам.GP-07 Утверждённые фрагменты: «מקור: … · אושר על ידי …»; неутверждённый — «הטקסט עדיין לא אושר…» #a5decf4a @prod-safe"
+Error: element ("android=new UiSelector().textMatches("\d+ מתוך \d+")") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:36:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-07-approved-source-line.e2e.ts:44:5)
+[0-25] FAILED in Android on Android - file:///specs/guided-prayer/gp-07-approved-source-line.e2e.ts
+[0-26] RUNNING in Android on Android - file:///specs/guided-prayer/gp-08-no-recording-listen-disabled.e2e.ts
+[0-26] Error in "Молитва по шагам.GP-08 Нет записи: «אין הקראה לקטע הזה», «השמע» неактивна — מנחה ספרד, שחרית אשכנז, ערבית אשכנז #a5decf4a @prod-safe"
+Error: element ("android=new UiSelector().textMatches("\d+ מתוך \d+")") still not displayed after 15000ms
+    at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:36:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-08-no-recording-listen-disabled.e2e.ts:41:7)
+[0-26] FAILED in Android on Android - file:///specs/guided-prayer/gp-08-no-recording-listen-disabled.e2e.ts
+[0-27] RUNNING in Android on Android - file:///specs/guided-prayer/gp-09-prayer-title-centered-b398d352.e2e.ts
+[0-27] [GP-09] «בחירת נוסח. הנוסח המוצג: אשכנזי»: x=298 w=484 центр=540, экран/2=540
+[0-27] PASSED in Android on Android - file:///specs/guided-prayer/gp-09-prayer-title-centered-b398d352.e2e.ts
+[0-28] RUNNING in Android on Android - file:///specs/guided-prayer/gp-10-ashrei-lines-no-overlap-39f5e7d5.e2e.ts
+[0-28] Error in "Строки молитвы без наложения (#39f5e7d5).GP-10 «מנחה (אשכנזי)» → «אשרי»: строки с ניקוד одна под другой, без наложения, до конца отрывка #39f5e7d5 @prod-safe @manual-check"
+Error: element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+    at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+    at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-10-ashrei-lines-no-overlap-39f5e7d5.e2e.ts:44:5)
+[0-28] FAILED in Android on Android - file:///specs/guided-prayer/gp-10-ashrei-lines-no-overlap-39f5e7d5.e2e.ts
+[0-29] RUNNING in Android on Android - file:///specs/home/hm-01-daily-home.e2e.ts
+[0-29] 2026-11-15T17:34:50.655Z WARN webdriver: Request encountered a stale element - terminating request
+[0-29] 2026-11-15T17:34:51.348Z WARN webdriver: Request encountered a stale element - terminating request
+[0-29] PASSED in Android on Android - file:///specs/home/hm-01-daily-home.e2e.ts
+[0-30] RUNNING in Android on Android - file:///specs/home/hm-02-recent-prayers.e2e.ts
+[0-30] PASSED in Android on Android - file:///specs/home/hm-02-recent-prayers.e2e.ts
+[0-31] RUNNING in Android on Android - file:///specs/home/hm-03-time-window-and-date-tags.e2e.ts
+[0-31] Error in "Главная.HM-03 Окно времени под датой (вверху слева); тег важной даты еврейский #6a86f7e5 @prod-safe"
+Error: Не найден текст после прокрутки: 30.04.2004
+    at scrollToText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:84:9)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/home/hm-03-time-window-and-date-tags.e2e.ts:38:5)
+[0-31] FAILED in Android on Android - file:///specs/home/hm-03-time-window-and-date-tags.e2e.ts
+[0-32] RUNNING in Android on Android - file:///specs/home/hm-04-prayer-name-not-clipped-b7a78c66.e2e.ts
+[0-32] [HM-04] «ערבית» y=569 h=147; приветствие низ=461. @manual-check: верх букв на скрине не срезан.
+[0-32] PASSED in Android on Android - file:///specs/home/hm-04-prayer-name-not-clipped-b7a78c66.e2e.ts
+[0-33] RUNNING in Android on Android - file:///specs/impact-map/im-01-invite-dialog-text.e2e.ts
+[0-33] PASSED in Android on Android - file:///specs/impact-map/im-01-invite-dialog-text.e2e.ts
+[0-34] RUNNING in Android on Android - file:///specs/impact-map/im-02-map-me-two-branches-counter.e2e.ts
+[0-34] PASSED in Android on Android - file:///specs/impact-map/im-02-map-me-two-branches-counter.e2e.ts
+[0-35] RUNNING in Android on Android - file:///specs/impact-map/im-03-own-invite-link-message.e2e.ts
+[0-35] PASSED in Android on Android - file:///specs/impact-map/im-03-own-invite-link-message.e2e.ts
+[0-39] RUNNING in Android on Android - file:///specs/important-dates/id-04-calendar-month-year-picker.e2e.ts
+[0-39] Error in "Важные даты и אזכרות.ID-04 Календарь в окне даты — дни текущего месяца, двойной еврейский заголовок, выбор месяца/года, без ручного ввода #6a86f7e0 @prod-safe"
+Error: Expect $(`~נובמבר 2026: בחירת שנה וחודש`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/important-dates/id-04-calendar-month-year-picker.e2e.ts:38:59)
+[0-39] FAILED in Android on Android - file:///specs/important-dates/id-04-calendar-month-year-picker.e2e.ts
+[0-40] RUNNING in Android on Android - file:///specs/important-dates/id-05-hebrew-date-sunset-1cbe2254.e2e.ts
+[0-40] [skip] ID-05a Окно «עריכת תאריך» записи закрывается «סגירה» по элементу (#36a75b77) #1cbe2254 @prod-safe: запись ID-05 не создана
+[0-40] PASSED in Android on Android - file:///specs/important-dates/id-05-hebrew-date-sunset-1cbe2254.e2e.ts
+[0-43] RUNNING in Android on Android - file:///specs/journey/jr-01-real-data.e2e.ts
+[0-43] PASSED in Android on Android - file:///specs/journey/jr-01-real-data.e2e.ts
+[0-44] RUNNING in Android on Android - file:///specs/journey/jr-02-header-opens-profile.e2e.ts
+[0-44] Error in "«המסע שלי».JR-02 Клик по аватару или имени открывает «פרופיל אישי» #f6970bc6 @prod-safe"
+Error: element ("android=new UiSelector().text("אקדא טסט")") still not displayed after 15000ms
+    at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/journey/jr-02-header-opens-profile.e2e.ts:24:5)
+[0-44] FAILED in Android on Android - file:///specs/journey/jr-02-header-opens-profile.e2e.ts
+[0-46] RUNNING in Android on Android - file:///specs/journey/jr-06-rankup-window-not-repeated.e2e.ts
+[0-46] Error in "«המסע שלי».JR-06 Окно «עלית דרגה» не показывается повторно без повышения (user1, уровень 10) #22c9d541 @prod-safe"
+Error: Expect $(`android=new UiSelector().text("תזכורות מהירות")`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:64:30)
+    at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/journey/jr-06-rankup-window-not-repeated.e2e.ts:43:11)
+[0-46] FAILED in Android on Android - file:///specs/journey/jr-06-rankup-window-not-repeated.e2e.ts
+[0-47] RUNNING in Android on Android - file:///specs/journey/jr-07-statusbar-scroll-07650fd9.e2e.ts
+[0-47] Error in "Строка статуса при прокрутке.JR-07 «המסע שלי» и «בית»: при прокрутке контент не заходит под строку статуса #07650fd9 @prod-safe @manual-check"
+Error: expect(received).toBeGreaterThanOrEqual(expected)
+
+Expected: >= 127
+Received:    0
+    at checkNoContentUnderStatusBar (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/journey/jr-07-statusbar-scroll-07650fd9.e2e.ts:40:16)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/journey/jr-07-statusbar-scroll-07650fd9.e2e.ts:60:5)
+[0-47] FAILED in Android on Android - file:///specs/journey/jr-07-statusbar-scroll-07650fd9.e2e.ts
+[0-48] RUNNING in Android on Android - file:///specs/nusach-switch/ns-01-menu.e2e.ts
+[0-48] Error in "Смена нусаха внутри молитвы.NS-01 Меню смены нусаха — только список, активный отмечен, карточка в пределах экрана #6a86f7d8 #32e3cd9a @prod-safe"
+Error: Expect $(`android=new UiSelector().text("✓")`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+    at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:64:30)
+    at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/nusach-switch/ns-01-menu.e2e.ts:53:11)
+[0-48] FAILED in Android on Android - file:///specs/nusach-switch/ns-01-menu.e2e.ts
+[0-49] RUNNING in Android on Android - file:///specs/nusach-switch/ns-02-cancel-and-replace.e2e.ts
+[0-49] Error in "Смена нусаха внутри молитвы.NS-02 «ביטול» оставляет всё как было, «החלף» переносит в параллельный קטע #6a86f7fdaa68 @prod-safe"
+Error: element ("android=new UiSelector().text("המשך")") still not displayed after 15000ms
+    at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+    at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/nusach-switch/ns-02-cancel-and-replace.e2e.ts:15:5)
+[0-49] FAILED in Android on Android - file:///specs/nusach-switch/ns-02-cancel-and-replace.e2e.ts
+[0-50] RUNNING in Android on Android - file:///specs/nusach-switch/ns-02-missing-section-fallback.e2e.ts
+[0-50] Error in "Смена нусаха внутри молитвы.NS-02 Фрагмента нет в другом нусахе → переход к следующему с пояснением #6a86f7d8 @prod-safe"
+Error: element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+    at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+    at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/nusach-switch/ns-02-missing-section-fallback.e2e.ts:36:5)
+[0-50] FAILED in Android on Android - file:///specs/nusach-switch/ns-02-missing-section-fallback.e2e.ts
+[0-51] RUNNING in Android on Android - file:///specs/nusach-switch/ns-02-profile-unchanged.e2e.ts
+[0-51] Error in "Смена нусаха внутри молитвы.NS-02 После смены нусаха в молитве профиль не меняется #6a86f7d8 @prod-safe"
+Error: element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+    at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+    at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/nusach-switch/ns-02-profile-unchanged.e2e.ts:38:5)
+[0-51] FAILED in Android on Android - file:///specs/nusach-switch/ns-02-profile-unchanged.e2e.ts
+[0-52] RUNNING in Android on Android - file:///specs/nusach-switch/ns-02-same-nusach-no-dialog.e2e.ts
+[0-52] Error in "Смена нусаха внутри молитвы.NS-02 Выбор текущего нусаха — без диалога #6a86f7d8 @prod-safe"
+Error: element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+    at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+    at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/nusach-switch/ns-02-same-nusach-no-dialog.e2e.ts:15:5)
+[0-52] FAILED in Android on Android - file:///specs/nusach-switch/ns-02-same-nusach-no-dialog.e2e.ts
+[0-53] RUNNING in Android on Android - file:///specs/onboarding/ob-01-registered-user-redirect.e2e.ts
+[0-53] PASSED in Android on Android - file:///specs/onboarding/ob-01-registered-user-redirect.e2e.ts
+[0-54] RUNNING in Android on Android - file:///specs/prayer-catalog/pc-01-catalog-search.e2e.ts
+[0-54] PASSED in Android on Android - file:///specs/prayer-catalog/pc-01-catalog-search.e2e.ts
+[0-55] RUNNING in Android on Android - file:///specs/prayer-catalog/pc-02-prayers-screen-no-crash-70e8283a.e2e.ts
+[0-55] Error in "Экран «תפילות» без крэша (#70e8283a).PC-02a Вкладка «תפילות» открывает S-27, прокрутка до конца, 3 повторных входа — приложение живо #70e8283a @prod-safe"
+Error: вкладка, повторный вход 1: экран «תפילות» не открылся
+    at async waitPrayersScreen (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-1410.ts:37:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-catalog/pc-02-prayers-screen-no-crash-70e8283a.e2e.ts:22:7)
+[0-55] Error in "Экран «תפילות» без крэша (#70e8283a).PC-02b Экран молитвы → ☰ → «רשימת התפילות» открывает S-27, прокрутка — приложение живо #70e8283a @prod-safe"
+Error: Не найдена кнопка ☰ экрана молитвы по подписи (калибровка: снять page source, добавить label в MENU_LABELS)
+    at tapPrayerMenu (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-1410.ts:72:9)
+    at async openPrayersFromMenu (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-1410.ts:77:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-catalog/pc-02-prayers-screen-no-crash-70e8283a.e2e.ts:31:7)
+[0-55] FAILED in Android on Android - file:///specs/prayer-catalog/pc-02-prayers-screen-no-crash-70e8283a.e2e.ts
+[0-56] RUNNING in Android on Android - file:///specs/prayer-catalog/pc-03-search-placeholder-rtl-43533eab.e2e.ts
+
+
+Ending WebDriver sessions gracefully ...
+(press ctrl+c again to hard kill the runner)
+[0-56] 2026-11-15T17:45:21.060Z WARN webdriver: WebDriverError: A session is either terminated or not started when running "element" with method "POST"
+[0-56] 2026-11-15T17:45:21.071Z ERROR webdriver: WebDriverError: A session is either terminated or not started when running "element" with method "POST"
+[0-56] 2026-11-15T17:45:21.375Z ERROR @wdio/utils:shim: invalid session id: WebDriverError: A session is either terminated or not started when running "element" with method "POST"
+[0-56]     at FetchRequest._request (file:///Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/webdriver/build/node.js:2316:19)
+[0-56]     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+[0-56]     at async Browser.wrapCommandFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1100:23)
+[0-56]     at async Browser.$ (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/webdriverio/build/node.js:1164:15)
+[0-56]     at async Browser.wrapCommandFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1100:23)
+[0-56]     at async dismissModals (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:73:19)
+[0-56]     at async ensureAppReady (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:88:3)
+[0-56]     at async Object.before (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/wdio.conf.ts:91:5)
+[0-56]     at async Promise.all (index 0)
+[0-56]     at async executeHooksWithArgs (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1083:18)
+[0-56] 2026-11-15T17:45:21.515Z WARN webdriver: WebDriverError: A session is either terminated or not started when running "element" with method "POST"
+[0-56] 2026-11-15T17:45:21.520Z ERROR webdriver: WebDriverError: A session is either terminated or not started when running "element" with method "POST"
+[0-56] 2026-11-15T17:45:21.543Z WARN webdriver: WebDriverError: A session is either terminated or not started when running "screenshot" with method "GET"
+[0-56] 2026-11-15T17:45:21.551Z ERROR webdriver: WebDriverError: A session is either terminated or not started when running "screenshot" with method "GET"
+[0-56] 2026-11-15T17:45:21.551Z ERROR @wdio/utils:shim: invalid session id: WebDriverError: A session is either terminated or not started when running "screenshot" with method "GET"
+[0-56]     at FetchRequest._request (file:///Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/webdriver/build/node.js:2316:19)
+[0-56]     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+[0-56]     at async Browser.wrapCommandFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1100:23)
+[0-56]     at async Browser.saveScreenshot (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/webdriverio/build/node.js:623:95)
+[0-56]     at async Browser.wrapCommandFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1100:23)
+[0-56]     at async Object.afterTest (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/wdio.conf.ts:98:7)
+[0-56]     at async Promise.all (index 0)
+[0-56]     at async executeHooksWithArgs (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1083:18)
+[0-56]     at async Context.testFrameworkFnWrapper (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1350:38)
+[0-56] Error in "AfterTest Hook"
+WebDriverError: A session is either terminated or not started when running "screenshot" with method "GET"
+[0-56] invalid session id in "Поиск экрана «תפילות» RTL (#43533eab).PC-03 Placeholder «חיפוש» справа, лупа; ввод «מנ» справа → только «מנחה» (без «שיעורי תורה», #0f8f122d) #43533eab #0f8f122d @prod-safe @manual-check"
+invalid session id: WebDriverError: A session is either terminated or not started when running "element" with method "POST"
+    at async isLoggedIn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:9:11)
+    at async toHome (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:94:30)
+    at async openPrayersTab (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-1410.ts:45:3)
+    at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-catalog/pc-03-search-placeholder-rtl-43533eab.e2e.ts:37:5)
+[0-56] 2026-11-15T17:45:21.565Z WARN webdriver: WebDriverError: A session is either terminated or not started when running "element" with method "POST"
+[0-56] 2026-11-15T17:45:21.573Z ERROR webdriver: WebDriverError: A session is either terminated or not started when running "element" with method "POST"
+[0-56] 2026-11-15T17:45:21.587Z WARN webdriver: WebDriverError: A session is either terminated or not started when running "http://127.0.0.1:4723/session/1a67cf5f-eeba-4de4-83ed-9d5fd407aed3" with method "DELETE"
+[0-56] 2026-11-15T17:45:21.590Z ERROR @wdio/local-runner: Failed launching test session: Error: WebDriverError: Request failed with error code UND_ERR_CLOSED when running "http://127.0.0.1:4723/session/1a67cf5f-eeba-4de4-83ed-9d5fd407aed3" with method "DELETE"
+[0-56]     at FetchRequest._libRequest (file:///Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/webdriver/build/node.js:2251:13)
+[0-56]     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+[0-56]     at async FetchRequest._request (file:///Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/webdriver/build/node.js:2281:20)
+[0-56]     at async Browser.wrapCommandFn (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/utils/build/index.js:1100:23)
+[0-56]     at async Runner.endSession (file:///Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/runner/build/index.js:996:5)
+[0-56]     at async Runner.run (file:///Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/@wdio/runner/build/index.js:820:7)
+[0-56] FAILED in Android on Android - file:///specs/prayer-catalog/pc-03-search-placeholder-rtl-43533eab.e2e.ts
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[Android #0-0] Running: on Android
+[Android #0-0] Session ID: 44a4db3d-99b5-48af-81c1-4a8039209013
+[Android #0-0]
+[Android #0-0] » specs/achievements/ac-01-grid-six-achievements.e2e.ts
+[Android #0-0] Достижения
+[Android #0-0]    ✓ AC-01 Сетка 6 достижений — полученные и неполученные различимы, без дублей #6a86f7ed @prod-safe
+[Android #0-0]
+[Android #0-0] 1 passing (15.5s)
+------------------------------------------------------------------
+[Android #0-1] Running: on Android
+[Android #0-1] Session ID: 28555d8b-6648-4f55-99e4-b4c868661e32
+[Android #0-1]
+[Android #0-1] » specs/achievements/ac-02-achievement-dialog-share.e2e.ts
+[Android #0-1] Достижения
+[Android #0-1]    ✖ AC-02 Окно полученного достижения — строка ободрения, «חזרה למסך ראשי», предпросмотр шеринга с текстом #6a86f7d9 @prod-safe
+[Android #0-1]    ✖ AC-02b «שיתוף ההישג» → «המשך לשיתוף» → системное окно (закрыто без отправки) → «סגירה» → вкладки работают; «מפת השפעה» без изменений #403c0b3d #6a86f7e8 @prod-safe
+[Android #0-1]    ✖ AC-02c «שיתוף ההישג» → «ביטול»: окно достижения остаётся → «סגירה» → вкладки работают; карта без изменений #403c0b3d @prod-safe
+[Android #0-1]
+[Android #0-1] 3 failing (1m 41.7s)
+[Android #0-1]
+[Android #0-1] 1) Достижения AC-02 Окно полученного достижения — строка ободрения, «חזרה למסך ראשי», предпросмотр шеринга с текстом #6a86f7d9 @prod-safe
+[Android #0-1] Expect $(`android=new UiSelector().text("שיתוף ההישג")`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[Android #0-1] Error: Expect $(`android=new UiSelector().text("שיתוף ההישג")`) to be displayed
+[Android #0-1]
+[Android #0-1] Expected: "displayed"
+[Android #0-1] Received: "not displayed"
+[Android #0-1]     at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:64:30)
+[Android #0-1]     at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/achievements/ac-02-achievement-dialog-share.e2e.ts:46:11)
+[Android #0-1]
+[Android #0-1] 2) Достижения AC-02b «שיתוף ההישג» → «המשך לשיתוף» → системное окно (закрыто без отправки) → «סגירה» → вкладки работают; «מפת השפעה» без изменений #403c0b3d #6a86f7e8 @prod-safe
+[Android #0-1] Expect $(`android=new UiSelector().text("שיתוף ההישג")`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[Android #0-1] Error: Expect $(`android=new UiSelector().text("שיתוף ההישג")`) to be displayed
+[Android #0-1]
+[Android #0-1] Expected: "displayed"
+[Android #0-1] Received: "not displayed"
+[Android #0-1]     at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:64:30)
+[Android #0-1]     at openAchievement30 (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/achievements/ac-02-achievement-dialog-share.e2e.ts:27:9)
+[Android #0-1]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/achievements/ac-02-achievement-dialog-share.e2e.ts:72:5)
+[Android #0-1]
+[Android #0-1] 3) Достижения AC-02c «שיתוף ההישג» → «ביטול»: окно достижения остаётся → «סגירה» → вкладки работают; карта без изменений #403c0b3d @prod-safe
+[Android #0-1] Expect $(`android=new UiSelector().text("שיתוף ההישג")`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[Android #0-1] Error: Expect $(`android=new UiSelector().text("שיתוף ההישג")`) to be displayed
+[Android #0-1]
+[Android #0-1] Expected: "displayed"
+[Android #0-1] Received: "not displayed"
+[Android #0-1]     at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:64:30)
+[Android #0-1]     at openAchievement30 (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/achievements/ac-02-achievement-dialog-share.e2e.ts:27:9)
+[Android #0-1]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/achievements/ac-02-achievement-dialog-share.e2e.ts:87:5)
+------------------------------------------------------------------
+[Android #0-2] Running: on Android
+[Android #0-2] Session ID: 746a1e33-649a-49fc-8be7-c82f754bde72
+[Android #0-2]
+[Android #0-2] » specs/admin/ad-01-02-admin-access-and-entry.e2e.ts
+[Android #0-2] Админка в приложении: доступ
+[Android #0-2]    ✖ AD-01/AD-02 USER1 не видит «ממשק ניהול התוכן»; ADMIN видит «ניהול» и открывает «ניהול תכני תפילה» #a5decf4a @prod-safe
+[Android #0-2]
+[Android #0-2] 1 failing (44.8s)
+[Android #0-2]
+[Android #0-2] 1) Админка в приложении: доступ AD-01/AD-02 USER1 не видит «ממשק ניהול התוכן»; ADMIN видит «ניהול» и открывает «ניהול תכני תפילה» #a5decf4a @prod-safe
+[Android #0-2] element ("android=new UiSelector().text("פרופיל אישי")") still not displayed after 20000ms
+[Android #0-2] Error: element ("android=new UiSelector().text("פרופיל אישי")") still not displayed after 20000ms
+[Android #0-2]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/admin/ad-01-02-admin-access-and-entry.e2e.ts:19:7)
+------------------------------------------------------------------
+[Android #0-3] Running: on Android
+[Android #0-3] Session ID: 1ffe2204-0c94-4177-914c-e47f2ac1bb0c
+[Android #0-3]
+[Android #0-3] » specs/admin/ad-04-prayer-admin-screen-cards.e2e.ts
+[Android #0-3] Админка в приложении: экран молитвы
+[Android #0-3]    ✖ AD-04 «ערבית · נוסח אשכנז»: карточки, статусы קטעים «מאושר · …»/«טקסט זמני, טרם אושר», сводка «הקראות הקטעים», история #a5decf4a #6a86f7ed9d38 @prod-safe
+[Android #0-3]
+[Android #0-3] 1 failing (43.8s)
+[Android #0-3]
+[Android #0-3] 1) Админка в приложении: экран молитвы AD-04 «ערבית · נוסח אשכנז»: карточки, статусы קטעים «מאושר · …»/«טקסט זמני, טרם אושר», сводка «הקראות הקטעים», история #a5decf4a #6a86f7ed9d38 @prod-safe
+[Android #0-3] element ("android=new UiSelector().text("פרופיל אישי")") still not displayed after 20000ms
+[Android #0-3] Error: element ("android=new UiSelector().text("פרופיל אישי")") still not displayed after 20000ms
+[Android #0-3]     at async logout (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:103:3)
+[Android #0-3]     at async switchAccount (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:115:3)
+[Android #0-3]     at async asAdmin (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/admin.ts:44:35)
+------------------------------------------------------------------
+[Android #0-7] Running: on Android
+[Android #0-7] Session ID: fbdb5409-2e2e-4029-88f9-7030de7ccfbd
+[Android #0-7]
+[Android #0-7] » specs/admin/ad-08-broken-mp3-c66fac12.e2e.ts
+[Android #0-7] Админка в приложении: битый MP3
+[Android #0-7]    ✖ AD-08 битый qa-broken.mp3 → «הקובץ שנבחר אינו קובץ שמע תקין…», записи нет #c66fac12 @prod-safe @manual-check
+[Android #0-7]    ✖ "after each" hook for Админка в приложении: битый MP3
+[Android #0-7]
+[Android #0-7] 2 failing (5m 23.1s)
+[Android #0-7]
+[Android #0-7] 1) Админка в приложении: битый MP3 AD-08 битый qa-broken.mp3 → «הקובץ שנבחר אינו קובץ שמע תקין…», записи нет #c66fac12 @prod-safe @manual-check
+[Android #0-7] Timeout of 300000ms exceeded. The execution in the test "Админка в приложении: битый MP3 AD-08 битый qa-broken.mp3 → «הקובץ שנבחר אינו קובץ שמע תקין…», записи нет #c66fac12 @prod-safe @manual-check" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/admin/ad-08-broken-mp3-c66fac12.e2e.ts)
+[Android #0-7] Error: Timeout of 300000ms exceeded. The execution in the test "Админка в приложении: битый MP3 AD-08 битый qa-broken.mp3 → «הקובץ שנבחר אינו קובץ שמע תקין…», записи нет #c66fac12 @prod-safe @manual-check" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/admin/ad-08-broken-mp3-c66fac12.e2e.ts)
+[Android #0-7]     at createTimeoutError (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/mocha/lib/errors.js:498:15)
+[Android #0-7]     at Runnable._timeoutError (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/mocha/lib/runnable.js:429:10)
+[Android #0-7]     at Timeout.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/mocha/lib/runnable.js:244:24)
+[Android #0-7]     at listOnTimeout (node:internal/timers:585:17)
+[Android #0-7]     at process.processTimers (node:internal/timers:521:7)
+[Android #0-7]
+[Android #0-7] 2) Админка в приложении: битый MP3 "after each" hook for Админка в приложении: битый MP3
+[Android #0-7] element ("android=new UiSelector().text("בית")") still not displayed after 15000ms
+[Android #0-7] Error: element ("android=new UiSelector().text("בית")") still not displayed after 15000ms
+[Android #0-7]     at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+[Android #0-7]     at async toHome (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:95:3)
+[Android #0-7]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/admin/ad-08-broken-mp3-c66fac12.e2e.ts:25:27)
+------------------------------------------------------------------
+[Android #0-8] Running: on Android
+[Android #0-8] Session ID: 74a008ef-b76b-4bc5-a8d5-f151b76819ee
+[Android #0-8]
+[Android #0-8] » specs/admin/ad-09-edit-section-rtl-4063a39b.e2e.ts
+[Android #0-8] Админка в приложении: ввод справа налево
+[Android #0-8]    ✖ AD-09 «עריכת קטע» «בורא פרי העץ»: «כותרת הקטע»/«טקסט התפילה» — значение, очистка, «בדיקה», дописывание; выход без сохранения → «כל הקטעים מאושרים…» #4063a39b @prod-safe @manual-check
+[Android #0-8]
+[Android #0-8] 1 failing (22.9s)
+[Android #0-8]
+[Android #0-8] 1) Админка в приложении: ввод справа налево AD-09 «עריכת קטע» «בורא פרי העץ»: «כותרת הקטע»/«טקסט התפילה» — значение, очистка, «בדיקה», дописывание; выход без сохранения → «כל הקטעים מאושרים…» #4063a39b @prod-safe @manual-check
+[Android #0-8] element ("android=new UiSelector().text("פרופיל אישי")") still not displayed after 20000ms
+[Android #0-8] Error: element ("android=new UiSelector().text("פרופיל אישי")") still not displayed after 20000ms
+[Android #0-8]     at async logout (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:103:3)
+[Android #0-8]     at async switchAccount (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:115:3)
+[Android #0-8]     at async asAdmin (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/admin.ts:44:35)
+------------------------------------------------------------------
+[Android #0-10] Running: on Android
+[Android #0-10] Session ID: 0cbc3627-a8f4-47d4-bdf0-9992ea77843a
+[Android #0-10]
+[Android #0-10] » specs/admin/gp-07-admin-user-approval-consistency.e2e.ts
+[Android #0-10] Админка в приложении: согласованность с экраном пользователя
+[Android #0-10]    ✖ GP-07 Имя и дата утверждения «המעריב ערבים» в админке = строке «אושר על ידי» у USER1 (ערבית אשכנז 3/15) #a5decf4a @prod-safe
+[Android #0-10]
+[Android #0-10] 1 failing (43.4s)
+[Android #0-10]
+[Android #0-10] 1) Админка в приложении: согласованность с экраном пользователя GP-07 Имя и дата утверждения «המעריב ערבים» в админке = строке «אושר על ידי» у USER1 (ערבית אשכנז 3/15) #a5decf4a @prod-safe
+[Android #0-10] element ("android=new UiSelector().text("פרופיל אישי")") still not displayed after 20000ms
+[Android #0-10] Error: element ("android=new UiSelector().text("פרופיל אישי")") still not displayed after 20000ms
+[Android #0-10]     at async logout (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:103:3)
+[Android #0-10]     at async switchAccount (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:115:3)
+[Android #0-10]     at async asAdmin (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/admin.ts:44:35)
+------------------------------------------------------------------
+[Android #0-11] Running: on Android
+[Android #0-11] Session ID: 2e45b760-8700-4e86-8b7e-b68cf6b31167
+[Android #0-11]
+[Android #0-11] » specs/auth-login/al-01-phone-login-otp.e2e.ts
+[Android #0-11] Вход по мобильному
+[Android #0-11]    ✖ AL-01 Splash → «בואו נתחיל» → экран номера (мокап, две ссылки на документы) → код → главная #6a86f7ec @prod-safe
+[Android #0-11]    ✖ "after all" hook for Вход по мобильному
+[Android #0-11]
+[Android #0-11] 2 failing (35.7s)
+[Android #0-11]
+[Android #0-11] 1) Вход по мобильному AL-01 Splash → «בואו נתחיל» → экран номера (мокап, две ссылки на документы) → код → главная #6a86f7ec @prod-safe
+[Android #0-11] expect(received).toContain(expected) // indexOf
+
+Expected substring: "0501112233"
+Received string:    "050-000-0000"
+[Android #0-11] Error: expect(received).toContain(expected) // indexOf
+[Android #0-11]
+[Android #0-11] Expected substring: "0501112233"
+[Android #0-11] Received string:    "050-000-0000"
+[Android #0-11]     at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/auth-login/al-01-phone-login-otp.e2e.ts:48:35)
+[Android #0-11]
+[Android #0-11] 2) Вход по мобильному "after all" hook for Вход по мобильному
+[Android #0-11] element ("android=new UiSelector().className("android.widget.EditText")") still not displayed after 15000ms
+[Android #0-11] Error: element ("android=new UiSelector().className("android.widget.EditText")") still not displayed after 15000ms
+[Android #0-11]     at async login (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:31:3)
+[Android #0-11]     at async ensureAppReady (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:89:30)
+[Android #0-11]     at async restoreLogin (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/auth-login/al-01-phone-login-otp.e2e.ts:31:3)
+------------------------------------------------------------------
+[Android #0-12] Running: on Android
+[Android #0-12] Session ID: 4fc056cd-0f2c-4950-b5e7-4d61a1536606
+[Android #0-12]
+[Android #0-12] » specs/auth-login/al-03-relogin-after-logout.e2e.ts
+[Android #0-12] Вход по мобильному
+[Android #0-12]    ✖ AL-03 Повторный вход после «התנתקות» — главная открывается, без ошибки #6aa268eb @prod-safe
+[Android #0-12]
+[Android #0-12] 1 failing (22.6s)
+[Android #0-12]
+[Android #0-12] 1) Вход по мобильному AL-03 Повторный вход после «התנתקות» — главная открывается, без ошибки #6aa268eb @prod-safe
+[Android #0-12] element ("android=new UiSelector().text("פרופיל אישי")") still not displayed after 20000ms
+[Android #0-12] Error: element ("android=new UiSelector().text("פרופיל אישי")") still not displayed after 20000ms
+[Android #0-12]     at async logout (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/auth-login/al-03-relogin-after-logout.e2e.ts:13:3)
+[Android #0-12]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/auth-login/al-03-relogin-after-logout.e2e.ts:38:5)
+------------------------------------------------------------------
+[Android #0-13] Running: on Android
+[Android #0-13] Session ID: d9f0b468-d058-4336-88e0-d6c2cf370dcd
+[Android #0-13]
+[Android #0-13] » specs/auth-login/al-04-no-external-provider-6a86f7e8.e2e.ts
+[Android #0-13] Вход
+[Android #0-13]    ✖ "before all" hook for Вход
+[Android #0-13]
+[Android #0-13] 1 failing (21.7s)
+[Android #0-13]
+[Android #0-13] 1) Вход "before all" hook for Вход
+[Android #0-13] element ("android=new UiSelector().text("פרופיל אישי")") still not displayed after 20000ms
+[Android #0-13] Error: element ("android=new UiSelector().text("פרופיל אישי")") still not displayed after 20000ms
+[Android #0-13]     at async logout (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/app.ts:103:3)
+[Android #0-13]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/auth-login/al-04-no-external-provider-6a86f7e8.e2e.ts:26:24)
+------------------------------------------------------------------
+[Android #0-14] Running: on Android
+[Android #0-14] Session ID: de8b9844-17df-4117-9198-2395a93942c3
+[Android #0-14]
+[Android #0-14] » specs/brachot/br-01-blessings-list-search-screen.e2e.ts
+[Android #0-14] מדור ברכות
+[Android #0-14]    ✖ BR-01 «ברכות» → список и строка נוסח, поиск «גפן», экран ברכה без элементов молитвы, «חזרה לברכות» #6a86f7ee5747 @prod-safe
+[Android #0-14]
+[Android #0-14] 1 failing (19.9s)
+[Android #0-14]
+[Android #0-14] 1) מדור ברכות BR-01 «ברכות» → список и строка נוסח, поиск «גפן», экран ברכה без элементов молитвы, «חזרה לברכות» #6a86f7ee5747 @prod-safe
+[Android #0-14] Expect $(`android=new UiSelector().textMatches("הברכות מוצגות בנוסח (אשכנז|ספרד) שנשמר בפרופיל\.?")`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[Android #0-14] Error: Expect $(`android=new UiSelector().textMatches("הברכות מוצגות בנוסח (אשכנז|ספרד) שנשמר בפרופיל\.?")`) to be displayed
+[Android #0-14]
+[Android #0-14] Expected: "displayed"
+[Android #0-14] Received: "not displayed"
+[Android #0-14]     at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/brachot/br-01-blessings-list-search-screen.e2e.ts:26:46)
+------------------------------------------------------------------
+[Android #0-15] Running: on Android
+[Android #0-15] Session ID: e904a826-6096-47cd-a39f-ea7ebb6f9b34
+[Android #0-15]
+[Android #0-15] » specs/guided-prayer/gp-01-run-without-finish.e2e.ts
+[Android #0-15] Молитва по шагам
+[Android #0-15]    ✖ GP-01 Молитва: шапка, «X מתוך Y», המשך/קודם, выход и возврат на тот же חלק #6a86f7e9 @prod-safe
+[Android #0-15]
+[Android #0-15] 1 failing (20.7s)
+[Android #0-15]
+[Android #0-15] 1) Молитва по шагам GP-01 Молитва: шапка, «X מתוך Y», המשך/קודם, выход и возврат на тот же חלק #6a86f7e9 @prod-safe
+[Android #0-15] element ("android=new UiSelector().text("מנחה")") still not displayed after 15000ms
+[Android #0-15] Error: element ("android=new UiSelector().text("מנחה")") still not displayed after 15000ms
+[Android #0-15]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[Android #0-15]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-01-run-without-finish.e2e.ts:41:7)
+------------------------------------------------------------------
+[Android #0-16] Running: on Android
+[Android #0-16] Session ID: e24670c1-2570-417b-8dc2-73ae97f99a58
+[Android #0-16]
+[Android #0-16] » specs/guided-prayer/gp-02-explanation-layer.e2e.ts
+[Android #0-16] Молитва по шагам
+[Android #0-16]    ✓ GP-02 Окно ⓘ «על התפילה» (не утверждено): «על תפילת מנחה», «💡 טיפ», «נוסח זמני…», без «סגירה והמשך בתפילה», ✕ → тот же קטע #6a86f7ff #6a86f7e16f63 @prod-safe
+[Android #0-16]    ✓ GP-02 Окно ⓘ «על התפילה» (утверждено в админке): «על תפילת ערבית», «מקור: … · אושר על ידי …» вместо «נוסח זמני» #6a86f7e16f63 #a5decf4a @prod-safe
+[Android #0-16]
+[Android #0-16] 2 passing (17.5s)
+------------------------------------------------------------------
+[Android #0-17] Running: on Android
+[Android #0-17] Session ID: 8098b224-3385-44e6-b8d4-29cb3ae9ac71
+[Android #0-17]
+[Android #0-17] » specs/guided-prayer/gp-03-nusach-availability-switch.e2e.ts
+[Android #0-17] Молитва по шагам
+[Android #0-17]    ✖ GP-03 Нусах: в меню 2 пункта (без «עדות המזרח · בקרוב»), смена на уровне всей молитвы с подтверждением и возвратом #ecda5d38 #32e3cd9a @prod-safe
+[Android #0-17]
+[Android #0-17] 1 failing (20s)
+[Android #0-17]
+[Android #0-17] 1) Молитва по шагам GP-03 Нусах: в меню 2 пункта (без «עדות המזרח · בקרוב»), смена на уровне всей молитвы с подтверждением и возвратом #ecda5d38 #32e3cd9a @prod-safe
+[Android #0-17] element ("android=new UiSelector().text("המשך")") still not displayed after 15000ms
+[Android #0-17] Error: element ("android=new UiSelector().text("המשך")") still not displayed after 15000ms
+[Android #0-17]     at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+[Android #0-17]     at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+[Android #0-17]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-03-nusach-availability-switch.e2e.ts:23:5)
+------------------------------------------------------------------
+[Android #0-18] Running: on Android
+[Android #0-18] Session ID: d3f854c7-f304-4824-a24e-2f9bae845cd2
+[Android #0-18]
+[Android #0-18] » specs/guided-prayer/gp-05-explanation-and-source-additions.e2e.ts
+[Android #0-18] Молитва по шагам
+[Android #0-18]    ? GP-05 Строка источника во всех фрагментах дополнений, без «שיתוף התפילה» #6a86f7df #a5decf4a @prod-safe
+[Android #0-18]    - GP-05 Строка источника во всех фрагментах дополнений, без «שיתוף התפילה» #6a86f7df #a5decf4a @prod-safe
+[Android #0-18]
+[Android #0-18] 1 skipped (2s)
+------------------------------------------------------------------
+[Android #0-19] Running: on Android
+[Android #0-19] Session ID: d9703a42-f1cc-4416-8d43-1e67c74b40ab
+[Android #0-19]
+[Android #0-19] » specs/guided-prayer/gp-05-explanation-and-source-berachot.e2e.ts
+[Android #0-19] Молитва по шагам
+[Android #0-19]    ? GP-05 Строка источника во всех ברכות (beracha_*), без «שיתוף התפילה» #6a86f7df #a5decf4a @prod-safe
+[Android #0-19]    - GP-05 Строка источника во всех ברכות (beracha_*), без «שיתוף התפילה» #6a86f7df #a5decf4a @prod-safe
+[Android #0-19]
+[Android #0-19] 1 skipped (2.1s)
+------------------------------------------------------------------
+[Android #0-20] Running: on Android
+[Android #0-20] Session ID: 80a2adc8-41cf-4d5a-91a7-444209b4a3d8
+[Android #0-20]
+[Android #0-20] » specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts
+[Android #0-20] Молитва по шагам
+[Android #0-20]    ✖ GP-05 Строка источника во всех фрагментах основных молитв — shacharit_ashkenaz #6a86f7df #a5decf4a @prod-safe
+[Android #0-20]    ✖ GP-05 Строка источника во всех фрагментах основных молитв — shacharit_sfarad #6a86f7df #a5decf4a @prod-safe
+[Android #0-20]    ✖ GP-05 Строка источника во всех фрагментах основных молитв — mincha_ashkenaz #6a86f7df #a5decf4a @prod-safe
+[Android #0-20]    ✖ GP-05 Строка источника во всех фрагментах основных молитв — mincha_sfarad #6a86f7df #a5decf4a @prod-safe
+[Android #0-20]    ✖ GP-05 Строка источника во всех фрагментах основных молитв — arvit_ashkenaz #6a86f7df #a5decf4a @prod-safe
+[Android #0-20]    ✖ GP-05 Строка источника во всех фрагментах основных молитв — arvit_sfarad #6a86f7df #a5decf4a @prod-safe
+[Android #0-20]
+[Android #0-20] 6 failing (9m 6.9s)
+[Android #0-20]
+[Android #0-20] 1) Молитва по шагам GP-05 Строка источника во всех фрагментах основных молитв — shacharit_ashkenaz #6a86f7df #a5decf4a @prod-safe
+[Android #0-20] Timeout of 300000ms exceeded. The execution in the test "Молитва по шагам GP-05 Строка источника во всех фрагментах основных молитв — shacharit_ashkenaz #6a86f7df #a5decf4a @prod-safe" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts)
+[Android #0-20] Error: Timeout of 300000ms exceeded. The execution in the test "Молитва по шагам GP-05 Строка источника во всех фрагментах основных молитв — shacharit_ashkenaz #6a86f7df #a5decf4a @prod-safe" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts)
+[Android #0-20]     at createTimeoutError (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/mocha/lib/errors.js:498:15)
+[Android #0-20]     at Runnable._timeoutError (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/mocha/lib/runnable.js:429:10)
+[Android #0-20]     at Timeout.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/node_modules/mocha/lib/runnable.js:244:24)
+[Android #0-20]     at listOnTimeout (node:internal/timers:585:17)
+[Android #0-20]     at process.processTimers (node:internal/timers:521:7)
+[Android #0-20]
+[Android #0-20] 2) Молитва по шагам GP-05 Строка источника во всех фрагментах основных молитв — shacharit_sfarad #6a86f7df #a5decf4a @prod-safe
+[Android #0-20] Expect $(`android=new UiSelector().text("שחרית (ספרדי)")`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[Android #0-20] Error: Expect $(`android=new UiSelector().text("שחרית (ספרדי)")`) to be displayed
+[Android #0-20]
+[Android #0-20] Expected: "displayed"
+[Android #0-20] Received: "not displayed"
+[Android #0-20]     at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:64:30)
+[Android #0-20]     at open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:65:9)
+[Android #0-20]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:85:7)
+[Android #0-20]
+[Android #0-20] 3) Молитва по шагам GP-05 Строка источника во всех фрагментах основных молитв — mincha_ashkenaz #6a86f7df #a5decf4a @prod-safe
+[Android #0-20] expect(received).toBe(expected) // Object.is equality
+
+Expected: 1
+Received: 0
+[Android #0-20] Error: expect(received).toBe(expected) // Object.is equality
+[Android #0-20]
+[Android #0-20] Expected: 1
+[Android #0-20] Received: 0
+[Android #0-20]     at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:94:30)
+[Android #0-20]
+[Android #0-20] 4) Молитва по шагам GP-05 Строка источника во всех фрагментах основных молитв — mincha_sfarad #6a86f7df #a5decf4a @prod-safe
+[Android #0-20] Expect $(`android=new UiSelector().text("מנחה (ספרדי)")`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[Android #0-20] Error: Expect $(`android=new UiSelector().text("מנחה (ספרדי)")`) to be displayed
+[Android #0-20]
+[Android #0-20] Expected: "displayed"
+[Android #0-20] Received: "not displayed"
+[Android #0-20]     at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:64:30)
+[Android #0-20]     at open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:65:9)
+[Android #0-20]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:85:7)
+[Android #0-20]
+[Android #0-20] 5) Молитва по шагам GP-05 Строка источника во всех фрагментах основных молитв — arvit_ashkenaz #6a86f7df #a5decf4a @prod-safe
+[Android #0-20] expect(received).toBe(expected) // Object.is equality
+
+Expected: 1
+Received: 0
+[Android #0-20] Error: expect(received).toBe(expected) // Object.is equality
+[Android #0-20]
+[Android #0-20] Expected: 1
+[Android #0-20] Received: 0
+[Android #0-20]     at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:94:30)
+[Android #0-20]
+[Android #0-20] 6) Молитва по шагам GP-05 Строка источника во всех фрагментах основных молитв — arvit_sfarad #6a86f7df #a5decf4a @prod-safe
+[Android #0-20] element ("android=new UiSelector().textMatches("\d+ מתוך \d+")") still not displayed after 15000ms
+[Android #0-20] Error: element ("android=new UiSelector().textMatches("\d+ מתוך \d+")") still not displayed after 15000ms
+[Android #0-20]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:36:3)
+[Android #0-20]     at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:57:5)
+[Android #0-20]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-and-source-main-prayers.e2e.ts:85:7)
+------------------------------------------------------------------
+[Android #0-21] Running: on Android
+[Android #0-21] Session ID: 1a330b07-f4d2-4f82-aed6-13aa6883b9cb
+[Android #0-21]
+[Android #0-21] » specs/guided-prayer/gp-05-explanation-example-mincha-sfarad-ashrei.e2e.ts
+[Android #0-21] Молитва по шагам
+[Android #0-21]    ✖ GP-05 Пример пояснения: מנחה ספרד «אשרי» — «תהילה לפני תפילת המנחה» #6a86f7df @prod-safe
+[Android #0-21]
+[Android #0-21] 1 failing (23s)
+[Android #0-21]
+[Android #0-21] 1) Молитва по шагам GP-05 Пример пояснения: מנחה ספרד «אשרי» — «תהילה לפני תפילת המנחה» #6a86f7df @prod-safe
+[Android #0-21] element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+[Android #0-21] Error: element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+[Android #0-21]     at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+[Android #0-21]     at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+[Android #0-21]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-05-explanation-example-mincha-sfarad-ashrei.e2e.ts:27:5)
+------------------------------------------------------------------
+[Android #0-22] Running: on Android
+[Android #0-22] Session ID: 76c8c9e2-6be6-4b53-89aa-453385cb0b91
+[Android #0-22]
+[Android #0-22] » specs/guided-prayer/gp-06-share-button-geometry-and-absence.e2e.ts
+[Android #0-22] Молитва по шагам
+[Android #0-22]    ✖ GP-06 «שיתוף התפילה»: под «קודם»/«סיים תפילה», над «האזן להקראה» (מנחה ספרד, 2 מתוך 11) #6a86f7df @prod-safe
+[Android #0-22]    ? GP-06 «שיתוף התפילה» нет в дополнениях (ספירת העומר, מזמור ק״ל) и в ברכה #6a86f7df @prod-safe
+[Android #0-22]    - GP-06 «שיתוף התפילה» нет в дополнениях (ספירת העומר, מזמור ק״ל) и в ברכה #6a86f7df @prod-safe
+[Android #0-22]
+[Android #0-22] 1 failing (24.7s)
+[Android #0-22] 1 skipped
+[Android #0-22]
+[Android #0-22] 1) Молитва по шагам GP-06 «שיתוף התפילה»: под «קודם»/«סיים תפילה», над «האזן להקראה» (מנחה ספרד, 2 מתוך 11) #6a86f7df @prod-safe
+[Android #0-22] element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+[Android #0-22] Error: element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+[Android #0-22]     at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+[Android #0-22]     at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+[Android #0-22]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-geometry-and-absence.e2e.ts:43:5)
+------------------------------------------------------------------
+[Android #0-23] Running: on Android
+[Android #0-23] Session ID: e80bbd0c-a64e-49fa-a71e-944c4237908e
+[Android #0-23]
+[Android #0-23] » specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts
+[Android #0-23] Молитва по шагам
+[Android #0-23]    ✖ GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — shacharit_ashkenaz #6a86f7df @prod-safe
+[Android #0-23]    ✖ GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — shacharit_sfarad #6a86f7df @prod-safe
+[Android #0-23]    ✖ GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — mincha_ashkenaz #6a86f7df @prod-safe
+[Android #0-23]    ✖ GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — mincha_sfarad #6a86f7df @prod-safe
+[Android #0-23]    ✖ GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — arvit_ashkenaz #6a86f7df @prod-safe
+[Android #0-23]    ✖ GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — arvit_sfarad #6a86f7df @prod-safe
+[Android #0-23]
+[Android #0-23] 6 failing (2m 5.9s)
+[Android #0-23]
+[Android #0-23] 1) Молитва по шагам GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — shacharit_ashkenaz #6a86f7df @prod-safe
+[Android #0-23] element ("android=new UiSelector().textMatches("\d+ מתוך \d+")") still not displayed after 15000ms
+[Android #0-23] Error: element ("android=new UiSelector().textMatches("\d+ מתוך \d+")") still not displayed after 15000ms
+[Android #0-23]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:36:3)
+[Android #0-23]     at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:43:5)
+[Android #0-23]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:71:7)
+[Android #0-23]
+[Android #0-23] 2) Молитва по шагам GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — shacharit_sfarad #6a86f7df @prod-safe
+[Android #0-23] element ("android=new UiSelector().text("שחרית")") still not displayed after 15000ms
+[Android #0-23] Error: element ("android=new UiSelector().text("שחרית")") still not displayed after 15000ms
+[Android #0-23]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:31:3)
+[Android #0-23]     at async open (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:43:5)
+[Android #0-23]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:71:7)
+[Android #0-23]
+[Android #0-23] 3) Молитва по шагам GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — mincha_ashkenaz #6a86f7df @prod-safe
+[Android #0-23] element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+[Android #0-23] Error: element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+[Android #0-23]     at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+[Android #0-23]     at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+[Android #0-23]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:73:7)
+[Android #0-23]
+[Android #0-23] 4) Молитва по шагам GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — mincha_sfarad #6a86f7df @prod-safe
+[Android #0-23] element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+[Android #0-23] Error: element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+[Android #0-23]     at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+[Android #0-23]     at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+[Android #0-23]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:73:7)
+[Android #0-23]
+[Android #0-23] 5) Молитва по шагам GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — arvit_ashkenaz #6a86f7df @prod-safe
+[Android #0-23] element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+[Android #0-23] Error: element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+[Android #0-23]     at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+[Android #0-23]     at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+[Android #0-23]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:73:7)
+[Android #0-23]
+[Android #0-23] 6) Молитва по шагам GP-06 Кнопка «שיתוף התפילה» на каждом фрагменте основных молитв — arvit_sfarad #6a86f7df @prod-safe
+[Android #0-23] element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+[Android #0-23] Error: element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+[Android #0-23]     at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+[Android #0-23]     at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+[Android #0-23]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-button-main-prayers.e2e.ts:73:7)
+------------------------------------------------------------------
+[Android #0-24] Running: on Android
+[Android #0-24] Session ID: a0612bd0-7bc6-4c6a-91ae-3c162441f999
+[Android #0-24]
+[Android #0-24] » specs/guided-prayer/gp-06-share-dialog-text.e2e.ts
+[Android #0-24] Молитва по шагам
+[Android #0-24]    ✖ GP-06 Окно «שיתוף התפילה»: текст и ссылка, «ביטול» закрывает — מנחה ספרד и ערבית אשכנז #6a86f7df @prod-safe
+[Android #0-24]
+[Android #0-24] 1 failing (24.5s)
+[Android #0-24]
+[Android #0-24] 1) Молитва по шагам GP-06 Окно «שיתוף התפילה»: текст и ссылка, «ביטול» закрывает — מנחה ספרד и ערבית אשכנז #6a86f7df @prod-safe
+[Android #0-24] element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+[Android #0-24] Error: element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+[Android #0-24]     at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+[Android #0-24]     at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+[Android #0-24]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-06-share-dialog-text.e2e.ts:45:5)
+------------------------------------------------------------------
+[Android #0-25] Running: on Android
+[Android #0-25] Session ID: c86b7eee-e883-4f6d-b97b-320865048aae
+[Android #0-25]
+[Android #0-25] » specs/guided-prayer/gp-07-approved-source-line.e2e.ts
+[Android #0-25] Молитва по шагам
+[Android #0-25]    ✖ GP-07 Утверждённые фрагменты: «מקור: … · אושר על ידי …»; неутверждённый — «הטקסט עדיין לא אושר…» #a5decf4a @prod-safe
+[Android #0-25]
+[Android #0-25] 1 failing (18.8s)
+[Android #0-25]
+[Android #0-25] 1) Молитва по шагам GP-07 Утверждённые фрагменты: «מקור: … · אושר על ידי …»; неутверждённый — «הטקסט עדיין לא אושר…» #a5decf4a @prod-safe
+[Android #0-25] element ("android=new UiSelector().textMatches("\d+ מתוך \d+")") still not displayed after 15000ms
+[Android #0-25] Error: element ("android=new UiSelector().textMatches("\d+ מתוך \d+")") still not displayed after 15000ms
+[Android #0-25]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:36:3)
+[Android #0-25]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-07-approved-source-line.e2e.ts:44:5)
+------------------------------------------------------------------
+[Android #0-26] Running: on Android
+[Android #0-26] Session ID: 056919df-70bb-492f-a4b2-a9d28f70b669
+[Android #0-26]
+[Android #0-26] » specs/guided-prayer/gp-08-no-recording-listen-disabled.e2e.ts
+[Android #0-26] Молитва по шагам
+[Android #0-26]    ✖ GP-08 Нет записи: «אין הקראה לקטע הזה», «השמע» неактивна — מנחה ספרד, שחרית אשכנז, ערבית אשכנז #a5decf4a @prod-safe
+[Android #0-26]
+[Android #0-26] 1 failing (1m 40.1s)
+[Android #0-26]
+[Android #0-26] 1) Молитва по шагам GP-08 Нет записи: «אין הקראה לקטע הזה», «השמע» неактивна — מנחה ספרד, שחרית אשכנז, ערבית אשכנז #a5decf4a @prod-safe
+[Android #0-26] element ("android=new UiSelector().textMatches("\d+ מתוך \d+")") still not displayed after 15000ms
+[Android #0-26] Error: element ("android=new UiSelector().textMatches("\d+ מתוך \d+")") still not displayed after 15000ms
+[Android #0-26]     at async openPrayer (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:36:3)
+[Android #0-26]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-08-no-recording-listen-disabled.e2e.ts:41:7)
+------------------------------------------------------------------
+[Android #0-27] Running: on Android
+[Android #0-27] Session ID: f16fb0ea-d099-4eb3-a3fe-b7a6b21671f8
+[Android #0-27]
+[Android #0-27] » specs/guided-prayer/gp-09-prayer-title-centered-b398d352.e2e.ts
+[Android #0-27] Молитва по шагам
+[Android #0-27]    ✓ GP-09 Заголовок молитвы «<תפילה> (<נוסח>) ⌄» по центру экрана (±4 pt) #b398d352 @prod-safe
+[Android #0-27]
+[Android #0-27] 1 passing (2.4s)
+------------------------------------------------------------------
+[Android #0-28] Running: on Android
+[Android #0-28] Session ID: e1d03416-5cdc-4a70-8b4f-298c5affd586
+[Android #0-28]
+[Android #0-28] » specs/guided-prayer/gp-10-ashrei-lines-no-overlap-39f5e7d5.e2e.ts
+[Android #0-28] Строки молитвы без наложения (#39f5e7d5)
+[Android #0-28]    ✖ GP-10 «מנחה (אשכנזי)» → «אשרי»: строки с ניקוד одна под другой, без наложения, до конца отрывка #39f5e7d5 @prod-safe @manual-check
+[Android #0-28]
+[Android #0-28] 1 failing (20.9s)
+[Android #0-28]
+[Android #0-28] 1) Строки молитвы без наложения (#39f5e7d5) GP-10 «מנחה (אשכנזי)» → «אשרי»: строки с ניקוד одна под другой, без наложения, до конца отрывка #39f5e7d5 @prod-safe @manual-check
+[Android #0-28] element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+[Android #0-28] Error: element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+[Android #0-28]     at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+[Android #0-28]     at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+[Android #0-28]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/guided-prayer/gp-10-ashrei-lines-no-overlap-39f5e7d5.e2e.ts:44:5)
+------------------------------------------------------------------
+[Android #0-29] Running: on Android
+[Android #0-29] Session ID: cb4607af-d040-4607-803c-43e821e2bd26
+[Android #0-29]
+[Android #0-29] » specs/home/hm-01-daily-home.e2e.ts
+[Android #0-29] Главная
+[Android #0-29]    ✓ HM-01 Главная: приветствие с именем, дата, ближайшая молитва, счётчики, навигация из 5 табов #6a86f7ea @prod-safe
+[Android #0-29]
+[Android #0-29] 1 passing (22s)
+------------------------------------------------------------------
+[Android #0-30] Running: on Android
+[Android #0-30] Session ID: 2ebd2e8c-f776-4b39-ab05-119b9072de6d
+[Android #0-30]
+[Android #0-30] » specs/home/hm-02-recent-prayers.e2e.ts
+[Android #0-30] Главная
+[Android #0-30]    ✓ HM-02 «תפילות אחרונות»: время различимо, не больше 3 записей, «צפה בהכל» #6a86f7e5 @prod-safe
+[Android #0-30]
+[Android #0-30] 1 passing (3.8s)
+------------------------------------------------------------------
+[Android #0-31] Running: on Android
+[Android #0-31] Session ID: 56b8c0bb-e4ee-487d-852e-8b9cd5d1c4fc
+[Android #0-31]
+[Android #0-31] » specs/home/hm-03-time-window-and-date-tags.e2e.ts
+[Android #0-31] Главная
+[Android #0-31]    ✖ HM-03 Окно времени под датой (вверху слева); тег важной даты еврейский #6a86f7e5 @prod-safe
+[Android #0-31]
+[Android #0-31] 1 failing (39.6s)
+[Android #0-31]
+[Android #0-31] 1) Главная HM-03 Окно времени под датой (вверху слева); тег важной даты еврейский #6a86f7e5 @prod-safe
+[Android #0-31] Не найден текст после прокрутки: 30.04.2004
+[Android #0-31] Error: Не найден текст после прокрутки: 30.04.2004
+[Android #0-31]     at scrollToText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:84:9)
+[Android #0-31]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/home/hm-03-time-window-and-date-tags.e2e.ts:38:5)
+------------------------------------------------------------------
+[Android #0-32] Running: on Android
+[Android #0-32] Session ID: dcc79967-1699-4fe6-bc38-c4e9457248e0
+[Android #0-32]
+[Android #0-32] » specs/home/hm-04-prayer-name-not-clipped-b7a78c66.e2e.ts
+[Android #0-32] Главная
+[Android #0-32]    ✓ HM-04 Имя молитвы на главной не срезано сверху и не перекрыто приветствием #b7a78c66 @prod-safe @manual-check
+[Android #0-32]
+[Android #0-32] 1 passing (2.7s)
+------------------------------------------------------------------
+[Android #0-33] Running: on Android
+[Android #0-33] Session ID: 622fd0d6-1b72-48e7-b7bc-3f21c7614422
+[Android #0-33]
+[Android #0-33] » specs/impact-map/im-01-invite-dialog-text.e2e.ts
+[Android #0-33] «מפת השפעה» и приглашение
+[Android #0-33]    ✓ IM-01 «הזמנת אדם להתחזק» — утверждённый текст и одна ссылка в окне; «ביטול» закрывает без отправки #6a86f7e6 @prod-safe
+[Android #0-33]
+[Android #0-33] 1 passing (12.4s)
+------------------------------------------------------------------
+[Android #0-34] Running: on Android
+[Android #0-34] Session ID: 0288511b-e3c3-4153-93e6-d3270378c29e
+[Android #0-34]
+[Android #0-34] » specs/impact-map/im-02-map-me-two-branches-counter.e2e.ts
+[Android #0-34] «מפת השפעה» и приглашение
+[Android #0-34]    ✓ IM-02 Карта «מפת השפעה» — «אני», 2 ветки с именами, счётчик «2 אנשים» #6a86f7e6 @prod-safe
+[Android #0-34]
+[Android #0-34] 1 passing (10.8s)
+------------------------------------------------------------------
+[Android #0-35] Running: on Android
+[Android #0-35] Session ID: 4bc468f1-c6e7-425c-a9f1-f2e99f7bcd56
+[Android #0-35]
+[Android #0-35] » specs/impact-map/im-03-own-invite-link-message.e2e.ts
+[Android #0-35] «מפת השפעה» и приглашение
+[Android #0-35]    ? IM-03 Своя ссылка приглашения у вошедшего → «זה קישור ההזמנה שלך…» #6a86f7e6 @prod-safe
+[Android #0-35]    - IM-03 Своя ссылка приглашения у вошедшего → «זה קישור ההזמנה שלך…» #6a86f7e6 @prod-safe
+[Android #0-35]
+[Android #0-35] 1 skipped (1.8s)
+------------------------------------------------------------------
+[Android #0-39] Running: on Android
+[Android #0-39] Session ID: c040be97-2801-4761-9682-909bdd4b43e7
+[Android #0-39]
+[Android #0-39] » specs/important-dates/id-04-calendar-month-year-picker.e2e.ts
+[Android #0-39] Важные даты и אזכרות
+[Android #0-39]    ✖ ID-04 Календарь в окне даты — дни текущего месяца, двойной еврейский заголовок, выбор месяца/года, без ручного ввода #6a86f7e0 @prod-safe
+[Android #0-39]
+[Android #0-39] 1 failing (26.8s)
+[Android #0-39]
+[Android #0-39] 1) Важные даты и אזכרות ID-04 Календарь в окне даты — дни текущего месяца, двойной еврейский заголовок, выбор месяца/года, без ручного ввода #6a86f7e0 @prod-safe
+[Android #0-39] Expect $(`~נובמבר 2026: בחירת שנה וחודש`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[Android #0-39] Error: Expect $(`~נובמבר 2026: בחירת שנה וחודש`) to be displayed
+[Android #0-39]
+[Android #0-39] Expected: "displayed"
+[Android #0-39] Received: "not displayed"
+[Android #0-39]     at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/important-dates/id-04-calendar-month-year-picker.e2e.ts:38:59)
+------------------------------------------------------------------
+[Android #0-40] Running: on Android
+[Android #0-40] Session ID: db144efa-1aa3-4f1b-825f-fdf8cf66c94e
+[Android #0-40]
+[Android #0-40] » specs/important-dates/id-05-hebrew-date-sunset-1cbe2254.e2e.ts
+[Android #0-40] Важные даты — еврейская дата по закату (#1cbe2254)
+[Android #0-40]    ? ID-05a Окно «עריכת תאריך» записи закрывается «סגירה» по элементу (#36a75b77) #1cbe2254 @prod-safe
+[Android #0-40]    - ID-05a Окно «עריכת תאריך» записи закрывается «סגירה» по элементу (#36a75b77) #1cbe2254 @prod-safe
+[Android #0-40]
+[Android #0-40] 1 skipped (2.6s)
+------------------------------------------------------------------
+[Android #0-43] Running: on Android
+[Android #0-43] Session ID: 31220d57-642f-40a5-8d52-1f95f8801ca8
+[Android #0-43]
+[Android #0-43] » specs/journey/jr-01-real-data.e2e.ts
+[Android #0-43] «המסע שלי»
+[Android #0-43]    ✓ JR-01 «המסע שלי» на реальных данных — уровень, счётчики = главная, פילוח, последние молитвы, מפת השפעה, достижения #6a86f7e8 @prod-safe
+[Android #0-43]
+[Android #0-43] 1 passing (33.3s)
+------------------------------------------------------------------
+[Android #0-44] Running: on Android
+[Android #0-44] Session ID: fed50a67-3ea2-4804-ac56-0064a2cb8e6a
+[Android #0-44]
+[Android #0-44] » specs/journey/jr-02-header-opens-profile.e2e.ts
+[Android #0-44] «המסע שלי»
+[Android #0-44]    ✖ JR-02 Клик по аватару или имени открывает «פרופיל אישי» #f6970bc6 @prod-safe
+[Android #0-44]
+[Android #0-44] 1 failing (19.5s)
+[Android #0-44]
+[Android #0-44] 1) «המסע שלי» JR-02 Клик по аватару или имени открывает «פרופיל אישי» #f6970bc6 @prod-safe
+[Android #0-44] element ("android=new UiSelector().text("אקדא טסט")") still not displayed after 15000ms
+[Android #0-44] Error: element ("android=new UiSelector().text("אקדא טסט")") still not displayed after 15000ms
+[Android #0-44]     at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+[Android #0-44]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/journey/jr-02-header-opens-profile.e2e.ts:24:5)
+------------------------------------------------------------------
+[Android #0-46] Running: on Android
+[Android #0-46] Session ID: f9d028b9-1bf3-4af2-a89f-61ca171866ae
+[Android #0-46]
+[Android #0-46] » specs/journey/jr-06-rankup-window-not-repeated.e2e.ts
+[Android #0-46] «המסע שלי»
+[Android #0-46]    ✖ JR-06 Окно «עלית דרגה» не показывается повторно без повышения (user1, уровень 10) #22c9d541 @prod-safe
+[Android #0-46]
+[Android #0-46] 1 failing (36.8s)
+[Android #0-46]
+[Android #0-46] 1) «המסע שלי» JR-06 Окно «עלית דרגה» не показывается повторно без повышения (user1, уровень 10) #22c9d541 @prod-safe
+[Android #0-46] Expect $(`android=new UiSelector().text("תזכורות מהירות")`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[Android #0-46] Error: Expect $(`android=new UiSelector().text("תזכורות מהירות")`) to be displayed
+[Android #0-46]
+[Android #0-46] Expected: "displayed"
+[Android #0-46] Received: "not displayed"
+[Android #0-46]     at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:64:30)
+[Android #0-46]     at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/journey/jr-06-rankup-window-not-repeated.e2e.ts:43:11)
+------------------------------------------------------------------
+[Android #0-47] Running: on Android
+[Android #0-47] Session ID: a98ac481-5783-4b2d-aee5-422445f67f90
+[Android #0-47]
+[Android #0-47] » specs/journey/jr-07-statusbar-scroll-07650fd9.e2e.ts
+[Android #0-47] Строка статуса при прокрутке
+[Android #0-47]    ✖ JR-07 «המסע שלי» и «בית»: при прокрутке контент не заходит под строку статуса #07650fd9 @prod-safe @manual-check
+[Android #0-47]
+[Android #0-47] 1 failing (8.3s)
+[Android #0-47]
+[Android #0-47] 1) Строка статуса при прокрутке JR-07 «המסע שלי» и «בית»: при прокрутке контент не заходит под строку статуса #07650fd9 @prod-safe @manual-check
+[Android #0-47] expect(received).toBeGreaterThanOrEqual(expected)
+
+Expected: >= 127
+Received:    0
+[Android #0-47] Error: expect(received).toBeGreaterThanOrEqual(expected)
+[Android #0-47]
+[Android #0-47] Expected: >= 127
+[Android #0-47] Received:    0
+[Android #0-47]     at checkNoContentUnderStatusBar (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/journey/jr-07-statusbar-scroll-07650fd9.e2e.ts:40:16)
+[Android #0-47]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/journey/jr-07-statusbar-scroll-07650fd9.e2e.ts:60:5)
+------------------------------------------------------------------
+[Android #0-48] Running: on Android
+[Android #0-48] Session ID: df5e40a0-4d7a-431c-b1fe-c324b4a4b8ac
+[Android #0-48]
+[Android #0-48] » specs/nusach-switch/ns-01-menu.e2e.ts
+[Android #0-48] Смена нусаха внутри молитвы
+[Android #0-48]    ✖ NS-01 Меню смены нусаха — только список, активный отмечен, карточка в пределах экрана #6a86f7d8 #32e3cd9a @prod-safe
+[Android #0-48]
+[Android #0-48] 1 failing (23.8s)
+[Android #0-48]
+[Android #0-48] 1) Смена нусаха внутри молитвы NS-01 Меню смены нусаха — только список, активный отмечен, карточка в пределах экрана #6a86f7d8 #32e3cd9a @prod-safe
+[Android #0-48] Expect $(`android=new UiSelector().text("✓")`) to be displayed
+
+Expected: "displayed"
+Received: "not displayed"
+[Android #0-48] Error: Expect $(`android=new UiSelector().text("✓")`) to be displayed
+[Android #0-48]
+[Android #0-48] Expected: "displayed"
+[Android #0-48] Received: "not displayed"
+[Android #0-48]     at expectVisibleText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:64:30)
+[Android #0-48]     at Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/nusach-switch/ns-01-menu.e2e.ts:53:11)
+------------------------------------------------------------------
+[Android #0-49] Running: on Android
+[Android #0-49] Session ID: b667f058-af01-4faa-bacd-3c4450f3348e
+[Android #0-49]
+[Android #0-49] » specs/nusach-switch/ns-02-cancel-and-replace.e2e.ts
+[Android #0-49] Смена нусаха внутри молитвы
+[Android #0-49]    ✖ NS-02 «ביטול» оставляет всё как было, «החלף» переносит в параллельный קטע #6a86f7fdaa68 @prod-safe
+[Android #0-49]
+[Android #0-49] 1 failing (20.6s)
+[Android #0-49]
+[Android #0-49] 1) Смена нусаха внутри молитвы NS-02 «ביטול» оставляет всё как было, «החלף» переносит в параллельный קטע #6a86f7fdaa68 @prod-safe
+[Android #0-49] element ("android=new UiSelector().text("המשך")") still not displayed after 15000ms
+[Android #0-49] Error: element ("android=new UiSelector().text("המשך")") still not displayed after 15000ms
+[Android #0-49]     at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+[Android #0-49]     at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+[Android #0-49]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/nusach-switch/ns-02-cancel-and-replace.e2e.ts:15:5)
+------------------------------------------------------------------
+[Android #0-50] Running: on Android
+[Android #0-50] Session ID: 29e0036c-e69b-48b0-a307-f2aaeca0d1a1
+[Android #0-50]
+[Android #0-50] » specs/nusach-switch/ns-02-missing-section-fallback.e2e.ts
+[Android #0-50] Смена нусаха внутри молитвы
+[Android #0-50]    ✖ NS-02 Фрагмента нет в другом нусахе → переход к следующему с пояснением #6a86f7d8 @prod-safe
+[Android #0-50]
+[Android #0-50] 1 failing (23.3s)
+[Android #0-50]
+[Android #0-50] 1) Смена нусаха внутри молитвы NS-02 Фрагмента нет в другом нусахе → переход к следующему с пояснением #6a86f7d8 @prod-safe
+[Android #0-50] element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+[Android #0-50] Error: element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+[Android #0-50]     at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+[Android #0-50]     at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+[Android #0-50]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/nusach-switch/ns-02-missing-section-fallback.e2e.ts:36:5)
+------------------------------------------------------------------
+[Android #0-51] Running: on Android
+[Android #0-51] Session ID: 14c6f06f-d0a1-4409-89ce-424d0dfe8c7a
+[Android #0-51]
+[Android #0-51] » specs/nusach-switch/ns-02-profile-unchanged.e2e.ts
+[Android #0-51] Смена нусаха внутри молитвы
+[Android #0-51]    ✖ NS-02 После смены нусаха в молитве профиль не меняется #6a86f7d8 @prod-safe
+[Android #0-51]
+[Android #0-51] 1 failing (20.8s)
+[Android #0-51]
+[Android #0-51] 1) Смена нусаха внутри молитвы NS-02 После смены нусаха в молитве профиль не меняется #6a86f7d8 @prod-safe
+[Android #0-51] element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+[Android #0-51] Error: element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+[Android #0-51]     at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+[Android #0-51]     at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+[Android #0-51]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/nusach-switch/ns-02-profile-unchanged.e2e.ts:38:5)
+------------------------------------------------------------------
+[Android #0-52] Running: on Android
+[Android #0-52] Session ID: 7c11085b-4238-49a9-aa62-10d1b65d6330
+[Android #0-52]
+[Android #0-52] » specs/nusach-switch/ns-02-same-nusach-no-dialog.e2e.ts
+[Android #0-52] Смена нусаха внутри молитвы
+[Android #0-52]    ✖ NS-02 Выбор текущего нусаха — без диалога #6a86f7d8 @prod-safe
+[Android #0-52]
+[Android #0-52] 1 failing (21.5s)
+[Android #0-52]
+[Android #0-52] 1) Смена нусаха внутри молитвы NS-02 Выбор текущего нусаха — без диалога #6a86f7d8 @prod-safe
+[Android #0-52] element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+[Android #0-52] Error: element ("android=new UiSelector().text("קודם")") still not displayed after 15000ms
+[Android #0-52]     at async tapText (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/ui.ts:54:3)
+[Android #0-52]     at async goToPage (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/helpers/nav.ts:45:5)
+[Android #0-52]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/nusach-switch/ns-02-same-nusach-no-dialog.e2e.ts:15:5)
+------------------------------------------------------------------
+[Android #0-53] Running: on Android
+[Android #0-53] Session ID: d9308bc1-dc8c-4586-b283-9ac984c2f640
+[Android #0-53]
+[Android #0-53] » specs/onboarding/ob-01-registered-user-redirect.e2e.ts
+[Android #0-53] Onboarding — недоступен зарегистрированному
+[Android #0-53]    ? OB-01 Зарегистрированный пользователь не попадает в onboarding по ссылке #6aa7f009 @prod-safe
+[Android #0-53]    - OB-01 Зарегистрированный пользователь не попадает в onboarding по ссылке #6aa7f009 @prod-safe
+[Android #0-53]
+[Android #0-53] 1 skipped (2s)
+------------------------------------------------------------------
+[Android #0-54] Running: on Android
+[Android #0-54] Session ID: ab994ec6-76c3-412f-8443-edebe85a0c38
+[Android #0-54]
+[Android #0-54] » specs/prayer-catalog/pc-01-catalog-search.e2e.ts
+[Android #0-54] Каталог молитв
+[Android #0-54]    ✓ PC-01 «תפילות»: список с נוסח, поиск по синонимам и נוסח, пустое состояние, открытие #6a86f7ff @prod-safe
+[Android #0-54]
+[Android #0-54] 1 passing (29.9s)
+------------------------------------------------------------------
+[Android #0-55] Running: on Android
+[Android #0-55] Session ID: fd1819bf-68d1-4fd6-a250-3877c88d8290
+[Android #0-55]
+[Android #0-55] » specs/prayer-catalog/pc-02-prayers-screen-no-crash-70e8283a.e2e.ts
+[Android #0-55] Экран «תפילות» без крэша (#70e8283a)
+[Android #0-55]    ✖ PC-02a Вкладка «תפילות» открывает S-27, прокрутка до конца, 3 повторных входа — приложение живо #70e8283a @prod-safe
+[Android #0-55]    ✖ PC-02b Экран молитвы → ☰ → «רשימת התפילות» открывает S-27, прокрутка — приложение живо #70e8283a @prod-safe
+[Android #0-55]
+[Android #0-55] 2 failing (40.9s)
+[Android #0-55]
+[Android #0-55] 1) Экран «תפילות» без крэша (#70e8283a) PC-02a Вкладка «תפילות» открывает S-27, прокрутка до конца, 3 повторных входа — приложение живо #70e8283a @prod-safe
+[Android #0-55] вкладка, повторный вход 1: экран «תפילות» не открылся
+[Android #0-55] Error: вкладка, повторный вход 1: экран «תפילות» не открылся
+[Android #0-55]     at async waitPrayersScreen (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-1410.ts:37:3)
+[Android #0-55]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-catalog/pc-02-prayers-screen-no-crash-70e8283a.e2e.ts:22:7)
+[Android #0-55]
+[Android #0-55] 2) Экран «תפילות» без крэша (#70e8283a) PC-02b Экран молитвы → ☰ → «רשימת התפילות» открывает S-27, прокрутка — приложение живо #70e8283a @prod-safe
+[Android #0-55] Не найдена кнопка ☰ экрана молитвы по подписи (калибровка: снять page source, добавить label в MENU_LABELS)
+[Android #0-55] Error: Не найдена кнопка ☰ экрана молитвы по подписи (калибровка: снять page source, добавить label в MENU_LABELS)
+[Android #0-55]     at tapPrayerMenu (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-1410.ts:72:9)
+[Android #0-55]     at async openPrayersFromMenu (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/_lib/app-1410.ts:77:3)
+[Android #0-55]     at async Context.<anonymous> (/Users/avielshnaider/zikuiArabim-moe/.qa/app-e2e/specs/prayer-catalog/pc-02-prayers-screen-no-crash-70e8283a.e2e.ts:31:7)
+
+
+Spec Files:	 15 passed, 32 failed, 10 skipped, 154 total (37% completed) in 00:46:05  
+

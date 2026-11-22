@@ -1,0 +1,450 @@
+{
+  "project": "hunters",
+  "date": "2026-10-28",
+  "environment": "https://hunters-sooty.vercel.app",
+  "queue": [
+    "#c1b861",
+    "#e0e6cc",
+    "#daf026",
+    "#a904f9",
+    "#29f76e",
+    "#1866b8",
+    "#b06506",
+    "#412b53",
+    "#e6252d",
+    "#a953ab",
+    "#ae3aed",
+    "#43c7ff",
+    "#bc3456",
+    "#68f480",
+    "#246105",
+    "#0b7429",
+    "#cea191",
+    "#9dc615"
+  ],
+  "tickets": [
+    {
+      "hash": "#b06506",
+      "title": "Admin › Reports & messages: long messages are clamped to 4 lines with «להמשך קריאה»",
+      "type": "improvement",
+      "action": "reject",
+      "column": "לביצוע",
+      "notes": "rej_c093dfcc4d08126fee1f0e67: 5th line bleeds under «…» (padding on line-clamp box). Reported-chats tab not checked (no chat report with text) — check on retest.",
+      "at": "2026-10-28T14:10"
+    },
+    {
+      "hash": "#a953ab",
+      "title": "[E2E] פווטר מכיל תוכן של מוצר אחר (\"MentMe\") בכל העמודים",
+      "type": "bug",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "feature: landing-footer; roles guest+talent; desktop+375; cases .qa/tests/landing-footer (LF-1-1..4 regress ok). Assignee on board = Nikita QA. | user confirmed passed 28.10; autotest plan written: .qa/e2e/specs/landing-footer.md §3 (3.1–3.6), cases LF-3-1..6",
+      "at": "2026-10-28T14:20"
+    },
+    {
+      "hash": "#cea191",
+      "title": "Candidacy timeline shows «התבקש פרופיל מלא» twice – a phantom step after «סומן/ה כמתאים/ה»",
+      "type": "bug",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "feature: candidacy-timeline; roles company_6, company, hunter_plus; desktop; T-62, T-45, J-49 app 3d5257f9 | user confirmed passed 28.10",
+      "at": "2026-10-28T14:40"
+    },
+    {
+      "hash": "#9dc615",
+      "title": "Tender submissions: notifications and the submission view say «משרה» / job instead of «מכרז» / tender",
+      "type": "bug",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "feature: tender-submissions-texts; roles company_6, company, hunter_plus; he/en/ru/ar; desktop | user confirmed passed 28.10",
+      "at": "2026-10-28T14:40"
+    },
+    {
+      "hash": "#246105",
+      "title": "Work Representation: after «שליחת השאלות» the form stays open and enabled – questions can be sent again",
+      "type": "bug",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "feature: work-representation-questions; role talent_2; desktop+375; app 45967f8d / J-49. Server second-set point superseded by #e0e6cc. For #e0e6cc: app-thread button disappears after 1 pending question (<3); J-49 thread question appears with delay up to ~19s after 200 | user confirmed passed 28.10",
+      "at": "2026-10-28T14:50"
+    },
+    {
+      "hash": "#43c7ff",
+      "title": "Payment window: the Cardcom card-number field breaks after resizing or moving the browser window",
+      "type": "bug",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "QA part passed (resize/rotation/focus empty fields, hunter_free_2 PLUS window). Waiting user: type number+CVV, resize/move/zoom, real iPhone portrait. | user checked in real Chrome 28.10: typed number, resize/move/zoom — field ok. Not checked: real iPhone with typed digits. feature: payment-window-cardcom; role hunter_free_2. | user confirmed passed 28.10",
+      "at": "2026-10-28T15:05"
+    },
+    {
+      "hash": "#bc3456",
+      "title": "Saved credit card cannot be removed",
+      "type": "bug",
+      "action": "waiting-user",
+      "column": "הושלם?",
+      "notes": "No saved cards on demo-hunter-3 (now FREE) and demo-talent-1 (PRO, renewal off) — 8782 removed by dev. Removal needs new ₪1 payment with save card by user. Admin part + mayagi1204 not checked yet. | 28.10: no longer in בבדיקות (user moved it); user verified removal himself",
+      "at": "2026-10-28T15:05"
+    },
+    {
+      "hash": "#41dc55",
+      "title": "Public pages: a logged-in user sees the guest footer links",
+      "type": "bug",
+      "action": "new-bug",
+      "column": "לביצוע",
+      "notes": "from findings 28.10",
+      "at": "2026-10-28T15:30"
+    },
+    {
+      "hash": "#d81753",
+      "title": "Mobile: footer links are 21px tall",
+      "type": "bug",
+      "action": "new-bug",
+      "column": "לביצוע",
+      "notes": "from findings 28.10",
+      "at": "2026-10-28T15:30"
+    },
+    {
+      "hash": "#da29dd",
+      "title": "/faq is closed to guests – redirects to login",
+      "type": "bug",
+      "action": "new-bug",
+      "column": "לביצוע",
+      "notes": "from findings 28.10",
+      "at": "2026-10-28T15:30"
+    },
+    {
+      "hash": "#0b7429",
+      "title": "NDA refused notification: the reason stays in Hebrew in English / Russian",
+      "type": "bug",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "feature: notification-reasons-i18n; roles talent_2 (NDA refusal), company+hunter_plus (candidate rejection reason); he/en/ru/ar; not checked: tender-offer rejection (no data) | user confirmed passed 28.10",
+      "at": "2026-10-28T16:00"
+    },
+    {
+      "hash": "#412b53",
+      "title": "Notification link to an archived job opens a 404 page",
+      "type": "bug",
+      "action": "reject",
+      "column": "לביצוע",
+      "notes": "rej_ab3dac7c6a000cfc4bb37ad5: archived job owner can change candidate statuses. Older rejections #2/#3 still open (other points passed 28.10). Deleted item not testable.",
+      "at": "2026-10-28T16:00"
+    },
+    {
+      "hash": "#68f480",
+      "title": "Application on an NDA job shows no NDA status",
+      "type": "bug",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "rejection #2 resolved; user confirmed passed 28.10. feature application-nda-indicator; roles company, hunter_free, admin, hunter_plus",
+      "at": "2026-10-28T16:00"
+    },
+    {
+      "hash": "#dcde2e",
+      "title": "/applications/<id>: existing application without access returns HTTP 200 with 404 page",
+      "type": "bug",
+      "action": "new-bug",
+      "column": "לביצוע",
+      "notes": "from #68f480/#412b53 retest",
+      "at": "2026-10-28T16:10"
+    },
+    {
+      "hash": "#c1b861",
+      "title": "בקשת לקוח: NDA ראשוני בין הד האנטרים",
+      "type": "task",
+      "action": "reject",
+      "column": "לביצוע",
+      "notes": "CRASH: first submission to another headhunter job / new chat → «משהו השתבש», MISSING_MESSAGE hunterNda (all 4 langs) + g.map TypeError; verified 3/3. Pairs not burned. Waiting user yes on reject. | rej_73a5e22d7d62a0e45d337f23 sent",
+      "at": "2026-10-28T16:20"
+    },
+    {
+      "hash": "#ae3aed",
+      "title": "«שדרוג משרה»: job distribution can be activated again on a job that was already distributed – no \"already sent\" indication or warning",
+      "type": "bug",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "feature: job-upgrade-distribution; role hunter_plus; J-70; he/en/ru/ar; nothing spent (3/5) | user confirmed passed 28.10",
+      "at": "2026-10-28T17:00"
+    },
+    {
+      "hash": "#889f5b",
+      "title": "Timeline labels cut with «…» on desktop",
+      "type": "bug",
+      "action": "new-bug",
+      "column": "לביצוע",
+      "notes": "from findings 28.10",
+      "at": "2026-10-28T17:15"
+    },
+    {
+      "hash": "#5fc833",
+      "title": "Owner: HR submission title «הגשת מועמד:» empty",
+      "type": "bug",
+      "action": "new-bug",
+      "column": "לביצוע",
+      "notes": "from findings 28.10",
+      "at": "2026-10-28T17:15"
+    },
+    {
+      "hash": "#f2c5ce",
+      "title": "Submit form masculine-only «המועמד»",
+      "type": "bug",
+      "action": "new-bug",
+      "column": "לביצוע",
+      "notes": "from findings 28.10",
+      "at": "2026-10-28T17:15"
+    },
+    {
+      "hash": "#daf026",
+      "title": "בקשת לקוח: «הוספת מועמד» – remove the «פרופיל אנונימי / פרופיל גלוי» choice, always anonymous",
+      "type": "task",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "feature: add-candidate (update AC-1-1/specs add-candidate.md — «פרופיל גלוי» outdated); role hunter_plus+company; DEMO-1 view by others not checked (would need demo submission) | user confirmed passed 28.10",
+      "at": "2026-10-28T17:40"
+    },
+    {
+      "hash": "#e0e6cc",
+      "title": "בקשת לקוח: Questions to the job owner – before submitting, more than once, also by the headhunter (anonymously)",
+      "type": "task",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "feature: job-owner-questions; roles talent, hunter_plus, company, hunter_free, talent_2; J-49; he/en/ru/ar; server-side 3-limit not tested | user confirmed passed 28.10",
+      "at": "2026-10-28T18:00"
+    },
+    {
+      "hash": "#d4f6e7",
+      "title": "Anonymous submission: AI title keeps current employer",
+      "type": "bug",
+      "action": "new-bug",
+      "column": "לביצוע",
+      "notes": "from #daf026 finding, verified 28.10",
+      "at": "2026-10-28T18:20"
+    },
+    {
+      "hash": "#a904f9",
+      "title": "Talent registration – remove the profile-type step, every talent starts anonymous",
+      "type": "task",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "user confirmed passed 28.10; new talent U-50 af9b38c2-…; plan talent-onboarding.md updated",
+      "at": "2026-10-28T18:40"
+    },
+    {
+      "hash": "#e6252d",
+      "title": "LinkedIn import – sign in with LinkedIn + upload LinkedIn profile PDF",
+      "type": "task",
+      "action": "reject",
+      "column": "לביצוע",
+      "notes": "rej_39536c93af1e22f87e1778ff sent 28.10 (LinkedIn connect not configured + PDF/CV merge duplicate). #29f76e/#1866b8 stay «לא ניתן לשחזר» until #e6252d fixed.",
+      "at": "2026-10-28T18:45"
+    },
+    {
+      "hash": "#888970",
+      "title": "Job questions window: ממתין/ממתינה, stale hints, no sending feedback",
+      "type": "bug",
+      "action": "new-bug",
+      "column": "לביצוע",
+      "notes": "from findings 28.10, verified",
+      "at": "2026-10-28T19:00"
+    },
+    {
+      "hash": "#2f48c9",
+      "title": "Company job: «פרטי הד האנטר המשרה…» for FREE talent",
+      "type": "bug",
+      "action": "new-bug",
+      "column": "לביצוע",
+      "notes": "from findings 28.10, verified",
+      "at": "2026-10-28T19:00"
+    },
+    {
+      "hash": "#f44114",
+      "title": "?questions= link throws React #419",
+      "type": "bug",
+      "action": "new-bug",
+      "column": "לביצוע",
+      "notes": "from findings 28.10, verified",
+      "at": "2026-10-28T19:00"
+    },
+    {
+      "hash": "#730ae5",
+      "title": "Cardcom fields no visible focus",
+      "type": "bug",
+      "action": "new-bug",
+      "column": "לביצוע",
+      "notes": "from findings 28.10, verified",
+      "at": "2026-10-28T19:00"
+    },
+    {
+      "hash": "#1f12f6",
+      "title": "Manual plan grant sends no notification + admin date 01/11 vs 02.11",
+      "type": "bug",
+      "action": "new-bug",
+      "column": "לביצוע",
+      "notes": "from findings 28.10, verified",
+      "at": "2026-10-28T19:00"
+    }
+  ],
+  "test_data": [
+    {
+      "what": "Contact message R-20 «QA-AUTO 2810 b06506» (guest, 2172 chars, status פתוח)",
+      "where": "/admin/reports → טופס יצירת קשר",
+      "created_at": "2026-10-28T13:54",
+      "ticket": "#b06506",
+      "clean": "delete"
+    },
+    {
+      "what": "HR demo-company-6 submission to T-45 «QA-AUTO bc890b מכרז» app f6378225-5715-4723-bed3-566ebc7b2ca9 (full profile requested, suitable)",
+      "where": "tender eba3be25-…",
+      "created_at": "2026-10-28T14:00"
+    },
+    {
+      "what": "Candidate «QA-AUTO 2810 cea191 job» 3f7a1f5e-5cd5-4f6c-ad0c-20782aacdefc (claude-test, +972521409231) — no UI delete",
+      "where": "/my-candidates",
+      "created_at": "2026-10-28T14:05"
+    },
+    {
+      "what": "Job application 3d5257f9-f9fa-460c-8ffd-3b7960d16b4d on J-49 (full profile requested, suitable; to be rejected for #0b7429) → rejected 28.10 reason «ציפיות השכר גבוהות מהתקציב» (#0b7429)",
+      "where": "J-49 7e4ad713-…",
+      "created_at": "2026-10-28T14:10"
+    },
+    {
+      "what": "3 unanswered questions «QA-AUTO 2810 246105 שאלה/dbl/m» from demo-talent-2 on J-49 (app 45967f8d) — limit reached",
+      "where": "J-49 7e4ad713-…",
+      "created_at": "2026-10-28T14:16"
+    },
+    {
+      "what": "Application 3d1d441f (J-136 archived) status «נצפה/תה» → «מתאים/ה» (verification of #412b53)",
+      "where": "J-136 547e6014-…",
+      "created_at": "2026-10-28T15:50"
+    },
+    {
+      "what": "Candidates claude-test «QA-AUTO 2810 c1b861 sign» c8855357-…, «… second» 7cfd0ff5-…, «… refuse» (no UI delete)",
+      "where": "/my-candidates",
+      "created_at": "2026-10-28T16:40"
+    },
+    {
+      "what": "Empty conversation claude-test ↔ demo-hunter-3 c=9339566b-8799-41ce-b222-8c586a4afcce",
+      "where": "/messages",
+      "created_at": "2026-10-28T16:45"
+    },
+    {
+      "what": "Candidates claude-test «QA-AUTO 2810 daf026 Anon» dc603d82-… and «… AnonSub» 17b8ed83-… (no UI delete)",
+      "where": "/my-candidates",
+      "created_at": "2026-10-28T17:20"
+    },
+    {
+      "what": "Submissions to J-49: Anon full profile c4e2711d-…, AnonSub anonymous",
+      "where": "J-49",
+      "created_at": "2026-10-28T17:25"
+    },
+    {
+      "what": "J-49 question threads: talent demo-talent-1 3a1added-… (Q1–Q4, A1–A3), claude-test 21b93c86-… (Q1–Q3, A HH1)",
+      "where": "J-49",
+      "created_at": "2026-10-28T17:50"
+    },
+    {
+      "what": "Application demo-talent-1 (משה כהן) to J-49, full profile, no NDA",
+      "where": "J-49",
+      "created_at": "2026-10-28T17:55"
+    },
+    {
+      "what": "Candidates claude-test «דנה ישראלי QA2810x» 3974840f-… and «רון QA2810y» 3342cb1e-… + 2 anonymous submissions to J-49",
+      "where": "J-49",
+      "created_at": "2026-10-28T18:10"
+    },
+    {
+      "what": "New talent account gasin13853@37xiao.com (registered by user), onboarding in progress",
+      "where": "/onboarding",
+      "created_at": "2026-10-28T18:15"
+    },
+    {
+      "what": "Contact messages R-21 (he), R-22 (en) «QA-AUTO 2810 find»",
+      "where": "/admin/reports?tab=contact",
+      "created_at": "2026-10-28T18:26"
+    },
+    {
+      "what": "claude-test questions on J-49 «QA-AUTO 2810 find Q-…» (7, last 3 unanswered → at limit) + demo-company-1 answers «QA-AUTO 2810 find answer»",
+      "where": "J-49",
+      "created_at": "2026-10-28T18:35"
+    }
+  ],
+  "findings": [
+    {
+      "text": "/contact (guest): after send no visible confirmation, form just clears; message arrives (R-20). Needs separate check. — NOT CONFIRMED 28.10: toast shown",
+      "screenshot": "",
+      "status": "skipped"
+    },
+    {
+      "text": "#a953ab: logged-in user on public pages sees guest footer «הרשמה/התחברות» (cabinet footer differs); dev note said 'my account when signed in'",
+      "screenshot": ".qa/screenshots/a953ab-loggedin-public-footer-signup-desktop.png",
+      "status": "ticket-created"
+    },
+    {
+      "text": "/faq redirects guest to /login (public FAQ is /headhunters#faq)",
+      "screenshot": "",
+      "status": "ticket-created"
+    },
+    {
+      "text": "Footer links 21px tall on mobile (<44px tap target)",
+      "screenshot": "",
+      "status": "ticket-created"
+    },
+    {
+      "text": "Bell aria-label shows unread count only in he, not en/ru/ar (single observation)",
+      "screenshot": "",
+      "status": "skipped"
+    },
+    {
+      "text": "Timeline labels truncated with «…» (HR+owner, T-62)",
+      "screenshot": ".qa/screenshots/cea191-finding-timeline-truncated-desktop.png",
+      "status": "ticket-created"
+    },
+    {
+      "text": "Owner window title «הגשת מועמד:» empty for anonymous HR tender submission",
+      "screenshot": ".qa/screenshots/cea191-finding-owner-empty-title-desktop.png",
+      "status": "ticket-created"
+    },
+    {
+      "text": "Submit form step 2: masculine-only «של המועמד» (rule 2026-10-19: neutral with /)",
+      "screenshot": "",
+      "status": "ticket-created"
+    },
+    {
+      "text": "Soft 404: existing application /applications/0cc56444 → HTTP 200 + 404 page for owner demo-company-1 and unrelated hunter",
+      "screenshot": ".qa/screenshots/412b53-soft404-existing-application-hunter-desktop.png",
+      "status": "ticket-created"
+    },
+    {
+      "text": "AI headline of anonymous candidate copies «תפקיד נוכחי / כותרת» almost verbatim — possible identity leak if a name/company is typed (hypothesis)",
+      "screenshot": "",
+      "status": "ticket-created"
+    },
+    {
+      "text": "Headhunter question send: question appears ~10 s after POST 200, button disabled, no 'sending' indicator (also ~19 s in #246105)",
+      "screenshot": "",
+      "status": "ticket-created"
+    },
+    {
+      "text": "Pending label differs: «ממתין לתשובה» (post-NDA view) vs «ממתינה לתשובה» (modal)",
+      "screenshot": "",
+      "status": "ticket-created"
+    },
+    {
+      "text": "Drawer after applying still says «אחרי התשובה אפשר להגיש מועמדות…»",
+      "screenshot": "",
+      "status": "ticket-created"
+    },
+    {
+      "text": "demo-talent-2 sees «פרטי הד האנטר המשרה זמינים למנויי PRO» on J-49 owned by a company",
+      "screenshot": "",
+      "status": "ticket-created"
+    },
+    {
+      "text": "Minified React error #419 after reload of J-49 ?questions= as talent",
+      "screenshot": "",
+      "status": "ticket-created"
+    }
+  ],
+  "price_changes": []
+}

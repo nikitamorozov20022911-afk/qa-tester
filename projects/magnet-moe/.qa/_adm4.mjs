@@ -1,0 +1,11 @@
+import { chromium } from 'playwright';
+const b = await chromium.launch();
+const c = await b.newContext({ storageState: '/Users/avielshnaider/magnet-moe/.qa/auth/admin-r11.json', viewport:{width:1440,height:900} });
+const p = await c.newPage();
+await p.goto('https://magnet-admin.vercel.app/users/09368ba8-1aa9-4233-9fae-d3a7ff587084', {waitUntil:'networkidle'});
+await p.waitForTimeout(2500);
+const t = await p.evaluate(()=>document.body.innerText);
+console.log(t.split('\n').filter(l=>/מתנ|רצף|בוסט|לייק|יתר/.test(l)).join('\n'));
+console.log((await p.locator('button').allInnerTexts()).filter(x=>x.trim()).join(' | '));
+await c.storageState({path:'/Users/avielshnaider/magnet-moe/.qa/auth/admin-r11.json'});
+await b.close();

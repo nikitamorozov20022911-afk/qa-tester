@@ -1,0 +1,380 @@
+{
+ "project": "Techory",
+ "date": "2026-11-17",
+ "environment": "prod app.techory.ai + Pre-Prod + Pixel 6 Techory Dev 1.2 (сборка 16.11, WebView через CDP adb forward 9333)",
+ "tickets": [
+  {
+   "hash": "4f4eab",
+   "verdict": "pass",
+   "device": "android",
+   "facts": "меню аккаунта: Billing & Subscription → Current plan Techory Lite, 1 extra company ends Dec 12, 2026, «cannot be managed in the app»"
+  },
+  {
+   "hash": "4315cf",
+   "verdict": "pass",
+   "device": "android",
+   "facts": "back1 клавиатура, back2 подсказки закрыты без диалога, back3 Leave without saving?"
+  },
+  {
+   "hash": "24c5b2",
+   "verdict": "pass",
+   "device": "android",
+   "facts": "offline (CDP) toast под шапкой с X, тап adb по бургеру открывает меню при видимом toast"
+  },
+  {
+   "hash": "809888",
+   "verdict": "pass",
+   "device": "android",
+   "facts": "back из JobDetail → /jobs?tab=pending, вкладка Pending 3/3"
+  },
+  {
+   "hash": "a83f47",
+   "verdict": "app-pass, web pending",
+   "device": "android",
+   "facts": "View Details → окно Payment details (сумма, статус, дата, клиент, JOB, метод, Stripe ref); у Refunded — Status Refunded + Amount refunded"
+  },
+  {
+   "hash": "ec42a8",
+   "verdict": "app partial",
+   "device": "android",
+   "facts": "Refund → окно приложения «Refund this payment? $1 goes back to TTP Customer's card. A refund cannot be undone.» Cancel/Refund; toast результата не проверен (нужен реальный refund)"
+  },
+  {
+   "hash": "0cd6c0",
+   "verdict": "pass",
+   "device": "android",
+   "facts": "9/9 загрузок (6 reload + 3 SPA) сразу «3 clients · 5 estimates», Estimates Total 5, без мелькания 0"
+  },
+  {
+   "hash": "5315ab",
+   "verdict": "app-pass, desktop pending",
+   "device": "android",
+   "facts": "#JOB-0003 в шапке; Remaining to pay $0.00 сразу 6/6, внутри Overpaid $23 (paid 147 / total 124)"
+  },
+  {
+   "hash": "4ed2a1",
+   "verdict": "rejection fixed; Google Play — по решению 12.11 остаётся לא ניתן לשחזר",
+   "device": "android",
+   "facts": "INV-0001 Download → share-sheet Invoice-INV-0001.pdf; EST-0001 Preview открыт, back закрывает"
+  },
+  {
+   "hash": "2185f2",
+   "verdict": "app part ok, web pending",
+   "device": "android",
+   "facts": "в приложении план виден, управление «cannot be managed in the app»"
+  },
+  {
+   "hash": "2f4dd9",
+   "verdict": "reject",
+   "facts": "окно подтверждения $49 ✅, иврит ✅, 2 компании ✅; ❌ при загрузке «You have 0 companies» 0.2–0.8 с (7/7 pp-a, 5/5 ttp), bug-verifier подтвердил"
+  },
+  {
+   "hash": "1649c3",
+   "verdict": "pass (кроме успешной оплаты — не проверено)",
+   "facts": "Back из Checkout → исходная страница + «Checkout cancelled / Nothing was charged» (Billing и Company Settings)"
+  },
+  {
+   "hash": "feb50f",
+   "verdict": "pass",
+   "facts": "Payment Link $1.00 и Add company $49.00 — USD, без ₪ (Pre-Prod); live prod не проверен"
+  },
+  {
+   "hash": "70ca62",
+   "verdict": "pass",
+   "facts": "Escape возвращает прежнее имя"
+  },
+  {
+   "hash": "ca1a27",
+   "verdict": "pass",
+   "facts": "ошибки у полей без alert, EST в /assessments, 375 ok"
+  },
+  {
+   "hash": "5e4fe6",
+   "verdict": "pass",
+   "facts": "Reports 7/$150, Portal 6/$149, Refunds not included $3 (2)"
+  },
+  {
+   "hash": "5315ab",
+   "verdict": "pass",
+   "facts": "desktop 13 загрузок без $0.00; android 6/6"
+  },
+  {
+   "hash": "687146",
+   "verdict": "question",
+   "facts": "toast «Invoice INV-0004 was updated to match» — ок; оплаченный/отправленный не проверены; решение по автосинхронизации — у владельца"
+  },
+  {
+   "hash": "1cdb04",
+   "verdict": "reject",
+   "facts": "toast понятный EN/HE; ❌ ответ message-technicians содержит TWILIO_ACCOUNT_SID… (3/3, bug-verifier подтвердил)"
+  },
+  {
+   "hash": "b20fe6",
+   "verdict": "pass",
+   "facts": "Extra companies «Cancels on Dec 12, 2026», совпадает со Stripe"
+  },
+  {
+   "hash": "458056",
+   "verdict": "pass",
+   "facts": "QA-Connect 1211 JOB-0001 Payment links $1.00 Refunded"
+  },
+  {
+   "hash": "a83f47",
+   "verdict": "pass",
+   "facts": "app + web: окно Payment details, у Refunded — статус и сумма возврата"
+  },
+  {
+   "hash": "ec42a8",
+   "verdict": "partial",
+   "facts": "окно приложения с суммой и клиентом (app+web), confirm 0; toast результата не проверен (нужен Refund)"
+  },
+  {
+   "hash": "63ed24",
+   "verdict": "pass",
+   "facts": "toast внизу справа, кнопки кликабельны"
+  },
+  {
+   "hash": "2185f2",
+   "verdict": "partial",
+   "facts": "кнопки на 412/1440 ок; окно отмены не проверено — pp-a уже Cancels on Nov 3, нужен Keep my plan"
+  },
+  {
+   "hash": "ffde48",
+   "verdict": "pass",
+   "facts": "58 счетов без повторов, INV-0023 один"
+  },
+  {
+   "hash": "8595f7",
+   "verdict": "pass",
+   "facts": "причина блокировки над Send, счётчик 0/1562 + «+38 characters…»"
+  },
+  {
+   "hash": "126f07",
+   "verdict": "question→pass",
+   "facts": "0 в DOM 16–31 мс 2/15, глазом не видно"
+  },
+  {
+   "hash": "0e73d5",
+   "verdict": "pass (эмуляция)",
+   "facts": "все 17 пунктов без прокрутки 375×629/667/812, 360×640 EN/HE; реальный Safari не проверен"
+  },
+  {
+   "hash": "a96197",
+   "verdict": "pass",
+   "facts": "Send не создаёт POST Assessment, Cancel не создаёт EST"
+  },
+  {
+   "hash": "6f9da3",
+   "verdict": "question",
+   "facts": "гостевой AI-экран ✅, окно входа только Trial / I have an account — нет Apple/Google; регистрация — человек"
+  },
+  {
+   "hash": "e9ccde",
+   "verdict": "reject",
+   "facts": "switch On/Off+имя ✅, уникальные метки ✅; ❌ зона чекбокса 42×42 на 375 (bug-verifier подтвердил)"
+  },
+  {
+   "hash": "98c982",
+   "verdict": "pass",
+   "facts": "сразу «No SMS», pending не появлялся"
+  },
+  {
+   "hash": "cacd64",
+   "verdict": "pass",
+   "facts": "9/9 + 2 slow 3G, устаревших кадров 0"
+  },
+  {
+   "hash": "c9f0f5",
+   "verdict": "pass",
+   "facts": "6/6 без beforeunload; контроль с несохранённой правкой — диалог есть"
+  },
+  {
+   "hash": "4030e4",
+   "verdict": "pass",
+   "facts": "окно 1152px, Found in the file, Also import, нераспознанная колонка, ZIP с 0, повторный импорт 0 новых, HE и 390 ок"
+  },
+  {
+   "hash": "6d5396",
+   "verdict": "reject",
+   "facts": "список/карточка Description ✅; ❌ Job Description = весь SMS (JOB-0013..0015, 0017..0020), 2 агента"
+  },
+  {
+   "hash": "621cd7",
+   "verdict": "pass",
+   "facts": "Country United States, ZIP 33132 в работе и клиенте QA-Gil Shore"
+  },
+  {
+   "hash": "22cfa9",
+   "verdict": "pass (вопрос: Create invoice после Assign)",
+   "facts": "Assign 1.9 с, Create jobs A+B без refresh, без дублей"
+  },
+  {
+   "hash": "0c3606",
+   "verdict": "ждёт R2.2",
+   "facts": "R1.1 ✅ R1.2 ✅ (9 SMS с одного номера дошли) R1.3 ✅ (время, категория, массовый) R2.1 ✅; R2.2 SMS технику — нужен номер техника"
+  },
+  {
+   "hash": "4030e4",
+   "verdict": "pass — импорт пользователем",
+   "facts": "файл workiz-test/workiz-all-clients.csv (колонки Workiz All clients): 3 клиента QA-Avi Cohen / QA-Maya Levi / QA-Dan Brooks, все поля совпали, ZIP 02108/07302 с 0, Secondary phone, Tags+Workiz ID в Notes; Total 68→71"
+  },
+  {
+   "hash": "ec42a8",
+   "verdict": "pass",
+   "facts": "Refund $1 (разрешён): окно приложения, dialog=0, toast по коду «The payment was refunded.» + «$1 · клиент»; #5e4fe6 пересчитались"
+  },
+  {
+   "hash": "2185f2",
+   "verdict": "pass",
+   "facts": "Keep my plan → Cancel subscription → окно «Starter Tech stays active until Nov 3, 2026», HE, 412 под таблицей; состояние возвращено"
+  },
+  {
+   "hash": "687146",
+   "verdict": "pass (решение пользователя: по требованиям)",
+   "facts": "toast «Invoice INV-… was updated to match»; оплаченных счетов в Pre-Prod нет — не проверено"
+  },
+  {
+   "hash": "04d338",
+   "verdict": "ждёт регистрации пользователем",
+   "facts": "Р3: email заблокирован (aria-readonly, замок), подмена email в URL → адрес приглашения (3/3; 180–240 мс виден адрес из URL — находка); Р1: Ops manager без Delete, DELETE Invoice/JobPayment → 403, trash у строк счёта, Sign out остаётся на приглашении; Р2: заголовок «Join test on Techory»; не проверено: отправка регистрации, вход без верификации, адрес с существующим аккаунтом. Роль Test Nikita возвращена, приглашение отозвано"
+  },
+  {
+   "hash": "1649c3",
+   "verdict": "pass",
+   "facts": "оплата тест-картой пользователем (pp-a, Stripe sandbox): возврат на /BillingSubscription?billing=company-added, «Company slot added» через ~2 с, «allow 2 companies», Extra companies +1 $49/month, Upcoming billing $49; Back ранее — «Checkout cancelled»"
+  },
+  {
+   "hash": "0c3606",
+   "verdict": "pass",
+   "facts": "R1.1 ✅ R1.2 ✅ R1.3 ✅ R2.1 ✅; R2.2: техник QA-Tech Auto временно +972549101620 с согласием → SMS 14:34 → JOB-0023 автоназначен, «SMS sent», пользователь подтвердил получение; техник возвращён (+13055550199, без согласия)"
+  },
+  {
+   "hash": "48acac",
+   "verdict": "pass",
+   "facts": "pp-a после покупки места (17.11): Extra companies +1 Active $49/month Monthly, Next billing Nov 27, 2026; Upcoming billing «Extra companies (1) $49 due Nov 27, 2026»; Stripe portal «next billing date is November 27, 2026» (test clock Oct 27). Пропущен в первом проходе, проверен по запросу пользователя"
+  }
+ ],
+ "test_data": [
+  "Pre-Prod TTP: черновик клиента QA-Offline 1711 НЕ сохранён (offline)",
+  "prod test: INV-0059…0062 + 13 счетов QA-126f07v item (до 75)",
+  "Pre-Prod TTP: EST-0006, QA-687146-item(2) в JOB-0001/INV-0004, открытая Payment Link $1 JOB-0004, неудачные SMS QA-Toast A",
+  "prod gps: JOB-0013..0017, клиент «+972537240114» (59de590a), назначение msg5, Draft-смета QA-Cat Repair",
+  "prod gps: клиенты QA-Tom Cruz/Gil Shore/Noa Field, JOB-0018..0020; правила возвращены (время ВКЛ, Keys ВЫКЛ, QA-Repair удалено)",
+  "prod test: JOB-0124 QA-1711 cacd64 job, 9 клиентов QA-Import 1711 …",
+  "prod test: клиенты QA-Avi Cohen, QA-Maya Levi, QA-Dan Brooks (импорт Workiz 17.11)",
+  "Pre-Prod pp-a: тестовая подписка доп. компании $49/мес (Stripe sandbox, 17.11) — отменить в billing portal при чистке",
+  "prod test: приглашение qa-invite2-1711@example.test (Invited), аккаунт создан без подтверждения email — отменить приглашение при чистке",
+  "prod gps: JOB-0021..0023 (QA-Lior Ben), сообщения 14:02/14:22/14:34"
+ ],
+ "findings": [
+  "Pre-Prod: оплата по работе не переводит счёт в Paid (INV-0001 Pending при оплате $147)",
+  "PaymentPortal refundFailed показывает l.message (сырой текст ошибки)"
+ ],
+ "log": [
+  {
+   "time": "2026-11-17",
+   "what": "пользователь провёл עבר QA",
+   "tickets": [
+    "4f4eab",
+    "4315cf",
+    "24c5b2",
+    "809888",
+    "0cd6c0",
+    "a83f47",
+    "70ca62",
+    "ca1a27",
+    "5e4fe6",
+    "5315ab",
+    "b20fe6",
+    "458056",
+    "63ed24",
+    "feb50f",
+    "ffde48",
+    "8595f7",
+    "0e73d5",
+    "a96197",
+    "cacd64",
+    "c9f0f5",
+    "4030e4",
+    "126f07",
+    "98c982",
+    "621cd7",
+    "22cfa9"
+   ],
+   "column": "הושלם"
+  },
+  {
+   "time": "2026-11-17 13:45",
+   "board": {
+    "rejected(todo)": {
+     "2f4dd9": "rej_aa46f3082c8b97d55a4947f1",
+     "1cdb04": "rej_9d154daa85f494bb6178a815",
+     "e9ccde": "rej_4c1bfd06a4803cc2ababae34",
+     "6d5396": "rej_65b7db042fb5488102232c13",
+     "6f9da3": "rej_7c48d43aa8e771dc1833df4a"
+    },
+    "resolved": [
+     "5315ab",
+     "5e4fe6",
+     "ca1a27",
+     "4030e4",
+     "4ed2a1",
+     "2185f2"
+    ],
+    "note": "вложения через {url} (upload_path не принимался: upload_not_complete)"
+   }
+  },
+  {
+   "time": "2026-11-17",
+   "what": "пользователь провёл עבר QA",
+   "tickets": [
+    "ec42a8",
+    "2185f2",
+    "687146",
+    "1649c3",
+    "04d338"
+   ],
+   "column": "הושלם"
+  },
+  {
+   "time": "2026-11-17",
+   "what": "пользователь провёл עבר QA",
+   "tickets": [
+    "48acac",
+    "0c3606"
+   ],
+   "column": "הושלם"
+  },
+  {
+   "time": "2026-11-17",
+   "what": "новые баги из находок (לביצוע)",
+   "tickets": [
+    "8340df",
+    "cf95a1",
+    "e51205",
+    "d1599a",
+    "2da355",
+    "b2fe34",
+    "135712",
+    "6b906d",
+    "af15da",
+    "baa610",
+    "f42def",
+    "59a153",
+    "ac4295",
+    "56c006",
+    "c97bc6",
+    "fe9d0b",
+    "0b6567"
+   ],
+   "not_filed": {
+    "3": "не подтверждено — JOB-0002/0003 есть во вкладке Pending"
+   }
+  },
+  {
+   "time": "2026-11-17",
+   "what": "handoff, сессия закрыта"
+  }
+ ],
+ "status": "завершено"
+}

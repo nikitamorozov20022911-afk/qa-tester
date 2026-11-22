@@ -1,0 +1,13 @@
+# Вход по телефону + OTP. appId заполнить после установки приложения.
+# Код из SMS даёт пользователь: maestro test -e PHONE=0537240114 -e OTP=<код> ...
+appId: APP_ID_TBD
+---
+# TODO: селекторы снять с реального экрана входа (maestro studio / hierarchy)
+- launchApp
+- tapOn:
+    id: "PHONE_FIELD_TBD"
+- inputText: ${PHONE}
+- tapOn: "TBD_SEND_CODE"
+- tapOn:
+    id: "OTP_FIELD_TBD"
+- inputText: ${OTP}

@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>ZIXE — דוח בדיקת מערכת וחוויית משתמש</title>
+<style>
+@page { size: A4; margin: 14mm 14mm; }
+body { font-family: "Arial Hebrew", -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 10.6pt; color: #1b2330; line-height: 1.5; }
+h1 { font-size: 21pt; color: #0f2a5a; border-bottom: 3px solid #2563eb; padding-bottom: 6px; margin-bottom: 4px; }
+.sub { color: #5b6677; margin: 0 0 12px; }
+h2 { font-size: 14.5pt; color: #0f2a5a; margin: 22px 0 8px; break-after: avoid; }
+h3 { font-size: 12pt; color: #1e3a8a; margin: 14px 0 6px; break-after: avoid; }
+ul, ol { padding-right: 22px; padding-left: 0; margin: 4px 0; } li { margin: 3px 0; }
+table { border-collapse: collapse; width: 100%; margin: 8px 0 10px; font-size: 10pt; break-inside: avoid; }
+th, td { border: 1px solid #cdd6e3; padding: 5px 8px; text-align: right; vertical-align: top; }
+th { background: #eef3fb; }
+.box { border-radius: 8px; padding: 10px 14px; margin: 10px 0; break-inside: avoid; }
+.box p { margin: 0 0 6px; }
+.concl { background: #eef3fb; border-right: 4px solid #2563eb; }
+.green { background: #e9f7ef; border-right: 4px solid #188038; }
+.finding { border: 1px solid #dde4ee; border-radius: 8px; padding: 9px 13px; margin: 8px 0; break-inside: avoid; }
+.finding b.t { display: block; color: #0f2a5a; margin-bottom: 2px; }
+.lbl { display: inline-block; font-size: 8.8pt; font-weight: bold; border-radius: 10px; padding: 0 8px; margin-left: 6px; }
+.p1 { background: #fdecec; color: #b3261e; } .p2 { background: #fff4e5; color: #b45309; } .p3 { background: #eef3fb; color: #1e40af; }
+.shots { display: flex; gap: 10px; flex-wrap: wrap; margin: 8px 0; break-inside: avoid; }
+.shots figure { margin: 0; width: 150px; }
+.shots img { width: 150px; border: 1px solid #cdd6e3; border-radius: 8px; }
+.shots figcaption { font-size: 8.5pt; color: #5b6677; margin-top: 2px; }
+.score { font-weight: bold; }
+.small { font-size: 9pt; color: #5b6677; }
+</style>
+</head>
+<body>
+
+<h1>ZIXE — דוח בדיקת מערכת וחוויית משתמש (UI/UX)</h1>
+<p class="sub">אפליקציית Android בגרסה <bdi dir="ltr">1.0.5</bdi> · מכשיר אמיתי Google Pixel 6 · סביבת בדיקות · נובמבר 2026<br>
+הדוח מתמקד בחוויית המשתמש, בעיצוב ובמבנה המערכת. הוא אינו רשימת באגים (QA).</p>
+
+<h2>תקציר</h2>
+<div class="box concl">
+<p><b>ZIXE היא מערכת עשירה ביכולות עם בסיס עיצובי נקי ומודרני.</b> התהליכים המרכזיים — מכירה מהירה, קביעת פגישה על ידי לקוח בעמוד העסק, התראות לבעל העסק — עובדים וקצרים. החולשות העיקריות הן בעקביות: מבנה ניווט שבו הכול נפתח כחלון צף, מיתוג לא אחיד (ZIXE מול EESEK), התאמה חלקית למסכי Android מודרניים, ומבנה מערכת שבו חלק מהנתונים העסקיים נשמרים רק על הטלפון.</p>
+</div>
+
+<table>
+<thead><tr><th>תחום</th><th>ציון (1–5)</th><th>במשפט אחד</th></tr></thead>
+<tbody>
+<tr><td>מבנה וניווט</td><td class="score">3</td><td>תפריט תחתון ברור, אבל כל המסכים הם חלונות צפים, וכפתור «חזור» של Android סוגר את האפליקציה.</td></tr>
+<tr><td>מסך הבית</td><td class="score">3.5</td><td>מציג את המידע החשוב, אך עמוס, וחלק מהמדדים מטעים כשאין נתונים.</td></tr>
+<tr><td>מכירה מהירה</td><td class="score">4</td><td>שני שלבים, ברור ומהיר (כחצי שנייה לשמירה).</td></tr>
+<tr><td>פגישות ויומן</td><td class="score">3</td><td>יכולות רבות, אבל ברירות מחדל ושדות לא ברורים בטופס.</td></tr>
+<tr><td>קטלוג מוצרים ושירותים</td><td class="score">2.5</td><td>מציג קטגוריות של כל סוגי העסקים, לא רק של העסק עצמו.</td></tr>
+<tr><td>עמוד העסק הציבורי וקביעת פגישה</td><td class="score">4</td><td>תהליך מצוין בארבעה שלבים, אך המיתוג בעמוד ישן (EESEK).</td></tr>
+<tr><td>עיצוב ושפה חזותית</td><td class="score">3</td><td>נקי ומודרני, עם חוסר עקביות באייקונים, בכפתורים ובמתגים.</td></tr>
+<tr><td>טקסטים, RTL ושפות</td><td class="score">3.5</td><td>תמיכה בעברית, אנגלית וערבית; יש תקלות כיוון וניסוח.</td></tr>
+<tr><td>נגישות</td><td class="score">2</td><td>כפתורי אייקון ללא תוויות, חלונות לא מסומנים כמודאליים, טקסט נחתך בהגדלת גופן.</td></tr>
+<tr><td>ביצועים נתפסים</td><td class="score">3.5</td><td>רוב המסכים בפחות מ-0.35 שניות; פתיחה ראשונה כ-3.4 שניות.</td></tr>
+<tr><td>מבנה המערכת ואמינות</td><td class="score">2.5</td><td>מכירות רק על הטלפון, אין התחברות ממכשיר חדש, אין ניטור תקלות.</td></tr>
+</tbody>
+</table>
+
+<h2>מה עובד טוב</h2>
+<div class="box green">
+<ul>
+<li><b>מכירה מהירה:</b> כפתור «מכירה» מרכזי בתפריט, בחירת מוצר, מסך תשלום עם הבהרה ש«בחירת אמצעי התשלום משמשת לתיעוד בלבד» — ברור למשתמש.</li>
+<li><b>קביעת פגישה על ידי לקוח:</b> שירות ← תאריך ← שעה ← פרטים, עם סיכום וכפתורי «שינוי» בכל שלב, מקלדת מספרית לשדה הטלפון, ומסך אישור עם «הוסף ליומן» ו-Google Calendar.</li>
+<li><b>התראה מיידית לבעל העסק</b> (Push) ברגע שלקוח קובע פגישה.</li>
+<li><b>תמיכה בשלוש שפות</b> (עברית, אנגלית, ערבית), מטבעות ומדינות.</li>
+<li><b>תגובה מהירה ללחיצה</b> (פחות מ-0.07 שניות) ואנימציות חלקות.</li>
+<li>שפה חזותית נקייה: כרטיסים מעוגלים, צבע מותג כחול, מרווחים נדיבים.</li>
+</ul>
+</div>
+<div class="shots">
+<figure><img src="ux-img/perf-04-after-cold.jpg"><figcaption>מסך הבית</figcaption></figure>
+<figure><img src="ux-img/perf-11-pay.jpg"><figcaption>מכירה — מסך תשלום</figcaption></figure>
+<figure><img src="ux-img/ux-pub-07.jpg"><figcaption>עמוד העסק — סיכום לפני אישור</figcaption></figure>
+<figure><img src="ux-img/ux-pub-09.jpg"><figcaption>אישור פגישה + התראה לבעל העסק</figcaption></figure>
+</div>
+
+<h2>ממצאים לפי תחום</h2>
+<p class="small">עדיפות: <span class="lbl p1">גבוהה</span> משפיע על רוב המשתמשים או על המותג · <span class="lbl p2">בינונית</span> · <span class="lbl p3">נמוכה</span> שיפור.</p>
+
+<h3>1. מבנה וניווט</h3>
+<div class="finding"><b class="t"><span class="lbl p1">גבוהה</span>כפתור «חזור» של Android סוגר את כל האפליקציה</b>
+מכל חלון — טופס, רשימה, הגדרות — לחיצה על «חזור» יוצאת מהאפליקציה, ונתונים שהוקלדו בטופס אובדים. משתמשי Android מצפים ש«חזור» יסגור את החלון הנוכחי. <i>המלצה:</i> «חזור» סוגר את החלון העליון, ורק במסך הבית יוצא (עם אישור).</div>
+<div class="finding"><b class="t"><span class="lbl p2">בינונית</span>כל המסכים הם חלונות צפים (Bottom sheets)</b>
+גם מסכים מלאים כמו «ניהול פריטים», «פגישות» ו«דוחות» נפתחים כחלון צף מעל מסך הבית, לפעמים בגובה מלא ולפעמים בחצי גובה. אין תחושה של «איפה אני», ואין דרך אחידה לחזור. <i>המלצה:</i> מסכים ראשיים כמסכים מלאים עם כותרת וכפתור חזרה; חלונות צפים רק לפעולות קצרות.</div>
+<div class="finding"><b class="t"><span class="lbl p1">גבוהה</span>«הגדרות העסק» פותח את אשף ההקמה הראשוני ללא יציאה</b>
+המשתמש מצפה למסך הגדרות עם הנתונים הקיימים, ומקבל «שלב 1 מתוך 7» עם כפתורי «כניסה לחשבון קיים» ו«הגדרת סיסמה» — ללא כפתור סגירה. <i>המלצה:</i> מסך הגדרות רגיל לעריכת פרטי העסק.</div>
+<div class="finding"><b class="t"><span class="lbl p3">נמוכה</span>תוויות וכניסות לא צפויות</b>
+הפעמון בכותרת פותח «פגישות היום» ולא התראות; «הלקוחות שלי» נגיש רק מכרטיס בתחתית מסך הבית; תווית «↓ המשך למטה» צפה מעל התוכן בכל מסך ומסתירה כותרות.</div>
+<div class="shots">
+<figure><img src="ux-img/neg-105-settings-top.jpg"><figcaption>«הגדרות העסק» = אשף הקמה</figcaption></figure>
+<figure><img src="ux-img/perf-probe-more.jpg"><figcaption>«עוד» — ניהול העסק</figcaption></figure>
+</div>
+
+<h3>2. מסך הבית</h3>
+<div class="finding"><b class="t"><span class="lbl p2">בינונית</span>מדדים מטעים כשאין יעד</b>
+כאשר היעד הוא 0 ₪ והמכירות 0 ₪ מוצג «🏆 היעד הושג!» לצד 0% ופס התקדמות ריק. <i>המלצה:</i> כשאין יעד — הצעה «הגדר יעד».</div>
+<div class="finding"><b class="t"><span class="lbl p3">נמוכה</span>עומס וחזרות</b>
+המסך הארוך מכיל כ-10 כרטיסים; «הסיכום היומי» חוזר על אותו משפט פעמיים («אין לך פגישות להיום» / «אין לך פגישות היום»); כרטיס «תובנה יומית» חצי ריק. <i>המלצה:</i> לקבוע 3–4 כרטיסים עיקריים ולאחד הודעות.</div>
+
+<h3>3. קטלוג, מחירים ומכירה</h3>
+<div class="finding"><b class="t"><span class="lbl p1">גבוהה</span>הקטלוג מציג קטגוריות של כל סוגי העסקים</b>
+לעסק עיסוי מוצגים «פירות וירקות», «סנדוויצ׳ים», «מוצרי חשמל», «כושר» ועוד — רשימה ארוכה שבה הקטגוריה הרלוונטית נמצאת באמצע. <i>המלצה:</i> להציג קודם את הקטגוריות של סוג העסק, ואת השאר תחת «קטגוריות נוספות».</div>
+<div class="finding"><b class="t"><span class="lbl p1">גבוהה</span>מחיר שהוגדר לא מופיע עד שמירה ידנית</b>
+שירותים שמחירם מופיע במסך העריכה (למשל 220 ₪) מוצגים בקטלוג כ-«0 ₪ · undefined» ובמכירה כ-«נדרש מחיר», ולא ניתן להוסיף אותם למכירה עד שבעל העסק פותח ושומר את טופס המחיר. משתמש חדש לא יבין למה אי אפשר למכור.</div>
+<div class="finding"><b class="t"><span class="lbl p3">נמוכה</span>מינוח</b>
+חלון עריכת שירות נקרא «עריכת מוצר»; הקטלוג מערבב «מוצרים» ו«שירותים».</div>
+<div class="shots">
+<figure><img src="ux-img/perf-03-items.jpg"><figcaption>קטגוריות לא רלוונטיות</figcaption></figure>
+<figure><img src="ux-img/04-price-edit.jpg"><figcaption>«עריכת מוצר» לשירות</figcaption></figure>
+</div>
+
+<h3>4. פגישות ויומן</h3>
+<div class="finding"><b class="t"><span class="lbl p2">בינונית</span>ברירות מחדל בטופס פגישה חדשה</b>
+שעת ברירת המחדל היא «עכשיו», ולכן כמעט כל שמירה נתקלת בהודעה «התאריך והשעה שבחרת כבר עברו». השדה נקרא «שם פרטי» אבל הודעת השגיאה מבקשת «שם לפגישה». אין שדה משך, אך בסיכום מופיע «40 דקות». <i>המלצה:</i> שעה פנויה קרובה כברירת מחדל, תווית «שם הלקוח», שדה משך גלוי.</div>
+<div class="finding"><b class="t"><span class="lbl p3">נמוכה</span>מהירות מסכי הפגישות</b>
+«פגישות», «פגישות היום» ו«יומן מלא» נפתחים ב-0.7 עד 1.8 שניות — איטיים פי 3 עד 6 משאר המסכים.</div>
+<div class="shots">
+<figure><img src="ux-img/perf-10-form.jpg"><figcaption>טופס פגישה חדשה</figcaption></figure>
+</div>
+
+<h3>5. עמוד העסק הציבורי (מה שהלקוח של העסק רואה)</h3>
+<div class="finding"><b class="t"><span class="lbl p1">גבוהה</span>מיתוג ישן בעמוד שהלקוחות רואים</b>
+באפליקציה המותג הוא «ZIXE — The Business OS», אבל בעמוד העסק הציבורי מופיעים «EESEK — The Pocket Business OS» ומסך טעינה עם הלוגו «EE». זה העמוד היחיד שלקוחות הקצה רואים, ולכן הוא החשוב ביותר למיתוג.</div>
+<div class="finding"><b class="t"><span class="lbl p2">בינונית</span>מסך טעינה מבלבל</b>
+בזמן הטעינה מוצגים «טוען...» ו«יוצר קישור...» עם כפתור סגירה — טקסט טכני שאינו רלוונטי ללקוח שפתח קישור.</div>
+<div class="finding"><b class="t"><span class="lbl p2">בינונית</span>מידע חסר ללקוח</b>
+אין מחירים לשירותים, אין כתובת או טלפון של העסק, ואין כותרת או מחוון שלבים («שלב 2 מתוך 4») בשלבי ההזמנה. מוצג טקסט טכני «Asia/Jerusalem». כפתור הנגישות הצף מכסה את תמונת השער, והלוגו מכסה חלק משם העסק.</div>
+<div class="finding"><b class="t"><span class="lbl p3">החלטת מוצר</span>הפגישה מאושרת אוטומטית</b>
+פגישה שלקוח קובע מאושרת מיד, ללא אישור בעל העסק. מומלץ להחליט במודע אם זו ברירת המחדל הרצויה או אפשרות בהגדרות.</div>
+<div class="shots">
+<figure><img src="ux-img/ux-pub-01.jpg"><figcaption>מסך טעינה «EE · יוצר קישור»</figcaption></figure>
+<figure><img src="ux-img/ux-pub-02.jpg"><figcaption>מיתוג EESEK, ללא מחירים</figcaption></figure>
+<figure><img src="ux-img/ux-pub-03.jpg"><figcaption>בחירת תאריך ללא כותרת</figcaption></figure>
+</div>
+
+<h3>6. עיצוב ושפה חזותית</h3>
+<div class="finding"><b class="t"><span class="lbl p1">גבוהה</span>שורת המצב של Android מכסה את כותרת האפליקציה</b>
+השעון מכסה את הלוגו והסוללה את הפעמון; החלק העליון של הפעמון לא לחיץ; האייקונים הלבנים של שורת המצב לא נראים על רקע לבן. גם פס הניווט התחתון של המערכת עובר מעל תוויות התפריט. נובע מהתצוגה מקצה לקצה של Android 15 ומעלה.</div>
+<div class="finding"><b class="t"><span class="lbl p2">בינונית</span>חוסר עקביות ברכיבים</b>
+אייקונים מתווי Unicode (▣ ◇ ☰ ☏ ✦) שנראים אחרת בכל טלפון; אימוג׳י לוח שנה שמציג תמיד «July 17»; מתגים בשני סגנונות; סדר «אישור/ביטול» הפוך בין חלונות; התווית של כפתור «מכירה» חתוכה (במיוחד בהגדלת גופן). <i>המלצה:</i> ספריית רכיבים אחידה וסט אייקונים וקטורי אחד.</div>
+<div class="finding"><b class="t"><span class="lbl p3">נמוכה</span>אין מצב כהה</b>
+האפליקציה תמיד בהירה, גם כשהטלפון במצב כהה.</div>
+<div class="shots">
+<figure><img src="ux-img/perf-01-share.jpg"><figcaption>שורת המצב מעל הכותרת</figcaption></figure>
+<figure><img src="ux-img/22-font-130.jpg"><figcaption>גופן 130% — תוויות נחתכות</figcaption></figure>
+</div>
+
+<h3>7. טקסטים, RTL ושפות</h3>
+<div class="finding"><b class="t"><span class="lbl p2">בינונית</span>כיוון טקסט מעורב</b>
+טקסט שמשלב עברית, אנגלית ומספרים מתהפך; הסימן + מופיע בסוף מספר טלפון («972521112233+»); מספרים שליליים מוצגים «50-». בממשק האנגלי: «!Goal achieved», חצים הפוכים ופורמט תאריך אמריקאי לצד ישראלי.</div>
+<div class="finding"><b class="t"><span class="lbl p3">נמוכה</span>ניסוח</b>
+«1 פגישות», «1 לקוחות»; משפטים מחוברים ללא נקודה; שדות אופציונליים מסומנים בשלוש דרכים שונות («לא חובה», «אופציונלי», «רשות»).</div>
+
+<h3>8. נגישות</h3>
+<div class="finding"><b class="t"><span class="lbl p2">בינונית</span>תמיכה חלקית בקורא מסך ובהגדלת גופן</b>
+כפתורי אייקון ללא תווית (למשל ▣); חלונות צפים לא מסומנים כמודאליים, כך שקורא המסך ממשיך להקריא את המסך שמתחת; בהגדלת גופן ל-130% טקסטים נחתכים. בעמוד הציבורי קיים כפתור נגישות — אך הוא מכסה תוכן.</div>
+
+<h3>9. משוב ומצבי מערכת</h3>
+<div class="finding"><b class="t"><span class="lbl p2">בינונית</span>הודעות שגיאה כלליות ולא במקום</b>
+שגיאות בטפסים מוצגות כחלון כללי ולא ליד השדה; ביטול חלון השיתוף של המערכת מציג «לא ניתן לשתף את התמונה» / «יצירת הקובץ או השיתוף נכשלו» — למרות שהמשתמש פשוט התחרט; «קהילה» מציגה תמיד «הקטגוריות התעדכנו. רענן ובדוק את הבחירה» ו«נסה שוב» לא עוזר; אין סימון של מצב לא מקוון.</div>
+<div class="finding"><b class="t"><span class="lbl p3">נמוכה</span>חלון אישור מיותר בשמירת לקוח</b>
+גם כששדות החובה (שם וטלפון) מלאים, כל שמירת לקוח מציגה חלון «חסרים כמה פרטים... שמור בכל זאת / חזור לעדכן» בגלל שדות אופציונליים (יום הולדת, סטטוס שיווק). <i>המלצה:</i> להציג תזכורת עדינה בכרטיס הלקוח ולא לעצור את השמירה.</div>
+<div class="finding"><b class="t"><span class="lbl p3">נמוכה</span>שם ארוך שובר את כרטיס «הפגישות הקרובות»</b>
+שם לקוח ארוך מוצג בעמודה צרה ונפרש על פני שש-שבע שורות במסך הבית.</div>
+<div class="shots">
+<figure><img src="ux-img/ux-community.jpg"><figcaption>«קהילה» במצב שגיאה קבוע</figcaption></figure>
+</div>
+
+<h2>מבנה המערכת</h2>
+<table>
+<thead><tr><th>רכיב</th><th>תפקיד</th></tr></thead>
+<tbody>
+<tr><td>אפליקציית Android (Capacitor 6)</td><td>ממשק אינטרנט בתוך WebView; כל הקוד (כ-<bdi dir="ltr">1.3 MB</bdi>) בקובץ HTML אחד; תוספים טבעיים ל-Push, SMS/WhatsApp, אנשי קשר ושמירת חיבור מוצפן.</td></tr>
+<tr><td>אחסון על הטלפון</td><td>מכירות, הוצאות, יעדים ולקוחות שהוזנו ידנית נשמרים מקומית.</td></tr>
+<tr><td>Supabase</td><td>פרטי העסק, שעות, שירותים, פגישות ולקוחות שהגיעו מהקישור, קהילה, מבצעים; סביבות TEST ו-Production נפרדות.</td></tr>
+<tr><td>Cloudflare Worker</td><td>עמוד העסק הציבורי ותמונות.</td></tr>
+<tr><td>Render</td><td>חיבור ליומן Google.</td></tr>
+<tr><td>Firebase</td><td>התראות Push.</td></tr>
+</tbody>
+</table>
+
+<div class="finding"><b class="t"><span class="lbl p1">גבוהה</span>נתונים עסקיים רק על הטלפון</b>
+מכירות והוצאות לא נשמרות בענן. אובדן או החלפת טלפון = אובדן היסטוריית המכירות. הגיבוי ידני (קובץ JSON), ולפי תיעוד המפתח הקודם הוא כולל גם שדות של פרטי התחברות.</div>
+<div class="finding"><b class="t"><span class="lbl p1">גבוהה</span>אין התחברות ממכשיר חדש</b>
+סביבת הבדיקות עובדת רק עם חיבור שכבר קיים בטלפון. בעל עסק שהחליף מכשיר — וגם בודקי Google ו-Apple בתהליך אישור החנות — לא יכולים להיכנס.</div>
+<div class="finding"><b class="t"><span class="lbl p2">בינונית</span>אמינות ותפעול</b>
+אין דיווח קריסות וניטור; שרת היומן בחבילה חינמית «נרדם» (12.5 שניות בבקשה ראשונה); הפעלה ראשונה של האפליקציה כ-3.4 שניות; אין גרסת iOS. הבדיקה הטכנית והאבטחתית המלאה מוגשת בדוח נפרד.</div>
+
+<h2>סדר עדיפויות מומלץ</h2>
+<table>
+<thead><tr><th>עדיפות</th><th>מה לעשות</th></tr></thead>
+<tbody>
+<tr><td><span class="lbl p1">גבוהה</span></td><td>
+כפתור «חזור» של Android · שורת המצב ופס הניווט · מיתוג ZIXE בעמוד הציבורי · מחירים שמופיעים מיד במכירה · קטגוריות לפי סוג העסק · מסך הגדרות רגיל במקום האשף · שמירת מכירות בענן · התחברות ממכשיר חדש</td></tr>
+<tr><td><span class="lbl p2">בינונית</span></td><td>
+מסכים מלאים במקום חלונות צפים · ברירות מחדל בטופס פגישה · מחירים, כתובת ומחוון שלבים בעמוד הציבורי · הודעות שגיאה ליד השדות · ספריית רכיבים ואייקונים אחידה · כיוון טקסט מעורב · נגישות לקורא מסך</td></tr>
+<tr><td><span class="lbl p3">נמוכה</span></td><td>
+צמצום מסך הבית · מינוח (מוצר/שירות) · ניסוח ורבים · מצב כהה · הפעמון כמרכז התראות</td></tr>
+</tbody>
+</table>
+
+<p class="small">שיטה: מעבר על כל מסכי האפליקציה במכשיר אמיתי, כולל מסלול מלא של לקוח הקובע פגישה בעמוד העסק הציבורי, מדידות זמני טעינה וקריאת קוד המקור שנמסר. נתוני בדיקה שנוצרו (בשם «QA-…») נמצאים בסביבת הבדיקות בלבד.</p>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-19",
+  "command": "/qa (без тикета «לא ניתן לשחזר»)",
+  "device": "iPhone 17, TestFlight 1.0.0 (20) + OTA (перезапуск x2)",
+  "skipped": [
+    {
+      "hash": "#6a86f7fb",
+      "reason": "לא ניתן לשחזר — push, проверка 9.11 вечером"
+    }
+  ],
+  "tickets": [
+    {
+      "hash": "#ba6e9b8d",
+      "id": "ba6e9b8db8eb3f2ad42d1ef3",
+      "title": "iOS - מסך «יש! יצרת חשבון»: נקודות ההתקדמות…",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "facts": "«מיקום» после выбора города 3/3 (ירושלים, חיפה, תל אביב): 5 точек y=813 видимы без прокрутки; «יש!» 5 точек, активная справа; все экраны 5 точек",
+      "rejection_resolved": "rej_7e8df5a37a8ab67c7374091b (change d7cde575)",
+      "feature": "onboarding/registration",
+      "role": "new user",
+      "devices": [
+        "iphone-app"
+      ],
+      "screens": [
+        "1910-ba6e9b8d-location-city-1..3.png"
+      ]
+    },
+    {
+      "hash": "#f688d2b0",
+      "id": "f688d2b08243e7482c172511",
+      "title": "iOS - מסך «יש! יצרת חשבון» מוצג אחרי מסך הסיכום…",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "facts": "«שלח» → сразу «יש! יצרת חשבון»; «בואו נתקדם» → «תאריך לידה» (точка 1→2); «בוא נתחיל» на сводке → сразу главная",
+      "feature": "onboarding/registration",
+      "devices": [
+        "iphone-app"
+      ]
+    },
+    {
+      "hash": "#6370c87e",
+      "id": "6370c87ef65087c8971071ae",
+      "title": "iOS - מסך «מיקום»… «פתח תקווה» בלי שבחר אותה",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "facts": "новый аккаунт: на «מיקום» нет поля «שם המיקום» и города до «בחר מיקום»; в сводке выбранный город (תל אביב)",
+      "feature": "onboarding/location",
+      "devices": [
+        "iphone-app"
+      ]
+    }
+  ],
+  "test_data": [
+    "аккаунт 0501112077 «Qa reg 1910» (qa.reg1910@example.con) — новая регистрация 19.10",
+    "WDA пересобран 19.10 (подпись до ~26.10)",
+    "«Qa reg 1910»: 10 молитв, уровень מתמיד, אזכרה «QA בדיקה», קבלה «QA קבלה מעודכנת», תזכורות במערכת вкл"
+  ],
+  "board_actions": [
+    {
+      "hash": "#693450a9",
+      "action": "create",
+      "type": "task",
+      "column": "לביצוע",
+      "title": "iOS - הודעות במייל, SMS ו־WhatsApp לא נשלחות גם למשתמש שאישר קבלת התראות",
+      "via": "browser",
+      "time": "2026-10-19T14:50"
+    }
+  ]
+}

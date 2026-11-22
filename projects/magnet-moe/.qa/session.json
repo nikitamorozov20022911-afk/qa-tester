@@ -1,0 +1,351 @@
+{
+ "date": "2026-11-19",
+ "round": 13,
+ "device": "iPhone 14 Pro по кабелю, Magnet 1.0.0 build 12 + веб 390",
+ "status": "завершено",
+ "queue_total": 34,
+ "tickets": [
+  {
+   "ticket": "#d98a22",
+   "action": "reject",
+   "rejection_id": "rej_25a504c0807d2bbeb2e504ea",
+   "column": "לביצוע",
+   "time": "2026-11-19T13:30",
+   "note": "переключатель темы в приложении"
+  },
+  {
+   "ticket": "#c94032",
+   "action": "pass",
+   "column": "הושלם",
+   "time": "2026-11-19T13:45",
+   "note": "веб 62/60/57/52, iOS b12 62×62 свой=чужой; feature: discover-stories; role reg4/user4; devices web390+iPhone14Pro",
+   "autotests": "в конце сессии (L-20261104-1)"
+  },
+  {
+   "ticket": "#be719b",
+   "action": "reject",
+   "rejection_id": "rej_6ed495a7ad868a7de3f7cc46",
+   "column": "לביצוע",
+   "time": "2026-11-19T13:41",
+   "note": "тёмная — золото ✅ (веб+iOS); светлая — фиолетовая"
+  },
+  {
+   "ticket": "#7e08c3",
+   "action": "reject",
+   "rejection_id": "rej_a4308aed8129a02842efaea0",
+   "column": "לביצוע",
+   "time": "2026-11-19T13:41",
+   "note": "полоса под навигацией #1A0A23 (веб+iOS)"
+  },
+  {
+   "ticket": "#0b3e8c",
+   "action": "new",
+   "column": "backlog",
+   "time": "2026-11-19",
+   "note": "חיבור תשלום אמיתי (new ticket 43)"
+  },
+  {
+   "ticket": "#8ad381",
+   "action": "reject",
+   "rejection_id": "rej_104ebf4c04fbea01e55327b6",
+   "column": "לביצוע",
+   "time": "2026-11-19T14:19"
+  },
+  {
+   "ticket": "#7415be",
+   "action": "reject",
+   "rejection_id": "rej_3785a7bbb89c204e0dd390e7",
+   "column": "לביצוע",
+   "time": "2026-11-19T14:19"
+  },
+  {
+   "ticket": "#d6d81e",
+   "action": "reject",
+   "rejection_id": "rej_7e75f5c2a21953fc62a18d62",
+   "column": "לביצוע",
+   "time": "2026-11-19T14:19"
+  },
+  {
+   "ticket": "#d50fa7",
+   "action": "reject",
+   "rejection_id": "rej_9be86f9e8f8288239416d5ea",
+   "column": "לביצוע",
+   "time": "2026-11-19T14:19"
+  },
+  {
+   "ticket": "#1af3a8",
+   "action": "reject",
+   "rejection_id": "rej_70048f48effa3cef14bedee0",
+   "column": "לביצוע",
+   "time": "2026-11-19T14:19"
+  },
+  {
+   "ticket": "#75332d",
+   "action": "reject",
+   "rejection_id": "rej_3716e72c79aaf26096a78869",
+   "column": "לביצוע",
+   "time": "2026-11-19T14:19"
+  },
+  {
+   "ticket": "#310b59",
+   "action": "reject",
+   "rejection_id": "rej_c1b0406efa145449ed87a484",
+   "column": "לביצוע",
+   "time": "2026-11-19T14:19"
+  },
+  {
+   "ticket": "#4af037",
+   "action": "reject",
+   "rejection_id": "rej_bc5d02f6e1d7effef473bc00",
+   "column": "לביצוע",
+   "time": "2026-11-19T14:19"
+  },
+  {
+   "ticket": "#47a8b8",
+   "action": "pass",
+   "column": "הושלם",
+   "time": "2026-11-19T14:25",
+   "note": "gifts send screen; resolved rej_ee2df405"
+  },
+  {
+   "ticket": "#676952",
+   "action": "pass",
+   "column": "הושלם",
+   "time": "2026-11-19T14:25",
+   "note": "gift history; resolved rej_e16badd8"
+  },
+  {
+   "ticket": "#e0de78",
+   "action": "pass",
+   "column": "הושלם",
+   "time": "2026-11-19T14:25",
+   "note": "gift purchase test-pay"
+  },
+  {
+   "ticket": "#2911c1",
+   "action": "pass",
+   "column": "הושלם",
+   "time": "2026-11-19T14:25",
+   "note": "search prefs autosave; reg1 web + user4 iOS"
+  },
+  {
+   "ticket": "#4ef651",
+   "action": "pass",
+   "column": "הושלם",
+   "time": "2026-11-19T14:40",
+   "note": "boosts/superlike screens; web free + iOS free"
+  },
+  {
+   "ticket": "#dc2c6f",
+   "action": "pass",
+   "column": "הושלם",
+   "time": "2026-11-19T14:50",
+   "note": "resolved rej_b8bd2d05; web pay + iOS streak gift"
+  },
+  {
+   "ticket": "#deea73",
+   "action": "pass",
+   "column": "הושלם",
+   "time": "2026-11-19T15:10",
+   "note": "iOS b12 имена в 2 строки; веб не проверен (нет пары)"
+  },
+  {
+   "ticket": "#2c21cd",
+   "action": "pass",
+   "column": "הושלם",
+   "time": "2026-11-19T15:30",
+   "note": "веб free суперлайк размыто лицо; iOS user4 мי עשה לייק"
+  },
+  {
+   "ticket": "#2f9120",
+   "action": "new-bug",
+   "column": "לביצוע",
+   "time": "2026-11-19T15:40",
+   "note": "админка: отмена автопродления не видна + карточка «אין רכישות»"
+  },
+  {
+   "ticket": "#b2f39b",
+   "action": "pass",
+   "column": "הושלם",
+   "time": "2026-11-19T15:55",
+   "note": "веб без record_location; app — ответ программиста (решение 18.11); 2 наших реджекта не закрыты — провёл пользователь"
+  },
+  {
+   "ticket": "#9651ff",
+   "action": "reject",
+   "note": "Apple ✅; Google/почта «בקרוב» → реджект (L-20261119-3)",
+   "column": "לביצוע"
+  },
+  {
+   "ticket": "#63c7e2",
+   "action": "reject",
+   "rejection_id": "rej_626c1da4ae9d0d28f8a414fa",
+   "column": "לביצוע",
+   "time": "2026-11-19T16:12"
+  },
+  {
+   "ticket": "#b863ef",
+   "action": "reject",
+   "rejection_id": "rej_23c953993fc3d69d395dfe7a",
+   "column": "לביצוע",
+   "time": "2026-11-19T16:12"
+  },
+  {
+   "ticket": "#303840",
+   "action": "reject",
+   "rejection_id": "rej_f1596311057179b5d125fd87",
+   "column": "לביצוע",
+   "time": "2026-11-19T16:12"
+  },
+  {
+   "ticket": "#a71c6f",
+   "action": "reject",
+   "rejection_id": "rej_e3bbe77977bdd9532e753d48",
+   "column": "לביצוע",
+   "time": "2026-11-19T16:12"
+  },
+  {
+   "ticket": "#05baf0",
+   "action": "pass",
+   "column": "הושלם",
+   "time": "2026-11-19T16:12",
+   "note": "веб + iOS b12 (тест-оплата)"
+  },
+  {
+   "ticket": "#0fec32",
+   "action": "pass",
+   "column": "הושלם",
+   "time": "2026-11-19T16:12",
+   "note": "веб + iOS b12 (тест-оплата)"
+  },
+  {
+   "ticket": "#01f23b",
+   "action": "pass",
+   "column": "הושלם",
+   "time": "2026-11-19T16:12",
+   "note": "веб + iOS b12 (тест-оплата)"
+  },
+  {
+   "ticket": "#736c37",
+   "action": "reject",
+   "rejection_id": "rej_c805e5e663cdeec2c19296d4",
+   "column": "לביצוע",
+   "time": "2026-11-19T16:27",
+   "note": "iOS город латиницей"
+  },
+  {
+   "ticket": "#3a3cb9",
+   "action": "pass",
+   "column": "הושלם",
+   "time": "2026-11-19T16:27",
+   "note": "веб+iOS сваха"
+  },
+  {
+   "ticket": "#58614c",
+   "action": "pass",
+   "column": "הושלם",
+   "time": "2026-11-19T16:27",
+   "note": "веб+iOS сваха"
+  },
+  {
+   "ticket": "#e5e14a",
+   "action": "pass",
+   "column": "הושלם",
+   "time": "2026-11-19T16:27",
+   "note": "веб+iOS настройки; AC8 по new03"
+  },
+  {
+   "ticket": "#88472c",
+   "action": "reject",
+   "rejection_id": "rej_b82b338af6fca8c950e036d6",
+   "column": "לביצוע",
+   "time": "2026-11-19T17:13",
+   "note": "сводка: AC7 push, AC10–11 откаты/исчерпание"
+  },
+  {
+   "ticket": "#9651ff",
+   "action": "reject",
+   "note": "Apple ✅; Google/почта «בקרוב» → реджект (L-20261119-3)",
+   "column": "לביצוע"
+  },
+  {
+   "ticket": "#d54d69",
+   "action": "client-new",
+   "column": "לביצוע",
+   "time": "2026-11-19"
+  },
+  {
+   "ticket": "#d87023",
+   "action": "client-new",
+   "column": "לביצוע",
+   "time": "2026-11-19"
+  },
+  {
+   "ticket": "#8ab2f8",
+   "action": "client-new",
+   "column": "לביצוע",
+   "time": "2026-11-19"
+  },
+  {
+   "ticket": "#12c0b9",
+   "action": "client-new",
+   "column": "לביצוע",
+   "time": "2026-11-19"
+  },
+  {
+   "ticket": "#055606",
+   "action": "client-new",
+   "column": "לביצוע",
+   "time": "2026-11-19"
+  },
+  {
+   "ticket": "#f8b9fb",
+   "action": "client-new",
+   "column": "לביצוע",
+   "time": "2026-11-19"
+  }
+ ],
+ "stopped": "по просьбе пользователя остановлены проверки #be719b, #7e08c3 и подарков (new02→user4) — подождать новую сборку",
+ "test_data": [
+  "платный подарок «דובי פרחים» ₪7.90 new02→reg2 «QA-AUTO r13 gift 2 reg2», чат 80bccaa2 (тест-оплата)",
+  "платный подарок «דובי פרחים» ₪7.90 new02→QA П5 0014 «QA-AUTO r13 gift 3 p5», чат 3f000589 (тест-оплата)",
+  "тест-покупки purchase_test ×2 (+1 simulate_fail) у new02",
+  "user4: вход на вебе (auth/user4-r12.json) отозван — нужен новый вход",
+  "reg4: случайно активирован 1 буст 19.11 (было 2, осталось 1) — #4ef651",
+  "reg5: auth/reg5-r12.json просрочен — нужен новый вход",
+  "подарки new01→user4 «QA-AUTO r13 push» 13:47, «push 2» 13:51 (тест-оплаты), чат 484d37eb",
+  "сообщение user4→new01 «QA-AUTO r13 reply» 13:50",
+  "подарок user4→new01 «QA-AUTO r13 ios» 14:05 (тест-оплата из iOS)",
+  "неудачная попытка user4→new03 (возможна тест-покупка без подарка)",
+  "админка user4: «הענקת תגמול רצף» 13:57, тест-push 13:47/13:51/13:54 (отклонены)",
+  "сообщение new01→user4 «QA-AUTO r13 reply2» (веб)",
+  "бесплатный подарок «ורד זהב» user4→new01 «QA-AUTO r13 streak» 14:22 (израсходован бесплатный подарок user4)",
+  "награда серии user4: выбрана «מתנה» (осталась 1); бесплатный подарок «ורד זהב» user4→new02 «QA-AUTO r13 streak2» 14:33",
+  "мэтч user4↔new07 (QA r11 0016) 19.11 #deea73; user4 пропустила «רוני»; использован 1 rewind user4",
+  "new03: тест-покупки Premium ×2 (₪89.90), бусты ×5, суперлайки ×15, 3 «נכשל»; «מיצוי בוסטים» ×2, «סיום מחזור מנוי» ×2; остаток 4 буста + 15 суперлайков; активный буст",
+  "суперлайк user2→free 19.11 (#2c21cd), раскрытие reveal_like у free",
+  "новые входы auth/free-r13.json, auth/user2-r13.json",
+  "reg2: шаринг местоположения выключен 19.11 (был включён с прошлых раундов)",
+  "заявка свахи S-16693F new02, тест-покупка ₪249.90 шולם + 1 נכשל",
+  "new03: Premium 3 мес. до 20.01.2027 (тест-оплата iOS ₪209.70), автопродление выкл.; квоты 49/0/29; снять нельзя инструментом (только месячный)",
+  "заявка свахи user4 ₪249.90 шולם + 1 נכשל (iOS) 19.11",
+  "личный Apple ID пользователя привязан к user4 (QA רביעית) через «שיטות כניסה» 19.11 — кнопки отвязки нет; отвязать на сервере при необходимости"
+ ],
+ "briefs": ".qa/research/<hash>.md и <hash>-r13.md (31 тикет)",
+ "findings": [
+  "push iOS: «נדחה: InvalidCredentials: Could not find APNs credentials» — на перепроверке",
+  "оплата подарка проходит при awaiting_reply (веб и iOS) — подтверждено, → реджект #310b59",
+  "админка: карточка user4 «רכישות — אין רכישות עדיין», хотя тест-покупки были",
+  "#2911c1: при ошибке сохранения значение на экране не откатывается",
+  "#4ef651 светлая: цифры «איך זה עובד» без кружков",
+  "агент случайно открыл баннер Gmail на телефоне (только чтение)",
+  "админка: после отмены автопродления «פעיל · חידוש הבא», вкладка «בוטלו» пуста",
+  "админка: карточка user4 «אין רכישות עדיין», хотя покупка подарка есть",
+  "«נשאר החודש» не показывает купленные кредиты",
+  "админка: «מיצוי בוסטים» обнуляет и купленные бусты",
+  "Premium на /boosts видит лишнюю «לשדרוג — מעבר לחנות»",
+  "админка «בקשות שדכנית»: оплаченная заявка в списке «חדשה», «שולם» только в деталях",
+  "админка: время в ленте заявки и в карточке пользователя расходится на 2 ч",
+  "user2 (Premium выдан вручную): «המנוי שלי» без управления и со старым текстом про App Store"
+ ]
+}

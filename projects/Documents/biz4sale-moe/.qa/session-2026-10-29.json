@@ -1,0 +1,147 @@
+{
+ "project": "biz4sale",
+ "date": "2026-10-29",
+ "environment": "https://www.biz4sale.co.il/ (prod)",
+ "scope": "בבדיקות кроме «לא ניתן לשחזר» (#fe3470, #a47bd6)",
+ "queue": [
+  "#0c6087",
+  "#243006",
+  "#917a7d",
+  "#faeea4"
+ ],
+ "logins": {
+  "user": "alive 2026-10-29",
+  "admin": "alive 2026-10-29"
+ },
+ "tickets": [
+  {
+   "hash": "#243006",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "feature": "publishconfirmation по статусу",
+   "role": "user+admin",
+   "devices": [
+    "desktop"
+   ],
+   "evidence": "screenshots/1029/243006-*",
+   "at": "2026-10-29"
+  },
+  {
+   "hash": "#faeea4",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "feature": "business.updated_date trigger",
+   "role": "user+admin",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "правка/повтор/одобрение/правка активного — updated_date растёт, created_date неизменен",
+   "at": "2026-10-29"
+  },
+  {
+   "hash": "#0c6087",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "devices": [
+    "desktop",
+    "android-emu"
+   ],
+   "pending": null,
+   "at": "2026-10-29"
+  },
+  {
+   "hash": "#917a7d",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "devices": [
+    "desktop",
+    "android-emu"
+   ],
+   "pending": null,
+   "at": "2026-10-29"
+  }
+ ],
+ "test_data": [
+  {
+   "what": "QA-TEST PR172 business",
+   "id": "bbabb961-bd29-43d1-82c3-be4414711197",
+   "state": "deleted"
+  },
+  {
+   "what": "business_approval",
+   "id": "2b281aa9-2639-44ea-b3f4-aa0a4f2dc20d",
+   "state": "left (not deletable via site)"
+  },
+  {
+   "what": "storage file",
+   "id": "uploads/8cae4fe5-86e9-45f7-abd9-24e4d0b8aa1a-qa-test-pr172.png",
+   "state": "left"
+  },
+  {
+   "what": "QA-TEST PR172 m business (mobile)",
+   "id": "0f578a4a-bf07-4e8b-a408-47fd75080ca4",
+   "state": "deleted"
+  },
+  {
+   "what": "QA-TEST объявление",
+   "id": "2781edeb-fbb6-4072-8507-6a1a47ec48ac",
+   "deleted": true,
+   "left": "user_activity запись (через сайт не удалить)"
+  }
+ ],
+ "permissions": [
+  "2026-10-29: QA-TEST под user, временное одобрение под admin, затем удалить — разрешено",
+  "устройства: десктоп + эмуляция телефона",
+  "2026-10-29 (2): QA-TEST объявление под user для #f67768/#3bb8cb/#775eeb, удалить после"
+ ],
+ "findings": [
+  "toast на 412px вылезает за правый край на 16px, иконка обрезана",
+  "POST business_approval 403 (RLS 42501) на שלח",
+  "пакет חבילה 1 не записывается (ללא חבילה в админке)",
+  "/admin мелькает אין הרשאה при первом открытии",
+  "картинка не попадает в черновик до שלח",
+  "publishconfirmation: Google Maps query=Israel при пустом адресе",
+  "текст ошибки «הפרטים שמילאתם נשמרו» при неудачном сохранении"
+ ],
+ "new_tickets": [
+  "#f67768",
+  "#3bb8cb",
+  "#775eeb",
+  "#076449"
+ ],
+ "status": "closed",
+ "queue2": [
+  {
+   "hash": "#f67768",
+   "status": "testing",
+   "action": "pass",
+   "column": "הושלם",
+   "devices": [
+    "desktop"
+   ],
+   "evidence": "screenshots/1029d/"
+  },
+  {
+   "hash": "#3bb8cb",
+   "status": "testing",
+   "action": "pass",
+   "column": "הושלם",
+   "devices": [
+    "android-emu"
+   ],
+   "evidence": "screenshots/1029d/"
+  },
+  {
+   "hash": "#775eeb",
+   "status": "testing",
+   "action": "pass",
+   "column": "הושלם",
+   "devices": [
+    "desktop",
+    "android-emu"
+   ],
+   "evidence": "screenshots/1029d/"
+  }
+ ],
+ "pending": "autotests #f67768 #3bb8cb #775eeb (autotest-writer в фоне) + ledger"
+}

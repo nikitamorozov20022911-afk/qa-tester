@@ -1,0 +1,161 @@
+{
+  "project": "elion-moe (ELion, mifrat 698f3116e51f5479082965f8)",
+  "date": "2026-11-15",
+  "environment": "prod https://www.elionvc.com · preprod https://elion-git-qa-stand-aviels-projects.vercel.app (qa-stand)",
+  "queue": [
+    "#f54c1e",
+    "#0cd999",
+    "#38f51d",
+    "#fd4e1d",
+    "#8364ea",
+    "#0231e5",
+    "#6810c3",
+    "#6ee502",
+    "#7fce7b",
+    "#df58b6",
+    "#0ee04e",
+    "#66521b",
+    "#b13ce5"
+  ],
+  "tickets": [
+    {
+      "hash": "#df58b6",
+      "title": "עיצוב מוקאפ: בלוק Linked Cashflow Transfers",
+      "action": "passed-by-user",
+      "column": "הושלם",
+      "notes": "Пользователь провёл עבר QA сам без теста QA (решение по брифу). Автотесты не пишем — кейсов нет.",
+      "at": "2026-11-15"
+    },
+    {
+      "hash": "#0ee04e",
+      "title": "עיצוב מוקאפ: עיון ותיקון של העברה פנימית קיימת",
+      "action": "passed-by-user",
+      "column": "הושלם",
+      "notes": "Пользователь провёл עבר QA сам без теста QA (решение по брифу). Автотесты не пишем — кейсов нет.",
+      "at": "2026-11-15"
+    },
+    {
+      "hash": "#66521b",
+      "title": "עיצוב מוקאפ: פירוט החודש — סימון תנועה כהעברה פנימית",
+      "action": "passed-by-user",
+      "column": "הושלם",
+      "notes": "Пользователь провёл עבר QA сам без теста QA (решение по брифу). Автотесты не пишем — кейсов нет.",
+      "at": "2026-11-15"
+    },
+    {
+      "hash": "#b13ce5",
+      "title": "עיצוב מוקאפ: חלון New Transfer",
+      "action": "passed-by-user",
+      "column": "הושלם",
+      "notes": "Пользователь провёл עבר QA сам без теста QA (решение по брифу). Автотесты не пишем — кейсов нет.",
+      "at": "2026-11-15"
+    },
+    {
+      "hash": "#0231e5",
+      "title": "חישוב Cashflows עתידיים ואישור ידני",
+      "action": "passed-by-user",
+      "column": "הושלם",
+      "notes": "Пользователь провёл עבר QA сам без теста QA (решение по брифу). Автотесты не пишем — кейсов нет.",
+      "at": "2026-11-15"
+    },
+    {
+      "hash": "#6810c3",
+      "title": "אופן יצירת הרשומות לפי יום/חודש/שנה/בודד",
+      "action": "passed-by-user",
+      "column": "הושלם",
+      "notes": "Пользователь провёл עבר QA сам без теста QA (решение по брифу). Автотесты не пишем — кейсов нет.",
+      "at": "2026-11-15"
+    },
+    {
+      "hash": "#8364ea",
+      "title": "יישום מערכת התראות עבור תשלומים עתידיים",
+      "action": "passed-by-user",
+      "column": "הושלם",
+      "notes": "Пользователь провёл עבר QA сам без теста QA (решение по брифу). Автотесты не пишем — кейсов нет.",
+      "at": "2026-11-15"
+    },
+    {
+      "hash": "#7fce7b",
+      "title": "Projects filter dropdowns keep a near-invisible edge",
+      "action": "passed-by-user",
+      "column": "הושלם",
+      "notes": "dark: край = поиск, 3.91/4.21:1 (измерено QA на qa-stand). Light не измерен. Провёл пользователь.",
+      "at": "2026-11-15"
+    },
+    {
+      "hash": "#6ee502",
+      "title": "/projects search field is 36px tall on phones",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "qa-stand: <640px поле 44px (h-11), ≥640px 36px (sm:h-9) в линию с фильтрами 36px; без гориз. прокрутки. Окно Chrome мин. 440px — 375 не выставить, правило CSS безусловное <640. HE отдельно не мерил (класс от языка не зависит). На prod фикса ещё нет.",
+      "tests": null,
+      "at": "2026-11-15",
+      "confirmed_by_user": "2026-11-15"
+    },
+    {
+      "hash": "#fd4e1d",
+      "title": "שילוב עם שירותי דוא\"ל",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "Доказано принятыми #43cd29/#58be43 (Resend, письмо 05.11). AC пустые.",
+      "tests": null,
+      "at": "2026-11-15",
+      "confirmed_by_user": "2026-11-15"
+    },
+    {
+      "hash": "#f54c1e",
+      "title": "מחיקה קשה (hard delete) של פרויקטים ונתוני בדיקה",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "qa-stand TC-HD-1 ✓; prod — кнопка видна (Bravo #1), не нажималась.",
+      "tests": ".qa/tests/hard-delete-audit.md",
+      "at": "2026-11-15",
+      "confirmed_by_user": "2026-11-15"
+    },
+    {
+      "hash": "#0cd999",
+      "title": "A permanent delete leaves no record in the app audit trail",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "qa-stand TC-HD-2 ✓; решение «да» — пользователь велел проверять. На prod ещё нет.",
+      "tests": ".qa/tests/hard-delete-audit.md",
+      "at": "2026-11-15",
+      "confirmed_by_user": "2026-11-15"
+    },
+    {
+      "hash": "#38f51d",
+      "title": "Legacy Cashflow-row deletion entries still offer Restore",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "qa-stand TC-HD-3 ✓; путь «скрыть Restore». На prod ещё нет.",
+      "tests": ".qa/tests/hard-delete-audit.md",
+      "at": "2026-11-15",
+      "confirmed_by_user": "2026-11-15"
+    }
+  ],
+  "test_data": [
+    {
+      "env": "qa-stand",
+      "what": "Financial project (Bank Account) «QA HD Account 1511», 9,300 USD",
+      "for": "#f54c1e/#0cd999",
+      "cleanup": "удалено hard delete 15.11 ✓"
+    },
+    {
+      "env": "qa-stand",
+      "what": "Financial project (Bank Account) «QA HD Peer 1511», 2,700 USD",
+      "for": "#f54c1e/#0cd999",
+      "cleanup": "удалено hard delete 15.11 ✓"
+    },
+    {
+      "env": "qa-stand",
+      "what": "Dashboard до теста: Net worth AED 330,371,860; Gross AED 360,355,054; Liquidity AED 83,437,096",
+      "for": "#f54c1e"
+    },
+    {
+      "env": "qa-stand",
+      "what": "строка Cash Flow «QA restore row 1511» (на QA HD Peer)",
+      "cleanup": "удалена вместе с Peer ✓"
+    }
+  ],
+  "notes": "Добавлен слот входа admin-stand (qa-stand) в .qa/e2e/accounts.json"
+}

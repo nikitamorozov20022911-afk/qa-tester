@@ -1,0 +1,92 @@
+== page 1
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+StaticText   vis=t y=  77 x=  60 282x33 | ברכות
+TextField    vis=t y= 151 x=  49 304x62 | חיפוש ברכה
+StaticText   vis=t y= 230 x=  48 306x20 | הברכות מוצגות בנוסח אשכנז שנשמר בפרופיל.
+Button       vis=t y= 266 x=  48 306x84 | נטילת ידים והמוציא, נוסח אשכנז
+Button       vis=t y= 364 x=  48 306x84 | בורא מיני מזונות, נוסח אשכנז
+Button       vis=t y= 462 x=  48 306x84 | בורא פרי הגפן, נוסח אשכנז
+Button       vis=t y= 560 x=  48 306x84 | בורא פרי העץ, נוסח אשכנז
+Button       vis=t y= 658 x=  48 306x84 | בורא פרי האדמה, נוסח אשכנז
+Button       vis=t y= 756 x=  48 306x84 | שהכל נהיה בדברו, נוסח אשכנז
+Button       vis=f y= 854 x=  48 306x84 | ברכת המזון, נוסח אשכנז
+Button       vis=f y= 952 x=  48 306x84 | ברכה אחרונה מעין שלוש, נוסח אשכנז
+Button       vis=f y=1050 x=  48 306x84 | בורא נפשות, נוסח אשכנז
+Button       vis=f y=1148 x=  48 306x84 | אשר יצר, נוסח אשכנז
+Button       vis=f y=1246 x=  48 306x84 | תפילת הדרך, נוסח אשכנז
+Other        vis=t y= 214 x=   3 30x546 | Vertical scroll bar, 3 pages
+Other        vis=t y= 727 x=   0 402x30 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות
+== page 2
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+StaticText   vis=t y=  77 x=  60 282x33 | ברכות
+TextField    vis=t y= 151 x=  49 304x62 | חיפוש ברכה
+StaticText   vis=f y=-356 x=  48 306x21 | הברכות מוצגות בנוסח אשכנז שנשמר בפרופיל.
+Button       vis=f y=-320 x=  48 306x85 | נטילת ידים והמוציא, נוסח אשכנז
+Button       vis=f y=-222 x=  48 306x85 | בורא מיני מזונות, נוסח אשכנז
+Button       vis=f y=-124 x=  48 306x85 | בורא פרי הגפן, נוסח אשכנז
+Button       vis=f y= -26 x=  48 306x85 | בורא פרי העץ, נוסח אשכנז
+Button       vis=f y=  72 x=  48 306x85 | בורא פרי האדמה, נוסח אשכנז
+Button       vis=t y= 170 x=  48 306x85 | שהכל נהיה בדברו, נוסח אשכנז
+Button       vis=t y= 268 x=  48 306x85 | ברכת המזון, נוסח אשכנז
+Button       vis=t y= 366 x=  48 306x85 | ברכה אחרונה מעין שלוש, נוסח אשכנז
+Button       vis=t y= 464 x=  48 306x85 | בורא נפשות, נוסח אשכנז
+Button       vis=t y= 562 x=  48 306x85 | אשר יצר, נוסח אשכנז
+Button       vis=t y= 660 x=  48 306x85 | תפילת הדרך, נוסח אשכנז
+Other        vis=t y= 214 x=   3 30x546 | Vertical scroll bar, 3 pages
+Other        vis=t y= 726 x=   0 402x31 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות
+== page 3
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+StaticText   vis=t y=  77 x=  60 282x33 | ברכות
+TextField    vis=t y= 151 x=  49 304x62 | חיפוש ברכה
+StaticText   vis=f y=-372 x=  48 306x20 | הברכות מוצגות בנוסח אשכנז שנשמר בפרופיל.
+Button       vis=f y=-336 x=  48 306x84 | נטילת ידים והמוציא, נוסח אשכנז
+Button       vis=f y=-238 x=  48 306x84 | בורא מיני מזונות, נוסח אשכנז
+Button       vis=f y=-140 x=  48 306x84 | בורא פרי הגפן, נוסח אשכנז
+Button       vis=f y= -42 x=  48 306x84 | בורא פרי העץ, נוסח אשכנז
+Button       vis=f y=  56 x=  48 306x84 | בורא פרי האדמה, נוסח אשכנז
+Button       vis=t y= 154 x=  48 306x84 | שהכל נהיה בדברו, נוסח אשכנז
+Button       vis=t y= 252 x=  48 306x84 | ברכת המזון, נוסח אשכנז
+Button       vis=t y= 350 x=  48 306x84 | ברכה אחרונה מעין שלוש, נוסח אשכנז
+Button       vis=t y= 448 x=  48 306x84 | בורא נפשות, נוסח אשכנז
+Button       vis=t y= 546 x=  48 306x84 | אשר יצר, נוסח אשכנז
+Button       vis=t y= 644 x=  48 306x84 | תפילת הדרך, נוסח אשכנז
+Other        vis=t y= 214 x=   3 30x546 | Vertical scroll bar, 3 pages
+Other        vis=t y= 727 x=   0 402x30 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות
+== page 4
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+StaticText   vis=t y=  77 x=  60 282x33 | ברכות
+TextField    vis=t y= 151 x=  49 304x62 | חיפוש ברכה
+StaticText   vis=f y=-372 x=  48 306x20 | הברכות מוצגות בנוסח אשכנז שנשמר בפרופיל.
+Button       vis=f y=-336 x=  48 306x84 | נטילת ידים והמוציא, נוסח אשכנז
+Button       vis=f y=-238 x=  48 306x84 | בורא מיני מזונות, נוסח אשכנז
+Button       vis=f y=-140 x=  48 306x84 | בורא פרי הגפן, נוסח אשכנז
+Button       vis=f y= -42 x=  48 306x84 | בורא פרי העץ, נוסח אשכנז
+Button       vis=f y=  56 x=  48 306x84 | בורא פרי האדמה, נוסח אשכנז
+Button       vis=t y= 154 x=  48 306x84 | שהכל נהיה בדברו, נוסח אשכנז
+Button       vis=t y= 252 x=  48 306x84 | ברכת המזון, נוסח אשכנז
+Button       vis=t y= 350 x=  48 306x84 | ברכה אחרונה מעין שלוש, נוסח אשכנז
+Button       vis=t y= 448 x=  48 306x84 | בורא נפשות, נוסח אשכנז
+Button       vis=t y= 546 x=  48 306x84 | אשר יצר, נוסח אשכנז
+Button       vis=t y= 644 x=  48 306x84 | תפילת הדרך, נוסח אשכנז
+Other        vis=t y= 214 x=   3 30x546 | Vertical scroll bar, 3 pages
+Other        vis=t y= 727 x=   0 402x30 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות

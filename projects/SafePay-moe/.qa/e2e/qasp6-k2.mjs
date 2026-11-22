@@ -1,0 +1,20 @@
+import { newBrowser, ctx, go, txt, shot, sleep } from './qasp6-lib.mjs';
+const D='6a86f7b4/';
+const b = await newBrowser();
+const { p } = await ctx(b, 'client', 375);
+const log=(...a)=>console.log(...a);
+const T=()=>txt(p).then(t=>t.replace(/\n/g,' | '));
+await go(p, '/wallet/kids/new');
+const name=p.getByRole('textbox').nth(0), phone=p.getByRole('textbox',{name:'054-1234567'}), day=p.getByRole('textbox',{name:'מגבלה יומית (ש"ח)'}), tx=p.getByRole('textbox',{name:'מגבלה לעסקה (ש"ח)'});
+const btn=p.getByRole('button',{name:'אישור ופתיחת ארנק'});
+log('btn disabled initially', await btn.isDisabled());
+await btn.click(); await sleep(1500); log('empty submit:', await T()); await shot(p, D+'r1-02-empty-submit-375', true);
+await phone.fill('123'); await name.click(); await sleep(1500); log('phone 123:', await T());
+await phone.fill('0509999999'); await name.click(); await sleep(2500); log('phone unreg:', await T()); await shot(p, D+'r1-03-unreg-375');
+await phone.fill('0500000004'); await name.click(); await sleep(2500); log('phone own:', await T()); await shot(p, D+'r1-04-own-375');
+await phone.fill('');
+for (const v of ['abc','-5','1.234','0','99999999']) { await day.fill(v); await tx.fill(v); await name.click(); await sleep(600); log(`limit ${v} -> values`, await day.inputValue(), await tx.inputValue()); }
+await day.fill('-5'); await tx.fill('1.234'); await btn.click(); await sleep(1500); log('submit neg limits (no name):', await T());
+await shot(p, D+'r1-05-neg-limits-375', true);
+log('REQ', p._req, p._console);
+await b.close();

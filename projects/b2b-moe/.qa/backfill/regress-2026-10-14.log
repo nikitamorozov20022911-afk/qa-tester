@@ -1,0 +1,458 @@
+
+Running 56 tests using 3 workers
+
+[1/56] [tests] › tests/catalog/catalog-buyer.spec.ts:10:9 › catalog — לקוח עסקי › לקוח לא נכנס ל-/catalog/new — הפניה ל-/shop #6a38cf5d #6a38cf5e @desktop @prod-safe
+[2/56] [tests] › tests/catalog/catalog-buyer.spec.ts:10:9 › catalog — לקוח עסקי › לקוח לא נכנס ל-/catalog — הפניה ל-/shop #6a38cf5d #6a38cf5e @desktop @prod-safe
+[3/56] [tests] › tests/catalog/catalog-buyer.spec.ts:10:9 › catalog — לקוח עסקי › לקוח לא נכנס ל-/catalog/categories — הפניה ל-/shop #6a38cf5d #6a38cf5e @desktop @prod-safe
+[4/56] [tests] › tests/catalog/catalog-buyer.spec.ts:18:7 › catalog — לקוח עסקי › דף מוצר אצל הלקוח — בלי «יחידת מכירה» / מארזים, כמות מספרית #6a858d3f @desktop @prod-safe
+[5/56] [tests] › tests/catalog/categories-states.spec.ts:32:7 › catalog — קטגוריות: מחיקה רק אחרי טעינת מוני המוצרים (#19daa080) › בזמן טעינת המונים: «טוען…» במקום «0 מוצרים», «מחיקה» לא זמינה; אחרי הטעינה — «מכיל מוצרים» חסום #19daa080 @prod-safe
+[6/56] [tests] › tests/catalog/categories-states.spec.ts:61:7 › catalog — קטגוריות: מחיקה רק אחרי טעינת מוני המוצרים (#19daa080) › כשל בטעינת המונים: «מחיקה» לא זמינה עם «לא ניתן לבדוק את המוצרים», בלי «0 מוצרים»; הודעת שגיאה עם «נסה שוב» #19daa080 #133950be @desktop @prod-safe
+[7/56] [tests] › tests/catalog/categories-states.spec.ts:125:7 › catalog — קטגוריות: ניסוח המונה (#6fcb020f) › מונה מוצרים: אין «1 מוצרים» — «מוצר אחד» לקטגוריה עם מוצר יחיד, «N מוצרים» ל-0 ו-2+ #6fcb020f @desktop @prod-safe
+[8/56] [tests] › tests/catalog/category-visibility-archive.spec.ts:88:7 › catalog — קטגוריה שיש בה רק מוצר בארכיון לא מוצגת ללקוח (#899df3e5) › הכנה: קטגוריה QA, מוצר QA בקטגוריה, קליטה של 3 «ללא מקום»; הלקוח רואה את הקטגוריה #899df3e5 @desktop
+[9/56] [tests] › tests/catalog/location-cell-multi-places.spec.ts:39:7 › catalog — מוצר אחד בכמה מקומות במחסן (#7b8b97e9) › 5 מקומות: 3 שורות שכל אחת מתחילה בקוד המקום + «+2»; התפריט מציג את כל 5 (כולל «ללא כמות»), נסגר ב-Esc ובלחיצה בחוץ, אחרי רענון — אותו דבר #7b8b97e9 @desktop @data
+[10/56] [tests] › tests/client-ordering/catalog.spec.ts:18:7 › client-ordering — קטלוג: גלישה, חיפוש וסינון › קטלוג מאורגן בקטגוריות עם מחירון אישי #6a38cf5e @prod-safe
+[11/56] [tests] › tests/catalog/category-visibility-archive.spec.ts:133:7 › catalog — קטגוריה שיש בה רק מוצר בארכיון לא מוצגת ללקוח (#899df3e5) › אחרי מחיקת המוצר (ארכיון) הקטגוריה לא מוצגת ללקוח — לא בשבבים ולא בסינון; אצל המפיץ היא נשארת #899df3e5 @desktop
+[12/56] [tests] › tests/client-ordering/catalog.spec.ts:28:7 › client-ordering — קטלוג: גלישה, חיפוש וסינון › חיפוש מסנן בזמן אמת; אין תוצאות → מצב ריק ו«נקה סינון» #6a38cf5e @prod-safe
+[13/56] (retries) [tests] › tests/catalog/category-visibility-archive.spec.ts:88:7 › catalog — קטגוריה שיש בה רק מוצר בארכיון לא מוצגת ללקוח (#899df3e5) › הכנה: קטגוריה QA, מוצר QA בקטגוריה, קליטה של 3 «ללא מקום»; הלקוח רואה את הקטגוריה #899df3e5 @desktop (retry #1)
+[14/56] [tests] › tests/client-ordering/catalog.spec.ts:50:7 › client-ordering — קטלוג: גלישה, חיפוש וסינון › סינון לפי קטגוריה מציג רק את מוצרי הקטגוריה #6a38cf5e @prod-safe
+[15/56] [tests] › tests/client-ordering/catalog.spec.ts:63:7 › client-ordering — קטלוג: גלישה, חיפוש וסינון › מונה המוצרים: קטגוריה עם מוצר יחיד — «מוצר אחד», «הכל» — «N מוצרים», אין «1 מוצרים» #6fcb020f @desktop @prod-safe
+[16/56] [tests] › tests/client-ordering/catalog.spec.ts:89:7 › client-ordering — קטלוג: גלישה, חיפוש וסינון › קטלוג גדול נטען בהדרגה בגלילה #6a38cf5e @desktop @prod-safe
+  1) [tests] › tests/catalog/category-visibility-archive.spec.ts:88:7 › catalog — קטגוריה שיש בה רק מוצר בארכיון לא מוצגת ללקוח (#899df3e5) › הכנה: קטגוריה QA, מוצר QA בקטגוריה, קליטה של 3 «ללא מקום»; הלקוח רואה את הקטגוריה #899df3e5 @desktop 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/catalog$/
+    Received string:  "https://b2b-tau-five.vercel.app/catalog/f1160dd3-0f68-40c0-9fa9-918466000c0c/edit"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        14 × locator resolved to <html lang="he" dir="rtl">…</html>
+           - unexpected value "https://b2b-tau-five.vercel.app/catalog/f1160dd3-0f68-40c0-9fa9-918466000c0c/edit"
+
+
+      111 |     await cb.selectOption((await cb.locator('option', { hasText: CAT }).getAttribute('value'))!);
+      112 |     await page.getByRole('button', { name: 'שמירה', exact: true }).click();
+    > 113 |     await expect(page).toHaveURL(/\/catalog$/);
+          |                        ^
+      114 |
+      115 |     await findProduct(page);
+      116 |     await qtyBtn(page).click();
+        at /Users/avielshnaider/b2b-moe/.qa/e2e/tests/catalog/category-visibility-archive.spec.ts:113:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/catalog-category-visibilit-34e81-ת-הקטגוריה-899df3e5-desktop-tests/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/catalog-category-visibilit-34e81-ת-הקטגוריה-899df3e5-desktop-tests/error-context.md
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/catalog-category-visibilit-34e81-ת-הקטגוריה-899df3e5-desktop-tests/test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/catalog-category-visibilit-34e81-ת-הקטגוריה-899df3e5-desktop-tests/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/catalog$/
+    Received string:  "https://b2b-tau-five.vercel.app/catalog/e54480f6-8908-4d69-b8ec-c4f922e1ec1f/edit"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        14 × locator resolved to <html lang="he" dir="rtl">…</html>
+           - unexpected value "https://b2b-tau-five.vercel.app/catalog/e54480f6-8908-4d69-b8ec-c4f922e1ec1f/edit"
+
+
+      111 |     await cb.selectOption((await cb.locator('option', { hasText: CAT }).getAttribute('value'))!);
+      112 |     await page.getByRole('button', { name: 'שמירה', exact: true }).click();
+    > 113 |     await expect(page).toHaveURL(/\/catalog$/);
+          |                        ^
+      114 |
+      115 |     await findProduct(page);
+      116 |     await qtyBtn(page).click();
+        at /Users/avielshnaider/b2b-moe/.qa/e2e/tests/catalog/category-visibility-archive.spec.ts:113:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/catalog-category-visibilit-34e81-ת-הקטגוריה-899df3e5-desktop-tests-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/catalog-category-visibilit-34e81-ת-הקטגוריה-899df3e5-desktop-tests-retry1/error-context.md
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/catalog-category-visibilit-34e81-ת-הקטגוריה-899df3e5-desktop-tests-retry1/test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/catalog-category-visibilit-34e81-ת-הקטגוריה-899df3e5-desktop-tests-retry1/error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/catalog-category-visibilit-34e81-ת-הקטגוריה-899df3e5-desktop-tests-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/catalog-category-visibilit-34e81-ת-הקטגוריה-899df3e5-desktop-tests-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[17/56] (retries) [tests] › tests/catalog/category-visibility-archive.spec.ts:133:7 › catalog — קטגוריה שיש בה רק מוצר בארכיון לא מוצגת ללקוח (#899df3e5) › אחרי מחיקת המוצר (ארכיון) הקטגוריה לא מוצגת ללקוח — לא בשבבים ולא בסינון; אצל המפיץ היא נשארת #899df3e5 @desktop (retry #1)
+[18/56] [tests] › tests/inventory/delete-unplaced-stock.spec.ts:52:7 › inventory — מחיקת מוצר עם מלאי «ללא מקום» (#d17c625a) › לא משויך + 3 «ללא מקום» → «מחיקה» → חלון רגיל בלי «ייגרעו»/«החזרה לספק»; ביטול; מחיקה; ביומן אין «מחיקת מוצר» #d17c625a #d7b7ec74 @desktop @data
+[19/56] [tests] › tests/inventory/delete-placed-stock.spec.ts:33:7 › inventory — מחיקת מוצר שמשויך למקום במחסן (#d17c625a) › משויך למקום אחד, מלאי 0 → «מחיקה» רגיל → «מחיקת מוצר» → נמחק (delete_product 200), המקום «ריק» #d17c625a @desktop @data
+[20/56] [tests] › tests/catalog/location-cell-multi-places.spec.ts:83:7 › catalog — מוצר אחד בכמה מקומות במחסן (#7b8b97e9) › לחיצה על שורה / פריט בתפריט פותחת את חלון «מיקום במחסן» של אותו מקום בלבד #7b8b97e9 @desktop @data
+[21/56] [tests] › tests/catalog/location-cell-multi-places.spec.ts:109:7 › catalog — מוצר אחד בכמה מקומות במחסן (#7b8b97e9) › «קליטת מלאי»: ב«מקום היעד» רק 5 המקומות של המוצר + «ללא מקום — לשיוך בהמשך» #7b8b97e9 @desktop @data
+[22/56] [tests] › tests/inventory/delete-unplaced-stock.spec.ts:86:7 › inventory — מחיקת מוצר עם מלאי «ללא מקום» (#d17c625a) › משויך למקום + «ללא מקום» → חסימה: «ורשומה עדיין יחידה אחת ללא מקום.», ואחרי עוד יחידה — «ורשומות עדיין 2 ללא מקום.» #d17c625a @desktop @data
+[23/56] [tests] › tests/inventory/delete-placed-stock.spec.ts:62:7 › inventory — מחיקת מוצר שמשויך למקום במחסן (#d17c625a) › משויך לשני מקומות («הוספת מיקום»), מלאי 0 → נמחק בחלון רגיל, שני המקומות «ריק» #d17c625a @desktop @data
+[24/56] [tests] › tests/inventory/delete-unplaced-stock.spec.ts:109:7 › inventory — מחיקת מוצר עם מלאי «ללא מקום» (#d17c625a) › שני מקומות: יחידה במקום + 1 «ללא מקום» → «משויך ל-2 מקומות במחסן, ורשומה בהם עדיין יחידה אחת, ועוד 1 ללא מקום.», שני המקומות ברשימה #d17c625a @desktop @data
+[25/56] [tests] › tests/inventory/delete-placed-stock.spec.ts:86:7 › inventory — מחיקת מוצר שמשויך למקום במחסן (#d17c625a) › משויך + 2 במקום → «מחיקה · יש מלאי במחסן» → «לא ניתן למחוק מוצר עם מלאי», שורת «<קוד> · 2», «סגירה» #d17c625a @desktop @data
+[26/56] [tests] › tests/catalog/location-cell-multi-places.spec.ts:124:7 › catalog — מוצר אחד בכמה מקומות במחסן (#7b8b97e9) › 390: «+2» נפתח בלחיצה ומציג 5 מקומות, אין גלילה אופקית של העמוד #7b8b97e9 @desktop @data
+[27/56] [tests] › tests/catalog/location-cell-multi-places.spec.ts:137:7 › catalog — מוצר אחד בכמה מקומות במחסן (#7b8b97e9) › מחיקה, 4 מקומות (אחד עם 0): «משויך ל-4 מקומות במחסן, ורשומות בהם עדיין 8.» ו-4 שורות #7b8b97e9 #d17c625a @desktop @data
+[28/56] (retries) [tests] › tests/catalog/location-cell-multi-places.spec.ts:39:7 › catalog — מוצר אחד בכמה מקומות במחסן (#7b8b97e9) › 5 מקומות: 3 שורות שכל אחת מתחילה בקוד המקום + «+2»; התפריט מציג את כל 5 (כולל «ללא כמות»), נסגר ב-Esc ובלחיצה בחוץ, אחרי רענון — אותו דבר #7b8b97e9 @desktop @data (retry #1)
+[29/56] [tests] › tests/inventory/delete-unplaced-stock.spec.ts:128:7 › inventory — מחיקת מוצר עם מלאי «ללא מקום» (#d17c625a) › בדיקת שרת: חלון «מחיקת מוצר» פתוח (משויך, 0), בינתיים נקלטה יחידה «ללא מקום» → 400 PRODUCT_HAS_PLACE → חלון החסימה עם «מעבר למפת המחסן», המוצר לא נמחק #d17c625a @desktop @data
+[30/56] [tests] › tests/inventory/delete-placed-stock.spec.ts:113:7 › inventory — מחיקת מוצר שמשויך למקום במחסן (#d17c625a) › «מעבר למפת המחסן» → המקום נבחר במפה → «הסרה מהמקום» → בקטלוג «ללא מיקום» → נמחק בחלון רגיל #d17c625a @desktop @data
+[31/56] [tests] › tests/inventory/delete-placed-stock.spec.ts:137:7 › inventory — מחיקת מוצר שמשויך למקום במחסן (#d17c625a) › בדיקת שרת: חלון «מחיקת מוצר» פתוח (משויך, 0), בינתיים נקלטה יחידה למקום → 400 PRODUCT_HAS_STOCK → חלון החסימה עם «מעבר למפת המחסן», המוצר לא נמחק #d17c625a @desktop @data
+[32/56] (retries) [tests] › tests/inventory/delete-placed-stock.spec.ts:33:7 › inventory — מחיקת מוצר שמשויך למקום במחסן (#d17c625a) › משויך למקום אחד, מלאי 0 → «מחיקה» רגיל → «מחיקת מוצר» → נמחק (delete_product 200), המקום «ריק» #d17c625a @desktop @data (retry #1)
+[33/56] (retries) [tests] › tests/inventory/delete-placed-stock.spec.ts:62:7 › inventory — מחיקת מוצר שמשויך למקום במחסן (#d17c625a) › משויך לשני מקומות («הוספת מיקום»), מלאי 0 → נמחק בחלון רגיל, שני המקומות «ריק» #d17c625a @desktop @data (retry #1)
+[34/56] (retries) [tests] › tests/catalog/location-cell-multi-places.spec.ts:83:7 › catalog — מוצר אחד בכמה מקומות במחסן (#7b8b97e9) › לחיצה על שורה / פריט בתפריט פותחת את חלון «מיקום במחסן» של אותו מקום בלבד #7b8b97e9 @desktop @data (retry #1)
+[35/56] (retries) [tests] › tests/inventory/delete-placed-stock.spec.ts:86:7 › inventory — מחיקת מוצר שמשויך למקום במחסן (#d17c625a) › משויך + 2 במקום → «מחיקה · יש מלאי במחסן» → «לא ניתן למחוק מוצר עם מלאי», שורת «<קוד> · 2», «סגירה» #d17c625a @desktop @data (retry #1)
+[36/56] [tests] › tests/inventory/inventory-lifecycle.spec.ts:233:7 › inventory — מחזור מלאי: קליטה, רף, הזמנה, ליקוט (QA-AUTO) › מוצר QA חדש: כמות 0 → «אזל», רף ברירת מחדל 10 #6a70b149 #6a84687f @desktop
+[37/56] [tests] › tests/inventory/inventory-lifecycle.spec.ts:252:7 › inventory — מחזור מלאי: קליטה, רף, הזמנה, ליקוט (QA-AUTO) › קליטה בלחיצה על הכמות לתא קיים: מוצר נבחר, «כמות», טוסט, מיקום, «מלאי נמוך» #6a858f15 #6a8466f2 #6a5cb979 @desktop
+[38/56] [tests] › tests/inventory/inventory-lifecycle.spec.ts:273:7 › inventory — מחזור מלאי: קליטה, רף, הזמנה, ליקוט (QA-AUTO) › עריכה מהירה של רף מינימום: 2 → «במלאי» ונשמר; 5 = כמות → «מלאי נמוך» #6a846775 #6a748a64 @desktop
+  2) [tests] › tests/inventory/delete-placed-stock.spec.ts:86:7 › inventory — מחיקת מוצר שמשויך למקום במחסן (#d17c625a) › משויך + 2 במקום → «מחיקה · יש מלאי במחסן» → «לא ניתן למחוק מוצר עם מלאי», שורת «<קוד> · 2», «סגירה» #d17c625a @desktop @data 
+
+    Error: опция места E-10
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 1
+    Received length: 0
+    Received array:  []
+
+       at tests/inventory/_places.ts:156
+
+      154 |   const texts = await dlg.getByRole('combobox', { name: 'מקום היעד' }).locator('option').allInnerTexts();
+      155 |   const hit = texts.filter((t) => t.includes(`(${code})`));
+    > 156 |   expect(hit, `опция места ${code}`).toHaveLength(1);
+          |                                      ^
+      157 |   return hit[0];
+      158 | }
+      159 |
+        at placeOption (/Users/avielshnaider/b2b-moe/.qa/e2e/tests/inventory/_places.ts:156:38)
+        at Object.receive (/Users/avielshnaider/b2b-moe/.qa/e2e/tests/inventory/_places.ts:168:45)
+        at /Users/avielshnaider/b2b-moe/.qa/e2e/tests/inventory/delete-placed-stock.spec.ts:93:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/inventory-delete-placed-st-22e37-גירה»-d17c625a-desktop-data-tests/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/inventory-delete-placed-st-22e37-גירה»-d17c625a-desktop-data-tests/error-context.md
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/inventory-delete-placed-st-22e37-גירה»-d17c625a-desktop-data-tests/test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/inventory-delete-placed-st-22e37-גירה»-d17c625a-desktop-data-tests/error-context.md
+
+
+[39/56] (retries) [tests] › tests/inventory/delete-placed-stock.spec.ts:113:7 › inventory — מחיקת מוצר שמשויך למקום במחסן (#d17c625a) › «מעבר למפת המחסן» → המקום נבחר במפה → «הסרה מהמקום» → בקטלוג «ללא מיקום» → נמחק בחלון רגיל #d17c625a @desktop @data (retry #1)
+[40/56] [tests] › tests/inventory/inventory-lifecycle.spec.ts:288:7 › inventory — מחזור מלאי: קליטה, רף, הזמנה, ליקוט (QA-AUTO) › הזמנת לקוח ואישור — המלאי לא משתנה, אין «לאחר הזמנה» #6a7494e8 @desktop
+[41/56] (retries) [tests] › tests/inventory/delete-placed-stock.spec.ts:137:7 › inventory — מחיקת מוצר שמשויך למקום במחסן (#d17c625a) › בדיקת שרת: חלון «מחיקת מוצר» פתוח (משויך, 0), בינתיים נקלטה יחידה למקום → 400 PRODUCT_HAS_STOCK → חלון החסימה עם «מעבר למפת המחסן», המוצר לא נמחק #d17c625a @desktop @data (retry #1)
+[42/56] [tests] › tests/inventory/inventory-lifecycle.spec.ts:304:7 › inventory — מחזור מלאי: קליטה, רף, הזמנה, ליקוט (QA-AUTO) › עובד מחסן: המלאי יורד רק אחרי «לוקט», ללא ניכוי כפול בסיום הליקוט #6a7494e8 @desktop
+  3) [tests] › tests/catalog/location-cell-multi-places.spec.ts:83:7 › catalog — מוצר אחד בכמה מקומות במחסן (#7b8b97e9) › לחיצה על שורה / פריט בתפריט פותחת את חלון «מיקום במחסן» של אותו מקום בלבד #7b8b97e9 @desktop @data 
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByRole('dialog')
+    Expected pattern: /המקום הנוכחי(?: \(\d+ יחידות\))?:\s*[^|]*\|[^|]*\|[^|]*\| F-03/
+    Received string:  "מיקום במחסןQA-AUTO-7b8b-M-0392284המקום הנוכחי (2 יחידות):ארון F | מדף 3 | F-03קומה 2המחסן שלנוקומה 1קירשירותיםמטבחשולחןמדרגות56.4 מ׳36.4מ׳אלקטרוניקה 1חזרותנייר קופה ושקיותאלכוהולחדרארון Bאלקטרוני מדרגותמשרדצמוד לקירמתחת למדרגותפילטריםארון Eארון Hארון Gארון Aארון Cנרגילותטורבוייםריזלהמשטח 3דוידוףארון Fארון H · ששבש גחליםששבש גחליםפילטריםפילטריםארון B · ארון משרד שמאלארון משרד שמאלאלקטרוניקה 1אלקטרוניקה 1נייר קופה ושקיותנייר קופה ושקיותטורבוייםטורבוייםנרגילותנרגילותמשרדמשרדאלכוהולאלכוהולארון F · מדף 1מדף 1חדרחדראלקטרוני מדרגותאלקטרוני מדרגותארון A · בנג פלסטיקבנג פלסטיקארון G · קוקוסיםקוקוסיםגריינטרים ברזלגריינטרים ברזלדוידוףדוידוףחזרותחזרותריזלהריזלהמתחת למדרגותמתחת למדרגותארון פלסטיק · פלסטיקפלסטיקארון C · סנוסיםסנוסיםארון E · מאפרות ורכבמאפרות ורכבמשטח 3 · פילטר פלסטיקפילטר פלסטיקצמוד לקירצמוד לקירארון H · מאפרה 2מאפרה 2ארון B · ארון משרד ימיןארון משרד ימיןמשטח 3 · אמנהאמנהארון E · סלולרסלולרארון G · סוללותסוללותארון C · טבק גלגול 2טבק גלגול 2ארון A · גחליםגחליםארון פלסטיק · מנגליםמנגליםנרגילות · משקפייםמשקפייםארון F · סיגרים 3סיגרים 3משטח 3 · גרמניותגרמניותארון פלסטיק · לקוקלקוקארון A · טנקים נרגילהטנקים נרגילהארון C · סנאפיםסנאפיםנרגילות · פוקרפוקרארון E · פייפיםפייפיםארון F · מדף 3מדף 3ארון H · אלכוהול 1אלכוהול 1ארון G · גורס מגנטגורס מגנטארון C · מדף 4מדף 4ארון F · מדף 4מדף 4ארון H · מכונות גלגול זכוכיתמכונות גלגול זכוכיתארון G · מכונות גלגולמכונות גלגולמשטח 3 · גיזהגיזהארון A · נרגילה עגבניהנרגילה עגבניהארון E · מאפרות ארוןמאפרות ארוןארון E · מאפרותמאפרותארון F · מון 1מון 1ארון G · קלפים משקליםקלפים משקליםארון H · רכברכבארון H · אלכוהול 2אלכוהול 2ארון E · אחסון סיגריות בנגיםאחסון סיגריות בנגיםארון G · מצטיםמצטיםארון F · סילברוססילברוסארון E · מאפרות אחסוןמאפרות אחסוןארון G · מכונות גלגולמכונות גלגולארון F · סיגרים 2סיגרים 2ארון H · מיקס מצ׳טיםמיקס מצ׳טיםארון H · מצ׳טים ומאפרותמצ׳טים ומאפרותארון G · מצטיםמצטיםארון F · מקטרת קונסמקטרת קונסארון E · בנגים אביזריםבנגים אביזריםארון H · אלכוהול 3אלכוהול 3ארון F · mix ניירותmix ניירותארון G · מצטיםמצטיםארון F · ריף3ריף3ארון G · מדף 10מדף 10ארון H · נרתיק טבק 1נרתיק טבק 1ארון G · סיכה מצ׳טיםסיכה מצ׳טיםארון F · אלוראלורארון H · נרתיק טבק 2נרתיק טבק 2ארון F · טבק 1טבק 1ארון G · מצ׳טים קונדומיםמצ׳טים קונדומיםארון H · נרתיק טבק 3נרתיק טבק 3ארון G · שמרף וכסףשמרף וכסףארון F · צפניהצפניהארון H · מצ׳טים עליון 1מצ׳טים עליון 1ארון G · מצ׳טים גדולמצ׳טים גדולארון H · מצ׳טים עליון 2מצ׳טים עליון 2ארון F · rawrawארון G · גז מצ׳טיםגז מצ׳טיםארון H · מצ׳טים עליון 3מצ׳טים עליון 3ארון F · ריף2ריף2ארון F · מניטו ג׳ויסמניטו ג׳ויסארון F · סיגריםסיגריםארון F · רמזלה גיזהרמזלה גיזהארון F · ocbocbארון F · ריף 1ריף 1ארון F · קורסתקורסתארון F · קונוס מגרותקונוס מגרותארון F · קונוסים צנצנותקונוסים צנצנותארון F · קונוסים 3 + 6קונוסים 3 + 6ארון F · קונוסים 50 + 100קונוסים 50 + 100100%בחרו פריט אחסוןאלקטרוניקה 1חזרותנייר קופה ושקיותאלכוהולחדרגריינטרים ברזלארון Bאלקטרוני מדרגותמשרדצמוד לקירמתחת למדרגותפילטריםארון Eארון Hארון Gארון Aארון Cארון פלסטיקנרגילותטורבוייםריזלהמשטח 3דוידוףארון Fבחרו מדף ב«ארון F»מדף 1סיגרים 3מדף 3מדף 4מון 1סילברוססיגרים 2מקטרת קונסmix ניירותריף3אלורטבק 1צפניהrawריף2מניטו ג׳ויססיגריםרמזלה גיזהocbריף 1קורסתקונוס מגרותקונוסים צנצנותקונוסים 3 + 6קונוסים 50 + 100מיקום חדש של מוצרקומה 1 | ארון F | מדף 3 | F-03ניקוי המיקוםביטולשמירה"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" getByRole('dialog') with timeout 5000ms
+      - waiting for getByRole('dialog')
+        6 × locator resolved to <div role="dialog" aria-modal="true" class="relative z-10 w-full shadow-lg rounded-xl border border-[hsl(var(--border))] bg-[hsl(var(--card))] p-6 max-h-[92svh] max-w-3xl overflow-y-auto">…</div>
+          - unexpected value "מיקום במחסןQA-AUTO-7b8b-M-0392284המקום הנוכחי (2 יחידות):ארון F | מדף 3 | F-03טוענים את המפה…ביטולשמירה"
+        7 × locator resolved to <div role="dialog" aria-modal="true" class="relative z-10 w-full shadow-lg rounded-xl border border-[hsl(var(--border))] bg-[hsl(var(--card))] p-6 max-h-[92svh] max-w-3xl overflow-y-auto">…</div>
+          - unexpected value "מיקום במחסןQA-AUTO-7b8b-M-0392284המקום הנוכחי (2 יחידות):ארון F | מדף 3 | F-03קומה 2המחסן שלנוקומה 1קירשירותיםמטבחשולחןמדרגות56.4 מ׳36.4מ׳אלקטרוניקה 1חזרותנייר קופה ושקיותאלכוהולחדרארון Bאלקטרוני מדרגותמשרדצמוד לקירמתחת למדרגותפילטריםארון Eארון Hארון Gארון Aארון Cנרגילותטורבוייםריזלהמשטח 3דוידוףארון Fארון H · ששבש גחליםששבש גחליםפילטריםפילטריםארון B · ארון משרד שמאלארון משרד שמאלאלקטרוניקה 1אלקטרוניקה 1נייר קופה ושקיותנייר קופה ושקיותטורבוייםטורבוייםנרגילותנרגילותמשרדמשרדאלכוהולאלכוהולארון F · מדף 1מדף 1חדרחדראלקטרוני מדרגותאלקטרוני מדרגותארון A · בנג פלסטיקבנג פלסטיקארון G · קוקוסיםקוקוסיםגריינטרים ברזלגריינטרים ברזלדוידוףדוידוףחזרותחזרותריזלהריזלהמתחת למדרגותמתחת למדרגותארון פלסטיק · פלסטיקפלסטיקארון C · סנוסיםסנוסיםארון E · מאפרות ורכבמאפרות ורכבמשטח 3 · פילטר פלסטיקפילטר פלסטיקצמוד לקירצמוד לקירארון H · מאפרה 2מאפרה 2ארון B · ארון משרד ימיןארון משרד ימיןמשטח 3 · אמנהאמנהארון E · סלולרסלולרארון G · סוללותסוללותארון C · טבק גלגול 2טבק גלגול 2ארון A · גחליםגחליםארון פלסטיק · מנגליםמנגליםנרגילות · משקפייםמשקפייםארון F · סיגרים 3סיגרים 3משטח 3 · גרמניותגרמניותארון פלסטיק · לקוקלקוקארון A · טנקים נרגילהטנקים נרגילהארון C · סנאפיםסנאפיםנרגילות · פוקרפוקרארון E · פייפיםפייפיםארון F · מדף 3מדף 3ארון H · אלכוהול 1אלכוהול 1ארון G · גורס מגנטגורס מגנטארון C · מדף 4מדף 4ארון F · מדף 4מדף 4ארון H · מכונות גלגול זכוכיתמכונות גלגול זכוכיתארון G · מכונות גלגולמכונות גלגולמשטח 3 · גיזהגיזהארון A · נרגילה עגבניהנרגילה עגבניהארון E · מאפרות ארוןמאפרות ארוןארון E · מאפרותמאפרותארון F · מון 1מון 1ארון G · קלפים משקליםקלפים משקליםארון H · רכברכבארון H · אלכוהול 2אלכוהול 2ארון E · אחסון סיגריות בנגיםאחסון סיגריות בנגיםארון G · מצטיםמצטיםארון F · סילברוססילברוסארון E · מאפרות אחסוןמאפרות אחסוןארון G · מכונות גלגולמכונות גלגולארון F · סיגרים 2סיגרים 2ארון H · מיקס מצ׳טיםמיקס מצ׳טיםארון H · מצ׳טים ומאפרותמצ׳טים ומאפרותארון G · מצטיםמצטיםארון F · מקטרת קונסמקטרת קונסארון E · בנגים אביזריםבנגים אביזריםארון H · אלכוהול 3אלכוהול 3ארון F · mix ניירותmix ניירותארון G · מצטיםמצטיםארון F · ריף3ריף3ארון G · מדף 10מדף 10ארון H · נרתיק טבק 1נרתיק טבק 1ארון G · סיכה מצ׳טיםסיכה מצ׳טיםארון F · אלוראלורארון H · נרתיק טבק 2נרתיק טבק 2ארון F · טבק 1טבק 1ארון G · מצ׳טים קונדומיםמצ׳טים קונדומיםארון H · נרתיק טבק 3נרתיק טבק 3ארון G · שמרף וכסףשמרף וכסףארון F · צפניהצפניהארון H · מצ׳טים עליון 1מצ׳טים עליון 1ארון G · מצ׳טים גדולמצ׳טים גדולארון H · מצ׳טים עליון 2מצ׳טים עליון 2ארון F · rawrawארון G · גז מצ׳טיםגז מצ׳טיםארון H · מצ׳טים עליון 3מצ׳טים עליון 3ארון F · ריף2ריף2ארון F · מניטו ג׳ויסמניטו ג׳ויסארון F · סיגריםסיגריםארון F · רמזלה גיזהרמזלה גיזהארון F · ocbocbארון F · ריף 1ריף 1ארון F · קורסתקורסתארון F · קונוס מגרותקונוס מגרותארון F · קונוסים צנצנותקונוסים צנצנותארון F · קונוסים 3 + 6קונוסים 3 + 6ארון F · קונוסים 50 + 100קונוסים 50 + 100100%בחרו פריט אחסוןאלקטרוניקה 1חזרותנייר קופה ושקיותאלכוהולחדרגריינטרים ברזלארון Bאלקטרוני מדרגותמשרדצמוד לקירמתחת למדרגותפילטריםארון Eארון Hארון Gארון Aארון Cארון פלסטיקנרגילותטורבוייםריזלהמשטח 3דוידוףארון Fבחרו מדף ב«ארון F»מדף 1סיגרים 3מדף 3מדף 4מון 1סילברוססיגרים 2מקטרת קונסmix ניירותריף3אלורטבק 1צפניהrawריף2מניטו ג׳ויססיגריםרמזלה גיזהocbריף 1קורסתקונוס מגרותקונוסים צנצנותקונוסים 3 + 6קונוסים 50 + 100מיקום חדש של מוצרקומה 1 | ארון F | מדף 3 | F-03ניקוי המיקוםביטולשמירה"
+
+
+      91 |     await H.locBtn(page, M).nth(1).click();
+      92 |     await expect(dlg.getByRole('heading', { name: 'מיקום במחסן' })).toBeVisible();
+    > 93 |     await expect(dlg).toContainText(new RegExp(`המקום הנוכחי(?: \\(\\d+ יחידות\\))?:\\s*[^|]*\\|[^|]*\\|[^|]*\\| ${codes[1]}`));
+         |                       ^
+      94 |     for (const c of places.map((p) => p.code).filter((c) => c !== codes[1])) await expect(dlg).not.toContainText(c);
+      95 |     await dlg.getByRole('button', { name: 'ביטול' }).click();
+      96 |     await expect(dlg).toHaveCount(0);
+        at /Users/avielshnaider/b2b-moe/.qa/e2e/tests/catalog/location-cell-multi-places.spec.ts:93:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/catalog-location-cell-mult-aeabb--בלבד-7b8b97e9-desktop-data-tests-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/catalog-location-cell-mult-aeabb--בלבד-7b8b97e9-desktop-data-tests-retry1/error-context.md
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/catalog-location-cell-mult-aeabb--בלבד-7b8b97e9-desktop-data-tests-retry1/test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/catalog-location-cell-mult-aeabb--בלבד-7b8b97e9-desktop-data-tests-retry1/error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/catalog-location-cell-mult-aeabb--בלבד-7b8b97e9-desktop-data-tests-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/catalog-location-cell-mult-aeabb--בלבד-7b8b97e9-desktop-data-tests-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[43/56] (retries) [tests] › tests/catalog/location-cell-multi-places.spec.ts:109:7 › catalog — מוצר אחד בכמה מקומות במחסן (#7b8b97e9) › «קליטת מלאי»: ב«מקום היעד» רק 5 המקומות של המוצר + «ללא מקום — לשיוך בהמשך» #7b8b97e9 @desktop @data (retry #1)
+  4) [tests] › tests/catalog/location-cell-multi-places.spec.ts:109:7 › catalog — מוצר אחד בכמה מקומות במחסן (#7b8b97e9) › «קליטת מלאי»: ב«מקום היעד» רק 5 המקומות של המוצר + «ללא מקום — לשיוך בהמשך» #7b8b97e9 @desktop @data 
+
+    Error: expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 0
+    Received array:  []
+
+      114 |     await expect(dlg.getByRole('heading', { name: 'הוספת פריט למלאי' })).toBeVisible();
+      115 |     const opts = (await dlg.getByRole('combobox', { name: 'מקום היעד' }).locator('option').allInnerTexts()).map((t) => t.trim());
+    > 116 |     expect(opts.filter((t) => t !== H.NO_PLACE)).toHaveLength(5);
+          |                                                  ^
+      117 |     expect(opts).toContain(H.NO_PLACE);
+      118 |     for (const pl of places) expect(opts.some((t) => t.includes(`(${pl.code})`)), `опция ${pl.code}`).toBe(true);
+      119 |     await dlg.getByRole('button', { name: 'ביטול' }).click();
+        at /Users/avielshnaider/b2b-moe/.qa/e2e/tests/catalog/location-cell-multi-places.spec.ts:116:50
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/catalog-location-cell-mult-08941-המשך»-7b8b97e9-desktop-data-tests/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/catalog-location-cell-mult-08941-המשך»-7b8b97e9-desktop-data-tests/error-context.md
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/catalog-location-cell-mult-08941-המשך»-7b8b97e9-desktop-data-tests/test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/catalog-location-cell-mult-08941-המשך»-7b8b97e9-desktop-data-tests/error-context.md
+
+
+[44/56] (retries) [tests] › tests/catalog/location-cell-multi-places.spec.ts:124:7 › catalog — מוצר אחד בכמה מקומות במחסן (#7b8b97e9) › 390: «+2» נפתח בלחיצה ומציג 5 מקומות, אין גלילה אופקית של העמוד #7b8b97e9 @desktop @data (retry #1)
+[45/56] (retries) [tests] › tests/catalog/location-cell-multi-places.spec.ts:137:7 › catalog — מוצר אחד בכמה מקומות במחסן (#7b8b97e9) › מחיקה, 4 מקומות (אחד עם 0): «משויך ל-4 מקומות במחסן, ורשומות בהם עדיין 8.» ו-4 שורות #7b8b97e9 #d17c625a @desktop @data (retry #1)
+[46/56] [tests] › tests/inventory/inventory-views.spec.ts:96:7 › inventory — עובד מחסן בדף ניהול מלאי › עובד מחסן רואה תמונת מוצר וקטגוריה #6a8da5bc @desktop @prod-safe
+[47/56] [tests] › tests/inventory/inventory-lifecycle.spec.ts:334:7 › inventory — מחזור מלאי: קליטה, רף, הזמנה, ליקוט (QA-AUTO) › admin: אחרי הליקוט ההזמנה «מוכן למשלוח», ליקוט 1/1 → «סופק» #6a7494e8 @desktop
+[48/56] [tests] › tests/inventory/inventory-lifecycle.spec.ts:346:7 › inventory — מחזור מלאי: קליטה, רף, הזמנה, ליקוט (QA-AUTO) › מחיקה חסומה כשיש מלאי במקום («משויך למקום במחסן: רשומות עדיין 3», «הסרה מהמקום») → מפה עם המקום → «הסרה מהמקום» → חלון מחיקה רגיל בלי «ייגרעו» → נמחק; ביומן «ללא מקום», בלי «מחיקת מוצר» #6a5cb979 #d7b7ec74 @desktop
+[49/56] [tests] › tests/inventory/inventory-views.spec.ts:115:7 › inventory — עובד מחסן בדף ניהול מלאי › עובד מחסן: לחיצה על הכמות — קליטה עם מוצר נבחר, שדה «כמות»; אין קליטה ב-⋮ #6a858f15 #6a8466f2 @desktop @prod-safe
+[50/56] [tests] › tests/inventory/inventory-views.spec.ts:125:7 › inventory — מפיץ (קריאה בלבד) › רף מינימום מספר בלבד; סטטוס לפי כמות ורף #6a846775 #6a70b149 #6a84687f @desktop @prod-safe
+[51/56] [tests] › tests/inventory/inventory-views.spec.ts:150:7 › inventory — מפיץ (קריאה בלבד) › קליטה מהכמות ומכפתור «קליטת מלאי» — שדות, בלי (יח'), בלי קליטה ב-⋮ #6a858f15 #6a8466f2 #6a5cb979 @desktop @prod-safe
+[52/56] [tests] › tests/inventory/inventory-views.spec.ts:174:7 › inventory — מפיץ (קריאה בלבד) › ייצוא לאקסל — כל המוצרים עם מלאי ומחירים #6a749638 @desktop @prod-safe
+[53/56] [tests] › tests/inventory/receive-into-place-with-unplaced-stock.spec.ts:212:7 › inventory — קליטה כשיש מלאי «ללא מקום» (#2830b76e) › יש מלאי «ללא מקום» — קליטה למקום המוצר לא נחסמת #2830b76e @desktop @data
+[54/56] [tests] › tests/inventory/receive-multiple-places-dropdown.spec.ts:224:7 › inventory — קליטה: מוצר בשני מקומות (#2830b76e) › מוצר בשני מקומות — בחירה מבין מקומות המוצר, הכמות נכנסת למקום שנבחר #2830b76e @desktop @data
+[55/56] [tests] › tests/inventory/receive-no-place-and-product-switch.spec.ts:214:7 › inventory — קליטה: מוצר בלי מקום והחלפת מוצר (#2830b76e) › מוצר בלי מקום; החלפת מוצר בכניסה 2 מעדכנת את השדה #2830b76e @desktop @data
+[56/56] [tests] › tests/inventory/receive-prefill-map-bound.spec.ts:212:7 › inventory — קליטה ממלאת את מקום המוצר: מקום שנקבע מהמפה (#2830b76e) › מקום שנקבע מהמפה («הוספת פריט ל…») — הקליטה מהקטלוג ממלאת אותו #2830b76e @desktop @data
+[57/56] [tests] › tests/inventory/receive-prefill-single-place.spec.ts:212:7 › inventory — קליטה ממלאת את מקום המוצר: מקום אחד (#2830b76e) › מקום אחד דרך «מיקום במחסן»: שני הכניסות ממלאות את המקום, הכמות נכנסת למקום וליומן #2830b76e @desktop @data
+[58/56] [tests] › tests/picking/picking-multi-place.spec.ts:186:7 › picking — מוצר בשני מקומות: תחנה אחת, «לוקט» אחד, גריעה לפי כלל 11.10 (#7b8b97e9) › X=4, Y=5, הזמנה של 5: תחנה אחת עם שני המקומות, «לוקט» אחד → Y 5→0, X נשאר 4, ביומן רשומת «ליקוט» אחת מ-Y #7b8b97e9 @desktop @data @orders
+[59/56] [tests] › tests/warehouse-map/supplier-return.spec.ts:229:7 › warehouse-map — החזרה לספק (#1f62ca42) › החזרה לספק: כמות לא תקינה (יותר מהמלאי / 0 / ריק) חוסמת את הרישום #1f62ca42 @desktop @data
+[60/56] [iphone] › tests/catalog/categories-states.spec.ts:32:7 › catalog — קטגוריות: מחיקה רק אחרי טעינת מוני המוצרים (#19daa080) › בזמן טעינת המונים: «טוען…» במקום «0 מוצרים», «מחיקה» לא זמינה; אחרי הטעינה — «מכיל מוצרים» חסום #19daa080 @prod-safe
+[61/56] [tests] › tests/warehouse-map/supplier-return.spec.ts:259:7 › warehouse-map — החזרה לספק (#1f62ca42) › החזרה לספק «ללא מקום»: 1 מתוך 3 ואז 2 הנותרים — מצליחה, מלאי יורד, נרשמת ביומן #1f62ca42 @desktop @data
+[62/56] [tests] › tests/warehouse-map/supplier-return.spec.ts:289:7 › warehouse-map — החזרה לספק (#1f62ca42) › החזרה לספק ממקום במחסן ממשיכה לעבוד — מקום וקטלוג יורדים, יומן עם המקום #1f62ca42 @desktop @data
+[63/56] [iphone] › tests/catalog/categories-states.spec.ts:90:7 › catalog — קטגוריות בטלפון: כשל בטעינת המונים (#133950be) › כשל: אחרי הניסיונות — alert «אירעה שגיאה בטעינת מספר המוצרים בקטגוריות. נסה שוב.» ו«נסה שוב»; אחרי חזרת הרשת — המונים נטענים #133950be @mobile @prod-safe
+[64/56] [iphone] › tests/catalog/categories-states.spec.ts:113:7 › catalog — קטגוריות בטלפון: כשל בטעינת המונים (#133950be) › בלי כשל — המונים נטענים, אין הודעת שגיאה #133950be @mobile @prod-safe
+[65/56] [iphone] › tests/client-ordering/catalog.spec.ts:18:7 › client-ordering — קטלוג: גלישה, חיפוש וסינון › קטלוג מאורגן בקטגוריות עם מחירון אישי #6a38cf5e @prod-safe
+[66/56] [iphone] › tests/client-ordering/catalog.spec.ts:28:7 › client-ordering — קטלוג: גלישה, חיפוש וסינון › חיפוש מסנן בזמן אמת; אין תוצאות → מצב ריק ו«נקה סינון» #6a38cf5e @prod-safe
+[67/56] [iphone] › tests/client-ordering/catalog.spec.ts:50:7 › client-ordering — קטלוג: גלישה, חיפוש וסינון › סינון לפי קטגוריה מציג רק את מוצרי הקטגוריה #6a38cf5e @prod-safe
+[68/56] (retries) [iphone] › tests/catalog/categories-states.spec.ts:90:7 › catalog — קטגוריות בטלפון: כשל בטעינת המונים (#133950be) › כשל: אחרי הניסיונות — alert «אירעה שגיאה בטעינת מספר המוצרים בקטגוריות. נסה שוב.» ו«נסה שוב»; אחרי חזרת הרשת — המונים נטענים #133950be @mobile @prod-safe (retry #1)
+[69/56] [tests] › tests/picking/picking-multi-place.spec.ts:213:7 › picking — מוצר בשני מקומות: תחנה אחת, «לוקט» אחד, גריעה לפי כלל 11.10 (#7b8b97e9) › X=4, Y=5, הזמנה של 6: תחנה אחת, «לוקט» אחד → 5 מ-Y ו-1 מ-X, ביומן שתי רשומות «ליקוט» #7b8b97e9 @desktop @data @orders
+[70/56] (retries) [tests] › tests/picking/picking-multi-place.spec.ts:186:7 › picking — מוצר בשני מקומות: תחנה אחת, «לוקט» אחד, גריעה לפי כלל 11.10 (#7b8b97e9) › X=4, Y=5, הזמנה של 5: תחנה אחת עם שני המקומות, «לוקט» אחד → Y 5→0, X נשאר 4, ביומן רשומת «ליקוט» אחת מ-Y #7b8b97e9 @desktop @data @orders (retry #1)
+  5) [iphone] › tests/catalog/categories-states.spec.ts:90:7 › catalog — קטגוריות בטלפון: כשל בטעינת המונים (#133950be) › כשל: אחרי הניסיונות — alert «אירעה שגיאה בטעינת מספר המוצרים בקטגוריות. נסה שוב.» ו«נסה שוב»; אחרי חזרת הרשת — המונים נטענים #133950be @mobile @prod-safe 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('alert').filter({ hasText: 'אירעה שגיאה בטעינת מספר המוצרים בקטגוריות. נסה שוב.' })
+    Expected: visible
+    Timeout: 45000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('alert').filter({ hasText: 'אירעה שגיאה בטעינת מספר המוצרים בקטגוריות. נסה שוב.' }) with timeout 45000ms
+      - waiting for getByRole('alert').filter({ hasText: 'אירעה שגיאה בטעינת מספר המוצרים בקטגוריות. נסה שוב.' })
+
+
+       96 |     const alert = page.getByRole('alert').filter({ hasText: ERR_TEXT });
+       97 |     // приложение повторяет запрос ~15–16 с, затем показывает сообщение
+    >  98 |     await expect(alert).toBeVisible({ timeout: 45_000 });
+          |                         ^
+       99 |     const retry = alert.getByRole('button', { name: 'נסה שוב' });
+      100 |     await expect(retry).toBeVisible();
+      101 |     await expect(main.getByText(/^0 מוצרים$/)).toHaveCount(0);
+        at /Users/avielshnaider/b2b-moe/.qa/e2e/tests/catalog/categories-states.spec.ts:98:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/catalog-categories-states--5b8b5-ם-133950be-mobile-prod-safe-iphone/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/catalog-categories-states--5b8b5-ם-133950be-mobile-prod-safe-iphone/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('alert').filter({ hasText: 'אירעה שגיאה בטעינת מספר המוצרים בקטגוריות. נסה שוב.' })
+    Expected: visible
+    Timeout: 45000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('alert').filter({ hasText: 'אירעה שגיאה בטעינת מספר המוצרים בקטגוריות. נסה שוב.' }) with timeout 45000ms
+      - waiting for getByRole('alert').filter({ hasText: 'אירעה שגיאה בטעינת מספר המוצרים בקטגוריות. נסה שוב.' })
+
+
+       96 |     const alert = page.getByRole('alert').filter({ hasText: ERR_TEXT });
+       97 |     // приложение повторяет запрос ~15–16 с, затем показывает сообщение
+    >  98 |     await expect(alert).toBeVisible({ timeout: 45_000 });
+          |                         ^
+       99 |     const retry = alert.getByRole('button', { name: 'נסה שוב' });
+      100 |     await expect(retry).toBeVisible();
+      101 |     await expect(main.getByText(/^0 מוצרים$/)).toHaveCount(0);
+        at /Users/avielshnaider/b2b-moe/.qa/e2e/tests/catalog/categories-states.spec.ts:98:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/catalog-categories-states--5b8b5-ם-133950be-mobile-prod-safe-iphone-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/catalog-categories-states--5b8b5-ם-133950be-mobile-prod-safe-iphone-retry1/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/catalog-categories-states--5b8b5-ם-133950be-mobile-prod-safe-iphone-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/catalog-categories-states--5b8b5-ם-133950be-mobile-prod-safe-iphone-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+  6) [tests] › tests/picking/picking-multi-place.spec.ts:186:7 › picking — מוצר בשני מקומות: תחנה אחת, «לוקט» אחד, גריעה לפי כלל 11.10 (#7b8b97e9) › X=4, Y=5, הזמנה של 5: תחנה אחת עם שני המקומות, «לוקט» אחד → Y 5→0, X נשאר 4, ביומן רשומת «ליקוט» אחת מ-Y #7b8b97e9 @desktop @data @orders 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('heading', { name: 'קטלוג וניהול', level: 1 })
+    Expected: visible
+    Timeout: 30000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('heading', { name: 'קטלוג וניהול', level: 1 }) with timeout 30000ms
+      - waiting for getByRole('heading', { name: 'קטלוג וניהול', level: 1 })
+
+
+       at tests/inventory/_places.ts:22
+
+      20 | export async function findProduct(page: Page, p: string) {
+      21 |   await page.goto('/catalog');
+    > 22 |   await expect(page.getByRole('heading', { level: 1, name: 'קטלוג וניהול' })).toBeVisible({ timeout: 30_000 });
+         |                                                                               ^
+      23 |   await page.getByRole('textbox', { name: /חיפוש מוצר/ }).fill(p);
+      24 |   await expect(qtyBtn(page, p).or(page.getByText('לא נמצאו מוצרים התואמים לסינון'))).toBeVisible({ timeout: 20_000 });
+      25 | }
+        at findProduct (/Users/avielshnaider/b2b-moe/.qa/e2e/tests/inventory/_places.ts:22:79)
+        at Object.expectStock (/Users/avielshnaider/b2b-moe/.qa/e2e/tests/inventory/_places.ts:28:3)
+        at /Users/avielshnaider/b2b-moe/.qa/e2e/tests/picking/picking-multi-place.spec.ts:206:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/picking-picking-multi-plac-40d8c-b8b97e9-desktop-data-orders-tests/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/picking-picking-multi-plac-40d8c-b8b97e9-desktop-data-orders-tests/test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/picking-picking-multi-plac-40d8c-b8b97e9-desktop-data-orders-tests/error-context.md
+
+    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/picking-picking-multi-plac-40d8c-b8b97e9-desktop-data-orders-tests/test-failed-3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/picking-picking-multi-plac-40d8c-b8b97e9-desktop-data-orders-tests/test-failed-4.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/picking-picking-multi-plac-40d8c-b8b97e9-desktop-data-orders-tests/test-failed-5.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/picking-picking-multi-plac-40d8c-b8b97e9-desktop-data-orders-tests/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('heading', { name: 'קטלוג וניהול', level: 1 })
+    Expected: visible
+    Timeout: 30000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('heading', { name: 'קטלוג וניהול', level: 1 }) with timeout 30000ms
+      - waiting for getByRole('heading', { name: 'קטלוג וניהול', level: 1 })
+
+
+       at tests/inventory/_places.ts:22
+
+      20 | export async function findProduct(page: Page, p: string) {
+      21 |   await page.goto('/catalog');
+    > 22 |   await expect(page.getByRole('heading', { level: 1, name: 'קטלוג וניהול' })).toBeVisible({ timeout: 30_000 });
+         |                                                                               ^
+      23 |   await page.getByRole('textbox', { name: /חיפוש מוצר/ }).fill(p);
+      24 |   await expect(qtyBtn(page, p).or(page.getByText('לא נמצאו מוצרים התואמים לסינון'))).toBeVisible({ timeout: 20_000 });
+      25 | }
+        at findProduct (/Users/avielshnaider/b2b-moe/.qa/e2e/tests/inventory/_places.ts:22:79)
+        at Object.expectStock (/Users/avielshnaider/b2b-moe/.qa/e2e/tests/inventory/_places.ts:28:3)
+        at /Users/avielshnaider/b2b-moe/.qa/e2e/tests/picking/picking-multi-place.spec.ts:206:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/picking-picking-multi-plac-40d8c-b8b97e9-desktop-data-orders-tests-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/picking-picking-multi-plac-40d8c-b8b97e9-desktop-data-orders-tests-retry1/test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/picking-picking-multi-plac-40d8c-b8b97e9-desktop-data-orders-tests-retry1/error-context.md
+
+    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/picking-picking-multi-plac-40d8c-b8b97e9-desktop-data-orders-tests-retry1/test-failed-3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/picking-picking-multi-plac-40d8c-b8b97e9-desktop-data-orders-tests-retry1/test-failed-4.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/picking-picking-multi-plac-40d8c-b8b97e9-desktop-data-orders-tests-retry1/test-failed-5.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/picking-picking-multi-plac-40d8c-b8b97e9-desktop-data-orders-tests-retry1/error-context.md
+
+    attachment #8: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/picking-picking-multi-plac-40d8c-b8b97e9-desktop-data-orders-tests-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/picking-picking-multi-plac-40d8c-b8b97e9-desktop-data-orders-tests-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[71/56] (retries) [tests] › tests/picking/picking-multi-place.spec.ts:213:7 › picking — מוצר בשני מקומות: תחנה אחת, «לוקט» אחד, גריעה לפי כלל 11.10 (#7b8b97e9) › X=4, Y=5, הזמנה של 6: תחנה אחת, «לוקט» אחד → 5 מ-Y ו-1 מ-X, ביומן שתי רשומות «ליקוט» #7b8b97e9 @desktop @data @orders (retry #1)
+  4 failed
+    [tests] › tests/catalog/category-visibility-archive.spec.ts:88:7 › catalog — קטגוריה שיש בה רק מוצר בארכיון לא מוצגת ללקוח (#899df3e5) › הכנה: קטגוריה QA, מוצר QA בקטגוריה, קליטה של 3 «ללא מקום»; הלקוח רואה את הקטגוריה #899df3e5 @desktop 
+    [tests] › tests/catalog/location-cell-multi-places.spec.ts:109:7 › catalog — מוצר אחד בכמה מקומות במחסן (#7b8b97e9) › «קליטת מלאי»: ב«מקום היעד» רק 5 המקומות של המוצר + «ללא מקום — לשיוך בהמשך» #7b8b97e9 @desktop @data 
+    [tests] › tests/picking/picking-multi-place.spec.ts:186:7 › picking — מוצר בשני מקומות: תחנה אחת, «לוקט» אחד, גריעה לפי כלל 11.10 (#7b8b97e9) › X=4, Y=5, הזמנה של 5: תחנה אחת עם שני המקומות, «לוקט» אחד → Y 5→0, X נשאר 4, ביומן רשומת «ליקוט» אחת מ-Y #7b8b97e9 @desktop @data @orders 
+    [iphone] › tests/catalog/categories-states.spec.ts:90:7 › catalog — קטגוריות בטלפון: כשל בטעינת המונים (#133950be) › כשל: אחרי הניסיונות — alert «אירעה שגיאה בטעינת מספר המוצרים בקטגוריות. נסה שוב.» ו«נסה שוב»; אחרי חזרת הרשת — המונים נטענים #133950be @mobile @prod-safe 
+  2 flaky
+    [tests] › tests/catalog/location-cell-multi-places.spec.ts:83:7 › catalog — מוצר אחד בכמה מקומות במחסן (#7b8b97e9) › לחיצה על שורה / פריט בתפריט פותחת את חלון «מיקום במחסן» של אותו מקום בלבד #7b8b97e9 @desktop @data 
+    [tests] › tests/inventory/delete-placed-stock.spec.ts:86:7 › inventory — מחיקת מוצר שמשויך למקום במחסן (#d17c625a) › משויך + 2 במקום → «מחיקה · יש מלאי במחסן» → «לא ניתן למחוק מוצר עם מלאי», שורת «<קוד> · 2», «סגירה» #d17c625a @desktop @data 
+  3 skipped
+  4 did not run
+  43 passed (7.8m)

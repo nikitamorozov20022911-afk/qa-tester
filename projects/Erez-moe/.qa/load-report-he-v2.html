@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>ZIXE — דוח בדיקת עומס</title>
+<style>
+@page { size: A4; margin: 15mm 14mm; }
+body { font-family: "Arial Hebrew", -apple-system, "Helvetica Neue", Arial, sans-serif; font-size: 10.8pt; color: #1b2330; line-height: 1.5; }
+h1 { font-size: 21pt; color: #0f2a5a; border-bottom: 3px solid #2563eb; padding-bottom: 6px; margin-bottom: 4px; }
+.sub { color: #5b6677; margin: 0 0 12px; }
+h2 { font-size: 14pt; color: #0f2a5a; margin: 20px 0 8px; break-after: avoid; }
+ul, ol { padding-right: 22px; padding-left: 0; margin: 4px 0; } li { margin: 3px 0; }
+.ltr { direction: ltr; unicode-bidi: isolate; font-family: Menlo, monospace; font-size: 9pt; background: #eef2f7; padding: 1px 5px; border-radius: 3px; }
+table { border-collapse: collapse; width: 100%; margin: 8px 0 10px; font-size: 9.8pt; break-inside: avoid; }
+th, td { border: 1px solid #cdd6e3; padding: 5px 7px; text-align: right; }
+th { background: #eef3fb; }
+td.num { direction: ltr; unicode-bidi: isolate; text-align: right; }
+.box { border-radius: 8px; padding: 10px 14px; margin: 10px 0; break-inside: avoid; }
+.box p { margin: 0 0 6px; }
+.green { background: #e9f7ef; border-right: 4px solid #188038; }
+.orange { background: #fff4e5; border-right: 4px solid #e8710a; }
+.gray { background: #f1f3f6; border-right: 4px solid #8a94a6; }
+.concl { background: #eef3fb; border-right: 4px solid #2563eb; }
+.box b.t { display: block; margin-bottom: 3px; }
+.small { font-size: 9pt; color: #5b6677; }
+</style>
+</head>
+<body>
+
+<h1>ZIXE — דוח בדיקת עומס</h1>
+<p class="sub">סביבת בדיקות (TEST) · 10.11.2026, 12:20–12:31 · אפליקציה בגרסה <bdi dir="ltr">1.0.5</bdi></p>
+
+<h2>מסקנה</h2>
+<div class="box concl">
+<p><b>המסלול הציבורי של לקוח העסק (פתיחת עמוד העסק, טעינת נתונים, בחירת מועד וקביעת פגישה) עמד בעומס ללא כשלים משמעותיים:</b></p>
+<ul>
+<li>עד <b>100 מבקרים בו-זמנית</b> במסלול המלא — 16,600 בקשות, <b>0.04% שגיאות</b> (7 תמונות שלא נטענו).</li>
+<li>עד <b>200 משתמשים בו-זמנית</b> מול ה-API של בסיס הנתונים — 25,113 בקשות, <b>0% שגיאות</b>, זמן תגובה חציוני כ-0.15 שניות.</li>
+<li><b>213 פגישות נקבעו בהצלחה</b> במהלך העומס, ללא כפילויות וללא שגיאות.</li>
+</ul>
+<p><b>נקודות לשיפור:</b> זמן טעינת עמוד העסק עולה ל-1.3 שניות (חציון) ול-3.6 שניות (95%) ב-100 מבקרים, והבקשה הראשונה אחרי זמן המתנה איטית (3.7 שניות). פירוט והמלצות בהמשך.</p>
+</div>
+
+<h2>מה נבדק</h2>
+<p>נבדק המסלול שעובר לקוח של העסק שמקבל קישור לעמוד העסק (למשל דרך WhatsApp), בדיוק כפי שהאפליקציה מבצעת אותו. המסלול זוהה מתוך קוד המקור שנמסר, והבדיקה בוצעה על עסק בדיקות אמיתי («Eesek test») בסביבת TEST.</p>
+<table>
+<thead><tr><th>שלב</th><th>מה קורה</th><th>שרת</th></tr></thead>
+<tbody>
+<tr><td>1. פתיחת עמוד העסק</td><td>טעינת העמוד; השרת שולף את שם העסק והתמונות</td><td>Cloudflare Worker + Supabase</td></tr>
+<tr><td>2. טעינת נתוני העסק</td><td><span class="ltr">get_public_business_info</span>, <span class="ltr">get_public_business_page_assets</span>, <span class="ltr">get_public_business_products</span></td><td>Supabase</td></tr>
+<tr><td>3. תמונות העסק</td><td>תמונת שער ולוגו</td><td>Cloudflare Worker</td></tr>
+<tr><td>4. בחירת שירות ותאריך</td><td><span class="ltr">get_available_slots_for_approval_flow</span> — מועדים פנויים</td><td>Supabase</td></tr>
+<tr><td>5. קביעת פגישה</td><td><span class="ltr">create_booking_request</span></td><td>Supabase</td></tr>
+</tbody>
+</table>
+
+<h2>שיטת הבדיקה</h2>
+<ul>
+<li>כלי: <b>k6</b>. כל מבקר וירטואלי מבצע את שלבים 1 עד 4 עם הפסקות של 1 עד 3 שניות בין השלבים, כמו אדם אמיתי. הבקשות נשלחות עם דחיסה, כמו דפדפן.</li>
+<li><b>הרצה א׳ — מסלול מלא:</b> שלבים של 10 ← 25 ← 50 ← 100 מבקרים בו-זמנית, דקה בכל שלב.</li>
+<li><b>הרצה ב׳ — API בלבד:</b> שלבים 2 ו-4 ישירות מול Supabase, 25 ← 50 ← 100 ← 200 משתמשים בו-זמנית, כדי לבודד את יכולת בסיס הנתונים.</li>
+<li><b>במקביל לשתי ההרצות:</b> קביעת פגישה אמיתית (שלב 5) כל 2 שניות, עם שמות לקוח «QA-LOAD».</li>
+</ul>
+
+<h2>תוצאות — הרצה א׳: מסלול מלא של מבקר</h2>
+<p class="small">זמנים בשניות: חציון / 95% מהבקשות מהירות מהערך הזה.</p>
+<table>
+<thead><tr><th>מבקרים בו-זמנית</th><th>בקשות לשנייה</th><th>עמוד העסק</th><th>נתוני העסק (API)</th><th>מועדים פנויים</th><th>תמונות</th><th>שגיאות</th></tr></thead>
+<tbody>
+<tr><td>10</td><td>13</td><td class="num">0.51 / 1.16</td><td class="num">0.10 / 0.20</td><td class="num">0.11 / 0.22</td><td class="num">0.24 / 0.41</td><td>0%</td></tr>
+<tr><td>25</td><td>33</td><td class="num">0.63 / 1.36</td><td class="num">0.11 / 0.24</td><td class="num">0.12 / 0.28</td><td class="num">0.27 / 0.51</td><td>0%</td></tr>
+<tr><td>50</td><td>66</td><td class="num">0.60 / 1.10</td><td class="num">0.10 / 0.21</td><td class="num">0.13 / 0.22</td><td class="num">0.26 / 0.48</td><td>0%</td></tr>
+<tr><td>100</td><td>103</td><td class="num"><b>1.27 / 3.59</b></td><td class="num">0.14 / 0.55</td><td class="num">0.15 / 0.51</td><td class="num">0.45 / 1.22</td><td>0.4% (תמונות בלבד)</td></tr>
+</tbody>
+</table>
+<div class="box green"><b class="t">16,600 בקשות, 0.04% שגיאות</b>
+עד 50 מבקרים בו-זמנית כל הזמנים יציבים. ב-100 מבקרים ה-API עדיין מהיר (חציון 0.14 שניות), אך זמן טעינת עמוד העסק עולה פי 2, ו-7 בקשות תמונה מתוך 1,754 החזירו 404.</div>
+
+<h2>תוצאות — הרצה ב׳: API של בסיס הנתונים בלבד</h2>
+<table>
+<thead><tr><th>משתמשים בו-זמנית</th><th>בקשות לשנייה</th><th>נתוני העסק</th><th>מועדים פנויים</th><th>שגיאות</th></tr></thead>
+<tbody>
+<tr><td>25</td><td>24</td><td class="num">0.12 / 0.21</td><td class="num">0.12 / 0.23</td><td>0%</td></tr>
+<tr><td>50</td><td>46</td><td class="num">0.15 / 0.28</td><td class="num">0.16 / 0.28</td><td>0%</td></tr>
+<tr><td>100</td><td>92</td><td class="num">0.15 / 0.38</td><td class="num">0.17 / 0.43</td><td>0%</td></tr>
+<tr><td>200</td><td>174</td><td class="num">0.15 / 0.77</td><td class="num">0.18 / 0.92</td><td>0%</td></tr>
+</tbody>
+</table>
+<div class="box green"><b class="t">25,113 בקשות, 0% שגיאות</b>
+בסיס הנתונים עמד ב-174 בקשות לשנייה ללא כשל. החציון כמעט לא השתנה (0.15 שניות), אך ב-200 משתמשים 5% מהבקשות האיטיות ביותר מגיעות ל-0.8 עד 0.9 שניות — סימן ראשון לעומס על בסיס הנתונים.</div>
+
+<h2>קביעת פגישות תחת עומס</h2>
+<table>
+<thead><tr><th>הרצה</th><th>ניסיונות</th><th>נקבעו בהצלחה</th><th>אין מועד פנוי בתאריך שנבחר</th><th>שגיאות</th></tr></thead>
+<tbody>
+<tr><td>א׳ — מסלול מלא</td><td>121</td><td>120</td><td>1</td><td>0</td></tr>
+<tr><td>ב׳ — API בלבד</td><td>120</td><td>93</td><td>27</td><td>0</td></tr>
+</tbody>
+</table>
+<p>«אין מועד פנוי» אינו שגיאה: לוח דצמבר של עסק הבדיקות התמלא בפגישות שנקבעו בבדיקה עצמה, והמערכת הפסיקה להציע מועדים תפוסים. לא נוצרו פגישות כפולות.</p>
+
+<h2>ממצאים</h2>
+<div class="box orange"><b class="t">1. טעינת עמוד העסק היא החלק האיטי במסלול</b>
+ב-100 מבקרים בו-זמנית: חציון 1.27 שניות, 95% עד 3.6 שניות, מקסימום 7 שניות. העמוד שוקל <bdi dir="ltr">380 KB</bdi> עם דחיסה (<bdi dir="ltr">1.37 MB</bdi> בלי) ומוגדר <span class="ltr">cache-control: no-store</span>, כך שכל מבקר מוריד אותו מחדש. חלק מהעלייה בשלב של 100 מבקרים נובע גם ממהירות הרשת של המחשב הבודק (ראו «מגבלות»).</div>
+<div class="box orange"><b class="t">2. הבקשה הראשונה אחרי זמן המתנה איטית: 3.7 שניות</b>
+בפתיחה הראשונה של עמוד העסק אחרי זמן ללא פעילות התקבלה תשובה רק אחרי 3.7 שניות; בקשות חוזרות — 0.6 עד 0.9 שניות. לקוח שפותח קישור שקיבל ב-WhatsApp עלול לחכות כמה שניות למסך ריק.</div>
+<div class="box orange"><b class="t">3. מגבלת זמן של 2 שניות בשרת העמוד</b>
+לפי הקוד, ה-Worker ממתין לכל בקשה ל-Supabase עד 2 שניות בלבד. בבדיקה זמני ה-API נשארו מתחת לגבול זה ברוב המקרים, אך המקסימום הגיע ל-4 עד 4.8 שניות. במקרים כאלה העמוד ייטען בלי שם העסק ותמונת השיתוף.</div>
+<div class="box orange"><b class="t">4. שרת היומן «נרדם»</b>
+בבדיקה מ-05.11 הבקשה הראשונה לשרת היומן (Render) אחרי זמן המתנה נענתה רק אחרי 12.5 שניות — אופייני לחבילה החינמית. משתמש שמחבר את היומן ימתין זמן רב או יקבל שגיאה.</div>
+<div class="box gray"><b class="t">5. השוואה לבדיקה הקודמת (05.11.2026)</b>
+בבדיקה הראשונית התקבלו שגיאות <bdi dir="ltr">502/503</bdi> מעמוד העסק החל מכ-18 בקשות לשנייה. בבדיקה הנוכחית, עם עסק אמיתי ובעומס גבוה יותר (עד 15 טעינות עמוד לשנייה ו-103 בקשות לשנייה בסך הכול), <b>השגיאות לא חזרו</b>. ייתכן שה-Worker עודכן בינתיים או שמדובר בתקלה זמנית; מומלץ לבדוק בלוגים של Cloudflare את חלון הזמן 05.11 אחר הצהריים.</div>
+
+<h2>מגבלות הבדיקה</h2>
+<ul>
+<li><b>מקור יחיד:</b> כל העומס נשלח ממחשב אחד. בשלב של 100 מבקרים נפח הנתונים (כ-<bdi dir="ltr">6 MB/s</bdi>) הגיע למהירות הרשת של המחשב הבודק, ולכן חלק מהעלייה בזמני טעינת העמוד בשלב זה עשוי לנבוע מהצד הבודק.</li>
+<li><b>עסק אחד:</b> כל המבקרים פנו לאותו עסק. במצב אמיתי עם עסקים רבים העומס על בסיס הנתונים מתפזר אחרת.</li>
+<li><b>פעולות בעל העסק</b> (סנכרון, «קהילה», הפצת מבצעים) לא נבדקו בעומס: הן דורשות התחברות, והחיבור שמור על הטלפון בצורה מוצפנת.</li>
+<li><b>סביבת בדיקות:</b> חבילות השירותים בסביבת הייצור עשויות להיות שונות. יש לבדוק את סביבת הייצור בנפרד לפני השקה.</li>
+<li><b>הרצה אחת</b> של דקה לכל שלב, ללא נתונים מצד השרת (לוגים, צריכת משאבים).</li>
+</ul>
+
+<h2>המלצות</h2>
+<ol>
+<li>לאפשר שמירת עמוד העסק במטמון (CDN ודפדפן) ולפצל את קובץ ה-HTML לקבצים נפרדים — הפעולה בעלת ההשפעה הגדולה ביותר על זמן הטעינה.</li>
+<li>לשמור את ה-Worker ואת שרת היומן «ערים» (או לעבור לחבילה ללא הירדמות) כדי לבטל את ההמתנה של 3.7 ו-12.5 שניות.</li>
+<li>להגדיל את מגבלת 2 השניות ב-Worker או להציג את העמוד גם כאשר שליפת הנתונים מתעכבת.</li>
+<li>לפני השקה: לחזור על הבדיקה ממספר מקורות, עם מספר עסקים, ובסביבת הייצור; להוסיף ניטור (לוגים והתראות) ב-Cloudflare וב-Supabase.</li>
+</ol>
+
+<h2>נתוני בדיקה שנוצרו</h2>
+<p>214 פגישות בדצמבר 2026 בעסק הבדיקות «Eesek test» בסביבת TEST, עם שם לקוח שמתחיל ב-«QA-LOAD» (213 במהלך העומס ואחת לבדיקה מקדימה). ניתן לזהות ולמחוק אותן לפי השם.</p>
+
+</body>
+</html>

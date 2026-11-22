@@ -1,0 +1,133 @@
+{
+ "project": "biz4sale",
+ "date": "2026-10-29",
+ "session": 3,
+ "environment": "https://www.biz4sale.co.il/ (prod)",
+ "scope": "בבדיקות кроме «לא ניתן לשחזר» (#fe3470, #a47bd6)",
+ "queue": [
+  "#1a3a08",
+  "#839121",
+  "#def18b",
+  "#076449"
+ ],
+ "logins": {
+  "user": "alive 2026-10-29 eve",
+  "admin": "alive 2026-10-29 eve"
+ },
+ "tickets": [
+  {
+   "hash": "#839121",
+   "status": "done",
+   "desktop": "pass (не сломалось, PR #174; блок 334 карточки без повторов)",
+   "mobile": "pending — ждём разрешения Pixel 7",
+   "evidence": "screenshots/1029s/",
+   "action": "pass",
+   "column": "הושלם (провёл пользователь)",
+   "devices": [
+    "desktop",
+    "android-emu"
+   ],
+   "role": "guest+user",
+   "feature": "search-category-header-more-businesses (PR #174)"
+  },
+  {
+   "hash": "#1a3a08",
+   "status": "done",
+   "desktop": "полоса на десктопе скрыта (mobile-only)",
+   "mobile": "pending",
+   "action": "pass",
+   "column": "הושלם (провёл пользователь)",
+   "devices": [
+    "desktop",
+    "android-emu"
+   ],
+   "role": "guest+user",
+   "feature": "search-category-header-more-businesses (PR #174)"
+  },
+  {
+   "hash": "#def18b",
+   "status": "rejected",
+   "needs": "разрешение на черновик + AI-картинки",
+   "result": "все пункты ✅, лимит 10 не проверен; AI-блок между фото и видео (вопрос vs #537c4e)",
+   "evidence": "screenshots/1101/def18b-step3-ai-block-desktop.png",
+   "action": "reject",
+   "reason": "AI-блок между фото и видео, должен быть в самом низу (#537c4e)",
+   "column": "לביצוע",
+   "rejection": "rej_9779f0d3bb7bdfcacaac0420"
+  },
+  {
+   "hash": "#076449",
+   "status": "done",
+   "needs": "разрешение на QA-TEST объявление",
+   "action": "pass",
+   "column": "הושלם (провёл пользователь)",
+   "devices": [
+    "desktop",
+    "android-emu"
+   ],
+   "role": "user",
+   "feature": "edit-listing-save-changes (PR #175)",
+   "tests_needed": "EDIT-SAVE-09 одна ошибка при повторных провалах"
+  }
+ ],
+ "test_data": [
+  {
+   "what": "QA-TEST def18b черновик",
+   "id": "392dbc12-b4d6-4987-8326-00ec97836342",
+   "state": "deleted (204)"
+  },
+  {
+   "what": "AI картинки base44",
+   "id": "d44d194a7_generated_image.png, 7c8c70442_generated_image.png",
+   "state": "left (через сайт не удалить)"
+  },
+  {
+   "what": "QA-TEST 076449",
+   "id": "2c5902b7-6f91-455c-b7d7-c11a46d2daa0",
+   "state": "deleted (204); user_activity x2 left"
+  }
+ ],
+ "findings": [
+  "старая вкладка после деплоя: /addbusiness → 404 чанков через SW, ErrorBoundary, без баннера «גרסה חדשה» (1/3, после смены версии)",
+  "блок «עסקים נוספים» показывается при 0 результатов (вероятно задумано)",
+  "#def18b: после 4→3 карточки стилей теряют состояние — повторный «צור תמונה» = новая платная генерация/дубль",
+  "черновик сохраняется с images: [] (известно: картинка не попадает в черновик до שלח)",
+  "#076449: после ошибки и успешного сохранения тост ошибки остаётся в стопке под тостом успеха (виден край 12px)",
+  "«פרסם עסק» и меню в мобильной шапке 36px высотой",
+  "кнопки WhatsApp/נגישות визуально поверх «סנן תוצאות» в шторке",
+  "2 проданных («נמכר!!») объявления в рекомендациях",
+  "черновик по /addbusiness?id= без «שמור שינויים», סוג מודעה пустой"
+ ],
+ "pending_from_prev": "автотесты #0c6087 #243006 #917a7d #faeea4 + spec #f67768 — ждём «да»",
+ "permissions": [
+  "2026-11-01: Pixel 7 для #839121 #1a3a08 #076449",
+  "2026-11-01: QA-TEST черновик+AI-картинки (#def18b) и QA-TEST объявление (#076449) под user, удалить после",
+  "2026-11-01: автотесты в фоне #0c6087 #243006 #917a7d #faeea4 #f67768"
+ ],
+ "new_tickets": [
+  "#b4b8c9",
+  "#c5d7e2",
+  "#d152dd"
+ ],
+ "sprint_copy": {
+  "from_project": "6a2050cea88fd2c2941125ef",
+  "sprints_created": [
+   "Sprint 5 · מחשבון כדאיות רכישת עסק",
+   "Sprint 6 · SSR ו-SEO לדפים ציבוריים"
+  ],
+  "created": {
+   "#1619fd": "#22ce3e",
+   "#e9a4b7": "#d4f37b",
+   "#828632": "#be4863",
+   "#c4793e": "#b3dc2e",
+   "#7e05d7": "#b489db",
+   "#dde01d": "#80ff63",
+   "#6683db": "#3e4835",
+   "#3d75cb": "#d45b2a",
+   "#343438": "#d777c9"
+  },
+  "pending_retry_same_keys": {},
+  "note": "mifrat MCP отвалился (Authorization). Перед повтором — проверить, не создались ли (find по заголовку)."
+ },
+ "status": "closed"
+}

@@ -1,0 +1,43 @@
+[
+  {
+    "id": "user",
+    "role": "משתמש",
+    "emailVar": "QA_USER_USER_EMAIL",
+    "passwordVar": "QA_USER_USER_PASSWORD"
+  },
+  {
+    "id": "user2",
+    "role": "משתמש (niyoye, данные #5ffe7018)",
+    "emailVar": "QA_USER_USER2_EMAIL",
+    "passwordVar": "QA_USER_USER2_PASSWORD"
+  },
+  {
+    "id": "new1",
+    "role": "משתמש חדש (онбординг)",
+    "emailVar": "QA_USER_NEW1_EMAIL",
+    "passwordVar": "QA_USER_NEW1_PASSWORD"
+  },
+  {
+    "id": "new2",
+    "role": "משתמש חדש (второй клиент)",
+    "emailVar": "QA_USER_NEW2_EMAIL",
+    "passwordVar": "QA_USER_NEW2_PASSWORD"
+  },
+  {
+    "id": "new3",
+    "role": "משתמש בלי ילדים (пустое состояние)",
+    "emailVar": "QA_USER_NEW3_EMAIL",
+    "passwordVar": "QA_USER_NEW3_PASSWORD"
+  },
+  {
+    "id": "new4",
+    "role": "משתמש בלי ילדים ובלי ניטורים (пустая история)",
+    "emailVar": "QA_USER_NEW4_EMAIL",
+    "passwordVar": "QA_USER_NEW4_PASSWORD"
+  },
+  {
+    "id": "expert",
+    "role": "איש מקצוע (חוקי זיהוי, #89216b)",
+    "email": "jleprog34@gmail.com"
+  }
+]

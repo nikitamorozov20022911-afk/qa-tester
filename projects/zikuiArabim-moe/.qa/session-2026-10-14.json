@@ -1,0 +1,82 @@
+{
+ "date": "2026-10-14",
+ "command": "/qa (очередь בבדיקות, iPhone по кабелю)",
+ "device": "реальный iPhone 17 (подключён)",
+ "queue": [
+  "70e8283a",
+  "43533eab",
+  "6a86f7db",
+  "39f5e7d5",
+  "6cfcbcb7",
+  "9bc6265b",
+  "36a75b77",
+  "1cf95182",
+  "bad2d0dd",
+  "add32f72"
+ ],
+ "skipped": {
+  "6a86f7fe": "F-39 OTP — не трогаем (решение 11.10)",
+  "6a86f7fb": "push — проверка 9.11 вечером"
+ },
+ "tickets": [
+  {
+   "id": "70e8283a725c4a342be6258b",
+   "verdict": "pass — DONE on board 12:56",
+   "column": "הושלם"
+  },
+  {
+   "id": "43533eabf7a5e241a175df1d",
+   "verdict": "pass; clear cannot-reproduce — DONE on board 12:56",
+   "column": "הושלם"
+  },
+  {
+   "id": "6a86f7dbc7a1b906a507db97",
+   "verdict": "pass; resolve rej_1791726016486; clear cannot-reproduce — DONE on board 12:56",
+   "column": "הושלם"
+  },
+  {
+   "id": "39f5e7d526d0174d1709d34a",
+   "verdict": "pass; resolve 4a244d8e — DONE on board 12:56",
+   "column": "הושלם"
+  },
+  {
+   "id": "6cfcbcb774ecddfef579e779",
+   "verdict": "pass — DONE on board 12:56",
+   "column": "הושלם"
+  },
+  {
+   "id": "9bc6265b0d26bbb2b017a126",
+   "verdict": "pass — DONE on board 12:56",
+   "column": "הושלם"
+  },
+  {
+   "id": "1cf9518294d3d368ce75afe6",
+   "verdict": "pass — DONE on board 12:56",
+   "column": "הושלם"
+  },
+  {
+   "id": "36a75b778027ed97e0a701ec",
+   "verdict": "reject (scrolled header in status bar, verified 3/3) — DONE on board 12:56",
+   "column": "todo"
+  },
+  {
+   "id": "bad2d0dd5689a4c0bdaa74b6",
+   "verdict": "pass (חזרה на יצירת חשבון и תאריך לידה, после перезапуска; вход другим номером). Не проверено: התנתקות в профиле без настройки — недостижимо",
+   "column": "הושלם"
+  },
+  {
+   "id": "add32f721c0702296cf138b1",
+   "verdict": "pass (иконки = Figma 444:818)",
+   "column": "הושלם"
+  }
+ ],
+ "test_data": [
+  "клиент: временная дата «QA מחיקה» 20.10 создана и удалена (12:45)",
+  "клиент: «תזכורות במערכת» ВКЛ 12:46 → ВЫКЛ 12:48 (возвращено)",
+  "12:42 случайный аудиозвонок WhatsApp с телефона пользователя (баннер под нажатием) — сообщено пользователю",
+  "аккаунт 0501112233 — регистрация не завершена (после «שלח», на תאריך לידה)",
+  "аккаунт 0501112033 «QA reg 1410» — новая регистрация 14.10",
+  "13:12 входящий звонок во время теста — не трогали"
+ ],
+ "build": "1.0.0 (20)"
+}

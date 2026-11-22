@@ -1,0 +1,382 @@
+{
+  "date": "2026-10-20",
+  "mode": "qa",
+  "queue_column": "בבדיקות",
+  "board_via": "mifrat MCP",
+  "auth_check": {
+    "admin": "alive",
+    "buyer": "alive",
+    "rep": "alive"
+  },
+  "queue": [
+    {
+      "hash": "#47ba10",
+      "kind": "returned-reject",
+      "status": "verdict",
+      "verdict": "pass (reject point fixed); findings: save button not disabled on invalid qty; 390 table scrolls inside card — price/total/delete off-screen",
+      "board_action": "resolve rej_1c154920a27492d195eafd13",
+      "column": "הושלם",
+      "autotests": "autotest-writer running 21.10"
+    },
+    {
+      "hash": "#80bb3c",
+      "kind": "returned-reject",
+      "status": "verdict",
+      "verdict": "reject: oversell allowed (user 20.10: must block)",
+      "board_action": "resolve old rej_0248275a (400/1.5 fixed) + new rejection research/80bb3c-reject-draft.json",
+      "board_done": "rejected 21.10 rej_21e989aa80ecd6cdcfe24d57 (old rej_0248275a resolved)",
+      "column": "לביצוע"
+    },
+    {
+      "hash": "#1f768e",
+      "kind": "returned-reject",
+      "status": "verdict",
+      "note": "pagination fixed; raised toast covers last-row ⋮ on /orders (desktop+iphone 3/3)",
+      "verdict": "reject: raised toast covers last-row ⋮ (5/5 desktop, 1/1 iphone)",
+      "board_action": "resolve old rej_06ef534b292d06e452cff276 (pagination fixed) + task_add_rejection research/1f768e-reject-draft.json",
+      "board_done": "rejected 21.10 rej_3756e7718c84919badd945a3 (old rej_06ef534b resolved)",
+      "column": "לביצוע"
+    },
+    {
+      "hash": "#6a98bd",
+      "status": "verdict",
+      "verdict": "reject: only warning, saves over stock (user 20.10)",
+      "board_action": "task_add_rejection research/6a98bd-reject-draft.json",
+      "board_done": "rejected 21.10 rej_efca2251db5b9a2a66e52568",
+      "column": "לביצוע"
+    },
+    {
+      "hash": "#634a4e",
+      "status": "verdict",
+      "verdict": "pass",
+      "board_action": "none",
+      "column": "הושלם",
+      "autotests": "autotest-writer running 21.10"
+    },
+    {
+      "hash": "#ef8f45",
+      "status": "verdict",
+      "verdict": "pass",
+      "board_action": "none",
+      "column": "הושלם",
+      "autotests": "autotest-writer running 21.10"
+    },
+    {
+      "hash": "#e1e502",
+      "status": "verdict",
+      "verdict": "pass (390 per ticket)",
+      "finding": "360: line total >=₪1,000 overlaps price field 6-22px (3/3); 375 at ₪100,000 7px",
+      "column": "הושלם",
+      "autotests": "autotest-writer running 21.10"
+    },
+    {
+      "hash": "#d9d645",
+      "status": "verdict",
+      "verdict": "pass",
+      "board_action": "none",
+      "column": "הושלם",
+      "autotests": "autotest-writer running 21.10"
+    },
+    {
+      "hash": "#7ae889",
+      "status": "verdict",
+      "verdict": "reject (order-card references in m.r.), verified 3/3",
+      "board_action": "task_add_rejection research/7ae889-reject-draft.json",
+      "board_done": "rejected 21.10 rej_2f5fb5d0e7f8e82dd85815bd",
+      "column": "לביצוע"
+    },
+    {
+      "hash": "#fd2f41",
+      "status": "verdict",
+      "verdict": "pass (user 21.10: driver screen ok as is)",
+      "board_action": "none",
+      "column": "הושלם",
+      "autotests": "added to autotest-writer 21.10"
+    },
+    {
+      "hash": "#539c2f",
+      "status": "verdict",
+      "verdict": "pass (user confirmed)",
+      "column": "הושלם",
+      "autotests": "autotest-writer running 21.10"
+    },
+    {
+      "hash": "#f5aa41",
+      "status": "verdict",
+      "verdict": "pass",
+      "board_action": "none",
+      "column": "הושלם",
+      "autotests": "autotest-writer running 21.10"
+    },
+    {
+      "hash": "#26c50b",
+      "status": "verdict",
+      "note": "p4: payment today on old order #438 not in today revenue (order-date attribution); need hour test after 16:00 on #591 (created 15:21)",
+      "verdict": "reject: payment attributed to order creation hour/day, verified 3/3",
+      "board_action": "task_add_rejection research/26c50b-reject-draft.json",
+      "board_done": "rejected 21.10 rej_2c238f6d82881b63f3d4378b",
+      "column": "לביצוע"
+    },
+    {
+      "hash": "#6f3c9b",
+      "status": "verdict",
+      "verdict": "pass",
+      "board_action": "none",
+      "column": "הושלם",
+      "autotests": "autotest-writer running 21.10"
+    },
+    {
+      "hash": "#aea5d4",
+      "status": "verdict",
+      "verdict": "pass",
+      "board_action": "none",
+      "column": "הושלם",
+      "autotests": "autotest-writer running 21.10"
+    },
+    {
+      "hash": "#94fef5",
+      "status": "verdict",
+      "verdict": "pass",
+      "board_action": "none (no open rejections)",
+      "column": "הושלם",
+      "autotests": "autotest-writer running 21.10"
+    }
+  ],
+  "log": [
+    {
+      "time": "15:20",
+      "hash": "#94fef5",
+      "title": "טופס מוצר ברוחב 1024: «מחיר קנייה – ברוטו לפני מע\"מ» נשבר לשתי שורות",
+      "action": "pass",
+      "column": "ждёт-подтверждения",
+      "feature": "catalog / product form",
+      "role": "admin",
+      "devices": [
+        "desktop 600-1440",
+        "390 chromium"
+      ],
+      "screenshots": "screenshots/94fef5-*",
+      "notes": "top pairs Δ0 all widths; label text unchanged (#8cd9e9)"
+    },
+    {
+      "time": "15:25",
+      "hash": "#aea5d4",
+      "title": "מפת המחסן: אחרי «הסרה מהמקום» של מוצר עם מלאי 0 הוא נשאר ב«תכולת המדף»",
+      "action": "pass",
+      "column": "ждёт-подтверждения",
+      "feature": "warehouse map",
+      "role": "admin",
+      "devices": [
+        "desktop 1440"
+      ],
+      "screenshots": "screenshots/aea5d4-*"
+    },
+    {
+      "time": "15:25",
+      "hash": "#6f3c9b",
+      "title": "לוח בקרה: התקופה שנבחרה מתאפסת ל-30 ימים אחרי רענון הדף",
+      "action": "pass",
+      "column": "ждёт-подтверждения",
+      "feature": "dashboard",
+      "role": "admin",
+      "devices": [
+        "desktop 1440"
+      ],
+      "screenshots": "screenshots/6f3c9b-*"
+    },
+    {
+      "time": "15:45",
+      "hash": "#539c2f",
+      "title": "תעודת משלוח מודפסת: אחרי אספקה מופיע ללקוח «סופק ב»",
+      "action": "pass-pending-decision",
+      "feature": "delivery note print",
+      "role": "admin + driver (impersonation, separate session)",
+      "devices": [
+        "desktop 1440",
+        "390"
+      ],
+      "screenshots": "screenshots/539c2f-*"
+    },
+    {
+      "time": "15:50",
+      "hash": "#e1e502",
+      "title": "מכירה מיידית בטלפון (390): שם המוצר ושדה הכמות מחוץ למסך",
+      "action": "pass",
+      "column": "ждёт-подтверждения",
+      "feature": "walk-in sale mobile",
+      "role": "admin",
+      "devices": [
+        "iPhone 390/375/360 webkit emu",
+        "iPad 820/1180",
+        "1200",
+        "1440"
+      ],
+      "screenshots": "screenshots/e1e502-*",
+      "finding": "360 total overlap"
+    },
+    {
+      "time": "15:55",
+      "hash": "#47ba10",
+      "title": "הוספת אפשרות להזנת כמות ידנית ולשינוי מחיר מוצרים בהזמנה",
+      "action": "pass",
+      "column": "ждёт-подтверждения",
+      "feature": "order edit",
+      "role": "admin (+rep for ef8f45)",
+      "devices": [
+        "1440",
+        "iPad 820",
+        "iPhone 390 emu"
+      ],
+      "screenshots": "screenshots/47ba10-*"
+    },
+    {
+      "time": "15:55",
+      "hash": "#634a4e",
+      "title": "עריכת הזמנה: פתיחת «עריכה» מיד אחרי שמירה מציגה את הכמות הקודמת",
+      "action": "pass",
+      "column": "ждёт-подтверждения",
+      "feature": "order edit",
+      "role": "admin (+rep for ef8f45)",
+      "devices": [
+        "1440",
+        "iPad 820",
+        "iPhone 390 emu"
+      ],
+      "screenshots": "screenshots/634a4e-*"
+    },
+    {
+      "time": "15:55",
+      "hash": "#ef8f45",
+      "title": "כרטיס הזמנה: «תיעוד עריכה» מציג «משתמש לא ידוע»",
+      "action": "pass",
+      "column": "ждёт-подтверждения",
+      "feature": "order edit",
+      "role": "admin (+rep for ef8f45)",
+      "devices": [
+        "1440",
+        "iPad 820",
+        "iPhone 390 emu"
+      ],
+      "screenshots": "screenshots/ef8f45-*"
+    },
+    {
+      "time": "15:55",
+      "hash": "#6a98bd",
+      "title": "עריכת הזמנה: אפשר לשמור כמות גדולה מהמלאי בלי אזהרה",
+      "action": "pass",
+      "column": "ждёт-подтверждения",
+      "feature": "order edit",
+      "role": "admin (+rep for ef8f45)",
+      "devices": [
+        "1440",
+        "iPad 820",
+        "iPhone 390 emu"
+      ],
+      "screenshots": "screenshots/6a98bd-*"
+    },
+    {
+      "time": "16:40",
+      "hash": "#d9d645",
+      "title": "מסך «הזמנות»: כשמופיעה התראת «התקבלה הזמנה חדשה» ההזמנה עדיין לא ברשימה",
+      "action": "pass",
+      "column": "ждёт-подтверждения",
+      "feature": "orders notifications",
+      "role": "admin, rep",
+      "devices": [
+        "1440",
+        "iPhone 390"
+      ],
+      "screenshots": "screenshots/d9d645-*"
+    },
+    {
+      "time": "16:50",
+      "hash": "#80bb3c",
+      "title": "מכירה מיידית – הוספת אפשרות לסריקת מק\"ט, עריכת מחיר והזנת כמות ידנית",
+      "action": "pass-pending-decision",
+      "feature": "walk-in sale",
+      "role": "admin",
+      "devices": [
+        "1440",
+        "iPad 820"
+      ],
+      "screenshots": "screenshots/80bb3c-*"
+    },
+    {
+      "time": "17:00",
+      "hash": "#f5aa41",
+      "title": "עגלת הלקוח: אחרי הסרת מוצר מוצג לרגע «סה״כ משוער ₪0.00» ושלדי טעינה",
+      "action": "pass",
+      "column": "ждёт-подтверждения",
+      "feature": "cart",
+      "role": "buyer",
+      "devices": [
+        "1440",
+        "iPhone 390"
+      ],
+      "screenshots": "screenshots/f5aa41-*"
+    },
+    {
+      "time": "17:00",
+      "hash": "#fd2f41",
+      "title": "כרטיס הזמנה: הזמנה שלוקטה בחוסר מציגה גם «לוקטה · חוסר אחד» וגם «כל הפריטים לוקטו במלואם»",
+      "action": "pass-pending-decision",
+      "feature": "order card / picking",
+      "role": "admin, rep, worker, driver",
+      "devices": [
+        "1440"
+      ],
+      "screenshots": "screenshots/fd2f41-*"
+    },
+    {
+      "time": "21.10 11:32",
+      "action": "board: 5 rejections via MCP (user 'да на реджекты'); old rejects closed on #1f768e, #80bb3c; verified testing column = 11"
+    },
+    {
+      "time": "21.10",
+      "action": "user 'прошли' for 10 tickets; new bug #cb3f40 created (order edit 390); #47ba10 rej already resolved; autotests started"
+    },
+    {
+      "time": "21.10",
+      "hash": "#fd2f41",
+      "title": "כרטיס הזמנה: הזמנה שלוקטה בחוסר מציגה גם «לוקטה · חוסר אחד» וגם «כל הפריטים לוקטו במלואם»",
+      "action": "pass",
+      "column": "ждёт-подтверждения",
+      "feature": "order card / picking shortage",
+      "role": "admin, rep, worker",
+      "devices": [
+        "1440"
+      ],
+      "screenshots": "screenshots/fd2f41-*"
+    },
+    {
+      "time": "21.10",
+      "action": "user 'их надо открыть': created 7 tickets in לביצוע — #5711c3 (Enter adds first, medium), #0a50ac, #ccd3fa, #a88293, #428d8a (improvement), #a8bdcb, #7e2789; Y-axis finding not confirmed — not filed"
+    },
+    {
+      "time": "21.10",
+      "action": "autotests done: 9 spec files for 11 tickets, all passed (workers=1); ledger +11; outdated tests listed (מוכן→מוכנה, walk-in-sale, afterAll vs shortage dialog)"
+    }
+  ],
+  "test_data": [
+    "#591 QA-AUTO-26c5-1792498880142 (test, מצית קליפט x1 ₪5, approved, paid ₪1) — reject or deliver later",
+    "payment ₪1 on #438 (20.10 15:19)",
+    "QA-AUTO-aea5-151613-A/B/C/M/K archived; יומן תנועות entries (6 קליטה, 4 החזרה לספק אסמכתא QA-AUTO-aea5-151613-r, ללא מקום x7)",
+    "#592 QA-AUTO-47ba-10201529 (test) — נדחתה",
+    "QA-AUTO-47ba-10201529 archived; קליטה 2 in journal",
+    "payment ₪1 on #438 at 15:29 (now 2/19)",
+    "payment ₪1 on #591 at 16:01 (now 2/5)",
+    "#593-#607 QA-AUTO-1f76 (test) — all נדחתה",
+    "walk-in sales #609, #611 (₪1 each, לקוח מזדמן)",
+    "QA-AUTO-80bb-01967-U/P archived; journal קליטה x2, מכירה x2, הסרה מהמקום",
+    {
+      "what": "заказы buyer test QA-AUTO-1f76v-<ts>-1..5 (פינלנדיה 200 מ\"ל, ₪0) #608 #610 #612 #613 #614 #615 — перепроверка #1f768e",
+      "where": "/orders",
+      "when": "2026-10-20",
+      "status": "נדחתה (неудаляемы)"
+    },
+    "#616 QA-AUTO-fd2f-503115-S, #617 -OK, #618 -SD (test) — סופקה, not paid",
+    "QA-AUTO-fd2f-503115 archived; journal קליטה x3, ליקוט #617, הסרה מהמקום",
+    "payment ₪1 on #591 (now 3/5) and ₪1 on #616 (now 1/5) — 21.10 verifier",
+    "autotest runs 21.10: orders #619+ (QA-AUTO, rejected or סופקה incl. #622), archived QA-AUTO products, journal entries"
+  ]
+}

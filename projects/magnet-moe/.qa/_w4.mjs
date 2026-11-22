@@ -1,0 +1,16 @@
+import { chromium } from 'playwright';
+const b = await chromium.launch();
+const c = await b.newContext({ storageState: '/Users/avielshnaider/magnet-moe/.qa/auth/new02.json', viewport:{width:390,height:844}, isMobile:true, hasTouch:true, deviceScaleFactor:2 });
+const p = await c.newPage();
+await p.goto('https://magnet.expo.app/chat/22cd6c5a-2446-492e-8ca6-295074aaf56b', {waitUntil:'networkidle'});
+await p.waitForTimeout(2500);
+const sk=p.locator("[data-testid=gift-intro-skip]"); await sk.waitFor({timeout:6000}).catch(()=>{}); await sk.click({force:true}).catch(()=>{}); await sk.waitFor({state:"detached",timeout:8000}).catch(()=>console.log("skip still"));
+await p.getByRole('button',{name:"פעולות על הצ'אט"}).click();
+await p.waitForTimeout(800);
+console.log(await p.locator('button:visible,[role=button]:visible').evaluateAll(bs=>bs.map(b=>(b.getAttribute('aria-label')||b.innerText||'').trim()).filter(Boolean)));
+await p.getByText(/שליחת מתנה ל/).first().click();
+await p.waitForTimeout(2500);
+console.log(await p.evaluate(()=>document.body.innerText.slice(0,400)));
+console.log(await p.locator('button:visible,[role=button]:visible').evaluateAll(bs=>bs.map(b=>(b.getAttribute('aria-label')||b.innerText||'').trim()).filter(Boolean)));
+await c.storageState({path:'/Users/avielshnaider/magnet-moe/.qa/auth/new02.json'});
+await b.close();

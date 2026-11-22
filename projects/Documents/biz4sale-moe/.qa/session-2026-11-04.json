@@ -1,0 +1,173 @@
+{
+  "date": "2026-11-04",
+  "project": "biz4sale",
+  "queue": [
+    "#aeae17",
+    "#dc52b7",
+    "#72d304",
+    "#13f060",
+    "#94553b",
+    "#66ad36",
+    "#d152dd"
+  ],
+  "packets": [
+    [
+      "#aeae17",
+      "#dc52b7",
+      "#72d304"
+    ],
+    [
+      "#13f060",
+      "#94553b",
+      "#66ad36"
+    ],
+    [
+      "#d152dd"
+    ]
+  ],
+  "notes": [
+    "Видео /guides обновлены 2026-11-04 09:40 GMT (кроме home.mp4 — 2026-11-03 19:10); свежие копии в research/videos/2026-11-04/",
+    "Новые в הושלם без автотестов: #da55b1, #2e5dd0"
+  ],
+  "tickets": [
+    {
+      "hash": "#72d304",
+      "title": "בסרטון «האזור האישי» בחלק למוכרים מוצג «סוג חשבון: קונה»",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "evidence": "area.mp4 etag d17e52b3…, 0:45–0:58 «סוג חשבון: מוכר», в части לקונים строки нет",
+      "screens": [
+        "screenshots/2026-11-04/72d304-1-seller-0m45s.png",
+        "72d304-1-seller-0m48s.png",
+        "72d304-1-seller-0m56s.png",
+        "72d304-2-buyer-1m27s.png"
+      ],
+      "feature": "guides-videos",
+      "role": "guest",
+      "time": "2026-11-04",
+      "confirmed_by_user": "2026-11-04",
+      "autotests": "pending — в конце сессии (решение пользователя)"
+    },
+    {
+      "hash": "#66ad36",
+      "title": "בקשת לקוח: סרטון הסבר חדש — האזור האישי של בעל עסק ושל קונה שמחפש עסקים",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "evidence": "area.mp4 etag d17e52b3…; שיחות покупателя 1:23–1:29; הוספה למסך הבית 1:47–1:55; все опции, профиль/пароль только упомянуты 1:43",
+      "screens": "screenshots/2026-11-04/66ad36-*.png",
+      "feature": "guides-videos",
+      "role": "guest",
+      "time": "2026-11-04",
+      "confirmed_by_user": "2026-11-04",
+      "autotests": "pending — в конце сессии (решение пользователя)"
+    },
+    {
+      "hash": "#aeae17",
+      "title": "בקשת לקוח: שינוי שם הפריט בתפריט «מחשבון כדאיות» ל-«מחשבון רכישת עסק»",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "evidence": "мобильное меню 4-й пункт и шапка десктопа «מחשבון רכישת עסק» → /calculator на /, /search, /calculator; H1 без изменений; футер переименован (принято пользователем)",
+      "screens": "screenshots/2026-11-04/aeae17-*.png",
+      "feature": "calculator / navigation",
+      "role": "guest",
+      "devices": [
+        "mobile 375",
+        "desktop 1440"
+      ],
+      "tests_to_update": "tests/calculator/CALC-SCREEN-01.md",
+      "time": "2026-11-04",
+      "autotests": "pending — в конце сессии",
+      "confirmed_by_user": "2026-11-04"
+    },
+    {
+      "hash": "#94553b",
+      "title": "בקשת לקוח: סרטון הסבר חדש — שימוש כללי באתר מדף הבית",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "evidence": "home.mp4 etag 219c57ec…; старт с главной; вход 1:17; меню→המודעות שלי→אזור אישי 1:30–1:44; поиск/פרסום — нажатие без перехода, מדריכים — упоминание (как в прошлом раунде)",
+      "findings": [
+        "нажатие «המודעות שלי» срабатывает со 2-го раза (1:30→1:37), описание кабинета звучит над меню"
+      ],
+      "screens": "screenshots/2026-11-04/94553b-*.png",
+      "feature": "guides-videos",
+      "role": "guest",
+      "time": "2026-11-04",
+      "confirmed_by_user": "2026-11-04",
+      "autotests": "pending — в конце сессии (решение пользователя)"
+    },
+    {
+      "hash": "#d152dd",
+      "title": "הפקת סרטוני הסבר למשתמשים: הרשמה, יצירת עסק, חיפוש עסקים ונושאים נוספים",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "evidence": "search.mp4 etag 1a759a6d…: «חפש עסק» нажата 0:32.5 → «חיפוש וסינון» 0:33–0:42 + субтитры; карточка /guides описывает; admin: демо …4e86b49b1dfe нет, «(הדגמה)» 0 во всех статусах",
+      "screens": "screenshots/2026-11-04/d152dd-*.png",
+      "feature": "guides-videos",
+      "role": "guest+admin",
+      "time": "2026-11-04",
+      "confirmed_by_user": "2026-11-04",
+      "autotests": "pending — в конце сессии (решение пользователя)"
+    },
+    {
+      "hash": "#dc52b7",
+      "title": "בעמוד /guides פקדי הנגן מסתירים את הכתוביות בסרטונים",
+      "verdict": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "evidence": "5/5 видео, 29 моментов, 375 и 1440, 2 прогона: низ плашки 483px, значки пульта 508px, зазор 25px, ни одна строка не закрыта",
+      "findings": [
+        "поднятые субтитры закрывают кнопки, о которых говорит диктор: home 0:43–0:49 (WhatsApp/הצג טלפון/השארת פרטים), home 1:19–1:22 (התחבר), area 1:58 (פרסום עסק למכירה) — кандидат в новый баг"
+      ],
+      "screens": "screenshots/2026-11-04/dc52b7-*.png",
+      "feature": "guides-videos",
+      "role": "guest",
+      "devices": [
+        "mobile 375",
+        "desktop 1440"
+      ],
+      "time": "2026-11-04",
+      "confirmed_by_user": "2026-11-04",
+      "autotests": "pending — в конце сессии (решение пользователя)"
+    },
+    {
+      "hash": "#13f060",
+      "title": "בסרטוני ההסבר הקריינות מקדימה את הכתוביות",
+      "verdict": "reject",
+      "action": "reject",
+      "evidence": "голос↔субтитр ≤0,27 с (ок); экран↔субтитр: publish шаги 1–5 отставание 1,0–1,57 с, экран успеха 3,83 с; home 1:30–1:37 голос про אזור אישי над меню (экран через 6,85 с). Подтверждено bug-verifier",
+      "screens": [
+        "screenshots/2026-11-04/13f060-v-publish-steps1-4.png",
+        "13f060-v-publish-step5.png",
+        "13f060-v-publish-success.png",
+        "13f060-v-home-menu.png"
+      ],
+      "time": "2026-11-04",
+      "column": "לביצוע",
+      "rejection_id": "rej_5ee29a032541fcb7ee97613a"
+    }
+  ],
+  "test_data": [],
+  "new_bugs": [
+    {
+      "hash": "#4abcf4",
+      "ticket": 80,
+      "title": "בסרטוני ההסבר הכתוביות מסתירות את הכפתורים שהקריינות מדברת עליהם",
+      "column": "לביצוע",
+      "from": "#dc52b7"
+    }
+  ],
+  "also": [
+    {
+      "hash": "#0a2499",
+      "ticket": 79,
+      "title": "בקשת לקוח: תמונות בכרטיסי העסקים יוצגו במלואן (עם שוליים) בלי חיתוך",
+      "via": "/qa-client",
+      "column": "לביצוע"
+    }
+  ]
+}

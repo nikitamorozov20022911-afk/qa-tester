@@ -1,0 +1,151 @@
+{
+ "date": "2026-10-07",
+ "queue": [
+  "7c30a0f9f801bc78c026639b",
+  "6a9fc38ee4c8b8025c5055f4",
+  "6a85a1337c5d0d47c0b79c0a",
+  "6a8560fbeb1ae1cd7e337857",
+  "6a6215b61ff760b468ad36ca",
+  "6a61f2a587482e7988bfda95"
+ ],
+ "stage": "сессия закрыта",
+ "devices": {
+  "iphone": "iPhone 17, app findWorkers 1.0.77 (19)",
+  "android": "Pixel 6, version unknown"
+ },
+ "tickets": {
+  "6a6215b61ff760b468ad36ca": {
+   "title": "מחוון מרחק 3.5 ק\"מ",
+   "verdict": "реджект отправлен",
+   "evidence": [
+    ".qa/screenshots/6a6215b6/reject-1-ios-search-ratach-no-km.png",
+    ".qa/screenshots/6a6215b6/reject-2-ios-profile-94km.png",
+    ".qa/screenshots/6a6215b6/reject-3-android-search-ratach-km.png"
+   ],
+   "time": "2026-10-07 16:55",
+   "action": "Reject task",
+   "column": "To do"
+  },
+  "6a8560fbeb1ae1cd7e337857": {
+   "verdict": "проходит (оговорки: вход из объявления на Android, push, iPhone без home indicator, Figma — не проверены)",
+   "time": "2026-10-07 17:35",
+   "action": "Passed QA",
+   "column": "Done"
+  },
+  "6a61f2a587482e7988bfda95": {
+   "verdict": "прошёл (камеру проверил пользователь; промежуточная страница ~3с на iPhone без приложения принята)",
+   "time": "2026-10-07 18:58",
+   "action": "Passed QA",
+   "column": "Done"
+  },
+  "6a9fc38ee4c8b8025c5055f4": {
+   "verdict": "реджект отправлен (Android: загрузка видео — бесконечная загрузка; iOS ок; плеер ок на обоих)",
+   "action": "Reject task",
+   "column": "To do",
+   "time": "2026-10-07 18:19",
+   "attachments": [
+    "reject-1-android-video-upload-loader-9min.png",
+    "reject-2-android-no-video-after-back.png"
+   ]
+  },
+  "7c30a0f9f801bc78c026639b": {
+   "verdict": "прошёл (отличия от эталона приняты пользователем)",
+   "time": "2026-10-07 18:38",
+   "action": "Passed QA",
+   "column": "Done"
+  },
+  "6a85a1337c5d0d47c0b79c0a": {
+   "verdict": "реджект: GET /user/:id отдаёт полную запись + verificationCodeDev после запроса кода; rate-limit ок",
+   "action": "Reject task",
+   "column": "To do",
+   "time": "2026-10-07 18:53",
+   "not_checked": "реджект 2 (регистрация с занятым номером) — номер под 429, проверить после сброса окна; реджект 1 — нужен новый номер"
+  }
+ },
+ "test_data": [
+  {
+   "what": "город профиля Alina (Android)",
+   "original": "בת ים",
+   "changed_to": "תל אביב (временно, #6a6215b6)",
+   "status": "возвращено בת ים, проверено перезагрузкой (85.7 KM на iPhone)"
+  },
+  {
+   "what": "город профиля נקיה מורוזוב (iPhone)",
+   "original": "באר שבע (רחוב יצחק שדה 25)",
+   "changed_to": "תל אביב - יפו (временно, #6a6215b6)",
+   "status": "возвращено באר שבע, проверено: Android видит 85.7 KM до נקיה"
+  },
+  {
+   "what": "сообщения в чате נקיה↔Alina: iPhone «ЕстТ», Android «QA test 1..14», «QA_test_15..17» (#6a8560fb)",
+   "status": "останутся в чате, удалить нельзя/не трогаем"
+  },
+  {
+   "what": "מודעת דרושים от Alina «מודעת בדיקה של QA - תימחק לאחר הבדיקה» (יומי 750, בת ים) #7c30a0f9",
+   "status": "удалено автором (הסרת המודעה), проверено: нет в поиске на обоих телефонах"
+  },
+  {
+   "what": "סטורי Alina (Android): последнее фото галереи (скрин «הרשמת עסקים») #6a9fc38e",
+   "status": "загружено — удалить, если есть возможность"
+  },
+  {
+   "what": "סטורי נקיה מורוזוב (iPhone): фото товара (куртка Nike) #6a9fc38e",
+   "status": "загружено — удалить, если есть возможность"
+  },
+  {
+   "what": "видео в профиле נקיה מורוזוב (iPhone): вид из машины 0:56 #6a9fc38e",
+   "status": "загружено — удалить, если есть возможность"
+  },
+  {
+   "what": "видео в профиле Alina (Android): screen-20261001-161832 (13с) — загрузка зависла",
+   "status": "проверить, загрузилось ли"
+  },
+  {
+   "what": "iPhone: приложение findWorkers удалено для проверки #6a61f2a5 (не установлено → App Store)",
+   "status": "нужно переустановить из TestFlight и войти (OTP — пользователь)"
+  },
+  {
+   "what": "מודעת דרושים Alina «QA hourly test» (שעתי 60) #7c30a0f9",
+   "status": "удалено, проверено на обоих телефонах"
+  },
+  {
+   "what": "SMS на 0537240114: 4 кода (POST /auth/login), номер под лимитом 429 до сброса окна",
+   "status": "—"
+  }
+ ],
+ "created": [
+  {
+   "id": "a8206c81b64f2ea87dafb7da",
+   "hash": "#a8206c81",
+   "type": "Bug",
+   "title": "API – GET /user/:id ללא הזדהות מחזיר את כל פרטי המשתמש",
+   "status": "To do — дубль реджекта #6a85a133 (решение пользователя: новый тикет удалит сам)",
+   "priority": "High",
+   "from": "#6a85a133",
+   "time": "2026-10-07 17:50"
+  },
+  {
+   "id": "ee489910ada82927ad5a3976",
+   "hash": "#ee489910",
+   "type": "Bug",
+   "title": "טופס פרסום מודעת דרושים – הודעת חובה מתחת ל'רחוב' במקום 'מיקום העבודה'",
+   "status": "To do",
+   "time": "2026-10-07 18:32"
+  },
+  {
+   "id": "b2f68f8aa53959f5f772d5a8",
+   "hash": "#b2f68f8a",
+   "title": "verificationCodeDev exposed",
+   "status": "To do — пользователь удалит сам (дубль реджекта #6a85a133)"
+  }
+ ],
+ "daily_check": {
+  "time": "2026-10-07 19:02",
+  "tickets": 7,
+  "done": "окно סיכום משימות открыто"
+ },
+ "autotests": {
+  "dir": ".qa/appium",
+  "files": 3,
+  "run": "не прогонялись (по правилам — только /qa-regress)"
+ }
+}

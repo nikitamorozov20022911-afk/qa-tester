@@ -1,0 +1,19 @@
+{
+ "tickets": {
+  "95ffe2": {
+   "id": "218a8e347d7ba2f71695ffe2",
+   "title": "API נתוני מגמות ודשבורד",
+   "class": "qa-passed",
+   "source": "qa",
+   "date": "2026-11-11",
+   "plan": "e2e/specs/trends.md",
+   "tests": [
+    "e2e/tests/trends/trends-noa.spec.ts",
+    "e2e/tests/trends/trends-pregnancy.spec.ts",
+    "e2e/tests/trends/trends-nogoal.spec.ts",
+    "e2e/tests/trends/trends-anon.spec.ts",
+    "e2e/tests/trends/trends-few-days.spec.ts"
+   ]
+  }
+ }
+}

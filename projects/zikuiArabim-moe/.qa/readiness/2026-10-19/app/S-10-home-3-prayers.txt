@@ -1,0 +1,144 @@
+== page 1
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=f y=-514 x= 263 116x37 | מעבר לפרטים שלי
+Button       vis=f y=-514 x=  72 78x37 | זמני התפילות של היום
+StaticText   vis=f y=-448 x=  54 294x49 | צהריים טובים Qa reg 1910, מוכן לתפילה מרוממת?
+StaticText   vis=f y=-395 x= 121 160x65 | מנחה
+StaticText   vis=f y=-331 x= 169 64x25 | נוסח אשכנז
+StaticText   vis=f y=-307 x= 139 124x25 | מנחה מתחילה ב-12:54
+Button       vis=f y=-259 x=  92 218x57 | התחל תפילה
+Button       vis=f y=-191 x=  72 36x37 | מפת ההשפעה
+Button       vis=f y=-191 x=  24 36x37 | שיתוף
+StaticText   vis=f y=-107 x=  40 322x21 | תוספות בתפילה
+StaticText   vis=f y= -83 x=  40 322x21 | משיב הרוח ומוריד הגשם — ימות הגשמים
+StaticText   vis=f y= -59 x=  40 322x21 | ותן טל ומטר לברכה — ימות הגשמים
+Other        vis=t y=   1 x= 268 110x111 | ימים רצופים: 1
+StaticText   vis=t y=  42 x= 318 10x33 | 1
+StaticText   vis=t y=  78 x= 295 56x17 | ימים רצופים
+Other        vis=t y=   1 x= 146 110x111 | תפילות היום: 3
+StaticText   vis=t y=  42 x= 195 12x33 | 3
+StaticText   vis=t y=  78 x= 172 58x17 | תפילות היום
+Other        vis=t y=   1 x=  24 110x111 | סה״כ תפילות: 3
+StaticText   vis=t y=  42 x=  73 12x33 | 3
+StaticText   vis=t y=  78 x=  49 60x17 | סה״כ תפילות
+StaticText   vis=t y= 152 x= 238 127x29 | תפילות אחרונות
+StaticText   vis=t y= 208 x= 273 37x25 | מנחה
+StaticText   vis=t y= 212 x=  49 67x17 | ח׳ חשון · 12:39
+StaticText   vis=t y= 280 x= 268 42x25 | ערבית
+StaticText   vis=t y= 284 x=  49 67x17 | ח׳ חשון · 12:37
+StaticText   vis=t y= 352 x= 264 45x25 | שחרית
+StaticText   vis=t y= 356 x=  49 68x17 | ח׳ חשון · 12:20
+Button       vis=t y= 433 x=  24 82x45 | ניהול התזכורות במסך הפרופיל
+StaticText   vis=t y= 441 x= 252 126x29 | תזכורות מהירות
+StaticText   vis=t y= 507 x=  40 258x25 | מנחה
+StaticText   vis=t y= 531 x=  40 258x21 | אפשר להתפלל מ־12:54 עד 18:04
+StaticText   vis=t y= 599 x=  40 258x25 | הנחת תפילין
+StaticText   vis=t y= 623 x=  40 258x21 | אל תשכח להניח היום עד השקיעה
+StaticText   vis=t y= 693 x= 245 133x29 | תאריכים חשובים
+Button       vis=t y= 743 x= 100 186x89 | אזכרה, QA בדיקה: פתיחת סדר האזכרה
+StaticText   vis=f y= 765 x= 320 24x17 | חשון
+Button       vis=f y= 765 x=  40 44x45 | אזכרה, QA בדיקה: פתיחה לעריכה
+StaticText   vis=f y= 781 x= 325 14x29 | ז׳
+Button       vis=f y= 845 x= 177 48x49 | הוספת תאריך חשוב
+Other        vis=t y= 726 x=   0 402x31 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות
+== page 2
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=f y=-679 x= 263 116x36 | מעבר לפרטים שלי
+Button       vis=f y=-679 x=  72 78x36 | זמני התפילות של היום
+StaticText   vis=f y=-613 x=  54 294x48 | צהריים טובים Qa reg 1910, מוכן לתפילה מרוממת?
+StaticText   vis=f y=-561 x= 121 160x65 | מנחה
+StaticText   vis=f y=-497 x= 169 64x25 | נוסח אשכנז
+StaticText   vis=f y=-473 x= 139 124x25 | מנחה מתחילה ב-12:54
+Button       vis=f y=-425 x=  92 218x57 | התחל תפילה
+Button       vis=f y=-356 x=  72 36x36 | מפת ההשפעה
+Button       vis=f y=-356 x=  24 36x36 | שיתוף
+StaticText   vis=f y=-272 x=  40 322x20 | תוספות בתפילה
+StaticText   vis=f y=-248 x=  40 322x20 | משיב הרוח ומוריד הגשם — ימות הגשמים
+StaticText   vis=f y=-224 x=  40 322x20 | ותן טל ומטר לברכה — ימות הגשמים
+Other        vis=f y=-164 x= 268 110x110 | ימים רצופים: 1
+StaticText   vis=f y=-123 x= 318 10x32 | 1
+StaticText   vis=f y= -87 x= 295 56x16 | ימים רצופים
+Other        vis=f y=-164 x= 146 110x110 | תפילות היום: 3
+StaticText   vis=f y=-123 x= 195 12x32 | 3
+StaticText   vis=f y= -87 x= 172 58x16 | תפילות היום
+Other        vis=f y=-164 x=  24 110x110 | סה״כ תפילות: 3
+StaticText   vis=f y=-123 x=  73 12x32 | 3
+StaticText   vis=f y= -87 x=  49 60x16 | סה״כ תפילות
+StaticText   vis=f y= -13 x= 238 127x28 | תפילות אחרונות
+StaticText   vis=t y=  43 x= 273 37x24 | מנחה
+StaticText   vis=t y=  47 x=  49 67x16 | ח׳ חשון · 12:39
+StaticText   vis=t y= 115 x= 268 42x24 | ערבית
+StaticText   vis=t y= 119 x=  49 67x16 | ח׳ חשון · 12:37
+StaticText   vis=t y= 187 x= 264 45x24 | שחרית
+StaticText   vis=t y= 191 x=  49 68x16 | ח׳ חשון · 12:20
+Button       vis=t y= 268 x=  24 82x44 | ניהול התזכורות במסך הפרופיל
+StaticText   vis=t y= 276 x= 252 126x28 | תזכורות מהירות
+StaticText   vis=t y= 342 x=  40 258x24 | מנחה
+StaticText   vis=t y= 366 x=  40 258x20 | אפשר להתפלל מ־12:54 עד 18:04
+StaticText   vis=t y= 434 x=  40 258x24 | הנחת תפילין
+StaticText   vis=t y= 458 x=  40 258x20 | אל תשכח להניח היום עד השקיעה
+StaticText   vis=t y= 528 x= 245 133x28 | תאריכים חשובים
+Button       vis=t y= 578 x= 100 186x88 | אזכרה, QA בדיקה: פתיחת סדר האזכרה
+StaticText   vis=t y= 600 x= 320 24x16 | חשון
+Button       vis=t y= 600 x=  40 44x44 | אזכרה, QA בדיקה: פתיחה לעריכה
+StaticText   vis=t y= 616 x= 325 14x28 | ז׳
+Button       vis=t y= 680 x= 177 48x48 | הוספת תאריך חשוב
+Other        vis=t y= 727 x=   0 402x30 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות
+== page 3
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+Button       vis=f y=-679 x= 263 116x36 | מעבר לפרטים שלי
+Button       vis=f y=-679 x=  72 78x36 | זמני התפילות של היום
+StaticText   vis=f y=-613 x=  54 294x48 | צהריים טובים Qa reg 1910, מוכן לתפילה מרוממת?
+StaticText   vis=f y=-561 x= 121 160x65 | מנחה
+StaticText   vis=f y=-497 x= 169 64x25 | נוסח אשכנז
+StaticText   vis=f y=-473 x= 139 124x25 | מנחה מתחילה ב-12:54
+Button       vis=f y=-425 x=  92 218x57 | התחל תפילה
+Button       vis=f y=-356 x=  72 36x36 | מפת ההשפעה
+Button       vis=f y=-356 x=  24 36x36 | שיתוף
+StaticText   vis=f y=-272 x=  40 322x20 | תוספות בתפילה
+StaticText   vis=f y=-248 x=  40 322x20 | משיב הרוח ומוריד הגשם — ימות הגשמים
+StaticText   vis=f y=-224 x=  40 322x20 | ותן טל ומטר לברכה — ימות הגשמים
+Other        vis=f y=-164 x= 268 110x110 | ימים רצופים: 1
+StaticText   vis=f y=-123 x= 318 10x32 | 1
+StaticText   vis=f y= -87 x= 295 56x16 | ימים רצופים
+Other        vis=f y=-164 x= 146 110x110 | תפילות היום: 3
+StaticText   vis=f y=-123 x= 195 12x32 | 3
+StaticText   vis=f y= -87 x= 172 58x16 | תפילות היום
+Other        vis=f y=-164 x=  24 110x110 | סה״כ תפילות: 3
+StaticText   vis=f y=-123 x=  73 12x32 | 3
+StaticText   vis=f y= -87 x=  49 60x16 | סה״כ תפילות
+StaticText   vis=f y= -13 x= 238 127x28 | תפילות אחרונות
+StaticText   vis=t y=  43 x= 273 37x24 | מנחה
+StaticText   vis=t y=  47 x=  49 67x16 | ח׳ חשון · 12:39
+StaticText   vis=t y= 115 x= 268 42x24 | ערבית
+StaticText   vis=t y= 119 x=  49 67x16 | ח׳ חשון · 12:37
+StaticText   vis=t y= 187 x= 264 45x24 | שחרית
+StaticText   vis=t y= 191 x=  49 68x16 | ח׳ חשון · 12:20
+Button       vis=t y= 268 x=  24 82x44 | ניהול התזכורות במסך הפרופיל
+StaticText   vis=t y= 276 x= 252 126x28 | תזכורות מהירות
+StaticText   vis=t y= 342 x=  40 258x24 | מנחה
+StaticText   vis=t y= 366 x=  40 258x20 | אפשר להתפלל מ־12:54 עד 18:04
+StaticText   vis=t y= 434 x=  40 258x24 | הנחת תפילין
+StaticText   vis=t y= 458 x=  40 258x20 | אל תשכח להניח היום עד השקיעה
+StaticText   vis=t y= 528 x= 245 133x28 | תאריכים חשובים
+Button       vis=t y= 578 x= 100 186x88 | אזכרה, QA בדיקה: פתיחת סדר האזכרה
+StaticText   vis=t y= 600 x= 320 24x16 | חשון
+Button       vis=t y= 600 x=  40 44x44 | אזכרה, QA בדיקה: פתיחה לעריכה
+StaticText   vis=t y= 616 x= 325 14x28 | ז׳
+Button       vis=t y= 680 x= 177 48x48 | הוספת תאריך חשוב
+Other        vis=t y= 727 x=   0 402x30 | Horizontal scroll bar, 1 page
+Other        vis=t y= 772 x= 321 81x68 | תהילים
+Other        vis=t y= 772 x= 241 81x68 | תפילות
+Other        vis=t y= 772 x= 160 82x68 | בית
+Other        vis=t y= 772 x=  80 81x68 | המסע שלי
+Other        vis=t y= 772 x=   0 81x68 | ברכות

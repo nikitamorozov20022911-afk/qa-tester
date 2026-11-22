@@ -1,0 +1,15 @@
+import { newBrowser, ctx, go, txt, shot, sleep, redBox } from './qasp6-lib.mjs';
+const W='/wallet/shared/3bf0fc53-2b78-46d2-9f53-f824c57ceb39', K='/wallet/kids/2e7de39a-13d7-4d7d-a22d-d982a9b95971';
+const b = await newBrowser(); const { p } = await ctx(b,'client',375);
+const log=(...a)=>console.log(...a); const T=(n=300)=>txt(p).then(t=>t.replace(/\n/g,' | ').slice(0,n));
+const keys=async(s)=>{ for(const ch of s){ await p.getByRole('button',{name:ch,exact:true}).click(); await sleep(120);} };
+const k2 = await ctx(b,'client2',375); await go(k2.p,'/kid/pay'); await redBox(k2.p, k2.p.getByText('SafePay Card').locator('xpath=ancestor::div[4]'), '6a86f7bc/ISSUE-kid-pay-card-no-texture-375');
+await go(p,'/wallet'); log('personal before', (await txt(p)).match(/היתרה שלך\n(₪[\d,.]+)/)?.[1]);
+await go(p,W); const sb=(await txt(p)).match(/יתרה משותפת\n₪([\d,.]+)/)?.[1]; log('shared', sb);
+await go(p,W+'/withdraw'); await keys(sb); await p.getByRole('button',{name:'משיכה'}).click(); await sleep(3500); log('after shared withdraw', await T());
+await go(p,W); await p.getByRole('button',{name:'הסרת שירה כהן'}).click(); await sleep(1500); await p.getByRole('button',{name:'הסרה'}).click(); await sleep(3000); log('after remove 05', await T(500));
+await go(p,K); const kb=(await txt(p)).match(/היתרה של [^\n]+\n₪([\d,.]+)/)?.[1]; log('kid bal', kb);
+await go(p,K+'/withdraw'); await keys(kb); await p.getByRole('button',{name:'משיכה'}).click(); await sleep(3500); log('after kid withdraw', await T(400));
+await go(p,'/wallet'); log('personal after', (await txt(p)).match(/היתרה שלך\n(₪[\d,.]+)/)?.[1]);
+await go(p,'/wallet/shared'); log('list', await T()); await go(p,'/wallet/kids'); log('kids', await T());
+await b.close();

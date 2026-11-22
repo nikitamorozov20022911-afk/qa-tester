@@ -1,0 +1,208 @@
+{
+ "project": "biz4sale",
+ "date": "2026-11-01",
+ "session": 2,
+ "environment": "https://www.biz4sale.co.il/ (prod)",
+ "scope": "по просьбе пользователя: #c5d7e2, #b4b8c9, #def18b (ретест); затем остальное בבדיקות",
+ "queue": [
+  "#c5d7e2",
+  "#b4b8c9",
+  "#def18b",
+  "#3e4835",
+  "#80ff63",
+  "#d45b2a",
+  "#22ce3e",
+  "#d4f37b",
+  "#be4863",
+  "#b3dc2e",
+  "#b489db",
+  "#d777c9"
+ ],
+ "permissions": [
+  "2026-11-01 (2): реальный Android Pixel 6 для всех трёх",
+  "2026-11-01 (2): QA-TEST черновик под user + одна AI-генерация (#def18b), удалить после"
+ ],
+ "tickets": [
+  {
+   "hash": "#c5d7e2",
+   "status": "done",
+   "desktop": "pass 7/7 (guest+user)",
+   "mobile": "pass 5/5 (реальный Pixel 6, гость)",
+   "action": "pass",
+   "column": "הושלם (провёл пользователь)",
+   "feature": "listing-share-short-link (PR #177)",
+   "role": "guest+user",
+   "devices": [
+    "desktop",
+    "android-real"
+   ],
+   "autotests": "кейсы + план specs/listing-share-short-link.md; генерация ждёт фикса .mcp.json"
+  },
+  {
+   "hash": "#b4b8c9",
+   "status": "rejected",
+   "desktop": "❌ п.3 макс из поля сбрасывается после סנן (/search); п.4 при min пропадают >10M — на перепроверке",
+   "mobile": "❌ Pixel 6 (поля 0/30000, 10M–10M)",
+   "action": "reject",
+   "column": "לביצוע",
+   "rejection": "rej_8e7ff245146d83f53aee3306",
+   "reason": "макс из поля теряется; при min пропадают >10M"
+  },
+  {
+   "hash": "#def18b",
+   "status": "done",
+   "note": "ждёт окончания #c5d7e2 (одна сессия user)",
+   "desktop": "pass 5/5",
+   "mobile": "pass (Pixel 7 эмуляция)",
+   "action": "pass",
+   "feature": "addbusiness-photos-step",
+   "role": "user",
+   "devices": [
+    "desktop",
+    "android-emu"
+   ],
+   "column": "הושלם (провёл пользователь)",
+   "autotests": "написаны (3 файла, 6 тестов), не запускались, QA_REAL_WRITE=1"
+  },
+  {
+   "hash": "#3e4835",
+   "status": "done",
+   "desktop": "pass 5/5",
+   "mobile": "pass (Pixel 7 эмуляция)",
+   "feature": "calculator (PR #181)",
+   "role": "guest",
+   "action": "pass",
+   "column": "הושלם (провёл пользователь)",
+   "autotests": "написаны: 12 spec / 24 теста, не запускались"
+  },
+  {
+   "hash": "#80ff63",
+   "status": "done",
+   "desktop": "pass 5/5",
+   "mobile": "pass (Pixel 7 эмуляция)",
+   "feature": "calculator (PR #181)",
+   "role": "guest",
+   "action": "pass",
+   "column": "הושלם (провёл пользователь)",
+   "autotests": "написаны: 12 spec / 24 теста, не запускались"
+  },
+  {
+   "hash": "#d45b2a",
+   "status": "done",
+   "desktop": "4/5 ✅; AC3 огромные числа без ограничения/сообщения",
+   "mobile": "Pixel 7 эмуляция (в агенте)",
+   "feature": "calculator (PR #181)",
+   "role": "guest",
+   "action": "pass",
+   "decision": "огромные числа — не реджект (пользователь)",
+   "column": "הושלם (провёл пользователь)",
+   "autotests": "пишутся (фон)"
+  },
+  {
+   "hash": "#22ce3e",
+   "status": "done",
+   "desktop": "pass 5/5",
+   "mobile": "pass (отображение, Pixel 7 эмуляция)",
+   "feature": "calculator (PR #181)",
+   "role": "guest",
+   "action": "pass",
+   "column": "הושלם (провёл пользователь)",
+   "autotests": "написаны: 12 spec / 24 теста, не запускались"
+  },
+  {
+   "hash": "#d4f37b",
+   "status": "done",
+   "desktop": "pass 5/5",
+   "mobile": "pass (отображение, Pixel 7 эмуляция)",
+   "feature": "calculator (PR #181)",
+   "role": "guest",
+   "action": "pass",
+   "column": "הושלם (провёл пользователь)",
+   "autotests": "написаны: 12 spec / 24 теста, не запускались"
+  },
+  {
+   "hash": "#be4863",
+   "status": "done",
+   "desktop": "pass 4/5 + AC5 не проверить (нет репо); исчезновение блока не подтверждено (переезжает вниз)",
+   "feature": "ssr-seo (PR #182, #183)",
+   "role": "guest",
+   "action": "pass",
+   "column": "הושלם (провёл пользователь)",
+   "autotests": "пишутся (фон)"
+  },
+  {
+   "hash": "#b3dc2e",
+   "status": "done",
+   "desktop": "pass 5/5 (избранное у гостя нет)",
+   "feature": "ssr-seo (PR #182, #183)",
+   "role": "guest",
+   "action": "pass",
+   "column": "הושלם (провёл пользователь)",
+   "autotests": "пишутся (фон)"
+  },
+  {
+   "hash": "#b489db",
+   "status": "done",
+   "desktop": "pass 5/5 (Rich Results Test — ошибка Google, Schema validator 0/0)",
+   "feature": "ssr-seo (PR #182, #183)",
+   "role": "guest",
+   "action": "pass",
+   "column": "הושלם (провёл пользователь)",
+   "autotests": "пишутся (фон)"
+  },
+  {
+   "hash": "#d777c9",
+   "status": "rejected",
+   "desktop": "4/5 ✅; AC3 robots не закрывает приватные (сознательно, вместо этого noindex)",
+   "feature": "sitemap-robots",
+   "role": "guest",
+   "action": "reject",
+   "column": "לביצוע",
+   "autotests": "остановлены (писались под noindex)",
+   "rejection": "rej_0effd95ee1da7a3a7eb66884",
+   "reason": "AC3: robots не блокирует приватные разделы"
+  }
+ ],
+ "test_data": [
+  {
+   "what": "QA-TEST def18b черновик",
+   "id": "75cea377-d3a2-47ea-9a95-21e48dcd1ddf",
+   "state": "deleted (204)"
+  },
+  {
+   "what": "AI картинка base44",
+   "id": "69fcc2ea2_generated_image.png",
+   "state": "left (через сайт не удалить)"
+  }
+ ],
+ "findings": [
+  "#def18b: черновик по /addbusiness?id= без סוג מודעה, шаг 1 пропускает (известно)",
+  "#b4b8c9: ручки слайдера перекрыты липкой «סנן תוצאות» на десктопе",
+  "#b4b8c9: при перетаскивании min за max — max сбрасывается на 10M",
+  "#b4b8c9: поля принимают -500/50M",
+  "#c5d7e2: share без «לצפייה במודעה», ссылка отдельным полем url",
+  "#22ce3e: при отриц. תזרים «תשואה על ההשקעה הכוללת» положительная (без кредита, без подписи)",
+  "калькулятор: זמן החזר округляется вверх (28.07 → 29 мес.)",
+  "калькулятор: огромные числа (1e18) без ограничения → «6289308176100 שנים»",
+  "«רווח חודשי לאחר מס» уже за вычетом שכר בעלים — подпись не говорит",
+  "предупреждение «אחרי שכר הבעלים» при שכר=0",
+  "гамбургер без aria-label; <html> без dir",
+  "soft 404: неизвестные пути 200 без noindex в сыром HTML (noindex только через JS)",
+  "/b/<код> → 302, не 301",
+  "/search и категории: в итоговом DOM только h1-логотип",
+  "/privacy, /terms — дубли с canonical, не редирект",
+  "категории: ~0.25 с ложное «לא נמצאו עסקים» до прихода результатов; блок «עסקים נוספים» уезжает на ~7000px; CLS 0.22 без SW / 0.52 с SW (с SW сначала полный список 679) — связь с SSR не доказана"
+ ],
+ "notes": [
+  ".mcp.json поправлен под Node 22 (бэкап .mcp.json.bak) — генератор после перезапуска сессии"
+ ],
+ "status": "closed",
+ "summary": {
+  "passed": 10,
+  "rejected": 2,
+  "rejected_list": [
+   "#b4b8c9",
+   "#d777c9"
+  ]
+ }
+}

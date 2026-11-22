@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-16",
+  "project": "biz4sale",
+  "queue": ["#ac6da9"],
+  "tickets": [
+    {
+      "hash": "#ac6da9",
+      "id": "cd4d4faf341a39b157ac6da9",
+      "ticket": 95,
+      "title": "טיוטה שנפתחה מחדש נשמרת בשרת גם בלי שינוי — כל מעבר לשלב שולח PATCH ומעדכן את תאריך העדכון",
+      "feature": "addbusiness-draft-save (F-10 / S-09)",
+      "role": "user",
+      "devices": ["desktop 1440x900 chromium"],
+      "status": "verdict",
+      "action": "pass",
+      "column": "ждёт-подтверждения",
+      "result": "6/6: reopen + tab 2 = 0 PATCH, updated_date same; next/tabs 1-4 no change = 0 PATCH; change -> exactly 1 PATCH 200, then 0; regress #b30e4c ok (750000/120000 persisted after reopen); aborted PATCH retried on next forward step; step1 change -> PATCH",
+      "not_checked": ["change on step 3 (no editable fields without photos)", "mobile (not required)"],
+      "testcases_dir": ".qa/tests/addbusiness-draft-save/ (ADDBIZ-DRAFT-10..12; ADDBIZ-DRAFT-07 expectation 3->4 updated)",
+      "evidence": [".qa/screenshots/ac6da9-p1-step2-desktop.png", ".qa/screenshots/ac6da9-p1p2-network-patch-log.json", ".qa/screenshots/ac6da9-all-patch-log.json"],
+      "time": "2026-11-16"
+    }
+  ],
+  "test_data": [
+    {"what": "QA-TEST ac6da9 draft", "id": "275a7d18-878e-4b1f-8fc1-704eaf53ae0c", "created": true, "deleted": true, "check": "DELETE 204, GET []"}
+  ],
+  "findings": [
+    "#ac6da9: change then tab back / «חזרה» sends no PATCH; saved only on next forward step — risk of loss if user leaves (same as #b30e4c finding)",
+    "#ac6da9: PATCH body carries all 34 wizard fields (tech, no effect)"
+  ],
+  "permissions_granted": ["QA-TEST draft under user, delete after (permanent, recorded in context.md)"]
+}

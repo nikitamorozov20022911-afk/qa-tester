@@ -1,0 +1,186 @@
+{
+  "date": "2026-11-12",
+  "project": "biz4sale",
+  "board": "mifrat MCP (token expires 2026-12-12)",
+  "scope": "בבדיקות — тикеты, открытые агентом (/qa-client)",
+  "queue": [
+    {
+      "hash": "#75ae6c",
+      "ticket": 92,
+      "id": "91f8eccce4a363129d75ae6c",
+      "title": "בקשת לקוח: בבחירת סוג מודעה «עסקים בחו\"ל» אין אפשרות לציין מדינה ועיר — לעבור למלל חופשי כמו בקטגוריה «חו\"ל»",
+      "role": "user",
+      "devices": [
+        "desktop-1440"
+      ],
+      "status": "done",
+      "action": "pass (user verified & moved)",
+      "column": "הושלם",
+      "feature": "addbusiness step 1 — overseas location (post_type עסקים בחו\"ל)",
+      "notes": "Шаг 1: поле מיקום העסק בחו\"ל* вместо города/адреса/района, обязательно, переключение типа, регресс #9899c0 — ок. Публикация: место пакуется в images meta:business_fields (по коду), видно у живых объявлений категории חו\"ל. Не проверено вживую: карточка объявления с типом עסקים בחו\"ל + обычная категория (нужна публикация).",
+      "finding": "Черновик не сохраняет post_type и overseas_location_details (create без meta, update через V7 отбрасывает) — у всех черновиков post_type теряется; подтверждено bug-verifier 3/3. Кандидат в новый баг, ждёт «заводи». → заведён #b93c54 (ticket 93, לביצוע) 2026-11-12.",
+      "screenshots": ".qa/screenshots/75ae6c-*.png"
+    },
+    {
+      "hash": "#4f5e3a",
+      "ticket": 91,
+      "id": "612a1251b2d86e81cb4f5e3a",
+      "title": "בקשת לקוח: מסך «משהו השתבש» מופיע שוב ושוב – לטעון גרסה חדשה של האתר אוטומטית",
+      "role": "guest+admin",
+      "devices": [
+        "desktop-1440",
+        "pixel7-emulation"
+      ],
+      "status": "done",
+      "action": "pass (user verified & moved)",
+      "column": "הושלם",
+      "feature": "stale chunk auto-reload + SW update",
+      "notes": "Симуляция 404/HTML для Calculator chunk: «טוענים את הגרסה החדשה של האתר…» + 1 reload (24/24); петля: 1 reload, затем экран ошибки (12/12, sessionStorage b4s:stale-build-reload-at 30 c); SW SKIP_WAITING есть, update() на visibilitychange; навигация гость/admin/Pixel7 без ошибок. Не проверено: реальный деплой на Android PWA, активация нового SW (sw.js не перехватить).",
+      "findings": [
+        "~5 c ожидания на экране загрузки при наличии SW",
+        "CacheFirst statuses [0,200] для чанков — теоретический риск кэша HTML",
+        "нет clientsClaim"
+      ],
+      "screenshots": ".qa/screenshots/4f5e3a-*.png"
+    },
+    {
+      "hash": "#b93c54",
+      "ticket": 93,
+      "id": "a5df360439b015d1e6b93c54",
+      "title": "טיוטת מודעה לא שומרת «סוג מודעה» ו«מיקום העסק בחו\"ל» — בפתיחה מחדש של הטיוטה השדות נעלמים",
+      "role": "user",
+      "devices": [
+        "desktop-1440"
+      ],
+      "status": "done",
+      "action": "pass (user verified & moved)",
+      "column": "הושלם",
+      "feature": "addbusiness draft server save (post_type, overseas location meta)",
+      "notes": "6/6 ✅: create POST meta с post_type+overseas_location_details; reopen ?id и /mybusinesses→עריכה без localStorage — тип и место на месте, полей города нет; PATCH 2→3→4 сохраняет meta+sale_reason/annual_revenue; обычный тип זכיינות+город сохраняются; GET בחו\"ל: city/address/location пустые. Не проверено: изображения/AI в черновике, шаг 4 пакет.",
+      "findings": [
+        "Повторно открытый черновик (?id=) не сохраняет шаги 2–4 на сервер (3/3) — известно с 01.11 («черновик по /addbusiness?id= без שמור שינויים»), не заведено → заведён #b30e4c (ticket 94, לביצוע) 2026-11-12",
+        "~300 мс пустая форма до заполнения при ?id="
+      ],
+      "screenshots": ".qa/screenshots/b93c54-*.png"
+    },
+    {
+      "hash": "#b30e4c",
+      "id": "d78db6f75307da7faab30e4c",
+      "ticket": 94,
+      "title": "טיוטה שנפתחה מחדש לא נשמרת בשרת — שינויים בשלבים 2–4 אובדים",
+      "session": 3,
+      "action": "pass",
+      "column": "הושלם",
+      "time": "2026-11-12T18:30",
+      "feature": "addbusiness-draft-save",
+      "role": "user",
+      "devices": [
+        "desktop 1440",
+        "desktop 1280"
+      ],
+      "runs": 2,
+      "result": "4/4 + 4/4: PATCH 200 на каждом переходе повторно открытого черновика (?id= и עריכה, клик по вкладке и שלב הבא); sale_reason/annual_revenue/annual_profit/фото/title/city сохраняются; status טיוטה; updated_date меняется; post_type не теряется (#b93c54)",
+      "not_checked": [
+        "платный пакет",
+        "активное объявление",
+        "ממתין לתשלום"
+      ],
+      "autotest_hint": "заменить test.fixme #b30e4c в e2e/tests/addbusiness-draft-save/draft-reopen-fields.spec.ts",
+      "findings": [
+        "двойной POST storage при загрузке 1 фото (тех.)",
+        "contact_phone_2 '' → null (тех.)",
+        "PATCH при простом открытии вкладки шага 2 без изменений",
+        "два параллельных PATCH (клик по вкладке со старым значением + שלב הבא) — риск гонки, не наблюдался"
+      ],
+      "confirmed": "2026-11-12 пользователь: «Прошли»"
+    }
+  ],
+  "test_data": [
+    {
+      "what": "черновик QA-TEST 75ae6c",
+      "id": "e982fd50-b487-4399-ba18-9bbb57d4cb00",
+      "deleted": true
+    },
+    {
+      "what": "черновик QA-TEST 75ae6c-v",
+      "id": "f110009b-17d9-4c79-a6f9-c077a31b0622",
+      "deleted": true
+    },
+    {
+      "what": "черновик QA-TEST b93c54 חו\"ל",
+      "id": "a41bc4cd-67bc-4691-80e8-3524c34071a8",
+      "deleted": true
+    },
+    {
+      "what": "черновик QA-TEST b93c54 חו\"ל שלבים",
+      "id": "e7a6565f-6fae-4856-9ec9-4fe0157bd188",
+      "deleted": true
+    },
+    {
+      "what": "черновик QA-TEST b93c54 רגיל",
+      "id": "3bb56dcd-2502-4b17-9acc-6e3a5cc42a25",
+      "deleted": true
+    },
+    {
+      "what": "user_activity funnel_seller_listing_created ×3 (пишет сайт сам)",
+      "deleted": false
+    },
+    {
+      "what": "черновики QA-TEST b30e4c",
+      "ids": [
+        "4b0a1b5a-ffd3-4cc7-ba0b-d60eddb09255",
+        "c6af9b0a-f18a-484d-933b-65c9328cda64"
+      ],
+      "status": "удалены, GET []",
+      "left": "storage uploads/a5c212cf-c329-4e78-89a1-4d6f289c773f-qa-test-b30e4c.png (через сайт не удалить)"
+    },
+    {
+      "what": "черновик QA-TEST find1 PATCH (admin)",
+      "ids": [
+        "cb1a3765-3e0f-45ef-ac1f-584ee4034bf3"
+      ],
+      "status": "удалён, GET []"
+    }
+  ],
+  "autotests": [
+    "ГОТОВО: 10/10 зелёные, ledger записан · #b93c54: ГОТОВО: 4/4 ×2 (draft-reopen-fields.spec.ts, ADDBIZ-DRAFT-03…06, fixme #b30e4c), ledger записан",
+    {
+      "hash": "#b30e4c",
+      "status": "ГОТОВО",
+      "cases": [
+        "ADDBIZ-DRAFT-07",
+        "ADDBIZ-DRAFT-08",
+        "ADDBIZ-DRAFT-09"
+      ],
+      "spec": "e2e/tests/addbusiness-draft-save/draft-reopen-fields.spec.ts",
+      "runs": "3/3 и 7/7 (весь файл)",
+      "tags": "@desktop @data, QA_REAL_WRITE=1 --workers 1",
+      "not_covered": "вкладка назад 2→1 (PATCH не уходит), фото, платный пакет, активное, гонка PATCH",
+      "ledger": true
+    }
+  ],
+  "new_bugs": [
+    {
+      "hash": "#b93c54",
+      "ticket": 93,
+      "title": "טיוטת מודעה לא שומרת «סוג מודעה» ו«מיקום העסק בחו\"ל»",
+      "column": "לביצוע"
+    },
+    {
+      "hash": "#b30e4c",
+      "ticket": 94,
+      "title": "טיוטה שנפתחה מחדש לא נשמרת בשרת — שינויים בשלבים 2–4 אובדים",
+      "column": "לביצוע"
+    },
+    {
+      "hash": "#ac6da9",
+      "id": "cd4d4faf341a39b157ac6da9",
+      "ticket": 95,
+      "title": "טיוטה שנפתחה מחדש נשמרת בשרת גם בלי שינוי — PATCH בכל מעבר לשלב",
+      "column": "לביצוע",
+      "from": "находка #b30e4c",
+      "attachment": "find1-patch-no-change-desktop.png приложен (upload_path PUT 200, url)",
+      "repro": "3/3 admin, 2/2 user"
+    }
+  ]
+}

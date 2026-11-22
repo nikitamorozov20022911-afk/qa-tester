@@ -1,0 +1,75 @@
+{
+ "date": "2026-11-22",
+ "board_access": "mifrat MCP (whoami ok, token до 2026-12-12)",
+ "queue": "24 тикета в בבדיקות; 19 — повторно после реджекта, 5 без открытых реджектов",
+ "logins": "все auth/*.json мертвы (refresh_token_not_found); ручной вход: noa, noa-2, pregnancy, new",
+ "tickets": [
+  {
+   "hash": "6f7aee",
+   "title": "מאזן תזונתי יומי",
+   "state": "tested, verifying R4 (❌ 3/3)",
+   "evidence": "screenshots/6f7aee-*, research/api-evidence/2026-11-22-6f7aee-*"
+  },
+  {
+   "hash": "08da72",
+   "title": "API מאזן יומי ויעדים",
+   "state": "tested, verifying AC13 (meals[].source undefined for analysis; mixed-day byNutrient)",
+   "evidence": "research/api-evidence/2026-11-22-08da72-*"
+  },
+  {
+   "hash": "129a4d",
+   "title": "Safety Override",
+   "state": "testing (new+guest); pregnancy branch pending"
+  },
+  {
+   "hash": "40b652",
+   "title": "מגמות אישיות במסך הבית",
+   "state": "testing"
+  },
+  {
+   "hash": "56d47e",
+   "title": "Check-in תקופתי",
+   "state": "testing"
+  }
+ ],
+ "deferred_questions": [
+  {
+   "tickets": [
+    "61e60452",
+    "a653d73e",
+    "813ff72d"
+   ],
+   "q": "contribute_product (запись QA TEST в общий каталог) заблокирован правами Claude Code (Modify Shared Resources) у агента и у основной сессии. Пользователь: разрешить правило в настройках или выполнить сам."
+  }
+ ],
+ "test_data": [
+  {
+   "account": "noa",
+   "what": "feedback 08c089a0-7b23-478f-88e6-ae0f5220628c (note «QA TEST — בדיקת API משוב, להתעלם»)",
+   "removable": false
+  },
+  {
+   "account": "noa",
+   "what": "~14 chat messages 22.11 (6f7aee tests)",
+   "removable": false
+  },
+  {
+   "account": "pregnancy",
+   "what": "chat messages 22.11 (R4 questions)",
+   "removable": false
+  },
+  {
+   "account": "noa",
+   "what": "profile revision 3→~13",
+   "removable": false
+  }
+ ],
+ "findings": [
+  "delete_meal repeated → HTTP 500 P0002",
+  "diet style change rewrites saved goals",
+  "keto 'בקצב טוב' at carbs 383%",
+  "nonlinear activity kcal",
+  "no balance screen; 'לפירוט היום' opens nothing",
+  "chat activity phrase not recorded (zone #59ec51)"
+ ]
+}

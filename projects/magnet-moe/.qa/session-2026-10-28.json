@@ -1,0 +1,695 @@
+{
+  "date": "2026-10-28",
+  "project": "Magnet",
+  "environment": {
+    "app": "https://magnet.expo.app/",
+    "admin": "https://magnet-admin.vercel.app/"
+  },
+  "queue_total": 64,
+  "queue": {
+    "returned": [
+      "#7693cb",
+      "#de526e",
+      "#79becd",
+      "#025db1",
+      "#41d79e",
+      "#d20b68",
+      "#1d39a9",
+      "#c96269",
+      "#2ce523",
+      "#9ed75d",
+      "#b76c3b",
+      "#7415be",
+      "#2eae9b",
+      "#9ab97a",
+      "#9918e9",
+      "#d97660",
+      "#24d071",
+      "#f71f8d",
+      "#a85b92",
+      "#714b7a",
+      "#5ab721",
+      "#4d3a4c",
+      "#4ef173",
+      "#2c7c58",
+      "#06e5ab",
+      "#59bef2",
+      "#c3edb4",
+      "#ab0123",
+      "#ee51bb"
+    ],
+    "new": [
+      "#e5e14a",
+      "#1a4901",
+      "#46db57",
+      "#2a31ff",
+      "#6121eb",
+      "#f0cce9",
+      "#da04b0",
+      "#0f19c0",
+      "#63df45",
+      "#3872fc",
+      "#49666d",
+      "#d6d81e",
+      "#8ad381",
+      "#b807a4",
+      "#24e55d",
+      "#ec114a",
+      "#696b7c",
+      "#c32a98",
+      "#d6881a",
+      "#8d91b8",
+      "#d29e8b",
+      "#5f64d4",
+      "#aabd1e",
+      "#1fd43a",
+      "#0fec32",
+      "#3b84f6",
+      "#a5ce54",
+      "#4df1ca",
+      "#01a5ce"
+    ],
+    "bugs": [
+      "#4aa498",
+      "#5fb42e"
+    ],
+    "waiting": [
+      "#e7cc04",
+      "#1ff0f4",
+      "#67c751",
+      "#88472c"
+    ]
+  },
+  "auth_check": {
+    "free": "alive",
+    "user2": "alive",
+    "user4": "alive",
+    "admin": "alive",
+    "user3": "deleted"
+  },
+  "tickets": [
+    {
+      "hash": "#6121eb",
+      "title": "מסך פתיחה (Splash)",
+      "action": "reject",
+      "rejection_id": "rej_ed5da5855bf42162067f182e",
+      "column": "לביצוע",
+      "time": "2026-10-28T11:40",
+      "note": "нет прелоадера, белый экран ~13с в WebKit (expo-font timeout), Welcome ≠ Figma а–ז; T1–T5,C1 ✅"
+    },
+    {
+      "hash": "#2eae9b",
+      "status": "in_progress",
+      "note": "free ✅ кроме AC6 (только счётчик) и пилюли ♡/💬 слева (Figma справа); нужна вторая роль: п.12,16",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_656cef087ef6bec62b046b77"
+    },
+    {
+      "hash": "#9ab97a",
+      "status": "in_progress",
+      "note": "לא ניתן לשחזר — ממתין לעיצוב #1ff0f4; функционал 100% (AC12 жалоба в админке R-a7c190)",
+      "action": "cannot_reproduce",
+      "column": "בבדיקות",
+      "feature": "social/posts",
+      "role": "free,user4,user2",
+      "devices": [
+        "iphone 390/360"
+      ]
+    },
+    {
+      "hash": "#9918e9",
+      "status": "in_progress",
+      "note": "free ✅; ❌ Figma K-1/K-3: карточка коммента, кнопка отправки в поле ↑ вместо круга слева ◀, пилюли слева, разделитель; вторая роль: 13,14",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_a5f315e45caebf21c6fbcc13"
+    },
+    {
+      "hash": "#4aa498",
+      "title": "מסך הזנת מספר טלפון — קידומת «+972» מוצגת מימין",
+      "action": "pass",
+      "column": "הושלם",
+      "feature": "auth/phone",
+      "role": "guest",
+      "devices": [
+        "iphone 360/375/390"
+      ],
+      "note": "+972 слева на входе и регистрации, LTR ввод/вставка; Figma-отличия капсулы/focus-outline → в #7693cb",
+      "confirmed": "2026-10-28 пользователь: прошли"
+    },
+    {
+      "hash": "#5fb42e",
+      "title": "מסך קוד אימות (OTP) — הספרות נכתבות מימין לשמאל",
+      "action": "pass",
+      "column": "הושלם",
+      "feature": "auth/otp",
+      "role": "guest",
+      "devices": [
+        "iphone 360/375/390"
+      ],
+      "note": "LTR 3/3 вход+регистрация, Backspace, вставка, автоотправка; номер слева/нет каретки → в #7693cb",
+      "confirmed": "2026-10-28 пользователь: прошли"
+    },
+    {
+      "hash": "#01a5ce",
+      "title": "מסך הגדרות",
+      "action": "reject",
+      "rejection_id": "rej_58c0e8b49edd2c986fc94a57",
+      "column": "לביצוע",
+      "time": "2026-10-28T12:10"
+    },
+    {
+      "hash": "#4ef173",
+      "status": "verify",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_d4607bdca11393ccc9b44a29"
+    },
+    {
+      "hash": "#06e5ab",
+      "status": "verify",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_3851e7d9943dcd184f6de6de"
+    },
+    {
+      "hash": "#59bef2",
+      "status": "verify",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_ebd7bce3a154e9c8372afed0"
+    },
+    {
+      "hash": "#7693cb",
+      "title": "מסך התחברות / יצירת חשבון",
+      "action": "reject",
+      "column": "לביצוע",
+      "note": "нет почты/Google/Apple+L-1; Figma L-2/L-3/L-5; не проверены AC8/9 (нужен номер)"
+    },
+    {
+      "hash": "#de526e",
+      "title": "הרשמה וכניסה",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_029c9b77e43aef0dd0e0f03c",
+      "note": "нет почты/Google/Apple; L-5 «ליצור חשבון» минует /terms; Figma 865-251/304; не проверены AC1-3,7,8"
+    },
+    {
+      "hash": "#0f19c0",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_4d3458e53fbb7b074d512f78"
+    },
+    {
+      "hash": "#5f64d4",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_e2aec35603119e828d95eb77"
+    },
+    {
+      "hash": "#2a31ff",
+      "status": "pending",
+      "note": "все AC ✅ (вкл/выкл мгновенно у себя, релевантные по предпочтениям, точная позиция, объяснение, индикатор, без шаринга работает, профиль, лайк с карты); Figma и задержка у других — в реджекте #0f19c0; индикатор — #5f64d4",
+      "action": "pass",
+      "column": "הושלם",
+      "feature": "location/map",
+      "role": "free,user4,user2",
+      "confirmed": "2026-10-28 пользователь: прошли"
+    },
+    {
+      "hash": "#46db57",
+      "status": "pending",
+      "note": "все AC ✅: приём координат (record_location), nearby_live только шарящим и подходящим по предпочтениям (взаимно), точные координаты, date_now, без входа 200 [] (данных нет); исчезновение у другого — опрос клиента → реджект #0f19c0",
+      "action": "pass",
+      "column": "הושלם",
+      "feature": "location/nearby_live",
+      "role": "free,user4,user2",
+      "confirmed": "2026-10-28 пользователь: прошли"
+    },
+    {
+      "hash": "#d6d81e",
+      "status": "rejected",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_69f3979ebb53ab9a863b6954",
+      "at": "2026-10-28T19:07"
+    },
+    {
+      "hash": "#8ad381",
+      "status": "rejected",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_cf77d9902cc6ff121561863a",
+      "at": "2026-10-28T19:07"
+    },
+    {
+      "hash": "#8d91b8",
+      "status": "verify",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_ae5ffe845bd52ae90249746c"
+    },
+    {
+      "hash": "#d6881a",
+      "status": "verify",
+      "note": "T7 ответ на сториз не проверен",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_911fd26c049e877efff0ae1f"
+    },
+    {
+      "hash": "#696b7c",
+      "status": "verify",
+      "note": "всё ✅ кроме цвета ✓ (серая vs фиолетовая)",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_c0969c97d625444fa382dcba"
+    },
+    {
+      "hash": "#7415be",
+      "status": "verify",
+      "note": "п.7 сториз не проверен",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_309dbbd132cb830d92b88c22"
+    },
+    {
+      "hash": "#b76c3b",
+      "status": "verify",
+      "note": "сервер принимает сообщения после блока и в матч с удалённой; AC2–4 не повторялись",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_8ec16220d9a3e7978e93ac0e"
+    },
+    {
+      "hash": "#2c7c58",
+      "status": "verify",
+      "note": "функции ✅; ❌ поиск по префиксу ID, сообщение админа не на /blocked, Figma 920:655/926:3313",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_d60e27607801ea1109d74ec1"
+    },
+    {
+      "hash": "#c3edb4",
+      "status": "verify",
+      "note": "санкции ✅; /content הסרה проверяется; комнаты/удаление ждут клиента",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_b3cce1542fba26cc76c4d75f"
+    },
+    {
+      "hash": "#24d071",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_147e675d52ddc24a39ba20ee"
+    },
+    {
+      "hash": "#f71f8d",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_e1ab45c5ffbc9f8f5f655ff3"
+    },
+    {
+      "hash": "#c32a98",
+      "status": "verify",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_f779307aeac68bc8625d8e20"
+    },
+    {
+      "hash": "#ec114a",
+      "status": "verify",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_bae2c14b558603f8c52e9310"
+    },
+    {
+      "hash": "#24e55d",
+      "status": "blocked-no-rooms",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_07c519f5faf50d6b6b770389"
+    },
+    {
+      "hash": "#b807a4",
+      "status": "blocked-no-rooms",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_8f133601e1349083f5c3125b"
+    },
+    {
+      "hash": "#c96269",
+      "status": "verify",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_9c425e9c98bd9d6c6a81ce50"
+    },
+    {
+      "hash": "#2ce523",
+      "status": "verify",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_8b1ca6d264048bd6bd9cd67f"
+    },
+    {
+      "hash": "#9ed75d",
+      "status": "verify",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_76dc6b8ea7ba9d0aa4edfb43"
+    },
+    {
+      "hash": "#63df45",
+      "status": "verify",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_63ef5497a686b0f457b8111d"
+    },
+    {
+      "hash": "#3b84f6",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_c2ef443ae7995d4152ee7c08"
+    },
+    {
+      "hash": "#49666d",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_2e1eef0c15a4f803407f7248"
+    },
+    {
+      "hash": "#3872fc",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_fcbd834713c4b00c839724ef"
+    },
+    {
+      "hash": "#0fec32",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_f61e58b3c37ab4dcf4992b8b"
+    },
+    {
+      "hash": "#4d3a4c",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_c9e050067cd45c04fe38c568"
+    },
+    {
+      "hash": "#5ab721",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_3c78bc1762925040eb391f71"
+    },
+    {
+      "hash": "#714b7a",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_936191a165827f93572a44e9"
+    },
+    {
+      "hash": "#da04b0",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_68670fd00330cfa346aeb966"
+    },
+    {
+      "hash": "#f0cce9",
+      "status": "cannot_reproduce",
+      "action": "cannot_reproduce",
+      "note": "ждёт нативное приложение (решение пользователя 28.10)",
+      "at": "2026-10-28"
+    },
+    {
+      "hash": "#ab0123",
+      "status": "rejected",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_6e9890c14ff9cff2f5a17ee6",
+      "at": "2026-10-28T19:28"
+    },
+    {
+      "hash": "#ee51bb",
+      "status": "rejected",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_7581605ff666fef7c5720765",
+      "at": "2026-10-28T19:28"
+    },
+    {
+      "hash": "#4df1ca",
+      "status": "rejected",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_f2bdd774e6100436853d903f",
+      "at": "2026-10-28T19:32"
+    },
+    {
+      "hash": "#1a4901",
+      "status": "rejected",
+      "action": "reject",
+      "column": "לביצוע",
+      "rejection_id": "rej_63eff31acfcd5024134e58b4",
+      "at": "2026-10-28T19:32"
+    },
+    {
+      "hash": "#88472c",
+      "status": "cannot_reproduce",
+      "action": "cannot_reproduce",
+      "note": "таблица 14 пунктов → блокирующие тикеты",
+      "at": "2026-10-28T19:35"
+    },
+    {
+      "hash": "#4430db",
+      "status": "new_bug",
+      "action": "create",
+      "note": "auth/v1/otp 500 + тестовые номера; блокирует регистрацию",
+      "at": "2026-10-28"
+    },
+    {
+      "hash": "#79becd",
+      "status": "cannot_reproduce",
+      "action": "cannot_reproduce",
+      "note": "блок #4430db (otp 500)",
+      "at": "2026-10-28"
+    },
+    {
+      "hash": "#e7cc04",
+      "status": "cannot_reproduce",
+      "action": "cannot_reproduce",
+      "note": "блок #4430db (otp 500)",
+      "at": "2026-10-28"
+    },
+    {
+      "hash": "#025db1",
+      "status": "cannot_reproduce",
+      "action": "cannot_reproduce",
+      "note": "блок #4430db (otp 500)",
+      "at": "2026-10-28"
+    },
+    {
+      "hash": "#41d79e",
+      "status": "cannot_reproduce",
+      "action": "cannot_reproduce",
+      "note": "блок #4430db (otp 500)",
+      "at": "2026-10-28"
+    },
+    {
+      "hash": "#d20b68",
+      "status": "cannot_reproduce",
+      "action": "cannot_reproduce",
+      "note": "блок #4430db (otp 500)",
+      "at": "2026-10-28"
+    },
+    {
+      "hash": "#1d39a9",
+      "status": "cannot_reproduce",
+      "action": "cannot_reproduce",
+      "note": "блок #4430db (otp 500)",
+      "at": "2026-10-28"
+    },
+    {
+      "hash": "#d29e8b",
+      "status": "cannot_reproduce",
+      "action": "cannot_reproduce",
+      "note": "блок #4430db (otp 500)",
+      "at": "2026-10-28"
+    },
+    {
+      "hash": "#aabd1e",
+      "status": "cannot_reproduce",
+      "action": "cannot_reproduce",
+      "note": "блок #4430db (otp 500)",
+      "at": "2026-10-28"
+    },
+    {
+      "hash": "#d97660",
+      "status": "cannot_reproduce",
+      "action": "cannot_reproduce",
+      "note": "блок #4430db (otp 500)",
+      "at": "2026-10-28"
+    },
+    {
+      "hash": "#a85b92",
+      "status": "cannot_reproduce",
+      "action": "cannot_reproduce",
+      "note": "блок #4430db (otp 500)",
+      "at": "2026-10-28"
+    },
+    {
+      "hash": "#e5e14a",
+      "status": "rejected",
+      "action": "reject",
+      "note": "реджект до паузы 28.10 (из handoff)",
+      "at": "2026-10-28"
+    }
+  ],
+  "findings": [
+    {
+      "hash": "#7693cb",
+      "item": "вставка «+972509999871» → «97-250-9999», ошибка только после нажатия"
+    },
+    {
+      "hash": "#7693cb",
+      "item": "«שינוי מספר» → поле номера пустое (требования нет)"
+    },
+    {
+      "hash": "#7693cb",
+      "item": "/email, /login — английская Expo «Unmatched Route»"
+    },
+    {
+      "hash": "#ee51bb",
+      "item": "record_location шлёт координаты при каждом открытии даже при share_location=false и nearby_opt_in=false"
+    },
+    {
+      "hash": "#46db57",
+      "item": "nearby_live без входа → 200 [] (не 401)"
+    },
+    {
+      "hash": "#0f19c0",
+      "item": "при загрузке/ошибке заголовок «אין כרגע אנשים בקרבתך»"
+    },
+    {
+      "hash": "nav",
+      "item": "иконки нижней навигации иногда 0×0 в WebKit"
+    },
+    {
+      "hash": "#4430db",
+      "item": "регистрация: auth/v1/otp → 500, SMS не уходит"
+    }
+  ],
+  "test_data": [
+    {
+      "date": "2026-10-28",
+      "by": "feed #2eae9b",
+      "item": "«לייק לפרופיל» free → демо-профиль רוני (rpc/swipe), отмены в UI нет — остался"
+    },
+    {
+      "date": "2026-10-28",
+      "by": "feed",
+      "item": "пост QA-AUTO a5f9b19d + 2 комментария free — удалены в приложении"
+    },
+    {
+      "date": "2026-10-28",
+      "by": "admin #06e5ab",
+      "item": "жалобы: J6 04bac82e פתוח→טופל (+заметка QA-AUTO), J3 d0cf94fc פתוח→נדחה, J4 e2549fcb פתוח→הוסלם — вернуть в UI нельзя (только БД); J1 d1dacecc + заметка QA-AUTO, статус פתוח"
+    },
+    {
+      "date": "2026-10-28",
+      "by": "admin #59bef2",
+      "item": "демо-заявка S-18B3ED חדשה→בחיפוש→возвращено חדשה"
+    },
+    {
+      "date": "2026-10-28",
+      "by": "feed r2",
+      "item": "посты free d620da83 и user2 39ee5752 + лайк/коммент user4 — удалены; блок user4→אור снят"
+    },
+    {
+      "date": "2026-10-28",
+      "by": "map",
+      "item": "матч free↔user4 match_id 2651ee46 (лайк free с карты) — остаётся, нужен для чатов"
+    },
+    {
+      "date": "2026-10-28",
+      "by": "map",
+      "item": "user4 Date Now использован (date_now_started_at 12:41Z) — недельный лимит"
+    },
+    {
+      "date": "2026-10-28",
+      "by": "map",
+      "item": "record_location: эмулированные координаты Тель-Авив free/user4/user2 в истории"
+    },
+    {
+      "date": "2026-10-28",
+      "by": "map",
+      "item": "share_location free/user4 → возвращено false"
+    },
+    {
+      "date": "2026-10-28",
+      "by": "chats",
+      "item": "сообщения QA-AUTO id 9–55 в матче 2651ee46 (free↔user4); id 54 в матче 45786ffa (user3 удалена) — чистка"
+    },
+    {
+      "date": "2026-10-28",
+      "by": "chats",
+      "item": "жалоба free→user4 «ספאם או הונאה» ~13:45 — закрыть в админке"
+    },
+    {
+      "date": "2026-10-28",
+      "by": "chats",
+      "item": "блок free→user4 создан и снят"
+    },
+    {
+      "date": "2026-10-28",
+      "by": "chat-v",
+      "item": "сообщения QA-AUTO id 56, 60–62 (2651ee46), 57–59 (45786ffa) — чистка; блок user4→free снят"
+    },
+    {
+      "date": "2026-10-28",
+      "by": "stories",
+      "item": "жалобы R-077c53 (сторис free→user4), R-a7c190 (пост user4→free), R-f966c4 (чат free→user4) — открыты в админке"
+    },
+    {
+      "date": "2026-10-28",
+      "by": "stories",
+      "item": "ответ на сторис free→user4 в матче 2651ee46 (карточка «הסטורי כבר לא זמין»)"
+    },
+    {
+      "date": "2026-10-28",
+      "by": "stories",
+      "item": "сторис user4 ×3, user2 ×1, пост free 71f36a0e — удалены; блок free→user4 снят"
+    },
+    {
+      "date": "2026-10-28",
+      "by": "admin #2c7c58",
+      "item": "user2: אזהרה (история), השעיה 24ч→הפעלה מחדש, חסימה→הפעלה מחדש; итог פעיל/ה + Premium до 25.04.2027"
+    },
+    {
+      "date": "2026-10-28",
+      "by": "stories-v",
+      "item": "сторис bbbf3051 user4 — удалена; 2 карточки ответа в 2651ee46 — чистка"
+    },
+    {
+      "date": "2026-10-28",
+      "by": "admin-v",
+      "item": "user2 השעיה 15:52→הפעלה מחדש 15:54; пост 765d2bc6 удалён через /content"
+    },
+    {
+      "date": "2026-10-28",
+      "by": "discover",
+      "item": "free: skip נועה, like ליה; user4: super_like יונתן (квота 1/1 потрачена)"
+    },
+    {
+      "date": "2026-10-28",
+      "by": "discover-v",
+      "item": "user2 super_like → демо עומר …0026 (1/5)"
+    },
+    {
+      "date": "2026-10-28",
+      "by": "safety",
+      "item": "жалобы user4: R-cd148a R-88c575 R-992a80 R-734683 (открыты); блоки сняты"
+    }
+  ],
+  "closed_at": "2026-10-28T19:55"
+}

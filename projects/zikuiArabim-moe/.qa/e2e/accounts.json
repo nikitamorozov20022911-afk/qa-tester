@@ -1,0 +1,21 @@
+[
+  {
+    "id": "user1",
+    "role": "משתמש",
+    "emailVar": "QA_USER1_PHONE",
+    "passwordVar": "QA_USER1_OTP"
+  },
+  {
+    "id": "user2",
+    "role": "משתמש",
+    "emailVar": "QA_USER2_PHONE",
+    "passwordVar": "QA_USER2_OTP"
+  },
+  {
+    "id": "admin",
+    "role": "מנהל תוכן (/admin)",
+    "emailVar": "QA_ADMIN_PHONE",
+    "passwordVar": "QA_ADMIN_OTP",
+    "loginPath": "/admin"
+  }
+]

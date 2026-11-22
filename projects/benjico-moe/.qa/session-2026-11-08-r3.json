@@ -1,0 +1,72 @@
+{
+ "date": "2026-11-08",
+ "round": 3,
+ "command": "/qa",
+ "note": "очередь «בבדיקות»: 7, к тесту 3 (#a1f2c1, #c9d038, #ee2f5b); #613a14 #f23704 #eb3106 #151ef2 — ждут планшета · тест: агент1 parent-3 (#a1f2c1 + #ee2f5b режим ребёнка), агент2 parent/guest/parent-auto/parent-b (#ee2f5b окна родителя, #c9d038 С1–С3)",
+ "queue": [
+  "#a1f2c1",
+  "#c9d038",
+  "#ee2f5b"
+ ],
+ "tickets": [
+  {
+   "round": 3,
+   "action": "pass",
+   "column": "הושלם (провёл пользователь 08.11)",
+   "role": "parent-3 (режим ребёнка QA-R2-V), parent, guest, parent-b, parent-auto",
+   "devices": [
+    "desktop 1440",
+    "390"
+   ],
+   "time": "2026-11-08",
+   "tests": ".qa/tests/child-handover.md (раунд 08.11 р3)",
+   "hash": "#a1f2c1",
+   "feature": "режим ребёнка: токен родителя не даёт прав (consents, family_members, MFA)",
+   "result": "✅ CH-20…CH-23 + регресс #8ca267/#25b101/#eb3106. Не проверено: PUT auth/v1/user — Auth 400 email_address_invalid на текущий адрес аккаунта; пароль не трогали",
+   "autotests": "записаны: child-mode-consents-family-members-empty.spec.ts, child-mode-mfa-factor-not-created.spec.ts, child-mode-refresh-no-extra-rights.spec.ts, parent-mode-consents-control.spec.ts (не запускались)"
+  },
+  {
+   "round": 3,
+   "action": "pass",
+   "column": "הושלם (провёл пользователь 08.11)",
+   "role": "parent-3 (режим ребёнка QA-R2-V), parent, guest, parent-b, parent-auto",
+   "devices": [
+    "desktop 1440",
+    "390"
+   ],
+   "time": "2026-11-08",
+   "tests": ".qa/tests/child-handover.md (раунд 08.11 р3)",
+   "hash": "#c9d038",
+   "feature": "режим ребёнка: удаление ключа не открывает зону родителя (текущее состояние)",
+   "result": "✅ CH-24 (/settings, /children, /children/<id>×2 → дом ребёнка). Старое состояние до 08.11 не воспроизводилось — решение пользователя",
+   "autotests": "записаны: key-removed-other-child-profile-gated.spec.ts (не запускались)"
+  },
+  {
+   "round": 3,
+   "action": "pass",
+   "column": "הושלם (провёл пользователь 08.11)",
+   "role": "parent-3 (режим ребёнка QA-R2-V), parent, guest, parent-b, parent-auto",
+   "devices": [
+    "desktop 1440",
+    "390"
+   ],
+   "time": "2026-11-08",
+   "tests": ".qa/tests/child-handover.md (раунд 08.11 р3)",
+   "hash": "#ee2f5b",
+   "feature": "«אימות זהות»: текст ошибки пароля",
+   "result": "✅ CH-25 (1440/390), CH-26 (4 окна), CH-27 (/sign-in нейтральный)",
+   "autotests": "записаны: exit-reauth-no-form-saved-line.spec.ts, settings-reauth-form-saved-line.spec.ts (не запускались)"
+  }
+ ],
+ "testData": [
+  "Ничего не создано: factor TOTP — нет; consents purpose qa-a1f2c1 — нет (проверено в режиме родителя); email не изменился"
+ ],
+ "findings": [
+  "POST consents в режиме ребёнка — 201 [] вместо ошибки (тихий отказ)",
+  "Токен родителя в режиме ребёнка: logout и смена display name (известно программисту, по решению — не реджект)",
+  "Иконка «!» в плашке ошибки «אימות זהות» видна на 390, на 1440 не видна (не измерено)",
+  "parent-auto НЕ в режиме ребёнка (current_child_session []) — автотесты #b3210e на этом слоте рассчитаны на режим ребёнка",
+  "Auth API: 400 email_address_invalid на текущий адрес avihail+benjico-qa@… при PUT email"
+ ],
+ "status": "завершено, handoff 08.11 р3"
+}

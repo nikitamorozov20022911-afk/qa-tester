@@ -1,0 +1,16 @@
+== page 1
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+StaticText   vis=t y= 182 x= 160 82x20 | אור הגאולה
+StaticText   vis=t y= 242 x=  59 284x47 | ה' רֹעִי לֹא אֶחְסָר
+StaticText   vis=t y= 428 x=  69 264x37 | ברוכים הבאים לאור הגאולה
+StaticText   vis=t y= 468 x=  91 220x40 | התפילה החכמה שתלווה אותך בכל מקום ובכל זמן
+StaticText   vis=t y= 551 x=  47 308x40 | בדיקת החשבון לא הסתיימה: אין תשובה מהשרת. בדקו את חיבור האינטרנט ונסו שוב.
+Button       vis=t y= 603 x= 121 160x44 | נסו שוב
+== page 2
+Application  vis=t y=   0 x=   0 402x874 | אור הגאולה
+StaticText   vis=t y= 182 x= 160 82x20 | אור הגאולה
+StaticText   vis=t y= 242 x=  59 284x47 | ה' רֹעִי לֹא אֶחְסָר
+StaticText   vis=t y= 428 x=  69 264x37 | ברוכים הבאים לאור הגאולה
+StaticText   vis=t y= 468 x=  91 220x40 | התפילה החכמה שתלווה אותך בכל מקום ובכל זמן
+StaticText   vis=t y= 551 x=  47 308x40 | בדיקת החשבון לא הסתיימה: אין תשובה מהשרת. בדקו את חיבור האינטרנט ונסו שוב.
+Button       vis=t y= 603 x= 121 160x44 | נסו שוב

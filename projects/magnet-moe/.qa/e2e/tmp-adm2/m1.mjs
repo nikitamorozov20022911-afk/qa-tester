@@ -1,0 +1,10 @@
+import {admin,SS} from './h.mjs';
+const A=await admin(); const p=A.p;
+await p.goto('https://magnet-admin.vercel.app/',{waitUntil:'domcontentloaded'});
+const href=await p.getByRole('link',{name:/בקשות שדכנית/}).first().getAttribute('href'); console.log('href',href);
+await p.goto('https://magnet-admin.vercel.app'+href,{waitUntil:'domcontentloaded'});
+await p.locator('main').getByText(/דניאל|נועה|אין/).first().waitFor({timeout:20000}).catch(()=>{});
+console.log(p.url(),(await p.locator('main').innerText()).slice(0,2000));
+console.log(await p.locator('main').locator('button,select,textarea,a[href*="matchmaker/"]').evaluateAll(a=>a.map(e=>e.tagName+'|'+e.innerText?.trim().slice(0,30)+'|'+(e.getAttribute('href')||e.getAttribute('aria-label')||''))));
+await p.screenshot({path:SS+'59bef2-list-before-desktop.png',fullPage:true});
+await A.close();

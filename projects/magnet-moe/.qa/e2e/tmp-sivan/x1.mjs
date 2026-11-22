@@ -1,0 +1,14 @@
+import { chromium, devices } from 'playwright';
+const Q='/Users/avielshnaider/magnet-moe/.qa';
+const b=await chromium.launch({headless:true});
+const ctx=await b.newContext({...devices['iPhone 13'],viewport:{width:390,height:844},storageState:Q+'/auth/new03-r11map.json',geolocation:{latitude:32.5006,longitude:34.9184},permissions:['geolocation'],locale:'he-IL'});
+const p=await ctx.newPage();
+p.on('response',r=>{if(r.url().includes('/rpc/'))console.log('RPC',r.request().method(),r.status(),r.url().split('/rpc/')[1], (r.request().postData()||'').slice(0,200));});
+await p.goto('https://magnet.expo.app/discover',{waitUntil:'networkidle'});
+await p.waitForTimeout(4000);
+console.log('URL',p.url());
+console.log((await p.locator('body').innerText()).slice(0,1500));
+const els=await p.$$eval('[role=button],button,[aria-label]',es=>es.map(e=>(e.getAttribute('aria-label')||'')+' | '+(e.innerText||'').slice(0,30)+' | '+e.getAttribute('data-testid')).filter(s=>s.trim()!=='|  | null'));
+console.log(els.join('\n'));
+await p.screenshot({path:'d1.png'});
+await ctx.storageState({path:Q+'/auth/new03-r11map.json'}); await b.close();

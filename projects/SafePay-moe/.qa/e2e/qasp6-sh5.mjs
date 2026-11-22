@@ -1,0 +1,31 @@
+import { newBrowser, ctx, go, txt, shot, sleep } from './qasp6-lib.mjs';
+const W='/wallet/shared/3bf0fc53-2b78-46d2-9f53-f824c57ceb39';
+const b = await newBrowser();
+const { p } = await ctx(b, 'client', 375);
+const log=(...a)=>console.log(...a);
+const bal=async()=>{await go(p,'/wallet'); return (await txt(p)).match(/היתרה שלך\n(₪[\d,.]+)/)?.[1];};
+async function keys(s){ for(const ch of s) { await p.getByRole('button',{name:ch,exact:true}).click(); await sleep(120);} }
+log('personal before', await bal());
+await go(p, W+'/topup');
+await keys('99999'); await sleep(800);
+log('topup 99999:', (await txt(p)).split('\n').slice(0,6).join(' | '), 'btn disabled', await p.getByRole('button',{name:'טעינה'}).isDisabled());
+await shot(p,'6a86f7c7/r1-22-topup-over-375');
+if(!(await p.getByRole('button',{name:'טעינה'}).isDisabled())){ await p.getByRole('button',{name:'טעינה'}).click(); await sleep(2500); log('after submit over:', (await txt(p)).split('\n').slice(0,8).join(' | ')); await shot(p,'6a86f7c7/r1-23-topup-over-submit-375'); }
+await go(p, W+'/topup');
+await keys('20'); await p.getByRole('button',{name:'טעינה'}).click(); await sleep(3500);
+log('after topup20 URL', p.url(), (await txt(p)).split('\n').slice(0,12).join(' | '));
+await shot(p,'6a86f7c7/r1-24-after-topup20-375', true);
+await go(p, W+'/withdraw');
+log('withdraw page:', (await txt(p)).split('\n').slice(0,5).join(' | '));
+await keys('25'); await sleep(600);
+log('withdraw 25:', (await txt(p)).split('\n').slice(0,6).join(' | '), 'disabled', await p.getByRole('button',{name:'משיכה'}).isDisabled());
+await shot(p,'6a86f7c7/r1-25-withdraw-over-375');
+await go(p, W+'/withdraw');
+await keys('10'); await p.getByRole('button',{name:'משיכה'}).click(); await sleep(3500);
+log('after withdraw10 URL', p.url(), (await txt(p)).split('\n').slice(0,12).join(' | '));
+await go(p, W+'?tab=actions'); 
+log('ACTIONS', await txt(p)); await shot(p,'6a86f7c7/r1-26-actions-375', true);
+log('personal after', await bal());
+log((await txt(p)).split('פעולות אחרונות')[1]?.slice(0,400));
+log('CONSOLE', p._console, 'REQ', p._req);
+await b.close();

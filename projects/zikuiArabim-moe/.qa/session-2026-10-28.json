@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-28",
+  "command": "/qa",
+  "device": "Android Pixel 6 (Android 17), app 1.0.0 (6) + OTA",
+  "queue": [
+    "#c7b97e 6a9fc20e73f0c860c8c7b97e",
+    "#85332a 0a168fbe361c9f8c5785332a",
+    "#76bc4c (skip until 9.11)"
+  ],
+  "tickets": [
+    {
+      "hash": "#c7b97e",
+      "id": "6a9fc20e73f0c860c8c7b97e",
+      "verdict": "reject",
+      "facts": [
+        "no 422, SMS arrives on first send, 6 digit boxes",
+        "10:54 code 236757 (after one wrong attempt) -> 'הקוד פג תוקף'",
+        "10:56 resend, correct code 615462 submitted 10:57:13 -> 'הקוד פג תוקף'",
+        "10:57:59, 11:00:00 resend and 11:01:23/11:01:50 form send -> 'נשלח קוד חדש' but no SMS"
+      ],
+      "screens": [
+        "screenshots/c7b97e-2810-android-expired.png",
+        "screenshots/c7b97e-2810-android-no-sms.png",
+        "screenshots/c7b97e-2810-android-6digits.png"
+      ],
+      "column": "לביצוע",
+      "action": "task_add_rejection rej_bd4e5bd0cbe653aaf09605f6 (change 8f214067) -> todo; old 422 rejection left open"
+    },
+    {
+      "hash": "#85332a",
+      "id": "0a168fbe361c9f8c5785332a",
+      "verdict": "cannot_reproduce (login blocked by #c7b97e)",
+      "action": "task_mark_cannot_reproduce change 53ebc3f7",
+      "column": "בבדיקות"
+    }
+  ],
+  "test_data": [
+    "phone 0537240114 deleted from DB by user, then registration attempts 'QA reg 2810 Long Greeting Name Test' / qa.reg2810@example.com — account may exist unconfirmed"
+  ],
+  "new_bugs": [
+    {
+      "hash": "#5623bc",
+      "id": "b774bc6273218323445623bc",
+      "ticket": 22
+    },
+    {
+      "hash": "#4572c6",
+      "id": "cd8e8bb3e10ac268a44572c6",
+      "ticket": 23
+    }
+  ]
+}

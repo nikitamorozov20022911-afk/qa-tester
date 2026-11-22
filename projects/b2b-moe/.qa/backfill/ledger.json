@@ -1,0 +1,3528 @@
+{
+  "#6a8aaae3": {
+    "class": "automatable",
+    "feature": "picking",
+    "tests": [
+      "tests/picking/picking-flow.spec.ts"
+    ],
+    "reason": "multi-floor; требует роль מחסן/мульти-этажный склад",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8aaae3252258c7f2765516",
+    "title": "בליקוט הזמנה עם מוצרים בכמה קומות נפתחת קומה 2 כברירת מחדל ואין מסלול שמכוון למעבר בין הקומות"
+  },
+  "#6a8da6ac": {
+    "class": "duplicate",
+    "feature": "picking",
+    "tests": [
+      "tests/picking/picking-flow.spec.ts"
+    ],
+    "reason": "= #0 (тот же сценарий multi-floor, новее #0)",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8da6ac7f2fcf8bc001c725",
+    "title": "בליקוט הזמנה עם מוצרים מכמה קומות, המסלול מתחיל מהקומה השנייה למרות שנקודת ההתחלה מוגדרת בקומה הראשונה"
+  },
+  "#6a8f3153": {
+    "class": "automatable",
+    "feature": "warehouse-map",
+    "tests": [
+      "tests/warehouse-map/map-view.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8f31533369558dc6d1d1cc",
+    "title": "כותרת: מיקום שנבחר למוצר מוצג כ־„ריק” במפת המחסן למרות שהמוצר שויך אליו"
+  },
+  "#6a8f0847": {
+    "class": "automatable",
+    "feature": "customers",
+    "tests": [
+      "tests/customers-pricing/customers-list.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8f084708009ef6f5b390ef",
+    "title": "כפתור „קישור הצטרפות” מוצג גם עבור לקוח בסטטוס „פעיל”"
+  },
+  "#6a8da839": {
+    "class": "automatable",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/catalog-list.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8da8396d27aa9dd86c4bab",
+    "title": "לחיצה על אזור ריק בשורת מוצר פותחת את עריכת המוצר ועלולה לגרום לכניסה לא מכוונת"
+  },
+  "#6a8da5bc": {
+    "class": "automatable",
+    "feature": "inventory",
+    "tests": [
+      "tests/inventory/inventory-views.spec.ts"
+    ],
+    "reason": "роль עובד מחסן — нужен аккаунт",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8da5bc31d236256cedcd38",
+    "title": "בעמוד ניהול מלאי חסרים פרטי מוצר למשתמש עם תפקיד עובד מחסן"
+  },
+  "#6a8da3df": {
+    "class": "automatable",
+    "feature": "team-permissions",
+    "tests": [
+      "tests/auth-security/impersonation.spec.ts"
+    ],
+    "reason": "вход как сотрудник (impersonation)",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8da3df68e400f41de731b3",
+    "title": "לא ניתן לבצע כניסה כעובד מעמוד צוות והרשאות, למרות שהבקשה מחזירה Status 200"
+  },
+  "#6a8197bd": {
+    "class": "manual-only",
+    "feature": "ai",
+    "tests": [],
+    "reason": "AI-рекомендации, недетерминированно",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8197bdd1c94dac2f89105f",
+    "title": "להוסיף למערכת המלצות מבוססות AI, אשר יציעו ללקוח מוצרים משלימים בהתאם למוצר שבחר או לתכולת ההזמנה."
+  },
+  "#6a8da2b1": {
+    "class": "manual-only",
+    "feature": "customers",
+    "tests": [],
+    "reason": "регистрация по приглашению = создание аккаунта",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8da2b19d80606d858ab641",
+    "title": "נוצר אותו קישור הזמנה עבור לקוחות שונים, וכתוצאה מכך מתקבלת שגיאה בהרשמה לקטלוג"
+  },
+  "#6a8315987ac07b581e7c5054": {
+    "class": "manual-only",
+    "feature": "ai",
+    "tests": [],
+    "reason": "AI-разбор сообщения WhatsApp · hash #6a831598 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8315987ac07b581e7c5054",
+    "title": "«הזמנה מהודעה» — הזמנה שהגיעה בוואטסאפ נרשמת מהמסך"
+  },
+  "#6a8da12d": {
+    "class": "automatable",
+    "feature": "pricing",
+    "tests": [
+      "tests/customers-pricing/pricing-lifecycle.spec.ts"
+    ],
+    "reason": "окно привязки товаров + поиск",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8da12d8678ab600e06a39c",
+    "title": "בחירת מוצרים איטית וחסר שדה חיפוש בחלון שיוך מוצרים"
+  },
+  "#6a8468b6": {
+    "class": "automatable",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/catalog-list.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8468b64d2fa43dac372e0c",
+    "title": "הוספת אפשרות לפתוח מוצר ישירות בלחיצה על שורת המוצר בדף קטלוג"
+  },
+  "#6a8466b2": {
+    "class": "superseded",
+    "feature": "catalog",
+    "tests": [],
+    "reason": "перекрыто #31 (полное удаление единиц продажи)",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8466b28e2ba3ea2d5de521",
+    "title": "הסתרה זמנית של יחידת מכירה ראשית ושל אזור יחידות מכירה נוספות בדף עריכת מוצר"
+  },
+  "#6a84687f": {
+    "class": "automatable",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/catalog-list.spec.ts",
+      "tests/inventory/inventory-lifecycle.spec.ts",
+      "tests/inventory/inventory-views.spec.ts"
+    ],
+    "reason": "объединение каталога и склада",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a84687f0080368e3ea8c747",
+    "title": "איחוד דפי קטלוג ו-מלאי לדף אחד עם טבלה מאוחדת"
+  },
+  "#6a8434ea": {
+    "class": "manual-only",
+    "feature": "ai",
+    "tests": [],
+    "reason": "распознавание товара по фото (AI)",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8434eae228de9548628c72",
+    "title": "הוספת אפשרות לזיהוי והוספת מוצר להזמנה באמצעות תמונה ב-הזמנה מהירה וב-הזמנה מלקוח"
+  },
+  "#6a8315987ac07b581e7c5055": {
+    "class": "manual-only",
+    "feature": "ai",
+    "tests": [],
+    "reason": "AI-описания · hash #6a831598 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8315987ac07b581e7c5055",
+    "title": "«השלמת תיאורים» — המודל מנסח תיאורי מוצר וקטגוריות, האדם קורא ושומר"
+  },
+  "#6a858ac8": {
+    "class": "automatable",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/catalog-list.spec.ts"
+    ],
+    "reason": "мин. порог без упаковок (после #31)",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a858ac8466b5bd9deab4505",
+    "title": "ב-קטלוג ערך רף מינימום עדיין מוצג לפי מארזים למרות שהלוגיקה של יחידת מכירה הוסרה"
+  },
+  "#6a8315987ac07b581e7c5052": {
+    "class": "manual-only",
+    "feature": "ai",
+    "tests": [],
+    "reason": "AI-распознавание колонок импорта · hash #6a831598 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8315987ac07b581e7c5052",
+    "title": "זיהוי אוטומטי של עמודות בייבוא קטלוג באמצעות AI"
+  },
+  "#6a85943e": {
+    "class": "automatable",
+    "feature": "warehouse-map",
+    "tests": [
+      "tests/warehouse-map/map-create.spec.ts",
+      "tests/warehouse-map/map-edit-readonly.spec.ts",
+      "tests/warehouse-map/map-view.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a85943e8f9b0b5983cb4119",
+    "title": "פישוט יצירת ארגזים עבור משטח ו-אזור ארגזים והוספת ארגז אחד בלבד כברירת מחדל"
+  },
+  "#6a859021": {
+    "class": "automatable",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/orders-list.spec.ts"
+    ],
+    "reason": "вёрстка статусов/кнопок",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a859021c5d75a957b5edac1",
+    "title": "תיקון יישור הסטטוסים ואחידות כפתורי הפעולות בעמוד הזמנות"
+  },
+  "#6a858e15": {
+    "class": "automatable",
+    "feature": "ui-general",
+    "tests": [
+      "tests/ui-general/navigation.spec.ts"
+    ],
+    "reason": "названия в Sidebar",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a858e1500286cf7094ab0b2",
+    "title": "שינוי שמות הכותרות ב-Sidebar ובעמוד קטלוג ומלאי"
+  },
+  "#6a858b4e": {
+    "class": "automatable",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/catalog-list.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a858b4e95e4ae470e879633",
+    "title": "לאחר יציאה מעריכת מוצר ב-קטלוג המשתמש מוחזר לעמוד 1 במקום לעמוד ולמיקום הקודם ברשימה"
+  },
+  "#6a8595c3": {
+    "class": "automatable",
+    "feature": "warehouse-map",
+    "tests": [
+      "tests/warehouse-map/map-create.spec.ts",
+      "tests/warehouse-map/map-view.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8595c3f8a9fc38741674dc",
+    "title": "במפת המחסן יש להסיר אפשרות להוספת מוצר ישירות ל־משטח או ל־אזור ארגזים"
+  },
+  "#6a8590ff": {
+    "class": "automatable",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/catalog-list.spec.ts"
+    ],
+    "reason": "вёрстка кнопок",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8590ff9f9530d7ae59fa37",
+    "title": "שיפור סידור ואחידות הכפתורים בעמוד קטלוג ומלאי"
+  },
+  "#6a858bf1": {
+    "class": "automatable",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/catalog-list.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a858bf1e5c72f5a58a6a05a",
+    "title": "הסרת בלוק מיקום במחסן ממסך עריכת מוצר"
+  },
+  "#6a846655": {
+    "class": "automatable",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/catalog-list.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a846655da7325bf65927c9a",
+    "title": "שינוי לוגיקת הפעולות המהירות עבור מק\"ט, מיקום במחסן ותמונת המוצר בדף קטלוג"
+  },
+  "#6a730a70": {
+    "class": "automatable",
+    "feature": "warehouse-map",
+    "tests": [
+      "tests/warehouse-map/map-create.spec.ts",
+      "tests/warehouse-map/map-edit-readonly.spec.ts",
+      "tests/warehouse-map/map-view.spec.ts"
+    ],
+    "reason": "проверять по новым #18/#22/#28",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a730a709418ef30772eb677",
+    "title": "יש להוסיף תמיכה ביצירת סוגי אחסון נוספים (משטח, ארגז) במסך עריכת מפת המחסן ולהציג סטטיסטיקה עבורם"
+  },
+  "#6a8597e8": {
+    "class": "automatable",
+    "feature": "ui-general",
+    "tests": [
+      "tests/ui-general/mobile-layout.spec.ts"
+    ],
+    "reason": "@mobile RTL",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8597e8ee89f6559ef2fdbf",
+    "title": "תיקוני עיצוב, רספונסיביות ו־RTL במובייל בעמודים לקוח בקרה, מוצרים, הזמנות ו־תעודת משלוח"
+  },
+  "#6a859245": {
+    "class": "automatable",
+    "feature": "warehouse-map",
+    "tests": [
+      "tests/warehouse-map/map-edit-readonly.spec.ts",
+      "tests/warehouse-map/map-view.spec.ts",
+      "tests/warehouse-map/map-worker.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a85924534b66316c69a35d1",
+    "title": "אחידות בעיצוב כפתורי הפעולות והסרת הוספת פריט בעמוד מפת המחסן"
+  },
+  "#6a858f55": {
+    "class": "automatable",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/catalog-list.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a858f5591e36646bbbd2e41",
+    "title": "הסרת האפשרות עריכה מתפריט שלוש הנקודות בעמוד קטלוג"
+  },
+  "#6a858f15": {
+    "class": "automatable",
+    "feature": "inventory",
+    "tests": [
+      "tests/inventory/inventory-lifecycle.spec.ts",
+      "tests/inventory/inventory-views.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a858f15bcd18411e0e229c7",
+    "title": "הוספת אפשרות לביצוע קליטת מלאי ישירות מכמות המלאי של המוצר והסרת האפשרות מתפריט שלוש הנקודות"
+  },
+  "#6a858d3f": {
+    "class": "automatable",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/catalog-buyer.spec.ts",
+      "tests/catalog/catalog-list.spec.ts"
+    ],
+    "reason": "удаление единиц продажи (сайт + приложение клиента)",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a858d3f59086a13407d378e",
+    "title": "הסרה מלאה של לוגיקת יחידת מכירה מכל המערכת – באתר העובדים ובאפליקציית הלקוחות"
+  },
+  "#6a846807": {
+    "class": "automatable",
+    "feature": "warehouse-map",
+    "tests": [
+      "tests/warehouse-map/map-create.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a846807f5aefc96c2428d9a",
+    "title": "לאחר הוספת מדף לארון נסגרת אפשרות הוספת מדף ולא ניתן להוסיף מספר מדפים ברצף"
+  },
+  "#6a846775": {
+    "class": "automatable",
+    "feature": "inventory",
+    "tests": [
+      "tests/inventory/inventory-lifecycle.spec.ts",
+      "tests/inventory/inventory-views.spec.ts"
+    ],
+    "reason": "проверять в объединённой странице #13",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8467752e7a85c7bf272d06",
+    "title": "שינוי תצוגת רף מינימום והוספת עריכה מהירה בדף מלאי"
+  },
+  "#6a8315987ac07b581e7c5053": {
+    "class": "manual-only",
+    "feature": "ai",
+    "tests": [],
+    "reason": "AI: список текстом -> корзина · hash #6a831598 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8315987ac07b581e7c5053",
+    "title": "«הזמנה מהירה» — הלקוח מדביק רשימה בטקסט חופשי והמערכת בונה עגלה"
+  },
+  "#6a8466f2": {
+    "class": "automatable",
+    "feature": "inventory",
+    "tests": [
+      "tests/inventory/inventory-lifecycle.spec.ts",
+      "tests/inventory/inventory-views.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8466f2bd45cbfd06740575",
+    "title": "הסרת הסימון (יח') משדה הכמות בעת הוספת מוצר ל-מלאי"
+  },
+  "#6a843433": {
+    "class": "automatable",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/catalog-list.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a843433bfbe6fe7be2311b2",
+    "title": "הוספת התראה בדף הקטלוג על כמות המוצרים ללא תמונה"
+  },
+  "#6a819591": {
+    "class": "superseded",
+    "feature": "inventory",
+    "tests": [],
+    "reason": "перекрыто #13 (страницы каталога и склада объединены)",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a8195916c08a8b9cc3e5089",
+    "title": "בעמוד מלאי חסרה חלוקה לעמודים וכל המוצרים מוצגים ברשימה אחת"
+  },
+  "#6a7b3fa8": {
+    "class": "automatable",
+    "feature": "reports",
+    "tests": [
+      "tests/ui-general/accounting-report.spec.ts"
+    ],
+    "reason": "выгрузка документа для бухгалтера (download)",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a7b3fa8e6b4c6a45dca3d93",
+    "title": "להוסיף לאדמין אפשרות להפיק מסמך מרוכז לרואה חשבון לפי טווח תאריכים"
+  },
+  "#6a7b3e5d": {
+    "class": "manual-only",
+    "feature": "picking",
+    "tests": [],
+    "reason": "сканирование штрих-кода камерой",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a7b3e5de89b375ba1cff22f",
+    "title": "סריקת ברקוד בתהליך הליקוט אינה פונקציונלית ולא מזהה את המוצר"
+  },
+  "#6a788b0b": {
+    "class": "superseded",
+    "feature": "catalog",
+    "tests": [],
+    "reason": "перекрыто #31 (единицы продажи удалены)",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a788b0b0433857065476f54",
+    "title": "אין אפשרות להגדיר יותר מיחידת מכירה אחת למוצר בקטלוג"
+  },
+  "#6a788a95": {
+    "class": "automatable",
+    "feature": "cart-checkout",
+    "tests": [
+      "tests/client-ordering/product-card.spec.ts"
+    ],
+    "reason": "роль buyer",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a788a95c481eddb2ec1fe18",
+    "title": "ניתן להזמין באפליקציה כמות נמוכה מכמות ההזמנה המינימלית שהוגדרה באתר"
+  },
+  "#6a788a0c": {
+    "class": "manual-only",
+    "feature": "warehouse-map",
+    "tests": [],
+    "reason": "редизайн карты — визуал/дизайн",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a788a0cc47adb299125b264",
+    "title": "יש לעצב מחדש את המפה ולהפוך אותה לברורה, נוחה ואינפורמטיבית יותר"
+  },
+  "#6a74975a": {
+    "class": "automatable",
+    "feature": "payments",
+    "tests": [
+      "tests/ui-general/payments-dashboard.spec.ts"
+    ],
+    "reason": "частичные оплаты (ручной статус)",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a74975a3d0744c0015adfd9",
+    "title": "תשלום חלקי נוסף אינו מצטבר ליתרת התשלום, ולא ניתן לסגור את החוב בהדרגה"
+  },
+  "#6a749714": {
+    "class": "automatable",
+    "feature": "team-permissions",
+    "tests": [
+      "tests/auth-security/customer-isolation.spec.ts",
+      "tests/auth-security/impersonation.spec.ts",
+      "tests/auth-security/rep-direct.spec.ts"
+    ],
+    "reason": "вход под сотрудником только для менеджера",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a749714ff20e8ae2567be21",
+    "title": "לאפשר רק למנהל להתחבר לחשבון של עובדים אחרים (התחברות בשם משתמש)"
+  },
+  "#6a7496de": {
+    "class": "automatable",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/walk-in-sale.spec.ts"
+    ],
+    "reason": "продажа на месте за наличные",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a7496dea9762946a4c325d0",
+    "title": "להוסיף מסך מכירה במקום עבור לקוח שמשלם במזומן ולעדכן את המלאי בהתאם"
+  },
+  "#6a749638": {
+    "class": "automatable",
+    "feature": "inventory",
+    "tests": [
+      "tests/inventory/inventory-views.spec.ts"
+    ],
+    "reason": "download документа",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a749638d0f26e7482fd6f3d",
+    "title": "להוסיף כפתור להורדת מסמך הכולל את כל המוצרים ופרטי המלאי והמחירים"
+  },
+  "#6a7494e8": {
+    "class": "automatable",
+    "feature": "inventory",
+    "tests": [
+      "tests/inventory/inventory-lifecycle.spec.ts"
+    ],
+    "reason": "остаток после «לוקט»",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a7494e82bf20fde145fcc19",
+    "title": "להסיר את טקסט \"לאחר הזמנה\" מעמוד ניהול מלאי ולעדכן את המלאי רק לאחר סימון ההזמנה כ־לוקט"
+  },
+  "#6a7492a2": {
+    "class": "automatable",
+    "feature": "delivery",
+    "tests": [
+      "tests/delivery/delivery-board.spec.ts"
+    ],
+    "reason": "вёрстка таблицы тעודת משלוח",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a7492a2d81dd018c86a348d",
+    "title": "יישור לא תקין של טבלת הפריטים ב־תעודת משלוח"
+  },
+  "#6a7491c7": {
+    "class": "automatable",
+    "feature": "delivery",
+    "tests": [
+      "tests/delivery/delivery-board.spec.ts",
+      "tests/delivery/delivery-lifecycle.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a7491c7416c9162dba48843",
+    "title": "בעמוד הזמנות אין אפשרות לבחור תאריך אספקה בעת שיוך נהג"
+  },
+  "#6a749043": {
+    "class": "automatable",
+    "feature": "picking",
+    "tests": [
+      "tests/picking/picking-flow.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a749043674c1b535ed8c454",
+    "title": "ביטול בחירת הזמנה אינו נשמר – הליקוט עדיין כולל פריטים מההזמנה שבוטלה והסימון חוזר לאחר החזרה למסך"
+  },
+  "#6a748c9a": {
+    "class": "automatable",
+    "feature": "catalog-client",
+    "tests": [
+      "tests/client-ordering/product-card.spec.ts"
+    ],
+    "reason": "роль buyer",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a748c9af2537f840b549837",
+    "title": "טקסט \"כמות מוגבלת\" מוצג ללקוחות גם כאשר המוצר זמין במלאי"
+  },
+  "#6a748a64": {
+    "class": "automatable",
+    "feature": "inventory",
+    "tests": [
+      "tests/inventory/inventory-lifecycle.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a748a64f30ea285f4290557",
+    "title": "יש לאפשר הגדרת סף מלאי נמוך לכל מוצר ולהציג את יחידת המידה בעמודת המלאי"
+  },
+  "#6a7305f2": {
+    "class": "manual-only",
+    "feature": "delivery",
+    "tests": [],
+    "reason": "вид PDF (зум) — визуальная проверка",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a7305f27535c5cc2f218409",
+    "title": "מסמך PDF של תעודת משלוח מוצג בזום גבוה מדי, וחוסר עקביות בשמות ובמיקום של התאריכים"
+  },
+  "#6a730420": {
+    "class": "automatable",
+    "feature": "picking",
+    "tests": [
+      "tests/picking/picking-flow.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a730420197e2126a47897d7",
+    "title": "רשימת הפריטים אינה מתעדכנת לאחר שינוי ההזמנות שנבחרו לליקוט"
+  },
+  "#6a7302fa": {
+    "class": "automatable",
+    "feature": "picking",
+    "tests": [
+      "tests/picking/picking-flow.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a7302fab0bcf57eb177dfab",
+    "title": "כפתור הפקת המסלול אינו בולט, ולאחר הפקת מסלול לא מוצג מסלול על המפה"
+  },
+  "#6a730131": {
+    "class": "automatable",
+    "feature": "dashboard",
+    "tests": [
+      "tests/ui-general/payments-dashboard.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a730131430b72a9274998d3",
+    "title": "סכום הזמנה שלא שולם מחושב גם כהכנסה וגם כחוב פתוח"
+  },
+  "#6a72fb85": {
+    "class": "automatable",
+    "feature": "customers",
+    "tests": [
+      "tests/customers-pricing/customers-list.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a72fb856ae9b1c923b83235",
+    "title": "עמוד הלקוחות מחזיר שגיאת 400, והכפתור \"נסה שוב\" אינו פותר את הבעיה"
+  },
+  "#6a72faf3": {
+    "class": "automatable",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/order-lifecycle.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a72faf31af86e1a758aad0e",
+    "title": "ניתן לאשר הזמנה ללא מוצרים"
+  },
+  "#6a72f806": {
+    "class": "automatable",
+    "feature": "cart-checkout",
+    "tests": [
+      "tests/client-ordering/cart-checkout.spec.ts"
+    ],
+    "reason": "роль buyer",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a72f8067535c5cc2f20e357",
+    "title": "לא ניתן להשלים הזמנה למרות שהמוצר זמין במלאי"
+  },
+  "#6a72f704": {
+    "class": "automatable",
+    "feature": "picking",
+    "tests": [
+      "tests/picking/picking-flow.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a72f7044ab7afa481c8b8ca",
+    "title": "לאחר בחירת הזמנה, בסרגל הצד עדיין מוצגות הזמנות אחרות במקום רשימת המוצרים"
+  },
+  "#6a71f1cb": {
+    "class": "automatable",
+    "feature": "picking",
+    "tests": [],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a71f1cbb040d155953e64c1",
+    "title": "שיפור הניווט בין Map ל־Items List"
+  },
+  "#6a71f0ec": {
+    "class": "automatable",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/order-lifecycle.spec.ts"
+    ],
+    "reason": "AC Order Page",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a71f0ecd1ae4ee013a33de8",
+    "title": "קריטריוני קבלה — Order Page"
+  },
+  "#6a71ef21": {
+    "class": "automatable",
+    "feature": "warehouse-map",
+    "tests": [
+      "tests/warehouse-map/map-view.spec.ts"
+    ],
+    "reason": "Map Page",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a71ef219ff21a56174099d6",
+    "title": "Map Page – חסרים רכיבים ופונקציות לניהול מיקומים ופריטים"
+  },
+  "#6a7192ed": {
+    "class": "automatable",
+    "feature": "picking",
+    "tests": [
+      "tests/picking/picking-flow.spec.ts",
+      "tests/picking/picking-views.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a7192edcd887991e63ca564",
+    "title": "הצגת הפריטים והכמות"
+  },
+  "#6a70b79f": {
+    "class": "automatable",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/catalog-lifecycle.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a70b79fb06981481745f708",
+    "title": "מוצר חדש מופיע בעמוד האחרון במקום בתחילת הרשימה"
+  },
+  "#6a70b4a9": {
+    "class": "automatable",
+    "feature": "ui-general",
+    "tests": [
+      "tests/ui-general/navigation.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a70b4a9b4cbca872d502bad",
+    "title": "כפתורי לוח בקרה ו־הגדרות אינם פעילים ולא מאפשרים מעבר למסכים המתאימים"
+  },
+  "#6a70b389": {
+    "class": "automatable",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/catalog-list.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a70b389cfd771b7a7bf5162",
+    "title": "קיימים שני פילטרים זהים לפי ק״ג בעמוד הקטלוג"
+  },
+  "#6a70b2db": {
+    "class": "automatable",
+    "feature": "dashboard",
+    "tests": [
+      "tests/ui-general/navigation.spec.ts"
+    ],
+    "reason": "роль נציג — нужен аккаунт",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a70b2db48194c7d3f29c82e",
+    "title": "לנציג מכירות חסר עמוד לוח בקרה עם נתונים של הלקוחות המשויכים אליו בלבד"
+  },
+  "#6a70b149": {
+    "class": "superseded",
+    "feature": "inventory",
+    "tests": [
+      "tests/inventory/inventory-lifecycle.spec.ts",
+      "tests/inventory/inventory-views.spec.ts"
+    ],
+    "reason": "перекрыто #13 (склад в объединённой странице)",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a70b149dd3c8fc3fd9b8151",
+    "title": "למפיץ חסר מסך ניהול מלאי בהתאם לעיצוב, ואין אפשרות לצפות בנתוני המלאי"
+  },
+  "#6a70b0b7": {
+    "class": "automatable",
+    "feature": "delivery",
+    "tests": [
+      "tests/delivery/delivery-board.spec.ts",
+      "tests/delivery/delivery-lifecycle.spec.ts",
+      "tests/delivery/driver.spec.ts"
+    ],
+    "reason": "роль נהג — нужен аккаунт",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a70b0b7fc28e23b23bf55d0",
+    "title": "לנהג אין גישה לתעודת המשלוח לאחר קבלת ההזמנה"
+  },
+  "#6a70b080": {
+    "class": "automatable",
+    "feature": "delivery",
+    "tests": [
+      "tests/delivery/delivery-board.spec.ts",
+      "tests/delivery/delivery-lifecycle.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a70b08090afc08fc54299c3",
+    "title": "לא ניתן לבחור או לשנות נהג לאחר שההזמנה סומנה כ־במשלוח"
+  },
+  "#6a70ae75": {
+    "class": "automatable",
+    "feature": "delivery",
+    "tests": [
+      "tests/delivery/delivery-board.spec.ts",
+      "tests/delivery/driver.spec.ts"
+    ],
+    "reason": "роль נהג — нужен аккаунт",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a70ae757ae420f28c2249a6",
+    "title": "תיאור שגוי בעמוד המשלוחים עבור נהג"
+  },
+  "#6a70ac8e": {
+    "class": "automatable",
+    "feature": "picking",
+    "tests": [
+      "tests/picking/picking-flow.spec.ts"
+    ],
+    "reason": "роль נציג — нужен аккаунт",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a70ac8e39b77569c796d6d2",
+    "title": "סטטוס הליקוט אינו מתעדכן אצל נציג המכירות לאחר שכל הפריטים נלקטו"
+  },
+  "#6a70aab4": {
+    "class": "automatable",
+    "feature": "picking",
+    "tests": [
+      "tests/picking/picking-flow.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a70aab4d3993d181559294f",
+    "title": "יישור שגוי של ה־Placeholder בשדה הזנת הקוד בעמוד רשימת ליקוט"
+  },
+  "#6a70a5da": {
+    "class": "automatable",
+    "feature": "customers",
+    "tests": [
+      "tests/customers-pricing/customer-lifecycle.spec.ts",
+      "tests/customers-pricing/customers-list.spec.ts"
+    ],
+    "reason": "",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a70a5dafabb5686797e4a74",
+    "title": "חסרות הגבלות ולידציה בשדות יצירה ועריכת לקוח, וניתן להזין ערכים ארוכים או בפורמט לא תקין."
+  },
+  "#6a70a1e1": {
+    "class": "automatable",
+    "feature": "customers",
+    "tests": [
+      "tests/customers-pricing/customers-list.spec.ts"
+    ],
+    "reason": "RTL",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a70a1e1f8512f1b68b893a4",
+    "title": "בעיות יישור RTL בכרטיס לקוח – כרטיסי המידע וכפתור החזרה אינם תואמים לממשק RTL."
+  },
+  "#6a70728a": {
+    "class": "manual-only",
+    "feature": "team-permissions",
+    "tests": [],
+    "reason": "приглашение сотрудника = создание аккаунта/email",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a70728ab2a6dd9757304b53",
+    "title": "שיפור תהליך הזמנת עובדים והרשאות במערכת."
+  },
+  "#6a6f3aef": {
+    "class": "manual-only",
+    "feature": "auth",
+    "tests": [],
+    "reason": "подтверждение email",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a6f3aefc9c6289b2f03274e",
+    "title": "לאחר אימות כתובת הדוא\"ל, המערכת עדיין מציגה שהדוא\"ל אינו מאומת ולא מאפשרת להתחבר."
+  },
+  "#6a6f302c": {
+    "class": "automatable",
+    "feature": "auth",
+    "tests": [
+      "tests/auth-security/landing-and-session.spec.ts"
+    ],
+    "reason": "вход и сохранение сессии",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a6f302cdcc87aa41eaeb959",
+    "title": "לאחר התחברות עם פרטי התחברות תקינים, המשתמש מתנתק באופן מיידי ואינו יכול להיכנס למערכת."
+  },
+  "#6a677c6b49d05445a236763f": {
+    "class": "automatable",
+    "feature": "ui-general",
+    "tests": [
+      "tests/customers-pricing/customers-list.spec.ts",
+      "tests/orders/orders-list.spec.ts",
+      "tests/ui-general/load-errors.spec.ts",
+      "tests/ui-general/navigation.spec.ts"
+    ],
+    "reason": " · hash #6a677c6b не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a677c6b49d05445a236763f",
+    "title": "באג עיצוב: חסר סימן ההרחבה '‹' בשורות תפריט הצד"
+  },
+  "#6a677c6b49d05445a2367640": {
+    "class": "automatable",
+    "feature": "customers",
+    "tests": [
+      "tests/customers-pricing/customers-list.spec.ts",
+      "tests/orders/orders-list.spec.ts",
+      "tests/ui-general/load-errors.spec.ts",
+      "tests/ui-general/navigation.spec.ts"
+    ],
+    "reason": " · hash #6a677c6b не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a677c6b49d05445a2367640",
+    "title": "באג: מונה ההזמנות בכרטיס הלקוח סותר את הטבלה שמתחתיו (5 מול 6)"
+  },
+  "#6a677c6b49d05445a2367641": {
+    "class": "automatable",
+    "feature": "ui-general",
+    "tests": [
+      "tests/customers-pricing/customers-list.spec.ts",
+      "tests/orders/orders-list.spec.ts",
+      "tests/ui-general/load-errors.spec.ts",
+      "tests/ui-general/navigation.spec.ts"
+    ],
+    "reason": "состояние ошибки — через перехват сети · hash #6a677c6b не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a677c6b49d05445a2367641",
+    "title": "באג UX רוחבי: כל שאר השאילתות עדיין מגיעות למצב שגיאה אחרי ~20 שניות"
+  },
+  "#6a6755e0099e87a09333bedd": {
+    "class": "automatable",
+    "feature": "customers",
+    "tests": [
+      "tests/auth-security/impersonation.spec.ts",
+      "tests/auth-security/rep-direct.spec.ts",
+      "tests/customers-pricing/customers-list.spec.ts",
+      "tests/orders/orders-list.spec.ts",
+      "tests/ui-general/navigation.spec.ts"
+    ],
+    "reason": "визуал vs Figma — частично · hash #6a6755e0 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a6755e0099e87a09333bedd",
+    "title": "באג עיצוב: כרטיס הלקוח מוצג במראה הפוך מול Figma 71:644"
+  },
+  "#6a6755e0099e87a09333bede": {
+    "class": "automatable",
+    "feature": "ui-general",
+    "tests": [
+      "tests/auth-security/impersonation.spec.ts",
+      "tests/auth-security/rep-direct.spec.ts",
+      "tests/customers-pricing/customers-list.spec.ts",
+      "tests/orders/orders-list.spec.ts",
+      "tests/ui-general/navigation.spec.ts"
+    ],
+    "reason": " · hash #6a6755e0 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a6755e0099e87a09333bede",
+    "title": "באג עיצוב: סדר תפריט הצד שונה מכל הקומפים וחסר כפתור כיווץ"
+  },
+  "#6a6755e0099e87a09333bedf": {
+    "class": "automatable",
+    "feature": "orders",
+    "tests": [
+      "tests/auth-security/impersonation.spec.ts",
+      "tests/auth-security/rep-direct.spec.ts",
+      "tests/customers-pricing/customers-list.spec.ts",
+      "tests/orders/orders-list.spec.ts",
+      "tests/ui-general/navigation.spec.ts"
+    ],
+    "reason": " · hash #6a6755e0 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a6755e0099e87a09333bedf",
+    "title": "באג עיצוב: חסרים חצי הקודם/הבא בעימוד רשימת ההזמנות"
+  },
+  "#6a6755e0099e87a09333bee0": {
+    "class": "automatable",
+    "feature": "security",
+    "tests": [
+      "tests/auth-security/impersonation.spec.ts",
+      "tests/auth-security/rep-direct.spec.ts",
+      "tests/customers-pricing/customers-list.spec.ts",
+      "tests/orders/orders-list.spec.ts",
+      "tests/ui-general/navigation.spec.ts"
+    ],
+    "reason": "через API · hash #6a6755e0 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a6755e0099e87a09333bee0",
+    "title": "אבטחה: נציג מכירות יכול לקבוע unit_price שרירותי דרך ה-API הגולמי"
+  },
+  "#6a6755e0099e87a09333bee1": {
+    "class": "duplicate",
+    "feature": "orders",
+    "tests": [
+      "tests/auth-security/impersonation.spec.ts",
+      "tests/auth-security/rep-direct.spec.ts",
+      "tests/customers-pricing/customers-list.spec.ts",
+      "tests/orders/orders-list.spec.ts",
+      "tests/ui-general/navigation.spec.ts"
+    ],
+    "reason": "= #82 (тот же 20-сек. таймаут ошибки) · hash #6a6755e0 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a6755e0099e87a09333bee1",
+    "title": "באג UX: מצב השגיאה של רשימת ההזמנות מופיע רק אחרי ~20 שניות ומציג 0 בינתיים"
+  },
+  "#6a6726592f8120fc6438ef13": {
+    "class": "automatable",
+    "feature": "auth",
+    "tests": [
+      "tests/auth-security/impersonation.spec.ts",
+      "tests/auth-security/landing-and-session.spec.ts",
+      "tests/auth-security/rep-direct.spec.ts",
+      "tests/client-ordering/product-card.spec.ts"
+    ],
+    "reason": "роли נציג/מחסן/נהג — нужны аккаунты · hash #6a672659 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a6726592f8120fc6438ef13",
+    "title": "באג: נציג מכירות / מחסנאי / נהג נתקעים בלולאת 403 אחרי התחברות"
+  },
+  "#6a6726592f8120fc6438ef14": {
+    "class": "automatable",
+    "feature": "auth",
+    "tests": [
+      "tests/auth-security/impersonation.spec.ts",
+      "tests/auth-security/landing-and-session.spec.ts",
+      "tests/auth-security/rep-direct.spec.ts",
+      "tests/client-ordering/product-card.spec.ts"
+    ],
+    "reason": "роль buyer · hash #6a672659 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a6726592f8120fc6438ef14",
+    "title": "באג: לקוח שמגיע לכתובת לא מוכרת מקבל 403 במקום את דף הבית שלו"
+  },
+  "#6a6726592f8120fc6438ef15": {
+    "class": "automatable",
+    "feature": "catalog-client",
+    "tests": [
+      "tests/auth-security/impersonation.spec.ts",
+      "tests/auth-security/landing-and-session.spec.ts",
+      "tests/auth-security/rep-direct.spec.ts",
+      "tests/client-ordering/product-card.spec.ts"
+    ],
+    "reason": "роль buyer · hash #6a672659 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a6726592f8120fc6438ef15",
+    "title": "באג עיצוב: כפתור שיתוף חסר בכרטיס המוצר של הלקוח (Figma 111:1340)"
+  },
+  "#6a5cb979272b3aa6ba2c7fd8": {
+    "class": "automatable",
+    "feature": "warehouse-map",
+    "tests": [
+      "tests/inventory/inventory-lifecycle.spec.ts",
+      "tests/inventory/inventory-views.spec.ts",
+      "tests/picking/picking-flow.spec.ts",
+      "tests/picking/picking-views.spec.ts",
+      "tests/warehouse-map/map-edit-readonly.spec.ts",
+      "tests/warehouse-map/map-view.spec.ts",
+      "tests/warehouse-map/map-worker.spec.ts"
+    ],
+    "reason": " · hash #6a5cb979 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a5cb979272b3aa6ba2c7fd8",
+    "title": "פיתוח: בונה מפת האחסון (פריסת מחסן ויזואלית)"
+  },
+  "#6a5cb979272b3aa6ba2c7fd9": {
+    "class": "automatable",
+    "feature": "warehouse-map",
+    "tests": [
+      "tests/inventory/inventory-lifecycle.spec.ts",
+      "tests/inventory/inventory-views.spec.ts",
+      "tests/picking/picking-flow.spec.ts",
+      "tests/picking/picking-views.spec.ts",
+      "tests/warehouse-map/map-edit-readonly.spec.ts",
+      "tests/warehouse-map/map-view.spec.ts",
+      "tests/warehouse-map/map-worker.spec.ts"
+    ],
+    "reason": " · hash #6a5cb979 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a5cb979272b3aa6ba2c7fd9",
+    "title": "פיתוח: סוגי מיקומי אחסון טיפוסיים (מדף/תא, קרטון/משטח, רצפה, אזור קר)"
+  },
+  "#6a5cb979272b3aa6ba2c7fda": {
+    "class": "automatable",
+    "feature": "warehouse-map",
+    "tests": [
+      "tests/inventory/inventory-lifecycle.spec.ts",
+      "tests/inventory/inventory-views.spec.ts",
+      "tests/picking/picking-flow.spec.ts",
+      "tests/picking/picking-views.spec.ts",
+      "tests/warehouse-map/map-edit-readonly.spec.ts",
+      "tests/warehouse-map/map-view.spec.ts",
+      "tests/warehouse-map/map-worker.spec.ts"
+    ],
+    "reason": " · hash #6a5cb979 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a5cb979272b3aa6ba2c7fda",
+    "title": "פיתוח: תצוגת מפה חיה — תפוסה ומלאי"
+  },
+  "#6a5cb979272b3aa6ba2c7fdb": {
+    "class": "automatable",
+    "feature": "warehouse-map",
+    "tests": [
+      "tests/inventory/inventory-lifecycle.spec.ts",
+      "tests/inventory/inventory-views.spec.ts",
+      "tests/picking/picking-flow.spec.ts",
+      "tests/picking/picking-views.spec.ts",
+      "tests/warehouse-map/map-edit-readonly.spec.ts",
+      "tests/warehouse-map/map-view.spec.ts",
+      "tests/warehouse-map/map-worker.spec.ts"
+    ],
+    "reason": " · hash #6a5cb979 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a5cb979272b3aa6ba2c7fdb",
+    "title": "פיתוח: זרימות תנועה על המפה (קליטה/ליקוט/חידוש/העברה/החזרות)"
+  },
+  "#6a5cb979272b3aa6ba2c7fdc": {
+    "class": "automatable",
+    "feature": "picking",
+    "tests": [
+      "tests/inventory/inventory-lifecycle.spec.ts",
+      "tests/inventory/inventory-views.spec.ts",
+      "tests/picking/picking-flow.spec.ts",
+      "tests/picking/picking-views.spec.ts",
+      "tests/warehouse-map/map-edit-readonly.spec.ts",
+      "tests/warehouse-map/map-view.spec.ts",
+      "tests/warehouse-map/map-worker.spec.ts"
+    ],
+    "reason": " · hash #6a5cb979 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a5cb979272b3aa6ba2c7fdc",
+    "title": "פיתוח: אסטרטגיות מסלול ליקוט מרובות (סריאלי/אזורי/גלי)"
+  },
+  "#6a5cb979272b3aa6ba2c7fdd": {
+    "class": "automatable",
+    "feature": "inventory",
+    "tests": [
+      "tests/inventory/inventory-lifecycle.spec.ts",
+      "tests/inventory/inventory-views.spec.ts",
+      "tests/picking/picking-flow.spec.ts",
+      "tests/picking/picking-views.spec.ts",
+      "tests/warehouse-map/map-edit-readonly.spec.ts",
+      "tests/warehouse-map/map-view.spec.ts",
+      "tests/warehouse-map/map-worker.spec.ts"
+    ],
+    "reason": "приёмка + место хранения · hash #6a5cb979 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a5cb979272b3aa6ba2c7fdd",
+    "title": "פיתוח: קליטת מוצרים ותיעוד מיקום אחסון"
+  },
+  "#6a5cb979272b3aa6ba2c7fde": {
+    "class": "automatable",
+    "feature": "warehouse-map",
+    "tests": [
+      "tests/inventory/inventory-lifecycle.spec.ts",
+      "tests/inventory/inventory-views.spec.ts",
+      "tests/picking/picking-flow.spec.ts",
+      "tests/picking/picking-views.spec.ts",
+      "tests/warehouse-map/map-edit-readonly.spec.ts",
+      "tests/warehouse-map/map-view.spec.ts",
+      "tests/warehouse-map/map-worker.spec.ts"
+    ],
+    "reason": " · hash #6a5cb979 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a5cb979272b3aa6ba2c7fde",
+    "title": "פיתוח: ניהול מיקומי אחסון וסידור המחסן"
+  },
+  "#6a5cb979272b3aa6ba2c7fdf": {
+    "class": "automatable",
+    "feature": "picking",
+    "tests": [
+      "tests/inventory/inventory-lifecycle.spec.ts",
+      "tests/inventory/inventory-views.spec.ts",
+      "tests/picking/picking-flow.spec.ts",
+      "tests/picking/picking-views.spec.ts",
+      "tests/warehouse-map/map-edit-readonly.spec.ts",
+      "tests/warehouse-map/map-view.spec.ts",
+      "tests/warehouse-map/map-worker.spec.ts"
+    ],
+    "reason": " · hash #6a5cb979 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a5cb979272b3aa6ba2c7fdf",
+    "title": "פיתוח: יצירת מסלול ליקוט להזמנה"
+  },
+  "#6a5cb979272b3aa6ba2c7fe0": {
+    "class": "automatable",
+    "feature": "picking",
+    "tests": [
+      "tests/inventory/inventory-lifecycle.spec.ts",
+      "tests/inventory/inventory-views.spec.ts",
+      "tests/picking/picking-flow.spec.ts",
+      "tests/picking/picking-views.spec.ts",
+      "tests/warehouse-map/map-edit-readonly.spec.ts",
+      "tests/warehouse-map/map-view.spec.ts",
+      "tests/warehouse-map/map-worker.spec.ts"
+    ],
+    "reason": " · hash #6a5cb979 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a5cb979272b3aa6ba2c7fe0",
+    "title": "פיתוח: רשימת ליקוט וביצוע הליקוט (Pick List)"
+  },
+  "#6a38cf61": {
+    "class": "manual-only",
+    "feature": "ui-general",
+    "tests": [],
+    "reason": "задача дизайна/структуры",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf61fb5175112e008fba",
+    "title": "עיצוב מבנה ניווט"
+  },
+  "#6a38cf607595a113f062809c": {
+    "class": "manual-only",
+    "feature": "ui-general",
+    "tests": [],
+    "reason": "настройка проекта · hash #6a38cf60 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf607595a113f062809c",
+    "title": "הגדרת מבנה פרויקטי"
+  },
+  "#6a38cf604604203e764fa80f": {
+    "class": "manual-only",
+    "feature": "ui-general",
+    "tests": [],
+    "reason": "модель данных · hash #6a38cf60 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf604604203e764fa80f",
+    "title": "עיצוב מבנה נתונים"
+  },
+  "#6a38cf5f85ad8a1d7f8a9175": {
+    "class": "automatable",
+    "feature": "orders",
+    "tests": [
+      "tests/auth-security/rep-direct.spec.ts",
+      "tests/client-ordering/cart-checkout.spec.ts",
+      "tests/orders/order-lifecycle.spec.ts",
+      "tests/orders/orders-list.spec.ts",
+      "tests/orders/orders-rep.spec.ts"
+    ],
+    "reason": " · hash #6a38cf5f не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf5f85ad8a1d7f8a9175",
+    "title": "פיתוח: רשימת הזמנות נכנסות"
+  },
+  "#6a38cf5f125a16091d3b25bb": {
+    "class": "automatable",
+    "feature": "cart-checkout",
+    "tests": [
+      "tests/auth-security/rep-direct.spec.ts",
+      "tests/client-ordering/cart-checkout.spec.ts",
+      "tests/orders/order-lifecycle.spec.ts",
+      "tests/orders/orders-list.spec.ts",
+      "tests/orders/orders-rep.spec.ts"
+    ],
+    "reason": " · hash #6a38cf5f не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf5f125a16091d3b25bb",
+    "title": "פיתוח: ביצוע הזמנה ואישור קליטה"
+  },
+  "#6a38cf5fe047480c7bc23734": {
+    "class": "automatable",
+    "feature": "cart-checkout",
+    "tests": [
+      "tests/auth-security/rep-direct.spec.ts",
+      "tests/client-ordering/cart-checkout.spec.ts",
+      "tests/orders/order-lifecycle.spec.ts",
+      "tests/orders/orders-list.spec.ts",
+      "tests/orders/orders-rep.spec.ts"
+    ],
+    "reason": " · hash #6a38cf5f не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf5fe047480c7bc23734",
+    "title": "פיתוח: עגלת קניות"
+  },
+  "#6a38cf5ec1cbdf752e30d907": {
+    "class": "automatable",
+    "feature": "catalog-client",
+    "tests": [
+      "tests/catalog/catalog-buyer.spec.ts",
+      "tests/catalog/catalog-lifecycle.spec.ts",
+      "tests/client-ordering/catalog.spec.ts"
+    ],
+    "reason": " · hash #6a38cf5e не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf5ec1cbdf752e30d907",
+    "title": "פיתוח: גלישה, חיפוש וסינון בקטלוג"
+  },
+  "#6a38cf5e524a187d2c244c49": {
+    "class": "automatable",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/catalog-buyer.spec.ts",
+      "tests/catalog/catalog-lifecycle.spec.ts",
+      "tests/client-ordering/catalog.spec.ts"
+    ],
+    "reason": " · hash #6a38cf5e не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf5e524a187d2c244c49",
+    "title": "פיתוח: ניהול זמינות מוצר"
+  },
+  "#6a38cf5e3d2460819a2b5cc6": {
+    "class": "automatable",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/catalog-buyer.spec.ts",
+      "tests/catalog/catalog-lifecycle.spec.ts",
+      "tests/client-ordering/catalog.spec.ts"
+    ],
+    "reason": " · hash #6a38cf5e не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf5e3d2460819a2b5cc6",
+    "title": "פיתוח: קטגוריות והיררכיית קטלוג"
+  },
+  "#6a38cf5e1aaf79b060e8be3d": {
+    "class": "automatable",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/catalog-buyer.spec.ts",
+      "tests/catalog/catalog-lifecycle.spec.ts",
+      "tests/client-ordering/catalog.spec.ts"
+    ],
+    "reason": "загрузка изображения · hash #6a38cf5e не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf5e1aaf79b060e8be3d",
+    "title": "פיתוח: תמונות מוצר"
+  },
+  "#6a38cf5d21ef8df2464230b4": {
+    "class": "automatable",
+    "feature": "catalog",
+    "tests": [
+      "tests/auth-security/rep-direct.spec.ts",
+      "tests/catalog/catalog-buyer.spec.ts",
+      "tests/catalog/catalog-lifecycle.spec.ts",
+      "tests/customers-pricing/customer-lifecycle.spec.ts",
+      "tests/customers-pricing/customers-access.spec.ts",
+      "tests/customers-pricing/customers-list.spec.ts"
+    ],
+    "reason": " · hash #6a38cf5d не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf5d21ef8df2464230b4",
+    "title": "פיתוח: ניהול קטלוג מוצרים"
+  },
+  "#6a38cf5d24e149be876a85d7": {
+    "class": "automatable",
+    "feature": "customers",
+    "tests": [
+      "tests/auth-security/rep-direct.spec.ts",
+      "tests/catalog/catalog-buyer.spec.ts",
+      "tests/catalog/catalog-lifecycle.spec.ts",
+      "tests/customers-pricing/customer-lifecycle.spec.ts",
+      "tests/customers-pricing/customers-access.spec.ts",
+      "tests/customers-pricing/customers-list.spec.ts"
+    ],
+    "reason": " · hash #6a38cf5d не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf5d24e149be876a85d7",
+    "title": "פיתוח: מסך הזמנה של הלקוח (תצוגת מפיץ)"
+  },
+  "#6a38cf5dcecd036c5cfe53b7": {
+    "class": "automatable",
+    "feature": "customers",
+    "tests": [
+      "tests/auth-security/rep-direct.spec.ts",
+      "tests/catalog/catalog-buyer.spec.ts",
+      "tests/catalog/catalog-lifecycle.spec.ts",
+      "tests/customers-pricing/customer-lifecycle.spec.ts",
+      "tests/customers-pricing/customers-access.spec.ts",
+      "tests/customers-pricing/customers-list.spec.ts"
+    ],
+    "reason": " · hash #6a38cf5d не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf5dcecd036c5cfe53b7",
+    "title": "פיתוח: ניהול לקוחות עסקיים"
+  },
+  "#6a38cf5c603cae90278b7d37": {
+    "class": "automatable",
+    "feature": "catalog-client",
+    "tests": [
+      "tests/client-ordering/order-history.spec.ts",
+      "tests/orders/order-lifecycle.spec.ts",
+      "tests/orders/orders-list.spec.ts"
+    ],
+    "reason": "история заказов клиента · hash #6a38cf5c не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf5c603cae90278b7d37",
+    "title": "פיתוח: היסטוריית הזמנות של הלקוח"
+  },
+  "#6a38cf5c9ff5ddbed4fa4622": {
+    "class": "automatable",
+    "feature": "orders",
+    "tests": [
+      "tests/client-ordering/order-history.spec.ts",
+      "tests/orders/order-lifecycle.spec.ts",
+      "tests/orders/orders-list.spec.ts"
+    ],
+    "reason": " · hash #6a38cf5c не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf5c9ff5ddbed4fa4622",
+    "title": "פיתוח: סינון ומיון רשימת הזמנות"
+  },
+  "#6a38cf5c4f423b6ff057ea2d": {
+    "class": "automatable",
+    "feature": "orders",
+    "tests": [
+      "tests/client-ordering/order-history.spec.ts",
+      "tests/orders/order-lifecycle.spec.ts",
+      "tests/orders/orders-list.spec.ts"
+    ],
+    "reason": "статус доставки · hash #6a38cf5c не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf5c4f423b6ff057ea2d",
+    "title": "פיתוח: ניהול סטטוס משלוח"
+  },
+  "#6a38cf5c8c04381ad7feb126": {
+    "class": "automatable",
+    "feature": "orders",
+    "tests": [
+      "tests/client-ordering/order-history.spec.ts",
+      "tests/orders/order-lifecycle.spec.ts",
+      "tests/orders/orders-list.spec.ts"
+    ],
+    "reason": "статус оплаты · hash #6a38cf5c не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf5c8c04381ad7feb126",
+    "title": "פיתוח: ניהול סטטוס תשלום"
+  },
+  "#6a38cf5b38aba426b4c2b5ec": {
+    "class": "automatable",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/order-lifecycle.spec.ts"
+    ],
+    "reason": " · hash #6a38cf5b не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf5b38aba426b4c2b5ec",
+    "title": "פיתוח: עריכת הזמנה לפני אישור"
+  },
+  "#6a38cf5b9eb4a7edb2f0beea": {
+    "class": "automatable",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/order-lifecycle.spec.ts"
+    ],
+    "reason": " · hash #6a38cf5b не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf5b9eb4a7edb2f0beea",
+    "title": "פיתוח: אישור / דחיית הזמנה"
+  },
+  "#6a38cf5a751c05367bf64505": {
+    "class": "manual-only",
+    "feature": "customers",
+    "tests": [
+      "tests/auth-security/customer-isolation.spec.ts",
+      "tests/auth-security/rep-direct.spec.ts",
+      "tests/ui-general/mobile-layout.spec.ts"
+    ],
+    "reason": "приглашение = создание аккаунта · hash #6a38cf5a не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf5a751c05367bf64505",
+    "title": "פיתוח: הזמנת לקוח חדש לקטלוג"
+  },
+  "#6a38cf5ab634bde911173663": {
+    "class": "automatable",
+    "feature": "ui-general",
+    "tests": [
+      "tests/auth-security/customer-isolation.spec.ts",
+      "tests/auth-security/rep-direct.spec.ts",
+      "tests/ui-general/mobile-layout.spec.ts"
+    ],
+    "reason": "RTL/@mobile · hash #6a38cf5a не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf5ab634bde911173663",
+    "title": "פיתוח: ממשק עברית RTL ורספונסיביות מובייל"
+  },
+  "#6a38cf5af24b67a589bd7efc": {
+    "class": "automatable",
+    "feature": "security",
+    "tests": [
+      "tests/auth-security/customer-isolation.spec.ts",
+      "tests/auth-security/rep-direct.spec.ts",
+      "tests/ui-general/mobile-layout.spec.ts"
+    ],
+    "reason": "изоляция данных между клиентами — нужен 2-й buyer · hash #6a38cf5a не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf5af24b67a589bd7efc",
+    "title": "פיתוח: בידוד נתונים פר-לקוח (Multi-tenant)"
+  },
+  "#6a38cf59a9a74a239255e417": {
+    "class": "automatable",
+    "feature": "auth",
+    "tests": [
+      "tests/auth-security/customer-isolation.spec.ts",
+      "tests/auth-security/impersonation.spec.ts",
+      "tests/auth-security/landing-and-session.spec.ts",
+      "tests/customers-pricing/customers-access.spec.ts",
+      "tests/customers-pricing/pricing-lifecycle.spec.ts"
+    ],
+    "reason": " · hash #6a38cf59 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf59a9a74a239255e417",
+    "title": "פיתוח: אימות והרשאות"
+  },
+  "#6a38cf5936b928d40647f223": {
+    "class": "automatable",
+    "feature": "pricing",
+    "tests": [
+      "tests/auth-security/customer-isolation.spec.ts",
+      "tests/auth-security/impersonation.spec.ts",
+      "tests/auth-security/landing-and-session.spec.ts",
+      "tests/customers-pricing/customers-access.spec.ts",
+      "tests/customers-pricing/pricing-lifecycle.spec.ts"
+    ],
+    "reason": " · hash #6a38cf59 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf5936b928d40647f223",
+    "title": "פיתוח: מחירון/הנחה ברמת קבוצת מוצרים ללקוח"
+  },
+  "#6a38cf595c04a982ad93485d": {
+    "class": "automatable",
+    "feature": "pricing",
+    "tests": [
+      "tests/auth-security/customer-isolation.spec.ts",
+      "tests/auth-security/impersonation.spec.ts",
+      "tests/auth-security/landing-and-session.spec.ts",
+      "tests/customers-pricing/customers-access.spec.ts",
+      "tests/customers-pricing/pricing-lifecycle.spec.ts"
+    ],
+    "reason": " · hash #6a38cf59 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf595c04a982ad93485d",
+    "title": "פיתוח: מחיר פר-לקוח ברמת מוצר"
+  },
+  "#6a38cf58b081565cf54a9657": {
+    "class": "automatable",
+    "feature": "pricing",
+    "tests": [
+      "tests/customers-pricing/customers-access.spec.ts",
+      "tests/customers-pricing/pricing-lifecycle.spec.ts"
+    ],
+    "reason": " · hash #6a38cf58 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf58b081565cf54a9657",
+    "title": "פיתוח: ניהול קבוצות מוצרים לתמחור"
+  },
+  "#6a38cf58d4a743e906664d5e": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [
+      "tests/customers-pricing/customers-access.spec.ts",
+      "tests/customers-pricing/pricing-lifecycle.spec.ts"
+    ],
+    "reason": "мокап/дизайн · hash #6a38cf58 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf58d4a743e906664d5e",
+    "title": "עיצוב מוקאפ: בקרת זמינות מוצר"
+  },
+  "#6a38cf57ff749823adafb48d": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf57 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf57ff749823adafb48d",
+    "title": "עיצוב מוקאפ: ניהול קטגוריות והירארכיה"
+  },
+  "#6a38cf577ce3b7642bc4ce74": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf57 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf577ce3b7642bc4ce74",
+    "title": "עיצוב מוקאפ: ניהול תמונות מוצר"
+  },
+  "#6a38cf578b69bae4c7c117bf": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf57 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf578b69bae4c7c117bf",
+    "title": "עיצוב מוקאפ: טופס מוצר (יצירה/עריכה)"
+  },
+  "#6a38cf5621ec6f99d4bf1080": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf56 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf5621ec6f99d4bf1080",
+    "title": "עיצוב מוקאפ: רשימת מוצרים (ניהול)"
+  },
+  "#6a38cf56d767dd65503bf7f7": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf56 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf56d767dd65503bf7f7",
+    "title": "עיצוב מוקאפ: אישור / דחיית הזמנה"
+  },
+  "#6a38cf56a7ca295c04b3059c": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf56 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf56a7ca295c04b3059c",
+    "title": "עיצוב מוקאפ: פרטי הזמנה (מפיץ)"
+  },
+  "#6a38cf56e23bda8f526ea220": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf56 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf56e23bda8f526ea220",
+    "title": "עיצוב מוקאפ: רשימת הזמנות נכנסות"
+  },
+  "#6a38cf5556c7471e4629bac0": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf55 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf5556c7471e4629bac0",
+    "title": "עיצוב מוקאפ: אישור קליטת הזמנה"
+  },
+  "#6a38cf5585ad8a1d7f8a916f": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf55 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf5585ad8a1d7f8a916f",
+    "title": "עיצוב מוקאפ: ביצוע הזמנה"
+  },
+  "#6a38cf557b26bf3d4c82da4a": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf55 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf557b26bf3d4c82da4a",
+    "title": "עיצוב מוקאפ: עגלת קניות"
+  },
+  "#6a38cf546611fe6acf25b6dd": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf54 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf546611fe6acf25b6dd",
+    "title": "עיצוב מוקאפ: כרטיס מוצר (לקוח)"
+  },
+  "#6a38cf54e59ca9d00f5b556d": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf54 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf54e59ca9d00f5b556d",
+    "title": "עיצוב מוקאפ: קטלוג הלקוח (גלישה וסינון)"
+  },
+  "#6a38cf5472caa760c64e6f9b": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf54 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf5472caa760c64e6f9b",
+    "title": "עיצוב מוקאפ: כרטיס לקוח (תצוגת מפיץ)"
+  },
+  "#6a38cf53ff44ff8862b0351c": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf53 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf53ff44ff8862b0351c",
+    "title": "עיצוב מוקאפ: טופס לקוח עסקי"
+  },
+  "#6a38cf532ae9ded66ddda0fe": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf53 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf532ae9ded66ddda0fe",
+    "title": "עיצוב מוקאפ: רשימת לקוחות עסקיים"
+  },
+  "#6a38cf52d282c2e7e99af2da": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf52 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf52d282c2e7e99af2da",
+    "title": "עיצוב מוקאפ: היסטוריית הזמנות (לקוח)"
+  },
+  "#6a38cf52630e8f3d8bd25072": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf52 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf52630e8f3d8bd25072",
+    "title": "עיצוב מוקאפ: סינון ומיון הזמנות"
+  },
+  "#6a38cf528ee0178a36b707d5": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf52 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf528ee0178a36b707d5",
+    "title": "עיצוב מוקאפ: ניהול סטטוס משלוח"
+  },
+  "#6a38cf525bc7c59aea9e5f95": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf52 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf525bc7c59aea9e5f95",
+    "title": "עיצוב מוקאפ: ניהול סטטוס תשלום"
+  },
+  "#6a38cf51f58031207c2f4af2": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf51 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf51f58031207c2f4af2",
+    "title": "עיצוב מוקאפ: עריכת הזמנה לפני אישור"
+  },
+  "#6a38cf517fd6e83fbb2ee0c8": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf51 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf517fd6e83fbb2ee0c8",
+    "title": "עיצוב מוקאפ: הזמנת לקוח לקטלוג"
+  },
+  "#6a38cf51b0a18b64aeee6393": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf51 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf51b0a18b64aeee6393",
+    "title": "עיצוב מוקאפ: תצוגת RTL ורספונסיביות"
+  },
+  "#6a38cf50493d85f744efa358": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf50 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf50493d85f744efa358",
+    "title": "עיצוב מוקאפ: חסימת גישה לנתוני לקוח אחר"
+  },
+  "#6a38cf50e7fa6f2340cd18fb": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf50 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf50e7fa6f2340cd18fb",
+    "title": "עיצוב מוקאפ: התחברות למערכת"
+  },
+  "#6a38cf50c7aa7f6b3a0870bb": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf50 не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf50c7aa7f6b3a0870bb",
+    "title": "עיצוב מוקאפ: מחירון/הנחת קבוצה ללקוח"
+  },
+  "#6a38cf4f3999a0aa6436147f": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf4f не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf4f3999a0aa6436147f",
+    "title": "עיצוב מוקאפ: הגדרת מחיר פר-לקוח (מוצר)"
+  },
+  "#6a38cf4ff3c36bf5966d1b40": {
+    "class": "manual-only",
+    "feature": "design",
+    "tests": [],
+    "reason": "мокап/дизайн · hash #6a38cf4f не уникален (пачка) — тесты по #hash общие",
+    "date": "2026-10-03",
+    "source": "backfill",
+    "id": "6a38cf4ff3c36bf5966d1b40",
+    "title": "עיצוב מוקאפ: ניהול קבוצות מוצרים"
+  },
+  "#0309a9bf": {
+    "class": "has-tests",
+    "feature": "",
+    "tests": [
+      "tests/catalog/catalog-lifecycle.spec.ts",
+      "tests/catalog/catalog-list.spec.ts",
+      "tests/catalog/category-visibility-archive.spec.ts",
+      "tests/inventory/delete-unplaced-stock.spec.ts",
+      "tests/inventory/inventory-lifecycle.spec.ts"
+    ],
+    "reason": "миграция журнала 2026-10-06: #hash найден в .qa/tests / .qa/e2e/tests (сдан через /qa после backfill)",
+    "date": "2026-10-06",
+    "source": "backfill"
+  },
+  "#0f2113ca": {
+    "class": "has-tests",
+    "feature": "",
+    "tests": [
+      "tests/picking/picking-flow.spec.ts"
+    ],
+    "reason": "миграция журнала 2026-10-06: #hash найден в .qa/tests / .qa/e2e/tests (сдан через /qa после backfill)",
+    "date": "2026-10-06",
+    "source": "backfill"
+  },
+  "#133950be": {
+    "class": "has-tests",
+    "feature": "",
+    "tests": [
+      "tests/catalog/categories-states.spec.ts"
+    ],
+    "reason": "миграция журнала 2026-10-06: #hash найден в .qa/tests / .qa/e2e/tests (сдан через /qa после backfill)",
+    "date": "2026-10-06",
+    "source": "backfill"
+  },
+  "#16c27b1d": {
+    "class": "has-tests",
+    "feature": "",
+    "tests": [
+      "tests/warehouse-map/map-view.spec.ts"
+    ],
+    "reason": "миграция журнала 2026-10-06: #hash найден в .qa/tests / .qa/e2e/tests (сдан через /qa после backfill)",
+    "date": "2026-10-06",
+    "source": "backfill"
+  },
+  "#19daa080": {
+    "class": "has-tests",
+    "feature": "",
+    "tests": [
+      "tests/catalog/catalog-lifecycle.spec.ts",
+      "tests/catalog/categories-states.spec.ts"
+    ],
+    "reason": "миграция журнала 2026-10-06: #hash найден в .qa/tests / .qa/e2e/tests (сдан через /qa после backfill)",
+    "date": "2026-10-06",
+    "source": "backfill"
+  },
+  "#203f0163": {
+    "class": "has-tests",
+    "feature": "",
+    "tests": [
+      "tests/client-ordering/order-history.spec.ts"
+    ],
+    "reason": "миграция журнала 2026-10-06: #hash найден в .qa/tests / .qa/e2e/tests (сдан через /qa после backfill)",
+    "date": "2026-10-06",
+    "source": "backfill"
+  },
+  "#22b2d92d": {
+    "class": "has-tests",
+    "feature": "",
+    "tests": [
+      "tests/auth-security/impersonation.spec.ts",
+      "tests/auth-security/rep-direct.spec.ts"
+    ],
+    "reason": "миграция журнала 2026-10-06: #hash найден в .qa/tests / .qa/e2e/tests (сдан через /qa после backfill)",
+    "date": "2026-10-06",
+    "source": "backfill"
+  },
+  "#53ec2724": {
+    "class": "has-tests",
+    "feature": "",
+    "tests": [
+      "tests/picking/picking-flow.spec.ts"
+    ],
+    "reason": "миграция журнала 2026-10-06: #hash найден в .qa/tests / .qa/e2e/tests (сдан через /qa после backfill)",
+    "date": "2026-10-06",
+    "source": "backfill"
+  },
+  "#59d59e6f": {
+    "class": "has-tests",
+    "feature": "",
+    "tests": [
+      "tests/customers-pricing/groups-assign-states.spec.ts",
+      "tests/orders/orders-list.spec.ts",
+      "tests/ui-general/load-errors.spec.ts"
+    ],
+    "reason": "миграция журнала 2026-10-06: #hash найден в .qa/tests / .qa/e2e/tests (сдан через /qa после backfill)",
+    "date": "2026-10-06",
+    "source": "backfill"
+  },
+  "#6a7493cb": {
+    "class": "has-tests",
+    "feature": "",
+    "tests": [
+      "tests/picking/picking-flow.spec.ts"
+    ],
+    "reason": "миграция журнала 2026-10-06: #hash найден в .qa/tests / .qa/e2e/tests (сдан через /qa после backfill)",
+    "date": "2026-10-06",
+    "source": "backfill"
+  },
+  "#6fcb020f": {
+    "class": "has-tests",
+    "feature": "",
+    "tests": [
+      "tests/auth-security/rep-direct.spec.ts",
+      "tests/catalog/catalog-lifecycle.spec.ts",
+      "tests/catalog/catalog-list.spec.ts",
+      "tests/catalog/categories-states.spec.ts",
+      "tests/client-ordering/cart-checkout.spec.ts",
+      "tests/client-ordering/catalog.spec.ts",
+      "tests/customers-pricing/customers-access.spec.ts",
+      "tests/ui-general/navigation.spec.ts"
+    ],
+    "reason": "миграция журнала 2026-10-06: #hash найден в .qa/tests / .qa/e2e/tests (сдан через /qa после backfill)",
+    "date": "2026-10-06",
+    "source": "backfill"
+  },
+  "#71044355": {
+    "class": "has-tests",
+    "feature": "",
+    "tests": [
+      "tests/catalog/catalog-lifecycle.spec.ts",
+      "tests/catalog/catalog-list.spec.ts"
+    ],
+    "reason": "миграция журнала 2026-10-06: #hash найден в .qa/tests / .qa/e2e/tests (сдан через /qa после backfill)",
+    "date": "2026-10-06",
+    "source": "backfill"
+  },
+  "#966c4100": {
+    "class": "has-tests",
+    "feature": "",
+    "tests": [
+      "tests/customers-pricing/groups-assign-states.spec.ts",
+      "tests/customers-pricing/pricing-lifecycle.spec.ts"
+    ],
+    "reason": "миграция журнала 2026-10-06: #hash найден в .qa/tests / .qa/e2e/tests (сдан через /qa после backfill)",
+    "date": "2026-10-06",
+    "source": "backfill"
+  },
+  "#98be590c": {
+    "class": "has-tests",
+    "feature": "",
+    "tests": [
+      "tests/catalog/catalog-list.spec.ts"
+    ],
+    "reason": "миграция журнала 2026-10-06: #hash найден в .qa/tests / .qa/e2e/tests (сдан через /qa после backfill)",
+    "date": "2026-10-06",
+    "source": "backfill"
+  },
+  "#a5f94502": {
+    "class": "has-tests",
+    "feature": "",
+    "tests": [
+      "tests/client-ordering/cart-checkout.spec.ts"
+    ],
+    "reason": "миграция журнала 2026-10-06: #hash найден в .qa/tests / .qa/e2e/tests (сдан через /qa после backfill)",
+    "date": "2026-10-06",
+    "source": "backfill"
+  },
+  "#ba86d972": {
+    "class": "has-tests",
+    "feature": "",
+    "tests": [
+      "tests/customers-pricing/customers-list.spec.ts"
+    ],
+    "reason": "миграция журнала 2026-10-06: #hash найден в .qa/tests / .qa/e2e/tests (сдан через /qa после backfill)",
+    "date": "2026-10-06",
+    "source": "backfill"
+  },
+  "#da8b4481": {
+    "class": "has-tests",
+    "feature": "",
+    "tests": [
+      "tests/catalog/catalog-lifecycle.spec.ts"
+    ],
+    "reason": "миграция журнала 2026-10-06: #hash найден в .qa/tests / .qa/e2e/tests (сдан через /qa после backfill)",
+    "date": "2026-10-06",
+    "source": "backfill"
+  },
+  "#dac8c6d1": {
+    "class": "has-tests",
+    "feature": "",
+    "tests": [
+      "tests/auth-security/impersonation.spec.ts",
+      "tests/auth-security/rep-direct.spec.ts"
+    ],
+    "reason": "миграция журнала 2026-10-06: #hash найден в .qa/tests / .qa/e2e/tests (сдан через /qa после backfill)",
+    "date": "2026-10-06",
+    "source": "backfill"
+  },
+  "#eb5f4560": {
+    "class": "has-tests",
+    "feature": "",
+    "tests": [
+      "tests/catalog/catalog-lifecycle.spec.ts"
+    ],
+    "reason": "миграция журнала 2026-10-06: #hash найден в .qa/tests / .qa/e2e/tests (сдан через /qa после backfill)",
+    "date": "2026-10-06",
+    "source": "backfill"
+  },
+  "#899df3e5": {
+    "class": "qa-passed",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/catalog-lifecycle.spec.ts",
+      "tests/catalog/category-visibility-archive.spec.ts"
+    ],
+    "reason": "עבר QA 06.10.2026 (commit 499e1e1, 2 прогона): у клиента в /shop пустые категории скрыты (чипы, 2-я строка, «סינון ומיון»); видна при ≥1 активном товаре напрямую/в подкатегории; «אזל» считается, архив — нет; у מפיץ «0 מוצרים» как раньше. Кейсы: catalog/cat-12, cat-20; client-ordering/co-01, co-16, co-18…co-21",
+    "date": "2026-10-06",
+    "source": "qa",
+    "id": "899df3e5f8b9498c99cdb067",
+    "title": "קטגוריה ריקה (0 מוצרים) מוצגת ללקוח בקטלוג כשבב נפרד"
+  },
+  "#d7b7ec74": {
+    "class": "qa-passed",
+    "feature": "inventory",
+    "tests": [
+      "tests/inventory/delete-unplaced-stock.spec.ts",
+      "tests/inventory/inventory-lifecycle.spec.ts",
+      "tests/inventory/delete-placed-stock.spec.ts",
+      "tests/catalog/catalog-list.spec.ts"
+    ],
+    "reason": "עבר QA 07.10.2026 (commit 9f45edd + миграция 20261006100000, 2 прогона): окно блока «משויך למקום במחסן: רשומות עדיין N / רשומה עדיין יחידה אחת במיקום אחד.» + путь «הסרה מהמקום»; карта с местом; после «הסרה מהמקום» и для приёмки «ללא מקום» — обычное окно удаления без «ייגרעו», в журнале нет «מחיקת מוצר · נגרע מהמלאי»; сервер PRODUCT_HAS_STOCK ведёт к «הסרה מהמקום». Отменяет ожидание #0309a9bf. Кейсы: inventory/inv-06, inv-07 (переписан), inv-08 (новый); catalog/cat-14",
+    "date": "2026-10-07",
+    "source": "qa",
+    "id": "d7b7ec74270e4125471a4d64",
+    "title": "מחיקת מוצר אחרי «הסרה מהמקום»: בלי הטקסט «ייגרעו מהמלאי» ובלי הרשומה «נגרע מהמלאי» ביומן התנועות"
+  },
+  "#618f738e": {
+    "class": "qa-passed",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/product-form-no-category.spec.ts"
+    ],
+    "reason": "עבר QA 07.10.2026 (2 прогона, 1440+390): в форме товара (new/edit, «קטגוריה») первый вариант «— ללא קטגוריה —» (value \"\", по умолчанию); в форме категории «קטגוריית אב» — «— ללא (קטגוריה ראשית) —» без изменений; товар без категории сохраняется, в /catalog колонка «קטגוריה» = «—». Кейс: catalog/cat-21 (новый)",
+    "date": "2026-10-07",
+    "source": "qa",
+    "id": "618f738eab18ed93e303c3ff",
+    "title": "טופס מוצר: האפשרות «בלי קטגוריה» מוצגת כ«— ללא (קטגוריה ראשית) —»"
+  },
+  "#10cc07dc": {
+    "class": "qa-passed",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/location-cell-no-kavua-existing.spec.ts",
+      "tests/catalog/location-cell-no-kavua-after-bind.spec.ts",
+      "tests/catalog/location-cell-no-kavua-iphone.spec.ts",
+      "tests/inventory/receive-multiple-places-dropdown.spec.ts"
+    ],
+    "reason": "עבר QA 11.10.2026 (commit d037f2f, run1 9/9, 1440 + 375 webkit): в колонке «מיקום במחסן» нет «קבוע» — ни в тексте, ни в title/aria/outerHTML; после привязки, приёма, при 4 местах (+1), после reload, у других товаров; 375 — таблица со скроллом внутри. План: specs/catalog.md §11 (тесты ещё генерируются). Кейс: catalog/cat-06 (п.4–10)",
+    "date": "2026-10-11",
+    "source": "qa",
+    "title": "עמודת «מיקום במחסן» בקטלוג: להסיר את התווית «קבוע»"
+  },
+  "#2830b76e": {
+    "class": "qa-passed",
+    "feature": "inventory",
+    "tests": [
+      "tests/inventory/receive-prefill-single-place.spec.ts",
+      "tests/inventory/receive-prefill-map-bound.spec.ts",
+      "tests/inventory/receive-into-place-with-unplaced-stock.spec.ts",
+      "tests/inventory/receive-multiple-places-dropdown.spec.ts",
+      "tests/inventory/receive-no-place-and-product-switch.spec.ts"
+    ],
+    "reason": "עבר QA 11.10.2026 (900565f + c00a1a1/c51fcd2/f1440e3, миграция 20261008100000; run1 A,B,C,D,G,H ✅, E,F ⚠️ вне объёма): приёмка (клик по «במלאי» и «קליטת מלאי») подставляет место товара (привязка через «מיקום במחסן» или карту), количество идёт в остаток и в место; при остатке «ללא מקום» приём в место не блокируется (STOCK_UNASSIGNED снят); несколько мест — выбор из мест товара (по умолчанию 11.10 — место с остатком); журнал «קליטה · מחוץ למחסן ← <код>». План: specs/inventory.md §6 (тесты ещё генерируются). Кейсы: inventory/inv-02, inv-06, inv-07 (п.7); warehouse-map/wm-07",
+    "date": "2026-10-11",
+    "source": "qa",
+    "title": "קליטת מלאי: המקום שהמוצר משויך אליו לא נבחר — הכמות נקלטת ל«ללא מקום»"
+  },
+  "#1f62ca42": {
+    "class": "qa-passed",
+    "feature": "warehouse-map",
+    "tests": [
+      "tests/warehouse-map/supplier-return.spec.ts"
+    ],
+    "reason": "עבר QA 12.10.2026 (commit 287cc334, миграция: supplier_return добавлен в CHECK stock_movements_endpoints; desktop 1440, admin): «החזרה לספק» остатка «ללא מקום» (1 из 3, затем 2) — rpc/return_to_supplier 200 (p_location_id null), тост «N של <שם> הוחזרו לספק.», каталог 3→2→0 «אזל», журнал «החזרה לספק · ללא מקום ← <אסמכתא>» (и под «החזרות»); возврат из места (C-04) работает как раньше — «…ממדף C-04.», место и каталог −1; кол-во > остатка / 0 / пусто — «רישום ההחזרה» disabled. План: specs/warehouse-map.md §6. Кейсы: warehouse-map/wm-14, wm-15, wm-16. Автотест прогнан 12.10 headless: 3/3 ✅ · 14.10: supplier-return.spec.ts обновлён под #9301886c (поле кол-ва внутри строки), прогон 3/3 ✅",
+    "date": "2026-10-12",
+    "source": "qa",
+    "id": "1f62ca42dd0621d3edebd35a",
+    "title": "החזרה לספק של מלאי «ללא מקום» נכשלת (400 / 23514)"
+  },
+  "#d9258e0b": {
+    "class": "qa-passed",
+    "feature": "warehouse-map",
+    "tests": [
+      "tests/warehouse-map/assigned-location-stock0-not-empty.spec.ts"
+    ],
+    "reason": "עבר QA 12.10.2026 (подтвердил пользователь; 1440 + 390): товар с остатком 0, привязанный к полке и доп. ארגזу, на карте не «ריק» — сайдбар «מוצר אחד משויך», канвас #e4ecf7, инспектор товар + «0»; после «הסרה מהמקום» — «ריק»/#ffffff, после reload тоже. Автотест 3/3 зелёный (headless, desktop). Fix реджекта 30fbd2fc на #6a8f3153. План: specs/warehouse-map.md §6. Кейс: warehouse-map/wm-01 (п.4–9)",
+    "date": "2026-10-12",
+    "source": "qa",
+    "id": "d9258e0b98f4d9323cc4fbce",
+    "title": "תיקון QA: מיקום משויך למוצר מוצג ריק במפת המחסן"
+  },
+  "#d17c625a": {
+    "class": "qa-passed",
+    "feature": "inventory",
+    "tests": [
+      "tests/inventory/delete-placed-stock.spec.ts",
+      "tests/inventory/delete-unplaced-stock.spec.ts",
+      "tests/catalog/catalog-list.spec.ts",
+      "tests/catalog/location-cell-multi-places.spec.ts",
+      "tests/inventory/inventory-lifecycle.spec.ts"
+    ],
+    "reason": "עבר QA 12.10.2026 (main 8488c64 + миграции 20261008110000/20261011100000; решение владельца 11.10): привязан к месту и остаток 0 (1 и 2 места) → обычное «מחיקת מוצר», rpc/delete_product 200, тост «\"<שם>\" נמחק.», места «ריק»; остаток в месте → «מחיקה · יש מלאי במחסן» → блок «לא ניתן למחוק מוצר עם מלאי» («— משויך למקום במחסן, ורשומות בו עדיין N.», строка «<קוד> · N», «סגירה»/«מעבר למפת המחסן» → карта с местом); «הסרה מהמקום» → «ללא מיקום» → удаление; привязан + «ללא מקום» → блок (ед.ч. «ורשומה עדיין יחידה אחת ללא מקום.», 2 места «…ועוד 1 ללא מקום.»); не привязан + «ללא מקום» → удаляется; гонка → 400 PRODUCT_HAS_STOCK / PRODUCT_HAS_PLACE → блок. Требование «גם עם כמות 0 → блок» отменено. План: specs/inventory.md §4–5, catalog.md §4. Кейсы: inventory/inv-07, inv-08 (переписаны), catalog/cat-14. Автотесты 12.10 headless: delete-placed-stock 5/5, delete-unplaced-stock 4/4, catalog-list #98be590c 2/2 ✅; inventory-lifecycle — тексты блока обновлены, не прогонялся (создаёт заказ)",
+    "date": "2026-10-12",
+    "source": "qa",
+    "id": "d17c625ad63d57ef4c2c34f6",
+    "title": "מחיקת מוצר שמשויך למקום במחסן בלי מלאי במקום: נמחק מיד, בלי הודעה ובלי מעבר למפה"
+  },
+  "#7b8b97e9": {
+    "class": "qa-passed",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/location-cell-multi-places.spec.ts",
+      "tests/picking/picking-multi-place.spec.ts",
+      "tests/inventory/receive-multiple-places-dropdown.spec.ts"
+    ],
+    "reason": "עבר QA 12.10.2026 (main 8488c64; реджект rej_1791710468054 закрыт): колонка «מיקום במחסן» — 3 строки с кодом места + кнопка «+2» (aria «כל המקומות של המוצר», aria-haspopup=menu) → меню всех 5 мест («משויך למקום זה, ללא כמות»), Esc/вне закрывает, после reload то же, строка/пункт открывает только своё место, 390 без гориз. скролла; «מקום היעד» — только места товара + «ללא מקום»; окно удаления «משויך ל-4 מקומות במחסן, ורשומות בהם עדיין 8.» = 4 строки; ליקוט (#519/#520): одна станция с обоими местами, один «לוקט», 5 → из Y, 6 → 5 из Y + 1 из X, 1/2 записи «ליקוט». План: specs/catalog.md §12, picking.md §6. Кейсы: catalog/cat-22, cat-23, picking/pick-14 (новые), inventory/inv-06. Автотесты 12.10 headless: location-cell-multi-places 5/5 ✅; picking-multi-place (@data @orders, 2 необратимых заказа) — записан, НЕ прогонялся",
+    "date": "2026-10-12",
+    "source": "qa",
+    "id": "7b8b97e93f0e15922a8bdda5",
+    "title": "מוצר אחד בכמה מקומות במחסן: כרגע אסור — צריך לאפשר"
+  },
+  "#6cdf674f": {
+    "class": "qa-passed",
+    "feature": "inventory",
+    "tests": [
+      "tests/inventory/receive-map-highlight-places.spec.ts"
+    ],
+    "reason": "עבר QA 14.10.2026 (пользователь; main 379e775; реджекты rej_1791708229952, rej_1791803663363 закрыты): окно «הוספת פריט למלאי» из каталога (К1 число «במלאי», К2 «קליטת מלאי» → товар) — карта склада, 3 места товара яркие с подписью, остальные серые и не выбираются; выбор списком / кнопками «ארון» / картой синхронен, тёмная подпись «נבחר» только у выбранного; код в «מקום הקליטה» одной строкой (iPhone 390); вход с карты («הוספת פריט למדף») — без карты; приём 1 шт. в выбранное место. План: specs/inventory.md §7. Кейс: inventory/inv-09. Автотест 14.10 headless desktop + iphone 6/6 ✅. Находка вне объёма: зона клика подписи шире видимой (соседнее серое выбирает место товара) — решение за пользователем. Старое ожидание в catalog/location-cell-multi-places.spec.ts:109 (упал 14.10) — ждёт regression-triager, не тронут",
+    "date": "2026-10-14",
+    "source": "qa",
+    "id": "6cdf674f8de9bd6e35baa6cd",
+    "title": "קליטת מלאי: מפת המחסן לבחירת המקום — המקומות של המוצר מודגשים, השאר באפור"
+  },
+  "#157fed2c": {
+    "class": "qa-passed",
+    "feature": "client-ordering",
+    "tests": [
+      "tests/client-ordering/categories-live-refresh.spec.ts"
+    ],
+    "reason": "עבר QA 14.10.2026 (пользователь; main 6f71063; реджекты #0 rej_1791369328521, #1 rej_1791706936788, #2 rej_1791802571140 закрыты): у клиента без reload опустевшая категория уходит из строки и шторки сразу при клике по чипу, «נקה הכל», «זמינות», сортировке; не открывается в «0 מוצרים», прежняя выдача «A · מוצר אחד» не показывается; снова наполненная возвращается и открывается с товаром. Тест двух ролей (asUser admin + buyer). План: specs/client-ordering.md §6. Кейсы: client-ordering/co-22 (новый), co-18 (устаревшее «Известно»). Автотест 14.10 headless desktop + iphone 8/8 ✅. Находка вне объёма: после возврата во вкладку прежняя выдача 0.4–0.74 с",
+    "date": "2026-10-14",
+    "source": "qa",
+    "id": "157fed2c88a139052bc04df8",
+    "title": "קטלוג הלקוח: רשימת הקטגוריות לא מתעדכנת בלי רענון — קטגוריה שהתרוקנה נשארת ונפתחת ל«0 מוצרים»"
+  },
+  "#9301886c": {
+    "class": "qa-passed",
+    "feature": "warehouse-map",
+    "tests": [
+      "tests/warehouse-map/supplier-return-rows.spec.ts",
+      "tests/warehouse-map/supplier-return.spec.ts"
+    ],
+    "reason": "עבר QA 14.10.2026 (commit 255da61 + 700572a; реджект rej_bac85c3ad4c72b27548316ea закрыт; 1440 + эм. 390, admin): окно «החזרה לספק» — строка = товар + место (полка и «ללא מקום» выбираются раздельно, своё кол-во), поиск фильтрует («עוד N מסומנים מחוץ לחיפוש»), счётчик/«רישום N החזרות» по отмеченным, «בחירת הכל»/«ניקוי הבחירה» по видимым; возврат снимает только из выбранного источника; несколько возвратов отправляются все (журнал по каждой); частичный сбой: «נרשמו X מתוך Y החזרות.» + «‹товар› · ללא שיוך למקום: ללא שיוך למקום יש N יחידות בלבד.» / «…: אין מלאי של הפריט להחזרה.», полка «בG-xx יש N יחידות בלבד.». План: specs/warehouse-map.md §7 (+ §6 обновлён). Кейсы: warehouse-map/wm-17…wm-20 (новые), wm-14/15/16 (история). Автотесты 14.10 headless: supplier-return-rows 4/4 ✅, supplier-return (обновлён) 3/3 ✅. Журнал возвратов необратим. Находки вне объёма (текст причины, обрезка источника в журнале 1440) — не заведены",
+    "date": "2026-10-14",
+    "source": "qa",
+    "id": "9301886ca34965cf365e7f1b",
+    "title": "חלון «החזרה לספק»: מוצר שנמצא גם במדף וגם «ללא מקום» — שתי השורות נבחרות יחד, החיפוש לא מסנן, וההחזרה יורדת מהמקום הלא נכון ונעצרת באמצע"
+  },
+  "#94fef5": {
+    "class": "qa-passed",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/product-form-1024-align.spec.ts"
+    ],
+    "reason": "עבר QA 21.10.2026 (пользователь «прошли»; проверено 20.10, commit b006249): «מוצר חדש» и «עריכת מוצר» на 1024 — «מחיר קנייה»/«מחיר בסיס» и «כמות באריזה»/«כמות מינימלית להזמנה» на одной высоте (Δtop ≤ 1px), подпись «מחיר קנייה – ברוטו לפני מע\"מ» (en dash); 1440 без регресса. План: specs/catalog.md §13. Кейс: catalog/cat-24. Автотест 21.10 headless desktop 4/4 ✅ (@prod-safe).",
+    "date": "2026-10-21",
+    "source": "qa",
+    "id": "be461a57de0cbfba1794fef5",
+    "title": "טופס מוצר ברוחב 1024: «מחיר קנייה – ברוטו לפני מע\"מ» נשבר לשתי שורות והשדה יורד מתחת לשדה «מחיר בסיס»"
+  },
+  "#aea5d4": {
+    "class": "qa-passed",
+    "feature": "warehouse-map",
+    "tests": [
+      "tests/warehouse-map/unplace-zero-stock-row.spec.ts"
+    ],
+    "reason": "עבר QA 21.10.2026 (проверено 20.10, commit 7ce3c4e): после «הסרה מהמקום» товара с остатком 0 строки нет в «תכולת המדף» сразу и после обновления, полка «ריק»; до снятия привязанный товар с 0 виден (#d9258e0b); товар во втором месте остаётся (#7b8b97e9). Данные: свой QA-AUTO-aea5-<ts> на двух свободных полках (не A–D, не G), обнуление «החזרה לספק». План: specs/warehouse-map.md §8. Кейс: warehouse-map/wm-21. Автотест 21.10 headless desktop 3/3 ✅ (@data; журнал неудаляем).",
+    "date": "2026-10-21",
+    "source": "qa",
+    "id": "1f7c74b74fd2de7b94aea5d4",
+    "title": "מפת המחסן: אחרי «הסרה מהמקום» של מוצר עם מלאי 0 הוא נשאר ב«תכולת המדף» (גם אחרי רענון)"
+  },
+  "#6f3c9b": {
+    "class": "qa-passed",
+    "feature": "ui-general",
+    "tests": [
+      "tests/ui-general/dashboard-period-url.spec.ts"
+    ],
+    "reason": "עבר QA 21.10.2026 (проверено 20.10, commit b006249): /dashboard?period=1|7|90 сохраняется после обновления; 30 — без параметра; невалидный (?period=abc) → 30. План: specs/ui-general.md §7. Кейс: ui-general/ui-12. Автотест 21.10 headless desktop 5/5 ✅ (@prod-safe).",
+    "date": "2026-10-21",
+    "source": "qa",
+    "id": "0937df95a575a7245b6f3c9b",
+    "title": "לוח בקרה: התקופה שנבחרה (למשל «היום») מתאפסת ל-30 ימים אחרי רענון הדף"
+  },
+  "#e1e502": {
+    "class": "qa-passed",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/walk-in-mobile-row.spec.ts"
+    ],
+    "reason": "עבר QA 21.10.2026 (проверено 20.10, commit b006249): /orders/walk-in на 390 — строка товара в 2 ряда, название и поле количества (+/−, цена, удаление) в пределах экрана, нет горизонтальной прокрутки; продажа не регистрируется. План: specs/orders.md §5. Кейс: orders/ord-15. Автотест 21.10 headless iphone 1/1 ✅. Находка вне объёма (20.10): 360 — наложение при больших суммах.",
+    "date": "2026-10-21",
+    "source": "qa",
+    "id": "6881a94f4915ec62cee1e502",
+    "title": "מכירה מיידית בטלפון (390): שם המוצר ושדה הכמות מחוץ למסך כשהטבלה נפתחת"
+  },
+  "#634a4e": {
+    "class": "qa-passed",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/order-edit-qty-price.spec.ts"
+    ],
+    "reason": "עבר QA 21.10.2026 (проверено 20.10): «עריכה» сразу после «שמור שינויים» (без обновления) показывает сохранённые кол-во и цену (3 × ₪6 → форма 3/6, ₪18.00). План: specs/orders.md §6.3. Кейс: orders/ord-18. Автотест 21.10 headless desktop ✅ (файл 4/4, @orders @data; свой товар QA-AUTO-47ba-<ts>, заказ отклоняется).",
+    "date": "2026-10-21",
+    "source": "qa",
+    "id": "12d12a247021c161dd634a4e",
+    "title": "עריכת הזמנה: פתיחת «עריכה» מיד אחרי שמירה מציגה את הכמות הקודמת"
+  },
+  "#ef8f45": {
+    "class": "qa-passed",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/order-edit-qty-price.spec.ts"
+    ],
+    "reason": "עבר QA 21.10.2026 (проверено 20.10): «תיעוד עריכה» после обновления и повторного открытия из /orders — «ההזמנה נערכה בידי test admin בתאריך …», без «משתמש לא ידוע» (F-10 AC4). План: specs/orders.md §6.4. Кейс: orders/ord-19. Автотест 21.10 headless desktop ✅ (файл 4/4).",
+    "date": "2026-10-21",
+    "source": "qa",
+    "id": "540333de22da3e6644ef8f45",
+    "title": "כרטיס הזמנה: «תיעוד עריכה» מציג «נערכה בידי משתמש לא ידוע» במקום שם העורך"
+  },
+  "#d9d645": {
+    "class": "qa-passed",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/new-order-toast-list-sync.spec.ts"
+    ],
+    "reason": "עבר QA 21.10.2026 (проверено 20.10, commit 7ce3c4e): в момент появления тоста «התקבלה הזמנה חדשה · #N · test» заказ #N уже первая строка /orders (MutationObserver), без перезагрузки. Две роли (asUser admin + buyer). План: specs/orders.md §7. Кейс: orders/ord-20. Автотест 21.10 headless desktop 1/1 ✅ (@orders @data, ~45 с; заказ отклоняется).",
+    "date": "2026-10-21",
+    "source": "qa",
+    "id": "cb20810cdd852e8afdd9d645",
+    "title": "מסך «הזמנות»: כשמופיעה התראת «התקבלה הזמנה חדשה» ההזמנה עדיין לא ברשימה (מופיעה אחרי ~1.4 ש')"
+  },
+  "#f5aa41": {
+    "class": "qa-passed",
+    "feature": "client-ordering",
+    "tests": [
+      "tests/client-ordering/cart-remove-no-flash.spec.ts"
+    ],
+    "reason": "עבר QA 21.10.2026 (проверено 20.10, commit 7ce3c4e): после «הסרה מהעגלה» ни на одном кадре нет скелетов и «₪0.00», строки остаются, итог ₪4.00 (также с задержкой ответов 1.5 с); удаление последних — обычное пустое состояние. План: specs/client-ordering.md §7. Кейс: client-ordering/co-23. Автотест 21.10 headless desktop 3/3 ✅ (@orders, serial; 3 своих товара QA-AUTO-f5aa, заказ не оформляется).",
+    "date": "2026-10-21",
+    "source": "qa",
+    "id": "cc5326472407b6c430f5aa41",
+    "title": "עגלת הלקוח: אחרי הסרת מוצר מוצג לרגע «סה״כ משוער ₪0.00» ושלדי טעינה"
+  },
+  "#539c2f": {
+    "class": "qa-passed",
+    "feature": "delivery",
+    "tests": [
+      "tests/delivery/delivery-note-print-no-delivered-at.spec.ts"
+    ],
+    "reason": "עבר QA 21.10.2026 (проверено 20.10, commit b006249; решение пользователя 20.10 — убрать только из печати): печатная תעודת משלוח (emulateMedia print) заказа #542 «סופק» — нет «סופק ב» и «סטטוס», есть «שעת הזמנה» и «שעת יעד לאספקה»; на экране «סופק ב-…» остаётся. План: specs/delivery.md §4. Кейс: delivery/dlv-06. Автотест 21.10 headless desktop 1/1 ✅ (@prod-safe).",
+    "date": "2026-10-21",
+    "source": "qa",
+    "id": "99ac8eb1edc7791540539c2f",
+    "title": "תעודת משלוח מודפסת: אחרי אספקה מופיע ללקוח «סופק ב <תאריך ושעה>»"
+  },
+  "#47ba10": {
+    "class": "qa-passed",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/order-edit-qty-price.spec.ts"
+    ],
+    "reason": "עבר QA 21.10.2026 (проверено 20.10; commits bf60fdb + 51959f4; реджект rej_1c154920a27492d195eafd13 закрыт): «עריכת הזמנה» — 1.5 / 1,5 / −1 → «כמות — מספר שלם בלבד», 0 → «הכמות המינימלית היא 1», 99999999999 → «זה נראה כמו ברקוד, לא כמות», ничего не сохраняется (после обновления кол-во прежнее); 2 сохраняется; цена строки 7 → «מחיר במחירון: ₪5.00 · המחיר שונה להזמנה זו בלבד», «חזרה למחיר המחירון». Кол-во сверх остатка не проверяется (решение 20.10, #6a98bd в реджекте). План: specs/orders.md §6.1–6.2. Кейсы: orders/ord-16, ord-17. Автотест 21.10 headless desktop ✅ (файл 4/4).",
+    "date": "2026-10-21",
+    "source": "qa",
+    "id": "6bf1a64ced1457f82747ba10",
+    "title": "הוספת אפשרות להזנת כמות ידנית ולשינוי מחיר מוצרים בהזמנה"
+  },
+  "#fd2f41": {
+    "class": "qa-passed",
+    "feature": "picking",
+    "tests": [
+      "tests/picking/shortage-order-card.spec.ts"
+    ],
+    "reason": "עבר QA 21.10.2026 (пользователь; проверено 20.10, commit b006249; экран водителя — вне объёма по решению пользователя): заказ с «חסר» — «לוקטה · חוסר אחד» + «ההזמנה לוקטה עם חוסרים ואינה מסופקת במלואה — יש להחליט מה נשלח ללקוח.», без «כל הפריטים לוקטו במלואם» (admin и rep); без нехватки — «כל הפריטים לוקטו במלואם.»; «סמן כסופק» на заказе с нехваткой → окно «ההזמנה לוקטה בחוסר» («ביטול» — без изменений, подтверждение — «סופקה»), без нехватки — без окна. Нехватка — через «החזרה לספק» после утверждения (не «עריכה» сверх остатка). План: specs/picking.md §7. Кейсы: picking/pick-15, pick-16. Автотест 21.10 headless desktop 5/5 ✅ (@data @orders; 2 заказа test → «סופקה», необратимо).",
+    "date": "2026-10-21",
+    "source": "qa",
+    "id": "b7e1aba7c2ec8b7cfdfd2f41",
+    "title": "כרטיס הזמנה: הזמנה שלוקטה בחוסר מציגה גם «לוקטה · חוסר אחד» וגם «כל הפריטים לוקטו במלואם»"
+  },
+  "#8cd9e9": {
+    "class": "has-tests",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/product-form-1024-align.spec.ts"
+    ],
+    "reason": "Подпись «מחיר קנייה – ברוטו לפני מע\"מ» (en dash) в «מוצר חדש» и «עריכת מוצר» проверяется автотестом #94fef5 (дополняет этот тикет, 21.10); кейс catalog/cat-24. Ручная QA 18.10 ✅.",
+    "date": "2026-10-25",
+    "source": "backfill",
+    "id": "6e299e003beba69d0b8cd9e9",
+    "title": "הוספת הכיתוב \"ברוטו לפני מע\"מ\" לשדה מחיר קנייה ביצירת מוצר חדש ובעריכת מוצר קיים"
+  },
+  "#ad4f1b": {
+    "class": "has-tests",
+    "feature": "delivery",
+    "tests": [
+      "tests/delivery/delivery-note-print-no-delivered-at.spec.ts"
+    ],
+    "reason": "Дополнен #539c2f (21.10): печатная תעודת משלוח без «סטטוס» и «סופק ב» — автотест delivery-note-print-no-delivered-at (assert «סטטוס» нет в печати); кейс delivery/dlv-06. Ручная QA 18.10 ✅.",
+    "date": "2026-10-25",
+    "source": "backfill",
+    "id": "4abb04dea7b2d58d92ad4f1b",
+    "title": "הסרת שדה \"סטטוס\" מתעודת משלוח המיועדת להדפסה וללקוח"
+  },
+  "#6c161c": {
+    "class": "automatable",
+    "feature": "picking",
+    "tests": [
+      "tests/picking/picking-pick-all.spec.ts"
+    ],
+    "reason": "Ручная QA 18.10 ✅. 2 теста @data (QA-AUTO-picking-): «ליקוט הכל» над «סיום ליקוט», пропуск станции без остатка → «חסר», мульти-место, исчезновение кнопки; чистый список + «ללא מיקום» (L-20261018-1). Кейсы picking/pick-17, pick-18. Сверка 25.10 — только по коду сайта (экран רשימת ליקוט не открывался: «התחלת ליקוט» запускает сборку). Вручную: «גל», 390.",
+    "date": "2026-10-25",
+    "source": "backfill",
+    "id": "eb2b4916fdb52b08666c161c",
+    "title": "הוספת כפתור \"ליקוט הכל\" לסימון כל המוצרים בהזמנה כלוקטו בלחיצה אחת"
+  },
+  "#6afef6": {
+    "class": "automatable",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/product-photo-capture.spec.ts",
+      "tests/catalog/catalog-list.spec.ts"
+    ],
+    "reason": "Ручная QA 18.10 ✅ (fake camera). Новый тест @data fake camera: «צילום» без filechooser → «צילום חוזר»/«שמירה», сохранение только по «שמירה», позиция «צילום» не меняется. catalog-list.spec.ts и cat-06 п.3 обновлены под новую подсказку «…ולחצו «צילום».». Кейс catalog/cat-25. Вручную: реальная камера iPad/Safari.",
+    "date": "2026-10-25",
+    "source": "backfill",
+    "id": "b1d20da96d1dd96bd56afef6",
+    "title": "קטלוג וניהול – בלחיצה על כפתור \"צילום\" נפתח חלון בחירת תמונה במקום צילום ישיר מהמצלמה"
+  },
+  "#279e07": {
+    "class": "has-tests",
+    "feature": "ui-general",
+    "tests": [
+      "tests/ui-general/dashboard-period-url.spec.ts"
+    ],
+    "reason": "Покрыт #6f3c9b (?period=1) + добавлен 1 read-only тест 25.10: порядок היום/7/30/90, график «הכנסות היום, לעומת אתמול», карточка «לעומת אתמול כולו» (или «אין תקופה קודמת להשוואה» при revenue_prev=0). Кейс ui-general/ui-13. Вручную: подпись при ненулевом вчера, граница полуночи. «חוב פתוח» не по периоду — норма.",
+    "date": "2026-10-25",
+    "source": "backfill",
+    "id": "baaa6f61ad663d8180279e07",
+    "title": "הוספת אפשרות סינון לפי יום אחד (היום) בלוח הבקרה הראשי"
+  },
+  "#599f82": {
+    "class": "automatable",
+    "feature": "delivery",
+    "tests": [
+      "tests/delivery/order-time-and-target-hour.spec.ts",
+      "tests/delivery/delivery-note-print-no-delivered-at.spec.ts"
+    ],
+    "reason": "Ручная QA 18.10 ✅. Печать уже покрыта (#539c2f). 8 новых тестов: время заказа у buyer/admin/תעודה; поле «שעת יעד לאספקה» активно только после даты (без сохранения); сохранённый час #542 на доске/«דוח משלוחים»/תעודה/у водителя; @data-сценарий QA-AUTO-delivery-hour- (назначение 16:00 → 17:45). Кейсы delivery/dlv-07…dlv-10. Вручную: 390, браузер в UTC.",
+    "date": "2026-10-25",
+    "source": "backfill",
+    "id": "4fe8a3e9427d9465f2599f82",
+    "title": "הוספת שעת ביצוע ההזמנה ושעת יעד לאספקה בהזמנות ובתעודת משלוח"
+  },
+  "#8103a9": {
+    "class": "automatable",
+    "feature": "client-ordering",
+    "tests": [
+      "tests/client-ordering/recent-products.spec.ts"
+    ],
+    "reason": "Ручная QA 18.10 ✅. 7 тестов: 4 read-only (чип после «הכל», в «סינון ומיון», состав/порядок по истории без дублей и без архивных, фильтры внутри), 2 @data (+ в корзину; обновление после заказов, архив), 1 skip. Кейсы client-ordering/co-24…co-28. Вручную: новый клиент без заказов и раздельная история (нет второго клиента).",
+    "date": "2026-10-25",
+    "source": "backfill",
+    "id": "9f381ae90c6d4f6b828103a9",
+    "title": "הוספת קטגוריית \"מוצרים אחרונים\" בקטלוג הלקוחות להצגת מוצרים שהוזמנו בעבר"
+  },
+  "#aef12a": {
+    "class": "automatable",
+    "feature": "client-ordering",
+    "tests": [
+      "tests/client-ordering/reorder.spec.ts"
+    ],
+    "reason": "Ручная QA 18.10 ✅. 4 теста: кнопка «הזמן שוב» desktop/iphone (read-only), 2 @data (те же кол-ва + к корзине, текущие цены, сообщение о недоступном/удалённом без повтора после F5, всё недоступно → сообщение на экране заказа); корзина buyer восстанавливается по снимку (_cart-snapshot.ts). Кейсы co-29, co-30. Вручную: количество > остатка / < минимума, латиница в сообщении.",
+    "date": "2026-10-25",
+    "source": "backfill",
+    "id": "ff0bd29eadd9e87f15aef12a",
+    "title": "הוספת כפתור \"הזמן שוב\" בהיסטוריית ההזמנות של הלקוח לביצוע הזמנה חוזרת"
+  },
+  "#5711c3": {
+    "class": "qa-passed",
+    "feature": "orders/walk-in-sale",
+    "tests": [
+      "tests/orders/walk-in-sale.spec.ts"
+    ],
+    "cases": [
+      "tests/orders/ord-21"
+    ],
+    "reason": "QA 25.10, подтверждено пользователем",
+    "date": "2026-10-25",
+    "source": "qa"
+  },
+  "#ccd3fa": {
+    "class": "qa-passed",
+    "feature": "orders/walk-in-sale",
+    "tests": [
+      "tests/orders/walk-in-sale.spec.ts"
+    ],
+    "cases": [
+      "tests/orders/ord-22"
+    ],
+    "reason": "QA 25.10, подтверждено пользователем",
+    "date": "2026-10-25",
+    "source": "qa"
+  },
+  "#0a50ac": {
+    "class": "qa-passed",
+    "feature": "orders/walk-in-sale",
+    "tests": [
+      "tests/orders/walk-in-sale.spec.ts"
+    ],
+    "cases": [
+      "tests/orders/ord-23"
+    ],
+    "reason": "QA 25.10, подтверждено пользователем",
+    "date": "2026-10-25",
+    "source": "qa"
+  },
+  "#a88293": {
+    "class": "qa-passed",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/walk-in-touch-layout.spec.ts"
+    ],
+    "cases": [
+      "tests/orders/ord-24"
+    ],
+    "reason": "QA 25.10, подтверждено пользователем",
+    "date": "2026-10-25",
+    "source": "qa"
+  },
+  "#428d8a": {
+    "class": "qa-passed",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/walk-in-touch-layout.spec.ts",
+      "tests/orders/order-edit-stock-limit.spec.ts"
+    ],
+    "cases": [
+      "tests/orders/ord-25"
+    ],
+    "reason": "QA 25.10, подтверждено пользователем",
+    "date": "2026-10-25",
+    "source": "qa"
+  },
+  "#80bb3c": {
+    "class": "qa-passed",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/walk-in-stock-limit.spec.ts"
+    ],
+    "cases": [
+      "tests/orders/ord-26"
+    ],
+    "reason": "QA 25.10, подтверждено пользователем",
+    "date": "2026-10-25",
+    "source": "qa"
+  },
+  "#6a98bd": {
+    "class": "qa-passed",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/order-edit-stock-limit.spec.ts"
+    ],
+    "cases": [
+      "tests/orders/ord-27"
+    ],
+    "reason": "QA 25.10, подтверждено пользователем",
+    "date": "2026-10-25",
+    "source": "qa"
+  },
+  "#7e2789": {
+    "class": "qa-passed",
+    "feature": "delivery",
+    "tests": [
+      "tests/delivery/rejected-order-delivery-block.spec.ts"
+    ],
+    "cases": [
+      "tests/delivery/dlv-11"
+    ],
+    "reason": "QA 25.10, подтверждено пользователем",
+    "date": "2026-10-25",
+    "source": "qa"
+  },
+  "#a8bdcb": {
+    "class": "qa-passed",
+    "feature": "delivery",
+    "tests": [
+      "tests/delivery/drivers-loading-no-empty-flash.spec.ts"
+    ],
+    "cases": [
+      "tests/delivery/dlv-12"
+    ],
+    "reason": "QA 25.10, подтверждено пользователем",
+    "date": "2026-10-25",
+    "source": "qa"
+  },
+  "#7ae889": {
+    "class": "qa-passed",
+    "feature": "delivery",
+    "tests": [
+      "tests/delivery/order-stage-feminine.spec.ts"
+    ],
+    "cases": [
+      "tests/delivery/dlv-13"
+    ],
+    "reason": "QA 25.10, подтверждено пользователем",
+    "date": "2026-10-25",
+    "source": "qa"
+  },
+  "#1f768e": {
+    "class": "qa-passed",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/new-order-toast-no-overlap.spec.ts"
+    ],
+    "cases": [
+      "tests/orders/ord-35"
+    ],
+    "reason": "QA 25.10, подтверждено пользователем",
+    "date": "2026-10-25",
+    "source": "qa"
+  },
+  "#26c50b": {
+    "class": "qa-passed",
+    "feature": "ui-general",
+    "tests": [
+      "tests/ui-general/dashboard-today-hourly.spec.ts"
+    ],
+    "cases": [
+      "tests/ui-general/ui-14"
+    ],
+    "reason": "QA 25.10, подтверждено пользователем",
+    "date": "2026-10-25",
+    "source": "qa"
+  },
+  "#4f5292": {
+    "class": "qa-passed",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/orders-mobile-cards.spec.ts",
+      "tests/ui-general/mobile-layout.spec.ts"
+    ],
+    "cases": [
+      "tests/orders/ord-36",
+      "tests/ui-general/ui-09"
+    ],
+    "reason": "QA 26.10, подтверждено пользователем (#4f5292)",
+    "date": "2026-10-26",
+    "source": "qa",
+    "id": "b6e81fc6b1f9f8bc5f4f5292",
+    "title": "מסך «הזמנות» בטלפון (390): כפתורי הדפדוף וכפתור «⋮» של השורות מחוץ למסך"
+  },
+  "#89b5f0": {
+    "class": "qa-passed",
+    "feature": "delivery",
+    "tests": [
+      "tests/delivery/rejected-delivery-note.spec.ts"
+    ],
+    "cases": [
+      "tests/delivery/dlv-14"
+    ],
+    "reason": "QA 26.10, подтверждено пользователем (#89b5f0)",
+    "date": "2026-10-26",
+    "source": "qa",
+    "id": "536a4ad455a483d7ea89b5f0",
+    "title": "תעודת משלוח של הזמנה שנדחתה: תג «ממתינה להכנה», פאנל שיוך נהג ו«ההזמנה טרם אושרה»"
+  },
+  "#929aa5": {
+    "class": "qa-passed",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/order-edit-server-stock.spec.ts"
+    ],
+    "cases": [
+      "tests/orders/ord-37"
+    ],
+    "reason": "QA 26.10, подтверждено пользователем (#929aa5)",
+    "date": "2026-10-26",
+    "source": "qa",
+    "id": "00db90c4b1c362d37e929aa5",
+    "title": "עריכת הזמנה: השרת שומר כמות גדולה מהמלאי (update_order_items לא בודק מלאי)"
+  },
+  "#cb3f40": {
+    "class": "qa-passed",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/order-edit-items-layout.spec.ts"
+    ],
+    "cases": [
+      "tests/orders/ord-38"
+    ],
+    "reason": "QA 26.10, подтверждено пользователем (#cb3f40)",
+    "date": "2026-10-26",
+    "source": "qa",
+    "id": "739b35c867ac974cbecb3f40",
+    "title": "עריכת הזמנה בטלפון (390): טבלת הפריטים נגללת לרוחב — שדה המחיר, «סה\"כ» וכפתור המחיקה מחוץ למסך"
+  },
+  "#c6b040": {
+    "class": "qa-passed",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/order-edit-items-layout.spec.ts"
+    ],
+    "cases": [
+      "tests/orders/ord-38"
+    ],
+    "reason": "QA 26.10, подтверждено пользователем (#c6b040)",
+    "date": "2026-10-26",
+    "source": "qa",
+    "id": "beaa2f285a5e81bfc8c6b040",
+    "title": "עריכת הזמנה ברוחב 641–715 (טאבלט קטן / טלפון לרוחב): טבלת הפריטים נגללת לרוחב וכפתור המחיקה מחוץ לתצוגה"
+  },
+  "#c4fe57": {
+    "class": "qa-passed",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/order-details-items-layout.spec.ts"
+    ],
+    "cases": [
+      "tests/orders/ord-39",
+      "tests/orders/ord-36",
+      "tests/orders/ord-38"
+    ],
+    "reason": "QA 26.10, подтверждено пользователем (#c4fe57)",
+    "date": "2026-10-26",
+    "source": "qa",
+    "id": "3cc979629d34c8354dc4fe57",
+    "title": "כרטיס הזמנה (מפיץ) בטלפון וב-1024–1280: טבלת «פריטי ההזמנה» נגללת לרוחב — מחיר, «סה\"כ» וסכומי ההזמנה מחוץ לתצוגה"
+  },
+  "#af3ea6": {
+    "class": "qa-passed",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/order-edit-price-field-width.spec.ts",
+      "tests/orders/order-edit-items-layout.spec.ts"
+    ],
+    "cases": [
+      "tests/orders/ord-40",
+      "tests/orders/ord-38"
+    ],
+    "reason": "QA 26.10, подтверждено пользователем (#af3ea6)",
+    "date": "2026-10-26",
+    "source": "qa",
+    "id": "6a8095e62cc1746f40af3ea6",
+    "title": "עריכת הזמנה ב-1024 עם תפריט צד: שדה «מחיר יחידה» צר (79px) — מחיר בן 5 ספרות נחתך («5000(» במקום 50000)"
+  },
+  "#0f04ee": {
+    "class": "qa-passed",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/orders-tabs-phone.spec.ts"
+    ],
+    "cases": [
+      "tests/orders/ord-41",
+      "tests/orders/ord-36"
+    ],
+    "reason": "QA 26.10, подтверждено пользователем (#0f04ee)",
+    "date": "2026-10-26",
+    "source": "qa",
+    "id": "4b5065dedc90be97fa0f04ee",
+    "title": "מסך «הזמנות» בטלפון 360: שורת הלשוניות נגללת לרוחב — המספר של «נדחו» לא נראה"
+  },
+  "#b82eba": {
+    "class": "qa-passed",
+    "feature": "client-ordering",
+    "tests": [
+      "tests/client-ordering/cart-total-loading-skeleton.spec.ts"
+    ],
+    "cases": [
+      "tests/client-ordering/co-31",
+      "tests/client-ordering/co-23"
+    ],
+    "reason": "QA 26.10, подтверждено пользователем (#b82eba)",
+    "date": "2026-10-26",
+    "source": "qa",
+    "id": "078609fc7981f8ca96b82eba",
+    "title": "עגלת הלקוח: בפתיחת העגלה אחרי הוספת מוצר מוצג לרגע «סה״כ משוער ₪0.00»"
+  },
+  "#ceadd3": {
+    "class": "qa-passed",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/order-details-totals-divider.spec.ts"
+    ],
+    "cases": [
+      "tests/orders/ord-39"
+    ],
+    "reason": "QA 27.10, подтверждено пользователем (#ceadd3)",
+    "date": "2026-10-28",
+    "source": "qa",
+    "id": "1cb9fad013b4e882a5ceadd3",
+    "title": "כרטיס הזמנה (מפיץ) ב-1440: קו ההפרדה בסיכום"
+  },
+  "#f621b3": {
+    "class": "qa-passed",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/order-edit-total-label-nowrap.spec.ts"
+    ],
+    "cases": [
+      "tests/orders/ord-40",
+      "tests/orders/ord-38"
+    ],
+    "reason": "QA 27.10, подтверждено пользователем (#f621b3)",
+    "date": "2026-10-28",
+    "source": "qa",
+    "id": "608bc0669cef1b5f1ef621b3",
+    "title": "עריכת הזמנה: «סה\"כ לתשלום» בשתי שורות"
+  },
+  "#c2fc80": {
+    "class": "qa-passed",
+    "feature": "client-ordering",
+    "tests": [
+      "tests/client-ordering/cart-add-from-upsell-rows.spec.ts"
+    ],
+    "cases": [
+      "tests/client-ordering/co-32",
+      "tests/client-ordering/co-31",
+      "tests/client-ordering/co-23"
+    ],
+    "reason": "QA 27.10, подтверждено пользователем (#c2fc80)",
+    "date": "2026-10-28",
+    "source": "qa",
+    "id": "a052d04bfb91bf2ae3c2fc80",
+    "title": "עגלת הלקוח: שורות נעלמות בהוספה מ«השלימו»"
+  },
+  "#455fa4": {
+    "class": "qa-passed",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/orders-tabs-active-style.spec.ts"
+    ],
+    "cases": [
+      "tests/orders/ord-42",
+      "tests/orders/ord-41"
+    ],
+    "reason": "QA 28.10, подтверждено пользователем (#455fa4)",
+    "date": "2026-10-28",
+    "source": "qa",
+    "id": "58b2fbf416e447511d455fa4",
+    "title": "לשוניות במסכי «הזמנות» ו«קטלוג»: קו תחתון כחול ללשונית הפעילה"
+  },
+  "#e7e338": {
+    "class": "qa-passed",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/order-from-message.spec.ts"
+    ],
+    "cases": [
+      "tests/orders/ord-43"
+    ],
+    "reason": "QA 27–28.10, подтверждено пользователем (#e7e338); ВРЕМЕННО до подсчёта склада — возврат #e02e48, автотесты снимка §5 помечены skip «временно отключено 26.10»",
+    "date": "2026-10-28",
+    "source": "qa",
+    "id": "b8c555b48da08f7181e7e338",
+    "title": "בקשת לקוח: ביטול זמני של הגבלת המלאי"
+  },
+  "#f43d23": {
+    "class": "qa-passed",
+    "feature": "delivery",
+    "tests": [
+      "tests/delivery/delivery-note-barcode.spec.ts"
+    ],
+    "cases": [
+      "tests/delivery/dlv-15"
+    ],
+    "reason": "QA 28.10, подтверждено пользователем (#f43d23)",
+    "date": "2026-10-28",
+    "source": "qa",
+    "id": "dbfdcbcd713ab24e7df43d23",
+    "title": "בקשת לקוח: ברקוד לסריקה בכל שורת מוצר בתעודת משלוח"
+  },
+  "#e0026a": {
+    "class": "qa-passed",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/order-from-message.spec.ts"
+    ],
+    "cases": [
+      "tests/orders/ord-44",
+      "tests/orders/ord-43"
+    ],
+    "reason": "QA 28.10, подтверждено пользователем (#e0026a); автотест с подменой order-photo, @data, заказы #677 נדחתה / #678 סופקה",
+    "date": "2026-10-28",
+    "source": "qa",
+    "id": "5826b2ebd614b6c8c1e0026a",
+    "title": "הזמנה מהודעה: ההזמנה נשמרת מיד כ«אושרה · ממתינה לליקוט» במקום «ממתינה לאישור» — אי אפשר לדחות אותה"
+  },
+  "#38e1e5": {
+    "class": "qa-passed",
+    "feature": "ui-general",
+    "tests": [
+      "tests/ui-general/ai-balance-error.spec.ts"
+    ],
+    "cases": [
+      "tests/ui-general/ui-15"
+    ],
+    "reason": "QA 28.10, подтверждено пользователем (#38e1e5); подмена ответов AI, 7 мест, @prod-safe",
+    "date": "2026-10-28",
+    "source": "qa",
+    "id": "8c83fd31555fc1e41438e1e5",
+    "title": "הזמנה מהודעה: כשנגמרת יתרת השימוש בשירות ה-AI…"
+  },
+  "#b4cd60": {
+    "class": "qa-passed",
+    "feature": "delivery",
+    "tests": [
+      "tests/delivery/delivery-note-1024-layout.spec.ts",
+      "tests/delivery/delivery-note-barcode.spec.ts"
+    ],
+    "cases": [
+      "tests/delivery/dlv-16",
+      "tests/delivery/dlv-15"
+    ],
+    "reason": "QA 28.10, подтверждено пользователем (#b4cd60); 4/4 + barcode 5/5",
+    "date": "2026-10-28",
+    "source": "qa",
+    "id": "5caf3db42b78b98265b4cd60",
+    "title": "תעודת משלוח ברוחב 1024: טבלת הפריטים צרה (245px) — המחירים נשברים לשתי שורות והכותרת «כמות» יוצאת מהתא"
+  },
+  "#1ee7e8": {
+    "class": "qa-passed",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/sku-check-digit.spec.ts",
+      "tests/orders/walk-in-bad-sku.spec.ts",
+      "tests/delivery/delivery-note-bad-check-digit.spec.ts"
+    ],
+    "cases": [
+      "tests/catalog/cat-26",
+      "tests/catalog/cat-27",
+      "tests/catalog/cat-28",
+      "tests/orders/ord-45-walk-in-bad-sku-note",
+      "tests/delivery/dlv-17"
+    ],
+    "reason": "QA 28.10, подтверждено пользователем (#1ee7e8); 6/6 + 2/2 + 2/2, BarcodeDetector подменён",
+    "date": "2026-10-28",
+    "source": "qa",
+    "id": "4ac9e0a6fc1df8a9fd1ee7e8",
+    "title": "מק\"ט / ברקוד של מוצר: אין בדיקה של ספרת הביקורת ואין אישור לפני שמירה"
+  },
+  "#ea0fde": {
+    "class": "qa-passed",
+    "feature": "customers-pricing",
+    "tests": [
+      "tests/customers-pricing/customer-no-link.spec.ts",
+      "tests/customers-pricing/rep-new-customer.spec.ts"
+    ],
+    "cases": [
+      "tests/customers/cust-01",
+      "tests/customers/cust-02",
+      "tests/customers/cust-03",
+      "tests/customers/cust-04",
+      "tests/customers/cust-05",
+      "tests/customers/cust-08"
+    ],
+    "reason": "QA 29.10, подтверждено пользователем (#ea0fde); customer-no-link 3/3, rep-new-customer 5/5; cust-04 (заказ/оплата/доставка/цена) — только вручную",
+    "date": "2026-10-29",
+    "source": "qa",
+    "id": "9c9fe725ebbe7ca245ea0fde",
+    "title": "בקשת לקוח: יצירת לקוח ללא קישור הזמנה וללא הרשמה (מנהל ונציג מכירות)"
+  },
+  "#1c5a6c": {
+    "class": "qa-passed",
+    "feature": "customers-pricing",
+    "tests": [
+      "tests/customers-pricing/rep-new-customer.spec.ts",
+      "tests/customers-pricing/customers-access.spec.ts",
+      "tests/auth-security/rep-direct.spec.ts"
+    ],
+    "cases": [
+      "tests/customers/cust-05",
+      "tests/customers/cust-06",
+      "tests/customers/cust-07",
+      "tests/customers/cust-08",
+      "tests/customers-pricing/cp-07"
+    ],
+    "reason": "QA 29.10, подтверждено пользователем (#1c5a6c); rep-new-customer 5/5; customers-access 6/6 и rep-direct 3/3 обновлены (у נציג есть «לקוח חדש»)",
+    "date": "2026-10-29",
+    "source": "qa",
+    "id": "13c85e40bcbcebaefe1c5a6c",
+    "title": "בקשת לקוח: נציג מכירות יכול להוסיף לקוחות חדשים"
+  },
+  "#dc1afa": {
+    "class": "qa-passed",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/import-sku-check-digit.spec.ts",
+      "tests/catalog/import-manual-column-mapping.spec.ts"
+    ],
+    "cases": [
+      "tests/catalog/cat-29",
+      "tests/catalog/cat-31"
+    ],
+    "reason": "QA 29.10, подтверждено пользователем (#dc1afa); import-sku-check-digit 5/5 (4 @prod-safe с перехватом POST, 1 @data с удалением), стык ברקוד ספק→מק\"ט 1/1",
+    "date": "2026-10-29",
+    "source": "qa",
+    "id": "9d0261f3f435f180ebdc1afa",
+    "title": "ייבוא מאקסל: מק\"ט עם ספרת ביקורת שגויה נשמר בלי אזהרה (בטופס המוצר יש אזהרה)"
+  },
+  "#6ac0be": {
+    "class": "qa-passed",
+    "feature": "catalog",
+    "tests": [
+      "tests/catalog/import-manual-column-mapping.spec.ts",
+      "tests/ui-general/ai-balance-error.spec.ts"
+    ],
+    "cases": [
+      "tests/catalog/cat-30",
+      "tests/catalog/cat-31",
+      "tests/ui-general/ui-15"
+    ],
+    "reason": "QA 29.10, подтверждено пользователем (#6ac0be); import-manual-column-mapping 7/7 (import-map подменён, запись заблокирована/перехвачена); ai-balance-error §9.3 дополнен 1/1; импорт клиентов — только вручную",
+    "date": "2026-10-29",
+    "source": "qa",
+    "id": "27183a5a2057ee2cd26ac0be",
+    "title": "ייבוא מאקסל: ההסבר מבקש «פתחו «שינוי עמודות» ובחרו לה שדה», אבל אי אפשר לשייך עמודה שלא זוהתה לשדה"
+  },
+  "#a6af81": {
+    "class": "qa-passed",
+    "feature": "customers-pricing",
+    "tests": [
+      "tests/customers-pricing/rep-join-link.spec.ts",
+      "tests/customers-pricing/rep-new-customer.spec.ts"
+    ],
+    "cases": [
+      "tests/customers/cust-05",
+      "tests/customers/cust-06",
+      "tests/customers/cust-08",
+      "tests/customers/cust-09",
+      "tests/customers/cust-10"
+    ],
+    "reason": "QA 29.10, подтверждено пользователем (#a6af81); rep-join-link 3/3 (новый), rep-new-customer обновлён (переключатель у נציג) 4/5 — тест «משה כהן не видит клиента» падает из-за данных (у משה כהן появился клиент «test» 0584114874 от 29.10)",
+    "date": "2026-10-29",
+    "source": "qa",
+    "id": "70e6681158ee149582a6af81",
+    "title": "נציג מכירות: בחלון «לקוח חדש» אין מתג «יצירת קישור הצטרפות» — אי אפשר לבחור ליצור קישור ללקוח, רק לשמור אותו"
+  },
+  "#5a2dbd": {
+    "class": "qa-passed",
+    "feature": "customers-pricing",
+    "tests": [
+      "tests/customers-pricing/customer-status-no-link.spec.ts",
+      "tests/customers-pricing/customer-no-link.spec.ts",
+      "tests/customers-pricing/customers-list.spec.ts",
+      "tests/customers-pricing/customer-lifecycle.spec.ts"
+    ],
+    "cases": [
+      "tests/customers/cust-02",
+      "tests/customers/cust-03",
+      "tests/customers/cust-11",
+      "tests/customers/cust-12",
+      "tests/customers/cust-13",
+      "tests/customers-pricing/cp-02"
+    ],
+    "reason": "QA 29.10, подтверждено пользователем (#5a2dbd); customer-status-no-link 4/4 (новый), customer-no-link 3/3 (статус теперь проверяется), customers-list cp-02 и customer-lifecycle обновлены ✅; мигание статуса до customer_invites — #08cb68 (исправлен 01.11, автотест customer-status-loading.spec.ts)",
+    "date": "2026-10-29",
+    "source": "qa",
+    "id": "5c35c4be3c53473f845a2dbd",
+    "title": "לקוח שנוצר בלי קישור הצטרפות מוצג כ«ממתין להזמנה» ובכרטיס מופיע «שלחו ללקוח את קישור ההצטרפות כדי שיוכל להיכנס»"
+  },
+  "#08cb68": {
+    "class": "qa-passed",
+    "feature": "customers-pricing",
+    "tests": [
+      "tests/customers-pricing/customer-status-loading.spec.ts",
+      "tests/customers-pricing/customer-status-no-link.spec.ts",
+      "tests/customers-pricing/customer-no-link.spec.ts",
+      "tests/customers-pricing/customers-list.spec.ts"
+    ],
+    "cases": [
+      "tests/customers/cust-14",
+      "tests/customers/cust-02",
+      "tests/customers/cust-11",
+      "tests/customers-pricing/cp-02"
+    ],
+    "reason": "QA 01.11, подтверждено пользователем (#08cb68); customer-status-loading.spec.ts записан (9 тестов: задержка customer_invites/orders через route + запись кадров, QA-AUTO без ссылки/«מושבת» @data), не прогонялся; в старых тестах сняты оговорки «мигание — баг #08cb68»",
+    "date": "2026-11-01",
+    "source": "qa",
+    "id": "44ea6c3fa8e514f98508cb68",
+    "title": "לקוחות: בזמן טעינה כל הלקוחות מוצגים לרגע «ללא כניסה לקטלוג» — גם לקוח «פעיל» ולקוח עם קישור"
+  },
+  "#7f32dc": {
+    "class": "qa-passed",
+    "source": "qa",
+    "feature": "customers-pricing",
+    "tests": [
+      "tests/customers-pricing/customer-delete-waits-for-orders.spec.ts"
+    ],
+    "cases": [
+      "tests/customers/cust-15-delete-waits-for-orders.md"
+    ],
+    "spec": "specs/customers-pricing.md §12",
+    "date": "2026-11-01",
+    "note": "not run yet; 12.3-12.5 @data (unremovable orders/archived customers)"
+  },
+  "#ab1b2e": {
+    "class": "qa-passed",
+    "source": "qa",
+    "feature": "customers-pricing",
+    "tests": [
+      "tests/customers-pricing/customer-kpi-orders-error.spec.ts"
+    ],
+    "cases": [
+      "tests/customers/cust-16-card-kpi-orders-error.md"
+    ],
+    "spec": "specs/customers-pricing.md §13",
+    "date": "2026-11-01",
+    "note": "not run yet; @prod-safe"
+  },
+  "#255bc0": {
+    "class": "qa-passed",
+    "feature": "auth-security",
+    "tests": [
+      "tests/auth-security/distributor-isolation-api.spec.ts"
+    ],
+    "reason": "QA 2026-11-19, user confirmed",
+    "date": "2026-11-19",
+    "source": "qa"
+  },
+  "#6aae65": {
+    "class": "qa-passed",
+    "feature": "auth-security",
+    "tests": [
+      "tests/auth-security/distributor-isolation-api.spec.ts"
+    ],
+    "reason": "QA 2026-11-19, user confirmed",
+    "date": "2026-11-19",
+    "source": "qa"
+  },
+  "#c3fdb1": {
+    "class": "qa-passed",
+    "feature": "auth-security",
+    "tests": [
+      "tests/auth-security/order-reapprove-api.spec.ts"
+    ],
+    "reason": "QA 2026-11-19, user confirmed",
+    "date": "2026-11-19",
+    "source": "qa"
+  },
+  "#834c8e": {
+    "class": "qa-passed",
+    "feature": "auth-security",
+    "tests": [
+      "tests/auth-security/orders-no-direct-insert-api.spec.ts"
+    ],
+    "reason": "QA 2026-11-19, user confirmed",
+    "date": "2026-11-19",
+    "source": "qa"
+  },
+  "#adfbdf": {
+    "class": "qa-passed",
+    "feature": "ui-general",
+    "tests": [
+      "tests/ui-general/accounting-report-print-subrows.spec.ts"
+    ],
+    "reason": "QA 2026-11-19, user confirmed",
+    "date": "2026-11-19",
+    "source": "qa"
+  },
+  "#a597e8": {
+    "class": "qa-passed",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/receipt-no-receipt-texts.spec.ts"
+    ],
+    "reason": "QA 2026-11-19, user confirmed",
+    "date": "2026-11-19",
+    "source": "qa"
+  },
+  "#de732f": {
+    "class": "qa-passed",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/order-by-number-url.spec.ts"
+    ],
+    "reason": "QA 2026-11-19, user confirmed",
+    "date": "2026-11-19",
+    "source": "qa"
+  },
+  "#f9df74": {
+    "class": "has-tests",
+    "feature": "inventory",
+    "tests": [
+      "e2e/tests/inventory/receive-prefill-single-place.spec.ts",
+      "e2e/tests/inventory/receive-multiple-places-dropdown.spec.ts",
+      "e2e/tests/inventory/receive-prefill-map-bound.spec.ts",
+      "e2e/tests/inventory/receive-no-place-and-product-switch.spec.ts",
+      "e2e/tests/inventory/receive-into-place-with-unplaced-stock.spec.ts"
+    ],
+    "reason": "кейсы inv-02/06, wm-07; 10 автотестов receive-* (prefill места, dropdown нескольких мест, привязка с карты)",
+    "date": "2026-11-19",
+    "source": "backfill"
+  },
+  "#539f7f": {
+    "class": "has-tests",
+    "feature": "catalog",
+    "tests": [
+      "e2e/tests/catalog/location-cell-no-kavua-existing.spec.ts",
+      "e2e/tests/catalog/location-cell-no-kavua-after-bind.spec.ts",
+      "e2e/tests/catalog/location-cell-no-kavua-iphone.spec.ts"
+    ],
+    "reason": "6 автотестов location-cell-no-kavua-* (desktop+iPhone)",
+    "date": "2026-11-19",
+    "source": "backfill"
+  },
+  "#cd482d": {
+    "class": "has-tests",
+    "feature": "customers-pricing",
+    "tests": [
+      "e2e/tests/customers-pricing/customers-list.spec.ts"
+    ],
+    "reason": "cp-06/cp-12, customers-list.spec (2 теста). Итог — по Figma 71:644 (решение 04.10: детали СЛЕВА, «הזמנות אחרונות» справа); «מה רצוי» тикета был ошибочным — тесты ему не следуют",
+    "date": "2026-11-19",
+    "source": "backfill"
+  },
+  "#ba1684": {
+    "class": "has-tests",
+    "feature": "picking",
+    "tests": [
+      "e2e/tests/picking/picking-flow.spec.ts"
+    ],
+    "reason": "pick-01/pick-13, picking-flow.spec (2 теста)",
+    "date": "2026-11-19",
+    "source": "backfill"
+  },
+  "#480fbd": {
+    "class": "has-tests",
+    "feature": "auth-security",
+    "tests": [
+      "e2e/tests/auth-security/impersonation.spec.ts",
+      "e2e/tests/auth-security/rep-direct.spec.ts"
+    ],
+    "reason": "auth-06/14/16, impersonation.spec + rep-direct.spec (4 теста)",
+    "date": "2026-11-19",
+    "source": "backfill"
+  },
+  "#a56cf4": {
+    "class": "has-tests",
+    "feature": "picking",
+    "tests": [
+      "e2e/tests/picking/picking-flow.spec.ts"
+    ],
+    "reason": "pick-12, picking-flow.spec",
+    "date": "2026-11-19",
+    "source": "backfill"
+  },
+  "#73672e": {
+    "class": "superseded",
+    "feature": "inventory",
+    "tests": [
+      "e2e/tests/catalog/catalog-list.spec.ts",
+      "e2e/tests/inventory/inventory-lifecycle.spec.ts",
+      "e2e/tests/catalog/catalog-lifecycle.spec.ts"
+    ],
+    "reason": "заменён решением владельца 05.10 (#d7b7ec74) и правилами 07.10 (#d17c625a): удаление без «ייגרעו מהמלאי»/записи «נגרע»; привязанный к месту — блок с переходом на карту. Тесты уже переписаны под новое поведение (catalog-list, inventory-lifecycle, category-visibility-archive), конфликта нет",
+    "date": "2026-11-19",
+    "source": "backfill"
+  },
+  "#500064": {
+    "class": "has-tests",
+    "feature": "catalog",
+    "tests": [
+      "e2e/tests/catalog/catalog-lifecycle.spec.ts"
+    ],
+    "reason": "cat-18, catalog-lifecycle.spec (2 теста)",
+    "date": "2026-11-19",
+    "source": "backfill"
+  },
+  "#78a81a": {
+    "class": "has-tests",
+    "feature": "catalog",
+    "tests": [
+      "e2e/tests/catalog/categories-states.spec.ts",
+      "e2e/tests/client-ordering/catalog.spec.ts"
+    ],
+    "reason": "cat-19, co-17 и др.; 11 тестов (catalog, client-ordering, rep, nav)",
+    "date": "2026-11-19",
+    "source": "backfill"
+  },
+  "#3ecb71": {
+    "class": "has-tests",
+    "feature": "catalog",
+    "tests": [
+      "e2e/tests/catalog/categories-states.spec.ts"
+    ],
+    "reason": "cat-17, categories-states.spec (4 теста)",
+    "date": "2026-11-19",
+    "source": "backfill"
+  },
+  "#7de486": {
+    "class": "has-tests",
+    "feature": "auth-security",
+    "tests": [
+      "e2e/tests/auth-security/impersonation.spec.ts"
+    ],
+    "reason": "auth-15, impersonation/rep-direct (4 теста)",
+    "date": "2026-11-19",
+    "source": "backfill"
+  },
+  "#e295c2": {
+    "class": "has-tests",
+    "feature": "warehouse-map",
+    "tests": [
+      "e2e/tests/warehouse-map/map-view.spec.ts"
+    ],
+    "reason": "wm-13, map-view.spec (2 теста)",
+    "date": "2026-11-19",
+    "source": "backfill"
+  },
+  "#355566": {
+    "class": "has-tests",
+    "feature": "picking",
+    "tests": [
+      "e2e/tests/picking/picking-flow.spec.ts"
+    ],
+    "reason": "pick-11/pick-03, ord-10; picking-flow.spec (2 теста)",
+    "date": "2026-11-19",
+    "source": "backfill"
+  },
+  "#82b37e": {
+    "class": "has-tests",
+    "feature": "client-ordering",
+    "tests": [
+      "e2e/tests/client-ordering/cart-checkout.spec.ts"
+    ],
+    "reason": "co-12, cart-checkout.spec",
+    "date": "2026-11-19",
+    "source": "backfill"
+  },
+  "#060ee9": {
+    "class": "has-tests",
+    "feature": "client-ordering",
+    "tests": [
+      "e2e/tests/catalog/catalog-lifecycle.spec.ts"
+    ],
+    "reason": "co-16/co-19/co-03, catalog-lifecycle.spec (2 теста)",
+    "date": "2026-11-19",
+    "source": "backfill"
+  },
+  "#02f287": {
+    "class": "has-tests",
+    "feature": "client-ordering",
+    "tests": [
+      "e2e/tests/client-ordering/order-history.spec.ts"
+    ],
+    "reason": "co-15, order-history.spec",
+    "date": "2026-11-19",
+    "source": "backfill"
+  },
+  "#d4461e": {
+    "class": "has-tests",
+    "feature": "catalog",
+    "tests": [
+      "e2e/tests/catalog/categories-states.spec.ts",
+      "e2e/tests/catalog/catalog-lifecycle.spec.ts"
+    ],
+    "reason": "cat-16/cat-17, categories-states + catalog-lifecycle (4 теста)",
+    "date": "2026-11-19",
+    "source": "backfill"
+  },
+  "#87e4fb": {
+    "class": "has-tests",
+    "feature": "catalog",
+    "tests": [
+      "e2e/tests/catalog/catalog-list.spec.ts"
+    ],
+    "reason": "cat-15, catalog-list/catalog-lifecycle (3 теста)",
+    "date": "2026-11-19",
+    "source": "backfill"
+  },
+  "#d4920b": {
+    "class": "has-tests",
+    "feature": "catalog",
+    "tests": [
+      "e2e/tests/catalog/catalog-list.spec.ts",
+      "e2e/tests/inventory/inventory-lifecycle.spec.ts"
+    ],
+    "reason": "cat-14, catalog-list + inventory-lifecycle; тесты уже учитывают более новые #d7b7ec74/#d17c625a",
+    "date": "2026-11-19",
+    "source": "backfill"
+  },
+  "#d5143a": {
+    "class": "has-tests",
+    "feature": "ui-general",
+    "tests": [
+      "e2e/tests/ui-general/load-errors.spec.ts"
+    ],
+    "reason": "ui-04/ui-11, load-errors.spec и др. (4 теста)",
+    "date": "2026-11-19",
+    "source": "backfill"
+  },
+  "#6b2116": {
+    "class": "has-tests",
+    "feature": "customers-pricing",
+    "tests": [
+      "e2e/tests/customers-pricing/groups-assign-states.spec.ts"
+    ],
+    "reason": "cp-11, groups-assign-states.spec (4 теста)",
+    "date": "2026-11-19",
+    "source": "backfill"
+  },
+  "#787114": {
+    "class": "qa-passed",
+    "feature": "delivery",
+    "tests": [
+      "tests/delivery/delivery-note-print-totals-row.spec.ts"
+    ],
+    "reason": "QA 2026-11-19, user confirmed",
+    "date": "2026-11-19",
+    "source": "qa"
+  },
+  "#35cb11": {
+    "class": "qa-passed",
+    "feature": "delivery",
+    "tests": [
+      "tests/delivery/print-header-meta-alignment.spec.ts"
+    ],
+    "reason": "QA 2026-11-19, user confirmed",
+    "date": "2026-11-19",
+    "source": "qa"
+  },
+  "#b75d3b": {
+    "class": "qa-passed",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/items-order-by-name.spec.ts"
+    ],
+    "reason": "QA 2026-11-19, user confirmed",
+    "date": "2026-11-19",
+    "source": "qa"
+  },
+  "#61c0f4": {
+    "class": "qa-passed",
+    "feature": "settings",
+    "tests": [
+      "tests/settings/business-tax-id.spec.ts"
+    ],
+    "reason": "QA 2026-11-19, user confirmed",
+    "date": "2026-11-19",
+    "source": "qa"
+  },
+  "#5e97b8": {
+    "class": "automatable",
+    "feature": "orders",
+    "tests": [
+      "tests/orders/receipt-on-approve.spec.ts"
+    ],
+    "reason": "backfill new 2026-11-19: 5 @prod-safe + 1 @data (creates approved order each run)",
+    "date": "2026-11-19",
+    "source": "backfill"
+  },
+  "#3c03f6": {
+    "class": "automatable",
+    "feature": "auth-security",
+    "tests": [
+      "tests/auth-security/multi-distributor-isolation.spec.ts"
+    ],
+    "reason": "backfill new 2026-11-19: 4 @prod-safe + 1 @data; registration submit — manual only",
+    "date": "2026-11-19",
+    "source": "backfill"
+  },
+  "#746c35": {
+    "class": "automatable",
+    "feature": "ui-general",
+    "tests": [
+      "tests/ui-general/ai-balance-error.spec.ts"
+    ],
+    "reason": "backfill new 2026-11-19: mocked order-photo detail:auth",
+    "date": "2026-11-19",
+    "source": "backfill"
+  }
+}

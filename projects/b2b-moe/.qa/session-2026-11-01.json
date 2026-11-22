@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-01",
+  "session": 1,
+  "queue": "בבדיקות",
+  "tickets": [
+    {
+      "hash": "#08cb68",
+      "title": "לקוחות: בזמן טעינה כל הלקוחות מוצגים לרגע «ללא כניסה לקטלוג» — גם לקוח «פעיל» ולקוח עם קישור",
+      "role": "admin",
+      "batch": 1,
+      "state": "pass",
+      "action": "pass",
+      "column": "הושלם",
+      "devices": "1440",
+      "screenshots": "screenshots/08cb68-*",
+      "feature": "customers: status/tag skeleton while customer_invites loads (list+card), no «הזמנה לקטלוג»/⋮ «קישור הצטרפות» before load, KPI/order counts skeleton while orders load, filter no empty flash, «מושבת» immediate, no-link → «ללא כניסה לקטלוג»",
+      "cases": "new cust-14; updated cust-02, cust-11, cp-02 (caveats removed)"
+    }
+  ],
+  "log": [
+    {
+      "time": "2026-11-01",
+      "note": "session start: handoff.md stale (11.10, завершено); MCP ok (token до 10.11); queue 1 ticket #08cb68; admin login alive; backfill: 40 last done all in ledger (241), no new; researcher started"
+    },
+    {
+      "time": "2026-11-01",
+      "note": "#08cb68 pass: T1-T4 3/3, T5+T5b, D1-D4 ok; QA-AUTO-08cb68 created (no link), disabled, deleted (rpc delete_customer 200). Findings: delete label «יישמר בהיסטוריה» missing in ⋮ before orders load; admin new-customer subtitle not changing with toggle off. No board actions needed (0 open rejections)."
+    },
+    {
+      "time": "2026-11-01",
+      "note": "#08cb68 confirmed by user (прошёл) → autotests started"
+    },
+    {
+      "time": "2026-11-01",
+      "note": "#08cb68 autotests written (not run): customer-status-loading.spec.ts 9 tests (7 prod-safe, 2 @data), old comments updated, ledger 242. Findings: N1 confirmed 3/3 (delete dialog before orders load says no orders / permanent delete for test with 84 orders + debt) — draft shown, waiting yes; N2 not confirmed 0/3."
+    },
+    {
+      "time": "2026-11-01",
+      "note": "N1 created as #7f32dc (ticket 47, bug medium, todo, 3 screenshots via public url — upload_path check failed upload_not_complete although PUT 200 and file public). N2 not filed."
+    },
+    {
+      "time": "2026-11-01",
+      "note": "session closed: report shown, handoff завершено"
+    }
+  ],
+  "test_data": [
+    {
+      "what": "customer QA-AUTO-08cb68 e86de6ed…",
+      "state": "deleted"
+    }
+  ],
+  "created": [
+    {
+      "hash": "#7f32dc",
+      "title": "לקוחות: מחיקת לקוח לפני שההזמנות נטענו — החלון כותב «ללקוח אין הזמנות… יימחק לצמיתות»…",
+      "status": "todo"
+    }
+  ]
+}

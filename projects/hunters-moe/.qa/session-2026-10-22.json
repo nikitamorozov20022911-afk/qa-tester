@@ -1,0 +1,4267 @@
+{
+ "_generator": "qa-tester © 2026 Nikita Morozov. ID: QAT-NM-2026-344086DC45B0⁠​‌​‌​​​‌​‌​​​​​‌​‌​‌​‌​​​​‌​‌‌​‌​‌​​‌‌‌​​‌​​‌‌​‌​​‌​‌‌​‌​​‌‌​​‌​​​‌‌​​​​​​‌‌​​‌​​​‌‌​‌‌​​​‌​‌‌​‌​​‌‌​​‌‌​​‌‌​‌​​​​‌‌​‌​​​​‌‌​​​​​​‌‌‌​​​​​‌‌​‌‌​​‌​​​‌​​​‌​​​​‌‌​​‌‌​‌​​​​‌‌​‌​‌​‌​​​​‌​​​‌‌​​​​​‌‌‌‌‌​​​‌​​‌‌‌​​‌‌​‌​​‌​‌‌​‌​‌‌​‌‌​‌​​‌​‌‌‌​‌​​​‌‌​​​​‌​​‌​​​​​​‌​​‌‌​‌​‌‌​‌‌‌‌​‌‌‌​​‌​​‌‌​‌‌‌‌​‌‌‌‌​‌​​‌‌​‌‌‌‌​‌‌‌​‌‌​⁣",
+ "project": "hunters",
+ "date": "2026-10-22",
+ "environment": "staging",
+ "tickets": [
+  {
+   "hash": "#49f47c",
+   "id": "d6c93b4127b562bb7e49f47c",
+   "title": "\"הוספת מועמד\" form shows the raw key \"onboarding.errors.Too big\"",
+   "type": "bug",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "add-candidate validation",
+   "role": "hunter_plus",
+   "devices": [
+    "desktop"
+   ],
+   "cases": ".qa/tests/copywriting/CW-5-1.md",
+   "notes": "limits 100/100/200/3000, he+en, regress #86894c ok",
+   "at": "2026-10-18T00:00"
+  },
+  {
+   "hash": "#ba4009",
+   "id": "2e8355cdd086d3d1e9ba4009",
+   "title": "Add candidate: anonymous without title/summary, second phone, anonymous hint",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "add-candidate",
+   "role": "hunter_plus",
+   "devices": [
+    "desktop"
+   ],
+   "cases": ".qa/tests/copywriting/CW-5-2.md",
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#cccb78",
+   "id": "d993df78bde0af50ddcccb78",
+   "title": "פרופיל אנונימי text addresses the candidate",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "add-candidate",
+   "role": "hunter_plus",
+   "devices": [
+    "desktop"
+   ],
+   "cases": "",
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#7f472d",
+   "id": "6aa29a4a93a72cd8cf7f472d",
+   "title": "טקסט שגוי בטופס הוספת מועמד + קידומת טלפון",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "add-candidate",
+   "role": "hunter_plus",
+   "devices": [
+    "desktop"
+   ],
+   "cases": "",
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#3b9172",
+   "id": "fcc7f2c48be0f7c4bd3b9172",
+   "title": "Submitting a candidate to a job: no validation...",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "candidate submission",
+   "role": "hunter_plus+company",
+   "devices": [
+    "desktop"
+   ],
+   "cases": ".qa/tests/copywriting/CW-5-3.md",
+   "notes": "banner on card still red/pink 'הגשה אנונימית' — user: not critical, pass",
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#9df6cb",
+   "id": "eae4036c723dd8417d9df6cb",
+   "title": "NDA payment shows the raw key checkout.products.application_nda",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "payment window",
+   "role": "hunter_plus+company",
+   "devices": [
+    "desktop"
+   ],
+   "cases": ".qa/tests/copywriting/CW-4-3.md",
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#f8ec88",
+   "id": "8ed3a0fe6adf33a11cf8ec88",
+   "title": "Payment window: typo, דיירקט, coupon error",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "payment window",
+   "role": "hunter_plus+company",
+   "devices": [
+    "desktop"
+   ],
+   "cases": ".qa/tests/copywriting/CW-4-3.md",
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#bc890b",
+   "id": "6f413ce201fa9f4460bc890b",
+   "title": "Free (₪0) tender and free promotion go through a payment window",
+   "action": "reject",
+   "column": "לביצוע",
+   "rejection_id": "rej_88a8c8a57d9cfefc25423324",
+   "notes": "T2 unfinished free tender invisible; T3-T4 not checked (PLUS free promo used until 01.11); paid tender pending-payment OK",
+   "at": "2026-10-18T14:30"
+  },
+  {
+   "hash": "#d1fbd5",
+   "id": "c8c92f54a5d7004ecad1fbd5",
+   "title": "Mobile: footer in Russian/English doesn't wrap",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "footer mobile",
+   "role": "guest",
+   "devices": [
+    "iphone",
+    "android"
+   ],
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#0bb217",
+   "id": "bf9d4474b3a1f1064a0bb217",
+   "title": "Mobile: admin burger menu opens empty",
+   "action": "pass",
+   "column": "הושלם",
+   "feature": "admin nav mobile",
+   "role": "admin",
+   "devices": [
+    "iphone",
+    "android"
+   ],
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#11606e",
+   "id": "70fbdbf123d1a296a811606e",
+   "title": "Small texts after actions",
+   "action": "pass",
+   "column": "הושלם",
+   "role": "hunter+company",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "T5.2 empty summary unreachable (submit now requires summary, #3b9172); #9679f7 'לסגור את המשרה' button gone (other ticket)",
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#9116cb",
+   "id": "80c4378606cc22d8be9116cb",
+   "title": "Anonymous talent profile: represent/send message reveal identity",
+   "action": "blocked",
+   "column": "בבדיקות",
+   "notes": "dialog+API clean; chat header/list blocked by /messages 403 (conversation_nda_job). Re-test after 403 fixed",
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#d9db64",
+   "id": "558523f885c4e3c81bd9db64",
+   "title": "AI candidate summary invents facts",
+   "action": "reject",
+   "column": "לביצוע",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#cd998d",
+   "id": "ff5d40b75f06170350cd998d",
+   "title": "Admin pricing shows developer notes",
+   "action": "waiting-user (item 7)",
+   "column": "בבדיקות",
+   "notes": "all other items pass",
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#e11528",
+   "id": "106cad9e8e848d0382e11528",
+   "title": "Mobile: tables hide columns without any scroll hint",
+   "action": "pass",
+   "column": "הושלם",
+   "devices": [
+    "iphone",
+    "android"
+   ],
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#950890",
+   "id": "3f3c5c7ee10bef2113950890",
+   "title": "Mobile: profile tab rows cut without scroll hint",
+   "action": "pass",
+   "column": "הושלם",
+   "devices": [
+    "iphone",
+    "android"
+   ],
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#282d5b",
+   "id": "40be24c9be66bd9d90282d5b",
+   "title": "Mobile: + פרסום and plan badge missing",
+   "action": "pass",
+   "column": "הושלם",
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#478fcf",
+   "id": "676cc92bfad8ec6fba478fcf",
+   "title": "Company job draft shown without draft mark",
+   "action": "pass",
+   "column": "הושלם",
+   "role": "company",
+   "devices": [
+    "desktop"
+   ],
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#535002",
+   "id": "69169058e879ce8d42535002",
+   "title": "Form title פרסום שת״פ shown to company",
+   "action": "pass",
+   "column": "הושלם",
+   "role": "company",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "hunter also now 'פרסום משרה' (glossary)",
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#628bb3",
+   "id": "6aa26cae9f967c3eec628bb3",
+   "title": "Admin users table not translated",
+   "action": "waiting-user (ru/ar fallback to EN)",
+   "column": "בבדיקות",
+   "notes": "he all OK",
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#62b022",
+   "id": "e6e0fa1103a69a4ec662b022",
+   "title": "Notification settings show a development text",
+   "action": "pass",
+   "column": "הושלם",
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#2ac3e1",
+   "id": "9ba4bd4419c401a49f2ac3e1",
+   "title": "Contact page details + labels",
+   "action": "waiting-user (email/phone correctness)",
+   "column": "בבדיקות",
+   "notes": "labels OK; info@hunters.co.il, 050-3822282",
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#9e49e0",
+   "id": "9bc698d674750843329e49e0",
+   "title": "Tender wizard NDA question + Remote",
+   "action": "pass",
+   "column": "הושלם",
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#674be0",
+   "id": "7161020f3a9459cb01674be0",
+   "title": "בקש ייצוג shown to companies and headhunters",
+   "action": "pass",
+   "column": "הושלם",
+   "devices": [
+    "desktop",
+    "iphone"
+   ],
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#5adfe3",
+   "id": "6c6d029581638a2ea25adfe3",
+   "title": "Tenders: budget filter / selected sort",
+   "action": "pass",
+   "column": "הושלם",
+   "notes": "finding: sort not applied on המכרזים שלי (company_2) 3/3",
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#710d8c",
+   "id": "4c9e57c462bb7f2a5d710d8c",
+   "title": "Form validation messages",
+   "action": "reject",
+   "column": "לביצוע",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#33f14b",
+   "id": "5398ef59bd6f06807633f14b",
+   "title": "Prices and plan texts contradict the real pricing",
+   "action": "pass (awaiting agreement on ₪0 conclusion)",
+   "column": "בבדיקות",
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#a92a99",
+   "id": "cddaabb406fce1f79ea92a99",
+   "title": "Admin: PLUS and PREMIUM described as להד האנטרים ולמשתמשי HR",
+   "action": "pass",
+   "column": "הושלם",
+   "role": "admin",
+   "devices": [
+    "desktop"
+   ],
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#7e0769",
+   "id": "ec60cb6fed08fdc8477e0769",
+   "title": "Headhunter terms are shown to talents",
+   "action": "blocked (apply dialog: talent limit used; need talent with open limit or after 23.10)",
+   "column": "בבדיקות",
+   "notes": "tab+heading OK; bundle strings clean",
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#3b9b8a",
+   "id": "902739502994f06b8e3b9b8a",
+   "title": "Empty states, notifications and small UI texts",
+   "action": "reject",
+   "column": "לביצוע",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#7a4d7f",
+   "id": "ee66432b4fa541debd7a4d7f",
+   "title": "Notification texts",
+   "action": "pass (proposed); company own-action notifications = PM decision",
+   "column": "בבדיקות",
+   "at": "2026-10-18"
+  },
+  {
+   "hash": "#93d0e7",
+   "id": "eb3cf227bdba9e4a7093d0e7",
+   "title": "Talent, company and HR screens show texts written for headhunters",
+   "action": "reject",
+   "column": "לביצוע",
+   "notes": "items 1 (status mismatch + 3rd person heading), 7 (recruiter testimonial on /talents), 9 (counter הצעות שהוגשו for candidates)",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#24eb58",
+   "id": "9efe48d779043f2a9924eb58",
+   "title": "Hebrew spelling mistakes repeat on many screens",
+   "action": "reject",
+   "column": "לביצוע",
+   "notes": "item 8: FAQ 'ההד האנטרים יגישו הצעות', 'שההד האנטרים יחתמו'",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#2dafb6",
+   "id": "d1ffaa172a36fcd3f22dafb6",
+   "title": "Hebrew texts: spelling, spaces before commas and inconsistent terms",
+   "action": "pass (proposed)",
+   "column": "ждёт-подтверждения",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#95bd33",
+   "id": "177d6270884bad33da95bd33",
+   "title": "English mode: cities, scope, AI summary, dates, phones, switcher",
+   "action": "reject",
+   "column": "לביצוע",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#1d74c2",
+   "id": "f500c96bfb9c65b4cb1d74c2",
+   "title": "Smart agent and talent bank",
+   "action": "reject",
+   "column": "לביצוע",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#2d7c1f",
+   "id": "6419ef22e6dc904e202d7c1f",
+   "title": "No validation on עמלת שת״פ (0%)",
+   "action": "pass (user moved)",
+   "column": "הושלם",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#2ac3e1",
+   "id": "9ba4bd4419c401a49f2ac3e1",
+   "title": "Contact page details + labels",
+   "action": "pass (user moved; details OK until client asks)",
+   "column": "הושלם",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#c88f58",
+   "id": "daccd0320ed03afa78c88f58",
+   "title": "Mobile: lists cut important text to one line",
+   "action": "pass (proposed)",
+   "column": "ждёт-подтверждения",
+   "devices": [
+    "iphone",
+    "android"
+   ],
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#db8918",
+   "id": "2e0433e897e0ef2888db8918",
+   "title": "Publish tender: non-existing date 31.02",
+   "action": "pass (proposed)",
+   "column": "ждёт-подтверждения",
+   "devices": [
+    "desktop"
+   ],
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#63b8d1",
+   "id": "3d66fbfa9395b618e663b8d1",
+   "title": "Mobile: texts overflow, overlap or break",
+   "action": "pending (T7 iPhone verify)",
+   "column": "בבדיקות",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#9a6100",
+   "action": "reject (awaiting yes): chips don't combine",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#521d84",
+   "action": "reject (awaiting yes): site filter no הכל/count/chip",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#9a60fe",
+   "action": "reject (awaiting yes): /company 404, nav composition; FAQ fate = PM",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#521d83",
+   "action": "pass (proposed)",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#521d82",
+   "action": "pending mobile+tender form",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#9a60ff",
+   "action": "pending HR+mobile",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#9a6104",
+   "action": "pending mobile",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#9a6101",
+   "action": "blocked: needs new account",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#9a6103",
+   "action": "blocked: needs pending headhunter",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#63b8d1",
+   "action": "reject (awaiting yes): iPhone Latin names in titles",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#521d82",
+   "action": "pass (proposed)",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#9a60ff",
+   "action": "pass (proposed)",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#9a6104",
+   "action": "pass (proposed)",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#9a6100",
+   "action": "reject (sent via Chrome)",
+   "column": "לביצוע",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#521d84",
+   "action": "reject (sent via Chrome)",
+   "column": "לביצוע",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#9a60fe",
+   "action": "reject (sent via Chrome)",
+   "column": "לביצוע",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#63b8d1",
+   "action": "reject (sent via Chrome)",
+   "column": "לביצוע",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#c88f58",
+   "action": "pass (user moved)",
+   "column": "הושלם",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#db8918",
+   "action": "pass (user moved)",
+   "column": "הושלם",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#521d83",
+   "action": "pass (user moved)",
+   "column": "הושלם",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#521d82",
+   "action": "pass (user moved)",
+   "column": "הושלם",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#9a60ff",
+   "action": "pass (user moved)",
+   "column": "הושלם",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#9a6104",
+   "action": "pass (user moved)",
+   "column": "הושלם",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#4a7b4a",
+   "action": "pass (proposed, per Miro)",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#3973c6",
+   "action": "waiting client (status model) + gender of status labels",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "…0d978b",
+   "title": "המכרזים שלי (company): selected sort does not change order",
+   "action": "new-bug",
+   "column": "לביצוע",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "…7818c8",
+   "title": "הוספת מועמד: candidate saved on step 1 המשך",
+   "action": "new-bug",
+   "column": "לביצוע",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#1866b6",
+   "title": "Onboarding מועמד — שלב 1: בחירת סוג פרופיל",
+   "action": "status הושלם→לביצוע (user asked; open rejection localhost redirect)",
+   "column": "לביצוע",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#628bb3",
+   "action": "pass (proposed; admin he+en decision)",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "…0b18b0",
+   "title": "Messages: chat list empty – my_conversations 403",
+   "action": "new-bug critical",
+   "column": "לביצוע",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#cd998d",
+   "action": "pass (user decided; item 7 duplicate remark not critical)",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "…09132b",
+   "title": "Admin (EN): job page region in Hebrew",
+   "action": "new-bug low",
+   "column": "לביצוע",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#628bb3",
+   "action": "pass (proposed)",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#3b5661",
+   "action": "pass except add/remove values (not checked, shared data)",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#f70a38",
+   "action": "waiting client: FREE can add candidates (§11.3) vs #96db6c undecided limits; all 17 other items pass",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#521d85",
+   "action": "pending verify: /hunters search ignores IDs; format approval = PM",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#521d85",
+   "action": "pass (proposed); /hunters search by ID works (verifier); format approval = PM",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#33f14b",
+   "action": "reject sent: /organizations step 3 must show tender price from Admin dynamically (₪0 now); verified after reload, לביצוע, 1 open reject",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#549afe",
+   "action": "reject sent: client confirmed annual plan needed; restore annual prices + monthly/annual toggle (Figma 167-27640, 167-30138); verified, לביצוע, 1 open reject",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#3973c6",
+   "action": "reject sent: candidate status labels masculine-only (נשלח/נצפה/נדחה) → slash forms; status model untouched; verified, לביצוע, 1 open reject",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#f70a38",
+   "action": "pass: FREE adding candidates follows §11.3; limits are client question (#96db6c)",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#bd7d76",
+   "action": "pass: law name, NDA, languages, footer link, wording fixed; content/HR tab decided OK (no HR tab)",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#bc5433",
+   "action": "pass: all items fixed; legal pages show \"in preparation\" note until client texts; stats block removed (decided)",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#5e82d0",
+   "action": "pass: 2y term consistent in text and \"בתוקף עד\" (hunter+company, he/en), scanned-signature line gone; user approved 2y. Note: party named \"מנהל/ת המשרה\", templates word term differently",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#96db6a",
+   "action": "pass (decision): PRD status model, as implemented",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#96db6b",
+   "action": "pass (decision): company side in scope as implemented per PRD §8 (registration, jobs and tenders)",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#96db6c",
+   "action": "pass (decision): limits per PRD §11 as implemented; annual plan yes (client, reject in #549afe); prices from Admin, Figma numbers are not binding",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#2ba176",
+   "action": "pass: edit menu, prefill, save (J-48 description edited and restored exactly), status unchanged, no duplicate, fee locked with submissions, archived job not editable; editing decided OK",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#cf108e",
+   "action": "reject sent: salary \"שכר מבוקש\"/\"ציפיות שכר\", \"הצעות שהוגשו\"/\"מועמדים שהוגשו\", double ה \"ההד האנטר\"; verified, לביצוע, 1 open reject",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#d9ffaa",
+   "action": "reject sent: /headhunters jobs block repeats same 7 jobs in row 2; testimonials and trial accepted; verified, לביצוע, 1 open reject",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#ca2463",
+   "action": "marked לא ניתן לשחזר: blocked by registration e-mail link to localhost (#1866b6); re-test after fix",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#2443cb",
+   "action": "marked לא ניתן לשחזר: blocked by registration e-mail link to localhost (#1866b6); re-test after fix",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#41452a",
+   "action": "marked לא ניתן לשחזר: blocked by registration e-mail link to localhost (#1866b6); re-test after fix",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#47b00b",
+   "action": "marked לא ניתן לשחזר: blocked by registration e-mail link to localhost (#1866b6); re-test after fix",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#1866b8",
+   "action": "marked לא ניתן לשחזר: blocked by registration e-mail link to localhost (#1866b6); re-test after fix",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#29f76e",
+   "action": "marked לא ניתן לשחזר: blocked by registration e-mail link to localhost (#1866b6); re-test after fix",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#1866ba",
+   "action": "marked לא ניתן לשחזר: blocked by registration e-mail link to localhost (#1866b6); re-test after fix",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#1866b9",
+   "action": "marked לא ניתן לשחזר: blocked by registration e-mail link to localhost (#1866b6); re-test after fix",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#9a6101",
+   "action": "marked לא ניתן לשחזר: blocked by registration e-mail link to localhost (#1866b6); re-test after fix",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#9a6103",
+   "action": "marked לא ניתן לשחזר: blocked by registration e-mail link to localhost (#1866b6); re-test after fix",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#9116cb",
+   "action": "marked לא ניתן לשחזר: blocked by Messages 403 my_conversations bug; re-test when it returns from לביצוע",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#7e0769",
+   "action": "marked לא ניתן לשחזר: talent apply limit (talent_2 free 23.10) + no new talent (registration bug); re-test 23.10 or after fix",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#3b5661",
+   "action": "pass: add/edit/deactivate/delete in admin list סוגי משרה reflected in site form he/en; temp value qa_test_3b5661 created and hard-deleted. Finding: duplicate name accepted (candidate low bug)",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#62222f",
+   "action": "reject candidate: event 15 report→admin has no bell notification (no kind); passed 3,4,5,6,7,10 (text, link, isolation, RLS); not checked 1,2 (new account),8,9,12 (payment),11 (terms consent),13 (date ~25.10),14 (403 bug)",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#62222f",
+   "action": "reject sent: event 15 report→admin no bell notification; verified after reload, לביצוע, 1 open reject",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#3b5661",
+   "action": "reject candidate: deleting in-use list value allowed without warning; job page and admin job page show raw key qa_test_3b5661_inuse, edit form shows empty + שדה חובה. Cleanup done (list 4 items, J-48 restored)",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#3b5661",
+   "action": "reject sent: in-use list value deletable without warning → raw key on job/admin pages, empty edit field; duplicate names accepted; verified, לביצוע, 1 open reject",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "…412b53",
+   "action": "new bug (medium, frontend, לביצוע): notification link to archived job → 404 (soft 404, HTTP 200)",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "…b63fa1",
+   "action": "new bug (low, backend, לביצוע): headhunter gets no «נצפה» notification (talent does)",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "finding C",
+   "action": "not filed: guest /faq → login is by design (footer → /headhunters#faq)",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "#62222f",
+   "action": "event 11 tender_match PASS (hunter_plus with technology expertise, 2s, link OK; non-matching/HR/owner nothing). Matching = hunter expertise vs tender field (from company industry). Ticket stays rejected for event 15",
+   "at": "2026-10-19"
+  },
+  {
+   "hash": "…63a7e8",
+   "action": "new bug High: landing hero search → /jobs 404 (run 2026-10-20 №1–5)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…279169",
+   "action": "new bug High: payment provider unavailable + pending orders (run 2026-10-20 №1–5)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…5200a6",
+   "action": "new bug High: mobile ru CTA/H1 overflow (run 2026-10-20 №1–5)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…1604a7",
+   "action": "new bug High: mobile burger menu language switcher off-screen (run 2026-10-20 №1–5)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…fc00c7",
+   "action": "new bug High: mobile candidate rows fixed 52px overlap (run 2026-10-20 №1–5)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…1396b6",
+   "action": "new bug Medium: §57 salary threshold 20,000 not applied (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…8cc94b",
+   "action": "new bug Medium: §55 Unique Position not purchasable (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…4ce54a",
+   "action": "new bug Medium: §59 tender distribution missing (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…64e2aa",
+   "action": "new bug Medium: §56 talent profile promotion missing (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…31a764",
+   "action": "new bug Medium: company gets one notification for several applications (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…9ac514",
+   "action": "new bug Medium: full profile shows only contact data (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…e9ce1c",
+   "action": "new bug Medium: no מתאים/לא מתאים and no בקשת NDA (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…158449",
+   "action": "new bug Medium: sender loses submissions after job archived (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…0f3888",
+   "action": "new bug Medium: requests on archived job dead end (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…805225",
+   "action": "new bug Medium: no notification on NDA signed (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…68f480",
+   "action": "new bug Medium: no NDA status in application (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…4b3041",
+   "action": "new bug Medium: NDA screen has no decline (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…24f795",
+   "action": "new bug Medium: final candidacy statuses flip in one click (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…301e98",
+   "action": "new bug Medium: admin full-name search (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…344b9a",
+   "action": "new bug Medium: AI CV parsing no salary (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…38bfa0",
+   "action": "new bug Medium: CV file content not validated (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…cf6dc1",
+   "action": "new bug Medium: company cannot manage own tender (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…df647e",
+   "action": "new bug Medium: tender offer decision one click (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…1004e9",
+   "action": "new bug Medium: HR offer amount validation −50→₪50 (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…b55501",
+   "action": "new bug Medium: /organizations CTAs → /register for logged-in company (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…1afa56",
+   "action": "new bug Medium: footer/about links \"#\" (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…8f5282",
+   "action": "new bug Medium: mobile payment window scrolled (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…46b93c",
+   "action": "new bug Medium: iPhone inputs 14px zoom (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…a1dd4b",
+   "action": "new bug Medium: iPhone status menu off-screen (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…c8f678",
+   "action": "new bug Medium: testimonials carousel RTL (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…f15f60",
+   "action": "new bug Medium: mobile /headhunters card titles clipped (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…283eb6",
+   "action": "new bug Low: sender sees receiver status menu on /applications/<id> (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…437b26",
+   "action": "new bug Low: FREE limit shown only at final step (run 2026-10-20)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…7044bf",
+   "action": "new bug: Work Representation §47 missing (per Miro) (2026-10-20, user decided Miro)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…d722cd",
+   "action": "new bug: company refuses talent NDA – no options (Miro) (2026-10-20, user decided Miro)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…2f4588",
+   "action": "new bug: reason lists exist in admin but unused (Miro) (2026-10-20, user decided Miro)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…501d04",
+   "action": "new bug: send full profile anyway after rejection (Miro) (2026-10-20, user decided Miro)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…35aed9",
+   "action": "new bug: FREE talent one-time application (Miro) (2026-10-20, user decided Miro)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…541d6c",
+   "action": "new bug: tender: candidate instead of money offer (Miro) (2026-10-20, user decided Miro)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…ac4c44",
+   "action": "new bug: HH subscription quotas per Miro (2026-10-20, user decided Miro)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "…2d1ac1",
+   "action": "new bug: talent PRO 3-month period (Miro), Low (2026-10-20, user decided Miro)",
+   "at": "2026-10-20"
+  },
+  {
+   "hash": "#1afa56",
+   "id": "beea79b59778b8d2bd1afa56",
+   "title": "Footer social icons and founders' LinkedIn links on /about point to \"#\"",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "feature": "landing pages",
+   "role": "guest",
+   "devices": [
+    "desktop",
+    "mobile"
+   ],
+   "notes": "retest 21.10: links hidden (allowed by reject), no href=#; reject 1701e421-335e-46ed-826a-e46d23c1e4d0 to resolve after yes; client must send URLs",
+   "at": "2026-10-21T13:10",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#c8f678",
+   "id": "39a438d74070e328ffc8f678",
+   "title": "Testimonials carousel: Next/Previous buttons scroll a fixed 686px and ignore RTL",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "feature": "landing pages",
+   "role": "guest",
+   "devices": [
+    "desktop",
+    "mobile"
+   ],
+   "notes": "retest 21.10: he/en/ar desktop+mobile 1 card per press, ends disabled; reject 1c88db49-279e-4cd1-b994-a1d9029e0d69 to resolve after yes",
+   "at": "2026-10-21T13:10",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#63a7e8",
+   "id": "0ceb721189e34e0ac463a7e8",
+   "title": "Landing pages: hero job search on /headhunters and /talents leads to a 404 page",
+   "action": "pending-user-check",
+   "column": "בבדיקות",
+   "feature": "landing pages",
+   "role": "guest",
+   "devices": [
+    "desktop",
+    "mobile"
+   ],
+   "notes": "retest 21.10: no 404, filters kept; open: next= has no lang prefix -> after login en/ru/ar guest may land in Hebrew; needs a real login check (user); reject cbaf54fa-21ed-423a-b529-138f281569ae",
+   "at": "2026-10-21T13:10",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#1604a7",
+   "id": "d2dd44dc8c8052b9401604a7",
+   "title": "Mobile: the burger-menu row \"Login / Register / Language\" does not wrap",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "feature": "mobile header menu",
+   "role": "guest",
+   "devices": [
+    "mobile"
+   ],
+   "notes": "retest 21.10: 320/375/412 he/en/ru/ar ok, lang switch ok; /ru 320 overflow from testimonials arrows = finding",
+   "at": "2026-10-21T13:25",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#24eb58",
+   "id": "9efe48d779043f2a9924eb58",
+   "title": "Hebrew spelling mistakes repeat on many screens",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "feature": "FAQ texts",
+   "role": "guest,hunter_plus",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "retest 21.10 item 8: no ההד האנטר in FAQ (3 landings + /faq hunter) nor main pages; reject rej_1792402661703",
+   "at": "2026-10-21T13:35",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#d9ffaa",
+   "id": "788be9992d7afc1fc6d9ffaa",
+   "title": "Landing pages: placeholder testimonials, repeated job card and \"30 יום ניסיון\"",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "feature": "landing headhunters jobs block",
+   "role": "guest",
+   "devices": [
+    "desktop",
+    "mobile"
+   ],
+   "notes": "retest 21.10: 14 unique jobs 7+7 he/en desktop+375; reject rej_1792420491424",
+   "at": "2026-10-21T13:50",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#f15f60",
+   "id": "6eb28d099f84d82fc6f15f60",
+   "title": "Mobile /headhunters: titles of the 4 feature cards are clipped",
+   "action": "reject-draft",
+   "column": "בבדיקות",
+   "notes": "21.10: card 470/435px > screen, titles cut, h-scroll all langs 320/375/412; verified 3/3; text shown, waits yes",
+   "at": "2026-10-21T13:45",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#5200a6",
+   "id": "6d9b8a0d625d7783775200a6",
+   "title": "Mobile (Russian): non-wrapping CTA and H1 overflow",
+   "action": "reject-draft",
+   "column": "בבדיקות",
+   "notes": "21.10: CTAs+privacy ok; /ru/headhunters 486px (cards), /ru/about H1 cut; verified 3/3; waits yes. Finding: /ru/talents H2 320, carousel arrows 320",
+   "at": "2026-10-21T13:45",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#33f14b",
+   "id": "5398ef59bd6f06807633f14b",
+   "title": "Prices and plan texts contradict the real pricing",
+   "action": "pending-user",
+   "column": "בבדיקות",
+   "notes": "21.10: /organizations step 3 '₪0' he/en/ru/ar = admin tender_post 0.00; dynamic (change+revert in admin) needs user permission; reject rej_1792419010053",
+   "at": "2026-10-21T13:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#b55501",
+   "id": "3202b15174e39933e1b55501",
+   "title": "/organizations: for a logged-in company (and HR) all \"publish tender\" CTAs lead to /register",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "feature": "organizations CTAs",
+   "role": "company,company_6,guest,hunter_plus",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "retest 21.10: company→/publish/tender (he,en), HR+hunter→/tenders, guest→/register; no draft created",
+   "at": "2026-10-21T14:25",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#1afa56",
+   "action": "rejection resolved (סמן כטופל) 21.10, waits עבר QA by user",
+   "column": "ждёт-подтверждения",
+   "at": "2026-10-21T14:24",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#c8f678",
+   "action": "rejection resolved (סמן כטופל) 21.10, waits עבר QA by user",
+   "column": "ждёт-подтверждения",
+   "at": "2026-10-21T14:24",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#1604a7",
+   "action": "rejection resolved (סמן כטופל) 21.10, waits עבר QA by user",
+   "column": "ждёт-подтверждения",
+   "at": "2026-10-21T14:24",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#24eb58",
+   "action": "rejection resolved (סמן כטופל) 21.10, waits עבר QA by user",
+   "column": "ждёт-подтверждения",
+   "at": "2026-10-21T14:24",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#d9ffaa",
+   "action": "rejection resolved (סמן כטופל) 21.10, waits עבר QA by user",
+   "column": "ждёт-подтверждения",
+   "at": "2026-10-21T14:24",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#f15f60",
+   "action": "reject sent rej_4bbf60a4cc695940041cb7f8 (3 screenshots), status todo",
+   "column": "לביצוע",
+   "at": "2026-10-21T14:25",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#5200a6",
+   "action": "reject sent rej_0da5c29e0f5493c7445fb012 (3 screenshots), status todo",
+   "column": "לביצוע",
+   "at": "2026-10-21T14:25",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#33f14b",
+   "id": "5398ef59bd6f06807633f14b",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "feature": "organizations tender price",
+   "role": "guest,admin",
+   "notes": "21.10: admin tender_post 0.00→1.00: /organizations 'תקופת המכרז – ₪1' + 'החל מ-₪1'; reverted 0.00 → ₪0 (14:45). reject rej_1792419010053",
+   "at": "2026-10-21T14:45",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#437b26",
+   "id": "fdac94c8a0086fe9e4437b26",
+   "action": "reject-draft",
+   "column": "בבדיקות",
+   "notes": "21.10: 9 jobs ok; jobs with own earlier submission (J-49, J-48) show 'נותרו 0 מתוך 4', candidates enabled, submission over limit CREATED (583b6438-...); plan card has no remaining count",
+   "at": "2026-10-21T14:45",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#301e98",
+   "id": "0cfb74394f30a7c65d301e98",
+   "action": "reject-draft",
+   "column": "בבדיקות",
+   "notes": "21.10: users search ok; /admin/applications always empty (0 rows, chip 63-64), verified 3/3",
+   "at": "2026-10-21T14:45",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#cf6dc1",
+   "id": "96f1d9f6c7685e2867cf6dc1",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "role": "company",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "21.10 pass: tender actions menu, edit/extend/close(confirm)/archive, expired T-25 bell→renew dialog; after-approve behaviour = PM decision (recorded). reject 0bf8cc73-bcee-40d7-a449-83b31c2c50e3",
+   "at": "2026-10-21T14:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#0d978b",
+   "id": "ceeb6c470ee13e1a800d978b",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "role": "company",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "21.10 pass: 3 sorts 3/3, reload + direct URL ok, hunter tab ok. reject 8d3e5170-3f67-40ba-a335-dbb2f9d057e2",
+   "at": "2026-10-21T14:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#bc890b",
+   "id": "6f413ce201fa9f4460bc890b",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "role": "company",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "21.10 pass: draft shown 'טיוטה – הפרסום לא הושלם', continue works, hidden from others. reject rej_88a8c8a57d9cfefc25423324",
+   "at": "2026-10-21T14:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#2d1ac1",
+   "id": "1cb2b4f8259cbbed752d1ac1",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "role": "talent,talent_2",
+   "notes": "21.10: PRO 3 months ₪1,440 (admin talent_pro_quarterly) default + annual, auto-renew texts he/en/ru/ar, payment window 3 months; renewal date after payment not verifiable (no payment). reject 4843a7ec-a19c-4357-be54-cb7aa40abf60",
+   "at": "2026-10-21T15:10",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#549afe",
+   "id": "c01ecc8419f27bf7f5549afe",
+   "action": "pending-verify",
+   "column": "בבדיקות",
+   "notes": "21.10: hunter toggle/prices/payment ok, talent page ok; talent plan popup PRO '—' no toggle (verifying); +12 months after payment not verifiable. reject rej_1792419065370",
+   "at": "2026-10-21T15:10",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#64e2aa",
+   "id": "9db8dd2cab6a2a564064e2aa",
+   "action": "blocked",
+   "column": "בבדיקות",
+   "notes": "21.10: FREE upsell card on subscription tab ok; purchase/top placement needs PRO talent + payment -> ask user. reject 2562de28-5c90-4642-be92-48d1c6f2a3ac",
+   "at": "2026-10-21T15:10",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#93d0e7",
+   "id": "eb3cf227bdba9e4a7093d0e7",
+   "action": "partial",
+   "column": "בבדיקות",
+   "notes": "21.10: item1 ok; item7 testimonials placeholder = agreed (#d9ffaa decision) not reject; item9 company counter to check (company busy). reject rej_1792402395520",
+   "at": "2026-10-21T15:10",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#9a6100",
+   "id": "6a70585208ac9b0b629a6100",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "role": "hunter_free",
+   "devices": [
+    "desktop",
+    "iphone"
+   ],
+   "notes": "21.10: chips multi-select OR, sync with sidebar, URL/reload, mobile RTL 3/3; 2 identical rejects rej_1792407786381, rej_1792407950896",
+   "at": "2026-10-21T15:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#521d84",
+   "id": "6a900c7d6a9e1e1919521d84",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "role": "hunter_free",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "21.10: promo filter הכל/none/promoted/distribution/unique, counts, removable chip, AND with fields, URL, EN on /collaborations /tenders /my-jobs",
+   "at": "2026-10-21T15:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#2d1ac1",
+   "id": "1cb2b4f8259cbbed752d1ac1",
+   "action": "on-hold: needs payment (user 21.10: оставить с пометкой, что нужна оплата, сделаем потом)",
+   "column": "בבדיקות",
+   "notes": "everything before payment ✅; after-payment part (renewal date, 3-month period in המנוי שלי, invoices) pending a test payment",
+   "at": "2026-10-21T15:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#549afe",
+   "id": "c01ecc8419f27bf7f5549afe",
+   "action": "on-hold: needs payment",
+   "column": "בבדיקות",
+   "notes": "21.10: all before payment ✅ (hunter+talent toggle, annual prices from admin, popup ok after 0.4-1.6s load — tester's '—' was loading state, verifier NOT CONFIRMED); +12 months after payment pending test payment, like #2d1ac1",
+   "at": "2026-10-21T15:25",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#1004e9",
+   "id": "34afc826a705037fcd1004e9",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "role": "hunter_plus,company_6,company",
+   "notes": "21.10: amount validation client+server (−50,0,12.5,1.5,abc,1e12,999999999), no abs; HR/hunter see/edit/withdraw open offer. reject 2492b98e-c461-479e-bc1d-fba5181acb5a",
+   "at": "2026-10-21T15:40",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#df647e",
+   "id": "189187209752cf91c9df647e",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "role": "company,company_6,hunter_plus",
+   "notes": "21.10: confirm with name+amount, optional reason visible to bidder, undo 5 min works and disappears after. Findings: undo deadline shown in UTC; bidder sees rejection on tender page within undo window; old-offer 'אחר' no text field. reject a3b6bdaf-ffab-47ae-9b6e-5c53adb83f86",
+   "at": "2026-10-21T15:40",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#541d6c",
+   "id": "cc1c80ca737d131648541d6c",
+   "action": "pending-verify",
+   "column": "בבדיקות",
+   "notes": "21.10: hunter anon/full to tender ok, company review ok, no money field; HR submit → notAllowed 3/3 (verifying)",
+   "at": "2026-10-21T15:40",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#46b93c",
+   "id": "65b58e116b9e65dad846b93c",
+   "action": "reject-draft",
+   "column": "בבדיקות",
+   "notes": "21.10: all fields 16px (guest, hunter forms, payment+Cardcom, admin), focus scale 1; but 'חוזקות' tag field container 38px <44 (verified by me 3/3). reject 5fb05ab8-f140-4f10-8c3b-927d4285b3da",
+   "at": "2026-10-21T15:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#8f5282",
+   "id": "3d54260cc4c6ddcd568f5282",
+   "action": "pending-user (real iPhone)",
+   "column": "בבדיקות",
+   "notes": "21.10: Android final scrollTop 0 13/13 (1-frame flash); iPhone WebKit emulation final 0 14/14 but first frame scrolled 11/14 for 0.4-0.7s; focus → H2. reject 228b5e79-5bba-460a-af10-fc7e5b763008",
+   "at": "2026-10-21T15:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#63b8d1",
+   "id": "3d66fbfa9395b618e663b8d1",
+   "action": "blocked-now",
+   "column": "בבדיקות",
+   "notes": "21.10: item 7 needs hunter with submissions left (hunter_plus) — hunter_free_2 limit 0; job dialog Latin titles ok. Retry with hunter_plus",
+   "at": "2026-10-21T15:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#541d6c",
+   "id": "cc1c80ca737d131648541d6c",
+   "action": "reject-draft",
+   "column": "בבדיקות",
+   "notes": "21.10: HR submission to tender → notAllowed 4/4 (verified), anon+full; hunter part ok. reject 16094f59-84d3-491e-8130-82db4b315fda",
+   "at": "2026-10-21T16:00",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#4b3041",
+   "id": "d33eecbedc6867667b4b3041",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "NDA screen סירוב לחתימה + clear outcome + close toast. reject id via bundle",
+   "at": "2026-10-21T16:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#158449",
+   "id": "1771569e5aace27628158449",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "archived job read-only banner for sender, submissions + final statuses visible",
+   "at": "2026-10-21T16:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#805225",
+   "id": "5e9750cf30b27b13ed805225",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "done-when met: signing job NDA → bell owner+sender with link; NDA-requested notice seen in cand run (נדרשת חתימה על NDA) ✅",
+   "at": "2026-10-21T16:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#68f480",
+   "id": "70f520afe50ce500cf68f480",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "NDA נחתם with date both sides + NDA ✓ badge; ממתין/ה ל-NDA seen in cand run timeline; admin not checked",
+   "at": "2026-10-21T16:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#93d0e7",
+   "id": "eb3cf227bdba9e4a7093d0e7",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "item1 ok, item9 'מועמדים שהוגשו 17' ok, item7 testimonials placeholder = agreed decision",
+   "at": "2026-10-21T16:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#2f4588",
+   "id": "1d48277d1e5c7946a82f4588",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "10 reasons = list №12, אחר free text required, sender sees reason (notif+timeline), en ok; NDA-refusal-of-talent reasons not verifiable (₪35 payment)",
+   "at": "2026-10-21T16:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#501d04",
+   "id": "138ae935fcd8cdac74501d04",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "send full profile anyway after rejection + owner notified + history",
+   "at": "2026-10-21T16:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#283eb6",
+   "id": "9e7a1cad783d5d869b283eb6",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "sender sees badge only, 0 menus on 5 applications",
+   "at": "2026-10-21T16:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#3973c6",
+   "id": "6143e27ec9566267ab3973c6",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "slash forms everywhere in statuses/toasts/notifications",
+   "at": "2026-10-21T16:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#31a764",
+   "id": "14ef8995d9c276a79d31a764",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "one notification per application 3/3, link opens that application",
+   "at": "2026-10-21T16:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#b63fa1",
+   "id": "b1789bca6c0b7c0644b63fa1",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "viewed notification 3/3 once; finding: opening via /applications/<id> doesn't mark viewed",
+   "at": "2026-10-21T16:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#412b53",
+   "id": "6e09b55856fc28edda412b53",
+   "action": "reject-draft",
+   "column": "בבדיקות",
+   "notes": "banner ok; no back button; missing job → soft 404 (200) logged in 3/3",
+   "at": "2026-10-21T16:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#0f3888",
+   "id": "96ad283924abddcd9b0f3888",
+   "action": "pending-verify",
+   "column": "בבדיקות",
+   "notes": "notice + /applications ok; ממתינים empty 3/3 (verifying)",
+   "at": "2026-10-21T16:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#d722cd",
+   "id": "5f55e15b2538cc8bfdd722cd",
+   "action": "on-hold: needs ₪35 sender NDA payment",
+   "column": "בבדיקות",
+   "notes": "not reachable without paying",
+   "at": "2026-10-21T16:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#7044bf",
+   "id": "dc44870c67b1657fa47044bf",
+   "action": "on-hold: needs ₪35 sender NDA payment",
+   "column": "בבדיקות",
+   "notes": "not reachable without paying",
+   "at": "2026-10-21T16:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#e9ce1c",
+   "id": "67f7ad1c62f1866ba3e9ce1c",
+   "action": "pending-verify",
+   "column": "בבדיקות",
+   "notes": "actions+NDA flow ok; sender status shows נצפה after מתאים (verifying)",
+   "at": "2026-10-21T16:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#9ac514",
+   "id": "fc9853711e83a1092a9ac514",
+   "action": "pending-verify",
+   "column": "בבדיקות",
+   "notes": "card ok; CV file missing for company, anon hunter notes missing (verifying)",
+   "at": "2026-10-21T16:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#24f795",
+   "id": "f81c1f7a326fe0922124f795",
+   "action": "pending-verify",
+   "column": "בבדיקות",
+   "notes": "confirm+lock+reason ok; notification per change possibly collapsed (verifying)",
+   "at": "2026-10-21T16:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#0f3888",
+   "id": "96ad283924abddcd9b0f3888",
+   "action": "reject-draft",
+   "column": "בבדיקות",
+   "notes": "21.10: verified 3/3: ממתינים 'מועמדים ממתינים לאישור' empty while open question (Alpha, archived) and open full-profile request (d9db64 B, active) exist; answer possible from notice and from the application panel. reject 2c6a9198-5368-4219-9933-ab539f1b2bfb",
+   "at": "2026-10-21T16:25",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#e9ce1c",
+   "id": "67f7ad1c62f1866ba3e9ce1c",
+   "action": "reject-draft",
+   "column": "בבדיקות",
+   "notes": "verified 3/3: after מתאים sender badge + lists show נצפה/תה; only timeline+bell show מתאים. reject 2e1efd79-b4d5-4623-8b6e-064b61c0d036",
+   "at": "2026-10-21T16:40",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#9ac514",
+   "id": "fc9853711e83a1092a9ac514",
+   "action": "reject-draft",
+   "column": "בבדיקות",
+   "notes": "verified: company sees no CV on full profile (2x2), no hunter notes on anonymous (3/3). reject b412af3b-e5db-40e8-9113-410f9b93dd4e",
+   "at": "2026-10-21T16:40",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#24f795",
+   "id": "f81c1f7a326fe0922124f795",
+   "action": "reject-draft",
+   "column": "בבדיקות",
+   "notes": "verified 3/3: נצפה notification replaced/removed when next status comes soon (bell 1 for 2 changes). reject ca8626ad-321e-4fe5-947c-6a0ee8dc9166",
+   "at": "2026-10-21T16:40",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#a1dd4b",
+   "id": "e7756611505a28bf43a1dd4b",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "21.10: iPhone menu opens upward / downward fully on screen 3/3",
+   "at": "2026-10-21T16:50",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#fc00c7",
+   "id": "a222164fed227e44c1fc00c7",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "21.10: drawer rows grow (55/76px), no overlap iPhone+Android, names/status wrap",
+   "at": "2026-10-21T16:50",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#95bd33",
+   "id": "177d6270884bad33da95bd33",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "21.10: Quarter-time translated, phones one local format, talent /en no Hebrew values",
+   "at": "2026-10-21T16:50",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#cf108e",
+   "id": "47533803e7a5d6d05ecf108e",
+   "action": "partial",
+   "column": "בבדיקות",
+   "notes": "21.10: company/HR/talent/guest ✅ (ציפיות שכר, מועמדים שהוגשו, no ההד האנטר); hunter add-candidate form not checked yet (hunter_plus busy)",
+   "at": "2026-10-21T16:50",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#09132b",
+   "id": "fbc373d7d6b3e4d35109132b",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "21.10: EN admin job: Nationwide/Tel Aviv/Haifa localized on all list-value regions; J-5/J-19/J-32 'מודיעין' free-text old demo data (same on public site) = finding",
+   "at": "2026-10-21T17:00",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#3b5661",
+   "id": "6a7063193794e60bf33b5661",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "21.10: duplicates rejected (he/en/case/space/rename), in-use delete → inUse + deactivate offer, no raw key after deactivation, unused deletes",
+   "at": "2026-10-21T17:00",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#62222f",
+   "id": "6a706481de1cc9acec62222f",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "21.10: event 15: admin bell for job report, contact form, chat report, links open R-16/R-18/R-19; finding: EN notif shows Hebrew name of custom reason",
+   "at": "2026-10-21T17:00",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#7818c8",
+   "id": "35d1164416e8ac538c7818c8",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "21.10: saved only on סיום, close confirm, uploads deleted, 3/3 once",
+   "at": "2026-10-21T17:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#344b9a",
+   "id": "a197fcc19f23be7e8c344b9a",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "21.10: salary parsed he/en/rej example/yearly→monthly, control empty 3/3",
+   "at": "2026-10-21T17:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#d9db64",
+   "id": "558523f885c4e3c81bd9db64",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "21.10: 11 generations: no invented experience/expert, no job-fit, neutral, strengths 'לא צוין'; company view not checked; finding: submit active during regeneration",
+   "at": "2026-10-21T17:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#38bfa0",
+   "id": "839f3aec16af95217c38bfa0",
+   "action": "partial",
+   "column": "בבדיקות",
+   "notes": "21.10 hunter: empty/txt/MZ rejected in browser (toast), server notPdf on tampered upload; talent side not checked yet",
+   "at": "2026-10-21T17:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#279169",
+   "id": "3b1ea9fb6dcb406786279169",
+   "action": "reject-draft (+ payment part on hold)",
+   "column": "בבדיקות",
+   "notes": "21.10: Cardcom loads 7/7, terminal 196168, no error; same product reuses order, switching cancels old; BUT order created on window open and 1 'ממתין' stays after closing (admin user payments). Real test payment not done (needs payment).",
+   "at": "2026-10-21T17:30",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#0b18b0",
+   "id": "70baab818db48b6ff00b18b0",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "21.10: my_conversations 200 3 roles 3/3, open chat, send/receive both ways live",
+   "at": "2026-10-21T17:40",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#9116cb",
+   "id": "80c4378606cc22d8be9116cb",
+   "action": "pending-user (interpretation)",
+   "column": "בבדיקות",
+   "notes": "21.10: new chats via ייצוג/שליחת הודעה: confirm dialog + fully anonymous (4 profiles); ticket's own profile 6d861aae opens OLD non-anonymous chat 9fa8274d (from 28.09, talent herself sent job card) showing רונית אלון phone/email. Default: pass (talent disclosed herself earlier), dialog text finding. no open rejection; marked cannot_reproduce earlier",
+   "at": "2026-10-21T17:40",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#38bfa0",
+   "id": "839f3aec16af95217c38bfa0",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "21.10: hunter+talent: empty/txt/exe rejected in browser (toast) and on server (notPdf, storage cleaned for talent); normal + blank-valid PDF accepted. Note: browser-side message is a toast, not under the field (server error is inline on hunter form). reject 0b24d92a…",
+   "at": "2026-10-21T17:50",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#cf108e",
+   "id": "47533803e7a5d6d05ecf108e",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "21.10: all roles incl. hunter: ציפיות שכר, מועמדים שהוגשו, no ההד האנטר (14 hunter pages)",
+   "at": "2026-10-21T18:05",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#3b9b8a",
+   "id": "902739502994f06b8e3b9b8a",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "21.10: salary line wraps (1440/1280), 375 full; talent own profile same header",
+   "at": "2026-10-21T18:05",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#1d74c2",
+   "id": "f500c96bfb9c65b4cb1d74c2",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "21.10: AI reasons plural on /recommendations jobs+tenders; talents bank has no AI reasons",
+   "at": "2026-10-21T18:05",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#ac4c44",
+   "id": "514f744560fec35ef3ac4c44",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "21.10: PLUS card 2 promotions/5 distributions free + counters; counter 5→4 after 1 distribution; tenders unlimited",
+   "at": "2026-10-21T18:05",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#1396b6",
+   "id": "aff691b6d70e0702251396b6",
+   "action": "pass",
+   "column": "ждёт-подтверждения",
+   "notes": "21.10: <20k disabled with text, =20k and 25k available; finding: לרכישה active when both disabled",
+   "at": "2026-10-21T18:05",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#710d8c",
+   "id": "4c9e57c462bb7f2a5d710d8c",
+   "action": "pending-verify",
+   "column": "בבדיקות",
+   "notes": "21.10: job wizard ok; add-candidate: fixing min keeps range error 3/3 (verifying)",
+   "at": "2026-10-21T18:05",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#63b8d1",
+   "id": "3d66fbfa9395b618e663b8d1",
+   "action": "pending-verify",
+   "column": "בבדיקות",
+   "notes": "21.10: submit dialog + NDA titles ok; submission-view h2 line-clamp cuts name, sometimes Latin split (verifying)",
+   "at": "2026-10-21T18:05",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#710d8c",
+   "id": "4c9e57c462bb7f2a5d710d8c",
+   "action": "reject-draft",
+   "column": "בבדיקות",
+   "notes": "21.10 verified 6/6: add-candidate salary range error stays after fixing min (job wizard ok)",
+   "at": "2026-10-21T18:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#63b8d1",
+   "id": "3d66fbfa9395b618e663b8d1",
+   "action": "reject-draft",
+   "column": "בבדיקות",
+   "notes": "21.10 iPhone: submission step-2 h2 line-clamp-2 hides end of name 6/6; Latin 'QA copy'/'test' split 2 of 11 runs (tester screenshots)",
+   "at": "2026-10-21T18:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#1afa56",
+   "action": "user confirmed עבר QA (21.10) → autotests",
+   "column": "הושלם",
+   "at": "2026-10-21T18:40",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#c8f678",
+   "action": "user confirmed עבר QA (21.10) → autotests",
+   "column": "הושלם",
+   "at": "2026-10-21T18:40",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#1604a7",
+   "action": "user confirmed עבר QA (21.10) → autotests",
+   "column": "הושלם",
+   "at": "2026-10-21T18:40",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#24eb58",
+   "action": "user confirmed עבר QA (21.10) → autotests",
+   "column": "הושלם",
+   "at": "2026-10-21T18:40",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#d9ffaa",
+   "action": "user confirmed עבר QA (21.10) → autotests",
+   "column": "הושלם",
+   "at": "2026-10-21T18:40",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#2f4588",
+   "id": "1d48277d1e5c7946a82f4588",
+   "action": "on-hold: needs ₪35 NDA payment",
+   "column": "בבדיקות",
+   "notes": "21.10: candidate-rejection reasons ✅; talent NDA refusal reasons + admin visibility not verified → with payment group",
+   "at": "2026-10-21T18:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#3b9b8a",
+   "id": "902739502994f06b8e3b9b8a",
+   "action": "pass (clean)",
+   "column": "ждёт-подтверждения",
+   "notes": "21.10 recheck: own talent profile salary wraps 1440/1280, 375 one line, both talents",
+   "at": "2026-10-21T19:10",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#1396b6",
+   "id": "aff691b6d70e0702251396b6",
+   "action": "pass (talent <20k not verifiable without profile change)",
+   "column": "ждёт-подтверждения",
+   "notes": "21.10 recheck: talents ≥20k see extras as PRO upsell, no threshold block; <20k not checked",
+   "at": "2026-10-21T19:10",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#ac4c44",
+   "id": "514f744560fec35ef3ac4c44",
+   "action": "pass (clean)",
+   "column": "ждёт-подтверждения",
+   "notes": "21.10 recheck: admin pricing has paid_plan_free_promotions 2, distributions 5, tender offers 0=unlimited",
+   "at": "2026-10-21T19:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#68f480",
+   "id": "70f520afe50ce500cf68f480",
+   "action": "hold: admin part blocked by #301e98",
+   "column": "בבדיקות",
+   "notes": "21.10 recheck: owner+sender ✅; admin: no per-application page (/admin/applications/<id> 404), list empty (#301e98), job card shows only counters ('NDA נחתם 1' on J-135)",
+   "at": "2026-10-21T19:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#b55501",
+   "action": "user moved to הושלם (21.10) → autotests; open rejection not resolved yet",
+   "column": "הושלם",
+   "at": "2026-10-21T19:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#33f14b",
+   "action": "user moved to הושלם (21.10) → autotests; open rejection not resolved yet",
+   "column": "הושלם",
+   "at": "2026-10-21T19:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#0d978b",
+   "action": "user moved to הושלם (21.10) → autotests; open rejection not resolved yet",
+   "column": "הושלם",
+   "at": "2026-10-21T19:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#bc890b",
+   "action": "user moved to הושלם (21.10) → autotests; open rejection not resolved yet",
+   "column": "הושלם",
+   "at": "2026-10-21T19:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#9a6100",
+   "action": "user moved to הושלם (21.10) → autotests; open rejection not resolved yet",
+   "column": "הושלם",
+   "at": "2026-10-21T19:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#521d84",
+   "action": "user moved to הושלם (21.10) → autotests; open rejection not resolved yet",
+   "column": "הושלם",
+   "at": "2026-10-21T19:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#1004e9",
+   "action": "user moved to הושלם (21.10) → autotests; open rejection not resolved yet",
+   "column": "הושלם",
+   "at": "2026-10-21T19:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#4b3041",
+   "action": "user moved to הושלם (21.10) → autotests; open rejection not resolved yet",
+   "column": "הושלם",
+   "at": "2026-10-21T19:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#158449",
+   "action": "user moved to הושלם (21.10) → autotests; open rejection not resolved yet",
+   "column": "הושלם",
+   "at": "2026-10-21T19:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#501d04",
+   "action": "user moved to הושלם (21.10) → autotests; open rejection not resolved yet",
+   "column": "הושלם",
+   "at": "2026-10-21T19:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#283eb6",
+   "action": "user moved to הושלם (21.10) → autotests; open rejection not resolved yet",
+   "column": "הושלם",
+   "at": "2026-10-21T19:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#3973c6",
+   "action": "user moved to הושלם (21.10) → autotests; open rejection not resolved yet",
+   "column": "הושלם",
+   "at": "2026-10-21T19:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#31a764",
+   "action": "user moved to הושלם (21.10) → autotests; open rejection not resolved yet",
+   "column": "הושלם",
+   "at": "2026-10-21T19:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#a1dd4b",
+   "action": "user moved to הושלם (21.10) → autotests; open rejection not resolved yet",
+   "column": "הושלם",
+   "at": "2026-10-21T19:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#fc00c7",
+   "action": "user moved to הושלם (21.10) → autotests; open rejection not resolved yet",
+   "column": "הושלם",
+   "at": "2026-10-21T19:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#95bd33",
+   "action": "user moved to הושלם (21.10) → autotests; open rejection not resolved yet",
+   "column": "הושלם",
+   "at": "2026-10-21T19:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#3b5661",
+   "action": "user moved to הושלם (21.10) → autotests; open rejection not resolved yet",
+   "column": "הושלם",
+   "at": "2026-10-21T19:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#62222f",
+   "action": "user moved to הושלם (21.10) → autotests; open rejection not resolved yet",
+   "column": "הושלם",
+   "at": "2026-10-21T19:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#7818c8",
+   "action": "user moved to הושלם (21.10) → autotests; open rejection not resolved yet",
+   "column": "הושלם",
+   "at": "2026-10-21T19:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#344b9a",
+   "action": "user moved to הושלם (21.10) → autotests; open rejection not resolved yet",
+   "column": "הושלם",
+   "at": "2026-10-21T19:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#cf108e",
+   "action": "user moved to הושלם (21.10) → autotests; open rejection not resolved yet",
+   "column": "הושלם",
+   "at": "2026-10-21T19:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#1d74c2",
+   "action": "user moved to הושלם (21.10) → autotests; open rejection not resolved yet",
+   "column": "הושלם",
+   "at": "2026-10-21T19:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#93d0e7",
+   "action": "pass (user decision 21.10)",
+   "column": "ждёт-подтверждения",
+   "at": "2026-10-21T19:40",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#38bfa0",
+   "action": "pass (user decision 21.10)",
+   "column": "ждёт-подтверждения",
+   "at": "2026-10-21T19:40",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#df647e",
+   "action": "reject-draft (user decision 21.10)",
+   "column": "בבדיקות",
+   "at": "2026-10-21T19:40",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#b55501",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#33f14b",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#0d978b",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#bc890b",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#9a6100",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#521d84",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#1004e9",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#4b3041",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#158449",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#501d04",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#283eb6",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#3973c6",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#31a764",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#a1dd4b",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#fc00c7",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#95bd33",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#3b5661",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#62222f",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#7818c8",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#344b9a",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#cf108e",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#1d74c2",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#93d0e7",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#38bfa0",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#3b9b8a",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#ac4c44",
+   "action": "rejection resolved 21.10 (user moved to הושלם)",
+   "column": "הושלם",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#cf6dc1",
+   "action": "rejection resolved 21.10, waits עבר QA by user",
+   "column": "ждёт-подтверждения",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#805225",
+   "action": "rejection resolved 21.10, waits עבר QA by user",
+   "column": "ждёт-подтверждения",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#09132b",
+   "action": "rejection resolved 21.10, waits עבר QA by user",
+   "column": "ждёт-подтверждения",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#b63fa1",
+   "action": "rejection resolved 21.10, waits עבר QA by user",
+   "column": "ждёт-подтверждения",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#d9db64",
+   "action": "rejection resolved 21.10, waits עבר QA by user",
+   "column": "ждёт-подтверждения",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#0b18b0",
+   "action": "rejection resolved 21.10, waits עבר QA by user",
+   "column": "ждёт-подтверждения",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#1396b6",
+   "action": "rejection resolved 21.10, waits עבר QA by user",
+   "column": "ждёт-подтверждения",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#437b26",
+   "action": "reject sent 21.10 with screenshots, status todo",
+   "column": "לביצוע",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#301e98",
+   "action": "reject sent 21.10 with screenshots, status todo",
+   "column": "לביצוע",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#46b93c",
+   "action": "reject sent 21.10 with screenshots, status todo",
+   "column": "לביצוע",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#541d6c",
+   "action": "reject sent 21.10 with screenshots, status todo",
+   "column": "לביצוע",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#412b53",
+   "action": "reject sent 21.10 with screenshots, status todo",
+   "column": "לביצוע",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#0f3888",
+   "action": "reject sent 21.10 with screenshots, status todo",
+   "column": "לביצוע",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#e9ce1c",
+   "action": "reject sent 21.10 with screenshots, status todo",
+   "column": "לביצוע",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#9ac514",
+   "action": "reject sent 21.10 with screenshots, status todo",
+   "column": "לביצוע",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#24f795",
+   "action": "reject sent 21.10 with screenshots, status todo",
+   "column": "לביצוע",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#279169",
+   "action": "reject sent 21.10 with screenshots, status todo",
+   "column": "לביצוע",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#710d8c",
+   "action": "reject sent 21.10 with screenshots, status todo",
+   "column": "לביצוע",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#63b8d1",
+   "action": "reject sent 21.10 with screenshots, status todo",
+   "column": "לביצוע",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#df647e",
+   "action": "reject sent 21.10 with screenshots, status todo",
+   "column": "לביצוע",
+   "at": "2026-10-21T19:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#cf6dc1",
+   "action": "user moved to הושלם 21.10 → autotests",
+   "column": "הושלם",
+   "at": "2026-10-21T20:05",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#805225",
+   "action": "user moved to הושלם 21.10 → autotests",
+   "column": "הושלם",
+   "at": "2026-10-21T20:05",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#09132b",
+   "action": "user moved to הושלם 21.10 → autotests",
+   "column": "הושלם",
+   "at": "2026-10-21T20:05",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#b63fa1",
+   "action": "user moved to הושלם 21.10 → autotests",
+   "column": "הושלם",
+   "at": "2026-10-21T20:05",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#d9db64",
+   "action": "user moved to הושלם 21.10 → autotests",
+   "column": "הושלם",
+   "at": "2026-10-21T20:05",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#0b18b0",
+   "action": "user moved to הושלם 21.10 → autotests",
+   "column": "הושלם",
+   "at": "2026-10-21T20:05",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#1396b6",
+   "action": "user moved to הושלם 21.10 → autotests",
+   "column": "הושלם",
+   "at": "2026-10-21T20:05",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#7e0769",
+   "action": "marked לא ניתן לשחזר 21.10 (limit until 23.10) — re-test 23.10",
+   "column": "הושלם",
+   "at": "2026-10-21T20:05",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#35aed9",
+   "id": "d3403a3ccc5de9a51535aed9",
+   "action": "on-hold: needs payment (path up to payment window ✅)",
+   "column": "בבדיקות",
+   "notes": "21.10 talent_single_application ₪1: offer «הגשה חד פעמית (₪1)» on J-49 for talent_2 at limit, payment window ₪1; disappears after revert; after-payment part not checkable",
+   "at": "2026-10-21T20:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#8cc94b",
+   "id": "3480275a49bf4a565f8cc94b",
+   "action": "on-hold: needs payment (path up to payment window ✅)",
+   "column": "בבדיקות",
+   "notes": "21.10 job_unique ₪1: «תג ייחודי (₪1)» active in שדרוג משרה J-137, payment window 4 weeks ₪1, texts 4 weeks + weekly reminder; after-payment part not checkable",
+   "at": "2026-10-21T20:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#4ce54a",
+   "id": "a23b4aa03a77b2afe24ce54a",
+   "action": "on-hold: needs payment (path up to payment window ✅)",
+   "column": "בבדיקות",
+   "notes": "21.10 tender_distribution ₪1: «הפצת המכרז» on T-55, audience all/field/specific, HH/HR toggles, admin approval text, payment ₪1; after-payment part not checkable",
+   "at": "2026-10-21T20:20",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#9116cb",
+   "id": "80c4378606cc22d8be9116cb",
+   "action": "pass; cannot_reproduce mark cleared 21.10 (user OK), waits עבר QA",
+   "column": "ждёт-подтверждения",
+   "at": "2026-10-21T20:35",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#63a7e8",
+   "id": "0ceb721189e34e0ac463a7e8",
+   "action": "pass (user confirmed language kept after login 21.10); rejection resolved; waits עבר QA",
+   "column": "ждёт-подтверждения",
+   "at": "2026-10-21T20:45",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#9116cb",
+   "id": "80c4378606cc22d8be9116cb",
+   "action": "user moved to הושלם 21.10 → autotests",
+   "column": "הושלם",
+   "at": "2026-10-21T20:45",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#63a7e8",
+   "action": "user moved to הושלם 21.10 → autotests",
+   "column": "הושלם",
+   "at": "2026-10-21T20:50",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#9a60fe",
+   "id": "6a70585208ac9b0b629a60fe",
+   "action": "pending-user (PM decision on company nav)",
+   "column": "בבדיקות",
+   "notes": "21.10: redirects /company,/headhunter,/talent ?page= → no 404 (384 checks), «משרות» instead of «שת״פים», «הד האנטרים» tab (hunter: in «עוד»), 4 langs ok; company nav = מכרזים · משרות · הד האנטרים · שאלות נפוצות · ממתינים (reject asks exactly 3 or agreed list in ticket)",
+   "at": "2026-10-21T20:55",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#9a60fe",
+   "id": "6a70585208ac9b0b629a60fe",
+   "action": "pass (user: keep 5 company nav items); comment with agreed nav + rejection resolved; waits עבר QA",
+   "column": "ждёт-подтверждения",
+   "at": "2026-10-21T21:00",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#25ee63",
+   "id": "833d42128708dde4e325ee63",
+   "title": "«שדרוג משרה»: free «קידום משרה» is pre-selected",
+   "action": "new bug low (user: заведи) 21.10, ticket 24",
+   "column": "לביצוע",
+   "at": "2026-10-21T21:10",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#9a60fe",
+   "action": "user moved to הושלם 21.10 → autotests",
+   "column": "הושלם",
+   "at": "2026-10-21T21:15",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#8f5282",
+   "id": "3d54260cc4c6ddcd568f5282",
+   "action": "pass (user decision: ~30ms first-frame jump accepted); rejection resolved; waits עבר QA",
+   "column": "ждёт-подтверждения",
+   "notes": "real Pixel 6: first frame scrollTop 467 → 0 after ~30ms 3/3",
+   "at": "2026-10-21T21:30",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#8f5282",
+   "action": "user moved to הושלם 21.10 → autotests",
+   "column": "הושלם",
+   "at": "2026-10-21T21:35",
+   "session": "2026-10-21"
+  },
+  {
+   "hash": "#1866b6",
+   "session": "2026-10-21",
+   "verdict": "pass",
+   "account": "tacivoh962 talent",
+   "time": "2026-10-21",
+   "column": "הושלם",
+   "note": "old localhost rejection already resolved (bundle: 0 open, 1 resolved)"
+  },
+  {
+   "hash": "#2443cb",
+   "session": "2026-10-21",
+   "verdict": "pass",
+   "account": "tacivoh962 talent",
+   "time": "2026-10-21",
+   "column": "הושלם"
+  },
+  {
+   "hash": "#ca2463",
+   "session": "2026-10-21",
+   "verdict": "pass",
+   "account": "tacivoh962 talent",
+   "time": "2026-10-21",
+   "column": "הושלם"
+  },
+  {
+   "hash": "#1866b9",
+   "session": "2026-10-21",
+   "verdict": "pass: hunter sees anonymous profile without CV/name; company gets 404; storage bucket private (public URL -> Bucket not found); parse filled title/experience/education matching CV; level mid (3-5y) shown to hunter",
+   "account": "tacivoh962 talent",
+   "time": "2026-10-21",
+   "action": "pass",
+   "column": "הושלם"
+  },
+  {
+   "hash": "#1866ba",
+   "session": "2026-10-21",
+   "verdict": "level IS extracted (hunter view: מיד-לבל 3–5); remaining: no-salary CV + fields from CV vs step2 -> needs new account | acc2: step2 only HR expertise + he; CV (Hebrew, English, QA/tech, no salary) -> step4 exp+edu+title OK; after CV: expertise still only HR, languages only he, desired_roles empty, salary empty (OK no guess); AI summary says only Hebrew. -> reject proposed: languages/expertise/positions not filled from CV",
+   "account": "tacivoh962 talent",
+   "time": "2026-10-21",
+   "action": "reject",
+   "rejection_id": "rej_aae378ec7236ac14d2338f0c",
+   "column": "todo"
+  },
+  {
+   "hash": "#1866b8",
+   "session": "2026-10-21",
+   "verdict": "marked cannot-reproduce 21.10 pending client answer (client-questions №14)",
+   "account": "tacivoh962 talent",
+   "time": "2026-10-21"
+  },
+  {
+   "hash": "#29f76e",
+   "session": "2026-10-21",
+   "verdict": "marked cannot-reproduce 21.10 pending client answer (client-questions №14)",
+   "account": "tacivoh962 talent",
+   "time": "2026-10-21"
+  },
+  {
+   "hash": "#9a6101",
+   "session": "2026-10-21",
+   "verdict": "pass: talent onboarding 6 steps & hunter onboarding 4 steps (details, profile, documents, terms) have no פרסום משרה; talent lands on /collaborations after; pending hunter sees pending page, /publish/job redirects to /onboarding/pending (until approval, §21); approved hunter has \"+ פרסום\" in nav",
+   "account": "tacivoh962 talent",
+   "time": "2026-10-21",
+   "action": "pass",
+   "column": "הושלם"
+  },
+  {
+   "hash": "#9a6103",
+   "session": "2026-10-21",
+   "verdict": "pass: talent onboarding 6 steps & hunter onboarding 4 steps (details, profile, documents, terms) have no פרסום משרה; talent lands on /collaborations after; pending hunter sees pending page, /publish/job redirects to /onboarding/pending (until approval, §21); approved hunter has \"+ פרסום\" in nav",
+   "account": "tacivoh962 talent",
+   "time": "2026-10-21",
+   "action": "pass",
+   "column": "הושלם"
+  },
+  {
+   "hash": "#7e0769",
+   "session": "2026-10-21",
+   "action": "pass",
+   "column": "הושלם",
+   "verdict": "pass on new talent tacivoh962: profile tab 'המועמדויות שלי'; apply dialog uses 'מנהל/ת המשרה' everywhere, no 'שת\"פ'; cannot-reproduce mark cleared",
+   "account": "tacivoh962 talent"
+  },
+  {
+   "hash": "#6f3a14",
+   "session": "2026-10-21",
+   "action": "new bug",
+   "column": "todo",
+   "title": "Registration e-mail rate limit (high)"
+  },
+  {
+   "hash": "#274d95",
+   "session": "2026-10-21",
+   "action": "new bug",
+   "column": "todo",
+   "title": "Footer lorem paragraph (medium)"
+  },
+  {
+   "hash": "#4ba724",
+   "session": "2026-10-21",
+   "action": "new bug",
+   "column": "todo",
+   "title": "Profile page no Education (medium)"
+  },
+  {
+   "hash": "#d36ad4",
+   "session": "2026-10-21",
+   "action": "new bug",
+   "column": "todo",
+   "title": "Default avatar is real-person photo (medium)"
+  },
+  {
+   "hash": "#851043",
+   "session": "2026-10-21",
+   "action": "new bug",
+   "column": "todo",
+   "title": "/ru 320 testimonials arrows + /ru/talents cards overflow (low)"
+  },
+  {
+   "hash": "#7178a2",
+   "session": "2026-10-21",
+   "action": "new bug",
+   "column": "todo",
+   "title": "«סיום והגשה» active during AI generation (medium), verified 5/5"
+  },
+  {
+   "hash": "#9a6103",
+   "session": "2026-10-21",
+   "action": "comment duplicate of #9a6101"
+  },
+  {
+   "hash": "#bebb61",
+   "session": "2026-10-21",
+   "action": "new bug",
+   "column": "todo",
+   "title": "Pending hunter: לוח בקרה loops to pending page + plans popup (PREMIUM trial) every time (medium)"
+  },
+  {
+   "hash": "#abe526",
+   "session": "2026-10-21",
+   "action": "new bug",
+   "column": "todo",
+   "title": "Direct /applications/<id> by company doesn't set נצפה (medium), verified 3/3"
+  },
+  {
+   "hash": "#f1f804",
+   "session": "2026-10-21",
+   "action": "new bug",
+   "column": "todo",
+   "title": "Pending hunter cannot log out (medium)"
+  },
+  {
+   "hash": "#214b19",
+   "session": "2026-10-21",
+   "action": "new task: test payment request (Cardcom 196168 test mode/test card or ₪1+refund)",
+   "column": "todo"
+  },
+  {
+   "hash": "#2d1ac1",
+   "session": "2026-10-21",
+   "action": "marked לא ניתן לשחזר until test payment (#214b19)"
+  },
+  {
+   "hash": "#549afe",
+   "session": "2026-10-21",
+   "action": "marked לא ניתן לשחזר until test payment (#214b19)"
+  },
+  {
+   "hash": "#64e2aa",
+   "session": "2026-10-21",
+   "action": "marked לא ניתן לשחזר until test payment (#214b19)"
+  },
+  {
+   "hash": "#35aed9",
+   "session": "2026-10-21",
+   "action": "marked לא ניתן לשחזר until test payment (#214b19)"
+  },
+  {
+   "hash": "#8cc94b",
+   "session": "2026-10-21",
+   "action": "marked לא ניתן לשחזר until test payment (#214b19)"
+  },
+  {
+   "hash": "#4ce54a",
+   "session": "2026-10-21",
+   "action": "marked לא ניתן לשחזר until test payment (#214b19)"
+  },
+  {
+   "hash": "#2f4588",
+   "session": "2026-10-21",
+   "action": "marked לא ניתן לשחזר until test payment (#214b19)"
+  },
+  {
+   "hash": "#d722cd",
+   "session": "2026-10-21",
+   "action": "marked לא ניתן לשחזר until test payment (#214b19)"
+  },
+  {
+   "hash": "#7044bf",
+   "session": "2026-10-21",
+   "action": "marked לא ניתן לשחזר until test payment (#214b19)"
+  },
+  {
+   "hash": "#47b00b",
+   "session": "2026-10-21",
+   "verdict": "pass: step 4 'עד מתי המכרז תקף?' single end date day/month/year (no ambiguous days-or-months); no text 'חתימה' field on tender details; signature is a canvas on step 6",
+   "action": "pass",
+   "column": "הושלם",
+   "account": "topol87542 company"
+  },
+  {
+   "hash": "#41452a",
+   "session": "2026-10-21",
+   "verdict": "pass: non-anonymous company flow 6 steps; contact = 'שלב 5 מתוך 6', next 'רק מוודאים…' = 'שלב 6 מתוך 6' in Hebrew",
+   "action": "pass",
+   "column": "הושלם",
+   "account": "topol87542 company"
+  },
+  {
+   "hash": "#d36ad4",
+   "id": "005bb1b592c8f832a2d36ad4",
+   "title": "Users without a profile picture get a photo of a real-looking person as the default avatar",
+   "action": "pass; rejections resolved 22.10",
+   "column": "הושלם",
+   "feature": "avatars",
+   "role": "admin,talent_2,hunter_free,guest",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "22.10: placeholder /icons/onboarding/anonymous-avatar.png grey silhouette everywhere (header, /profile, /hunters, /talents-bank, my-candidates, messages, collaborations, admin); own photos kept; 0 console errors",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#274d95",
+   "id": "97cedc1e38e2f64909274d95",
+   "title": "Footer on every page shows a Lorem Ipsum paragraph under the Hunters logo",
+   "action": "pass; rejections resolved 22.10",
+   "column": "הושלם",
+   "feature": "footer",
+   "role": "guest,company_6",
+   "devices": [
+    "desktop",
+    "iphone"
+   ],
+   "notes": "22.10: real description he/en/ru/ar, guest 7 pages + logged-in; socials hidden per #beea79",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#4ba724",
+   "id": "eb2ae6ae752b372a474ba724",
+   "title": "Talent profile page does not show Education",
+   "action": "pass; rejections resolved 22.10",
+   "column": "הושלם",
+   "role": "talent",
+   "devices": [
+    "desktop"
+   ],
+   "at": "2026-10-22",
+   "session": "2026-10-22",
+   "notes": "22.10: own /profile add/edit/delete ok; PLUS hunter sees השכלה on open profile U-13; anonymous U-35 hides it; test entry removed"
+  },
+  {
+   "hash": "#301e98",
+   "id": "0cfb74394f30a7c65d301e98",
+   "title": "Admin: search by full name does not find users/applications (multi-word names)",
+   "action": "pass; rejections resolved 22.10",
+   "column": "הושלם",
+   "feature": "admin search",
+   "role": "admin",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "22.10: apps list count=chip, search hunter name/J-66/נועם/multiword/case/spaces, details page 200; users regression ok",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#68f480",
+   "id": "70f520afe50ce500cf68f480",
+   "title": "Application on an NDA job shows no NDA status",
+   "action": "reject (rej_f036c15e…): NDA link to specific agreement",
+   "column": "לביצוע",
+   "role": "admin",
+   "devices": [
+    "desktop"
+   ],
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#abe526",
+   "id": "6e523689474649f7d3abe526",
+   "title": "Application opened by the company via its direct link /applications/<id> stays «נשלח/ה»",
+   "action": "pass; rejections resolved 22.10",
+   "column": "הושלם",
+   "feature": "candidacy status",
+   "role": "hunter_plus,company",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "22.10: direct link by company sets נצפה/תה (1.1s), sender open keeps נשלח/ה, single history entry, list click + notification link ok, later status not rolled back",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#437b26",
+   "id": "fdac94c8a0086fe9e4437b26",
+   "title": "FREE headhunter learns about the monthly submission limit only at the final step",
+   "action": "pass; rejections resolved 22.10",
+   "column": "הושלם",
+   "feature": "FREE limit",
+   "role": "hunter_free_2",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "22.10: limit text + date 01.11.2026 + שדרוג ל-PLUS on all 40 jobs incl. J-49/J-48 already submitted, candidates disabled, plan card 0 מתוך 4, en/ru ok; 1-3 counter not checkable",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#541d6c",
+   "id": "cc1c80ca737d131648541d6c",
+   "title": "Tenders: a money offer is submitted instead of a candidate",
+   "action": "pass; rejections resolved 22.10",
+   "column": "הושלם",
+   "role": "company_6",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "HR anon to T-62 (app e9a47077?), full to T-55; no notAllowed; ההצעות שלי ok; old ₪ offers readable; owner T-62 anon card no PII, request full profile + מתאים/ה ok; T-55 full profile visible",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#f15f60",
+   "id": "6eb28d099f84d82fc6f15f60",
+   "title": "Mobile /headhunters: titles of the 4 feature cards are clipped",
+   "action": "pass; rejections resolved 22.10",
+   "column": "הושלם",
+   "feature": "landing mobile",
+   "role": "guest",
+   "devices": [
+    "iphone",
+    "android"
+   ],
+   "notes": "22.10 emulation 320/375/412 he/en/ru/ar: scrollWidth=innerWidth, no overflow",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#5200a6",
+   "id": "6d9b8a0d625d7783775200a6",
+   "title": "Mobile (Russian): non-wrapping CTA and H1 overflow",
+   "action": "pass; rejections resolved 22.10",
+   "column": "הושלם",
+   "feature": "landing mobile",
+   "role": "guest",
+   "devices": [
+    "iphone",
+    "android"
+   ],
+   "notes": "22.10 emulation 320/375/412 he/en/ru/ar: scrollWidth=innerWidth, no overflow",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#851043",
+   "id": "015b31d30c9959750d851043",
+   "title": "Mobile 320px (Russian): /ru testimonials arrows and /ru/talents job cards push the page sideways",
+   "action": "pass; rejections resolved 22.10",
+   "column": "הושלם",
+   "feature": "landing mobile",
+   "role": "guest",
+   "devices": [
+    "iphone",
+    "android"
+   ],
+   "notes": "22.10 emulation 320/375/412 he/en/ru/ar: scrollWidth=innerWidth, no overflow",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#7178a2",
+   "id": "a4970ff8058552754c7178a2",
+   "title": "Submitting a candidate: «סיום והגשה» is clickable while the AI summary and strengths are still being generated",
+   "action": "pass; rejections resolved 22.10",
+   "column": "הושלם",
+   "feature": "submit candidate",
+   "role": "hunter_plus",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "22.10: 3 runs, button 'ממתינים לתקציר ה-AI…' disabled+aria-busy from ~110ms until both AI fields filled (~1.9-2.0s), incl. regeneration; submission has summary+strengths",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#25ee63",
+   "id": "833d42128708dde4e325ee63",
+   "title": "«שדרוג משרה»: free «קידום משרה» is pre-selected",
+   "action": "pass; rejections resolved 22.10",
+   "column": "הושלם",
+   "feature": "job upgrade",
+   "role": "hunter_plus",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "22.10 J-70: nothing preselected, button disabled; label names service; distribution only -> 4/5->3/5, promotions 1/2 unchanged",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#46b93c",
+   "id": "65b58e116b9e65dad846b93c",
+   "title": "iPhone: input fields use 14px font, so Safari zooms the page on focus",
+   "action": "pass; rejections resolved 22.10",
+   "column": "הושלם",
+   "feature": "forms mobile",
+   "role": "hunter_plus,guest",
+   "devices": [
+    "iphone"
+   ],
+   "notes": "22.10 emulation: חוזקות min 44px, grows with tags; custom selects 44px in add candidate/job wizard/profile; inputs 16px; real-iPhone zoom not emulatable",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#63b8d1",
+   "id": "3d66fbfa9395b618e663b8d1",
+   "title": "Mobile: texts overflow, overlap or break",
+   "action": "pass; rejections resolved 22.10",
+   "column": "הושלם",
+   "feature": "mobile texts",
+   "role": "hunter_plus",
+   "devices": [
+    "iphone"
+   ],
+   "notes": "22.10 item 7: 13/13 + 3/3 runs on J-40, step-2 title not clamped, Latin not broken",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#e9ce1c",
+   "id": "67f7ad1c62f1866ba3e9ce1c",
+   "title": "Receiving side has no מתאים / לא מתאים and no בקשת NDA actions",
+   "action": "pass; rejections resolved 22.10",
+   "column": "הושלם",
+   "feature": "candidacy receiver",
+   "role": "company,hunter_free",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "22.10 J-49: מתאים/ה both sides 3/3; לא מתאים/ה -> נדחה/תה + reason 2/2; en/ru/ar; NDA request->sign->NDA נחתם",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#24f795",
+   "id": "f81c1f7a326fe0922124f795",
+   "title": "Candidacy statuses: final statuses can be flipped",
+   "action": "pass; rejections resolved 22.10",
+   "column": "הושלם",
+   "feature": "candidacy receiver",
+   "role": "company,hunter_free",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "22.10: 4/4 runs separate נצפה/תה + decision notifications, counter +2, still there after 10-19 min; confirm/reason/lock regression ok",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#9ac514",
+   "id": "fc9853711e83a1092a9ac514",
+   "title": "Full-profile submission: company sees only contact data",
+   "action": "pass; rejections resolved 22.10",
+   "column": "הושלם",
+   "feature": "candidacy receiver",
+   "role": "company,hunter_free",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "22.10: full: contacts, workplace, experience, AI summary, answers, salary, notes, CV PDF 200; anon: notes+summary, no PII/CV; disclosed: all incl workplace+CV",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#0f3888",
+   "id": "96ad283924abddcd9b0f3888",
+   "title": "Requests/questions on an inactive or archived job: company can still act, hunter cannot respond",
+   "action": "pass; rejections resolved 22.10",
+   "column": "הושלם",
+   "feature": "pending requests",
+   "role": "hunter_plus",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "22.10: ממתינים lists archived-job requests with job/archived/type/date; answered + approved from there, leave list, tab counter matches; notification links on archived J-136 no 404. Header counter = sum of both tabs (D-30 open)",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#710d8c",
+   "id": "4c9e57c462bb7f2a5d710d8c",
+   "title": "Form validation messages: errors stay after fixing, vague texts, silent truncation and missing checks",
+   "action": "pass; rejections resolved 22.10",
+   "column": "הושלם",
+   "feature": "form validation",
+   "role": "hunter_plus,company",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "22.10: add candidate salary error clears 20-75ms without blur 3/3; wizard required/abc/-3/length ok; chat 4001 -> 'ההודעה ארוכה מדי' hunter+company, nothing sent",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#412b53",
+   "id": "6e09b55856fc28edda412b53",
+   "title": "Notification link to an archived job opens a 404 page",
+   "action": "reject (rej_5187afae…), rejection 1 resolved",
+   "column": "לביצוע",
+   "role": "talent,company,hunter_free",
+   "devices": [
+    "desktop"
+   ],
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#bebb61",
+   "id": "b9e1687917ffe55744bebb61",
+   "title": "Headhunter waiting for approval: לוח בקרה returns to pending and opens the plan popup every time",
+   "action": "pass (verdict, waiting user yes); 0 rejections",
+   "column": "בבדיקות",
+   "feature": "pending hunter",
+   "role": "hunter_pending",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "22.10: no plan/trial popup 6 loads; לוח בקרה -> plain pending page; en/ru ok",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#f1f804",
+   "id": "ca2786518fc37a26e5f1f804",
+   "title": "Headhunter waiting for approval cannot log out",
+   "action": "pass (verdict, waiting user yes); 0 rejections",
+   "column": "בבדיקות",
+   "feature": "pending hunter",
+   "role": "hunter_pending",
+   "devices": [
+    "desktop",
+    "375"
+   ],
+   "notes": "22.10: התנתקות on pending page, header, burger 375; cookie removed; protected pages -> /login",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#df647e",
+   "id": "189187209752cf91c9df647e",
+   "title": "Tender offers: אישור/דחיית ההצעה applied in one click",
+   "action": "pass; rejections resolved 22.10",
+   "column": "הושלם",
+   "feature": "tender offers",
+   "role": "company_2,hunter_free_2",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "22.10: confirm dialog name+amount; undo deadline IDT; אחר text field; bidder sees nothing during window (30s/2m/4m), decision+reason+1 notification at 5:35; approve undone never reached bidder",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#1866ba",
+   "id": "6a705a67fe7c40d5da1866ba",
+   "title": "Onboarding מועמד — שלב 4ב: פענוח CV ומילוי אוטומטי של 7 שדות",
+   "action": "pass; rejection resolved 22.10",
+   "column": "הושלם",
+   "feature": "talent onboarding",
+   "role": "talent_new,hunter_plus",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "22.10 new talent U-48: CV adds English, technology, desired role מפתח/ת אוטומציה (QA), editable; AI summary mentions English; experience/title/education extracted; salary empty; hunter sees level מיד-לבל + summary + languages",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#2d1ac1",
+   "id": "1cb2b4f8259cbbed752d1ac1",
+   "title": "Talent PRO is billed monthly – Miro defines a 3-month auto-renewing plan",
+   "action": "pass; rejection resolved 22.10",
+   "column": "הושלם",
+   "feature": "talent subscription",
+   "role": "talent",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "22.10: PRO 3 months paid ₪1 (price set 1440->1->1440), renewal 22.01.2027, invoice 555 'ל-3 חודשים, מתחדש אוטומטית'; auto-renew cancelled after",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#279169",
+   "id": "3b1ea9fb6dcb406786279169",
+   "title": "Payment window: card payment is impossible and every opening creates a pending order",
+   "action": "pass; 2 rejections resolved 22.10",
+   "column": "הושלם",
+   "feature": "payments",
+   "role": "talent,hunter_free_2,admin",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "22.10: payment ok; open/close + PLUS->PREMIUM switch left no orders (admin אין תשלומים before/after); failure toast gone",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#549afe",
+   "id": "c01ecc8419f27bf7f5549afe",
+   "title": "Annual prices are defined in Admin but not offered to users",
+   "action": "pass; rejection resolved 22.10",
+   "column": "הושלם",
+   "feature": "subscriptions",
+   "role": "hunter_free_2,talent_new,admin",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "22.10: toggle monthly default/annual, prices from admin; paid PLUS annual (demo-hunter-3, reverted to FREE after) and talent PRO annual (U-48) ₪1, valid to 22.10.2027; prices restored",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#bc3456",
+   "id": "933045659566f2e3e8bc3456",
+   "title": "Saved credit card cannot be removed",
+   "action": "new bug",
+   "column": "לביצוע",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#64e2aa",
+   "id": "9db8dd2cab6a2a564064e2aa",
+   "title": "Talent profile promotion (§56) does not exist",
+   "action": "pass; rejection resolved 22.10",
+   "column": "הושלם",
+   "feature": "talent promotion",
+   "role": "talent,hunter_plus,talent_2",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "22.10: bought via המנוי שלי → שדרוגים → פרופיל מקודם (price 1000->2->1000, PRO -50%); promoted till 21.11.2026; first in talents-bank with מקודם; FREE sees upsell; salary ≥20k gate",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#8cc94b",
+   "id": "3480275a49bf4a565f8cc94b",
+   "title": "Unique Position badge (§55) cannot be purchased",
+   "action": "pass; rejection resolved 22.10",
+   "column": "הושלם",
+   "feature": "job upgrade",
+   "role": "hunter_plus",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "22.10: with admin job_unique active (temp ₪1) 'תג ייחודי' offered in שדרוג משרה, bought, turquoise 'ייחודית' badge on J-70 in my-jobs and collaborations; product off again; card hidden when inactive; weekly email not checkable",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#35aed9",
+   "id": "d3403a3ccc5de9a51535aed9",
+   "title": "FREE talent cannot buy a one-time application",
+   "action": "pass; rejection resolved 22.10",
+   "column": "הושלם",
+   "feature": "talent one-time application",
+   "role": "talent_2",
+   "devices": [
+    "desktop"
+   ],
+   "notes": "22.10: with product active offered 'הגשה חד פעמית', paid ₪1, then anonymous+NDA submission to J-49 (paid ₪0.50). Edge: product switched off after payment -> notOnSale toast, paid submission unusable (new bug candidate)",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#d722cd",
+   "id": "5f55e15b2538cc8bfdd722cd",
+   "title": "Company refuses the talent's NDA",
+   "action": "pass; rejection resolved 22.10",
+   "column": "הושלם",
+   "feature": "NDA candidacy",
+   "role": "company,talent_2",
+   "devices": [
+    "desktop"
+   ],
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#2f4588",
+   "id": "1d48277d1e5c7946a82f4588",
+   "title": "Reason lists exist in admin but are not used",
+   "action": "pass; rejection resolved 22.10",
+   "column": "הושלם",
+   "feature": "NDA candidacy",
+   "role": "company,talent_2",
+   "devices": [
+    "desktop"
+   ],
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#7044bf",
+   "id": "dc44870c67b1657fa47044bf",
+   "title": "Work Representation (§47) is missing",
+   "action": "pass; rejection resolved 22.10",
+   "column": "הושלם",
+   "feature": "NDA candidacy",
+   "role": "company,talent_2",
+   "devices": [
+    "desktop"
+   ],
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#4ce54a",
+   "id": "a23b4aa03a77b2afe24ce54a",
+   "title": "Tender distribution (§59) is missing",
+   "action": "pass; rejection resolved 22.10",
+   "column": "הושלם",
+   "at": "2026-10-22",
+   "session": "2026-10-22",
+   "notes": "T-72 'לכל המערכת' paid ₪1, admin approved, log 'נשלחה ל-8 משתמשים', bell 'איתרנו מכרז בדיוק בשבילכם!' at claude-test, demo-company-6 (HR), demo-hunter-3; T-71 industry audience sent to 0"
+  },
+  {
+   "hash": "#0b7429",
+   "title": "NDA refused notification: reason stays Hebrew in en/ru",
+   "action": "new bug",
+   "column": "לביצוע",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#246105",
+   "title": "Work Representation form stays open after send",
+   "action": "new bug",
+   "column": "לביצוע",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#43c7ff",
+   "title": "Cardcom card-number field breaks after resize",
+   "action": "new bug",
+   "column": "לביצוע",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#29f76e",
+   "action": "לא ניתן לשחזר — ждёт #e6252d",
+   "column": "בבדיקות",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  },
+  {
+   "hash": "#1866b8",
+   "action": "לא ניתן לשחזר — ждёт #e6252d",
+   "column": "בבדיקות",
+   "at": "2026-10-22",
+   "session": "2026-10-22"
+  }
+ ],
+ "test_data": [
+  {
+   "what": "anonymous submission (no NDA) of candidate 'QA copy test מועמד גלוי' 73e58781-30c1-46e6-90fe-1f0c50d6c8f6 to job 7e4ad713 'QA company post test', summary/answer 'QA-AUTO 3b9172'",
+   "by": "hunter_plus",
+   "ticket": "#3b9172",
+   "status": "to clean"
+  },
+  {
+   "what": "full-profile submission of seed candidate 'אדיר כהן' to job 7e4ad713, summary/answer 'QA-AUTO 3b9172 full', salary 20000",
+   "by": "hunter_plus",
+   "ticket": "#3b9172",
+   "status": "to clean"
+  },
+  {
+   "what": "candidate QA-AUTO ba4009 (anon) b896e756-fea0-439b-b99f-b82e7b115199",
+   "by": "hunter_plus",
+   "status": "to clean"
+  },
+  {
+   "what": "candidate QA-AUTO ba4009-open aa15963b-742f-4a11-9eb4-879d019e44b6",
+   "by": "hunter_plus",
+   "status": "to clean"
+  },
+  {
+   "what": "company job draft b7347374-335f-48ca-bc07-873704c6dbe9 'QA-AUTO 710d8c - לא לפרסם' (demo-company-1)",
+   "status": "to clean"
+  },
+  {
+   "what": "hunter job draft 1bf0b625-3255-45f9-ba66-d144685b2ce1 'QA-AUTO 710d8c - לא לפרסם' (claude-test)",
+   "status": "to clean"
+  },
+  {
+   "what": "tender draft 1f000004 re-saved, now at step 4 (existing, user said keep)",
+   "status": "keep"
+  },
+  {
+   "what": "company job draft 4fe97393-f28f-40ad-93e2-6780f1c31bed 'QA-AUTO 33f14b - לא לפרסם' (demo-company-1)",
+   "status": "to clean"
+  },
+  {
+   "what": "company tender 'QA-AUTO bc890b מכרז' eba3be25-286c-4239-90f2-345de89add50 T-45 PUBLISHED free (demo-company-1) + signature file",
+   "status": "to clean"
+  },
+  {
+   "what": "hunter job 'QA-AUTO bc890b משרה' 13b31728-2148-4530-a473-b13997c923f0 J-63 active (claude-test)",
+   "status": "to clean"
+  },
+  {
+   "what": "5 NDA submission attempts 'בת אל' → 7e4ad713 closed at payment (no visible record)",
+   "status": "check"
+  },
+  {
+   "what": "tender draft fc32fe66-3ea6-460b-a2d6-0188045f475b 'QA-AUTO bc890b-v draft - לא לפרסם' step 4 (demo-company-1)",
+   "status": "to clean"
+  },
+  {
+   "what": "tender T-47 e5f88878-4b21-4830-a6c9-640ff1903159 'QA-AUTO bc890b paid - לא לפרסם' ממתין לתשלום (demo-company-1) + signature file",
+   "status": "to clean"
+  },
+  {
+   "what": "candidates QA-AUTO d9db64 A 8587da50, B 4dac9558, C b5e9a25c, A2 6fe9207f, B2 ba7630fb (claude-test); submissions A,B → 7e4ad713 anonymous",
+   "status": "to clean"
+  },
+  {
+   "what": "tender offer 150₪ by demo-hunter-2 on T-45 eba3be25 'QA-AUTO 11606e - הצעת בדיקה'",
+   "status": "to clean"
+  },
+  {
+   "what": "company job J-64 'QA-AUTO 11606e משרה' 4d79d27c-c6e1-484e-b250-03a18c169dc8 published free, renewed, archived",
+   "status": "to clean"
+  },
+  {
+   "what": "hunter job J-63 13b31728 archived",
+   "status": "to clean"
+  },
+  {
+   "what": "conversations c=9b1edd41-fc3f-4df7-8dfd-19e15dbea9fd (claude-test ↔ anon demo-talent-11) and c=d9061196-12aa-46f5-9237-990485c58e05 (↔ anon demo-talent-7), no messages",
+   "status": "to clean"
+  },
+  {
+   "what": "company requested full profile on application 07cbdd42-aaac-4a7a-a10c-fd7d6ffbd40f (QA-AUTO d9db64 B) on 7e4ad713 — status התבקש פרופיל מלא",
+   "status": "to clean"
+  },
+  {
+   "what": "company rejected (דחייה) anonymous submission QA-AUTO d9db64 A on 7e4ad713: נצפה→נדחה 2026-10-19",
+   "status": "to clean"
+  },
+  {
+   "what": "tender draft 7901e850-1c89-4bcc-b15f-5696ad579572 (demo-company-1) created by step-1 המשך",
+   "status": "to clean"
+  },
+  {
+   "what": "tender drafts 'מכרז ללא שם' T-48 70aa6c5b-343d-4cc0-8752-f76b81481763 / T-49 7901e850 (demo-company-1)",
+   "status": "to clean"
+  },
+  {
+   "what": "status changes on application 9642b957 (אדיר כהן, 7e4ad713): נצפה→נדחה→התקבל/ה לעבודה→נצפה",
+   "status": "reverted (history remains)"
+  },
+  {
+   "what": "candidates QA-AUTO step1-save test 1bb1ce96-c341-418d-9197-137de6e6f9f7, QA-AUTO step1-save 2 test 714d5690-2487-4ae6-ae3a-ce62afc646ed (claude-test)",
+   "status": "to clean"
+  },
+  {
+   "what": "candidates QA-AUTO f70a38 דנה 0934edbe (claude-test, with avatar+CV); QA-AUTO f70a38 FREE 64587b8b, FREE 2 08786472, FREE 3 ecee09ef (demo-hunter-3)",
+   "status": "to clean"
+  },
+  {
+   "what": "application 8bae055f (hunter_free→job 7e4ad713, candidate 'test test', anon, rejected) QA-AUTO 62222f",
+   "ticket": "#62222f",
+   "status": "to clean"
+  },
+  {
+   "what": "application aee53001 (hunter_plus→job 7e4ad713, candidate QA-AUTO ba4009, full profile shared) QA-AUTO 62222f",
+   "ticket": "#62222f",
+   "status": "to clean"
+  },
+  {
+   "what": "job J-65 'QA-AUTO 62222f משרה' d166703c (hunter_plus) archived",
+   "ticket": "#62222f",
+   "status": "to clean"
+  },
+  {
+   "what": "report R-8 by demo-talent-1 on J-65 'QA-AUTO 62222f' status open",
+   "ticket": "#62222f",
+   "status": "to clean"
+  },
+  {
+   "what": "conversation 83ebf0c7 hunter_free↔demo-company-1, no messages",
+   "ticket": "#62222f",
+   "status": "to clean"
+  },
+  {
+   "what": "tender T-51 532248e1 'QA-AUTO 62222f מכרז' (company_2) published free, closed by admin",
+   "ticket": "#62222f",
+   "status": "closed"
+  },
+  {
+   "what": "tender draft T-50 acf7d9d6 'QA-AUTO 62222f מכרז' (company_2)",
+   "ticket": "#62222f",
+   "status": "to clean"
+  },
+  {
+   "what": "signature file documents/26d7d652…/signature-1792424120063.png (company_2)",
+   "ticket": "#62222f",
+   "status": "to clean"
+  },
+  {
+   "what": "candidate 'QA-AUTO bugs 1019' (hunter_free, anon, phone 050-000-0019) + application 0e2c6f40 on job 7e4ad713 (status נצפה)",
+   "ticket": "bugs-1019",
+   "status": "to clean"
+  },
+  {
+   "what": "tender T-52 90dc3d0b 'QA-AUTO 62222f מכרז 2' (company_2) closed by admin; signature file signature-1792425078750.png in storage; hunter_plus expertise reverted to finance",
+   "ticket": "#62222f",
+   "status": "closed"
+  },
+  {
+   "what": "tender T-58 'QA-AUTO 1020 E1 מכרז' 37fb9213-5e5e-4b84-9c84-a7330da7b302 (company_2) — פעיל до 30.11.2026, закрыть может только админ; на нём предложение HR ₪1,000 נדחתה (07813975) и demo-hunter-2 ₪3,000 אושרה (d68770da)",
+   "by": "company_2",
+   "ticket": "run-1020 E1",
+   "status": "to clean",
+   "note": "решение пользователя: закрыть админом"
+  },
+  {
+   "what": "tender T-53 'QA-AUTO 1020 C3 מכרז' 470677f2-12ca-4ca4-84f2-562249b68fe2 (company) — פעיל до 15.11.2026; предложение HR (company_6) введено −50, сохранено ₪50, ממתין לתשובה",
+   "by": "company",
+   "ticket": "run-1020 C3/N3",
+   "status": "to clean",
+   "note": "закрыть админом или дождаться истечения"
+  },
+  {
+   "what": "tender T-55 'QA-AUTO 1020 N3 מכרז תאריך 29.02' 7c73030b-1530-4ebb-9864-a02595397b3c (company) — פעיל до 15.11.2026",
+   "by": "company",
+   "ticket": "run-1020 N3",
+   "status": "to clean",
+   "note": "закрыть админом или дождаться истечения"
+  },
+  {
+   "what": "tender draft 'QA-AUTO 1020 C3 V2 טיוטה - לא לפרסם' 15aa03e9-92af-4748-9c2a-2c12f7e85442 (company), не виден в UI",
+   "by": "company",
+   "ticket": "run-1020 C3",
+   "status": "to clean",
+   "note": "удалить через БД/админку"
+  },
+  {
+   "what": "tender draft 'QA-AUTO 1020 N3 scope test' 7a042cd1-e154-4b45-990c-3c67f60d21f9 (company), טיוטה, не виден в UI",
+   "by": "company",
+   "ticket": "run-1020 N3",
+   "status": "to clean",
+   "note": "удалить через БД/админку"
+  },
+  {
+   "what": "возможный черновик тендера demo-company-1 от M2 (мастер /publish/tender шаг 1→2, 20.10 ~04:00–04:45 IDT, iPhone+Android) — проверить /admin/tenders",
+   "by": "company",
+   "ticket": "run-1020 M2",
+   "status": "to clean",
+   "note": "проверить"
+  },
+  {
+   "what": "pending-заказы claude-test: ~13 от C2 (2d5f5aeb, 3429edd7, a2e438d1, 6fca0108, b9944e11, cd720b38, 56bb7137, ba61afa7, a97df134 + ~4 без id), ~2 PREMIUM ₪320 от N2, NDA ₪35 ממתין от E1, Premium от M2 — окна оплаты открывались без оплаты",
+   "by": "hunter_plus",
+   "ticket": "run-1020 C2/N2/E1/M2",
+   "status": "to clean",
+   "note": "отменить/удалить в админке"
+  },
+  {
+   "what": "pending-заказы demo-hunter-3: ~3 от N2 (PLUS ₪280, PREMIUM ₪320), возможные от bug-verifier C2 (§57), PLUS ₪280 от F1 (~05:12), Premium от M2",
+   "by": "hunter_free_2",
+   "ticket": "run-1020 C2/N2/F1/M2",
+   "status": "to clean",
+   "note": "отменить/удалить в админке"
+  },
+  {
+   "what": "pending-заказы demo-company-1: ₪700 'שירותי הפצה' на J-49 от M2 (2 POST × 2 устройства), ₪700 'קידום משרה' на J-66 от C3",
+   "by": "company",
+   "ticket": "run-1020 M2/C3",
+   "status": "to clean",
+   "note": "отменить/удалить в админке"
+  },
+  {
+   "what": "pending-заказ demo-talent-1 Hunters PRO ₪480 от F1 (~05:10), возможно также от C4/E1; возможно demo-talent-2 от C4",
+   "by": "talent",
+   "ticket": "run-1020 F1/C4/E1",
+   "status": "to clean",
+   "note": "проверить и отменить"
+  },
+  {
+   "what": "инцидент N5: J-60 b7347374, J-61 1bf0b625, J-62 4fe97393, J-79 dd3b8836 — сейчас 'לא פעיל' вместо исходного 'טיוטה' (UI не умеет); проверить даты публикации и уведомления хантерам. Остальные 16 откачены точно, J-66 בארכיון",
+   "by": "admin",
+   "ticket": "run-1020 N5",
+   "status": "to clean",
+   "note": "решение пользователя: вернуть טיוטה через БД"
+  },
+  {
+   "what": "сообщение админа автору жалобы R-15 (talent_2) через 'הודעה למשתמש/ת' не отправлено — классификатор разрешений",
+   "by": "admin",
+   "ticket": "run-1020 E1",
+   "status": "to clean",
+   "note": "решение пользователя"
+  },
+  {
+   "what": "жалобы QA: R-15 (talent_2 → J-82, טופל), C4 на J-67 'QA-AUTO 1020 C4 – לא לטפל', N4 ×3 (2 на профиль 249b809c 'הד האנטר דמו 1', 1 на вакансию ec3427e5)",
+   "by": "talent/talent_2",
+   "ticket": "run-1020 C4/N4/E1",
+   "status": "to clean",
+   "note": "удалить в админке или оставить"
+  },
+  {
+   "what": "файлы-сироты storage documents/232703e1-…/ (claude-test): C2 — 2 брошенные CV + 3 от bug-verifier (candidate-cv-1792437885948/…926255/…989499-QA-AUTO-1020-C2-cv2.pdf); N2 — candidate-cv-…-tiny.pdf, …-fake_exe.pdf, candidate-cv-1792443461544/…472443/…477165-qa-n2-fake.pdf (exe-содержимое MZ — удалить первыми)",
+   "by": "hunter_plus",
+   "ticket": "run-1020 C2/N2",
+   "status": "to clean",
+   "note": "удалить (разработчик)"
+  },
+  {
+   "what": "кандидаты claude-test: C2 3281a0b2 (אנונימי-1), 52078fd2 (גלוי-2); N2 373f3e05 (step2-close), 0086d183 (dblclick); E1 Alpha 51b1cf64, Bravo 060763f9, Charlie caa83508, Delta 2508b9ba — через UI не удаляются",
+   "by": "hunter_plus",
+   "ticket": "run-1020 C2/N2/E1",
+   "status": "to clean",
+   "note": "удалить (разработчик)"
+  },
+  {
+   "what": "кандидат demo-hunter-3 f899140b 'QA-AUTO 1020 C2 FREE מועמד 1' + подачи на J-67, J-49, J-66, aaf4db01",
+   "by": "hunter_free_2",
+   "ticket": "run-1020 C2/N2",
+   "status": "to clean",
+   "note": "удалить (разработчик)"
+  },
+  {
+   "what": "кандидаты demo-hunter-2: C3 ×5 ('QA-AUTO 1020 C3 אנונימי 1/2/4/5', 'פתוח 3': eb12bb4d, 08d89ae4, 8dce12c1 + 2 без id) с подачами на J-49 (33f73783, 9cc4f094, 9869fac9 + 2); N3 ×4 (c4811604, e89b2ba3, 01f1b3d8, 03f40501) с подачами на J-66 (ca682893, eca3b727, b9f47818, 2cfcad5d)",
+   "by": "hunter_free",
+   "ticket": "run-1020 C3/N3",
+   "status": "to clean",
+   "note": "удалить (разработчик)"
+  },
+  {
+   "what": "подачи claude-test: C2 3281a0b2 и 52078fd2 → J-67 1711fbc7; N2 3281a0b2 → J-49 7e4ad713; E1 8d25a157 (J-81, התקבל), 29bd04ad (J-81, נדחה), 95e1d65a (J-83), 152d3162 (J-84)",
+   "by": "hunter_plus",
+   "ticket": "run-1020 C2/N2/E1",
+   "status": "to clean",
+   "note": "учитывать / удалить с вакансиями"
+  },
+  {
+   "what": "вакансии в архиве: J-67 1711fbc7 (C4), J-68 fba278a8, J-69 71282c4a, J-71 c4617904, J-72 eb61d379, J-74 679d1b64, J-75 197d8648, J-76 75f5ae9e (C2), J-78 27839fef (N3), J-80 98925c45 (N2), J-66 3a6fab44 (C3), J-81 d7220429, J-82 77f6896c, J-83 fcf90cb5, J-84 f7c2a15f (E1)",
+   "by": "разные",
+   "ticket": "run-1020",
+   "status": "to clean",
+   "note": "удалить при желании (разработчик)"
+  },
+  {
+   "what": "активные QA-вакансии claude-test: J-70 f8f6cad5 'QA-AUTO 1020 C2 PLUS משרה 1', J-73 9f0c8946 'QA-AUTO 1020 C2 verify שכר נמוך' — можно заархивировать",
+   "by": "hunter_plus",
+   "ticket": "run-1020 C2",
+   "status": "KEEP (autotests job-upgrade #1396b6 read it) — do not clean/archive",
+   "note": "архивировать"
+  },
+  {
+   "what": "NDA E1: 2 подписи claude-test ↔ demo-hunter-2 (J-83, J-84), файлы documents/232703e1-…/nda-1792456247872.png, nda-1792457108692.png",
+   "by": "hunter_plus",
+   "ticket": "run-1020 E1",
+   "status": "to clean",
+   "note": "оставить или почистить"
+  },
+  {
+   "what": "вопросы 'שאלות נוספות' N3 по подаче 2cfcad5d ('QA-AUTO 1020 N3 שאלה <script>…', '…ארוך…'); ~15 уведомлений у demo-hunter-2 по J-66",
+   "by": "company",
+   "ticket": "run-1020 N3",
+   "status": "to clean",
+   "note": "к сведению"
+  },
+  {
+   "what": "обращения /contact 'QA-AUTO 1020 N1' и 'QA-AUTO 1020 N1 verify' (qa-auto-1020-n1@example.com, телефон 'abc'); письмо сброса пароля ушло на demo-talent-7",
+   "by": "guest",
+   "ticket": "run-1020 N1",
+   "status": "to clean",
+   "note": "удалить, если хранятся"
+  },
+  {
+   "what": "беседы чата (пустые, 403): 83ebf0c7-be31-44eb-b1c3-75963f6eb6d1 (N3, company ↔ hunter_free), 9b576987-6c48-4af0-9fad-cae79cbf323e (E1, company_2 ↔ demo-hunter-2)",
+   "by": "company/company_2",
+   "ticket": "run-1020 N3/E1",
+   "status": "to clean",
+   "note": "к сведению"
+  },
+  {
+   "what": "побочно и необратимо: чужие подачи 3154c87a (J-66, N3), 1976a0d4 (F1), 7f43af13 (C2) перешли נשלח → נצפה при просмотре; лимит предложений на тендеры claude-test и demo-hunter-2 2/2 до 01.11.2026",
+   "by": "разные",
+   "ticket": "run-1020",
+   "status": "to clean",
+   "note": "откат не нужен"
+  },
+  {
+   "what": "application over FREE limit 583b6438-54db-4084-bf63-402ba16f3929 (candidate QA-AUTO f70a38 FREE 3 ecee09ef-01ba-474f-b1b7-8559a115c6b1 → J-49 7e4ad713), demo-hunter-3",
+   "ticket": "#437b26",
+   "date": "2026-10-21",
+   "status": "to clean"
+  },
+  {
+   "what": "admin tender_post price 0.00→1.00→0.00 (reverted, verified ₪0 on /organizations)",
+   "ticket": "#33f14b",
+   "date": "2026-10-21",
+   "status": "reverted"
+  },
+  {
+   "what": "T-60 'QA-AUTO 2110 cf6dc1 edited' c2281f5b-c754-4d9e-b928-aaf4e95a7399 (extended, closed, archived) demo-company-1",
+   "ticket": "#cf6dc1/#bc890b",
+   "date": "2026-10-21",
+   "status": "to clean"
+  },
+  {
+   "what": "T-61 'QA-AUTO 2110 bc890b' 16dd16fb-4612-4873-9e6c-9d43d61aff31 (published, archived) demo-company-1",
+   "ticket": "#cf6dc1/#bc890b",
+   "date": "2026-10-21",
+   "status": "to clean"
+  },
+  {
+   "what": "pending order 262310d3-56b0-462d-90ed-f9d183b4d7a5 demo-hunter-3 plan_plus_annual ₪3,024",
+   "ticket": "#549afe/#2d1ac1",
+   "date": "2026-10-21",
+   "status": "to clean"
+  },
+  {
+   "what": "pending order c98f7881-12a3-4528-ba01-0de2c82fe390 demo-talent-1 talent_pro_annual ₪5,184",
+   "ticket": "#549afe/#2d1ac1",
+   "date": "2026-10-21",
+   "status": "to clean"
+  },
+  {
+   "what": "pending order 87c1ce21-6729-4c01-8014-bfefe6d5863c demo-talent-1 talent_pro_quarterly ₪1,440",
+   "ticket": "#549afe/#2d1ac1",
+   "date": "2026-10-21",
+   "status": "to clean"
+  },
+  {
+   "what": "T-62 'QA-AUTO 2110 tsub' 0a967be3-a988-4426-8086-72c8d71cd519 demo-company-1 + candidacies Alpha(מתאים), Bravo full 8f88518a-a6fc-4b25-a8f6-8a824868262a (נדחה), Charlie pending (hunter_plus)",
+   "ticket": "#541d6c/#1004e9/#df647e",
+   "date": "2026-10-21",
+   "status": "to clean"
+  },
+  {
+   "what": "T-53 HR offer 50→60 and rejected; T-12 claude-test offer 15000→15001 then withdrawn (בוטלה)",
+   "ticket": "#541d6c/#1004e9/#df647e",
+   "date": "2026-10-21",
+   "status": "to clean"
+  },
+  {
+   "what": "~32 payment window openings demo-hunter-3 (PREMIUM/PLUS), possible pending orders",
+   "ticket": "#8f5282/#46b93c",
+   "date": "2026-10-21",
+   "status": "to check/clean"
+  },
+  {
+   "what": "J-136 'QA-AUTO 2110 nda - לא לפרסם' 547e6014-c8da-4c61-956f-c03f4947015b demo-company-1 (archived) + applications Alpha 3d1d441f, Bravo 685d691c, Charlie aa7d1235, Delta 25b0a2b7 (claude-test, NDA signatures in storage)",
+   "ticket": "NDA/candidacy batch",
+   "date": "2026-10-21",
+   "status": "KEEP (autotests #158449 read it) — do not clean"
+  },
+  {
+   "what": "J-135 'QA-AUTO 2110 cand' d4ef23f7-f21a-438c-aeb1-7fbde1c41dea demo-company-2 + 8 applications (d80112f0, dad94eb2, 3cd5a2eb, 9851cf9d, 8c99a256, 48d8a1db, ad7c6107, feac1a6b); candidates 'QA-AUTO 2110 cand 1/2' 5c0c1581, 69281555 (demo-hunter-2)",
+   "ticket": "NDA/candidacy batch",
+   "date": "2026-10-21",
+   "status": "to clean"
+  },
+  {
+   "what": "J-135 extra: candidate 'QA-AUTO 2110 v3 cand' d361d61d-e8ba-4b05-8de8-71db1d4327e2; applications 537d1adb, 63d7ba36, ca94067e, 19f8dbc6, 6d191f24 (demo-hunter-2)",
+   "ticket": "#e9ce1c/#9ac514/#24f795",
+   "date": "2026-10-21",
+   "status": "to clean"
+  },
+  {
+   "what": "HR company_6 accidental POST on T-55 7c73030b (clicked 'הגשה' card), no submission visible after reload",
+   "ticket": "#cf108e",
+   "date": "2026-10-21",
+   "status": "check"
+  },
+  {
+   "what": "reports R-16, R-17, R-18 (contact), R-19 (chat report conv 26dce8c9) from demo-talent-1, open",
+   "ticket": "#3b5661/#62222f",
+   "date": "2026-10-21",
+   "status": "KEEP (autotest #3b5661 in-use test needs R-17 + QA value) — do not clean"
+  },
+  {
+   "what": "report_reasons list: qa_auto_2110_list 'QA-AUTO 2110 list' inactive (in use by R-17)",
+   "ticket": "#3b5661/#62222f",
+   "date": "2026-10-21",
+   "status": "KEEP (autotest #3b5661 in-use test needs R-17 + QA value) — do not clean"
+  },
+  {
+   "what": "claude-test candidates 'QA-AUTO 2110 ai 8/9/10' afcdc7bf, 768e45e3, 305e18d8 submitted anon to J-49 (apps 18130f8b, 4822e65f); ~20 orphan CV files in storage documents/232703e1-…",
+   "ticket": "#d9db64/#38bfa0",
+   "date": "2026-10-21",
+   "status": "to clean"
+  },
+  {
+   "what": "orders demo-talent-1: 1bc0bb88 (annual, cancelled), 48f6b8b2-5b52-4444-8c5d-eac16a5ba57e (quarterly, pending), 87c1ce21 cancelled",
+   "ticket": "#279169",
+   "date": "2026-10-21",
+   "status": "to clean"
+  },
+  {
+   "what": "chat messages ffa5d2a6, dcaf50d8 (conv 9b576987), c7fd7b19 (conv f9c27c76); anon chats 2be18e5e, f9c27c76, 3c2bc2fa (demo-hunter-2)",
+   "ticket": "#0b18b0/#9116cb",
+   "date": "2026-10-21",
+   "status": "to clean"
+  },
+  {
+   "what": "J-137 'QA-AUTO 2110 hh low 15-18k' eac100c1-92b4-40a4-afeb-7ac395d5ab5d (claude-test, active, edited to 20-22k, 1 free distribution used 5→4); candidate 'QA-AUTO John Smith' 8e10ef5e-1a26-44e9-b469-204a82bb0d83",
+   "ticket": "#1396b6/#ac4c44/#63b8d1",
+   "date": "2026-10-21",
+   "status": "to clean"
+  },
+  {
+   "what": "KEEP: J-73 9f0c8946-653b-4f62-8b44-2c33c155553a (10-15k) and J-70 f8f6cad5-f1e0-411d-aeab-824d772c2ad8 (25-32k), claude-test — autotests #1396b6 read them",
+   "ticket": "#1396b6",
+   "date": "2026-10-21",
+   "status": "KEEP"
+  },
+  {
+   "what": "admin prices talent_single_application/job_unique/tender_distribution 0.00 לא פעיל → 1.00 פעיל → restored 0.00 לא פעיל (verified, 46 cards unchanged)",
+   "ticket": "#35aed9/#8cc94b/#4ce54a",
+   "date": "2026-10-21",
+   "status": "reverted"
+  },
+  {
+   "what": "possible pending orders ₪1: talent_2 single application J-49; claude-test job_unique J-137; demo-company-1 tender_distribution T-55 («ממתין לתשלום» in /admin/tenders)",
+   "ticket": "#35aed9/#8cc94b/#4ce54a",
+   "date": "2026-10-21",
+   "status": "to clean"
+  },
+  {
+   "what": "pending order 2157314a-e742-421e-8b9b-0cc4a3f224df plan_premium_monthly ₪320 demo-hunter-3 (+ payment sessions); phone: /sdcard/8f5282b.mp4, demo-hunter-3 cookies in Pixel 6 Chrome",
+   "ticket": "#8f5282",
+   "date": "2026-10-21",
+   "status": "to clean"
+  },
+  {
+   "what": "talent account tacivoh962@betshubs.com (registered by user), onboarding as QA-AUTO Talent2110, username qaauto2110talent, anonymous, CV qa-auto-cv-salary-range.pdf",
+   "where": "https://hunters-sooty.vercel.app",
+   "status": "to clean",
+   "session": "2026-10-21"
+  },
+  {
+   "what": "talent account casevi5840@betshubs.com (registered by user), onboarding QA-AUTO Talent2110b / qaauto2110talentb, anonymous, CV qa-auto-cv-no-salary.pdf — onboarding finished (U-36), FREE",
+   "status": "to clean",
+   "session": "2026-10-21"
+  },
+  {
+   "what": "demo-talent-1 desired_roles += מפתח/ת Backend (seeded for autotest edit-profile-saved-expertise-roles-languages)",
+   "status": "KEEP (autotest depends)",
+   "session": "2026-10-21"
+  },
+  {
+   "what": "headhunter account licor78065@betshubs.com (registered by user), onboarding QA-AUTO Hunter2110 / qaauto2110hunter, company 'QA-AUTO Hunting Ltd', ח.פ 123456782, 2 test PDFs (qa-auto-test-document.pdf), status pending admin approval",
+   "status": "to clean",
+   "session": "2026-10-21"
+  },
+  {
+   "what": "application 26318f80-59f3-4ee8-ba64-86ce2a6c2dc2: claude-test -> J-49 (7e4ad713), candidate QA-AUTO f70a38 דנה, full profile, no NDA, screening answer 'QA-AUTO viewed check answer', status נצפה/תה; unread notification at demo-company-1",
+   "status": "to clean",
+   "session": "2026-10-21"
+  },
+  {
+   "what": "company account topol87542@betshubs.com (registered by user), onboarding stopped at step 6 (terms) not submitted: QA-AUTO Company 2110, ח.פ 123456782, draft tender 'QA-AUTO 2110 company onboarding tender' (promoted, public, no NDA, valid 03.12.2026) may exist as draft",
+   "status": "to clean",
+   "session": "2026-10-21"
+  },
+  {
+   "what": "hunter_plus candidates created by autotests (no delete in UI): 'QA-AUTO 7818c8 fin 1391388' b0bcd798-d825-4ce5-b5f7-f0a4afd92961; 'QA-AUTO-d9db64-1431283 מיכל כהן' 174f8911-3a07-4a51-9234-4a25c2fcadcb; 'QA-AUTO-d9db64-1409122 נועה לוי' 1ec28664-d961-4f9e-82b5-884224e3c1d3. NOTE: 3 add-candidate tests create 1 candidate per run",
+   "status": "to clean",
+   "session": "2026-10-21"
+  },
+  {
+   "what": "demo-company-1 tenders by autotests: T-63 bdfa5d78 'QA-AUTO-cf6dc1-explore edited' (archived); 3 'QA-AUTO-cf6dc1-<ts> edited' (archived); 3 open QA-AUTO drafts 7296a68c-a25a-411f-b1e5-39c4bfdb208a, 0562cec5-bf7c-4d0f-a7dc-70ec11f71242, 15a8b20d-59de-4468-9564-24082d274f5b (no delete in UI; journal .qa/e2e/test-data-journal.log). NOTE: TD 1.2 leaves 1 draft per run, TA 1.2 publishes+archives 1 tender per run",
+   "status": "to clean",
+   "session": "2026-10-21"
+  },
+  "22.10 hunter_plus candidates QA-AUTO abe526 6896337/abe526b 6923654/abe526c 7487782 -> J-49 apps 014ff0ae, 04a4462d, 29502589 (נצפה/תה)",
+  "22.10 hunter_plus candidate QA-AUTO 7178a2 7902327 -> J-36 app (נשלח/ה); free distribution used on J-70 (4/5->3/5); HR company_6 submissions to T-62 (anon) and T-55 (full)",
+  "22.10 demo-hunter-2 candidates QA-AUTO recv 112956 full cv + recv 850649 anon A1/A2/A3/R1/R2/NDA/DISC -> J-49 apps bc96f7a4,1bfc1960,83710515,069705a0,3d3832fb,2baaa4b2,0cc56444,d6766cca; old QA-AUTO 1020 N2 app on J-49 became נצפה/תה",
+  "22.10 company: HR anon app e9a47077 on T-62 -> התבקש פרופיל מלא + מתאים/ה",
+  "22.10 hunter_plus: answered question on 3d1d441f (J-136 Alpha); full profile sent on 07cbdd42 (J-49 d9db64 B, irreversible)",
+  "22.10 df647e: T-58 candidacy 094d1740 (claude-test, נדחה/תה final); T-13 offer of demo-hunter-3 rejected (אחר); T-35 approve undone (no change)",
+  "22.10 talent account mayagi1204@agaexpress.com (registered by user for #1866ba onboarding CV parsing)",
+  "22.10 demo-talent-1 bought PRO 3 months for ₪1 (card ••8782), valid to 22.01.2027; auto-renew to cancel",
+  "22.10 demo-hunter-3 bought PLUS annual ₪1 (card ••8782 saved), valid to 22.10.2027 — revert to FREE via admin, cancel renewal",
+  "22.10 demo-hunter-3 reverted to FREE via admin manual plan (PLUS annual paid ₪1 stays in payments); saved card 8782 on demo-hunter-3 and demo-talent-1 — dev to delete",
+  "22.10 talent_new mayagi1204 (U-48) bought PRO annual ₪1, valid to 22.10.2027, renewal cancelled, card 8782 saved",
+  "22.10 demo-talent-1 bought profile promotion 30 days (₪1)",
+  "22.10 demo-talent-2 paid one-time application ₪1 for J-49",
+  "22.10 demo-talent-2 anonymous application with NDA on J-49 (paid ₪0.50, status ממתין/ה ל-NDA)",
+  "22.10 J-70 (claude-test) Unique badge bought ₪1, 4 weeks",
+  "22.10 demo-company-2 tender T-71 'QA-AUTO 4ce54a הפצת מכרז' (ed46f0a3) published free + distribution paid ₪1, approved by admin (sent to 0 users)",
+  "22.10 J-49 app 45967f8d (demo-talent-2 anon+NDA): company refused NDA, WR question/answer sent",
+  "22.10 demo-company-2 tender T-72 'QA-AUTO 4ce54a הפצה לכל המערכת' (cbf7fef0) + distribution ₪1, sent to 8 users",
+  "25.10 demo-hunter-2 given PLUS manually via admin until 02.11 for demo scenario 4 — revert to FREE after the call"
+ ],
+ "findings": [
+  {
+   "id": "NEG-1",
+   "audit": "2026-10-04-negative",
+   "severity": "высокая",
+   "where": "/hunters, /profile/<id>, десктоп, talent (FREE)",
+   "summary": "FREE-кандидат видит email и телефоны всех хед-хантеров на /hunters и в профиле хед-хантера (там ещё больше: второй телефон, адрес), а в деталях משרה те же данные закрыты «פרטי ההד האנטר זמינים למנויי PRO». Ограничение тарифа обходится. В списке есть похожие на реальные данные внешнего пользователя (gmail, телефон)",
+   "status": "filed",
+   "board": "mifrat לביצוע, 2026-10-04 (EN)",
+   "hash": "#bfc6447e"
+  },
+  {
+   "id": "NEG-2",
+   "audit": "2026-10-04-negative",
+   "severity": "средняя",
+   "where": "/profile?edit=details, десктоп, hunter_plus и talent",
+   "summary": "«כמה מילים עליך» >3000 символов → под полем сырой ключ `onboarding.errors.Too big: expected string to have <=3000 characters`; нет maxlength и счётчика",
+   "status": "filed",
+   "board": "mifrat לביצוע, 2026-10-04 (EN)"
+  },
+  {
+   "id": "NEG-3",
+   "audit": "2026-10-04-negative",
+   "severity": "средняя",
+   "where": "/my-candidates/new «קובץ קו״ח», десктоп, hunter_plus",
+   "summary": "Пустой PDF (0 байт) принимается и сразу грузится в Supabase storage до сохранения формы; «הסרת הקובץ» не удаляет файл (нет DELETE). .exe: клиент отправляет загрузку, сервер 400/415 invalid_mime_type, в UI ничего. PDF 26 МБ: молча не появляется, без сообщения",
+   "status": "filed",
+   "board": "mifrat לביצוע, 2026-10-04 (EN)"
+  },
+  {
+   "id": "NEG-4",
+   "audit": "2026-10-04-negative",
+   "severity": "средняя",
+   "where": "/publish/job, десктоп, hunter_plus",
+   "summary": "Зарплата 0–0 и 1–2 ₪ принимается; комиссия 0% молча",
+   "status": "filed",
+   "board": "mifrat לביצוע, 2026-10-04 (EN)",
+   "note": "заведена только часть про зарплату; комиссия 0% — существующий тикет «אין ולידציה על עמלת שת״פ»"
+  },
+  {
+   "id": "NEG-5",
+   "audit": "2026-10-04-negative",
+   "severity": "средняя",
+   "where": "/my-candidates/new, десктоп, hunter_plus",
+   "summary": "Ошибки валидации показываются по одной: сначала только зарплата, остальные (имя из пробелов, телефон «abc», email «a@b») — со второго нажатия",
+   "status": "filed",
+   "board": "mifrat לביצוע, 2026-10-04 (EN)"
+  },
+  {
+   "id": "NEG-6",
+   "audit": "2026-10-04-negative",
+   "severity": "средняя",
+   "where": "/publish/job, десктоп, hunter_plus",
+   "summary": "Смена языка he→en посреди формы стирает введённые данные без предупреждения",
+   "status": "filed",
+   "board": "mifrat לביצוע, 2026-10-04 (EN)"
+  },
+  {
+   "id": "NEG-7",
+   "audit": "2026-10-04-negative",
+   "severity": "средняя",
+   "where": "/profile → «ניסיון מקצועי», десктоп, talent",
+   "summary": "Окончание 01.2020 раньше начала 01.2026 — принимается («ינו׳ 2026 - ינו׳ 2020»)",
+   "status": "filed",
+   "board": "mifrat לביצוע, 2026-10-04 (EN)"
+  },
+  {
+   "id": "NEG-8",
+   "audit": "2026-10-04-negative",
+   "severity": "низкая",
+   "where": "/messages, десктоп, hunter_plus",
+   "summary": "Сообщение 5036 символов → 400 и «ההודעה לא נשלחה. נסו שוב», про лимит ни слова, нет счётчика",
+   "status": "filed",
+   "board": "mifrat לביצוע, 2026-10-04 (EN)"
+  },
+  {
+   "id": "NEG-9",
+   "audit": "2026-10-04-negative",
+   "severity": "низкая",
+   "where": "/messages поиск, десктоп, hunter_plus",
+   "summary": "Нет пустого состояния при отсутствии результатов",
+   "status": "filed",
+   "board": "mifrat לביצוע, 2026-10-04 (EN)"
+  },
+  {
+   "id": "NEG-10",
+   "audit": "2026-10-04-negative",
+   "severity": "низкая",
+   "where": "/publish/job, десктоп, hunter_plus",
+   "summary": "Брошенный после шага 1 черновик («טיוטה») не виден владельцу ни в «המשרות שלי», ни в архиве — только в /admin/jobs",
+   "status": "filed",
+   "board": "mifrat לביצוע, 2026-10-04 (EN)"
+  },
+  {
+   "id": "NEG-11",
+   "audit": "2026-10-04-negative",
+   "severity": "низкая",
+   "where": "/collaborations?budgetMin=-500&budgetMax=abc, десктоп, hunter_plus",
+   "summary": "Фильтр показывает «₪-500 – ₪NaN»; min>max не исправляется; ?page=999 → «לא נמצאו משרות התואמות את החיפוש»",
+   "status": "filed",
+   "board": "mifrat לביצוע, 2026-10-04 (EN)"
+  },
+  {
+   "id": "NEG-12",
+   "audit": "2026-10-04-negative",
+   "severity": "низкая",
+   "where": "/collaborations?q=_ (hunter_plus), /admin/jobs?q=_ (admin), десктоп",
+   "summary": "Поиск «_» и «%» возвращает все результаты (12 / 52) — спецсимволы не экранируются",
+   "status": "filed",
+   "board": "mifrat לביצוע, 2026-10-04 (EN)"
+  },
+  {
+   "id": "NEG-13",
+   "audit": "2026-10-04-negative",
+   "severity": "низкая",
+   "where": "/my-jobs → «העברה לארכיון», десктоп, hunter_plus",
+   "summary": "В диалоге «העברת משרה» кнопка «לסגור את המכרז» (מכרז вместо משרה)",
+   "status": "filed",
+   "board": "mifrat לביצוע, 2026-10-04 (EN)"
+  },
+  {
+   "id": "NEG-14",
+   "audit": "2026-10-04-negative",
+   "severity": "низкая",
+   "where": "/collaborations/<id>, десктоп, hunter_plus",
+   "summary": "Поле «מס' ימי אחריות לגיוס» в деталях подписано «שלבי אחריות 30»",
+   "status": "filed",
+   "board": "mifrat לביצוע, 2026-10-04 (EN)"
+  },
+  {
+   "id": "NEG-15",
+   "audit": "2026-10-04-negative",
+   "severity": "низкая",
+   "where": "/my-candidates/new, /profile, десктоп, hunter_plus и talent",
+   "summary": "Телефон из 8 цифр «05212345» принимается",
+   "status": "filed",
+   "board": "mifrat לביצוע, 2026-10-04 (EN)"
+  },
+  {
+   "id": "NEG-16",
+   "audit": "2026-10-04-negative",
+   "severity": "низкая",
+   "where": "/publish/job, десктоп, hunter_plus",
+   "summary": "Описание >5000 символов молча обрезается, нет счётчика; отрицательные числа → «יש להזין מספר»",
+   "status": "filed",
+   "board": "mifrat לביצוע, 2026-10-04 (EN)"
+  },
+  {
+   "id": "NEG-17",
+   "audit": "2026-10-04-negative",
+   "severity": "низкая",
+   "where": "/login, /forgot-password, /register, /admin/users «הוספת משתמש», десктоп, гость и admin",
+   "summary": "Только встроенные подсказки браузера (на английском при английском браузере); на /register подпись «או התחבר עם כתובת אימייל»; в админке имена из пробелов проходят обязательность",
+   "status": "filed",
+   "board": "mifrat לביצוע, 2026-10-04 (EN)"
+  },
+  {
+   "id": "NEG-18",
+   "audit": "2026-10-04-negative",
+   "severity": "низкая",
+   "where": "/qa-nonexistent-xyz, десктоп, гость",
+   "summary": "Несуществующий адрес → /login вместо 404; после входа нет возврата на исходную страницу",
+   "status": "filed",
+   "board": "mifrat לביצוע, 2026-10-04 (EN)"
+  },
+  {
+   "id": "NEG-19",
+   "audit": "2026-10-04-negative",
+   "severity": "низкая",
+   "where": "подвал всех страниц, включая кабинет",
+   "summary": "Ссылки от чужого шаблона «הצטרפות ל-MentMe», «כל המנטורים», «ההזמנות שלי» (lorem ipsum в подвале — известно)",
+   "status": "duplicate",
+   "board": "уже есть: [E2E] פווטר מכיל תוכן של מוצר אחר (\"MentMe\") — רשימת משימות"
+  }
+ ],
+ "retests": [
+  {
+   "date": "2026-10-05",
+   "what": "ретест 18 тикетов NEG-1..18 из הושלם",
+   "fixed": [
+    "NEG-2",
+    "NEG-3",
+    "NEG-5",
+    "NEG-6",
+    "NEG-7",
+    "NEG-8",
+    "NEG-9",
+    "NEG-13",
+    "NEG-14",
+    "NEG-15",
+    "NEG-16",
+    "NEG-12",
+    "NEG-17"
+   ],
+   "partial": {
+    "NEG-1": "email/телефон закрыты; адрес (список+профиль), сайт и соцсети (профиль) видны FREE — подтверждено bug-verifier",
+    "NEG-10": "черновик виден в /my-jobs, но без метки טיוטה",
+    "NEG-11": "NaN/min>max исправлены; ?page=999 — пусто",
+    "NEG-18": "404 исправлено; возврат после входа не проверен (next= передаётся)"
+   },
+   "not_fixed": {
+    "NEG-4": "зарплата 0-0 и 1-2 проходит на шаг 2 — подтверждено bug-verifier; минимум в доке не описан"
+   },
+   "blockers": "—; admin-сессия обновлена пользователем 2026-10-05",
+   "screenshots": ".qa/screenshots/2026-10-05-retest/",
+   "board_actions": "нет, ждём решения пользователя"
+  }
+ ],
+ "queue_total": 73,
+ "batch_1": [
+  "#49f47c",
+  "#9df6cb",
+  "#3b9172"
+ ],
+ "notes": [
+  {
+   "session": "2026-10-21",
+   "onboarding_talent": "steps 1-5 done; step 6 = terms checkboxes + signature, waiting user OK. Step2 LinkedIn: URL field does nothing, only OAuth button. CV .txt -> error toast OK. CV parse filled experience+education+title; AI summary step5 ok, no explicit experience level. | step6 terms+signature done with user OK; plans popup closed (FREE); success page he/rtl; profile edit has expertise/roles/languages; CV in private bucket (signed URL); education saved but not shown on /profile."
+  }
+ ],
+ "findings_2110": {
+  "T-58 foreign tender": "NOT CONFIRMED 0/3 (company sees it in כל המכרזים, not in mine) - dropped",
+  "שירותי הפצה name": "dropped by recommendation, waiting user",
+  "regen submit": "filed #7178a2",
+  "applications nצפה": "not verified yet",
+  "old מומחה titles": "old data before #d9db64 fix - propose drop",
+  "applications נצפה": "filed #abe526",
+  "my-candidates search": "«המועמדים שלי» search matches only one word (full name «נועה לוי» → nothing) — not filed, propose next session"
+ },
+ "findings_2210": [
+  "footer columns קישורים/מקצועות are template of another project (MentMe, כל המנטורים x2, פורום, בלוג), spans not links, all 4 langs",
+  "testimonials en/ru/ar latin lorem, same signature משה כהן on all cards (agreed not reject 21.10 #93d0e7)",
+  "FREE hunter /profile/<id> of talent -> generic 404 instead of upgrade wall",
+  "education card: 'B.Sc. מדעי המחשב' renders as 'מדעי המחשב .B.Sc' (bidi)",
+  "/headhunters offers mockup uses stock photos of people (marketing illustration)",
+  "admin /admin/applications/<unknown id> soft 404 (HTTP 200)",
+  "admin app details: header full date vs timeline 'היום'",
+  "company gets 404 on direct /applications/<id> of its own J-49 apps 07cbdd42 (התבקש פרופיל מלא) and 94cb5347 (נדחה/תה); hunter opens fine",
+  "add-candidate autotests use fixed phone 0500000098 - now blocked by duplicate phone check",
+  "tender submit texts say משרה/מנהל/ת המשרה on tender",
+  "submit form shows 'סטטוס מועמד נשלח/ה' before submit",
+  "plan card remaining quota appears 1.5-1.9s late",
+  "direct goto of job URL after language switch may render he (unconfirmed, cf #63a7e8)",
+  "/headhunters card 3 mock: '+ Новый' overlaps 'Предложить кандидата' at 320",
+  "/talents job card ~120px empty space bottom (320 ru)",
+  "upgrade dialog: 'תקופת הקידום: שבועיים' shown checked when promotion not selected",
+  "upgrade dialog: distribution can be selected again on a job where it is already active",
+  "anonymous talent AI summary reveals degree (U-35 'בעל/ת תואר B.Sc')",
+  "iPhone: /profile status select 38px, reviews selects 40px; /my-candidates filter buttons 40px; dropdown options 37-38px; wizard lang select 36px",
+  "company: anonymous application /applications/<id> = 404 (opens only as dialog in job) — cf abe526 finding",
+  "job drawer 'מועמדים שהוגשו' column narrow, ~3 rows visible, names wrap",
+  "T-62 owner drawer 'מס׳ הצעות 0' while 4 listed; list card shows 4",
+  "HR anonymous tender card title empty 'הגשת מועמד:'; HR labelled 'טאלנט' on full profile; tender texts say משרה",
+  "timeline shows 'התבקש פרופיל מלא' twice after מתאים/ה",
+  "after מתאים/ה 'שאלות נוספות' disabled though confirm text offers it",
+  "en pending text 'What a profile :)' literal translation",
+  "no way to remove a saved card (payment window 'שיטות תשלום' card 8782, המנוי שלי, admin) — card auto-saved for subscriptions; cards saved for demo-talent-1 and demo-hunter-3",
+  "paid one-time application becomes unusable if admin switches the product off ('הגשה חד פעמית לא זמינה כרגע', notOnSale) — verified 3/3",
+  "Cardcom card-number field breaks when the payment window is resized/moved (user report, screenshot in chat)",
+  "NDA refused notification: reason stays Hebrew in en/ru bell",
+  "Work Representation form stays open/enabled after sending questions (possible double send)"
+ ],
+ "price_changes": [
+  {
+   "at": "2026-10-22",
+   "product": "talent_pro_quarterly",
+   "was": "1440.00",
+   "now": "1",
+   "restored": true,
+   "approved": "user in chat 22.10",
+   "restored_to": "1440"
+  },
+  {
+   "at": "2026-10-22",
+   "product": "plan_plus_annual",
+   "was": "3024.00",
+   "now": "1",
+   "restored": true,
+   "approved": "user in chat 22.10",
+   "restored_to": "3024.00"
+  },
+  {
+   "at": "2026-10-22",
+   "product": "talent_pro_annual",
+   "was": "5184.00",
+   "now": "1",
+   "restored": true,
+   "approved": "user in chat 22.10",
+   "restored_to": "5184.00"
+  },
+  {
+   "at": "2026-10-22",
+   "product": "profile_promotion",
+   "was": "1000.00",
+   "now": "2",
+   "restored": true,
+   "approved": "user in chat 22.10",
+   "restored_to": "1000.00"
+  },
+  {
+   "at": "2026-10-22",
+   "product": "talent_single_application",
+   "was": "0.00, לא פעיל",
+   "now": "1, פעיל",
+   "restored": true,
+   "approved": "user in chat 22.10",
+   "restored_to": "0.00, לא פעיל"
+  },
+  {
+   "at": "2026-10-22",
+   "product": "talent_discretion_free",
+   "was": "150.00",
+   "now": "0.5",
+   "restored": true,
+   "approved": "user in chat 22.10",
+   "restored_to": "150.00"
+  },
+  {
+   "at": "2026-10-22",
+   "product": "talent_nda_free",
+   "was": "35.00",
+   "now": "0.5",
+   "restored": true,
+   "approved": "user in chat 22.10",
+   "restored_to": "35.00"
+  },
+  {
+   "at": "2026-10-22",
+   "product": "talent_single_application",
+   "was": "0.00, לא פעיל",
+   "now": "1, פעיל (2nd time, to use paid submission)",
+   "restored": true,
+   "approved": "user in chat 22.10",
+   "restored_to": "0.00, לא פעיל"
+  },
+  {
+   "at": "2026-10-22",
+   "product": "job_unique",
+   "was": "0.00, לא פעיל",
+   "now": "1, פעיל",
+   "restored": true,
+   "approved": "user in chat 22.10",
+   "restored_to": "0.00, לא פעיל"
+  },
+  {
+   "at": "2026-10-22",
+   "product": "tender_distribution",
+   "was": "0.00, לא פעיל",
+   "now": "1, פעיל",
+   "restored": true,
+   "approved": "user in chat 22.10",
+   "restored_to": "0.00, לא פעיל"
+  },
+  {
+   "at": "2026-10-22",
+   "product": "tender_distribution",
+   "was": "0.00, לא פעיל",
+   "now": "1, פעיל (2nd)",
+   "restored": true,
+   "approved": "user in chat 22.10",
+   "restored_to": "0.00, לא פעיל"
+  }
+ ],
+ "summary_2210": {
+  "checked": 37,
+  "passed": 33,
+  "rejected": 2,
+  "cannot_reproduce": 2,
+  "new_tickets": 8,
+  "payments": 9
+ }
+}

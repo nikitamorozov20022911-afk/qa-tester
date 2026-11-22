@@ -1,0 +1,118 @@
+{
+  "project": "biz4sale",
+  "date": "2026-10-25",
+  "environment": "https://www.biz4sale.co.il/ (prod)",
+  "scope": "בבדיקות кроме «לא ניתן לשחזר» (#fe3470, #bd3aff, #a47bd6, #4dae81) — сессия 2",
+  "queue": [
+    "#1da60a",
+    "#bb6e6d",
+    "#9f2c12",
+    "#a26d82",
+    "#083d10"
+  ],
+  "client_requests": [
+    "#1d8184 (короткая ссылка в WhatsApp-сообщении, לביצוע)"
+  ],
+  "tickets": [
+    {
+      "hash": "#9f2c12",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "faq.html: og:title/description/url/image (1200x630 jpeg 200) + twitter summary_large_image в сыром HTML, 3/3; FAQPage 8, canonical ок; / и /search og есть",
+      "evidence": "research/1025/faq1.html",
+      "feature": "תשתית SEO טכנית לאתר",
+      "role": "guest",
+      "devices": [
+        "curl"
+      ],
+      "at": "2026-10-25"
+    },
+    {
+      "hash": "#1da60a",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "Android эмуляция: Enter → \\n в textarea, 3/3, 0 не-GET запросов (сеть заблокирована), ничего не отправлено; onKeyDown отправляет только Ctrl/Cmd+Enter. Десктоп Enter/Shift+Enter тоже перенос. Не проверено: экранная клавиатура реального Android. Находки: поле не растёт (66px, max 120), поле ниже экрана на Pixel 7",
+      "evidence": "screenshots/1025/1da60a-*",
+      "feature": "צ'אט / שיחות",
+      "role": "chat",
+      "devices": [
+        "android-emu",
+        "desktop"
+      ],
+      "at": "2026-10-25"
+    },
+    {
+      "hash": "#bb6e6d",
+      "action": "reject",
+      "column": "לביצוע",
+      "notes": "тап из списка ок (только т.к. уже прокручено); прямой URL /messages?conversation= на мобайле: меню אזור אישי на весь экран, чат ниже (841/839), без автоскролла — ПОДТВЕРЖДЕНО 3/3 Android + 1/1 iPhone; колокольчик — нет уведомлений. | rej_59b87f133b5808396fee431a",
+      "evidence": "screenshots/1025/bb6e6d-v-*",
+      "at": "2026-10-25"
+    },
+    {
+      "hash": "#083d10",
+      "action": "reject",
+      "column": "לביצוע",
+      "notes": "Имитация: возврат на объявление ок, но на Android прокрутка к связи не срабатывает 2/8 и 4/9. Ручная проверка пользователя: הצגת טלפון → попап → вход → главная. rej_12c60f93b544c7741fdca63a. Находки: #f0fa6f (телефон/WhatsApp снова через попап), заголовок попапа ≠ #6ce2cc",
+      "evidence": "screenshots/1025/083d10-*",
+      "at": "2026-10-25"
+    },
+    {
+      "hash": "#a26d82",
+      "action": "deleted-by-user",
+      "column": "удалён",
+      "notes": "пользователь удалил тикет (WhatsApp-превью голого адреса), 25.10",
+      "at": "2026-10-25"
+    },
+    {
+      "hash": "#bb6e6d",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "ретест PR #166: прямой URL Pixel 7 3/3 — поле 761-827 из 839, меню скрыто; тап из списка (scroll 0 и 600) ок; חזרה לשיחות → список; назад/вперёд ок; iPhone 13 mini 1/1 — поле 551-617 из 629, меню скрыто; десктоп раскладка и Enter ок. Не проверено: реальное уведомление (нет 2-го аккаунта), колокольчик пуст, сортировка (1 переписка). Находки: ссылка «הודעות» в колокольчике/иконка чата → /messages с меню на первом экране; десктоп поле ввода за краем 900",
+      "evidence": "screenshots/1025/bb6e6d-r2-*",
+      "feature": "צ'אט / שיחות",
+      "role": "chat",
+      "devices": [
+        "android-emu",
+        "iphone-emu",
+        "desktop"
+      ],
+      "at": "2026-10-25"
+    },
+    {
+      "hash": "#1d8184",
+      "action": "reject",
+      "column": "לביצוע",
+      "notes": "Текст/короткая ссылка /b/<8> ок везде (Т1,Т2,Т5,Т7,Т9,Д1,С1); ❌ с установленным SW /b/<код> → «הדף לא נמצא» 3/3 + ручная проверка пользователя (белый экран). sw.js NavigationRoute без ^/b/ в denylist. rej_dbe214a40ed57bc93f65c5f6. Находки: og:image 1.8–2.6 МБ, 302 вместо 301",
+      "evidence": "screenshots/1025/1d8184-*",
+      "at": "2026-10-25"
+    },
+    {
+      "hash": "#083d10",
+      "action": "pass",
+      "column": "הושלם",
+      "notes": "ретест PR #166: ручной вход пользователя SMS Android из попапа → вернуло на объявление; гость: redirectAfterLogin = это объявление&contact=1 для всех кнопок (объявление, /search, похожие), крестик/«המשך בלי הרשמה» без петли, попап в экране 412/375, чистый /auth без старого адреса; имитация Pixel: карточка связи видна сразу/3с/10с 3/3, ручная прокрутка не сбивается 3/3. Не проверено: вход Google, «פרסם עסק» → возврат (#fa00d6). Находки: redirectAfterLogin живёт до конца вкладки; заголовок попапа ≠ #6ce2cc; телефон/WhatsApp у гостя через попап (#f0fa6f?); крестик 16px",
+      "evidence": "screenshots/1025/083d10-r2-*",
+      "feature": "יצירת קשר / התחברות מפופאפ",
+      "role": "guest",
+      "devices": [
+        "android-real (пользователь)",
+        "android-emu",
+        "desktop"
+      ],
+      "at": "2026-10-25"
+    }
+  ],
+  "test_data": [],
+  "queue2": [
+    "#1d8184",
+    "#bb6e6d",
+    "#083d10"
+  ],
+  "new_bugs": [
+    "#c5ed06 иконка чата/«הודעות» → меню אזור אישי (medium)",
+    "#a88c1c redirectAfterLogin живёт после отказа от входа (low)",
+    "#cada05 og:image 1.8–2.6 МБ (low)"
+  ],
+  "closed": "2026-10-25"
+}

@@ -1,0 +1,197 @@
+{
+  "date": "2026-11-01",
+  "command": "/qa",
+  "boards": [
+    "69f0642c020604699b30fd87",
+    "69fb11ecdd781488e15a6e0a"
+  ],
+  "device": "Android Xiaomi 23021RAA2Y (adb 5d680fbd), Android 15, TrivoLN 1.1.0 (20), Update 01a1969e (Nov 1, 2026)",
+  "account": "@NU6990 (business profile, julius-e2e+webtab5@example.com)",
+  "tickets": [
+    {
+      "hash": "#0c79e4",
+      "verdict": "pass-android",
+      "column": "הושלם",
+      "note": "Drafts·1 не меняется после 2 публикаций; iOS не перепроверен",
+      "confirmed_by_user": "2026-11-01"
+    },
+    {
+      "hash": "#505998",
+      "verdict": "pass-android",
+      "column": "הושלם",
+      "note": "счётчик с 800, 1001 красный + Too long + send disabled, 1000 сохраняется целиком",
+      "confirmed_by_user": "2026-11-01"
+    },
+    {
+      "hash": "#08526a",
+      "verdict": "pass-android",
+      "column": "הושלם",
+      "note": "спиннер в полноэкранном просмотре (фото и видео)",
+      "confirmed_by_user": "2026-11-01"
+    },
+    {
+      "hash": "#8d2f0c",
+      "verdict": "pass-web",
+      "column": "הושלם",
+      "note": "гость /u/PA5401: No reviews yet, 2 прогона",
+      "confirmed_by_user": "2026-11-01"
+    },
+    {
+      "hash": "#7e9bd6",
+      "verdict": "not-ready",
+      "note": "Android 100% вкл. друга (лента друга, кнопка Posts у друга, гость без кнопки); нет: ошибка сети, web, iOS; iOS 01a197c3: 7 из 7 прикрепились (видео >30MB с причиной и кадром, публикация заблокирована), после סיום нет зависания, сетка 2x2 +2; пост удалён",
+      "column": "הושלם",
+      "board_action": "rejection resolved 01.11",
+      "confirmed_by_user": "2026-11-01"
+    },
+    {
+      "hash": "#00b29b",
+      "verdict": "not-ready",
+      "note": "Android вкл. друга: лайк/коммент друга, уведомления владельцу, владелец удаляет чужой, друг не может править чужой; нет: блок, iOS; iOS 01a197c3: поле над клавиатурой (вкл. правку), время, лайк ✓",
+      "column": "הושלם",
+      "board_action": "rejection resolved 01.11",
+      "confirmed_by_user": "2026-11-01"
+    },
+    {
+      "hash": "#267e61",
+      "verdict": "pass",
+      "note": "Name&Photo без краша, AC1-5 ок на Android (4:1, высокий, >10MB, BMP, замена, удаление, лого в ленте); нет: web AC6, iOS; iOS 01a197c3: שם ותמונה без краша; web guest: лого 4:1 целиком",
+      "column": "הושלם",
+      "board_action": "rejection resolved 01.11",
+      "confirmed_by_user": "2026-11-01"
+    },
+    {
+      "hash": "#eb5e0e",
+      "verdict": "pass-ios",
+      "note": "на Android клавиатура закрывается тапом вне поля и ✓; iOS-фикс не проверить; iOS 01a197c3: סיום есть, тап вне поля закрывает",
+      "column": "הושלם",
+      "confirmed_by_user": "2026-11-01"
+    },
+    {
+      "hash": "#6fbbed",
+      "verdict": "returned-todo",
+      "note": "AC2 Facebook всё ещё Not available (программист: Meta app неактивна, ждёт App Review) — вернул в לביצוע, реджект открыт (решение пользователя)"
+    },
+    {
+      "hash": "#0f31a7",
+      "board": "69fb11ec",
+      "verdict": "pass-android",
+      "note": "@חי (Gboard, ввод пользователя) → только חיי; @QA → только QA Media; друг без имени не тегается (находка)",
+      "column": "הושלם",
+      "board_action": "rejection resolved 01.11",
+      "confirmed_by_user": "2026-11-01"
+    },
+    {
+      "hash": "#e5eb99",
+      "board": "69fb11ec",
+      "verdict": "pass",
+      "note": "фильтр ок; ок: фид друзей, мои посты, лайки, колокол, удаление поста, запланированный пост 16:58 вышел; нет: жалоба/блок/скрытие в админке, הצג עוד, skeleton, share, Also on; iPhone+web: жалоба (ספאם) → в админке Reports/Feed posts → Hide the post → пост пропал у друга; блок: лента друзей пустая, разблокировка ок (дружба разорвана); הצג עוד после 6 строк + הצג פחות; share → ссылка trivoln.expo.app (путь не подтверждён); не проверено: skeleton, Also on",
+      "column": "הושלם",
+      "board_action": "rejection resolved 01.11",
+      "confirmed_by_user": "2026-11-01"
+    },
+    {
+      "hash": "#063423",
+      "board": "69fb11ec",
+      "verdict": "pass",
+      "note": "диалог подтверждения Android + web, ביטול/Escape оставляют друга",
+      "column": "הושלם",
+      "board_action": "rejection resolved 01.11",
+      "confirmed_by_user": "2026-11-01"
+    },
+    {
+      "hash": "#106f1e",
+      "board": "69fb11ec",
+      "verdict": "pass",
+      "note": "сети не отмечены по умолчанию: Android и web (у PA5401 подключён Instagram)",
+      "column": "הושלם",
+      "board_action": "none",
+      "confirmed_by_user": "2026-11-01"
+    },
+    {
+      "hash": "#d416b3",
+      "board": "69fb11ec",
+      "verdict": "pass-android",
+      "note": "3 серии кадров при открытии списка — ложного 'אין עדיין ביקורות' нет; спиннер не пойман (быстро); уведомление о новом отзыве есть",
+      "column": "הושלם",
+      "board_action": "rejection resolved 01.11",
+      "confirmed_by_user": "2026-11-01"
+    },
+    {
+      "hash": "#e3264e",
+      "board": "69fb11ec",
+      "verdict": "pass-android-rejection",
+      "note": "счётчик he 10/5000, 0/5000; лупа справа; ввод иврита в поля не перепроверен",
+      "column": "הושלם",
+      "board_action": "rejection resolved 01.11",
+      "confirmed_by_user": "2026-11-01"
+    },
+    {
+      "hash": "#6b5fb4",
+      "board": "69fb11ec",
+      "verdict": "question",
+      "note": "п.2 видео >30MB и п.3 (BMP, txt→mp4) ок, п.4 миниатюры видео ок; фото 6.6/11MB приняты и сжаты (без сообщения); п.1 Facebook как #6fbbed",
+      "board_action": "status todo, rejection open (Facebook); фото>5MB сжатие принято (вариант по умолчанию)"
+    },
+    {
+      "hash": "#2c39a8",
+      "board": "69fb11ec",
+      "verdict": "pass",
+      "column": "הושלם",
+      "note": "web: Support и Super Admin — после верного кода сразу /admin (один документ-навигейшн); неверный код → 'That code is not right…', поле очищено",
+      "confirmed_by_user": "2026-11-01"
+    },
+    {
+      "hash": "#a411dc",
+      "board": "69fb11ec",
+      "verdict": "returned-todo",
+      "note": "реджект просит доказательство RLS; программист приложил 13.10 (audit_log запрещён user/support, staff читает, actor_id). Сам признал: role чужого профиля читается обычным user — в реджекте role был в списке приватных полей",
+      "board_action": "status todo, rejection open, comment про role (решение пользователя)"
+    }
+  ],
+  "created": [
+    {
+      "hash": "#327cc4",
+      "board": "69f0642c",
+      "title": "בקשת לקוח: RTL для иврита в английском интерфейсе",
+      "status": "todo"
+    },
+    {
+      "hash": "#3c0a06",
+      "board": "69f0642c",
+      "title": "iOS: back button in Settings inside pill, clipped",
+      "status": "todo"
+    },
+    {
+      "hash": "#3acca6",
+      "board": "69fb11ec",
+      "title": "iOS: My media trash icon does not delete",
+      "status": "todo",
+      "note": "заведён в v2 по прямой просьбе пользователя"
+    },
+    {
+      "hash": "#319470",
+      "board": "69fb11ec",
+      "title": "Android: My media delete takes seconds without indicator",
+      "status": "todo"
+    }
+  ],
+  "test_data": [
+    "посты @NU6990: QA_post1_0c79e4 (+комментарий 1000 символов), QA_post2_0c79e4, QA_media_7e9bd6 (9 файлов), QA_3items_7e9bd6",
+    "черновик QA_draft_0c79e4 (с 1 фото)",
+    "файлы на телефоне: /sdcard/Pictures/QA_TRIVOLN, /sdcard/Movies/QA_TRIVOLN",
+    "лого @NU6990 — удалено, исходный вид восстановлен",
+    "отзыв PA5401→NU6990 4★ 'QA test review for ticket d416b3…'",
+    "пост QA_sched_e5eb99 (NU6990)",
+    "My media NU6990: +3 PNG (wide, 6.6MB, 11MB)",
+    "отображаемое имя NU6990 'QA Media' (временно)",
+    "QA_post2_0c79e4 — удалён в тесте",
+    "PA5401 «המדיה שלי»: 6 личных фото из поста QA_ios_7e9bd6 (пост удалён, фото в библиотеке остались) — удаляет пользователь",
+    "дружба NU6990↔PA5401 — разорвана блокировкой и разблокирована (возвращено)",
+    "отзыв PA5401→NU6990 остаётся (автор не может удалить, только админ)",
+    "пост QA_sched_e5eb99 — скрыт админом"
+  ],
+  "device2": "Pixel 6 (adb 1A151FDF6007QZ), TrivoLN 1.1.0 (20), Update 01a1969e, аккаунт PA5401 (xofayes)",
+  "status": "закрыта",
+  "closed_at": "2026-11-01"
+}
