@@ -47,7 +47,7 @@ bash ~/qa-tester-kit/install.sh
 
 ## Что внутри
 
-- **Скиллы:** `qa-session` (оркестратор), `qa-ticket-analysis`, `qa-test-design`, `qa-evidence`, `qa-verdict`, `mifrat-board-mcp` (основной, через API), `mifrat-board` (запасной, через браузер), `qa-testcases`, `qa-report`, `qa-context`, `qa-handoff`, `qa-onboard`, `qa-adhoc` (ad hoc глазами наивного пользователя без контекста).
+- **Скиллы:** `qa-session` (оркестратор), `qa-ticket-analysis`, `qa-test-design`, `qa-evidence`, `qa-verdict`, `mifrat-board-mcp` (основной, через API), `mifrat-board` (запасной, через браузер), `qa-testcases`, `qa-report`, `qa-context`, `qa-handoff`, `qa-onboard`, `qa-adhoc` (ad hoc глазами наивного пользователя без контекста), `qa-agent-eval` (тестирование ИИ-агентов: онбординг, сценарии, прогон).
 - **Агенты:** `ticket-researcher`, `qa-tester`, `bug-verifier`, `onboard-extractor`, `onboard-consolidator`, `onboard-verifier`, `autotest-writer`, `regression-triager`.
 - **Официальные агенты Playwright** (ставятся в проект при `/qa-onboard`): planner, generator — пишет автотесты, проверяя шаги в живом браузере; healer — чинит тесты только после диагностики «ошибка теста».
 - **MCP:** Playwright (отдельный браузер с профилем `.qa/browser-profile`, скриншоты в `.qa/screenshots`).
