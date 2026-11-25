@@ -39,6 +39,7 @@ bash ~/qa-tester-kit/install.sh
 | `/qa-full [раздел]` | Полная проверка сайта (новый проект): все сценарии, негатив, UX, десктоп + iPhone + Android. Сначала план → «да» |
 | `/qa-negative [раздел] [устройство]` | Только негативные и граничные тесты + проверки API (чужие записи, права ролей, проверка ввода на сервере) |
 | `/qa-ux [раздел]` | Только UX на десктопе |
+| `/qa-load [staging \| приложение \| раздел]` | Нагрузочные тесты (בדיקות עומס) сайта или мобильного приложения: разведка (без документации тоже) → сценарий → план → «да» → k6 smoke/load/stress/spike/soak (локально или Grafana Cloud k6) → отчёт. Нагрузка только на staging |
 | `/qa-android [раздел \| #hash]` | Только Android: раздел или конкретный тикет |
 | `/qa-iphone [раздел \| #hash]` | Только iPhone: раздел или конкретный тикет |
 | `/qa-backfill [следующие 150]` | Записать в регресс уже принятые тикеты из «הושלם»: последние 150, затем следующие 150 и т.д. (без запуска). Отдельная команда, онбординг её не запускает |
@@ -47,8 +48,8 @@ bash ~/qa-tester-kit/install.sh
 
 ## Что внутри
 
-- **Скиллы:** `qa-session` (оркестратор), `qa-ticket-analysis`, `qa-test-design`, `qa-evidence`, `qa-verdict`, `mifrat-board-mcp` (основной, через API), `mifrat-board` (запасной, через браузер), `qa-testcases`, `qa-report`, `qa-context`, `qa-handoff`, `qa-onboard`, `qa-adhoc` (ad hoc глазами наивного пользователя без контекста), `qa-agent-eval` (тестирование ИИ-агентов: онбординг, сценарии, прогон).
-- **Агенты:** `ticket-researcher`, `qa-tester`, `bug-verifier`, `onboard-extractor`, `onboard-consolidator`, `onboard-verifier`, `autotest-writer`, `regression-triager`.
+- **Скиллы:** `qa-session` (оркестратор), `qa-ticket-analysis`, `qa-test-design`, `qa-evidence`, `qa-verdict`, `mifrat-board-mcp` (основной, через API), `mifrat-board` (запасной, через браузер), `qa-testcases`, `qa-report`, `qa-context`, `qa-handoff`, `qa-onboard`, `qa-adhoc` (ad hoc глазами наивного пользователя без контекста), `qa-agent-eval` (тестирование ИИ-агентов: онбординг, сценарии, прогон), `qa-load` (нагрузочные тесты).
+- **Агенты:** `ticket-researcher`, `qa-tester`, `bug-verifier`, `onboard-extractor`, `onboard-consolidator`, `onboard-verifier`, `autotest-writer`, `regression-triager`, `load-recon`, `load-planner`, `load-script-writer`, `load-analyst` (нагрузочные тесты, скилл `qa-load`).
 - **Официальные агенты Playwright** (ставятся в проект при `/qa-onboard`): planner, generator — пишет автотесты, проверяя шаги в живом браузере; healer — чинит тесты только после диагностики «ошибка теста».
 - **MCP:** Playwright (отдельный браузер с профилем `.qa/browser-profile`, скриншоты в `.qa/screenshots`).
 - **Хук:** при старте сессии напоминает о незаконченном handoff.
